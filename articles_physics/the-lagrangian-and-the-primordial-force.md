@@ -22,7 +22,7 @@ $$
 
 with one covariant derivative, $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a}$, and one connection coupling. **The coupling is the same $g_4$ in the representative, fermion and scalar kinetic terms**, and that identity is the whole content of the words *one force*. **The display carries seven terms and four dynamical pieces**, the other three being the fixing, the ghosts and the Yukawa. **One force does not mean one parameter**: the scalar's six coefficients $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, $\lambda_{1}$, $\lambda_{2}$, $\lambda_{3}$ and $\lambda_{4}$, the Yukawa matrix $y$, the parameter $\zeta$ and the topological angle $\theta_{4}$ are nine more numbers, and §*What the Display Does Not Contain* lists them.
 
-*Second, the equations and the count.* The stationarity condition is $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\,j_{a,\jmath}$, with the current built from the sixteen and the scalar matrix; the temporal component is a Gauss law per generator, fifteen in all; and the constraint algebra fixes the degrees of freedom to $15\times2$ for the connections, $32$ states for the fermions and $16$ real for the scalar.
+*Second, the equations and the count.* The stationarity condition is $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=+g_4\,j_{a,\jmath}$, with the current built from the sixteen and the scalar matrix; the temporal component is a Gauss law per generator, fifteen in all; and the constraint algebra fixes the degrees of freedom to $15\times2$ for the connections, $32$ states for the fermions and $16$ real for the scalar.
 
 *Third, the status, and it is the point of the article.* $\mathrm{SU}(2)$ is written *in* the algebra; $\mathrm{SU}(4)$ is written *on* it. The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, of real dimension four, and fifteen generators do not fit inside four. **So the action below is a transcription and not a derivation**, and it stands with $\mathrm{SU}(3)$ on the transcribed side of the ceiling, not with $\mathrm{SU}(2)$ on the derived side. *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators* owns the argument; this article states where its display falls in it.
 
@@ -74,7 +74,7 @@ $$
 
 so $-\tfrac12\operatorname{tr}(\sum FF)=-\tfrac14\sum_{a}FF$. **The coefficient is not a choice**: it is fixed once the generators are normalised, and the normalisation is fixed by the requirement that the kinetic term of $A_{a,\imath}$ be canonical. **Written with the printed $G_{a}$ instead, the trace norms are $2$ on the fifteen and $12$ on the vacuum direction, and the coefficient is not $\tfrac14$** — which is why every vertex in this block is read from $t_{a}$ and not from $G_{a}$.
 
-**Why nothing else appears at dimension four.** The invariant, parity-even, dimension-four functionals of the fifteen alone are the square of the curvature and nothing else. A cubic term vanishes because $\operatorname{tr}$ of an odd number of generators is zero, and a term with a derivative of the curvature has dimension five. **One further term exists and is not written**: the topological density $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, whose integral is quantised and whose coefficient $\theta_4$ is a free parameter of the Lagrangian and not a function of the group. It is named here and left to *The $\mathrm{SU}(4)$ Instanton*, **which also shows that it is redundant above $M_C$**, where the sixteen are massless and a chiral rotation removes it. **It is also the one dimension-four term the group allows that is odd under $CP$**, and that is worth one sentence because the corpus says elsewhere that the sixteen is closed under $CP$: the closure is a statement about the field list, a $CP$ map exists and permutes it, while the Lagrangian's $CP$ is a statement about the values of the mass phases $\arg\det m$ and of the Yukawa phases, and neither is fixed by the group. **So the model can be $CP$-conserving and it is not $CP$-symmetric by construction**, and the difference is a measurement rather than a convention.
+**Why nothing else appears at dimension four.** The invariant, parity-even, dimension-four functionals of the fifteen alone are the square of the curvature and nothing else. **A cubic is excluded by dimension and not by a trace identity**: $F$ carries dimension two, so $\operatorname{tr}(F^{3})$ carries six, and $\operatorname{tr}(t_{a}t_{b}t_{c})$ does *not* vanish for $\mathrm{SU}(4)$ — it is the symmetric invariant $d_{abc}$, which is nonzero for every $N\ge3$ and vanishes only for $\mathrm{SU}(2)$, which is why the false reason is easy to believe. A term with a derivative of the curvature has dimension five. **One further term exists and is not written**: the topological density $\operatorname{tr}(\mathbb{F}\wedge\mathbb{F})$, whose integral is quantised and whose coefficient $\theta_4$ is a free parameter of the Lagrangian and not a function of the group. It is named here and left to *The $\mathrm{SU}(4)$ Instanton*, **which also shows that it is redundant above $M_C$**, where the sixteen are massless and a chiral rotation removes it. **It is also the one dimension-four term the group allows that is odd under $CP$**, and that is worth one sentence because the corpus says elsewhere that the sixteen is closed under $CP$: the closure is a statement about the field list, a $CP$ map exists and permutes it, while the Lagrangian's $CP$ is a statement about the values of the mass phases $\arg\det m$ and of the Yukawa phases, and neither is fixed by the group. **So the model can be $CP$-conserving and it is not $CP$-symmetric by construction**, and the difference is a measurement rather than a convention.
 
 **The fermion piece in the corpus's coordinates.** The kinetic term is
 
@@ -116,11 +116,23 @@ V(Ξ)=\mu_{\Phi}^{2}\operatorname{tr}Ξ^{2}+\mu_{2}^{2}\bigl(\operatorname{tr}Ξ
 +\lambda_{3}\bigl(\operatorname{tr}Ξ\bigr)^{2}\operatorname{tr}Ξ^{2}+\lambda_{4}\bigl(\operatorname{tr}Ξ\bigr)^{4},
 $$
 
-and the group fixes none of the six coefficients. **Two quartics and not one in the traceless channel**, because $\operatorname{tr}(Ξ^{2})^{2}$ and $(\operatorname{tr}Ξ^{2})^{2}$ are different contractions of four matrix indices and neither is a function of the other. **A cubic $\operatorname{tr}Ξ^{3}$ is also invariant, real and allowed**, and this potential leaves it out: *The Primordial Potential* computes the threshold at which it would matter, and its absence is a truncation stated and not a symmetry. **A fifth quartic, $\operatorname{tr}Ξ^{3}\operatorname{tr}Ξ$, is allowed as well**, and it is removed by declaring the potential even in the trace; that is a second truncation of the same kind, and it is the one that keeps $\operatorname{tr}Ξ=0$ a stationary value rather than a shifted one.
+and the group fixes none of the six coefficients. **Two quartics and not one in the traceless channel**, because $\operatorname{tr}(Ξ^{4})$ and $(\operatorname{tr}Ξ^{2})^{2}$ are different contractions of four matrix indices and neither is a function of the other. **A cubic $\operatorname{tr}Ξ^{3}$ is also invariant, real and allowed**, and this potential leaves it out: *The Primordial Potential* computes the threshold at which it would matter, and its absence is a truncation stated and not a symmetry. **A fifth quartic, $\operatorname{tr}Ξ^{3}\operatorname{tr}Ξ$, is allowed as well**, and it is removed by declaring the potential even in the trace; that is a second truncation of the same kind, and it is the one that keeps $\operatorname{tr}Ξ=0$ a stationary value rather than a shifted one.
 
-**The trace has its own quadratic and its own sign, and that sign is what makes the vacuum traceless.** The symmetric minimum is $\mu_{\Phi}^{2}>0$ and $\mu_{2}^{2}>0$, so $\langleΞ\rangle=0$ and the group is exact: the first sign holds the matrix at the origin, the second holds its trace there. **The broken phase is not simply the other sign of $\mu_{\Phi}^{2}$**: as *The Primordial Potential* shows, once the trace is pinned at zero the declared vacuum $\operatorname{diag}(-3,1,1,1)$ is the minimum in the branch $\lambda_{1}<0$, and the even split is the minimum in the branch $\lambda_{1}>0$. **So the vacuum is two signs and not one** — one for the shape and one for the trace — and *The Breaking of the Primordial Force* reads the branch the corpus declares.
+**The trace has its own quadratic and its own sign, and that sign is what puts the trace at the origin.** The symmetric minimum is $\mu_{\Phi}^{2}>0$ and $\mu_{2}^{2}>0$, so $\langleΞ\rangle=0$ and the group is exact: the first sign holds the matrix at the origin, the second holds its trace there. **The broken phase is not simply the other sign of $\mu_{\Phi}^{2}$**: as *The Primordial Potential* shows, once the trace is pinned at zero the declared vacuum $\operatorname{diag}(-3,1,1,1)$ is the minimum in the branch $\lambda_{1}<0$, and the even split is the minimum in the branch $\lambda_{1}>0$. **So the vacuum is two signs and not one** — one for the shape and one for the trace — and *The Breaking of the Primordial Force* reads the branch the corpus declares.
 
-**What tracelessness of the vacuum is, and what it is not.** It is the condition $\mu_{2}^{2}+\lambda_{3}\langle\operatorname{tr}Ξ^{2}\rangle>0$, which makes $\operatorname{tr}Ξ=0$ the minimum of the trace direction once the shape is chosen. **It is not a condition on the field**, and the difference shows in the count: sixteen components at this scale, six eaten, ten survivors. **And it costs nothing in the sector**, because the identity commutes with every generator, $[\mathbb 1,t_{a}]=0$, so a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb 1$ leaves the mass matrix $[\Xi_{0},[\Xi_{0},\cdot\,]]$ unchanged: the same $32v^{2}$, the same nine massless, the same six eaten. **The identity is invisible to the force and visible only to the scalar potential**, and that separation is why the corpus's numbers survive the correction untouched.
+**What tracelessness of the vacuum is, and what it is not.** Expand along the identity, $Ξ=Ξ_{0}+c\,\mathbb 1$ with $\operatorname{tr}Ξ_{0}=0$. Every invariant is polynomial in $c$: $\operatorname{tr}Ξ=4c$, $\operatorname{tr}Ξ^{2}=\operatorname{tr}Ξ_{0}^{2}+4c^{2}$, and $\operatorname{tr}Ξ^{4}=\operatorname{tr}Ξ_{0}^{4}+4c\operatorname{tr}Ξ_{0}^{3}+6c^{2}\operatorname{tr}Ξ_{0}^{2}+4c^{4}$, so
+
+$$
+V=V(Ξ_{0})+4\lambda_{1}\langle\operatorname{tr}Ξ_{0}^{3}\rangle\,c+\Bigl(4\mu_{\Phi}^{2}+16\mu_{2}^{2}+(6\lambda_{1}+8\lambda_{2}+16\lambda_{3})\langle\operatorname{tr}Ξ_{0}^{2}\rangle\Bigr)c^{2}+4\bigl(\lambda_{1}+4\lambda_{2}+16\lambda_{3}+64\lambda_{4}\bigr)c^{4}.
+$$
+
+**The linear term is the one a one-line condition drops, and it does not vanish.** For the declared shape $\operatorname{tr}Ξ_{0}^{3}=-24v^{3}\ne0$, so $\operatorname{tr}Ξ=0$ is stationary only if $\lambda_{1}=0$ — and $\lambda_{1}<0$ is precisely the branch that shape needs. **The trace therefore settles at $c=-2\lambda_{1}\langle\operatorname{tr}Ξ_{0}^{3}\rangle/B$, with $B$ the $c^{2}$ coefficient of the display, and what has to be positive is $B$**:
+
+$$
+\mu_{\Phi}^{2}+4\mu_{2}^{2}+\Bigl(\tfrac32\lambda_{1}+2\lambda_{2}+4\lambda_{3}\Bigr)\langle\operatorname{tr}Ξ_{0}^{2}\rangle>0 .
+$$
+
+**That is not $\mu_{2}^{2}+\lambda_{3}\langle\operatorname{tr}Ξ^{2}\rangle>0$**, which deletes $\mu_{\Phi}^{2}$, $\lambda_{1}$ and $\lambda_{2}$ and rescales what is left; the shorter form is what a potential whose quartics all carry the trace would give, and this one's do not. **The one-line form in *The Primordial Potential* omits the linear term as well, and the shape that article declares is the case where it is largest.** **Tracelessness is not a condition on the field**, and the difference shows in the count: sixteen components at this scale, six eaten, ten survivors. **And the slide costs nothing in the sector**, because the identity commutes with every generator, $[\mathbb 1,t_{a}]=0$, so a shift $\Xi_{0}\mapsto\Xi_{0}+c\,\mathbb 1$ leaves the mass matrix $[\Xi_{0},[\Xi_{0},\cdot\,]]$ unchanged: the same $32v^{2}$, the same nine massless, the same six eaten. **So the vacuum is traceless to leading order and not exactly.** The identity is invisible to the force and visible only to the scalar potential, which is why the corpus's numbers survive the correction untouched.
 
 **This is the one place where the article writes coefficients the group does not supply, and it says so**: the scalar census refuses the potential on purpose, and the refusal is correct at that article's scope.
 
@@ -200,7 +212,7 @@ which is the matrix *The Yukawa Sector* diagonalises, and which gives $m_\ell=3m
 | the three frame directions $M_{j}=E_{jj}-E_{tt}$ | $3$ | $2$ | $-2$ |
 | the sum $iD=i\sum_{j}M_{j}$ | not among the fifteen | $12$ | $-12$ |
 
-**The one defect of the frame is obliqueness, and it is the price of the symmetry.** $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$, so the three directions are at $60^{\circ}$ and the Gram of the fifteen has eigenvalues twelve copies of $2$, one $4$ on the sum direction and $1$ twice. **The fifteen are a basis and not an orthonormal frame**, for a reason of the basis and not of the group: the permutation of $x,y,z$ cannot fix an orthogonal triple, because an orthogonal triple in this space is a triple of differences and any two of them share the sum direction.
+**The one defect of the frame is obliqueness, and it is the price of the symmetry.** $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$, so the three directions are at $60^{\circ}$ to one another and the Gram of the fifteen has eigenvalues twelve copies of $2$, one $4$ on the sum direction and $1$ twice. **The fifteen are a basis and not an orthonormal frame**, for a reason of the basis and not of the group: the permutation of $x,y,z$ cannot fix an orthogonal triple, because an orthogonal triple in this space is a triple of differences and any two of them share the sum direction.
 
 **The repair is one integer rotation and one rescaling.**
 $$
@@ -212,11 +224,17 @@ $$
 $$
 t_{a}=\frac{iG_{a}}{2}\ \ (12\ \text{planes}),\qquad
 t_{j}=-\frac{A_{j}}{\sqrt{8}}\ \ (3\ \text{diagonal directions}),\qquad
-t_{15}=\frac{i(iD)}{\sqrt{24}}=-\frac{D}{\sqrt{24}}\ \ (\text{the vacuum direction}).
+t_{15}=\frac{i(iD)}{\sqrt{24}}=-\frac{D}{\sqrt{24}}\ \ (\text{the vacuum direction, not a fourth diagonal}).
 $$
-**Check.** For a plane, $\operatorname{tr}(t_{a}t_{a})=-\tfrac14(-2)=\tfrac12$; for a frame direction, $\operatorname{tr}(t_{j}t_{j})=\tfrac{1}{8}\cdot 4=\tfrac12$; for the sum, $\operatorname{tr}(t_{15}t_{15})=\tfrac{12}{24}=\tfrac12$. **All three families give one half, which is the statement that the normalisation succeeds — and it succeeds with three coefficients, not two, as before.** **What the frame buys is that the diagonal coefficient is one number instead of two**: the old basis needed $c_{3}=d_{2}-d_{3}$ with a norm of its own, and the symmetric frame needs only the single integer rotation $A_{j}$.
+**The last of the three is a direction and not a sixteenth array.** $A_{x}+A_{y}+A_{z}=D$, so
+$$
+t_{15}=-\frac{D}{\sqrt{24}}=-\frac{t_{x}+t_{y}+t_{z}}{\sqrt3},
+$$
+**a combination of the three frame directions, normalised to $\operatorname{tr}(t_{15}^{2})=\tfrac12$.** The fifteen are the twelve planes and the three $A_{j}$; the label $t_{15}$ is kept because the vacuum direction is what the potential and every mass term are written along. **A display that lists the three frame directions and the sum as four items has sixteen arrays and fifteen generators**, and no normalisation can repair a count.
 
-**The $1/\sqrt6$ is the sum's, and it does not move.** $\sqrt{12/2}=\sqrt6$: the vacuum direction is longer than a plane by that factor, because its entries are $-3$ and $1$ where a plane's are $\pm1$. **That is a property of $D$ and not of the frame**, so every vertex that touches $B'$ carries the same $1/\sqrt6$ as before, and the change of diagonal basis leaves it untouched.
+**Check.** For a plane, $\operatorname{tr}(t_{a}t_{a})=-\tfrac14(-2)=\tfrac12$; for a frame direction, $\operatorname{tr}(t_{j}t_{j})=\tfrac{1}{8}\cdot 4=\tfrac12$; for the sum, $\operatorname{tr}(t_{15}t_{15})=\tfrac{12}{24}=\tfrac12$. **Both families of generators give one half, and so does the normalized sum, which is the statement that the normalisation succeeds — and it succeeds with three coefficients, not two, as before.** **What the frame buys is that the diagonal coefficient is one number instead of two**: the old basis needed $c_{3}=d_{2}-d_{3}$ with a norm of its own, and the symmetric frame needs only the single integer rotation $A_{j}$.
+
+**The $1/\sqrt6$ is the sum's, and it does not move.** $\sqrt{12/2}=\sqrt6$: the vacuum direction is longer than a plane by that factor, because its entries are $-3$ and $1$ where a plane's are $\pm1$. **That is a property of $D$ and not of the frame**, so a vertex that touches $B'$ and is read off the printed arrays carries the same $1/\sqrt6$ as before, and the change of diagonal basis leaves it untouched. **The factor is a conversion and not a coupling**: in the normalised $t_{a}$ every generator has $\operatorname{tr}(t^{2})=\tfrac12$, the vacuum direction among them, so a vertex written in $t_{a}$ carries no $\sqrt6$ anywhere; the $1/\sqrt6$ appears exactly when a vertex is read off the printed arrays $G_{a}$, where the sum has trace norm $12$ against a plane's $2$, and it goes in the direction that divides.
 
 **Why the rescaling is not cosmetic.** A vertex read off a printed array is off by this factor, and a cross section read off a vertex is off by its square. **The factor is stated once, here, so that the articles that print a vertex restate it rather than re-derive it.**
 
@@ -238,12 +256,14 @@ $$
 **The curvature's variation is the covariant derivative of the variation**, $\delta\mathbb{F}_{\imath\jmath}=D_{\imath}\delta\mathbb{A}_{\jmath}-D_{\jmath}\delta\mathbb{A}_{\imath}$, so stationarity of the connection piece alone gives $D_{\imath}F_{\imath\jmath}=0$. With the matter pieces present,
 
 $$
-\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\Bigl(\sum_{f}\bar\xi_{f}\,\varepsilon_{\jmath}\gamma_{\jmath}\,t_{a}\,\xi_{f}+2i\operatorname{tr}\bigl(\bigl(D_{\jmath}Ξ\bigr)\bigl[t_{a},Ξ\bigr]\bigr)\Bigr),
+\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=+g_4\Bigl(\sum_{f}\bar\xi_{f}\,\gamma_{\jmath}\,t_{a}\,\xi_{f}+2i\operatorname{tr}\bigl(\bigl(D_{\jmath}Ξ\bigr)\bigl[t_{a},Ξ\bigr]\bigr)\Bigr),
 $$
 
 **The fermion term is a vector current and the scalar term is bilinear in $Ξ$.** Three things about that line are worth stating, because each is easy to lose in a display assembled from parts.
 
-**One $g_4$ and one sign.** Both terms come from the same variation of the same action, so both carry one power of $g_4$ and the same sign; **factoring the $g_4$ out, $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=-g_4\,j_{a,\jmath}$ with $j$ the bracket, is the same equation and the form the strong sector prints.** **The minus is not decoration**: it is the sign the variation gives with $\mathcal{L}_g=-\tfrac12\operatorname{tr}(\mathbb{F}^{2})$ and the index order $F_{0\imath}$, and the sibling article on the scalar matrix writes the same equation with $g_4$ inside $j$ and the same overall sign. **One convention or the other, and never both.** A display that lets $g_4$ multiply one term and not the other has two different theories under one symbol.
+**One $g_4$ and one sign, and the sign is plus.** Both terms come from the same variation of the same action, so both carry one power of $g_4$ and the same sign; factoring the $g_4$ out, $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=+g_4\,j_{a,\jmath}$ with $j$ the bracket, **is the same equation and the form the strong sector prints**. **The plus is what the weighted variation gives**: $\delta S_g/\delta A_{a,\nu}=\varepsilon_{\nu}\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\nu}$ and $\delta S_\Phi/\delta A_{a,\nu}=-2ig_4\varepsilon_{\nu}\operatorname{tr}((D_{\nu}Ξ)[t_{a},Ξ])$, so the two $\varepsilon_{\nu}$ cancel, the minus stays on the matter side, and **moving it across the equation is where the plus comes from**. A display that keeps a minus on the right has let one of the two $\varepsilon_{\nu}$ go. **The sibling article on the scalar matrix writes the same equation with $g_4$ inside $j$**, $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,t\imath}=-2ig_4\operatorname{tr}((D_{t}Ξ)[t_{a},Ξ])$, **and the two agree because $F_{t\imath}=-F_{\imath t}$**: moving the index order across the equation flips the left side and the current together, so neither version is a different theory and a reader who compares the two without the index order will find a sign that is not there.
+
+**One $\varepsilon$ per contraction.** The $\varepsilon_{\jmath}$ on the left is the weight of the contracted derivative; the current carries a lower index and no $\varepsilon$ of its own. **The fermion bilinear is therefore $\sum_{f}\bar\xi_{f}\gamma_{\jmath}t_{a}\xi_{f}$ and not $\sum_{f}\bar\xi_{f}\varepsilon_{\jmath}\gamma_{\jmath}t_{a}\xi_{f}$**, and the two differ by a sign on the three spatial components while agreeing on the temporal one — **which is why a stray $\varepsilon$ there survives every check of the Gauss law and shows up only in the current's spatial part.**
 
 **The factor two is the commutator's two orderings.** The scalar term is $\partial\mathcal{L}_{\Phi}/\partial A_{a,\jmath}=-2ig_4\operatorname{tr}((D_{\jmath}Ξ)[t_{a},Ξ])$: the $2$ is $\{D_{\jmath}Ξ,[t_{a},Ξ]\}$ against the trace, and the $i$ is what makes the two orderings add rather than cancel (§*The Scalar Piece*). **Deleting either is not a normalisation choice**; the factor multiplies the three-point vertex, so a cross section moves by four.
 
@@ -253,7 +273,7 @@ $$
 
 **The current is covariantly conserved.** Local invariance of the matter action makes $\sum_{\imath}\varepsilon_{\imath}D_{\imath}j_{\imath}$ vanish once the matter fields are on shell, so the conservation is a consequence of the invariance and not a further condition. **The ordinary divergence $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}j_{\imath}$ is not zero**, because it carries the $[A_{\imath},j_{\imath}]$ term. **So no symmetry charge exists**, exactly as in the strong sector: the charge is defined only for the residual $\mathrm{SU}(3)\times\mathrm{U}(1)$ below $M_C$, and above it there is a current and no charge.
 
-**The temporal component of the equation is not an equation of motion but a constraint.** $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,t\imath}=-g_{4}j_{a,t}$ contains no second time derivative of $A_{a,t}$, so it fixes $A_{a,t}$ in terms of the other fields: **a Gauss law per generator, fifteen in all.** Each is first class, so each removes two degrees of freedom from a four-component field, and the count is
+**The temporal component of the equation is not an equation of motion but a constraint.** $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath t}=+g_{4}j_{a,t}$ contains no second time derivative of $A_{a,t}$, so it fixes $A_{a,t}$ in terms of the other fields: **a Gauss law per generator, fifteen in all.** Each is first class, so each removes two degrees of freedom from a four-component field, and the count is
 
 $$
 4\times15\ \longrightarrow\ 2\times15=30
@@ -266,7 +286,7 @@ for the connections, before fixing the representative and with the ghosts counte
 | field | components | on shell |
 | --- | --- | --- |
 | the fifteen $A_{a,\imath}$ | $4\times15=60$ | $30$ |
-| the sixteen $\xi_{f}$ | $4\times16=64$ real | $32$ states |
+| the sixteen $\xi_{f}$ | $4\times16=64$ real (two complex components each) | $32$ states |
 | $Ξ$ | $15+1=16$ real | $16$ real |
 | the ghosts $c_{a}$, $\bar c_{a}$ | $2\times15$ | $0$, loops only |
 
@@ -284,15 +304,26 @@ and the count is a statement about this phase only.
 
 **The action above is correct as a Yang–Mills action for $\mathrm{SU}(4)$. It is not an algebra result, and the difference is measurable.**
 
-The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\mathbb{C})$ has compact part $\mathrm{U}(2)=\mathrm{SU}(2)\times\mathrm{U}(1)$, of real dimension $3+1=4$, and a Lie algebra of fifteen generators does not embed in a four-dimensional one. **The $\mathrm{SU}(2)$ action of *The Lagrangian and the Non-Abelian Connections* is written in the algebra because its three generators are three of the algebra's own directions. The $\mathrm{SU}(4)$ action is written on a $4\times4$ matrix representation that the algebra does not contain.**
+The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\mathbb{C})$ has compact part $\mathrm{U}(2)=\mathrm{SU}(2)\times\mathrm{U}(1)$, of real dimension $3+1=4$, and a Lie algebra of fifteen generators does not embed in a four-dimensional one. **The $\mathrm{SU}(2)$ action of *The Lagrangian and the Non-Abelian Connections* is written in the algebra because its three generators are three of the algebra's own directions.** **The fifteen are not elements of $\mathbb{B}$ at all**: $\mathbb{B}\cong M_{2}(\mathbb{C})$ holds $2\times2$ matrices and these are $4\times4$, so what the algebra fails to contain is the *representation* and not the algebra — $\mathfrak{su}(4)$ is realised on $\mathbb{C}^{4}$, a realisation is a choice, and the choice is one $\mathbb{B}$ cannot make. **The action is written on that representation.**
 
 **What transcription costs, item by item.**
 
 - *The trace.* The invariant density needs a cyclic trace on $\mathbb{C}^{4}$. The algebra supplies one on $\mathbb{C}^{2}$; the enlargement to $\mathbb{C}^{4}$ is a choice of representation, and the fifteen arrays are its matrices.
-- *The curl and the cross product.* In the algebra the $\mathrm{SU}(2)$ bracket is the algebra's own product. Here the coefficients are read off a table of $105$ pairs, and the $80$ nonzero brackets among them are the structure constants.
+- *The curl and the cross product.* In the algebra the $\mathrm{SU}(2)$ bracket is the algebra's own product. Here the coefficients are read off a table of $105$ pairs, and the $80$ nonzero brackets among them — $84$ in the symmetric frame, and §*The Checks* says which count belongs to which frame — are the structure constants.
 - *The invariant density of the algebra.* $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ exists on every element of $\mathbb{B}$ and is not available for this action, because it is not cyclic. **So the one pairing the algebra owns is exactly the one the action cannot use**, and this is the precise sense in which the primordial force is transcribed.
 
 **What transcription does not cost.** The group's content, its representation theory, its anomaly arithmetic and its mass spectrum are all exact. **The three species of statement must be kept apart**: the identity $2\cdot\mathbf{4}\oplus2\cdot\bar{\mathbf{4}}$ is algebra; the matrices $t_{a}$ are a representation; the action is a transcription. Nothing in the block is stronger than the second.
+
+## What Is Not Claimed
+
+**Four statements this article does not make, the ones a hostile reader would supply if it were silent.**
+
+- *Not a derivation of the group, nor of the representation.* $\mathrm{SU}(4)$ is transcribed and nothing here selects fifteen over another count; the $\mathbf4$ and its conjugate are chosen, and a different carrier gives a different vertex table and the same structure.
+- *Not a derivation of the six potential coefficients, nor of the Yukawa's entries*; the vacuum's tracelessness is a consequence to leading order, the shift along the identity is of order $\lambda_{1}v^{3}/\mu_{2}^{2}$ (§*The Display*), and neither number is computed here.
+- *Not a claim that the bracket counts are properties of the group*: $80$ and $84$, $29$ and $31$, are counts in frames, and a count quoted without its frame has quoted nothing.
+- *Not an identification with a measured multiplet, and not a quantum statement*: no particle is placed in a representation here, the masses are *The Yukawa Sector*'s, the running is another article's, and no number on this page is renormalised.
+
+**What would count against it**: a vertex computed from the printed arrays that disagrees with the normalised one by anything other than the stated $\sqrt6$; a bracket count that depends on the frame in a way §*The Checks* denies; a scalar spectrum at the transition that lacks the $32v^{2}$ pattern the mass matrix gives.
 
 ## What the Display Does Not Contain
 
@@ -307,7 +338,7 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 
 ## The Checks
 
-**Eleven numbers, each recomputed from the printed arrays and not quoted.**
+**Fourteen rows, each recomputed from the printed arrays and not quoted.**
 
 | statement | value |
 | --- | --- |
@@ -316,12 +347,12 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 | $\operatorname{tr}\bigl(D^{2}\bigr)$ for $D=M_x+M_y+M_z$ | $12$ |
 | $\operatorname{tr}(M_{j}M_{k})$, the three nonzero off-diagonals of the Gram | $2\delta_{jk}+(1-\delta_{jk})$ |
 | $\operatorname{tr}(A_{j}A_{k})$ with $A_{j}=\sum_kM_k-2M_j$ | $4\delta_{jk}$ |
-| $\operatorname{tr}(A_{j}A_{k})-\bigl[\text{the same in }M\bigr]$ | the rotation $J-2\mathbb 1$, invertible |
+| $\operatorname{tr}(A_{j}A_{k})-\bigl[\text{the same in }M\bigr]$ | $3\delta_{jk}-1=3\mathbb 1-J$, singular along the sum; the rotation itself is $A=(J-2\mathbb 1)M$, invertible |
 | $\operatorname{tr}(t_{a}t_{a})$ for a plane, $t_{a}=iG_{a}/2$ | $\tfrac12$ |
 | $\operatorname{tr}(t_{j}t_{j})$ for a frame direction, $t_{j}=-A_{j}/\sqrt{8}$ | $\tfrac12$ |
-| $\operatorname{tr}(t_{15}t_{15})$ for the vacuum direction, $t_{15}=-D/\sqrt{24}$ | $\tfrac12$ |
-| nonzero brackets of the fifteen | $80$ of $105$ |
-| nonzero brackets $f^{c}_{\ ab}$ | $80$, over $31$ distinct triples in the printed basis |
+| $\operatorname{tr}(t_{15}t_{15})$ for the vacuum direction, $t_{15}=-D/\sqrt{24}=(t_{x}+t_{y}+t_{z})/\sqrt3$ | $\tfrac12$, and it is a combination of the three, not a sixteenth array |
+| nonzero brackets of the fifteen | $84$ of $105$ in the $M$ frame, $80$ in the frame of the two differences and the sum |
+| distinct nonzero triples $\{a,b,c\}$ | $31$ in the $M$ frame, $29$ in the frame of the two differences and the sum |
 | $[A_{tx},A_{ty}]=-A_{xy}$ in both bases | $f=-1$, $F^{c}_{\ ab}=-\tfrac12$ |
 | $[iD,A_{tx}]=-4iS_{tx}$ in both bases | $f=-4$, $F^{c}_{\ ab}=-4/\sqrt{24}=-0.8165$ |
 | $F^{c}_{\ ab}$ against $\sqrt{n_{c}/2n_{a}n_{b}}\,f^{c}_{\ ab}$, every bracket | worst error $0$ |
@@ -332,9 +363,9 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 
 The $\mathrm{SU}(4)$ Lagrangian is one coupling on fifteen generators and seven terms: the curvature's square, the sixteen's kinetic term, the scalar matrix's kinetic term and its potential, and the fixing the representative, ghost and Yukawa pieces. **One $g_4$ enters the curvature and both covariant derivatives**, and that identity, not any vertex, is what the words *one force* mean. **The other nine numbers — $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$, the four quartics, $y$, $\zeta$ and $\theta_{4}$ — are parameters and not the couplings of a second and third force.** **The scalar sector's six are the price of a field that carries no condition**: the trace adds one quadratic and two quartics, and the identity part of the vacuum is invisible to the force, so none of the masses moves.
 
-The normalisation is one integer rotation and one rescaling. The printed fifteen fail to be orthogonal in the three diagonal directions, $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$; the rotation $A_{j}=\sum_{k}M_{k}-2M_{j}$ repairs it, with norm $4$; and $t_{a}=iG_{a}/2$, $t_{j}=i(iA_{j})/\sqrt{8}=-A_{j}/\sqrt{8}$, $t_{15}=i(iD)/\sqrt{24}=-D/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ for all fifteen. The vacuum direction is longer than a plane by $\sqrt6$, so every vertex that touches $B'$ carries the factor $1/\sqrt6$, and that factor comes from the trace and not from the group.
+The normalisation is one integer rotation and one rescaling. The printed fifteen fail to be orthogonal in the three diagonal directions, $\operatorname{tr}(M_{j}M_{k})=2\delta_{jk}+(1-\delta_{jk})$; the rotation $A_{j}=\sum_{k}M_{k}-2M_{j}$ repairs it, with norm $4$; and $t_{a}=iG_{a}/2$, $t_{j}=i(iA_{j})/\sqrt{8}=-A_{j}/\sqrt{8}$, $t_{15}=i(iD)/\sqrt{24}=-D/\sqrt{24}$ then give $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ on the fifteen — the twelve planes and the three $A_{j}$ — and $t_{15}=(t_{x}+t_{y}+t_{z})/\sqrt3$ is the normalised sum direction, a combination of the three and not a sixteenth generator. The vacuum direction is longer than a plane by $\sqrt6$, so a vertex that touches $B'$ and is read off the printed arrays carries the factor $1/\sqrt6$; **in the normalised $t_{a}$ there is no such factor**, and the $\sqrt6$ comes from the trace and not from the group.
 
-The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=-g_4j_{a,\jmath}$ with a fermion term and a scalar term, the scalar one vanishing at $\langleΞ\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the connections, thirty-two states for the fermions and sixteen real for the scalar, and **the ghosts contribute nothing on shell, so the total is seventy-eight.**
+The variation gives one equation and fifteen constraints. $D_{\imath}F_{a,\imath\jmath}=+g_4j_{a,\jmath}$ with a fermion term and a scalar term, the scalar one vanishing at $\langleΞ\rangle=0$; the temporal component is a Gauss law per generator; thirty degrees of freedom survive for the connections, thirty-two states for the fermions and sixteen real for the scalar, and **the ghosts contribute nothing on shell, so the total is seventy-eight.**
 
 The trace is the matrix trace and not the informational reduction. Only cyclicity makes the density invariant, $2\,\mathrm{Sc}(\tilde Q_1\tilde Q_2)$ is not cyclic, and the two agree only where one factor is a scalar. **This is the sharpest technical point of the article**: the one pairing the algebra owns is the one the action cannot use.
 
@@ -348,18 +379,17 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 |---|---|
 | $A_{a,\imath}$, $F_{a,\imath\jmath}$ | Connection and field strength of generator $a$, $a=1,\dots,15$ |
 | $g_4$ | The primordial coupling, one value for the whole group |
-| $T_{a}$, $t_{a}$ | The printed array, and its rescaled form with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
+| $G_{a}$, $t_{a}$ | The printed anti-Hermitian array, and its rescaled form with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ |
 | $G_{a}$ | The printed anti-Hermitian array; the action is written in $t_{a}=iG_{a}/2$, $t_{j}=-A_{j}/\sqrt{8}$, $t_{15}=-D/\sqrt{24}$ |
 | $M_{j}=E_{jj}-E_{tt}$ | the three diagonal generators, the symmetric frame, $\operatorname{tr}(M_jM_k)=2\delta_{jk}+(1-\delta_{jk})$ |
 | $A_{j}=\sum_kM_k-2M_j$ | the orthogonal sibling, $\operatorname{tr}(A_jA_k)=4\delta_{jk}$ |
 | $d_{2}$, $d_{3}$ | the broken phase's two spatial differences, $\tfrac12(M_x-M_y)$ and $\tfrac12(M_y-M_z)$ |
-| $iD$ | The vacuum direction, $\operatorname{diag}(-3i,i,i,i)=i\sum_{j}M_{j}$, trace norm $12$ |
-| $M_{j}$, $A_{j}$ | The frame $E_{jj}-E_{tt}$ and its orthogonal sibling $W_{jj}=\sum_{k}M_{k}-2M_{j}$ |
+| $iD$ | The vacuum direction, $\operatorname{diag}(-3i,i,i,i)=i\sum_{j}M_{j}$, trace norm $12$; its normalised form is $t_{15}=-D/\sqrt{24}=(t_{x}+t_{y}+t_{z})/\sqrt3$, a combination of the three, not a generator |
 | $f^{c}_{\ ab}$ | Structure constants, $[G_{a},G_{b}]=\sum_{c}f^{c}_{\ ab}G_{c}$ and $[t_{a},t_{b}]=i\sum_{c}f^{c}_{\ ab}t_{c}$ |
 | $\xi_{f}$, $\bar\xi_{f}$ | The sixteen Weyl fields, $f=1,\dots,16$ |
 | $Ξ$ | The scalar, a Hermitian $4\times4$, $16$ real components |
 | $V(Ξ)$ | $\mu_{\Phi}^{2}\operatorname{tr}Ξ^{2}+\mu_{2}^{2}(\operatorname{tr}Ξ)^{2}+\lambda_{1}\operatorname{tr}Ξ^{4}+\lambda_{2}(\operatorname{tr}Ξ^{2})^{2}+\lambda_{3}(\operatorname{tr}Ξ)^{2}\operatorname{tr}Ξ^{2}+\lambda_{4}(\operatorname{tr}Ξ)^{4}$, six free coefficients |
-| $\mu_{2}^{2}$ | the coefficient of $(\operatorname{tr}Ξ)^{2}$; positive, and that sign is what makes the vacuum traceless |
+| $\mu_{2}^{2}$ | the coefficient of $(\operatorname{tr}Ξ)^{2}$; positive, and that sign is what puts the trace at the origin to leading order |
 | $y_{\alpha\beta}$ | The Yukawa matrix in the family index |
 | $j_{a,\jmath}$ | The total current: a fermion term and a scalar term |
 | $\zeta$ | The one parameter of the group |

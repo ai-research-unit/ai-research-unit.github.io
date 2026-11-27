@@ -626,7 +626,11 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-primordial-force.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/su4-fluid-equations-from-the-primordial-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html</loc>
@@ -1221,6 +1225,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/spin-one-fluid-equations-from-the-proca-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-path-integral-and-the-proca-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1254,6 +1262,10 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-coupled-proca-equation-in-polar-variables.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-spin-one-fluid-equations-from-the-polar-action.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
@@ -1321,6 +1333,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/spin-half-fluid-equations-from-the-dirac-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1358,6 +1374,10 @@
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-coupled-dirac-equation-in-polar-variables.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-spin-half-fluid-equations-from-the-polar-action.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
@@ -1533,6 +1553,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/klein-gordon-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-interacting-scalar-field.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1571,6 +1595,10 @@
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-coupled-klein-gordon-equation-in-polar-variables.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-klein-gordon-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-path-integral-and-the-coupled-klein-gordon-equation-in-biquaternionic-form.html</loc>
@@ -1781,6 +1809,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/schrodinger-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1823,6 +1855,10 @@
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-lagrangian-and-the-coupled-schrodinger-equation-in-polar-variables.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://a-i-research-unit.gitlab.io/articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://a-i-research-unit.gitlab.io/articles_physics/the-path-integral-and-the-coupled-schrodinger-equation-in-biquaternionic-form.html</loc>
