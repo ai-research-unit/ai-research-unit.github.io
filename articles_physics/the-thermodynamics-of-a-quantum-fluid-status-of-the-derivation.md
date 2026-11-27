@@ -1,7 +1,7 @@
 # __The Thermodynamics of a Quantum Fluid: Status of the Derivation__
 
 **Status, 2026-11-27.** The category this article audits is dissolved. Seventeen of its articles are now the section
-`### From the Fluid Equations to Thermodynamics Equations` in *Biquaternion Universe Action* — the state and its
+`### From the Fluid Equations to the Thermodynamic Equations` in *Biquaternion Universe Fluid Physics and Thermodynamics* — the state and its
 functionals, the kinetic bridge, the local thermal state and the three tests, the departures from equilibrium, and this
 ledger; five are in `#### Thermality` under *Biquaternion Universe Relativity*, where the parameter is defined
 geometrically and algebraically; four are in *Horizons and Their Thermodynamics* under *Biquaternion Universe Gravity and
@@ -30,7 +30,7 @@ The entropy inequalities are real. [The Local Entropy Current](the-local-entropy
 
 ## The Category's Three Layers
 
-The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now sit where their objects are: the ordinary equations in *The fluid's equations and their solutions*, in *Biquaternion Universe Non Relativistic Non Quantum Approximation*, the general statements about them extracted into *From the Field Equation to the Fluid* in *Biquaternion Universe Action*, and the reading of the element in *The Biquaternion Universe and Its Objects*, in *Biquaternion Universe Relativity*. The chain here begins where a state is put on the field.
+The category is ordered, and the order is a dependency chain rather than a sequence of topics. Each layer uses the layer above it and adds one object. The field's own stress and flow, which used to be the first of those layers, now sit where their objects are: the ordinary equations in *The fluid's equations and their solutions*, in *Biquaternion Universe Non Relativistic Non Quantum Approximation*, the general statements about them extracted into *The Skeleton* in *Biquaternion Universe Fluid Physics and Thermodynamics*, and the chart of the element in *The Polar Chart*, the subsection immediately above it in the same category. The chain here begins where a state is put on the field.
 
 The three articles that no longer open it are the whole of that layer: [The Quantum Stress Tensor of the Biquaternion Scalar Field](the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html), which writes $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+(i/c)\vec S_{\mathrm P}$ and shows that the quantum potential is its divergence; [The Spin-Half Fluid of the Biquaternion Dirac Field](the-spin-half-fluid-of-the-biquaternion-dirac-field.html), which assembles the Dirac field's triple — density, frame element, spin direction — and shows that its flow is not a gradient; and [The Nodal Set and Quantized Circulation](the-nodal-set-and-quantized-circulation.html), which proves that the flow is irrotational except on the zero-divisor cone and that the circulation there is $h n/m$.
 
