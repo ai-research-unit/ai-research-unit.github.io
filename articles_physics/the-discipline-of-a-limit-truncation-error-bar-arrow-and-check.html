@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Discipline of a Limit: Truncation, Error Bar, Arrow and Check — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Every corner of The Approximation Lattice is reached by discarding something from the eight-line Lagrangian, and every discard costs a known…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check"><strong>The Discipline of a Limit: Truncation, Error Bar, Arrow and Check</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Every corner of <a href="the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice</a> is reached by discarding something from the eight-line Lagrangian, and every discard costs a known amount. Four requirements make the cost explicit, and a calculation that omits any of them is a claim rather than a result. The requirements are not stylistic. Each one closes a way in which a limit can be wrong while looking right.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\text{truncation with error}\;\to\;\text{arrow}\;\to\;\text{known check}\;\to\;\text{named failure}\;}
+$$</p>
+<p><strong>Why four and not one.</strong> An error bar alone says how wrong the answer might be; it does not say what the answer is. The arrow says what was discarded and therefore what the answer should be. The check says whether the arrow was drawn correctly, by comparing against a case that is already known independently. The failure says where the corner ends, which is the information a reader needs in order to know whether the corner applies to the problem in front of them.</p>
+<h2 id="the-four-requirements">The Four Requirements</h2>
+<p><strong>Each requirement, and the failure mode it excludes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Requirement</th>
+<th>What it forces</th>
+<th>What its absence looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>the truncation and its error</td>
+<td>a number and a size, e.g. "to $\mathcal{O}(v^2/c^2)$, tree level, error $\approx10^{-5}$"</td>
+<td>a limit quoted as exact, with the first neglected term larger than the effect being discussed</td>
+</tr>
+<tr>
+<td>2</td>
+<td>the arrow</td>
+<td>an explicit derivation from the eight-line Lagrangian to the corner</td>
+<td>a corner asserted as a separate theory, with no statement of what was dropped</td>
+</tr>
+<tr>
+<td>3</td>
+<td>the known check</td>
+<td>a result already established independently, reproduced</td>
+<td>a formalism validated only against itself</td>
+</tr>
+<tr>
+<td>4</td>
+<td>the named failure</td>
+<td>the effect the corner cannot produce, stated</td>
+<td>a corner presented as universal, and an unexplained discrepancy later</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth is the one that distinguishes a systematic study from a collection of claims.</strong> A corner that reproduces five known results and silently misses a sixth has been validated on the five; the sixth is where the reader learns the boundary.</p>
+<h2 id="requirement-one-the-truncation-and-its-error">Requirement One: The Truncation and Its Error</h2>
+<p><strong>The statement has a fixed form.</strong> <em>"To $\mathcal{O}(x^n)$ in the coordinate $x$, with the other coordinates at the stated values, the error is the size of the first neglected term."</em> Nothing shorter is usable, because the reader cannot reconstruct which coordinate dominated.</p>
+<p><strong>A worked example, in hydrogen.</strong> The electron's speed is $v=Z\alpha c$, so the non-relativistic coordinate is $Z\alpha=7.3\times10^{-3}$ and its square is $5.3\times10^{-5}$. A calculation that keeps terms to $\mathcal{O}(v^2/c^2)$ therefore carries a relative error of order $10^{-5}$ from that coordinate alone, and the honest statement is "error $\approx10^{-5}$, dominated by the relativistic expansion". The fine structure is itself of order $(Z\alpha)^2$, which means a leading-order calculation and a fine-structure calculation differ by an amount comparable to the error of the leading one — the truncation order must be quoted together with the term being discussed, not separately.</p>
+<p><strong>Dominance and quadrature.</strong> Errors from independent coordinates add in quadrature; errors from the same coordinate do not. A calculation at $\mathcal{O}(\alpha)$ and $\mathcal{O}(v^2/c^2)$ has two independent remainders, of order $2.3\times10^{-3}$ and $5.3\times10^{-5}$, and the sum in quadrature is $2.3\times10^{-3}$ — the electroweak one dominates by a factor of forty, and quoting $10^{-5}$ as "the" error would be false. The budget is not a decoration; it decides which correction is worth computing.</p>
+<p><strong>One coordinate can swamp another completely.</strong> A tree-level width and the same width with one loop differ by $\mathcal{O}(\alpha)$; a matching coefficient computed to $\mathcal{O}(p^2/\Lambda^2)$ but used at $p/\Lambda=1$ has no error bar at all, because the expansion has no small parameter where it is being used. In that case the requirement is to say so and to change corner, not to quote a number.</p>
+<h2 id="requirement-two-the-arrow">Requirement Two: The Arrow</h2>
+<p><strong>An arrow is a derivation, and there are only three ways to draw one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>What is done</th>
+<th>Where it is used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>substitute an ansatz</td>
+<td>write the field as an amplitude times a phase, $e^{iS/\hbar}$, and read the real and imaginary parts</td>
+<td>case 2 and case 5, the classical and adiabatic corners</td>
+</tr>
+<tr>
+<td>integrate out a heavy field</td>
+<td>solve the heavy field's equation of motion and substitute, or expand the propagator at low momentum</td>
+<td>case 6, the Fermi theory and every threshold</td>
+</tr>
+<tr>
+<td>expand in a basis</td>
+<td>project on a complete set of operators of increasing dimension or increasing powers of $1/m$</td>
+<td>case 4, the non-relativistic expansion</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Every arrow starts at a row of the complete Lagrangian.</strong> The scalar's kinetic row produces the phase and therefore the Hamilton–Jacobi function of case 2; the $W$ mass row and the charged-current rows together produce the four-fermion operator of case 6; the fermion kinetic row, expanded in $1/m$, produces the Pauli terms of case 4. An arrow that cannot be traced to a row is not an arrow, and an approximation that needs a term the eight lines do not contain is not a corner of this lattice.</p>
+<p><strong>The arrow also fixes what is not dropped.</strong> Integrating out the $W$ does not merely delete it; the deletion generates a contact term with a coefficient fixed by the mass and the coupling that were removed. A corner with no generated term is a truncation, not an integration, and the difference matters as soon as a loop is computed inside the corner.</p>
+<h2 id="requirement-three-the-known-check">Requirement Three: The Known Check</h2>
+<p><strong>Each corner has a result it must reproduce, and reproducing it validates the arrow.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Corner</th>
+<th>The check</th>
+<th>What success means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>classical relativistic</td>
+<td>Hamilton–Jacobi from the phase; the Proca and Klein–Gordon dispersion laws; $g=2$</td>
+<td>the classical limit is the correct one and the spin is relativistic</td>
+</tr>
+<tr>
+<td>3</td>
+<td>classical non-relativistic</td>
+<td>the Thomas factor $\tfrac12$ in the spin–orbit term; the Bohr spectrum</td>
+<td>the order of the two limits was taken correctly</td>
+</tr>
+<tr>
+<td>4</td>
+<td>quantum non-relativistic</td>
+<td>the Lamb shift, the hyperfine splitting, $a_e$</td>
+<td>loops and bound states coexist without antiparticles</td>
+</tr>
+<tr>
+<td>5</td>
+<td>WKB and eikonal</td>
+<td>Bohr–Sommerfeld quantisation; the Born amplitude from the eikonal phase</td>
+<td>the stationary-phase approximation has the right leading term</td>
+</tr>
+<tr>
+<td>6</td>
+<td>local and low energy</td>
+<td>the muon lifetime from $G_F$; $\beta$ decay</td>
+<td>the matching at the $W$ threshold is correct</td>
+</tr>
+<tr>
+<td>7</td>
+<td>mean field</td>
+<td>the Euler equation and the continuity equation of a perfect fluid; quantised circulation $h/m$</td>
+<td>the hydrodynamic variables are the right ones</td>
+</tr>
+<tr>
+<td>8</td>
+<td>strong field</td>
+<td>the instanton action $8\pi^2/g^2$; the $\mathrm{U}(1)$ anomaly</td>
+<td>the non-perturbative sector is being described at all</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The check is independent or it is nothing.</strong> Reproducing a result that was used to construct the corner proves only consistency. The Thomas factor is a genuine check because it is measured, not assumed; the muon lifetime is a genuine check because $G_F$ is measured at low energy and the lifetime follows; the instanton action is a genuine check because the exponential is not visible in any order of perturbation theory.</p>
+<h2 id="requirement-four-the-named-failure">Requirement Four: The Named Failure</h2>
+<p><strong>Every corner fails somewhere, and the failure is part of its specification.</strong></p>
+<p><strong>Case 2 has no anomalous moment.</strong> At tree level $g=2$ exactly, so the corner predicts $a_e=0$ against a measured $1.16\times10^{-3}$. A reader who uses case 2 for a magnetic moment gets an answer wrong in the third digit and has no way to know it from within the corner.</p>
+<p><strong>Case 3 loses the Lamb shift, and it loses it twice.</strong> The fine structure it produces has the correct $j$-dependence and the correct Thomas factor, and it keeps the $2s_{1/2}$–$2p_{1/2}$ degeneracy that the Dirac spectrum has. The Lamb shift breaks that degeneracy by $1057.845\ \mathrm{MHz}$, and it is a loop effect, so the corner that sets $\hbar\to0$ cannot produce it at any order of its own expansion. This is why the corner is described as fine structure <em>partial</em> and not fine structure complete.</p>
+<p><strong>Case 4 loses pair production, and therefore positronium.</strong> The non-relativistic corner keeps the electron and the photon and deletes the positron; a bound state of an electron and a positron is outside it, and so is every process above the pair threshold. The running of $\alpha$ above $2m_e$ is likewise outside: the corner has a fixed $\alpha$ and the logarithm must be put in by matching.</p>
+<p><strong>Case 5 fails at a turning point.</strong> The WKB wavefunction diverges where the momentum vanishes, and the region around the turning point has to be replaced by an Airy function with connection formulas. The failure is localised and repairable, which is what makes the corner useful; a failure that is not localised would make it useless.</p>
+<p><strong>Case 6 cannot produce the $W$'s own width.</strong> The $W$ has been integrated out, so its decay is a matching condition on the four-fermion coefficient and not a process of the corner. Any question about a $W$ resonance is a question for case 1.</p>
+<p><strong>Case 7 has no quantum potential.</strong> The mean-field corner drops the term $\hbar^2\nabla^2\sqrt\rho/\sqrt\rho$, which is exactly the term that produces interference between separated packets. It reproduces the Euler equation and the quantised circulation and it cannot reproduce the double slit.</p>
+<p><strong>Case 8 has no error bar.</strong> This is the honest failure of the non-perturbative corner: in general there is no expansion parameter, and a number computed there is either exact by a symmetry, controlled by a lattice spacing, or uncontrolled. <a href="strong-field-the-non-perturbative-corner.html">Strong Field: The Non-Perturbative Corner</a> states the three exceptions.</p>
+<h2 id="the-failure-ledger">The Failure Ledger</h2>
+<p><strong>One table, and it is the most useful page of the section.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Reproduces</th>
+<th>Cannot reproduce</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>classical field equations, $g=2$, tree widths</td>
+<td>$a_e$, running, anomalies, $h\to\gamma\gamma$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Thomas factor, Bohr spectrum, spin–orbit</td>
+<td>Lamb shift, degeneracy breaking, $a_e$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Lamb shift, hyperfine, $a_e$</td>
+<td>pairs, positronium, running above $2m_e$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Bohr–Sommerfeld, eikonal phase, spin precession</td>
+<td>tunnelling, turning points, exact spectra beyond two cases</td>
+</tr>
+<tr>
+<td>6</td>
+<td>muon lifetime, $\beta$ decay, the $d\le4$ list</td>
+<td>the $W$ as a propagating field, logs above the threshold</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Euler, continuity, quantised circulation</td>
+<td>quantum potential, double slit, discrete spectrum</td>
+</tr>
+<tr>
+<td>8</td>
+<td>instanton action, anomaly, confinement</td>
+<td>anything with a controlled error bar in general</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The ledger is the section's summary in advance.</strong> A reader who knows which row their problem is in knows which corner to use and which of its failures will bite.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Four requirements, and each closes a distinct failure mode.</li>
+<li>The truncation form. A number, a size, and the coordinate that dominates.</li>
+<li>The quadrature rule. Independent coordinates add in quadrature; a single coordinate does not.</li>
+<li>The dominance example. $\alpha/2\pi=1.2\times10^{-3}$ against $(Z\alpha)^2=5.3\times10^{-5}$: forty to one.</li>
+<li>The arrows. Three techniques, and every arrow traces to a row of the eight lines.</li>
+<li>The integration rule. Removing a field generates a contact term; it does not merely delete.</li>
+<li>The checks. Seven corners, seven independent results.</li>
+<li>The failures. Seven failures named, and one corner with none available.</li>
+<li>The Lamb shift. $\hbar\to0$ cannot produce it at any order, which is why case 3 is partial.</li>
+<li>The ledger. Every corner appears once in each column.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>A corner of the approximation lattice is specified by four statements: the truncation with its error, the arrow from the complete Lagrangian, the known result it reproduces, and the effect it cannot produce.</p>
+<p>The error is a budget and not a decoration. Independent coordinates add in quadrature, the largest coordinate dominates, and a corner used outside its radius has no error bar at all. The arrow is one of three techniques and always begins at a row of the eight lines, which is what keeps the parameter count at nineteen.</p>
+<p>The named failure is the requirement most often omitted and most useful when present: it tells a reader where the corner stops, and it converts a discrepancy into a boundary rather than a puzzle.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>truncation</td>
+<td>the order at which the expansion was stopped, with the size of the first neglected term</td>
+</tr>
+<tr>
+<td>arrow</td>
+<td>the explicit derivation from the eight-line Lagrangian to the corner</td>
+</tr>
+<tr>
+<td>check</td>
+<td>an independently known result the corner must reproduce</td>
+</tr>
+<tr>
+<td>named failure</td>
+<td>the effect the corner provably cannot produce</td>
+</tr>
+<tr>
+<td>radius of a corner</td>
+<td>the coordinate value beyond which the truncation error exceeds the effect being computed</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice</a>. The six coordinates and why the limits do not commute.</li>
+<li><a href="the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>. Every corner with its error and its failure, on one page.</li>
+<li><a href="classical-relativity-the-corner-with-no-quanta.html">Classical Relativity: The Corner with No Quanta</a>. Requirement three, worked in full.</li>
+<li><a href="quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html">Quantum Non-Relativistic: $v/c\to0$ Alone</a>. The corner where the failure ledger is shortest.</li>
+<li><a href="strong-field-the-non-perturbative-corner.html">Strong Field: The Non-Perturbative Corner</a>. The corner with no error bar.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

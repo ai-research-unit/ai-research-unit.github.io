@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Field Strengths: One Kinetic Piece per Gauge Field — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The first four pieces of the list are the squared curvatures of the four gauge fields,,, and. One piece per field, no cross terms, and three of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-four-field-strengths-one-kinetic-piece-per-gauge-field"><strong>The Four Field Strengths: One Kinetic Piece per Gauge Field</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The first four pieces of the list are the squared curvatures of the four gauge fields, $-\tfrac14G^a_{\mu\nu}G^{a\mu\nu}$, $-\tfrac14F_{\mu\nu}F^{\mu\nu}$, $-\tfrac14Z_{\mu\nu}Z^{\mu\nu}$ and $-\tfrac12W^+_{\mu\nu}W^{-\mu\nu}$. One piece per field, no cross terms, and three of the four are not linear in the fields.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\mathcal{L}_{\mathrm{con}}=-\tfrac14G^a_{\mu\nu}G^{a\mu\nu}-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac14Z_{\mu\nu}Z^{\mu\nu}-\tfrac12W^+_{\mu\nu}W^{-\mu\nu}\;}
+$$</p>
+<p><strong>Why four and not two.</strong> A reader who expects a Yang–Mills term for the gluons and a Maxwell term for the photon will count two. There are four, because the electroweak sector has two neutral fields and one charged pair after the rotation, and each is a separate gauge field with its own curvature.</p>
+<p><strong>The standing.</strong> All four pieces are standard. The corpus's own derivation of the connection action is <a href="the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a> and <a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics</a>; this article writes the four mass-basis pieces and states the one structural difference between them.</p>
+<h2 id="conventions">Conventions</h2>
+<p><strong>The metric and the indices.</strong> The displays of this category use $g_{\mu\nu}=(1,-1,-1,-1)$ and $\partial_\mu=\partial/\partial x^\mu$. The corpus writes the same pieces with $\imath$ indices and the rule $\sum_{\imath}X_{\imath}Y_{\imath}=-X\cdot Y$; the dictionary is that one line, and it is stated in <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>.</p>
+<p><strong>The covariant derivative on the charged field.</strong> On $W^+_\mu$,</p>
+<p>$$
+D_\mu W^+_\nu=\bigl(\partial_\mu+ieA_\mu+ig\cos\theta_W\,Z_\mu\bigr)W^+_\nu ,
+$$</p>
+<p>and on $W^-_\mu$ the same with the signs reversed. The two coefficients follow from the charge of the field and its isospin: the photon couples to $Q=+1$ with $e$, and the $Z$ couples to $T_3=+1$ with $g\cos\theta_W$.</p>
+<p><strong>The sign of the kinetic terms.</strong> Each is negative, so that the Hamiltonian is positive. This is the same choice the corpus makes for its curvature term, and the sign is unchanged by the dictionary because the weight over two indices cancels the flip.</p>
+<h2 id="the-four-curvatures">The Four Curvatures</h2>
+<p><strong>Three are written with a commutator and one is not.</strong></p>
+<p>$$
+G^a_{\mu\nu}=\partial_\mu G^a_\nu-\partial_\nu G^a_\mu+g_s f^{abc}G^b_\mu G^c_\nu ,
+$$</p>
+<p>$$
+W^a_{\mu\nu}=\partial_\mu W^a_\nu-\partial_\nu W^a_\mu+g\varepsilon^{abc}W^b_\mu W^c_\nu ,
+\qquad
+B_{\mu\nu}=\partial_\mu B_\nu-\partial_\nu B_\mu .
+$$</p>
+<p><strong>The rotation and the two neutral curvatures.</strong> With $W^3_\mu=\cos\theta_WZ_\mu+\sin\theta_WA_\mu$ and $B_\mu=-\sin\theta_WZ_\mu+\cos\theta_WA_\mu$,</p>
+<p>$$
+F_{\mu\nu}=\sin\theta_W\,W^3_{\mu\nu}+\cos\theta_W\,B_{\mu\nu},
+\qquad
+Z_{\mu\nu}=\cos\theta_W\,W^3_{\mu\nu}-\sin\theta_W\,B_{\mu\nu},
+$$</p>
+<p>and since the rotation is constant, no derivative acts on it. Both neutral curvatures are linear in the fields.</p>
+<p><strong>The charged curvature.</strong> With $W^\pm_\mu=(W^1_\mu\mp iW^2_\mu)/\sqrt2$ and the $W^3$ curvature of the display above,</p>
+<p>$$
+W^+_{\mu\nu}=\partial_\mu W^+_\nu-\partial_\nu W^+_\mu+i g\bigl(W^3_\mu W^+_\nu-W^3_\nu W^+_\mu\bigr),
+\qquad
+W^3_{\mu\nu}=\partial_\mu W^3_\nu-\partial_\nu W^3_\mu+i g\bigl(W^-_\mu W^+_\nu-W^+_\mu W^-_\nu\bigr).
+$$</p>
+<p><strong>The second of these two lines is the one that is usually left out.</strong> It carries the $W^+W^-$ bilinear in the neutral curvature, and that bilinear is where the four-vector vertex lives. A treatment that writes only $|D_\mu W^+_\nu-D_\nu W^+_\mu|^2$ with an $A$–$Z$ background will miss the $W^+W^-W^+W^-$ structure entirely, because the structure comes from the neutral curvature and not from the charged one. <a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a> enumerates all six.</p>
+<p><strong>Why the $Z$ curvature has no commutator of its own and still produces self-interactions.</strong> The neutral field's non-abelian self-coupling is carried by the covariant derivative of the charged field and by the commutator in $W^3_{\mu\nu}$. A commutator written directly in $Z_{\mu\nu}$ would require $Z$ to rotate into something, and in the mass basis the residual group is $U(1)_{\mathrm{em}}$, under which $Z$ is neutral and inert. The self-interactions are still there; they have moved into the charged sector.</p>
+<h2 id="the-four-pieces">The Four Pieces</h2>
+<p><strong>Normalisation.</strong> The charged piece carries $\tfrac12$ and the neutral ones $\tfrac14$, because $W^+_{\mu\nu}W^{-\mu\nu}$ counts the two real components of the complex field twice.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Piece</th>
+<th>Field</th>
+<th>Linearity</th>
+<th>Self-interactions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-\tfrac14G^aG^a$</td>
+<td>gluon</td>
+<td>non-abelian</td>
+<td>three-gluon, four-gluon</td>
+</tr>
+<tr>
+<td>$-\tfrac14FF$</td>
+<td>photon</td>
+<td>abelian</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$-\tfrac14ZZ$</td>
+<td>$Z$</td>
+<td>linear in the mass basis</td>
+<td>none, in this piece</td>
+</tr>
+<tr>
+<td>$-\tfrac12W^+W^-$</td>
+<td>$W^\pm$</td>
+<td>non-abelian</td>
+<td>the six structures, with the neutral curvature</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The splitting of the neutral kinetic terms.</strong> Before the rotation the two neutral pieces are $-\tfrac14W^3_{\mu\nu}W^{3\mu\nu}-\tfrac14B_{\mu\nu}B^{\mu\nu}$ and no mixed term exists. After it the same two pieces are $-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac14Z_{\mu\nu}Z^{\mu\nu}$, because the rotation is orthogonal. The absence of a $Z_{\mu\nu}F^{\mu\nu}$ piece is the orthogonality of the rotation, not a separate dynamical statement.</p>
+<p><strong>No cross term between different fields.</strong> A term $G^a_{\mu\nu}W^{a\mu\nu}$ is forbidden by colour, and $W^+_{\mu\nu}F^{\mu\nu}$ by charge. The four pieces are separate because the residual group is a product and each curvature transforms in a different representation.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Four pieces, twelve fields, and one piece per field type.</li>
+<li>The linearity. $F_{\mu\nu}$ and $Z_{\mu\nu}$ are linear in the fields; $G^a_{\mu\nu}$ and $W^a_{\mu\nu}$ are not.</li>
+<li>The rotation's orthogonality. $\sin^2\theta_W+\cos^2\theta_W=1$, so the neutral quadratic form is preserved and no mixed piece appears.</li>
+<li>The charged curvature's charge. $W^+_{\mu\nu}$ carries $Q=+1$: the covariant derivative's photon term is $+ieA_\mu$, and the $W^3$ term is neutral, so the charge is the field's.</li>
+<li>The coupling ratio. The $Z$ coefficient of the charged field is $g\cos\theta_W$ and its photon coefficient is $e=g\sin\theta_W$, so the ratio is $\cot\theta_W$.</li>
+<li>The $W$-only quartic. Setting $A=Z=0$ in the two curvature displays leaves the $W^3$ commutator, which squares to the four-$W$ structure; setting $W^\pm=0$ leaves nothing, which is why there is no three-$W$ vertex.</li>
+<li>The degree-of-freedom count. Twelve massless fields times two polarisations is twenty-four, before the masses are added.</li>
+<li>The sign. Each piece is negative, and each gives a positive energy density after the Legendre transform.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The four kinetic pieces are the squared curvatures of the four gauge fields, with coefficients $-\tfrac14$ for the three real fields and $-\tfrac12$ for the complex pair. The gluon and the charged field have non-abelian curvatures; the photon and the $Z$ have linear ones, because the rotation to the mass basis is constant and the residual group is abelian.</p>
+<p>The charged curvature carries the $A$ and $Z$ couplings through a covariant derivative, and the neutral curvature carries a $W^+W^-$ bilinear. The second fact is the one a shortened treatment drops, and dropping it loses the four-$W$ vertex.</p>
+<p>No cross term exists between the four pieces, for reasons of colour and charge. The absence of a $Z_{\mu\nu}F^{\mu\nu}$ piece is the orthogonality of the rotation and not a separate assumption.</p>
+<p>The four pieces are the first four rows of the forty-seven and the beginning of the lineage: they descend from two ancestors, the strong kinetic term and the two electroweak kinetic terms.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G^a_{\mu\nu}$</td>
+<td>Gluon curvature, adjoint of $SU(3)_c$</td>
+</tr>
+<tr>
+<td>$F_{\mu\nu}$</td>
+<td>Photon curvature of $U(1)_{\mathrm{em}}$</td>
+</tr>
+<tr>
+<td>$Z_{\mu\nu}$</td>
+<td>$Z$ curvature, linear in the mass basis</td>
+</tr>
+<tr>
+<td>$W^\pm_{\mu\nu}$</td>
+<td>Charged curvature, with the $A$ and $Z$ couplings</td>
+</tr>
+<tr>
+<td>$W^3_{\mu\nu}$</td>
+<td>Neutral $SU(2)$ curvature, carrying the $W^+W^-$ bilinear</td>
+</tr>
+<tr>
+<td>$f^{abc}$, $\varepsilon^{abc}$</td>
+<td>Structure constants of the two non-abelian factors</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>The rotation angle between $(W^3,B)$ and $(Z,A)$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-electroweak-theory.html">The Lagrangian and the Electroweak Theory</a>. The connection action before the rotation.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</a>. The strong curvature and its two self-interactions.</li>
+<li><a href="the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>. The curvature as the vector part of a product.</li>
+<li><a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States</a>. The rotation used above.</li>
+<li><a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a>. The six structures contained in these four pieces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The QED Piece: One Charge Matrix and the Charge Table It Fixes — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The electromagnetic interaction contributes one row to the forty-seven. The row contains every charged field in the content, and it contains…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes"><strong>The QED Piece: One Charge Matrix and the Charge Table It Fixes</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The electromagnetic interaction contributes one row to the forty-seven. The row contains every charged field in the content, and it contains them through one matrix $Q$ whose entries are fixed by the hypercharges. The matrix is not a parameter: it is a table, and the table is the charge assignment of the twelve species.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\mathcal{L}_{\mathrm{QED}}=-e\sum_{\psi}\bar\psi\gamma^\mu Q_\psi\psi\,A_\mu\;,\qquad Q=\mathrm{diag}\Bigl(\tfrac23,\tfrac23,\tfrac23,-\tfrac13,-\tfrac13,-\tfrac13,-1,-1,-1,0,0,0\Bigr)\;}
+$$</p>
+<p><strong>Why one row and not twelve.</strong> The piece is one monomial with one coupling and one matrix. The twelve species enter as the entries of the matrix, and a reader who writes twelve separate terms has written the same row expanded. The first convention of <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a> folds the sum.</p>
+<p><strong>The standing.</strong> The piece is standard and the charge assignment is the content's. What this article adds is the statement that the matrix fixes the table, that the table has no free entry once the hypercharges are fixed, and that the row therefore costs one constant and not twelve.</p>
+<h2 id="the-piece">The Piece</h2>
+<p><strong>Written out.</strong></p>
+<p>$$
+\mathcal{L}_{\mathrm{QED}}=-e\sum_{\psi}\bar\psi\,\gamma^\mu Q_\psi\,\psi\,A_\mu ,
+$$</p>
+<p>with $\psi$ running over the twelve species and $Q_\psi$ the entry of the charge matrix for that species.</p>
+<p><strong>The charge table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Species</th>
+<th>$T_3$</th>
+<th>$Y$</th>
+<th>$Q=T_3+Y$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u,c,t$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$-\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$\nu_e,\nu_\mu,\nu_\tau$</td>
+<td>$+\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule behind the table.</strong> $Q=T_3+Y$, with $T_3$ the weak isospin of the left-handed component and $Y$ the hypercharge. The table is what the assignment produces, and every entry is a rational number fixed by the two columns on its left.</p>
+<p><strong>Why the matrix is diagonal.</strong> The photon couples to the charge and the charge is a property of the species; no charged current flows through the photon at tree level, because the photon is neutral. A flavour-changing photon coupling would need an off-diagonal entry in $Q$, and $Q$ is diagonal in the mass basis by construction.</p>
+<h2 id="what-the-table-fixes">What the Table Fixes</h2>
+<p><strong>The charges of the composite states.</strong> A proton is $uud$, so its charge is $\tfrac23+\tfrac23-\tfrac13=+1$; a neutron is $udd$, so $\tfrac23-\tfrac13-\tfrac13=0$. The neutrality of the hydrogen atom is then the statement that the electron's $-1$ cancels the proton's $+1$, and it follows from the same table.</p>
+<p><strong>The anomaly conditions.</strong> The sum of the charges over a generation, weighted by colour and by chirality, vanishes. The table is not arbitrary: a different assignment would produce a triangle anomaly and the theory would not be renormalisable. The condition is a constraint on the content and not a piece of the list.</p>
+<p><strong>The relation to the weak couplings.</strong> $e=g\sin\theta_W$. The QED coupling is not independent of the two unbroken ones; it is the combination that survives the rotation, which is why the row costs one constant and not a new pair. <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> places $e$ among the eighteen.</p>
+<p><strong>The charge of the $W$.</strong> The $W$ carries $\pm1$, and its coupling to the photon is not in this row: it is a triple gauge vertex inside the field strength, counted among the six vertices of <a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a>. The distinction is the same one the census makes everywhere: a fermion–fermion–photon structure is a row, and a three-gauge structure is a vertex.</p>
+<h2 id="what-the-row-does-not-fix">What the Row Does Not Fix</h2>
+<p><strong>It does not fix the masses.</strong> The charge matrix is flavour-blind within a charge class: $u$, $c$ and $t$ have the same entry, and the row cannot tell them apart. The masses are nine separate rows from the Yukawa term.</p>
+<p><strong>It does not fix the mixing.</strong> The photon coupling is diagonal in the mass basis, so there is no electromagnetic analogue of $V_{\mathrm{CKM}}$. A reader who expects a mixing matrix in QED is expecting the charged current's structure in a place where the gauge field is neutral.</p>
+<p><strong>It does not fix $e$'s value.</strong> The row carries the symbol and not the number; the value is a measurement and belongs to <a href="the-data-boundary.html">The Data Boundary</a>.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The row count. One row for twelve species.</li>
+<li>The matrix. Diagonal, with four distinct entries.</li>
+<li>The entries. $\tfrac23$, $-\tfrac13$, $-1$, $0$, from $Q=T_3+Y$.</li>
+<li>The proton. $\tfrac23+\tfrac23-\tfrac13=+1$.</li>
+<li>The neutron. $\tfrac23-\tfrac13-\tfrac13=0$.</li>
+<li>The neutrino. $Q=0$, so no photon coupling.</li>
+<li>The coupling. $e=g\sin\theta_W$, one constant and not a new pair.</li>
+<li>The $W$. Its photon coupling is a triple vertex and not a row.</li>
+<li>The flavour blindness. The entry depends on the charge class and not on the mass.</li>
+<li>The anomalies. The charge sums cancel per generation, which is a constraint on the content.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>QED is one row of the forty-seven: one monomial with one coupling $e$ and one diagonal matrix $Q$. The matrix's entries are the charge table, and the table is fixed by $Q=T_3+Y$ once the hypercharges are assigned.</p>
+<p>The row fixes the charges of the composite states — the proton's $+1$ and the neutron's $0$ are sums of three entries — and it satisfies the anomaly conditions, which are constraints on the content rather than pieces of the list. The coupling is not independent: $e=g\sin\theta_W$, which is why the row costs one constant.</p>
+<p>The row is flavour-blind and diagonal, so it fixes no mass and no mixing. The photon's coupling to the $W$ is a triple gauge vertex and belongs with the other five structures of that kind.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Q$</td>
+<td>The charge matrix, diagonal in the mass basis</td>
+</tr>
+<tr>
+<td>$T_3$</td>
+<td>Weak isospin of the left-handed component</td>
+</tr>
+<tr>
+<td>$Y$</td>
+<td>Hypercharge</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>The electromagnetic coupling, $g\sin\theta_W$</td>
+</tr>
+<tr>
+<td>twelve species</td>
+<td>six quarks, three charged leptons, three neutrinos</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html">The Charge Theorem</a>. Where the charge assignment comes from.</li>
+<li><a href="the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece</a>. The same table read through the $Z$.</li>
+<li><a href="the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Replacement of the Derivative</a>. Where the row comes from.</li>
+<li><a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a>. The $\gamma W^+W^-$ vertex, which is not this row.</li>
+<li><a href="the-data-boundary.html">The Data Boundary</a>. The value of $e$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

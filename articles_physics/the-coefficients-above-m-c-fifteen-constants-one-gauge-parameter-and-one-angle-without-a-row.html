@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coefficients Above $M_C$: Fifteen Constants, One Gauge Parameter and One Angle Without a Row — Biquaternion Universe</title>
+  <meta name="description" content="The eleven written rows of the census carry fifteen constants.">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coefficients-above-math0-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row"><strong>The Coefficients Above $M_C$: Fifteen Constants, One Gauge Parameter and One Angle Without a Row</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The eleven written rows of <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">the census</a> carry fifteen constants.</p>
+<p>$$
+15=1+2+4+8
+$$</p>
+<p>One coupling, two scalar masses, four quartics, eight Yukawa numbers. $\zeta$ sits in the gauge-fixing row, which is outside the census. $\theta_4$ multiplies a total derivative and so multiplies no row. Seven further constants belong to the six declared zeros.</p>
+<h2 id="what-counts-as-a-parameter">What Counts as a Parameter</h2>
+<p>A constant is a parameter when it multiplies a written structure, no field redefinition removes it, and no gauge choice or rephasing removes it. The three removals are distinct: canonical normalisation rescales a field, $\zeta$ is a gauge choice, and the copy basis absorbs six of a Yukawa matrix's eight entries.</p>
+<p>Dimension splits the fifteen.</p>
+<p>$$
+[\mu_{\Phi}^{2}]=[\mu_{2}^{2}]=2,
+\qquad
+[g_{4}]=[\lambda_{k}]=[y]=0 .
+$$</p>
+<p>Thirteen dimensionless constants and two masses. The two masses are one scale and one ratio.</p>
+<h2 id="the-fifteen-by-block">The Fifteen, by Block</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>block</th>
+<th>rows</th>
+<th>constants</th>
+<th>names</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$g_{4}$</td>
+</tr>
+<tr>
+<td>scalar mass</td>
+<td>$4$, $5$</td>
+<td>$2$</td>
+<td>$\mu_{\Phi}^{2}$, $\mu_{2}^{2}$</td>
+</tr>
+<tr>
+<td>quartic</td>
+<td>$6$–$9$</td>
+<td>$4$</td>
+<td>$\lambda_{1}$–$\lambda_{4}$</td>
+</tr>
+<tr>
+<td>Yukawa</td>
+<td>$10$, $11$</td>
+<td>$8$</td>
+<td>$y$, $y'$</td>
+</tr>
+</tbody>
+</table></div>
+<p>One coupling, not fifteen: $\mathrm{SU}(4)$ is one simple factor. Two masses, not sixteen: only $\operatorname{tr}\Xi^{2}$ and $(\operatorname{tr}\Xi)^{2}$ are invariant at degree two. Four quartics, not five: five monomials exist at degree four, and the fifth is row $17$ with a zero.</p>
+<p>Eight Yukawa numbers, not sixteen. A $2\times2$ complex matrix has eight real entries and the copy basis removes six, leaving $8-8+2=2$. Two matrices share one $\mathrm{U}(2)\times\mathrm{U}(2)$ and a generic pair has no stabiliser, so the pair carries $16-8=8$: two singular values each, plus the four numbers in the relative unitary.</p>
+<h2 id="the-two-outside">The Two Outside</h2>
+<p>$$
+\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a}\bigl(\partial_{\imath}A_{a,\imath}\bigr)^{2},
+\qquad
+\mathcal{L}_{\theta}=\theta_{4}\,\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}.
+$$</p>
+<p>$\zeta$ multiplies a written row and cancels from every observable. $\theta_4$ multiplies nothing, because the fourth condition excluded its structure. "Sixteen parameters" is then right about the number and wrong about the kind.</p>
+<h2 id="the-seven-that-sleep">The Seven That Sleep</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>structure</th>
+<th>constants</th>
+<th>warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$12$</td>
+<td>$m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}$</td>
+<td>$2$</td>
+<td>declined</td>
+</tr>
+<tr>
+<td>$13$</td>
+<td>$c\,\operatorname{tr}\Xi$</td>
+<td>$1$</td>
+<td>forced to zero by the vacuum</td>
+</tr>
+<tr>
+<td>$14$–$16$</td>
+<td>the three cubics</td>
+<td>$3$</td>
+<td>declared</td>
+</tr>
+<tr>
+<td>$17$</td>
+<td>$\lambda_{5}\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$</td>
+<td>$1$</td>
+<td>declared</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td></td>
+<td>$\mathbf{7}$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>They are not added to the fifteen. The bare mass also shares its flavour group with $y$, so switching it on gives three matrices under one group and $24-8=16$ numbers, not eight plus two.</p>
+<h2 id="what-the-fifteen-do-not-fix">What the Fifteen Do Not Fix</h2>
+<p>Every mass is a coefficient, so the phase predicts no mass. It predicts one ratio: the condensate's $(-3,1,1,1)$ makes a lepton-line fermion three times heavier than a spatial-line fermion at the same singular value.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>$1+2+4+8=15$.</li>
+<li>Thirteen dimensionless and two of dimension two.</li>
+<li>Four quartics written, five admitted; the fifth is row $17$.</li>
+<li>One matrix $8-8+2=2$; a pair $16-8=8$; neither is four.</li>
+<li>$\zeta$ has a row, $\theta_4$ has none.</li>
+<li>The sleeping: $2+1+3+1=7$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Fifteen constants over eleven rows: one coupling, two masses, four quartics, eight Yukawa numbers. Thirteen are dimensionless; the two masses are one scale and one ratio. $\zeta$ multiplies a row and cancels; $\theta_4$ multiplies no row. Seven more constants sleep in the declared zeros and are never added to the fifteen.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{4}$</td>
+<td>the one gauge coupling; row $1$</td>
+</tr>
+<tr>
+<td>$\mu_{\Phi}^{2}$, $\mu_{2}^{2}$</td>
+<td>the two scalar masses, dimension two; rows $4$, $5$</td>
+</tr>
+<tr>
+<td>$\lambda_{1}$–$\lambda_{4}$</td>
+<td>the four quartics; rows $6$–$9$</td>
+</tr>
+<tr>
+<td>$y$, $y'$</td>
+<td>the two Yukawa matrices; eight real numbers</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>gauge-fixing parameter</td>
+</tr>
+<tr>
+<td>$\theta_{4}$</td>
+<td>vacuum angle, no row</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a></li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a></li>
+<li><a href="the-audit-above-m-c-every-constant-against-every-piece.html">The Audit Above $M_C$</a></li>
+<li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector</a></li>
+<li><a href="the-primordial-coupling.html">The Primordial Coupling</a></li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

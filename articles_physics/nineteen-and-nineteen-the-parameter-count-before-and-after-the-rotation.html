@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nineteen and Nineteen: The Parameter Count Before and After the Rotation — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The Standard Model has nineteen parameters. Written in the symmetric phase it displays sixty numbers and nineteen survive; written in the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation"><strong>Nineteen and Nineteen: The Parameter Count Before and After the Rotation</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The Standard Model has nineteen parameters. Written in the symmetric phase it displays sixty numbers and nineteen survive; written in the broken phase it displays nineteen and none is redundant. The two counts agree, and this article shows the agreement sector by sector rather than asserting it.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;60\;\xrightarrow[\;41\text{ removed}\;]{}\;19\;\equiv\;19\;}
+$$</p>
+<p><strong>Why the equality is not obvious.</strong> The two descriptions do not look alike. One carries three gauge couplings and two scalar parameters; the other carries one charge, one mixing angle, one vacuum value and one mass. One carries three complex Yukawa matrices; the other carries nine masses and four mixing parameters. A reader who counts the letters will get different answers unless the map between the two sets of letters is written out.</p>
+<p><strong>The standing.</strong> The symmetric-phase count is the corpus's, from <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>; the broken-phase count is the parameter table's, from <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. What this article adds is the comparison, which neither of those makes.</p>
+<h2 id="the-symmetric-count-in-one-table">The Symmetric Count, in One Table</h2>
+<p><strong>Sixty written, forty-one removed, nineteen physical.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Written</th>
+<th>Group acting</th>
+<th>Stabiliser</th>
+<th>Physical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>gauge</td>
+<td>$3$</td>
+<td>—</td>
+<td>—</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>scalar</td>
+<td>$2$</td>
+<td>—</td>
+<td>—</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>vacuum angle</td>
+<td>$1$</td>
+<td>—</td>
+<td>—</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>quark flavour</td>
+<td>$36$</td>
+<td>$U(3)_Q\times U(3)_u\times U(3)_d$, $27$</td>
+<td>$U(1)_B$, $1$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>lepton flavour</td>
+<td>$18$</td>
+<td>$U(3)_L\times U(3)_e$, $18$</td>
+<td>$U(1)^3$, $3$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{60}$</td>
+<td>$\mathbf{45}$</td>
+<td>$\mathbf{4}$</td>
+<td>$\mathbf{19}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rule of the count.</strong> The physical number is the written number less the dimension of the group that acts, plus the dimension of the subgroup that leaves the couplings in their diagonal form. The last term is not a fudge: after diagonalisation a residual abelian group remains and it acts on nothing.</p>
+<p><strong>The removal, graded by sector.</strong> The quark sector loses $36-27+1=26$; the lepton sector loses $18-18+3=15$. The two add to forty-one.</p>
+<p><strong>Why the removal is not a small correction.</strong> The forty-one numbers are the freedom of choice of flavour basis. They are not small, they are not approximately zero, and no measurement could ever see them. A count that kept them would be a count of the Lagrangian's letters and not of the theory.</p>
+<h2 id="the-broken-count-in-the-same-form">The Broken Count, in the Same Form</h2>
+<p><strong>Nineteen written, none removed.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sector</th>
+<th>Written</th>
+<th>Removed</th>
+<th>Physical</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>strong</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>electroweak</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>scalar</td>
+<td>$2$</td>
+<td>$0$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>vacuum angle</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>quark flavour</td>
+<td>$10$</td>
+<td>$0$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>lepton flavour</td>
+<td>$3$</td>
+<td>$0$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{19}$</td>
+<td>$\mathbf{0}$</td>
+<td>$\mathbf{19}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why nothing is removed.</strong> The mass basis is a choice already made. Once the nine masses are numbers, the bi-unitary transformations that produced them have been spent, and the only freedom left is a residual abelian group acting on each species by a phase, which changes nothing. The count of written numbers is therefore the count of physical ones.</p>
+<p><strong>The quark flavour block is ten: six masses and four mixing parameters.</strong> The four are three angles and one phase, and their counting is the counting of a unitary matrix modulo rephasing. A general $3\times3$ unitary has nine parameters; rephasing the six quark fields removes $2N-1=5$; four remain.</p>
+<p><strong>The lepton flavour block is three: three masses and no mixing.</strong> In the minimal model there is no right-handed neutrino, so there is no leptonic mixing matrix to count. The matrix exists in principle, but it multiplies a neutrino mass term that the model does not have, and a matrix that multiplies nothing is not a parameter.</p>
+<h2 id="the-map-between-the-two-tables">The Map Between the Two Tables</h2>
+<p><strong>Row by row.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symmetric row</th>
+<th>Broken row</th>
+<th>The map</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_s$</td>
+<td>$g_s$</td>
+<td>identity</td>
+</tr>
+<tr>
+<td>$g$, $g_{\mathrm Y}$</td>
+<td>$e$, $\theta_W$</td>
+<td>$e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$, $\tan\theta_W=g_{\mathrm Y}/g$</td>
+</tr>
+<tr>
+<td>$\mu^2$, $\varpi_{\mathrm{cpl}}$</td>
+<td>$v$, $m_h$</td>
+<td>$v^2=\mu^2/\varpi_{\mathrm{cpl}}$, $m_h^2=2\varpi_{\mathrm{cpl}}v^2$</td>
+</tr>
+<tr>
+<td>$y_u$, $y_d$, $y_e$</td>
+<td>nine masses, four mixing parameters</td>
+<td>singular values and the mismatch of the two diagonalisations</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>identity</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The flavour row is the only one where the map is not a coordinate change on a fixed number of letters.</strong> Three complex $3\times3$ matrices carry fifty-four real numbers, which is thirty-six plus eighteen. The broken side carries thirteen. The difference is the forty-one, and the map is many-to-one: the same thirteen physical numbers arise from a forty-one-dimensional family of matrices. That is what a redundancy is, and it is why the symmetric count needs the group action to be stated.</p>
+<p><strong>The gauge and scalar rows are coordinate changes on two-dimensional spaces.</strong> Two letters become two letters in both cases, and the maps are invertible. Nothing is removed and nothing is created; the names change because the basis changes.</p>
+<h2 id="why-the-count-cannot-drift">Why the Count Cannot Drift</h2>
+<p><strong>Three ways a count can fail, and none of them happens here.</strong></p>
+<ul>
+<li>A piece with no coefficient. Every quadratic piece carries one and every interaction carries one; <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> maps them.</li>
+<li>A coefficient shared by two pieces in one description and not in the other. The $W^+W^-ZZ$ vertex is fixed by $e$ and $\theta_W$ in the broken phase and by $g$ and $g_{\mathrm Y}$ in the symmetric one; the sharing is the same sharing under the map.</li>
+<li>A parameter multiplying nothing in one description and something in the other. $\theta_{\mathrm{QCD}}$ multiplies nothing in both, because the operator is a total derivative before and after the breaking.</li>
+</ul>
+<p><strong>The structural reason the counts agree.</strong> The rotation is an invertible change of basis in the space of fields, and a change of basis cannot change the number of independent coefficients of a function of those fields. The count is a property of the function, and the two descriptions are two writings of one function.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The symmetric sum. $3+2+1+36+18=60$.</li>
+<li>The removal. $27-1=26$ in the quark sector and $18-3=15$ in the lepton sector, and $26+15=41$.</li>
+<li>The symmetric physical count. $60-41=19$.</li>
+<li>The quark block. $36-27+1=10$, and $6$ masses $+3$ angles $+1$ phase $=10$.</li>
+<li>The lepton block. $18-18+3=3$, three masses.</li>
+<li>The broken sum. $1+2+2+1+10+3=19$.</li>
+<li>The identity. $19=19$, and the equality is the statement that the two maps of §<em>The Map Between the Two Tables</em> are bijections on the parameter sets.</li>
+<li>The mixing count. A $3\times3$ unitary has $9$ parameters, rephasing removes $2\times3-1=5$, and $9-5=4$.</li>
+<li>The cross-check with the piece count. Forty-nine pieces, twenty-nine of them quadratic. Fourteen of the twenty-nine carry unit normalisation by the canonical form; the other fifteen carry three couplings, two vector masses, one scalar mass and nine fermion masses, and $3+2+1+9=15$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The Standard Model has nineteen parameters in both phases. In the symmetric phase sixty numbers are written, forty-one are removed by field redefinitions — twenty-six in the quark sector and fifteen in the lepton sector — and nineteen survive. In the broken phase nineteen numbers are written and none is removed, because the mass basis has already spent the freedom.</p>
+<p>The two descriptions are related row by row: the strong coupling to itself, the two gauge couplings to the charge and the mixing angle, the two scalar parameters to the vacuum value and the Higgs mass, the three Yukawa matrices to nine masses and four mixing parameters, and the vacuum angle to itself. The gauge and scalar maps are invertible changes of coordinates on two-dimensional spaces; the flavour map is many-to-one, and its fibres are the forty-one removed numbers.</p>
+<p>The count cannot drift, for a structural reason and not by inspection: a change of basis in field space cannot change the number of independent coefficients of the function of the fields. The two lists are two writings of one function, and the count is a property of the function.</p>
+<p>The four mixing parameters are what survives the mismatch of the up-type and down-type diagonalisations, and their number is the number of parameters of a unitary matrix modulo rephasing: nine less five is four.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$60$</td>
+<td>Real numbers written in the symmetric phase</td>
+</tr>
+<tr>
+<td>$41$</td>
+<td>Removed by field redefinitions, $26$ quark and $15$ lepton</td>
+</tr>
+<tr>
+<td>$19$</td>
+<td>Physical parameters, in either phase</td>
+</tr>
+<tr>
+<td>$U(3)_Q\times U(3)_u\times U(3)_d$</td>
+<td>The quark flavour redefinition group, dimension $27$</td>
+</tr>
+<tr>
+<td>$U(3)_L\times U(3)_e$</td>
+<td>The lepton flavour redefinition group, dimension $18$</td>
+</tr>
+<tr>
+<td>$2N-1=5$</td>
+<td>The number of phases removable by rephasing three generations</td>
+</tr>
+<tr>
+<td>$9-5=4$</td>
+<td>The mixing parameters, three angles and one phase</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>. The sixty written and the forty-one removed, in full.</li>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The nineteen, itemised.</li>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. The same eighteen in the broken phase, with the map to rows.</li>
+<li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The four mixing parameters and where the phase enters.</li>
+<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. Why the count is the sharpest statement of what the algebra does not supply.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Higgs Self-Pieces: Two Couplings and One Quartic — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Two pieces of the list contain the scalar three and four times over,">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-higgs-self-pieces-two-couplings-and-one-quartic"><strong>The Higgs Self-Pieces: Two Couplings and One Quartic</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Two pieces of the list contain the scalar three and four times over,</p>
+<p>$$
+\mathcal{L}_{h^3,h^4}=-\frac{m_h^2}{2v}\,h^3-\frac{m_h^2}{8v^2}\,h^4 ,
+$$</p>
+<p>and both descend from one parameter of the potential. In the vertex convention of the corpus the couplings are $g_{hhh}=3m_h^2/v$ and $g_{hhhh}=3m_h^2/v^2$, and the factorials are the only difference between the two displays.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;g_{hhh}=\frac{3m_h^2}{v},\qquad g_{hhhh}=\frac{3m_h^2}{v^2},\qquad \frac{g_{hhhh}}{g_{hhh}}=\frac1v\;}
+$$</p>
+<p><strong>Why these are the two hardest pieces to test.</strong> The cubic and quartic self-couplings enter no tree-level process that the measurements of the last decades have isolated, and their extraction needs double and triple Higgs production. They are in the list because the potential has degree four and the expansion is exhaustive, and their presence is a prediction of the form of the potential rather than of its parameters.</p>
+<p><strong>The standing.</strong> The expansion is the one of <a href="the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html">The Higgs Kinetic and Mass Pieces</a>, and the corpus's own couplings $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$ are printed in <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking</a>.</p>
+<h2 id="the-two-pieces">The Two Pieces</h2>
+<p><strong>From one expansion, two rows.</strong></p>
+<p>$$
+V(v+h)=-\frac{\varpi_{\mathrm{cpl}}v^4}{4}+\frac{m_h^2}{2}h^2+\varpi_{\mathrm{cpl}}vh^3+\frac{\varpi_{\mathrm{cpl}}}{4}h^4 ,
+\qquad
+\varpi_{\mathrm{cpl}}=\frac{m_h^2}{2v^2} .
+$$</p>
+<p>The two interactions are the third and fourth terms with the sign of $-\mathcal{L}$, and substituting $\varpi_{\mathrm{cpl}}$ gives</p>
+<p>$$
+-\varpi_{\mathrm{cpl}}vh^3=-\frac{m_h^2}{2v}h^3 ,
+\qquad
+-\frac{\varpi_{\mathrm{cpl}}}{4}h^4=-\frac{m_h^2}{8v^2}h^4 .
+$$</p>
+<p><strong>One parameter, two coefficients.</strong> The ratio of the two coefficients is fixed:</p>
+<p>$$
+\frac{\text{coefficient of }h^4}{\text{coefficient of }h^3}=\frac{1}{2v},
+$$</p>
+<p>so a measurement of one is a measurement of the other given $v$. This is the self-coupling analogue of the statement that the $hVV$ couplings are fixed by the masses.</p>
+<h2 id="the-factorials">The Factorials</h2>
+<p><strong>Lagrangian coefficients become vertex couplings through $n!$.</strong></p>
+<p>$$
+g_{hhh}=3!\cdot\frac{m_h^2}{2v}=\frac{3m_h^2}{v},
+\qquad
+g_{hhhh}=4!\cdot\frac{m_h^2}{8v^2}=\frac{3m_h^2}{v^2}.
+$$</p>
+<p><strong>Why $3!=6$ and $4!=24$ and not something else.</strong> The vertex for $n$ identical fields is $-i$ times the coefficient times $n!$, because the term is symmetric and the functional derivative can act on any of the $n$ legs. A reader who compares the two Lagrangian coefficients with the two vertex couplings and finds $1/2v$ against $3/v$ is comparing objects of two different kinds.</p>
+<p><strong>The corpus's convention is the vertex one.</strong> The table of <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking</a> prints $g_{hhh}=3M_H^2/v$, which is the vertex coupling; the Lagrangian coefficients above are the ones to use in a calculation that begins from $\mathcal{L}$.</p>
+<h2 id="why-there-is-no-math25">Why There Is No $h^5$</h2>
+<p><strong>The potential has degree four.</strong> A term $(H^\dagger H)^{5/2}$ is not polynomial and not renormalisable, and no invariant of dimension four produces an $h^5$ upon expansion. The expansion of a degree-four potential stops at degree four, so the list stops there.</p>
+<p><strong>The dimension count agrees.</strong> $h^5$ has dimension five and needs a coefficient with dimension minus one. A theory with such a term is an effective theory with a scale in it, and the minimal model has no such scale in its Lagrangian; the only scale is $v$, which appears in the coefficients of dimension-four terms.</p>
+<p><strong>What the list would look like with it.</strong> One more row, one more parameter, and a loss of renormalisability. The exclusion is the same kind as the exclusion of the neutrino mass in <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a>, and the reason is the same: no dimension-four ancestor.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Two rows, the eleventh and twelfth of the forty-seven.</li>
+<li>The coefficients. $m_h^2/(2v)$ and $m_h^2/(8v^2)$, from $\varpi_{\mathrm{cpl}}v$ and $\varpi_{\mathrm{cpl}}/4$.</li>
+<li>The ratio. Coefficient of $h^4$ over coefficient of $h^3$ is $1/(2v)$.</li>
+<li>The vertices. $3!\times m_h^2/(2v)=3m_h^2/v$ and $4!\times m_h^2/(8v^2)=3m_h^2/v^2$.</li>
+<li>The vertex ratio. $g_{hhhh}/g_{hhh}=1/v$.</li>
+<li>The dimension. $h^3$ has dimension three and $h^4$ four; the coefficients carry one unit and zero.</li>
+<li>The single parameter. Both come from $\varpi_{\mathrm{cpl}}=m_h^2/(2v^2)$, equivalently from $m_h$ and $v$.</li>
+<li>The absence of $h^5$. Degree four in the potential and dimension four in the coefficient.</li>
+<li>The corpus's numbers. $g_{hhh}=3M_H^2/v$ and $g_{hhhh}=3M_H^2/v^2$, the same two.</li>
+<li>The testability statement. No tree-level single-Higgs process contains either, so their measurement needs multi-Higgs final states.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The two self-pieces are $-\frac{m_h^2}{2v}h^3$ and $-\frac{m_h^2}{8v^2}h^4$. They are the third and fourth terms of one Taylor expansion, and both carry the single parameter $\varpi_{\mathrm{cpl}}=m_h^2/(2v^2)$.</p>
+<p>In the vertex convention the couplings are $g_{hhh}=3m_h^2/v$ and $g_{hhhh}=3m_h^2/v^2$, and the factorials that turn Lagrangian coefficients into vertices are the only difference between the two displays. Their ratio is $1/v$.</p>
+<p>There is no $h^5$ piece. The potential has degree four and no dimension-four invariant expands to degree five.</p>
+<p>The two pieces are in the list as a prediction of the potential's form. Their measurement needs multi-Higgs processes, and their presence is not evidence for new physics but a consequence of the degree of the potential.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{hhh}$, $g_{hhhh}$</td>
+<td>The two self-couplings in the vertex convention</td>
+</tr>
+<tr>
+<td>$\varpi_{\mathrm{cpl}}$</td>
+<td>The quartic parameter of the potential, $m_h^2/(2v^2)$</td>
+</tr>
+<tr>
+<td>$m_h$, $v$</td>
+<td>The scalar mass and the vacuum value</td>
+</tr>
+<tr>
+<td>$n!$</td>
+<td>The factor that converts a Lagrangian coefficient into an $n$-point vertex</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html">The Higgs Kinetic and Mass Pieces and the Tadpole Condition</a>. The expansion these two terms come from.</li>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses</a>. The corpus's coupling table.</li>
+<li><a href="the-lagrangian-and-the-higgs-field.html">The Lagrangian and the Higgs Field</a>. The potential in the corpus's variables.</li>
+<li><a href="the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The Higgs–Vector Pieces</a>. The other two non-quadratic rows of the same square.</li>
+<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. Why the expansion stops at degree four.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

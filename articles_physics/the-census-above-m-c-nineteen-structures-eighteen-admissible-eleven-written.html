@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Census Above $M_C$: Nineteen Structures, Eighteen Admissible and Eleven Written — Biquaternion Universe</title>
+  <meta name="description" content="The claim, and its scope. In this corpus&#x27;s model — one connection, sixteen Weyl fields, one Hermitian scalar, and the coefficient declarations the corpus…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-census-above-math0-nineteen-structures-eighteen-admissible-and-eleven-written"><strong>The Census Above $M_C$: Nineteen Structures, Eighteen Admissible and Eleven Written</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim, and its scope.</strong> In this corpus's $\mathrm{SU}(4)$ model — one connection, sixteen Weyl fields, one Hermitian $4\times4$ scalar, and the coefficient declarations the corpus makes — the group admits <strong>nineteen</strong> structures at dimension four or below. <strong>Eighteen are admissible</strong>, because the rule's fourth condition removes the total derivative. <strong>Seventeen survive canonical normalisation</strong>, which removes a second scalar kinetic term. <strong>Eleven carry a nonzero coefficient</strong>, and the other six are declared zero and printed with their warrants.</p>
+<p><strong>Four numbers, and each one names a filter.</strong> A number is a claim only when its filter is attached, and the corpus quotes different numbers at different rungs. <strong>This article keeps the ladder explicit: candidates, admissible, canonical, written.</strong> A reader who wants a different total can read the ladder at the rung that matches those conventions.</p>
+<p><strong>It is a count under a stated rule, not a theorem about $\mathrm{SU}(4)$.</strong> A different declaration about coefficients moves the eleven. A different normalisation moves the seventeen. §<em>What the Number Depends On</em> gives the number each convention moves. <strong>The artefact is the enumeration; the honesty is in naming what the enumeration depends on.</strong></p>
+<p><strong>Why the count is not four, and why it is not forty-nine.</strong> The broken phase carries forty-seven invariant rows. <strong>This phase loses the whole electroweak list</strong> — no $W$, no $Z$, no photon, no mixing angle, no vacuum, no Goldstone, no Proca row — because there is one force and no scale. <strong>And it gains a block, because the scalar is a matrix</strong>: a $4\times4$ Hermitian carries eleven polynomial invariants at degree four or below where a doublet carries two. <strong>Eleven of the nineteen are scalar monomials.</strong></p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;19\ \xrightarrow{\ \text{no total derivative}\ }\ 18\ \xrightarrow{\ \text{one kinetic per field}\ }\ 17=11+6,\qquad 11=1+1+1+2+4+2.\;}
+$$</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p><strong>Four rungs, four filters, and each filter is stated where it is applied.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>filter</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>candidates</td>
+<td>the group admits: Lorentz scalar, local $\mathrm{SU}(4)$ invariant, dimension $\le4$</td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>admissible</td>
+<td>not a total derivative</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>canonical</td>
+<td>one kinetic term per field</td>
+<td>$17$</td>
+</tr>
+<tr>
+<td>written</td>
+<td>nonzero coefficient</td>
+<td>$11$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The nineteen decompose as one curvature, one total derivative, one fermion kinetic, one fermion mass, two scalar kinetic, eleven potential and two Yukawa.</strong> That is $1+1+1+1+2+11+2=19$.</p>
+<p><strong>The three filters remove one, one and six, and their warrants differ.</strong> The total derivative is removed by the rule. <strong>The second scalar kinetic term is removed by a normalisation and not by the rule</strong> — the rule admits it, and §<em>The Structure Removed by Normalisation</em> says why it goes anyway. <strong>The six zeros are removed by coefficient declarations</strong> and not by the group, and §<em>The Six Declared Zeros</em> gives each one's warrant. <strong>A count that merged the three would be unable to say which is which, and that inability is the whole of the difficulty.</strong></p>
+<p><strong>The coincidence to be avoided.</strong> The row count below is also nineteen — seventeen canonical rows plus the two gauge rows. <strong>One nineteen counts structures the group admits; the other counts rows once two structures the group does not act on are included.</strong> They are equal by arithmetic and for no reason, and the two are never added.</p>
+<h2 id="the-rule">The Rule</h2>
+<p><strong>Four conditions define admissibility, and the fourth is the one that removes $\theta_4$.</strong> A structure is admissible if it is a Lorentz scalar, invariant under the local $\mathrm{SU}(4)$, of dimension four or below, and <strong>not a total derivative</strong>. <strong>The rule is <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">the census rule</a> applied to a smaller content, and the fourth condition is applied here exactly as the broken phase applies it</strong>: there, $\theta_{\mathrm{QCD}}$ is "present as a parameter and absent as a row", and $\theta_4$ is that same object above $M_C$.</p>
+<p><strong>The corpus's rule includes canonical normalisation among its conditions, and this article splits that rule in two on purpose.</strong> The four invariance, dimension and derivative conditions decide what the group admits; <strong>the normalisation condition decides what is written of what the group admits.</strong> Splitting costs nothing and buys the ladder. <strong>A reader who keeps the rule whole gets seventeen directly and loses the ability to say which of the eighteen the one removal was.</strong></p>
+<p><strong>Two counting conventions sit on top of the four conditions, and neither is a condition.</strong> The hermitian conjugate counts once with its term. <strong>A structure counts once per field it can be built on, and the coefficient is not looked at</strong> — a row exists because the group admits it, and whether its coefficient is zero is a second question and a different column.</p>
+<p><strong>Canonical normalisation is therefore carried as a separate filter here, and it is a condition of the corpus's rule and not of this article's four.</strong> A second scalar kinetic structure, $(\partial_{\imath}\operatorname{tr}\Xi)^{2}$, is a Lorentz scalar, invariant, dimension four and not a total derivative, <strong>so the four conditions admit it and it is one of the eighteen.</strong> It is removed at the next rung, by the requirement that each field carry one kinetic term. <strong>The rule decides what exists; the normalisation decides what is written of what exists; and a census that applied the second while claiming to apply only the first would be wrong at the rung where it was silent.</strong> This article applies it at its own rung, in the open.</p>
+<p><strong>Three bounds close the candidate set.</strong> Locality bounds the derivatives, dimension bounds the total degree, and the carrier bounds the contractions. They are <a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">the closure of the term list</a>'s three bounds.</p>
+<p><strong>The content is three fields.</strong> Fifteen connections, sixteen Weyl fields, one Hermitian $4\times4$ matrix in sixteen real components. <strong>No second scalar, no second fermion, no second connection</strong> — and the count is finite for that reason and for no other.</p>
+<h2 id="the-content">The Content</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>multiplicity</th>
+<th>mass above $M_C$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the connection $A_{a,\imath}$</td>
+<td>fifteen, $30$ degrees of freedom</td>
+<td>$0$, exactly</td>
+</tr>
+<tr>
+<td>the Weyl fields $\xi_{f}$</td>
+<td>sixteen, $32$ states</td>
+<td>$0$, by declaration</td>
+</tr>
+<tr>
+<td>the scalar $\Xi$</td>
+<td>sixteen real</td>
+<td>$\mu_{\Phi}^{2}$ on $15$; $\mu_{\Phi}^{2}+4\mu_{2}^{2}$ on the trace</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The phase is not a massless phase.</strong> It has no vector mass and no fermion mass, and it has sixteen scalar masses. <strong>"Above $M_C$ everything is massless" is true of the fifteen directions and false of the scalar.</strong></p>
+<p><strong>The three counts add to seventy-eight.</strong> $30+32+16$. <strong>The vectors are massless because a mass term for a connection is not invariant</strong>, not because the vacuum is far away: $m^{2}A_{\imath}A_{\imath}$ fails the invariance condition here exactly as it fails it below $M_C$.</p>
+<p><strong>One fermion kinetic structure and not two, and the reason is chirality and not a coefficient.</strong> A kinetic term with $\gamma_{\imath}\gamma_{5}$ differs from the vector one by $\gamma_{5}$, which acts as $\pm1$ on a Weyl field; <strong>so the two are the same row up to a sign on each chirality, and the row counts once.</strong></p>
+<h2 id="the-lagrangian">The Lagrangian</h2>
+<p><strong>Eleven rows carry a nonzero coefficient, and every row is numbered.</strong></p>
+<p>$$
+\begin{aligned}
+\mathcal{L}={}&amp;
+\underbrace{-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}}_{1}
+\underbrace{{}+\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}D_{\imath}\xi_{f}}_{2}
+\underbrace{{}+\operatorname{tr}\bigl(D_{\imath}\Xi\bigr)^{\dagger}\bigl(D_{\imath}\Xi\bigr)}_{3}\\[3pt]
+&amp;{}\underbrace{{}-\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}}_{4}
+\underbrace{{}-\mu_{2}^{2}\bigl(\operatorname{tr}\Xi\bigr)^{2}}_{5}
+\underbrace{{}-\lambda_{1}\operatorname{tr}\Xi^{4}}_{6}
+\underbrace{{}-\lambda_{2}\bigl(\operatorname{tr}\Xi^{2}\bigr)^{2}}_{7}
+\underbrace{{}-\lambda_{3}\bigl(\operatorname{tr}\Xi\bigr)^{2}\operatorname{tr}\Xi^{2}}_{8}
+\underbrace{{}-\lambda_{4}\bigl(\operatorname{tr}\Xi\bigr)^{4}}_{9}\\[3pt]
+&amp;{}\underbrace{{}+y_{\alpha\beta}\,\bar\xi^{\alpha}\Xi_{0}\,\xi^{\beta}+\text{h.c.}}_{10}
+\underbrace{{}+y'_{\alpha\beta}\bigl(\operatorname{tr}\Xi\bigr)\bar\xi^{\alpha}\xi^{\beta}+\text{h.c.}}_{11},
+\end{aligned}
+$$</p>
+<p>with $\Xi_{0}=\Xi-\tfrac14(\operatorname{tr}\Xi)\mathbb 1$ the traceless part. <strong>Rows $10$ and $11$ are two structures and not one</strong>, for the reason §<em>The Two Yukawa Structures</em> gives: in the canonical basis the group allows an independent coefficient on each.</p>
+<p><strong>The covariant derivatives are two, and both carry the one coupling.</strong></p>
+<p>$$
+D_{\imath}\xi_{f}=\partial_{\imath}\xi_{f}-ig_{4}\sum_{a}A_{a,\imath}\,\bigl(t_{a}\otimes\mathbb 1_{2}\bigr)\xi_{f},
+\qquad
+D_{\imath}\Xi=\partial_{\imath}\Xi-ig_{4}\sum_{a}A_{a,\imath}\bigl[t_{a},\Xi\bigr].
+$$</p>
+<p><strong>The commutator and not a multiplication</strong> is the scalar's matrix index: $\Xi$ carries one line label up and one down, and the mass operator needs both. <strong>The two-index rule on the fermion</strong> — $X\otimes\mathbb 1_{2}$, every generator blind to the copy index — is the whole of the flavour structure of this phase.</p>
+<p><strong>Three structures stand outside the seventeen, and they are of three kinds.</strong></p>
+<p>$$
+\mathcal{L}_{\mathrm{gf}}=-\frac{1}{2\zeta}\sum_{a}\bigl(\partial_{\imath}A_{a,\imath}\bigr)^{2},
+\quad
+\mathcal{L}_{\mathrm{gh}}=\sum_{a}\partial_{\imath}\bar c_{a}D_{\imath}c_{a},
+\quad
+\mathcal{L}_{\theta}=\theta_{4}\,\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}.
+$$</p>
+<p><strong>Two of the three are rows and one is not.</strong> The fixing and the ghosts are rows the group does not act on; <strong>$\theta_4$ is not a row at all</strong>, because the fourth condition excluded it. So:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>line</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>canonical rows</td>
+<td>$17$</td>
+</tr>
+<tr>
+<td>gauge rows the group does not act on</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td><strong>rows in total</strong></td>
+<td>$19$</td>
+</tr>
+<tr>
+<td>parameters of the gauge rows</td>
+<td>$\zeta$, in $\mathcal{L}_{\mathrm{gf}}$</td>
+</tr>
+<tr>
+<td>parameters with no row</td>
+<td>$\theta_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$\zeta$ is a parameter of a row, and $\theta_4$ is a parameter of none.</strong> The distinction is not pedantry: $\zeta$ multiplies $\mathcal{L}_{\mathrm{gf}}$, which is written above, and cancels from every observable; <strong>$\theta_4$ multiplies nothing written, because the thing it would multiply was excluded before the row count began.</strong></p>
+<h2 id="the-structure-removed-by-normalisation">The Structure Removed by Normalisation</h2>
+<p><strong>$(\partial_{\imath}\operatorname{tr}\Xi)^{2}$ passes all four conditions, and the canonical kinetic term already carries a piece of it.</strong> With $\Xi=\Xi_{0}+\tfrac14(\operatorname{tr}\Xi)\mathbb 1$ and $\operatorname{tr}\Xi_{0}=0$,</p>
+<p>$$
+\operatorname{tr}\bigl(D_{\imath}\Xi\bigr)^{\dagger}\bigl(D_{\imath}\Xi\bigr)
+=\operatorname{tr}\bigl(D_{\imath}\Xi_{0}\bigr)^{\dagger}\bigl(D_{\imath}\Xi_{0}\bigr)+\tfrac14\bigl(\partial_{\imath}\operatorname{tr}\Xi\bigr)^{2},
+$$</p>
+<p><strong>because the cross terms vanish</strong>: $\operatorname{tr}(D_{\imath}\Xi_{0})^{\dagger}=0$, the covariant derivative of a traceless matrix being traceless. <strong>So the scalar's kinetic sector carries two coefficients</strong>, one on each term of the right-hand side, and only their ratio is physical.</p>
+<p><strong>Canonical normalisation sets the second to zero, and that is a choice of basis.</strong> No symmetry removes the term; <strong>a field redefinition of the trace mode does</strong>, and the redefinition is what the normalisation fixes. <strong>The cost is that the same redefinition moves four potential coefficients</strong>, which is why the census is quoted in the basis where the scalar's kinetic term is $\operatorname{tr}(D\Xi)^{\dagger}(D\Xi)$ and nothing else.</p>
+<p><strong>What the rung buys and what it does not.</strong> It buys a unique set of coefficients to count, so that "eleven" is a number and not a class of numbers. <strong>It does not buy a physical statement</strong> — the ratio of the two kinetic coefficients is a parameter of the general theory, and setting it to zero is a point in a one-parameter space. <strong>The census counts the point, and §<em>What the Number Depends On</em> records the space.</strong></p>
+<p><strong>A reader who keeps the second term counts eighteen admissible structures and seventeen parameters.</strong> That is the correct count in that basis, and the ladder says so.</p>
+<h2 id="the-two-mass-rows">The Two Mass Rows</h2>
+<p><strong>Rows $4$ and $5$ are the only masses carried, and they are the trace decomposition of one quadratic form.</strong></p>
+<p>$$
+-\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}-\mu_{2}^{2}\bigl(\operatorname{tr}\Xi\bigr)^{2}
+\;\Longrightarrow\;
+m^{2}_{ab}=\mu_{\Phi}^{2}\ (15\ \text{traceless}),\qquad
+m^{2}_{\mathrm{tr}}=\mu_{\Phi}^{2}+4\mu_{2}^{2}\ (\text{the trace}).
+$$</p>
+<p><strong>The four is $\operatorname{tr}\mathbb 1$</strong>, since along $\Xi=c\,\mathbb 1$ the ratio $(\operatorname{tr}\Xi)^{2}/\operatorname{tr}\Xi^{2}$ is $16/4=4$. <strong>The Hessian is the mass squared in this normalisation</strong>, because $\operatorname{tr}(\partial\Xi)^{2}=\tfrac12\sum_{a}(\partial\chi_{a})^{2}$ on generators with $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ — already canonical, so no factor of two enters.</p>
+<p><strong>Both coefficients are positive above $M_C$, and that is a region and not a tuning.</strong> The symmetric minimum needs $\mu_{\Phi}^{2}&gt;0$ and $\mu_{2}^{2}&gt;0$; every value in that region is a phase. The full spectrum, the boundedness cone and the branch where the sign flips are <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">the primordial potential</a>'s.</p>
+<p><strong>No vector mass row exists, and no fermion mass row carries a coefficient.</strong> A vector mass fails invariance and cannot be written. <strong>A fermion mass is invariant</strong> — the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like, so $\bar{\mathbf4}\otimes\mathbf4$ contains a singlet — <strong>and row $12$ is that term with a zero coefficient. One is forbidden and the other is declined</strong>, and a reader who hears "massless fermions" will otherwise conclude that the group forbids the mass.</p>
+<h2 id="the-six-declared-zeros">The Six Declared Zeros</h2>
+<p><strong>Six admissible rows carry a zero coefficient, and their warrants are four different warrants.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>structure</th>
+<th>dimension</th>
+<th>warrant for the zero</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$12$</td>
+<td>$m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}+\text{h.c.}$</td>
+<td>$3$</td>
+<td>declined: the phase has no vacuum, and the masses are made below $M_C$</td>
+</tr>
+<tr>
+<td>$13$</td>
+<td>$c\,\operatorname{tr}\Xi$</td>
+<td>$1$</td>
+<td><strong>forced</strong>: a linear term is not stationary at $\Xi=0$, so a symmetric vacuum sets it to zero</td>
+</tr>
+<tr>
+<td>$14$</td>
+<td>$c_{1}\operatorname{tr}\Xi^{3}$</td>
+<td>$3$</td>
+<td>declared: evenness under $\Xi\to-\Xi$</td>
+</tr>
+<tr>
+<td>$15$</td>
+<td>$c_{2}\operatorname{tr}\Xi^{2}\operatorname{tr}\Xi$</td>
+<td>$3$</td>
+<td>declared: evenness under $\Xi\to-\Xi$</td>
+</tr>
+<tr>
+<td>$16$</td>
+<td>$c_{3}\bigl(\operatorname{tr}\Xi\bigr)^{3}$</td>
+<td>$3$</td>
+<td>declared: evenness under $\Xi\to-\Xi$</td>
+</tr>
+<tr>
+<td>$17$</td>
+<td>$\lambda_{5}\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$</td>
+<td>$4$</td>
+<td><strong>declared separately</strong>: evenness does not remove it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Row $13$ is the one that would be dishonest to leave out.</strong> $\operatorname{tr}\Xi$ is gauge-invariant, dimension one, and not a total derivative, so the four conditions admit it. <strong>It is zero because the phase requires $\Xi=0$ to be stationary, which is a statement about the vacuum and not about the group.</strong> A count that dropped it silently would report a rule at work where a phase choice is at work.</p>
+<p><strong>Row $17$ is the declaration that evenness does not cover.</strong> $\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$ is even under $\Xi\to-\Xi$, since both factors flip sign, so it survives the discrete symmetry that removes rows $14$–$16$. <strong>Its zero is a separate declaration: the potential uses $\Xi$ through $\Xi^{2}$ and $\operatorname{tr}\Xi$ only.</strong> So the cubics are removed by one symmetry and row $17$ by one sentence, and the two are not the same argument.</p>
+<p><strong>What the six zeros would cost if switched on.</strong> Row $12$ brings two, by the same singular-value count alone. Rows $14$–$16$ bring three. Row $17$ brings one. Row $13$ brings one and destroys the phase. <strong>So the declared part of the census is seven parameters deep</strong>, counted separately from the nine the Lagrangian carries. <strong>And the bare mass shares its flavour group with $y$</strong>, so switching both on is not simply additive: one $\mathrm{U}(2)\times\mathrm{U}(2)$ must suffice for two matrices, and the pair then carries more than two.</p>
+<h2 id="the-two-yukawa-structures">The Two Yukawa Structures</h2>
+<p><strong>The matrix is a sum of two pieces and the group sees them separately.</strong> With $\Xi=\Xi_{0}+\tfrac14(\operatorname{tr}\Xi)\mathbb 1$,</p>
+<p>$$
+\bar\xi^{\alpha}\Xi\,\xi^{\beta}=\bar\xi^{\alpha}\Xi_{0}\,\xi^{\beta}+\tfrac14\bigl(\operatorname{tr}\Xi\bigr)\bar\xi^{\alpha}\xi^{\beta},
+$$</p>
+<p><strong>and each piece is invariant on its own.</strong> The traceless one contracts the $\mathbf{15}$ of $\bar{\mathbf4}\otimes\mathbf4$ with the $\mathbf{15}$ in $\Xi$; the trace one contracts the singlet with the singlet. <strong>Two contractions, two independent $2\times2$ matrices, two rows.</strong></p>
+<p><strong>The corpus writes one, and that is a tie.</strong> Writing $y\,\bar\xi\Xi\xi$ is the choice $y'=\tfrac14y$. <strong>The tie is not a group-theoretic fact, and its cost is six parameters</strong> — a pair's eight against a single matrix's two.</p>
+<p><strong>The field redefinition that removes the second kinetic structure acts on the two matrices, and the transformation is not the identity on either.</strong> With $\Xi\to\Xi+b\,(\operatorname{tr}\Xi)\mathbb 1$ the traceless part is unchanged and the trace is rescaled by $1+4b$, so</p>
+<p>$$
+y\ \longrightarrow\ y,
+\qquad
+y'\ \longrightarrow\ \frac{y'}{1+4b},
+\qquad\text{hence}\qquad
+\frac{y'}{y}\ \longrightarrow\ \frac{1}{1+4b}\,\frac{y'}{y}.
+$$</p>
+<p><strong>Nothing here is invariant, and the article does not claim that anything is.</strong> The ratio $y'/y$ is not preserved by the redefinition; <strong>it is moved by exactly the amount that the kinetic normalisation then undoes</strong>, because the same $b$ which rescales $y'$ is the one which rescales the coefficient of $(\partial_{\imath}\operatorname{tr}\Xi)^{2}$.</p>
+<p><strong>So the physical statement is a statement about a fixed basis and not about an invariant.</strong> Canonical normalisation sets $b$ once and for all, and what remains is the flavour content of the pair, <strong>which is the eight numbers §<em>The Tally</em> counts</strong>; the tie $y'=\tfrac14y$ is <strong>one point in those eight rather than a symmetry of them.</strong></p>
+<p><strong>Two consequences, and both matter for the count.</strong> First, <strong>the two rows are independent in the canonical basis</strong>, which is why the census counts two and not one. Second, <strong>the tie is a basis statement</strong>, so a reader working in a basis with a nonzero second kinetic coefficient will find $y'$ adjustable and the same physics. <strong>The census is quoted in one basis and says which.</strong></p>
+<h2 id="the-tally">The Tally</h2>
+<p><strong>Seven interaction types, and each one is read off a written row.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>from row</th>
+<th>realisation count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$AAA$</td>
+<td>$1$</td>
+<td>$80$ nonzero structure-constant components, of $105$ pairs</td>
+</tr>
+<tr>
+<td>$AAAA$</td>
+<td>$1$</td>
+<td>one Lorentz structure</td>
+</tr>
+<tr>
+<td>$\bar\xi A\xi$</td>
+<td>$2$</td>
+<td>one Lorentz structure, fifteen generators, both blocks</td>
+</tr>
+<tr>
+<td>$A\Xi\Xi$</td>
+<td>$3$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$AA\Xi\Xi$</td>
+<td>$3$</td>
+<td>$120$ symmetric pairs $(a,b)$</td>
+</tr>
+<tr>
+<td>$\Xi\Xi\Xi\Xi$</td>
+<td>$6$–$9$</td>
+<td>four monomials, one Lorentz structure</td>
+</tr>
+<tr>
+<td>$\bar\xi\xi\Xi$</td>
+<td>$10$, $11$</td>
+<td>two structures, one type</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third column counts realisations and not operators.</strong> $80$ is not eighty Feynman rules; it is eighty nonzero commutator components out of a hundred and five pairs, and $120$ is a hundred and twenty symmetric index pairs in the component expansion of one structure. <strong>Both numbers are counts of how many distinct arrays a vertex can carry; neither is a count of independent gauge-invariant operators.</strong> The column heading says so.</p>
+<p><strong>Seven is the count of types for the eleven written rows, and it is not a group-theoretic seven.</strong> Three additions would move it: <strong>the three cubics switched on add $\Xi^{3}$, making eight; $\theta_4$ written adds two parity-odd structures in $AAAA$ and $AAA$, making ten; and a second Lorentz structure in the fermion bilinear would add a type of its own</strong> — the Pauli term, which is dimension five and out of range.</p>
+<p><strong>Fifteen parameters are carried.</strong> $g_{4}$; $\mu_{\Phi}^{2}$ and $\mu_{2}^{2}$; $\lambda_{1}$–$\lambda_{4}$; and eight in the Yukawa sector. <strong>Sixteen including $\zeta$, which is a gauge parameter and not physical. Seventeen including $\theta_4$.</strong></p>
+<p><strong>The eight in the Yukawa sector are singular values, and the count is not four per matrix.</strong> A single $2\times2$ matrix has eight real entries; <strong>the copy basis removes six</strong>, because a global $\mathrm{U}(2)$ on $\xi^{\alpha}$ and an independent one on $\bar\xi^{\alpha}$ act as $y\to W^{\dagger}yV$ and leave a generic $y$ alone only through the two diagonal phases. So one matrix carries $8-6=2$. <strong>A count by phases alone removes four and reports four, and it double-counts</strong>, because the copy basis is unobservable and the gauge group is blind to it. <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa sector</a> states $8-6=2$ by the same route.</p>
+<p><strong>Two matrices are not twice one, and the answer is eight and not four or ten.</strong> Rows $10$ and $11$ transform under the same $\mathrm{U}(2)\times\mathrm{U}(2)$, so the pair is sixteen real numbers acted on by one group of eight. <strong>A generic pair has no stabiliser</strong> — the diagonalisation a single matrix admits is spent once, and the second matrix's rotation is then fixed — so $16-8=8$ survive. <strong>They are the two singular values of $y$, the two of $y'$, and the four numbers in the relative unitary $y'y^{-1}$</strong> — two magnitudes, one angle and three phases. <strong>The corpus writes one matrix</strong>, which is the tie $y'=\tfrac14y$, and the tie collapses the pair to a single matrix's two.</p>
+<p><strong>Seven sleep in the declared zeros</strong>: two in the bare mass, one in the linear term, three in the cubics and one in the fifth quartic. <strong>A count of "twelve parameters" would have been a count of a different convention, and a count of four per Yukawa matrix would have been a count that stops one removal early.</strong></p>
+<h2 id="what-the-number-depends-on">What the Number Depends On</h2>
+<p><strong>Three conventions move the row count, each at its own rung, and a fourth moves the parameters.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>convention</th>
+<th>choice made here</th>
+<th>what it moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total derivatives</td>
+<td>excluded as rows, kept as parameters</td>
+<td>$19\to18$, and the row count $20\to19$</td>
+</tr>
+<tr>
+<td>canonical normalisation</td>
+<td>one kinetic term per field</td>
+<td>$18\to17$, and fixes $b$, which makes $y'/y$ a parameter</td>
+</tr>
+<tr>
+<td>zero coefficients</td>
+<td>printed as rows and marked</td>
+<td>$17\to11$ written; keeping them gives $17=11+6$</td>
+</tr>
+<tr>
+<td>the Yukawa tie</td>
+<td><strong>untied</strong>: two rows and eight parameters</td>
+<td>tying $y'=\tfrac14y$ removes a row ($11\to10$) and six parameters ($15\to9$)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first is the rule's and the second and third are the author's.</strong> A reader who disagrees with either of the two gets a different total, and the table says which total. <strong>A reader who disagrees with the first is disagreeing with the category's rule, and the broken phase applies the same rule to forty-seven rows.</strong></p>
+<p><strong>What does not depend on a convention.</strong> The partition count $1,2,3,5$ for degree $1,2,3,4$; the trace mass split $\mu_{\Phi}^{2}$ and $\mu_{\Phi}^{2}+4\mu_{2}^{2}$; the degrees of freedom $30+32+16$; the realisation counts $15$, $80$ and $120$; and the exclusion of the vector mass. <strong>Those are the arithmetic, and the arithmetic is not what the headline rests on.</strong></p>
+<h2 id="what-is-not-in-it">What Is Not in It</h2>
+<p><strong>No electroweak sector.</strong> No $W$, no $Z$, no photon, no mixing angle, no Fermi constant, no $v$. <strong>The phase has no scale in it</strong>: $\mu_{\Phi}$ is a mass and not a vacuum expectation, and $M_C$ is where the vacuum forms.</p>
+<p><strong>No strong sector.</strong> No $\mathrm{SU}(3)$, no confinement, no gluon. <strong>The phase distinguishes no direction among the fifteen</strong>: the eight that the restructuring will call colour are eight of the fifteen here, massless with the other seven and equal to them in every coupling. <strong>That is a statement about the restructuring and not a result of the count</strong> — nothing in this article names the eight, and <a href="no-confinement-above-m-c.html">no confinement</a> states the negative.</p>
+<p><strong>No flavour structure beyond two matrices.</strong> No CKM, no PMNS, no Jarlskog invariant. <strong>The copy index is a commutant</strong>: every generator acts as $X\otimes\mathbb 1_{2}$, so no boson changes it and the whole of flavour sits in $y$ and $y'$.</p>
+<p><strong>Not Pati–Salam.</strong> Pati–Salam gauges $\mathrm{SU}(4)\times\mathrm{SU}(2)_{L}\times\mathrm{SU}(2)_{R}$ and puts $B-L$ inside the four as a fourth colour. <strong>This theory gauges one simple factor and nothing beside it</strong>: rank three, one coupling, no second factor to break, no $B-L$ boson. The four lines $(t,x,y,z)$ are coordinates on one multiplet and the lepton line is a declaration. <strong>The $\mathrm{SU}(3)$ below $M_C$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb C e_{t})$ and not a factor of a product</strong>, and the $B-L$ the corpus uses is a number the cells carry, computed entry by entry. <strong>Rank three cannot reach the endpoint's five</strong>, which is why the weak factors arrive as a copy index and not as debris. <strong>A Pati–Salam reader will look for $\mathrm{SU}(2)_{R}$ and find an index in its place.</strong></p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The ladder. $19$ candidates, $18$ admissible, $17$ canonical, $11$ written, $6$ zero.</li>
+<li>The candidates. $1+1+1+1+2+11+2=19$ by class: curvature, total derivative, fermion kinetic, fermion mass, scalar kinetic (two), potential, Yukawa (two).</li>
+<li>The reductions. The fourth condition removes $\theta_4$; canonical normalisation removes $(\partial\operatorname{tr}\Xi)^{2}$; the coefficient declarations remove six. Nothing is removed twice and nothing is counted twice.</li>
+<li>The potential's monomials. Partitions of $d$ into at most four parts: $1,2,3,5$ for $d=1,2,3,4$, so $11$.</li>
+<li>The canonical split. $17=11$ written $+6$ zero.</li>
+<li>The row count. $17+2=19$, and $20$ would require seating $\theta_4$, which the fourth condition forbids.</li>
+<li>The parameter ledger. $\zeta$ belongs to $\mathcal{L}_{\mathrm{gf}}$, which is a row; $\theta_4$ belongs to no row.</li>
+<li>The trace's mass. $\mu_{\Phi}^{2}+4\mu_{2}^{2}$ with $4=\operatorname{tr}\mathbb 1$.</li>
+<li>The kinetic split. The canonical term supplies $\tfrac14(\partial\operatorname{tr}\Xi)^{2}$, since $\operatorname{tr}(D\Xi_0)^{\dagger}=0$.</li>
+<li>The realisation counts. $15$ generators, $80$ nonzero brackets of $105$ pairs, $15\cdot16/2=120$ symmetric pairs.</li>
+<li>The carried parameters. $1+1+1+4+8=15$; with $\zeta$, $16$; with $\theta_4$, $17$.</li>
+<li>The Yukawa count. One matrix: $8-8+2=2$. A generic pair: $16-8+0=8$. Neither is four, and the pair is not twice the single matrix.</li>
+<li>The sleeping parameters. Two in the bare mass, one in the linear term, three in the cubics and one in the fifth quartic: $7$.</li>
+<li>The Yukawa transformation. $y\to y$ and $y'\to y'/(1+4b)$, so $y'/y$ is moved and is fixed only once $b$ is.</li>
+<li>The degrees of freedom. $30+32+16=78$.</li>
+<li>The one coupling. $g_{4}$ appears in rows $1$, $2$, $3$ and in no coefficient of rows $4$–$11$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Nineteen structures the group admits, eighteen admissible, seventeen in the canonical basis, eleven written.</strong> The eleven are the curvature square, the two kinetic terms, the two scalar quadratics, the four quartics and the two Yukawa structures. <strong>The three reductions are three different kinds of removal</strong>: one by the rule's fourth condition, one by a normalisation that the rule permits and the census declines, and six by coefficient declarations whose warrants are themselves four different warrants.</p>
+<p><strong>The count is a count under a rule, and the rule is the broken phase's.</strong> The ladder is the article's spine because the corpus's numbers differ at different rungs, and <strong>a number quoted without its rung is not a claim but a coincidence.</strong></p>
+<p><strong>Two masses, both the scalar's</strong>, and no vector mass because invariance forbids it and no fermion mass because the phase declines it. <strong>One force, one coupling, no scale, and a $4\times4$ scalar that supplies eleven of the nineteen rows.</strong></p>
+<p><strong>Fifteen parameters are carried, and the Yukawa block contributes eight.</strong> Singular values and not entries: <strong>the copy basis is unobservable, and a count that forgets it stops one removal early — and a count that treats the two matrices independently overcounts, because one group serves both.</strong></p>
+<p><strong>And the census is not a derivation.</strong> It enumerates what a declared set of fields and coefficients admits. <strong>What the enumeration cannot say is why these coefficients</strong>, and no article in this category claims otherwise.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{a,\imath\jmath}$</td>
+<td>the curvature of generator $a$; $F_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}$</td>
+</tr>
+<tr>
+<td>$t_{a}$</td>
+<td>the fifteen normalised Hermitian generators, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$g_{4}$</td>
+<td>the one coupling, the same in rows $1$, $2$, $3$</td>
+</tr>
+<tr>
+<td>$\Xi$, $\Xi_{0}$</td>
+<td>the Hermitian $4\times4$ scalar and its traceless part</td>
+</tr>
+<tr>
+<td>$\xi_{f}$</td>
+<td>the sixteen Weyl fields; $\alpha$ the copy index, $i$ the quartet index</td>
+</tr>
+<tr>
+<td>$y$, $y'$</td>
+<td>the traceless and trace Yukawa matrices</td>
+</tr>
+<tr>
+<td>$m_{\alpha\beta}$</td>
+<td>the bare Dirac mass matrix, row $12$, coefficient zero</td>
+</tr>
+<tr>
+<td>$\theta_{4}$</td>
+<td>the vacuum angle, a parameter with no row</td>
+</tr>
+<tr>
+<td>$b$</td>
+<td>the trace-mode shift; fixed by canonical normalisation</td>
+</tr>
+<tr>
+<td>$d$</td>
+<td>the degree of a potential monomial; the invariants number $1,2,3,5$ for $d=1,2,3,4$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lagrangian-and-the-primordial-force.html">The Lagrangian and the Primordial Force</a>. The minimal reading of the same content, and the normalisation that fixes $\tfrac14$.</li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The two quadratics and four quartics at working size, the boundedness cone, and the branch where the vacuum forms.</li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a>. Rows $3$–$9$ expanded, and the $120$ computed.</li>
+<li><a href="the-lagrangian-and-the-sixteen-kinetic-term-and-yukawa-coupling.html">The Lagrangian and the Sixteen</a>. Rows $2$ and $10$, the state count and the mass matrix after the condensate.</li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a>. The interaction types at working size, and the two bases' normalisations.</li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List</a>. Why the candidate space is finite, and the three reasons a row can fail.</li>
+<li><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups</a>. Why no vector mass row exists.</li>
+<li><a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian: Forty-Seven Terms</a>. The other side of the vacuum, counted by the same rule.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

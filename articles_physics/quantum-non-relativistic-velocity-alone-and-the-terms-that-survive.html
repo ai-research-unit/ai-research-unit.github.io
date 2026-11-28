@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quantum Non-Relativistic: $v/c\to0$ Alone, and the Terms That Survive — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Move the velocity coordinate and leave the loop coordinate alone. The result is non-relativistic quantum electrodynamics: a theory of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="quantum-non-relativistic-math0-alone-and-the-terms-that-survive"><strong>Quantum Non-Relativistic: $v/c\to0$ Alone, and the Terms That Survive</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Move the velocity coordinate and leave the loop coordinate alone. The result is non-relativistic quantum electrodynamics: a theory of electrons, photons and nuclei in which the electron may still radiate, still carry an anomalous moment, and still be bound, but in which the positron has been integrated out. It is the corner in which the most precisely verified predictions in physics live.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\mathcal{L}_{\mathrm{NRQED}}=\psi^\dagger\Bigl(iD_0+\frac{\mathbf D^2}{2m}+\frac{\mathbf D^4}{8m^3}+c_F\frac{e}{2m}\boldsymbol\sigma\cdot\mathbf B+c_D\frac{e}{8m^2}\nabla\cdot\mathbf E+\cdots\Bigr)\psi-\tfrac14F_{\mu\nu}F^{\mu\nu}\;}
+$$</p>
+<p>with $D_0=\partial_0+ieA_0$, $\mathbf D=\nabla-ie\mathbf A$, and the coefficients $c_F,c_D,\dots$ fixed by matching to QED at the electron mass.</p>
+<p><strong>Why this corner is not the previous one.</strong> <a href="classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic</a> also sends $v/c\to0$, but it sends $\hbar\to0$ first, and the difference is decisive: there the spin–orbit coefficient was a classical kinematic fact, here the $c_F$ that multiplies the magnetic moment is $1+\alpha/\pi+\cdots$ and the entire Lamb shift is a loop that survives the velocity limit. Same coordinate, different order, different theory.</p>
+<h2 id="the-arrow">The Arrow</h2>
+<p><strong>Three routes, and they must agree.</strong></p>
+<p><strong>Route one: Foldy–Wouthuysen.</strong> Apply a unitary transformation that block-diagonalises the Dirac Hamiltonian in powers of $1/m$. The upper block becomes a two-component Hamiltonian with the kinetic correction $\mathbf p^4/8m^3$, the spin–orbit term, the Darwin term, and the magnetic coupling. The transformation is a series, and truncating it is the truncation of the corner.</p>
+<p><strong>Route two: integrate out the antiparticle.</strong> The Dirac field splits into a large and a small two-component part; the small part is solved for and substituted, which is the same transformation written as an elimination. The small component is <em>heavy</em> in the sense that its energy cost is $2m$, so removing it is an integration at the scale $2m$, and the price is a set of contact terms.</p>
+<p><strong>Route three: match.</strong> Write every operator allowed by the symmetries — Hermiticity, rotational invariance, parity, charge conjugation, and the residual $\mathrm{U}(1)$ — with arbitrary coefficients, and fix the coefficients by computing the same observable in full QED and in the corner. Route three is the one that makes the corner predictive beyond its leading terms, because it produces $c_F$ rather than assuming it.</p>
+<p><strong>What the three routes share.</strong> Each produces the same operator list, and each produces coefficients that are <em>not</em> free: they are functions of $\alpha$ and $\log(m/\mu)$. That is the structural statement — the corner has no new parameters, only matched ones.</p>
+<h2 id="what-the-corner-reproduces">What the Corner Reproduces</h2>
+<p><strong>Five results, and the fourth is the one no other corner can produce.</strong></p>
+<p><strong>The hydrogen spectrum to the fine structure.</strong> The leading terms give the Bohr levels, the relativistic correction, the spin–orbit and the Darwin term, and the $j$-dependent fine structure follows. This is shared with the previous corner and is not the achievement.</p>
+<p><strong>The Lamb shift, $1057.845\ \mathrm{MHz}$ for $n=2$.</strong> The loop produces a $\log(m/\mu)$ that the corner's own operators carry as a coefficient; the physical prediction is independent of $\mu$. The corner reproduces the measured splitting, and it is the first corner in this section that can.</p>
+<p><strong>The hyperfine splitting, $1420.405751\ \mathrm{MHz}$ for the $1s$ level.</strong> The spin–spin interaction is a tree-level operator of the corner; its precision is limited by the proton's magnetic structure, which is a matching coefficient from the quark level and not an object of this theory.</p>
+<p><strong>The electron's anomalous moment to twelve digits.</strong> $a_e=1.15965218059(13)\times10^{-3}$ measured, and the corner's series in $\alpha$ reproduces it to the precision of the measurement. This is the corner's signature, because it requires the loop and forbids the pair: the leading term is $\alpha/2\pi$, and the next terms are known.</p>
+<p><strong>The $1s$–$2s$ transition in hydrogen.</strong> Measured to a relative $10^{-15}$, and predicted to that accuracy in the corner once the proton radius is supplied. The corner is not the limit: the limit is the radius.</p>
+<h2 id="what-the-corner-cannot-reproduce">What the Corner Cannot Reproduce</h2>
+<p><strong>Four failures, and the first is a boundary rather than a defect.</strong></p>
+<p><strong>No pairs, so no positronium and no $e^+e^-\to\ldots$.</strong> The positron has been integrated out, and a bound state of an electron and a positron is a state of the deleted field. Any process above $2m_e$ is outside.</p>
+<p><strong>No running of $\alpha$ above $2m_e$.</strong> The corner has a fixed coupling and a matching scale. The logarithm that would be the running is inside $c_F$ and the other coefficients; a process at $10\ \mathrm{GeV}$ is not described here, it is described by the corner that integrates out the $W$.</p>
+<p><strong>The proton radius is an input, not an output.</strong> The muonic-hydrogen Lamb shift is measured to $202.37\ \mathrm{meV}$ and the theory is limited by the proton charge radius, whose two determinations — from electronic hydrogen and from muonic hydrogen — differ by about $4\%$ in the radius. That discrepancy is not a failure of this corner: it is the statement that the radius is a matching coefficient of a lower-energy theory, and the corner is exactly as precise as the number fed to it.</p>
+<p><strong>The Uehling potential's long tail is a matching, not a derivation.</strong> The vacuum-polarisation correction to the Coulomb potential is a loop of the deleted field; in the corner it appears as a contact term plus a series, valid only at distances longer than $1/m$. At distances of order $1/m$ the corner has nothing to say.</p>
+<h2 id="the-error-bar-stated">The Error Bar, Stated</h2>
+<p><strong>The corner's own expansion parameter is $Z\alpha$, and the achieved accuracy is far better than it suggests.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Size</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the non-relativistic expansion</td>
+<td>$(Z\alpha)^2=5.3\times10^{-5}$</td>
+<td>the truncation of the $1/m$ series</td>
+</tr>
+<tr>
+<td>the omitted pair terms</td>
+<td>$\exp(-2mr)$</td>
+<td>exponentially small at atomic distances, and this is why the corner works so well</td>
+</tr>
+<tr>
+<td>the matching coefficients</td>
+<td>$\mathcal{O}(\alpha^n)$</td>
+<td>order by order in $\alpha$, known to high $n$</td>
+</tr>
+<tr>
+<td>external inputs</td>
+<td>the proton radius</td>
+<td>the actual limitation</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The reason the corner beats its expansion parameter is the exponential.</strong> The deleted field's effects are suppressed by $e^{-2mr}$, which at the Bohr radius is $e^{-2/\alpha}\approx e^{-274}$ — an astronomically small number. A corner that deletes a field heavier than the inverse distance of interest does not pay a power of the small parameter; it pays an exponential, and that is why the non-relativistic corner of QED is the most accurate corner in physics.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The move. $v/c\to0$ alone, with the loop kept.</li>
+<li>The operator list. Four leading operators, with coefficients fixed by matching.</li>
+<li>The three routes. Foldy–Wouthuysen, elimination, matching, and they agree.</li>
+<li>The Lamb shift. $1057.845\ \mathrm{MHz}$, reproduced, and impossible in the previous corner.</li>
+<li>The hyperfine splitting. $1420.405751\ \mathrm{MHz}$, limited by the proton's structure.</li>
+<li>The anomalous moment. Twelve digits, and it needs the loop.</li>
+<li>The pairs. Deleted, and positronium is outside.</li>
+<li>The running. Not in the corner; it is in the matching.</li>
+<li>The proton radius. An input, and the actual limit of the prediction.</li>
+<li>The exponential. $e^{-2mr}$, which is why the corner is the most accurate one available.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Sending $v/c\to0$ while keeping the loop gives non-relativistic QED: electrons, photons and nuclei, with the positron integrated out and its effects compressed into matched coefficients.</p>
+<p>The corner reproduces the Lamb shift, the hyperfine splitting, and the anomalous magnetic moment to twelve digits, and it does so because the deleted field costs an exponential rather than a power. It cannot produce a pair, a positronium state, or the running above the electron mass, and its sharpest prediction is limited by the proton radius, which is a matching coefficient from below rather than an object of the theory.</p>
+<p>The corner's lesson for the lattice is that the size of an error is not the size of the expansion parameter: a field whose mass exceeds the inverse distance of interest is deleted at the cost of $e^{-2mr}$, and a corner that can make that deletion is more accurate than its coordinates suggest.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NRQED</td>
+<td>non-relativistic QED, this corner</td>
+</tr>
+<tr>
+<td>$c_F$</td>
+<td>the coefficient of the magnetic moment operator, $1+\alpha/\pi+\cdots$</td>
+</tr>
+<tr>
+<td>$c_D$</td>
+<td>the coefficient of the Darwin operator</td>
+</tr>
+<tr>
+<td>matching</td>
+<td>fixing a coefficient by requiring two theories to agree on one observable</td>
+</tr>
+<tr>
+<td>$e^{-2mr}$</td>
+<td>the exponential suppression of a deleted heavy field at distance $r$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic: $\hbar\to0$ First, Then $v/c\to0$</a>. The same coordinate in the other order.</li>
+<li><a href="local-and-low-energy-the-derivative-cut.html">Local and Low Energy: The Derivative Cut</a>. The other corner that works by deleting a field.</li>
+<li><a href="exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a>. The leading order of the arrow.</li>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. Why the exponential changes the error budget.</li>
+<li><a href="the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html">The Twelve Fermion Kinetic Rows</a>. The rows this corner expands.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

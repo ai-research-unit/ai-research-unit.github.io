@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Covariant Derivative Pieces Above $M_C$: Fifteen $A\Xi\Xi$ and One Hundred and Twenty $AA\Xi\Xi$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Row is. It is the only row in which the scalar and the connection meet, and it produces both of the mixed vertices. How many, and why those…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-covariant-derivative-pieces-above-math0-fifteen-math1-and-one-hundred-and-twenty-math2"><strong>The Covariant Derivative Pieces Above $M_C$: Fifteen $A\Xi\Xi$ and One Hundred and Twenty $AA\Xi\Xi$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Row $3$ is $\operatorname{tr}(D_{\imath}\Xi)^{\dagger}(D^{\imath}\Xi)$. <strong>It is the only row in which the scalar and the connection meet, and it produces both of the mixed vertices.</strong> How many, and why those numbers?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;A\Xi\Xi:\ 15,\qquad AA\Xi\Xi:\ 120\ \text{symmetric pairs}.\;}
+$$</p>
+<p><strong>Fifteen and not a hundred and twenty, and the difference is the difference between one generator and two.</strong> The first is the count of generators; the second is the count of symmetric pairs of generators.</p>
+<h2 id="the-expansion">The Expansion</h2>
+<p>$$
+\operatorname{tr}(D_{\imath}\Xi)^{\dagger}(D^{\imath}\Xi)
+=\operatorname{tr}(\partial_{\imath}\Xi)^{\dagger}(\partial^{\imath}\Xi)
++2g_{4}\operatorname{Re}\operatorname{tr}\bigl(\partial_{\imath}\Xi\bigr)^{\dagger}\bigl[-iA^{\imath},\Xi\bigr]
++g_{4}^{2}\operatorname{tr}\bigl[A_{\imath},\Xi\bigr]^{\dagger}\bigl[A^{\imath},\Xi\bigr].
+$$</p>
+<p><strong>Three terms: the scalar's own kinetic term, the one-connection vertex, and the two-connection vertex.</strong> The coupling appears as $g_{4}$ and $g_{4}^{2}$, <strong>and both are row $1$'s number.</strong></p>
+<p><strong>The commutator is the structure and it is not a choice.</strong> The group acts as $\Xi\to U\Xi U^{\dagger}$, so the covariant derivative must be a commutator, <strong>$D_{\imath}\Xi=\partial_{\imath}\Xi-ig_{4}[A_{\imath},\Xi]$</strong>; there is no other invariant way to couple a connection to a matrix in the adjoint-plus-singlet.</p>
+<h2 id="the-one-connection-vertex-fifteen">The One-Connection Vertex: Fifteen</h2>
+<p>$$
+\mathcal{L}_{A\Xi\Xi}=-2ig_{4}\,\operatorname{tr}\bigl(\partial_{\imath}\Xi\bigr)^{\dagger}\bigl[A^{\imath},\Xi\bigr].
+$$</p>
+<p><strong>One generator at a time, so the count is the count of generators: fifteen.</strong></p>
+<p><strong>The vertex has one Lorentz structure and no derivative ambiguity.</strong> The derivative sits on one scalar leg and the connection carries the vector index, <strong>so the vertex is a two-scalar-one-vector object with a momentum on one scalar leg</strong>; that is the whole shape and it is fixed.</p>
+<p><strong>Fifteen is a realisation count.</strong> It is how many distinct arrays the vertex can carry — one per generator — <strong>and the coupling is $g_{4}$, which is one number.</strong></p>
+<h2 id="the-two-connection-vertex-one-hundred-and-twenty">The Two-Connection Vertex: One Hundred and Twenty</h2>
+<p>$$
+\mathcal{L}_{AA\Xi\Xi}=g_{4}^{2}\operatorname{tr}\bigl[A_{\imath},\Xi\bigr]^{\dagger}\bigl[A^{\imath},\Xi\bigr].
+$$</p>
+<p><strong>Two generators enter through two commutators, and the contraction is symmetric in the pair.</strong></p>
+<p>$$
+\bigl[A_{a}t_{a},\Xi\bigr]=\bigl[X_{a}\otimes t_{a}\bigr]\Xi,
+\qquad
+\text{pairs }(a,b)\ \text{counted symmetrically:}\ \frac{15\cdot16}{2}=120 .
+$$</p>
+<p><strong>A hundred and twenty and not two hundred and twenty-five.</strong> The commutator's square is symmetric under $a\leftrightarrow b$ because $\operatorname{tr}[A_{a},\Xi]^{\dagger}[A_{b},\Xi]$ is symmetric, <strong>so the antisymmetric part is not there</strong> and the count is the symmetric pairs.</p>
+<p><strong>This is the article's one arithmetic point and it is the one most often got wrong.</strong> A count of ordered pairs gives $15^{2}=225$; <strong>the correct count is $120$</strong>, and the difference is the antisymmetric hundred and five, which would be the contraction with $f_{abc}$ and does not appear because the scalar's coupling is a commutator squared and not a commutator.</p>
+<h2 id="why-the-scalar-couples-by-a-commutator">Why the Scalar Couples by a Commutator</h2>
+<p><strong>Four reasons, and they are one reason stated four ways.</strong></p>
+<p><strong>Invariance.</strong> $\Xi\to U\Xi U^{\dagger}$ and $A_{\imath}\to UA_{\imath}U^{\dagger}+(i/g_{4})U\partial_{\imath}U^{\dagger}$; <strong>the combination $\partial_{\imath}\Xi-ig_{4}[A_{\imath},\Xi]$ transforms as $\Xi$ does</strong>, and no other combination does.</p>
+<p><strong>Hermiticity.</strong> $\Xi$ is Hermitian, so $[A_{\imath},\Xi]$ is anti-Hermitian for Hermitian $A$, <strong>and $\operatorname{tr}[A,\Xi]^{\dagger}[A,\Xi]$ is positive</strong> — which is what makes the kinetic term a kinetic term.</p>
+<p><strong>The trace.</strong> The singlet in $\mathbf{15}\otimes\mathbf{15}$ is the trace, <strong>so the only invariant contraction of two adjoint objects is $\operatorname{tr}(\cdot\,\cdot)$</strong>, and the commutator's square is that contraction.</p>
+<p><strong>The absence of a second coupling.</strong> A term $\operatorname{tr}A_{\imath}\Xi A^{\imath}\Xi$ would be a different contraction of the same objects, <strong>but it reduces to the commutator's square plus a total derivative</strong>, so it is not independent.</p>
+<h2 id="what-is-not-produced">What Is Not Produced</h2>
+<p><strong>No $A\Xi$ vertex.</strong> A single connection and a single scalar would need an invariant linear in $\Xi$ and in $A$, <strong>and $\operatorname{tr}A_{\imath}\Xi$ vanishes because $\Xi$ contains a singlet and $A$ is traceless.</strong> The linear-in-$\Xi$ term is row $13$, <strong>declared zero and not produced by the covariant derivative.</strong></p>
+<p><strong>No $\Xi\Xi\Xi$ from this row.</strong> Three scalars and no connection come from the potential, <strong>not from the derivative</strong>, and the cubic is row $14$ with a zero coefficient.</p>
+<p><strong>No derivative on the connection.</strong> The vertex $A\Xi\Xi$ has its momentum on a scalar leg; <strong>the $A\Xi\partial\Xi$ and $\partial A\Xi\Xi$ forms are the same vertex up to integration by parts</strong>, and the census counts it once.</p>
+<h2 id="the-vertex-count-in-one-place">The Vertex Count in One Place</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>type</th>
+<th>count</th>
+<th>coupling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}(\partial\Xi)^{\dagger}(\partial\Xi)$</td>
+<td>propagator</td>
+<td>$1$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}(\partial\Xi)^{\dagger}[A,\Xi]$</td>
+<td>$A\Xi\Xi$</td>
+<td>$15$</td>
+<td>$g_{4}$</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}[A,\Xi]^{\dagger}[A,\Xi]$</td>
+<td>$AA\Xi\Xi$</td>
+<td>$120$</td>
+<td>$g_{4}^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two vertices from one row, and both carry row $1$'s coupling.</strong> With the gauge self-couplings, <strong>$g_{4}$ now reaches five vertex types</strong> — the statement <a href="the-audit-above-m-c-every-constant-against-every-piece.html">the audit</a> makes: <strong>one number, five doors.</strong></p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The expansion. Three terms: kinetic, $A\Xi\Xi$, $AA\Xi\Xi$.</li>
+<li>The one-connection count. Fifteen, one per generator.</li>
+<li>The two-connection count. $\binom{16}{2}=120$ symmetric pairs, not $225$.</li>
+<li>The symmetry. $\operatorname{tr}[A_{a},\Xi]^{\dagger}[A_{b},\Xi]$ is symmetric in $a,b$.</li>
+<li>The commutator. $D_{\imath}\Xi=\partial_{\imath}\Xi-ig_{4}[A_{\imath},\Xi]$, unique by invariance.</li>
+<li>The absent terms. No $A\Xi$, no cubic, no independent $\operatorname{tr}A\Xi A\Xi$.</li>
+<li>The coupling. $g_{4}$ and $g_{4}^{2}$, both row $1$'s.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Row $3$ produces two vertices: fifteen $A\Xi\Xi$ and a hundred and twenty $AA\Xi\Xi$.</strong> The first is the count of generators; <strong>the second is the count of symmetric pairs, and it is not two hundred and twenty-five because the commutator's square is symmetric.</strong></p>
+<p><strong>The commutator coupling is forced, not chosen</strong>: invariance, Hermiticity, the trace and the absence of a second independent contraction all point the same way.</p>
+<p><strong>Both vertices carry row $1$'s coupling</strong>, which is why $g_{4}$ reaches five of the seven vertex types and why one number is one force.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_{\imath}\Xi$</td>
+<td>$\partial_{\imath}\Xi-ig_{4}[A_{\imath},\Xi]$</td>
+</tr>
+<tr>
+<td>$a,b$</td>
+<td>generator indices, $1,\dots,15$</td>
+</tr>
+<tr>
+<td>symmetric pairs</td>
+<td>$(a,b)$ with $a\le b$; $\binom{16}{2}=120$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. Row $3$ and the scalar kinetic pair.</li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a>. The scalar sector in components.</li>
+<li><a href="the-gauge-self-couplings-above-m-c-aaa-aaaa-and-the-eighty-brackets.html">The Gauge Self-Couplings Above $M_C$</a>. The other two $g_{4}$ vertices.</li>
+<li><a href="the-audit-above-m-c-every-constant-against-every-piece.html">The Audit Above $M_C$</a>. $g_{4}$'s five doors.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a>. The trace split of this same row.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

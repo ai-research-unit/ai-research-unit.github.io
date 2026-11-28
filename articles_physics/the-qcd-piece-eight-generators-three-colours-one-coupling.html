@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The QCD Piece: Eight Generators, Three Colours, One Coupling — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The strong interaction contributes one row to the forty-seven: a single monomial with one coupling, one colour structure and a sum over six…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-qcd-piece-eight-generators-three-colours-one-coupling"><strong>The QCD Piece: Eight Generators, Three Colours, One Coupling</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The strong interaction contributes one row to the forty-seven: a single monomial with one coupling, one colour structure and a sum over six flavours and three colours folded inside it. The eight generators enter the row through the matrix $T^a$, the three colours through the trace that multiplies it, and the coupling is the same for every quark. Nothing in the row depends on which flavour carries the colour.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\mathcal{L}_{\mathrm{QCD}}=-g_s\sum_{f}\bar q_f\gamma^\mu T^a q_f\,G^a_\mu\;\longrightarrow\;\text{one row, one constant }g_s\;}
+$$</p>
+<p><strong>Why one row and not eighteen.</strong> A reader who multiplies six flavours by three colours and expects eighteen terms is counting the components of the sum. The piece is the monomial, and the sums over flavour and colour are inside it. The convention that makes the sum one piece is the first of the four in <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>, and it is what keeps the count finite.</p>
+<p><strong>The standing.</strong> The piece is standard, and the corpus's own treatment of the colour factor is in <a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon, an Octet Outside the Biquaternion Algebra</a>. What this article adds is its place in the census: one row, one constant, and the reasons the row cannot be split.</p>
+<h2 id="the-piece">The Piece</h2>
+<p><strong>Written out, with the sums explicit.</strong></p>
+<p>$$
+\mathcal{L}_{\mathrm{QCD}}=-g_s\sum_{f=u,d,s,c,b,t}\sum_{\alpha,\beta=1}^{3}\bar q_{f\alpha}\gamma^\mu\,(T^a)_{\alpha\beta}\,q_{f\beta}\,G^a_\mu ,
+$$</p>
+<p>with $a$ summed from $1$ to $8$.</p>
+<p><strong>The three ingredients.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ingredient</th>
+<th>Object</th>
+<th>Count</th>
+<th>Where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>colour generators</td>
+<td>$T^a=\tfrac12\lambda^a$</td>
+<td>$8$</td>
+<td>the adjoint of $\mathrm{SU}(3)_c$</td>
+</tr>
+<tr>
+<td>colours</td>
+<td>$\alpha,\beta$</td>
+<td>$3$</td>
+<td>the fundamental of $\mathrm{SU}(3)_c$</td>
+</tr>
+<tr>
+<td>flavours</td>
+<td>$f$</td>
+<td>$6$</td>
+<td>the quark content</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The algebra of the generators.</strong> $[T^a,T^b]=if^{abc}T^c$ and $\mathrm{tr}(T^aT^b)=\tfrac12\delta^{ab}$. The first is what makes the gluon self-interactions; the second is what makes the colour factor of a quark leg $C_F=\tfrac43$. Both are properties of the representation and neither is a parameter of the list.</p>
+<p><strong>Why the coupling is one number.</strong> Colour is unbroken: the vacuum carries no colour, so every colour index is treated the same way and the coefficient cannot depend on it. Flavour is a symmetry of the gauge interaction: the gluon couples to the colour current and not to the flavour index, so the coefficient cannot depend on $f$. One coefficient for the whole row is the statement that $\mathrm{SU}(3)_c$ is unbroken and flavour-blind.</p>
+<h2 id="the-vertex-and-the-colour-factor">The Vertex and the Colour Factor</h2>
+<p><strong>The Feynman rule.</strong> For a gluon of colour $a$, momentum $p$ and Lorentz index $\mu$ attached to a quark line,</p>
+<p>$$
+-i g_s\,\gamma^\mu\,T^a .
+$$</p>
+<p><strong>The colour factor of a quark leg.</strong> Contracting two generators gives</p>
+<p>$$
+\sum_a T^a_{\alpha\beta}T^a_{\beta\gamma}=C_F\,\delta_{\alpha\gamma},\qquad C_F=\frac{N_c^2-1}{2N_c}=\frac{4}{3},
+$$</p>
+<p>which is the number that multiplies every quark-line colour trace. It is a rational number fixed by $N_c=3$ and not a measurement.</p>
+<p><strong>Why the gluon does not couple to leptons.</strong> The lepton fields are colour singlets, so $T^a q$ has no lepton analogue: the generator acts as zero on a singlet. The absence is the statement that the leptons carry no colour, and it is why the QCD row is built from quarks alone.</p>
+<p><strong>Why the gluon does not couple to the photon or the $Z$.</strong> The gluon carries colour and no electroweak charge, and the photon and $Z$ carry no colour. A coupling would need a field carrying both, and the content has none. The statement is the same one made in <a href="the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Replacement of the Derivative</a>.</p>
+<h2 id="what-the-row-does-not-fix">What the Row Does Not Fix</h2>
+<p><strong>The mass basis is invisible to colour.</strong> The rotation that diagonalises the quark masses acts on flavour indices and commutes with $T^a$, so the QCD row is the same in every flavour basis. This is why QCD has no mixing matrix: the matrix that appears in the charged current appears there because the weak ladder changes flavour, and colour does not.</p>
+<p><strong>The coupling runs.</strong> $g_s$ is one of the eighteen constants at a stated scale; its value at another scale is given by the renormalisation-group equation, and the one-loop coefficient is negative, which is asymptotic freedom. The running is a property of the coefficient and not a new row.</p>
+<p><strong>The $\theta$ term is not part of the row.</strong> $G\tilde G$ is a total derivative and contributes no vertex; it is the nineteenth parameter and none of the pieces. <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a> states its status.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The row count. One row for six flavours and three colours.</li>
+<li>The generator count. Eight, the dimension of the adjoint of $\mathrm{SU}(3)_c$.</li>
+<li>The colour factor. $C_F=4/3$ from $N_c=3$, not a measurement.</li>
+<li>The coupling. One constant, $g_s$, and $\alpha_s=g_s^2/4\pi$.</li>
+<li>The flavour blindness. The coefficient does not depend on $f$, because the gluon couples to colour and not to flavour.</li>
+<li>The lepton absence. The generator acts as zero on a colour singlet.</li>
+<li>The photon and $Z$ absence. No field in the content carries both colour and electroweak charge.</li>
+<li>The basis independence. $T^a$ commutes with the flavour rotation, so the row has no mixing matrix.</li>
+<li>The vertex. $-ig_s\gamma^\mu T^a$, with the colour factor multiplying the trace.</li>
+<li>The $\theta$ term. A total derivative, a parameter and not a row.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>QCD is one row of the forty-seven: a single monomial with one coupling $g_s$, one colour matrix $T^a$ summed over eight generators, and sums over three colours and six flavours folded inside it.</p>
+<p>The eight generators are the adjoint of $\mathrm{SU}(3)_c$ and the three colours are its fundamental; the colour factor $C_F=4/3$ follows from $N_c=3$ and is a rational number, not a measurement. The single coupling is the statement that colour is unbroken and flavour-blind.</p>
+<p>The row has no mixing matrix, because colour commutes with the flavour rotation, and no photon or $Z$ partner, because no field carries both colour and electroweak charge. The $\theta$ term is a total derivative and belongs to the parameters, not to the rows.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G^a_\mu$</td>
+<td>The eight gluon fields, $a=1,\dots,8$</td>
+</tr>
+<tr>
+<td>$T^a$</td>
+<td>The colour generators $\tfrac12\lambda^a$</td>
+</tr>
+<tr>
+<td>$N_c$</td>
+<td>The number of colours, $3$</td>
+</tr>
+<tr>
+<td>$C_F$</td>
+<td>The quark-leg colour factor, $4/3$</td>
+</tr>
+<tr>
+<td>$g_s$</td>
+<td>The strong coupling, one of the eighteen constants</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html">The Gluon, an Octet Outside the Biquaternion Algebra</a>. The colour factor computed in the corpus's variables.</li>
+<li><a href="the-four-field-strengths-one-kinetic-piece-per-gauge-field.html">The Four Field Strengths</a>. The gluon kinetic row and its self-interactions.</li>
+<li><a href="the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Replacement of the Derivative</a>. Where the row comes from.</li>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. $g_s$ among the eighteen.</li>
+<li><a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP</a>. The term that is not a row.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

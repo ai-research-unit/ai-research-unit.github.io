@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Yukawa Block Above $M_C$: Two Matrices, Eight Numbers and No Phase — Biquaternion Universe</title>
+  <meta name="description" content="The question. Rows and are the two Yukawa structures. How many matrices does the group require, how many numbers do they carry, and does the sector…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-yukawa-block-above-math0-two-matrices-eight-numbers-and-no-phase"><strong>The Yukawa Block Above $M_C$: Two Matrices, Eight Numbers and No Phase</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Rows $10$ and $11$ are the two Yukawa structures. <strong>How many matrices does the group require, how many numbers do they carry, and does the sector violate $CP$?</strong></p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1,
+\qquad
+\text{two contractions},\qquad
+16-8=8\ \text{numbers},\qquad
+\text{no phase}.
+$$</p>
+<p><strong>Two matrices because the product has two singlets; eight numbers because one flavour group serves both; no phase because diagonal-ising what remains leaves no room for one.</strong></p>
+<h2 id="two-structures-and-not-one">Two Structures and Not One</h2>
+<p><strong>The product $\bar{\mathbf4}\otimes\mathbf4$ reduces to the adjoint plus the singlet.</strong></p>
+<p>$$
+\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1,
+\qquad
+\Xi=\Xi_{0}+\tfrac14\bigl(\operatorname{tr}\Xi\bigr)\mathbb1 .
+$$</p>
+<p><strong>Each singlet contracts with one piece of $\Xi$, so there are two invariant Yukawa structures.</strong></p>
+<p>$$
+\mathcal{L}_{Y}=y_{\alpha\beta}\,\bar\xi^{\alpha}\Xi_{0}\,\xi^{\beta}+y'_{\alpha\beta}\,\bar\xi^{\alpha}\,\tfrac14\bigl(\operatorname{tr}\Xi\bigr)\xi^{\beta}+\text{h.c.}
+$$</p>
+<p><strong>The traceless contraction uses the $\mathbf{15}$; the trace contraction uses the singlet.</strong> A model that wrote only $y\,\bar\xi\Xi\xi$ would have <strong>tied</strong> $y'=\tfrac14y$, and the tie is a choice and not a group-theoretic fact; <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">the census</a> prices it at a row and six parameters.</p>
+<h2 id="eight-numbers-not-sixteen-and-not-four">Eight Numbers, Not Sixteen and Not Four</h2>
+<p><strong>A single matrix first, because the pair is not twice it.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>real numbers</th>
+<th>removal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$y$ as written</td>
+<td>$8$</td>
+<td>—</td>
+</tr>
+<tr>
+<td>the copy basis, $\mathrm{U}(2)\times\mathrm{U}(2)$</td>
+<td>$-8$</td>
+<td>$y\to W^{\dagger}yV$</td>
+</tr>
+<tr>
+<td>a generic $y$'s stabiliser</td>
+<td>$+2$</td>
+<td>the two diagonal phases</td>
+</tr>
+<tr>
+<td><strong>physical, one matrix</strong></td>
+<td>$\mathbf2$</td>
+<td>the two singular values</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two and not four.</strong> A count by rephasing alone removes four and reports four; <strong>it double-counts, because the copy basis is unobservable and the gauge group is blind to it</strong> ($[X\otimes\mathbb1_{2},\mathbb1_{4}\otimes M]=0$). <strong>The singular-value decomposition is the right count, and it exists for every $2\times2$ matrix.</strong></p>
+<p><strong>The pair then carries eight.</strong></p>
+<p>$$
+16-8=8 .
+$$</p>
+<p><strong>A generic pair has no stabiliser</strong> — the diagonalisation a single matrix admits is spent once, and the second matrix's rotation is then fixed. <strong>So the pair is not two plus two and not sixteen:</strong> it is the two singular values of $y$, the two of $y'$, and the four numbers in the relative unitary $y'y^{-1}$ — <strong>two magnitudes, one angle and three phases.</strong></p>
+<p><strong>Eight is the number the theory carries, and two is the number the corpus writes</strong>, because the corpus writes one matrix and the tie is its choice.</p>
+<h2 id="no-phase-and-why">No Phase, and Why</h2>
+<p><strong>$CP$ conservation is a count here and not an assumption.</strong></p>
+<p><strong>One matrix can be made diagonal and real by a bi-unitary transformation.</strong> With $y\to W^{\dagger}yV$ and $W,V\in\mathrm{U}(2)$, the singular-value decomposition gives $y=\operatorname{diag}(y_{1},y_{2})$ with $y_{1,2}\ge0$, <strong>real and positive by convention.</strong> No phase survives.</p>
+<p><strong>Four real numbers become two, and the two are magnitudes.</strong> A phase would require an invariant that is odd under complex conjugation, <strong>and there is none</strong>: the only invariant of a single matrix under bi-unitary transformations is its spectrum of singular values, <strong>which is real.</strong></p>
+<p><strong>The corpus's $CP$ conservation is therefore structural.</strong> The sector conserves $CP$ because it has one matrix and no second source of a phase; <strong>the eight numbers of the untied pair contain three phases, and a model that wrote both matrices would violate $CP$ unless those three vanished.</strong></p>
+<p><strong>This is a prediction and a limitation.</strong> The model's $CP$ conservation is falsifiable in the same way its mass ratio is — <strong>by being exact where the world is not.</strong></p>
+<h2 id="the-one-quantitative-statement">The One Quantitative Statement</h2>
+<p><strong>The condensate is $\langle\Xi\rangle=v\operatorname{diag}(-3,1,1,1)$, and it makes the masses unequal across the quartet.</strong></p>
+<p>$$
+m_{\ell}=3m_{q}\quad\text{at equal singular value},
+$$</p>
+<p><strong>a factor of three from the lepton line against the spatial lines.</strong> That ratio is the sector's whole quantitative content, <strong>and <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">the Yukawa sector's article</a> shows it to be wrong by a factor of twenty-seven against the electron and the down quark.</strong></p>
+<p><strong>So the sector is falsified and says so.</strong> That is not a defect of the counting; <strong>it is the counting's consequence</strong>, and the model's honesty about it is the reason the census is worth writing.</p>
+<h2 id="what-the-block-does-not-contain">What the Block Does Not Contain</h2>
+<p><strong>No generation mixing.</strong> There is no generation index; <strong>the copy index is a two-valued degeneracy</strong>, so there is no CKM matrix and no PMNS matrix above $M_C$.</p>
+<p><strong>No right-handed neutrino mass.</strong> A Majorana mass would need a symmetric contract of $\bar\xi\bar\xi$, <strong>which the corpus declines</strong>, and there is no singlet fermion to carry it.</p>
+<p><strong>No $CP$-violating phase</strong>, for the reason above.</p>
+<p><strong>No second Higgs.</strong> A second scalar would bring its own Yukawa matrices, <strong>and the census has exactly two</strong>, both on the same $\Xi$.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The product. $\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$, two singlets.</li>
+<li>The structures. Two, one per singlet.</li>
+<li>The single matrix. $8-8+2=2$ singular values.</li>
+<li>The pair. $16-8=8$ numbers.</li>
+<li>The phase. None, because one matrix is diagonalised real and positive.</li>
+<li>The ratio. $m_{\ell}=3m_{q}$ from $\operatorname{diag}(-3,1,1,1)$.</li>
+<li>The falsification. The ratio is wrong by $27$ against $m_{e}/m_{d}$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Two Yukawa structures, because $\bar{\mathbf4}\otimes\mathbf4$ has two singlets, and one matrix carries two numbers while the pair carries eight.</strong> The count is singular values and not entries: <strong>the copy basis is unobservable, and a count by phases alone stops one removal early.</strong></p>
+<p><strong>No phase survives, and that is a count.</strong> One matrix is diagonalised real and positive; <strong>the untied pair's three phases are what a two-matrix model would have to explain.</strong></p>
+<p><strong>The sector's one quantitative statement is $m_{\ell}=3m_{q}$</strong>, and it is wrong by twenty-seven. <strong>The model is falsified here, and the falsification is the reason the count is trustworthy.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$y$, $y'$</td>
+<td>the two Yukawa matrices on the copy index</td>
+</tr>
+<tr>
+<td>$\alpha,\beta$</td>
+<td>the copy index, $1,2$</td>
+</tr>
+<tr>
+<td>$\Xi_{0}$, $\operatorname{tr}\Xi$</td>
+<td>the two singlets' partners in $\Xi$</td>
+</tr>
+<tr>
+<td>singular values</td>
+<td>the two real, non-negative eigenvalues of $y^{\dagger}y$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector of the $\mathrm{SU}(4)$ Model</a>. The $8-6=2$ derivation and the falsification.</li>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. Rows $10$ and $11$ and the tie.</li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a>. The eight numbers in the ledger.</li>
+<li><a href="the-fermion-connection-pieces-above-m-c-one-lorentz-structure-two-blocks-and-one-untouched-index.html">The Fermion–Connection Pieces Above $M_C$</a>. Why $\alpha$ is inert.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a>. How $y'$ moves under the trace shift.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

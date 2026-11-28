@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Boundary of the List Above $M_C$: The Bare Mass, the Cubics and $\theta_4$ — Biquaternion Universe</title>
+  <meta name="description" content="The question. Six structures are in the census with zero coefficients, and is outside the census altogether. For each, does the group forbid it or does a…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-boundary-of-the-list-above-math0-the-bare-mass-the-cubics-and-math1"><strong>The Boundary of the List Above $M_C$: The Bare Mass, the Cubics and $\theta_4$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Six structures are in the census with zero coefficients, and $\theta_4$ is outside the census altogether. <strong>For each, does the group forbid it or does a coefficient decline it?</strong> The two answers are not the same and the difference is the article.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\text{forbidden}:1\ (\text{vector mass});\qquad
+\text{declined}:6;\qquad
+\text{outside as a parameter}:1\ (\theta_4).
+$$</p>
+<p><strong>One of the seven absences is a theorem and six are choices.</strong> A reader who treats them alike will think the model is more constrained than it is.</p>
+<h2 id="the-seven-and-which-kind-each-is">The Seven, and Which Kind Each Is</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>kind</th>
+<th>warrant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m^{2}\operatorname{tr}A_{\imath}A^{\imath}$</td>
+<td><strong>forbidden</strong></td>
+<td>no invariant dimension-two pairing in the adjoint</td>
+</tr>
+<tr>
+<td>$m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}$</td>
+<td>declined</td>
+<td>one source of mass in the ledger</td>
+</tr>
+<tr>
+<td>$c\,\operatorname{tr}\Xi$</td>
+<td>forced</td>
+<td>the symmetric vacuum sets it to zero</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Xi^{3}$, $\operatorname{tr}\Xi^{2}\operatorname{tr}\Xi$, $(\operatorname{tr}\Xi)^{3}$</td>
+<td>declined</td>
+<td>evenness under $\Xi\to-\Xi$</td>
+</tr>
+<tr>
+<td>$\lambda_{5}\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$</td>
+<td>declined</td>
+<td>evenness, declared separately</td>
+</tr>
+<tr>
+<td>$\theta_{4}\operatorname{tr}F\tilde F$</td>
+<td><strong>outside</strong></td>
+<td>the fourth condition: a total derivative</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three kinds and not two.</strong> "Declined" is a coefficient's decision; <strong>"forced" is a vacuum's</strong>; "forbidden" is the group's; <strong>and $\theta_4$ is outside all three because the rule removed it before coefficients were consulted.</strong></p>
+<h2 id="the-vector-mass-is-forbidden">The Vector Mass Is Forbidden</h2>
+<p>$$
+m^{2}\operatorname{tr}A_{\imath}A^{\imath}
+\ \text{is invariant, dimension two, and Lorentz scalar — and it is not there.}
+$$</p>
+<p><strong>The reason is local invariance.</strong> Under $A_{\imath}\to UA_{\imath}U^{\dagger}+(i/g_{4})U\partial_{\imath}U^{\dagger}$ the field shifts by a derivative of the gauge function, <strong>and a term quadratic in $A$ with no derivative cannot be invariant</strong>: the shift produces a piece linear in $A$ and a piece quadratic in $\partial U$, <strong>and nothing in $m^{2}\operatorname{tr}A^{2}$ cancels either.</strong></p>
+<p><strong>So the vector mass is absent by the group's structure and not by anyone's choice.</strong> It becomes possible only when a condensate supplies a direction, <strong>and below $M_C$ the Proca terms appear exactly because $\langle\Xi\rangle\neq0$</strong>, which is the restructuring's work and not this phase's.</p>
+<p><strong>This is a theorem and can be stated as one.</strong> <em>In a phase with no condensate, a connection in the adjoint of a simple group has no mass term.</em> <strong>It is the statement that the fifteen stay massless until the vacuum picks a direction.</strong></p>
+<h2 id="the-fermion-mass-is-declined">The Fermion Mass Is Declined</h2>
+<p><strong>$\bar\xi\xi$ satisfies every condition the vector mass fails.</strong></p>
+<p>$$
+m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}
+\ \text{is invariant, dimension four, and Lorentz scalar.}
+$$</p>
+<p><strong>It is allowed and omitted.</strong> The ledger carries $\Xi$ as the one source of fermion mass, <strong>and a bare mass would be a second source the ledger does not hold.</strong></p>
+<p><strong>What the omission costs.</strong> Two real parameters, and the whole question of whether the fermion masses come from the condensate or from a bare term. <strong>The corpus's choice is that they come from the condensate</strong>, and <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">the Yukawa sector</a> shows what that predicts: $m_{\ell}=3m_{q}$, <strong>which is wrong by twenty-seven.</strong></p>
+<p><strong>The honest reading is that the bare mass is the model's most tempting repair and the corpus refuses it.</strong> A model that added it would rescue the ratio and lose the claim that the condensate is the only source. <strong>That trade is stated here and not hidden.</strong></p>
+<h2 id="the-cubics-are-declared-and-evenness-is-the-reason">The Cubics Are Declared, and Evenness Is the Reason</h2>
+<p>$$
+\Xi\to-\Xi
+\quad\Longrightarrow\quad
+\operatorname{tr}\Xi^{3}\to-\operatorname{tr}\Xi^{3},
+\qquad
+\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi\to-\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi .
+$$</p>
+<p><strong>One discrete symmetry removes three cubics and the fifth quartic together.</strong> The corpus declares evenness rather than declaring four separate zeros, <strong>and the four follow from one statement.</strong></p>
+<p><strong>The even symmetry also protects the vacuum.</strong> A cubic would shift the minimum away from $\Xi=0$, <strong>so evenness is what keeps the symmetric point symmetric</strong>, and it is the same reason the linear term is forced to zero.</p>
+<p><strong>The declaration is a basis statement and the census says so.</strong> Under a trace shift the cubics do not stay zero, <strong>because $\operatorname{tr}\Xi^{3}=\operatorname{tr}\Xi_{0}^{3}+\tfrac34s\operatorname{tr}\Xi_{0}^{2}+\tfrac1{16}s^{3}$</strong>; the zeros hold in the canonical basis and not in every basis.</p>
+<h2 id="math29-is-outside-and-not-declined">$\theta_4$ Is Outside and Not Declined</h2>
+<p><strong>The difference matters and is easy to miss.</strong> The six declined structures are rows with zero coefficients; <strong>$\theta_4$ has no row.</strong></p>
+<p>$$
+\theta_{4}\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}
+=\theta_{4}\,\partial_{\imath}K^{\imath},
+$$</p>
+<p><strong>so it integrates to a surface term and the fourth condition removes it before any coefficient is consulted.</strong> It survives as a parameter and not as a row, <strong>exactly as $\theta_{\mathrm{QCD}}$ does below $M_C$.</strong></p>
+<p><strong>So the count of absences is seven and the count of zero rows is six.</strong> A reader who conflated them would ask why the ledger says six and the boundary lists seven; <strong>the answer is that one of the seven was never a row.</strong></p>
+<h2 id="what-the-boundary-costs">What the Boundary Costs</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>missing structure</th>
+<th>parameters it would add</th>
+<th>what it would change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bare mass</td>
+<td>$2$</td>
+<td>the fermion mass ratio, and $CP$</td>
+</tr>
+<tr>
+<td>three cubics</td>
+<td>$3$</td>
+<td>the vacuum's location; the even symmetry</td>
+</tr>
+<tr>
+<td>fifth quartic</td>
+<td>$1$</td>
+<td>the boundedness cone</td>
+</tr>
+<tr>
+<td>$\theta_4$</td>
+<td>$1$ (already a parameter)</td>
+<td>strong $CP$, were it measurable</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Seven parameters lie outside the fifteen because of these decisions</strong>, and <a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">the coefficients article</a> counts them separately and never adds them to the fifteen.</p>
+<p><strong>And the bare mass is not simply additive.</strong> It shares its flavour group with $y$, <strong>so switching it on gives three matrices under one $\mathrm{U}(2)\times\mathrm{U}(2)$ and $24-8=16$ numbers, not eight plus two.</strong></p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The vector mass. Forbidden: no invariant dimension-two pairing in the adjoint.</li>
+<li>The fermion mass. Declined: two parameters, allowed by the group.</li>
+<li>The linear term. Forced: $\partial_{\Xi}\operatorname{tr}\Xi=\mathbb1\neq0$.</li>
+<li>The cubics. Three, removed by $\Xi\to-\Xi$.</li>
+<li>The fifth quartic. Removed by the same evenness, declared separately.</li>
+<li>$\theta_4$. Outside: a total derivative, no row.</li>
+<li>The counts. Seven absences, six zero rows, one parameter without a row.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>One absence is a theorem — the vector mass — and six are choices; a seventh, $\theta_4$, was never a row at all.</strong> The group forbids the vector mass, the vacuum forces the linear term to zero, evenness removes the cubics and the fifth quartic, <strong>and the fermion mass is allowed and declined.</strong></p>
+<p><strong>The bare mass is the tempting repair and the corpus refuses it</strong>, at a cost of two parameters and the model's one quantitative prediction.</p>
+<p><strong>Conflating "declined" with "forbidden" is the error this article exists to prevent</strong>, and separating $\theta_4$ from both is its second purpose.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_{\alpha\beta}$</td>
+<td>the bare fermion mass matrix; declined</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>the linear coefficient; forced to zero</td>
+</tr>
+<tr>
+<td>$c_{1}$–$c_{3}$</td>
+<td>the three cubic coefficients; declared zero</td>
+</tr>
+<tr>
+<td>$\lambda_{5}$</td>
+<td>the fifth quartic; declared zero</td>
+</tr>
+<tr>
+<td>$\theta_{4}$</td>
+<td>the vacuum angle; a parameter with no row</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The six declared zeros and their warrants.</li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a>. The seven sleeping constants.</li>
+<li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector</a>. What the bare mass's absence costs.</li>
+<li><a href="the-content-above-m-c-fifteen-connections-sixteen-weyl-fields-and-one-hermitian-scalar.html">The Content Above $M_C$</a>. Why the vector mass is forbidden.</li>
+<li><a href="the-census-rule-above-m-c-four-conditions-two-counting-conventions-and-the-eighteen-candidates.html">The Census Rule Above $M_C$</a>. $\theta_4$'s exclusion.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strong Field: The Non-Perturbative Corner and What It Refuses — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Every other corner is reached by sending a coordinate to zero. This one is reached by refusing to: the coupling is not small, so the expansion…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="strong-field-the-non-perturbative-corner-and-what-it-refuses"><strong>Strong Field: The Non-Perturbative Corner and What It Refuses</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Every other corner is reached by sending a coordinate to zero. This one is reached by refusing to: the coupling is not small, so the expansion in $\alpha_s$ does not exist, and the objects that survive are the ones that cannot be expanded — solitons, instantons, condensates, and confinement. It is the only corner of the lattice whose error bar this section cannot supply, and it is also the only one where a total derivative becomes physical.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\text{no expansion in }\alpha_s;\qquad \text{the instanton weight } e^{-8\pi^2/g^2}=e^{-2\pi/\alpha_s}\approx e^{-53}\ \text{at }m_Z\;}
+$$</p>
+<p><strong>What kind of corner this is.</strong> The other seven are limits: a parameter is sent to zero and a term is discarded. Here nothing is discarded and nothing is sent to zero; the <em>method</em> is removed. The corner is therefore the complement of coordinate 4 rather than a point of the lattice, and calling it a corner is a deliberate abuse: it marks the region where the lattice's own expansion fails.</p>
+<h2 id="what-survives-without-the-expansion">What Survives Without the Expansion</h2>
+<p><strong>Four objects, and the first is the one that carries a number.</strong></p>
+<p><strong>The instanton.</strong> A finite-action solution of the Euclidean Yang–Mills equation with topological charge one. Its action is $S=8\pi^2/g^2=2\pi/\alpha_s$, so its weight in the path integral is $e^{-2\pi/\alpha_s}$, which at $\alpha_s(m_Z)=0.118$ is $e^{-53}\approx10^{-23}$. The exponential is invisible in every order of perturbation theory, which is exactly why the corner exists: $e^{-1/\alpha}$ has no Taylor series at $\alpha=0$.</p>
+<p><strong>The $\theta$ term.</strong> $(\theta g^2/32\pi^2)G\tilde G$ is a total derivative, and in the perturbative corners it can be integrated away. Here it cannot: an instanton is a configuration on which the integral of the total derivative is the winding number, so $\theta$ becomes a physical angle and the vacuum becomes a superposition of winding sectors. This is the structural surprise of the corner, and it is why <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a> records $\theta$ as a parameter that is present and a row that is absent.</p>
+<p><strong>Confinement, and with it the hadron spectrum.</strong> The potential between a static quark and antiquark grows linearly at long distance with a string tension of about $1\ \mathrm{GeV/fm}$, so the asymptotic states are colour singlets. No order of perturbation theory produces this, and the mechanism is still not derived analytically. What exists is the lattice computation, which reproduces the hadron spectrum to a few per cent.</p>
+<p><strong>The chiral condensate and the $\eta'$ mass.</strong> The axial anomaly, which is exact at one loop, together with instantons, gives the $\eta'$ its large mass — the Witten–Veneziano relation. This is a case where a non-perturbative effect is computed from a perturbative anomaly plus a topological susceptibility.</p>
+<h2 id="the-three-controlled-exceptions">The Three Controlled Exceptions</h2>
+<p><strong>A corner with no expansion parameter is not automatically a corner with no error bar. There are three ways to get one.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th>What supplies the error</th>
+<th>What it costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exact by symmetry or topology</td>
+<td>none needed: the result is exact</td>
+<td>the class of such results is small — anomalies, BPS bounds, index theorems</td>
+</tr>
+<tr>
+<td>the lattice</td>
+<td>the spacing $a$, extrapolated to zero, and the volume</td>
+<td>a numerical error that shrinks as $a^2$, and no analytic formula</td>
+</tr>
+<tr>
+<td>large $N$</td>
+<td>$1/N$, which is $1/3$ for colour</td>
+<td>this is <a href="mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html">the mean-field corner</a> in disguise, with its $30\%$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Everything else is uncontrolled.</strong> A variational ansatz for a soliton gives an energy with no error bar unless one can bound the correction; a strong-coupling expansion gives a series with a finite radius that must be specified; a model of the QCD vacuum gives numbers whose relation to QCD is a hypothesis. The corner's discipline is therefore stricter than the others, not looser: a number computed here must be labelled with which of the three methods produced it.</p>
+<h2 id="dimensional-transmutation-and-the-parameter-count">Dimensional Transmutation, and the Parameter Count</h2>
+<p><strong>This is where the category's central claim is tested most sharply.</strong></p>
+<p><strong>The classical theory has a dimensionless coupling and no scale.</strong> QCD at the classical level is scale invariant: $g_s$ is a number and there is no mass. The quantum theory is not: the coupling runs, and the running can be integrated to define a scale</p>
+<p>$$
+\Lambda=\mu\,\exp\!\Bigl(-\frac{2\pi}{b_0\,\alpha_s(\mu)}\Bigr),\qquad b_0=11-\tfrac23 n_f,
+$$</p>
+<p>which is independent of $\mu$ at one loop. A mass has appeared from a dimensionless number, and this is dimensional transmutation.</p>
+<p><strong>Does that add a nineteenth parameter? No — and the distinction matters.</strong> $\Lambda$ is not free: it is $\alpha_s$ read at a scale, and $\alpha_s$ is already one of the eighteen constants. The count is unchanged. What the corner adds is a <em>scale</em>, and a scale is not a parameter: it is the unit in which the parameters are expressed, and it can be changed by changing the renormalisation point.</p>
+<p><strong>The arithmetic shows how little control there is.</strong> At one loop with $n_f=5$ and $\alpha_s(m_Z)=0.118$, the formula gives $\Lambda\approx90\ \mathrm{MeV}$ against the measured $\Lambda_{\overline{\mathrm{MS}}}^{(5)}\approx210\ \mathrm{MeV}$. The factor of $2.4$ is the higher-order ambiguity of a series that is not converging, and it is the honest measure of the corner's precision when no lattice is available.</p>
+<h2 id="what-the-corner-cannot-do">What the Corner Cannot Do</h2>
+<p><strong>Four refusals, and the second is the one that matters for this section.</strong></p>
+<p><strong>No Feynman expansion.</strong> There is no diagrammatic series, so the vertex count of fifty-three is meaningless here. A reader who carries <a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">the tally</a> into this corner has carried an object that does not exist in it.</p>
+<p><strong>No controlled error in general.</strong> The three exceptions above are exceptions. A generic strong-coupling question has no error bar, and the honest answer is "unknown" rather than a number with a guess attached.</p>
+<p><strong>No direct observation of the objects.</strong> No soliton and no instanton has been observed as a particle. Their evidence is indirect: the $\eta'$ mass, the $\theta$ bound, the $\mathrm{U}(1)$ anomaly, the lattice spectrum.</p>
+<p><strong>No derivation of confinement.</strong> The lattice computes it; nobody derives it from the eight lines. This is the largest open problem attached to a corner of this section, and it is a problem about the theory and not about the approximation.</p>
+<h2 id="where-the-corner-is-measured-indirectly">Where the Corner Is Measured Indirectly</h2>
+<p><strong>Three places, and the first is the sharpest.</strong></p>
+<p><strong>The hadronic vacuum polarisation in the muon $g-2$.</strong> The muon's anomalous moment receives a contribution from a quark loop, which at the relevant momenta is entirely non-perturbative. It is computed either from $e^+e^-$ data or from the lattice, and the two disagree at the few-per-mille level — enough to change the significance of the measured discrepancy. This is the corner entering a precision measurement, and it is the cleanest example of a non-perturbative number being needed by a perturbative calculation.</p>
+<p><strong>The running of $\alpha_s$ at low scales.</strong> The measured $\alpha_s$ at $1\ \mathrm{GeV}$ is only reproduced once the quark thresholds and the higher orders are included, and the low-scale value is a strong-coupling quantity.</p>
+<p><strong>The QCD contributions to $h\to gg$ and $h\to\gamma\gamma$.</strong> The Higgs couplings to two gluons and two photons are loop-induced, and the gluon one is a strong-coupling matrix element over a perturbative coefficient. The measured rates are about $10\%$ and $3\%$ of the total width, and they are reproduced.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The nature of the corner. No expansion, rather than a limit.</li>
+<li>The instanton. $S=8\pi^2/g^2$, weight $e^{-2\pi/\alpha_s}\approx e^{-53}$ at $m_Z$.</li>
+<li>The $\theta$ term. A total derivative that the corner makes physical.</li>
+<li>Confinement. Linear potential, string tension about $1\ \mathrm{GeV/fm}$, and no derivation.</li>
+<li>The $\eta'$. Massive through the anomaly plus instantons.</li>
+<li>The three methods. Symmetry, lattice, large-$N$, and nothing else.</li>
+<li>Dimensional transmutation. $\Lambda$ from $\alpha_s$, and no new parameter.</li>
+<li>The arithmetic. One loop gives $90\ \mathrm{MeV}$ against $210\ \mathrm{MeV}$, which is the corner's precision.</li>
+<li>The refusals. No diagrams, no generic error bar, no observed soliton, no derivation of confinement.</li>
+<li>The indirect measurements. Hadronic vacuum polarisation, low-scale $\alpha_s$, $h\to gg$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The non-perturbative corner is not a limit but the absence of one. Instanton weights $e^{-2\pi/\alpha_s}$, a $\theta$ angle that stops being a total derivative, confinement with a linear potential, and a chiral condensate are the objects that live there, and none of them has a Taylor series in the coupling.</p>
+<p>Error bars exist in exactly three ways: exact by symmetry, controlled by a lattice spacing, or organised by large $N$ with its $1/3$. Everything else is uncontrolled, and the honest label is "unknown".</p>
+<p>The corner's structural contribution is dimensional transmutation: a scale emerges from a dimensionless coupling, which changes no parameter count but does introduce a unit. And its sharpest arithmetic — $90\ \mathrm{MeV}$ from one loop against $210\ \mathrm{MeV}$ measured — is the measure of how little the perturbative machinery can say here.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>instanton</td>
+<td>a finite-action Euclidean solution with unit topological charge</td>
+</tr>
+<tr>
+<td>$\theta$</td>
+<td>the coefficient of $G\tilde G$; a total derivative that becomes physical here</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>the transmuted scale, a function of $\alpha_s$ and not a new parameter</td>
+</tr>
+<tr>
+<td>$b_0$</td>
+<td>the one-loop coefficient of the beta function, $11-\tfrac23n_f$</td>
+</tr>
+<tr>
+<td>string tension</td>
+<td>the slope of the confining potential, about $1\ \mathrm{GeV/fm}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html">Mean Field: The Large-$N$ Corner</a>. The third of the controlled methods, and its $1/3$.</li>
+<li><a href="the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>. Where this corner sits, and why its error bar is missing.</li>
+<li><a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. $\theta$ as a parameter without a row.</li>
+<li><a href="instantons-and-solitons-in-biquaternionic-form.html">Instantons and Solitons in Biquaternionic Form</a>. The objects, in the corpus's variables.</li>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. The four requirements, and what happens when the first cannot be met.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

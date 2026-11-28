@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Twelve Fermion Kinetic Pieces: Nine Massive Species, Three Neutrinos and Their Currents — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The list has twelve fermion kinetic pieces, one per species: six quarks summed over colour, three charged leptons, three neutrinos.">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents"><strong>The Twelve Fermion Kinetic Pieces: Nine Massive Species, Three Neutrinos and Their Currents</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The list has twelve fermion kinetic pieces, one per species: six quarks summed over colour, three charged leptons, three neutrinos.</p>
+<p>$$
+\mathcal{L}_{\mathrm{ferm}}=\sum_{f=1}^{12}i\,\bar\psi_f\gamma^\mu\partial_\mu\psi_f ,
+\qquad
+\psi_f\in\{u,c,t,d,s,b,e,\mu,\tau,\nu_e,\nu_\mu,\nu_\tau\} .
+$$</p>
+<p><strong>Why twelve and not nine.</strong> Nine species have a mass and three do not. All twelve propagate. A list that gives a field a coupling to a current and no free term is not a Lagrangian, and the count of kinetic pieces is the count of fields and not the count of masses.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;12=6+3+3,\qquad 12\ \text{kinetic pieces},\quad 9\ \text{mass pieces}\;}
+$$</p>
+<p><strong>The standing.</strong> The free Dirac equation and its bilinears are the corpus's, in <a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>. This article writes the twelve pieces in the mass basis, states the one structural difference between the nine and the three, and counts the currents they define.</p>
+<h2 id="the-twelve-pieces">The Twelve Pieces</h2>
+<p><strong>One line, twelve rows.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Species</th>
+<th>Colour</th>
+<th>Chirality</th>
+<th>Piece</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u,c,t$</td>
+<td>$\mathbf3$</td>
+<td>$L$, $R$</td>
+<td>$i\bar q\gamma^\mu\partial_\mu q$, summed over colour and flavour</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$\mathbf3$</td>
+<td>$L$, $R$</td>
+<td>the same, with the down-type flavour sum</td>
+</tr>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$\mathbf1$</td>
+<td>$L$, $R$</td>
+<td>$i\bar\ell\gamma^\mu\partial_\mu\ell$</td>
+</tr>
+<tr>
+<td>$\nu_e,\nu_\mu,\nu_\tau$</td>
+<td>$\mathbf1$</td>
+<td>$L$ only</td>
+<td>$i\bar\nu_L\gamma^\mu\partial_\mu\nu_L$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The coefficient is one for all twelve.</strong> This is the one place in the list where twelve rows share a coefficient, and the coefficient is fixed by the canonical anticommutator rather than measured. It is why the twelve can be written as one sum and still counted as twelve rows: <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a> counts canonical terms, and a canonical term with unit coefficient is still a term.</p>
+<p><strong>The colour sum is inside one piece.</strong> A quark kinetic term summed over three colours is one row, because the three colours share one coefficient and one mass. The same convention makes the six flavours of the up type one row and the six of the down type one row.</p>
+<h2 id="the-difference-between-the-nine-and-the-three">The Difference Between the Nine and the Three</h2>
+<p><strong>The nine are Dirac, the three are Weyl.</strong></p>
+<p>$$
+i\bar\psi_f\gamma^\mu\partial_\mu\psi_f
+\qquad\text{and}\qquad
+i\bar\nu_{L}\gamma^\mu\partial_\mu\nu_L=\tfrac12\,i\bar\nu\gamma^\mu(1-\gamma_5)\partial_\mu\nu .
+$$</p>
+<p><strong>Why the difference.</strong> A Dirac field has two chiral components and a mass term couples them. A neutrino in this content has one, because there is no right-handed neutrino to couple to. The kinetic term survives the loss of the second component; the mass term does not.</p>
+<p><strong>Why the difference is not a defect.</strong> The kinetic term of a Weyl field is a perfectly good dimension-four invariant of the residual group: $\nu_L$ has $Q=0$ and no colour, so $i\bar\nu_L\slashed\partial\nu_L$ is invariant. It is the <em>mass</em> term that the content forbids, and <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a> shows that the exclusion is a statement about the unbroken theory and not about this piece.</p>
+<p><strong>The projector is idempotent.</strong> $\tfrac12(1-\gamma_5)$ squares to itself, so writing the Weyl piece with the projector twice would give the same term; the display uses it once, which is why the factor is $\tfrac12$ and not $\tfrac14$.</p>
+<h2 id="the-two-currents-each-piece-defines">The Two Currents Each Piece Defines</h2>
+<p><strong>Vector and axial.</strong></p>
+<p>$$
+j^{\mu}_{V,f}=\bar\psi_f\gamma^\mu\psi_f ,
+\qquad
+j^{\mu}_{A,f}=\bar\psi_f\gamma^\mu\gamma_5\psi_f .
+$$</p>
+<p><strong>Eleven and one.</strong> A Dirac species defines both. A left-handed neutrino defines one combination only, $j_V-j_A$, because $(1-\gamma_5)$ acting on a left-handed field returns twice the field. The count of independent currents is therefore</p>
+<p>$$
+9\times2+3\times1=21 .
+$$</p>
+<p><strong>Why the currents matter here rather than in the interaction articles.</strong> Each interaction piece of the list couples one of these currents to one connection: the photon to $j_V$ with the charge as coefficient, the gluon to the colour current, the $Z$ to a fixed combination of $j_V$ and $j_A$, and the $W$ to the left-handed charged current. The kinetic pieces are what make the currents conserved, and current conservation is what the Ward identities of the gauge sector need.</p>
+<p><strong>The axial current is not conserved by the mass.</strong> $\partial_\mu j^\mu_{A,f}=2im_f\bar\psi_f\gamma_5\psi_f$, so the mass pieces break the axial symmetry explicitly. The divergence is the axial anomaly's classical partner, and the interplay of the two is the subject of <a href="anomalies-and-anomaly-cancellation.html">Anomalies and Anomaly Cancellation</a>.</p>
+<h2 id="why-the-pieces-are-not-nine">Why the Pieces Are Not Nine</h2>
+<p><strong>The propagation argument.</strong> A field that appears in a current must have a propagator, and the propagator is the inverse of the quadratic operator that the kinetic piece supplies. Deleting the three neutrino kinetic terms would leave the neutral-current and charged-current pieces with external neutrino legs and no internal ones, which is not a theory of anything.</p>
+<p><strong>The counting argument.</strong> The forty-seven is a count of the terms of one Lagrangian. A term that couples $\bar\nu$ to $e$ and $W$ is in the list, and a term that propagates $\nu$ is not; the second is required for the first to be usable. The asymmetry would also show up in the count of parameters: the three neutrino kinetic pieces carry no parameter, so deleting them would remove three rows and no constants, and the parameter map of <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> would be unchanged while the piece count fell to forty-six.</p>
+<p><strong>The one reading under which nine is correct.</strong> If the census counted only pieces with free parameters, the neutrino kinetics, the photon kinetic, the gluon kinetic and the $W$ kinetic would all be excluded, and the count would be a count of parameters in disguise. The category does not use that convention, and it says so once in the census rule.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. $6+3+3=12$.</li>
+<li>The colour sum. Three colours inside one quark piece, and one coefficient for all three.</li>
+<li>The dimension. $\bar\psi\slashed\partial\psi$ has dimension $3+1=4$.</li>
+<li>The Hermiticity. $i\bar\psi\gamma^\mu\partial_\mu\psi$ is Hermitian up to a total derivative, which is why the $i$ is there and why the coefficient is real.</li>
+<li>The projector. $\bigl[\tfrac12(1-\gamma_5)\bigr]^2=\tfrac12(1-\gamma_5)$, so the Weyl piece is written once with a factor $\tfrac12$.</li>
+<li>The current count. $9\times2+3\times1=21$.</li>
+<li>The axial divergence. $\partial_\mu j^\mu_{A,f}=2im_f\bar\psi_f\gamma_5\psi_f$, nonzero exactly for the nine massive species.</li>
+<li>The equation of motion. $i\slashed\partial\psi_f=0$ for the three neutrinos and $i\slashed\partial\psi_f=m_f\psi_f$ for the nine, which is the content of the twelve pieces alone.</li>
+<li>The parameter independence. The twelve pieces carry one coefficient between them, and it is not one of the eighteen.</li>
+<li>The corpus's writing. $\bar{\tilde\Xi}i\tilde\nabla_\Phi\tilde\Xi$ per Weyl field, forty-five of them, which is the same count as twelve Dirac species plus three left-handed neutrinos.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>There are twelve fermion kinetic pieces, one per species, with unit coefficient fixed by the canonical anticommutator: six quarks summed over colour, three charged leptons, three neutrinos. The colour and flavour sums are inside single pieces, which is why the count is twelve and not forty-five.</p>
+<p>Nine of the twelve are Dirac and three are Weyl. The difference is the absence of a right-handed neutrino, and it affects the mass piece and not the kinetic one. The Weyl piece carries a single projector and a factor of $\tfrac12$.</p>
+<p>Each Dirac species defines a vector and an axial current, and each neutrino defines one combination of them, so the list carries twenty-one independent currents. The interactions couple these currents to the connections, and the gauge sector's Ward identities are what the conservation of the vector currents supplies.</p>
+<p>The three neutrino kinetic pieces are in the list because a field that is coupled must propagate. A census that counted only pieces with free parameters would delete them and would also delete four other pieces, and the category does not use that convention.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\psi_f$</td>
+<td>A Dirac species, summed over colour where it has colour</td>
+</tr>
+<tr>
+<td>$\nu_{L}$</td>
+<td>A left-handed neutrino, one Weyl field</td>
+</tr>
+<tr>
+<td>$\gamma^\mu$, $\gamma_5$</td>
+<td>The Dirac matrices of the frame</td>
+</tr>
+<tr>
+<td>$j^\mu_{V,f}$, $j^\mu_{A,f}$</td>
+<td>Vector and axial currents</td>
+</tr>
+<tr>
+<td>$21$</td>
+<td>The count of independent currents, $9\times2+3$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-dirac-equation-in-biquaternionic-form.html">The Dirac Equation in Biquaternionic Form</a>. The free equation, the bilinears and the sign conventions used above.</li>
+<li><a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses and the Tenth the Minimal Model Omits</a>. Why nine of the twelve have a mass piece.</li>
+<li><a href="the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece</a>. Where the twenty-one currents are coupled.</li>
+<li><a href="anomalies-and-anomaly-cancellation.html">Anomalies and Anomaly Cancellation</a>. The axial divergence and the conditions on the content.</li>
+<li><a href="the-minimal-coupling-in-biquaternionic-form.html">The Minimal Coupling in Biquaternionic Form</a>. The gradient that replaces the derivative in the interacting pieces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

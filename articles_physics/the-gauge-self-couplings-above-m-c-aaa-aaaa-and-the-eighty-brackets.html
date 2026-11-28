@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Gauge Self-Couplings Above $M_C$: $AAA$, $AAAA$ and the Eighty Brackets — Biquaternion Universe</title>
+  <meta name="description" content="The question. Row is one number,. What interactions does one number contain? This article expands the row and counts them.">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-gauge-self-couplings-above-math0-math1-math2-and-the-eighty-brackets"><strong>The Gauge Self-Couplings Above $M_C$: $AAA$, $AAAA$ and the Eighty Brackets</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Row $1$ is one number, $\tfrac14\operatorname{tr}F_{\imath\jmath}F^{\imath\jmath}$. <strong>What interactions does one number contain?</strong> This article expands the row and counts them.</p>
+<p><strong>The answer.</strong> Two types and five structures.</p>
+<p>$$
+\boxed{\;\tfrac14\operatorname{tr}F^{2}\ \longrightarrow\ AAA\ \text{and}\ AAAA,\qquad
+80\ \text{nonzero brackets of } 105\ \text{pairs}.\;}
+$$</p>
+<p><strong>One coupling, three-point and four-point vertices, and no free parameter anywhere in the expansion.</strong> The vertex strengths are the structure constants, and <strong>the structure constants are the group's and not the author's.</strong></p>
+<h2 id="the-expansion">The Expansion</h2>
+<p><strong>The field strength is $F_{\imath\jmath}=\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}-ig_{4}[A_{\imath},A_{\jmath}]$, and squaring it gives three terms.</strong></p>
+<p>$$
+\tfrac14\operatorname{tr}F_{\imath\jmath}F^{\imath\jmath}
+=\underbrace{\tfrac14\operatorname{tr}(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath})^{2}}_{\text{kinetic}}
++\underbrace{\tfrac12g_{4}\operatorname{tr}\bigl(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}\bigr)[A^{\imath},A^{\jmath}]}_{AAA}
++\underbrace{\tfrac14g_{4}^{2}\operatorname{tr}[A_{\imath},A_{\jmath}][A^{\imath},A^{\jmath}]}_{AAAA}.
+$$</p>
+<p><strong>The first term is the propagator and carries no coupling.</strong> The second and third carry $g_{4}$ and $g_{4}^{2}$; <strong>their ratio is fixed by the same number</strong>, which is what "one coupling" means at the level of Feynman rules.</p>
+<p><strong>The factor $\tfrac14$ is not arbitrary.</strong> It is $\tfrac14$ because $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ and the field strength carries two generators: <strong>$\tfrac14\cdot\tfrac12\cdot2=\tfrac14$ for the canonical normalisation</strong>, and <a href="the-lagrangian-and-the-primordial-force.html">the kinetic terms' article</a> derives it rather than positing it.</p>
+<h2 id="the-triple-vertex">The Triple Vertex</h2>
+<p><strong>Written with the structure constants showing.</strong></p>
+<p>$$
+\mathcal{L}_{AAA}=g_{4}f_{abc}\,\bigl(\partial_{\imath}A_{a,\jmath}\bigr)A_{b}^{\imath}A_{c}^{\jmath},
+$$</p>
+<p><strong>one Lorentz structure and fifteen generators.</strong> The vertex is antisymmetric in all three legs, because $f_{abc}$ is totally antisymmetric and the derivative sits on one leg only.</p>
+<p><strong>The count is the count of nonzero structure constants.</strong> $\mathrm{SU}(4)$ has fifteen generators and $\binom{15}{2}=105$ pairs; <strong>eighty of those pairs have a nonzero commutator and twenty-five commute.</strong> The eighty are the triple vertices' content, <strong>and the twenty-five are the Cartan directions plus the pairs whose commutator vanishes.</strong></p>
+<p><strong>Eighty is a realisation count and not an operator count.</strong> It is the number of distinct arrays the vertex can carry; <strong>it is one Lorentz structure with eighty group components</strong>, and a reader who read it as eighty independent couplings would be counting the group's dimension as the theory's freedom.</p>
+<h2 id="the-quartic-vertex">The Quartic Vertex</h2>
+<p><strong>One Lorentz structure, and the count is pairs of generators.</strong></p>
+<p>$$
+\mathcal{L}_{AAAA}=\tfrac14g_{4}^{2}f_{abe}f_{cde}\,A_{a}^{\imath}A_{b}^{\jmath}A_{c,\imath}A_{d,\jmath},
+$$</p>
+<p><strong>with $f_{abe}f_{cde}$ symmetric under the exchange of the two pairs.</strong> The number of distinct such contractions is the number of symmetric pairs,</p>
+<p>$$
+\frac{15\cdot16}{2}=120 .
+$$</p>
+<p><strong>One hundred and twenty is again a realisation count.</strong> It is the component count in the expansion, <strong>and it is not a hundred and twenty quartic couplings</strong>; the coupling is $g_{4}^{2}$ and there is one of it.</p>
+<p><strong>The quartic is the triple vertex squared, and that is the group's statement.</strong> In a non-abelian theory the four-point vertex exists because the three-point one does: <strong>$[A,A]^{2}$ is the square of $[A,A]$</strong>, and its strength is fixed once the triple's is. <strong>An abelian theory has neither</strong>, which is why QED's photon has no self-coupling and this connection does.</p>
+<h2 id="what-is-not-there">What Is Not There</h2>
+<p><strong>No $d_{abc}$ term at dimension four.</strong> A symmetric structure constant $d_{abc}$ could in principle appear, <strong>but in $\mathrm{SU}(4)$ the totally symmetric invariant at dimension four is not available for the cubic</strong>, and the trace $\operatorname{tr}\{t_{a},t_{b}\}t_{c}$ vanishes for $\mathrm{SU}(N)$ with $N\ge3$ in the fundamental.</p>
+<p><strong>No $F^{3}$ and no Pauli term.</strong> Both are dimension five or six and <strong>the census stops at four</strong>; <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">the boundary article</a> prices them.</p>
+<p><strong>No photon and no gluon.</strong> Above $M_C$ there is one connection and no residual subgroup; <strong>the eight gluons and the photon are what the restructuring leaves behind</strong>, and <a href="the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html">the force content</a> says which kernel produces which.</p>
+<h2 id="the-vertex-count-in-one-place">The Vertex Count in One Place</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>type</th>
+<th>count</th>
+<th>coupling</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\operatorname{tr}(\partial A)^{2}$</td>
+<td>propagator</td>
+<td>$1$</td>
+<td>none</td>
+</tr>
+<tr>
+<td>$f_{abc}\,\partial A\,A\,A$</td>
+<td>$AAA$</td>
+<td>$80$ components</td>
+<td>$g_{4}$</td>
+</tr>
+<tr>
+<td>$f_{abe}f_{cde}\,A^{4}$</td>
+<td>$AAAA$</td>
+<td>$120$ pairs</td>
+<td>$g_{4}^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three structures, two vertices, one coupling.</strong> The row that carries them is row $1$, <strong>and it is the row with the largest downstream vertex content in the whole census</strong>: five of the seven vertex types in <a href="the-audit-above-m-c-every-constant-against-every-piece.html">the tally</a> trace to $g_{4}$.</p>
+<h2 id="why-this-is-one-force">Why This Is One Force</h2>
+<p><strong>The triple and quartic vertices are not two interactions.</strong> They are the two orders at which one field strength's square is nonlinear, <strong>and their strengths are related by the same $g_{4}$</strong>: the quartic is $g_{4}^{2}$ because the cubic is $g_{4}$ and the square of a bracket carries the square of the coupling.</p>
+<p><strong>The relation is testable and is the theory's signature.</strong> A model with independent triple and quartic couplings would have two numbers where this has one; <strong>measuring their ratio tests whether the connection is a connection</strong> — that is, whether it is a gauge field at all.</p>
+<p><strong>And the eighty is a property of $\mathrm{SU}(4)$.</strong> A different group would give a different bracket count with the same structure, <strong>so the eighty is the group's fingerprint at the triple vertex</strong>, and <a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html">the counts article</a> collects it with the others.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The expansion. Three terms: kinetic, $AAA$, $AAAA$.</li>
+<li>The coupling powers. $g_{4}^{0}$, $g_{4}^{1}$, $g_{4}^{2}$.</li>
+<li>The brackets. $\binom{15}{2}=105$ pairs, $80$ nonzero, $25$ commuting.</li>
+<li>The quartic. $\binom{16}{2}=120$ symmetric pairs.</li>
+<li>The factor. $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, giving $\tfrac14$ on $\operatorname{tr}F^{2}$.</li>
+<li>The absence. No $d_{abc}$ cubic for $\mathrm{SU}(N)$, $N\ge3$, in the fundamental.</li>
+<li>The ratio. Quartic over cubic squared is fixed: one coupling, not two.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>One row, $\tfrac14\operatorname{tr}F^{2}$, contains a propagator, a triple vertex and a quartic vertex, with couplings $1$, $g_{4}$ and $g_{4}^{2}$.</strong> The triple vertex carries the eighty nonzero structure constants of a hundred and five pairs; <strong>the quartic carries a hundred and twenty symmetric pairs.</strong></p>
+<p><strong>Both counts are realisation counts and neither is a count of couplings.</strong> There is one coupling, <strong>and the quartic's strength is the cube's squared</strong> — which is what makes the connection a gauge field rather than three unrelated interactions.</p>
+<p><strong>The eighty is $\mathrm{SU}(4)$'s fingerprint, and the absence of a photon and a gluon above $M_C$ is the statement that no residual subgroup has formed yet.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{\imath\jmath}$</td>
+<td>the field strength, $\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}-ig_{4}[A_{\imath},A_{\jmath}]$</td>
+</tr>
+<tr>
+<td>$f_{abc}$</td>
+<td>the totally antisymmetric structure constants of $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>$d_{abc}$</td>
+<td>the symmetric invariant; absent at dimension four for $\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>realisation count</td>
+<td>distinct arrays a vertex carries; not a count of couplings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. Row $1$ in the eleven.</li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a>. The vertices as rules.</li>
+<li><a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html">The Counts of the Fifteen</a>. The generator arithmetic.</li>
+<li><a href="the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html">The Force Content of the $\mathrm{SU}(4)$ Model</a>. Where the residual groups come from.</li>
+<li><a href="the-audit-above-m-c-every-constant-against-every-piece.html">The Audit Above $M_C$</a>. $g_{4}$'s five doors.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

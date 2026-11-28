@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Census Rule Above $M_C$: Four Conditions, Two Counting Conventions and the Eighteen Candidates — Biquaternion Universe</title>
+  <meta name="description" content="The question. The census reports nineteen candidates and eighteen admissible. What test separates them, and where does the test come from? This article…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-census-rule-above-math0-four-conditions-two-counting-conventions-and-the-eighteen-candidates"><strong>The Census Rule Above $M_C$: Four Conditions, Two Counting Conventions and the Eighteen Candidates</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The census</a> reports nineteen candidates and eighteen admissible. <strong>What test separates them, and where does the test come from?</strong> This article states the test and runs it once.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+19\ \xrightarrow{\ \text{not a total derivative}\ }\ 18 .
+$$</p>
+<p><strong>The rule is <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">the broken phase's rule</a> applied to a smaller content</strong>, and the one structure it removes here is $\theta_4$. <strong>The removal is not a judgement about importance; it is a statement that a total derivative integrates to a surface term.</strong></p>
+<h2 id="the-four-conditions">The Four Conditions</h2>
+<p><strong>A structure is admissible when all four hold.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>what it excludes</th>
+<th>example excluded</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lorentz scalar</td>
+<td>anything carrying a free vector or spinor index</td>
+<td>$A_{\imath}$ alone</td>
+</tr>
+<tr>
+<td>local $\mathrm{SU}(4)$ invariance</td>
+<td>anything not a singlet</td>
+<td>$A_{\imath}$ alone again</td>
+</tr>
+<tr>
+<td>dimension $\le4$</td>
+<td>higher-dimension operators</td>
+<td>$F^{3}$, the Pauli term</td>
+</tr>
+<tr>
+<td><strong>not a total derivative</strong></td>
+<td>surface terms</td>
+<td>$\theta_4$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth condition is the one that does work here.</strong> The first three are shared with every effective field theory; <strong>the fourth is what makes the census a list of operators rather than a list of integrands</strong>, and it is applied identically above and below $M_C$.</p>
+<p><strong>Dimension four or below, and the bound is a counting fact.</strong> A derivative has dimension one, a vector field one, a scalar one, a fermion $\tfrac32$. <strong>With $d\le4$ the field count is bounded</strong>, and <a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">the closure article</a> shows the candidate set to be finite.</p>
+<p><strong>Locality is the hidden fourth-and-a-half.</strong> The density depends on the fields and finitely many derivatives, <strong>which is what stops an infinite tower of $\partial^{n}$ terms from qualifying.</strong></p>
+<h2 id="the-two-counting-conventions">The Two Counting Conventions</h2>
+<p><strong>Two conventions sit on top of the four conditions, and neither is a condition.</strong></p>
+<p><strong>The hermitian conjugate counts once.</strong> $\mathcal{O}^{\dagger}$ is not a second structure; <strong>it is the same structure's conjugate, and the pair is written as one row with $+\text{h.c.}$</strong></p>
+<p><strong>A structure counts once per field it can be built on, and the coefficient is not looked at.</strong> A row exists because the group admits it; <strong>whether its coefficient is zero is a second question, answered in a different column.</strong> That is why the census can print six zeros as rows and still be a count of what exists.</p>
+<p><strong>These two conventions are where most miscounts happen.</strong> A count that double-counted conjugates would report thirty-eight; <strong>a count that dropped zero-coefficient rows would report eleven and call it the group's number</strong>, which is the error the census's ladder is designed to expose.</p>
+<h2 id="the-eighteen-by-class">The Eighteen, by Class</h2>
+<p><strong>Nineteen candidates decompose into seven classes, and the total derivative is one of them.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>class</th>
+<th>count</th>
+<th>rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>curvature square</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td><strong>total derivative</strong></td>
+<td>$1$</td>
+<td>$\theta_4$</td>
+</tr>
+<tr>
+<td>fermion kinetic</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>fermion mass</td>
+<td>$1$</td>
+<td>$12$</td>
+</tr>
+<tr>
+<td>scalar kinetic</td>
+<td>$2$</td>
+<td>$3$, and $(\partial\operatorname{tr}\Xi)^{2}$</td>
+</tr>
+<tr>
+<td>scalar potential</td>
+<td>$11$</td>
+<td>$4$–$9$, $13$–$17$</td>
+</tr>
+<tr>
+<td>Yukawa</td>
+<td>$2$</td>
+<td>$10$, $11$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{19}$</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The potential is eleven of the nineteen and that is the whole story of the count.</strong> A doublet's potential has two monomials at degree four or below; <strong>a Hermitian $4\times4$ has eleven</strong>, by the partition count $1,2,3,5$.</p>
+<p><strong>Two kinetic terms for one scalar, and only one survives normalisation.</strong> Both are invariant, both are dimension four, <strong>neither is a total derivative</strong> — so both are admissible and the second is removed at the next rung. <strong>The rule admits it; the normalisation declines it</strong>; <a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">the canonical basis</a> shows the two to be related by one field redefinition.</p>
+<h2 id="the-one-removal">The One Removal</h2>
+<p><strong>$\theta_4$ is admissible by three conditions and excluded by the fourth.</strong></p>
+<p>$$
+\mathcal{L}_{\theta}=\theta_{4}\,\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}
+=\theta_{4}\,\partial_{\imath}K^{\imath},
+\qquad
+K^{\imath}=2\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}\bigl(A_{\jmath}\partial_{\kappa}A_{\lambda}-\tfrac{2i}{3}g_{4}A_{\jmath}A_{\kappa}A_{\lambda}\bigr).
+$$</p>
+<p><strong>It is a Lorentz scalar, it is invariant, and it is dimension four.</strong> It is also <strong>a total derivative, so it integrates to a surface term</strong>, and a surface term is a boundary condition and not a coupling.</p>
+<p><strong>The broken phase does exactly the same thing with $\theta_{\mathrm{QCD}}$.</strong> There, the parameter is "present as a parameter and absent as a row"; <strong>$\theta_4$ is that object above $M_C$</strong>, and the phrase transfers unchanged.</p>
+<p><strong>So the parameter stays and the row goes, and the two statements are consistent.</strong> A reader who asks "where did $\theta_4$ go" is answered by <a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">the coefficients article</a>: <strong>it is one of the parameters and none of the rows.</strong></p>
+<h2 id="why-the-rule-is-not-modified-here">Why the Rule Is Not Modified Here</h2>
+<p><strong>A temptation, and why it is refused.</strong> One could add a fifth condition — "not a topological term" — or subtract the fourth — "total derivatives allowed". <strong>Both would produce a different census, and neither would be this one.</strong></p>
+<p><strong>The rule is stated once and applied twice.</strong> Above $M_C$ and below it, <strong>the same four conditions run on different content</strong>, and the difference in the answer comes from the content and not from the rule. <strong>That is what makes the two censuses comparable</strong>, and a rule that changed with the phase would make them incomparable.</p>
+<p><strong>The rule's provenance is the broken phase's, and the article says so rather than deriving it again.</strong> A derivation would be a derivation of the census rule as such, <strong>and that article already exists</strong>; this one applies it.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The four conditions. Scalar, invariant, dimension $\le4$, not a total derivative.</li>
+<li>The two conventions. Conjugates once; coefficient-blind.</li>
+<li>The class sum. $1+1+1+1+2+11+2=19$.</li>
+<li>The removal. $\theta_4$ is a total derivative and the fourth condition excludes it.</li>
+<li>The one removal. $19-1=18$.</li>
+<li>The potential. $1,2,3,5$ for degrees $1,2,3,4$, so $11$.</li>
+<li>The parallel. $\theta_4$ above $M_C$ is $\theta_{\mathrm{QCD}}$ below it.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Four conditions define admissibility, and the fourth — not a total derivative — is the one that moves the count.</strong> Nineteen candidates become eighteen when $\theta_4$ goes, <strong>and $\theta_4$ goes because it integrates to a surface term.</strong></p>
+<p><strong>Two conventions sit on top and are not conditions</strong>: conjugates count once, and a row exists regardless of its coefficient. <strong>Both are where counts go wrong.</strong></p>
+<p><strong>The rule is the broken phase's, unmodified.</strong> The same four conditions run on smaller content, <strong>and the difference in the answer is the content's and not the rule's</strong> — which is what lets the two censuses be compared.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\theta_4$</td>
+<td>the vacuum angle; a total derivative; a parameter with no row</td>
+</tr>
+<tr>
+<td>$F_{\imath\jmath}$</td>
+<td>the $\mathrm{SU}(4)$ field strength</td>
+</tr>
+<tr>
+<td>$K^{\imath}$</td>
+<td>the Chern–Simons current whose divergence is $\operatorname{tr}F\tilde F$</td>
+</tr>
+<tr>
+<td>candidate</td>
+<td>a structure meeting the first three conditions</td>
+</tr>
+<tr>
+<td>admissible</td>
+<td>a candidate that is not a total derivative</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The full ladder from nineteen to eleven.</li>
+<li><a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>. The broken phase's statement of the same rule.</li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List</a>. Why the candidate set is finite.</li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a>. $\theta_4$ as a parameter with no row.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a>. Why the second kinetic term is admissible and still removed.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

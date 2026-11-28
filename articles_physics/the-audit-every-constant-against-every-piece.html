@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Audit: Every Constant Against Every Piece — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Every one of the forty-nine rows has a coefficient, and every coefficient is one of the nineteen parameters or a canonical normalisation. The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-audit-every-constant-against-every-piece"><strong>The Audit: Every Constant Against Every Piece</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Every one of the forty-nine rows has a coefficient, and every coefficient is one of the nineteen parameters or a canonical normalisation. The table below writes each row against the numbers that fix it.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;49\ \text{rows},\ 19\ \text{numbers},\ \text{and no row unfixed}\;}
+$$</p>
+<p><strong>Why the audit is not a tautology.</strong> A list of forty-nine rows can be assembled from any set of terms, and the question the audit answers is whether the assembly is a theory: if a row's coefficient were a free number not in the list, the count of parameters would be wrong; if a row had no coefficient at all, the row would not be a term. The audit checks both directions on every row.</p>
+<p><strong>The standing.</strong> <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> sorts the nineteen by constant; this article sorts the forty-nine by row. The two views are transposes of one another, and the transposition is the statement that the coefficient map is a well-defined function from rows to numbers.</p>
+<h2 id="the-audit-in-one-table">The Audit in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>piece</th>
+<th>coefficient</th>
+<th>fixed by</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>gluon kinetic</td>
+<td>$-\tfrac14$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>2</td>
+<td>photon kinetic</td>
+<td>$-\tfrac14$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$Z$ kinetic</td>
+<td>$-\tfrac14$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$W$ kinetic</td>
+<td>$-\tfrac12$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$W$ mass</td>
+<td>$-M_W^2$</td>
+<td>$g$, $v$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$Z$ mass</td>
+<td>$-\tfrac12M_Z^2$</td>
+<td>$g$, $\theta_W$, $v$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$h$ kinetic</td>
+<td>$\tfrac12$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$h$ mass</td>
+<td>$-\tfrac12m_h^2$</td>
+<td>$m_h$</td>
+</tr>
+<tr>
+<td>9</td>
+<td>$hWW$</td>
+<td>$-g^2v/2$</td>
+<td>$g$, $v$</td>
+</tr>
+<tr>
+<td>10</td>
+<td>$hZZ$</td>
+<td>$-(g^2+g_{\mathrm Y}^2)v/4$</td>
+<td>$g$, $\theta_W$, $v$</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$hhWW$</td>
+<td>$-g^2/4$</td>
+<td>$g$</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$hhZZ$</td>
+<td>$-(g^2+g_{\mathrm Y}^2)/8$</td>
+<td>$g$, $\theta_W$</td>
+</tr>
+<tr>
+<td>13</td>
+<td>$h^3$</td>
+<td>$-m_h^2/(2v)$</td>
+<td>$m_h$, $v$</td>
+</tr>
+<tr>
+<td>14</td>
+<td>$h^4$</td>
+<td>$-m_h^2/(8v^2)$</td>
+<td>$m_h$, $v$</td>
+</tr>
+<tr>
+<td>15</td>
+<td>$i\bar u\slashed\partial u$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>16</td>
+<td>$i\bar c\slashed\partial c$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>17</td>
+<td>$i\bar t\slashed\partial t$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>18</td>
+<td>$i\bar d\slashed\partial d$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>19</td>
+<td>$i\bar s\slashed\partial s$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>20</td>
+<td>$i\bar b\slashed\partial b$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>21</td>
+<td>$i\bar e\slashed\partial e$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>22</td>
+<td>$i\bar \mu\slashed\partial \mu$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>23</td>
+<td>$i\bar \tau\slashed\partial \tau$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>24</td>
+<td>$i\bar \nu_e\slashed\partial \nu_e$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>25</td>
+<td>$i\bar \nu_\mu\slashed\partial \nu_\mu$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>26</td>
+<td>$i\bar \nu_\tau\slashed\partial \nu_\tau$</td>
+<td>$1$, canonical</td>
+<td>none</td>
+</tr>
+<tr>
+<td>27</td>
+<td>mass of $u$</td>
+<td>$-m_{u}$</td>
+<td>$m_{u}$</td>
+</tr>
+<tr>
+<td>28</td>
+<td>mass of $c$</td>
+<td>$-m_{c}$</td>
+<td>$m_{c}$</td>
+</tr>
+<tr>
+<td>29</td>
+<td>mass of $t$</td>
+<td>$-m_{t}$</td>
+<td>$m_{t}$</td>
+</tr>
+<tr>
+<td>30</td>
+<td>mass of $d$</td>
+<td>$-m_{d}$</td>
+<td>$m_{d}$</td>
+</tr>
+<tr>
+<td>31</td>
+<td>mass of $s$</td>
+<td>$-m_{s}$</td>
+<td>$m_{s}$</td>
+</tr>
+<tr>
+<td>32</td>
+<td>mass of $b$</td>
+<td>$-m_{b}$</td>
+<td>$m_{b}$</td>
+</tr>
+<tr>
+<td>33</td>
+<td>mass of $e$</td>
+<td>$-m_{e}$</td>
+<td>$m_{e}$</td>
+</tr>
+<tr>
+<td>34</td>
+<td>mass of $\mu$</td>
+<td>$-m_{\mu}$</td>
+<td>$m_{\mu}$</td>
+</tr>
+<tr>
+<td>35</td>
+<td>mass of $\tau$</td>
+<td>$-m_{\tau}$</td>
+<td>$m_{\tau}$</td>
+</tr>
+<tr>
+<td>36</td>
+<td>$h\bar uu$</td>
+<td>$-m_{u}/v$</td>
+<td>$m_{u}$, $v$</td>
+</tr>
+<tr>
+<td>37</td>
+<td>$h\bar cc$</td>
+<td>$-m_{c}/v$</td>
+<td>$m_{c}$, $v$</td>
+</tr>
+<tr>
+<td>38</td>
+<td>$h\bar tt$</td>
+<td>$-m_{t}/v$</td>
+<td>$m_{t}$, $v$</td>
+</tr>
+<tr>
+<td>39</td>
+<td>$h\bar dd$</td>
+<td>$-m_{d}/v$</td>
+<td>$m_{d}$, $v$</td>
+</tr>
+<tr>
+<td>40</td>
+<td>$h\bar ss$</td>
+<td>$-m_{s}/v$</td>
+<td>$m_{s}$, $v$</td>
+</tr>
+<tr>
+<td>41</td>
+<td>$h\bar bb$</td>
+<td>$-m_{b}/v$</td>
+<td>$m_{b}$, $v$</td>
+</tr>
+<tr>
+<td>42</td>
+<td>$h\bar ee$</td>
+<td>$-m_{e}/v$</td>
+<td>$m_{e}$, $v$</td>
+</tr>
+<tr>
+<td>43</td>
+<td>$h\bar \mu\mu$</td>
+<td>$-m_{\mu}/v$</td>
+<td>$m_{\mu}$, $v$</td>
+</tr>
+<tr>
+<td>44</td>
+<td>$h\bar \tau\tau$</td>
+<td>$-m_{\tau}/v$</td>
+<td>$m_{\tau}$, $v$</td>
+</tr>
+<tr>
+<td>45</td>
+<td>QCD</td>
+<td>$g_s$</td>
+<td>$g_s$</td>
+</tr>
+<tr>
+<td>46</td>
+<td>QED</td>
+<td>$eQ$</td>
+<td>$e$</td>
+</tr>
+<tr>
+<td>47</td>
+<td>charged current, quarks</td>
+<td>$g/\sqrt2$ times $V_{\mathrm{CKM}}$</td>
+<td>$g$, four mixing</td>
+</tr>
+<tr>
+<td>48</td>
+<td>charged current, leptons</td>
+<td>$g/\sqrt2$</td>
+<td>$g$</td>
+</tr>
+<tr>
+<td>49</td>
+<td>neutral current</td>
+<td>$g/\cos\theta_W$</td>
+<td>$g$, $\theta_W$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="what-the-table-shows">What the Table Shows</h2>
+<p><strong>The numbering is the audit's own.</strong> The table groups rows by the kind of number that fixes them, so the masses sit together and the interactions sit last; the display numbers the same forty-nine rows by ancestor. Both orderings contain the same rows, and a reader comparing the two should compare the pieces and not the numbers.</p>
+<p><strong>Seventeen rows carry no parameter.</strong> The four gauge kinetics, the $h$ kinetic and the twelve fermion kinetics are canonical: their coefficients are fixed by the requirement that the fields be the ones whose commutators are the canonical ones. None of the seventeen consumes a number from the nineteen.</p>
+<p><strong>The rest fall into five groups, and each group is one kind of number.</strong> The nine mass rows are fixed by the nine masses. The nine Higgs–fermion rows are fixed by those masses and by $v$. The six vector rows ($W$ mass, $Z$ mass, $hWW$, $hZZ$, $hhWW$, $hhZZ$) are fixed by $g$, $\theta_W$ and $v$. The two self-pieces and the $h$ mass are fixed by $m_h$ and $v$. The five interaction rows are fixed by $g_s$, $e$ and $\theta_W$.</p>
+<p><strong>The groups sum to forty-nine.</strong> $17+9+9+6+3+5=49$, and the three is the $h$ mass with the two self-pieces.</p>
+<p><strong>No row is unfixed and no coefficient is unused except one.</strong> The exception is $\theta_{\mathrm{QCD}}$, whose piece is absent, and it is in the list of parameters precisely because it is the one exception.</p>
+<h2 id="the-rows-that-share-a-number">The Rows That Share a Number</h2>
+<p><strong>A mass appears in two rows.</strong> Each of the nine masses fixes a mass row and a Higgs–fermion row, which is why the nine cost eighteen rows and nine numbers.</p>
+<p><strong>A coupling appears in many.</strong> $g$ fixes the $W$ mass, the $hWW$ row, the $hhWW$ row and the two charged currents; $\theta_W$ fixes the $Z$ mass, the $hZZ$ row, the $hhZZ$ row and the neutral current. The map from numbers to rows is many-to-many, and the audit table is the only place where the whole of it is visible.</p>
+<p><strong>The canonical rows and the parameter rows are disjoint.</strong> No canonical row consumes a parameter, and no parameter row is canonical. The partition is exact, which is what makes the count of the forty-nine compatible with the count of the nineteen.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The row count. $4+2+2+2+2+2+12+9+9+5=49$.</li>
+<li>The canonical rows. $4+1+12=17$ rows with no parameter.</li>
+<li>The parameter rows. $49-17=32$, and each consumes at least one of the nineteen.</li>
+<li>The nine masses. Nine mass rows and nine $h\bar ff$ rows, from nine numbers.</li>
+<li>The two vector masses. Fixed by $g$, $\theta_W$ and $v$, and by nothing else.</li>
+<li>The scalar. $m_h$ fixes three rows (the mass and the two self-pieces), together with $v$ in the two self-pieces.</li>
+<li>The interactions. Five rows from three numbers, $g_s$, $e$ and $\theta_W$, with $g$ supplying the charged currents and the neutral current's denominator.</li>
+<li>The sharing. The nine masses fix eighteen rows, the mass and the Higgs coupling of each species.</li>
+<li>The exception. $\theta_{\mathrm{QCD}}$ fixes no row.</li>
+<li>The transposition. The same content as <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>, read by rows instead of by columns.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The audit writes each of the forty-nine rows against the numbers that fix it. Seventeen rows are canonical and consume no parameter; thirty-two consume at least one, and the shares are many-to-many.</p>
+<p>The nine masses each fix two rows, a mass and a Higgs–fermion coupling, which is why the Yukawa sector is eighteen rows and nine numbers. The two couplings $g$ and $\theta_W$ and the scale $v$ fix the vector sector; $m_h$ and $v$ fix the scalar sector; $g_s$, $e$ and $\theta_W$ fix the interactions.</p>
+<p>No row is unfixed, and one number fixes no row. The single exception is the vacuum angle, and its presence in the parameter list is the statement that the audit is not a bijection.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>canonical</td>
+<td>a coefficient fixed by the commutators and not by a measurement</td>
+</tr>
+<tr>
+<td>fixed by</td>
+<td>the numbers of the nineteen that determine a row's coefficient</td>
+</tr>
+<tr>
+<td>many-to-many</td>
+<td>the map from numbers to rows, which is not a partition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. The transposed table.</li>
+<li><a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a>. The counts in one place.</li>
+<li><a href="nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html">Nineteen and Nineteen</a>. The audit against the unbroken phase.</li>
+<li><a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The exception: the vacuum angle and the measure.</li>
+<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. Why there is no fiftieth row.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

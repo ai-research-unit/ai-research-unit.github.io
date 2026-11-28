@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Charged-Current Piece: Two Terms, One CKM Matrix, One Purely Left Vertex — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The charged current is one block with two terms and not one term,">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex"><strong>The Charged-Current Piece: Two Terms, One CKM Matrix, One Purely Left Vertex</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The charged current is one block with two terms and not one term,</p>
+<p>$$
+\mathcal{L}_{\mathrm{CC}}=-\frac{g}{\sqrt2}\Bigl(\bar u_{L}\gamma^\mu V_{\mathrm{CKM}}d_{L}\,W^+_\mu+\bar\nu_{L}\gamma^\mu e_{L}\,W^+_\mu\Bigr)+\mathrm{h.c.}
+$$</p>
+<p>The two share a coupling and a purely left-handed vertex, and they differ in everything else: the first carries colour and the mixing matrix, the second carries neither. The census counts them as two rows, because a row is a term with its own coefficient, and the coefficient of the quark term carries $V_{\mathrm{CKM}}$.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\text{two rows},\qquad \text{one coupling }\frac{g}{\sqrt2},\qquad \text{one mixing matrix in the quark row alone}\;}
+$$</p>
+<p><strong>Why two and not one.</strong> A single piece would need one coefficient for both currents and one mixing matrix for both, and neither is available. The quark current is a colour triplet and the lepton current is a colour singlet; they couple to the same vector but they are different operators, and the sum of two operators with one coefficient is two rows.</p>
+<p><strong>The standing.</strong> Both pieces are standard, the corpus's own form is $\rho W^+_{\tilde\mu}d\tilde q$ and its conjugate in The Weak Interaction in Biquaternionic Form, and the mixing matrix is <a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation</a>. What this article explains is why the matrix appears in one row and not in the other.</p>
+<h2 id="the-two-pieces">The Two Pieces</h2>
+<p><strong>Written out.</strong></p>
+<p>$$
+-\frac{g}{\sqrt2}\bar u_{L}\gamma^\mu V_{\mathrm{CKM}}d_{L}W^+_\mu+\mathrm{h.c.},
+\qquad
+-\frac{g}{\sqrt2}\bar\nu_{L}\gamma^\mu e_{L}W^+_\mu+\mathrm{h.c.}
+$$</p>
+<p><strong>The coupling, and where each factor comes from.</strong> The $W$ field is the combination $W^\pm=(W_1\mp iW_2)/\sqrt2$, which supplies $1/\sqrt2$, and the isospin ladder supplies $\tfrac12$. In the projector form the coefficient per chirality is therefore $g/(2\sqrt2)$, and since $\bar u_L\gamma^\mu d_L=\tfrac12\bar u\gamma^\mu(1-\gamma_5)d$, the left-handed form carries $g/\sqrt2$.</p>
+<p><strong>The $V-A$ structure.</strong> Both rows annihilate left-handed fields and create right-handed ones, which is the statement that the current is $\bar\psi_L\gamma^\mu\psi_L$ and that its conjugate is $\bar\psi_R\gamma^\mu\psi_R$. A vector current would be the sum of the two; the weak current is one of them.</p>
+<p><strong>The conjugate is inside the piece.</strong> The $+\mathrm{h.c.}$ doubles the field content and not the piece count. Writing the two terms separately would give four rows, and the census of <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a> counts a term with its conjugate as one.</p>
+<h2 id="why-the-mixing-matrix-appears-in-one-piece-only">Why the Mixing Matrix Appears in One Piece Only</h2>
+<p><strong>The quark sector has two rotations that do not cancel.</strong> The mass-basis fields are obtained by rotating the up-type and down-type fields separately, and the $W$ couples an up-type field to a down-type one. The product of the two rotations is not the identity, and what survives is $V_{\mathrm{CKM}}$.</p>
+<p><strong>The lepton sector has one rotation that is unphysical.</strong> The neutrino is massless in this content, so its mass-basis field is defined only up to a rotation, and that rotation can be used to undo the charged lepton's. The leptonic mixing matrix is therefore absent, and the lepton piece is diagonal in the mass basis.</p>
+<p><strong>What the difference costs.</strong> The quark piece carries four parameters — three angles and one phase — and the lepton piece carries none. A reader who expects a symmetric treatment will look for a PMNS matrix in the second piece and will not find one; its absence is a consequence of the masslessness of the neutrinos and not an omission.</p>
+<p><strong>Where the matrix would go.</strong> If the three neutrinos had Dirac masses, a leptonic matrix would appear in the second piece exactly as the quark matrix appears in the first, with four parameters for three generations. <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a> prices that extension.</p>
+<h2 id="the-interaction-count">The Interaction Count</h2>
+<p><strong>This piece is one of the five.</strong> The fermion kinetic ancestor produces five interaction rows, and this article's two are two of them. The other three are the gluon, the photon and the $Z$ ones, and the split of the charged current into two is the reason the number is five and not four.</p>
+<p><strong>Why the split is by colour and not by generation.</strong> The colour is a property of the operator; the generation is an index on it. The quark piece carries both colour and generation indices, summed over both, and the second sum is contracted with $V_{\mathrm{CKM}}$, which is why one row carries nine numbers.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Two rows, the twenty-seventh and twenty-eighth of the forty-seven.</li>
+<li>The coupling. $g/(2\sqrt2)$ per chirality in the projector form, which is $g/\sqrt2$ on the left-handed fields because $\bar u_L\gamma^\mu d_L=\tfrac12\bar u\gamma^\mu(1-\gamma_5)d$.</li>
+<li>The dimension. $\bar\psi\gamma^\mu\psi W_\mu$ has dimension four.</li>
+<li>The chirality. Left-handed fields only, and the conjugate couples right-handed ones.</li>
+<li>The mixing. $V_{\mathrm{CKM}}$ in the quark piece and the identity in the lepton piece.</li>
+<li>The parameters. Four in the quark piece, none in the lepton piece.</li>
+<li>The colour. A triplet current in the first piece and a singlet in the second.</li>
+<li>The conjugate. One row with its $\mathrm{h.c.}$, not two.</li>
+<li>The interaction count. Two of the five fermion interaction rows.</li>
+<li>The consistency with the content. Three left-handed neutrinos and no right-handed one, which is why the lepton piece is diagonal.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The charged current is one block with two rows, one for quarks and one for leptons, both with the coupling $g/\sqrt2$ and the $V-A$ structure. The factor comes from the normalisation of the $W$ field and from the chiral projector, and it is the same in both rows.</p>
+<p>The quark piece carries the CKM matrix and the lepton piece does not. The difference is that the up-type and down-type rotations do not cancel in the quark sector and the neutrino's rotation is unphysical in the lepton sector, because the neutrinos are massless in this content.</p>
+<p>The two rows are two of the five interaction rows the fermion kinetic term produces. The split is by colour, and it is why the charged current contributes two rows where the neutral current contributes one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_{\mathrm{CKM}}$</td>
+<td>The quark mixing matrix, four parameters</td>
+</tr>
+<tr>
+<td>$u_L$, $d_L$</td>
+<td>Up-type and down-type left-handed quark fields, colour triplets</td>
+</tr>
+<tr>
+<td>$\nu_L$, $e_L$</td>
+<td>Neutrino and charged lepton left-handed fields, colour singlets</td>
+</tr>
+<tr>
+<td>$g/\sqrt2$</td>
+<td>The coupling of the $(1-\gamma_5)$ structure</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The Weak Interaction in Biquaternionic Form. The corpus's form of the charged current.</li>
+<li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The matrix and its four parameters.</li>
+<li>The Gauge Bosons and the Charged Current. The $W$ as the carrier.</li>
+<li><a href="the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece</a>. The companion piece, and the reason it is one row.</li>
+<li><a href="the-hff-pieces-nine-couplings-fixed-by-nine-masses.html">The $h\bar ff$ Pieces</a>. The other place the mass-basis rotations leave a residue.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

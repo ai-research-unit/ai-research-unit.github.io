@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Replacement $\partial\to D$: Five Blocks and Nothing Else — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Replacing the ordinary derivative by the covariant one is the operation that produces every interaction in the list. Applied to the broken…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-replacement-math0-five-blocks-and-nothing-else"><strong>The Replacement $\partial\to D$: Five Blocks and Nothing Else</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Replacing the ordinary derivative by the covariant one is the operation that produces every interaction in the list. Applied to the broken content it produces five blocks and nothing else: QCD, QED, the charged current, the neutral current, and the scalar's derivative block. The five blocks contain nine rows, and the other thirty-eight rows of the forty-seven come from the field strengths, the fermion kinetic terms, the potential and the Yukawa terms.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;9=\underbrace{1}_{\text{QCD}}+\underbrace{1}_{\text{QED}}+\underbrace{2}_{\text{CC}}+\underbrace{1}_{\text{NC}}+\underbrace{4}_{|DH|^2},\qquad 47=38+9\;}
+$$</p>
+<p><strong>Why the five and not four.</strong> The scalar's derivative block is the fifth, and it is the one a reader is most likely to forget: $|D_\mu H|^2$ produces the two $hVV$ rows and the two $hhVV$ rows, and those four rows are interactions in exactly the sense the other five are. A count that names only QCD, QED and the two weak currents is counting the derivative on the fermions and forgetting it on the scalar.</p>
+<p><strong>The standing.</strong> The replacement is standard. The corpus's own version is the line $\partial\to\partial+igA$ in <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>. What this article adds is the enumeration of what the replacement produces, and the statement of what it does not.</p>
+<h2 id="one-derivative-one-connection-per-factor">One Derivative, One Connection per Factor</h2>
+<p><strong>The replacement, before and after the rotation.</strong></p>
+<p>$$
+\partial_\mu\;\longrightarrow\;D_\mu=\partial_\mu-ig_sG^a_\mu T^a-igW^a_\mu T^a-ig_{\mathrm Y}B_\mu Y ,
+$$</p>
+<p>and in the mass basis, with $W^3=\cos\theta_WZ+\sin\theta_WA$ and $B=-\sin\theta_WZ+\cos\theta_WA$,</p>
+<p>$$
+D_\mu=\partial_\mu-ig_sG^a_\mu T^a-ieQA_\mu-i\frac{g}{\cos\theta_W}\Bigl(T_3-Q\sin^2\theta_W\Bigr)Z_\mu-i\frac{g}{\sqrt2}\bigl(T_+W^+_\mu+T_-W^-_\mu\bigr).
+$$</p>
+<p><strong>Each term in the derivative is one block.</strong> Colour gives QCD, charge gives QED, the ladder gives the charged current, the diagonal combination gives the neutral current. The scalar carries the same derivative and its block is the fifth.</p>
+<p><strong>The two couplings that are one.</strong> $e=g\sin\theta_W$ and $g_{\mathrm Y}=g\cos\theta_W$ are not extra entries: they are the two unbroken couplings written in the rotated basis, and the replacement is the same replacement. <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> states the map.</p>
+<h2 id="the-five-blocks">The Five Blocks</h2>
+<p><strong>Block by block, with the rows it produces.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Block</th>
+<th>Acted on</th>
+<th>Rows</th>
+<th>Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QCD</td>
+<td>quarks</td>
+<td>$1$</td>
+<td>$g_s$</td>
+</tr>
+<tr>
+<td>QED</td>
+<td>every charged field</td>
+<td>$1$</td>
+<td>$e$</td>
+</tr>
+<tr>
+<td>charged current</td>
+<td>left-handed doublets</td>
+<td>$2$</td>
+<td>$g/\sqrt2$</td>
+</tr>
+<tr>
+<td>neutral current</td>
+<td>every fermion</td>
+<td>$1$</td>
+<td>$g/\cos\theta_W$</td>
+</tr>
+<tr>
+<td>scalar derivative</td>
+<td>$H$</td>
+<td>$4$</td>
+<td>$g$, $g_{\mathrm Y}$, $v$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the charged current is two rows and the others one.</strong> The quark term carries the mixing matrix and the lepton term does not, so the two terms have different coefficients and are two pieces. The other three blocks each have one coefficient for all species, so each is one row with a sum inside it.</p>
+<p><strong>Why the scalar block is four rows.</strong> The square $(v+h)^2$ has three levels and two vectors: the linear level gives $hWW$ and $hZZ$, the quadratic gives $hhWW$ and $hhZZ$, and the constant level gives the two Proca masses, which are the rows outside the forty-seven.</p>
+<p><strong>The nine rows and their pieces.</strong> QCD, QED, the two charged currents, the neutral current, $hWW$, $hZZ$, $hhWW$ and $hhZZ$. Those are the nine, and they are exactly the rows whose coefficient carries a coupling rather than a mass.</p>
+<h2 id="what-the-replacement-does-not-produce">What the Replacement Does Not Produce</h2>
+<p><strong>The absences are as informative as the presences.</strong> Each is a statement about a quantum number of the broken content.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Absent</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a gluon–photon coupling</td>
+<td>the gluon is electrically neutral, $Q=0$ on the adjoint of colour</td>
+</tr>
+<tr>
+<td>a gluon–$Z$ coupling</td>
+<td>the same: $T_3=0$ and $Q=0$ on a colour octet</td>
+</tr>
+<tr>
+<td>a photon–neutrino coupling</td>
+<td>the neutrino is neutral, $Q=0$</td>
+</tr>
+<tr>
+<td>a right-handed charged current</td>
+<td>there is no $\nu_R$, and the ladder acts only on left-handed doublets</td>
+</tr>
+<tr>
+<td>a flavour-changing neutral current</td>
+<td>$T_3$ and $Q$ are diagonal in the mass basis</td>
+</tr>
+<tr>
+<td>an $hAA$ or $hZ\gamma$ row</td>
+<td>the photon is the combination that annihilates the vacuum</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The first three are one statement.</strong> A gauge field couples only to the quantum number it gauges, and a field that carries none of it does not couple. The gluon gauges colour, so it couples to colour and to nothing else; the photon gauges charge, so it couples to charge and to nothing else.</p>
+<p><strong>The fourth is a statement about the content.</strong> The charged current is purely left-handed because the only right-handed fields in the content are colour triplets and charged-lepton singlets, and neither carries the weak isospin that the ladder needs. <a href="the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html">The Charged-Current Piece</a> states the consequence for the vertex.</p>
+<p><strong>The fifth is a statement about the basis.</strong> The replacement is written in the mass basis, where the neutral generators are diagonal. In a general flavour basis there would be off-diagonal entries, and the rotation that diagonalises the masses is the same rotation that removes them; this is why the neutral current is diagonal and the charged current is not.</p>
+<h2 id="why-nothing-else">Why Nothing Else</h2>
+<p><strong>Every other row of the forty-seven comes from a different ancestor.</strong> The four field strengths give the four kinetic rows; the fermion kinetic term gives twelve; the potential gives the scalar mass and the two self-pieces; the Yukawa term gives nine masses and nine $h\bar ff$. None of them involves the replacement.</p>
+<p><strong>The count in one line.</strong> $47=38+9$, where the thirty-eight are $4+12+1+1+1+1+9+9$: four curvatures, twelve fermion kinetics, the $h$ kinetic, the $h$ mass, the two self-pieces, nine masses and nine $h\bar ff$.</p>
+<p><strong>A reader who wants a sixth block will find it in a different derivative.</strong> A second scalar doublet would give a charged-current block on the scalars; a right-handed neutrino would give a neutral-current block on it; a colour-octet fermion would give a different QCD representation. The five blocks are five because the content has five kinds of charge carrier.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The block count. Five: QCD, QED, charged current, neutral current, scalar derivative.</li>
+<li>The row count. $1+1+2+1+4=9$.</li>
+<li>The complement. $47-9=38$, and the thirty-eight are accounted for by the other four ancestors.</li>
+<li>The charged current. Two rows, because the quark term carries $V_{\mathrm{CKM}}$ and the lepton term does not.</li>
+<li>The scalar block. Four rows, from the linear and quadratic levels of $(v+h)^2$.</li>
+<li>The Proca rows. Two more from the constant level, outside the forty-seven.</li>
+<li>The couplings. $e=g\sin\theta_W$ and $g_{\mathrm Y}=g\cos\theta_W$, a change of basis and not a new number.</li>
+<li>The gluon. No photon coupling and no $Z$ coupling, because $Q=0$ and $T_3=0$ on a colour octet.</li>
+<li>The neutrino. No photon coupling, because $Q=0$; a $Z$ coupling, because $T_3=\tfrac12$ on the left-handed field.</li>
+<li>The neutral current. Diagonal in the mass basis, because the same rotation diagonalises the masses and the neutral generators.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The replacement of the derivative by the covariant derivative produces five blocks: QCD from colour, QED from charge, the charged current from the ladder, the neutral current from the diagonal combination, and the scalar's four rows from $|D_\mu H|^2$. It produces nine rows, and the other thirty-eight rows of the forty-seven come from the field strengths, the fermion kinetic terms, the potential and the Yukawa terms.</p>
+<p>The absences are statements about quantum numbers. The gluon carries colour and no charge, so it does not couple to the photon or the $Z$. The neutrino carries no charge, so it does not couple to the photon. The right-handed fields carry no weak isospin, so the charged current is purely left-handed. The neutral generators are diagonal in the mass basis, so there is no flavour-changing neutral current.</p>
+<p>A sixth block would need a sixth kind of charge carrier, and the content does not have one.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$D_\mu$</td>
+<td>The covariant derivative, with one connection per gauge factor</td>
+</tr>
+<tr>
+<td>$T^a$</td>
+<td>The colour generators, $a=1,\dots,8$</td>
+</tr>
+<tr>
+<td>$T_\pm$</td>
+<td>The weak ladder operators</td>
+</tr>
+<tr>
+<td>five blocks</td>
+<td>QCD, QED, charged current, neutral current, scalar derivative</td>
+</tr>
+<tr>
+<td>$47=38+9$</td>
+<td>Pieces with and without the replacement</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-qcd-piece-eight-generators-three-colours-one-coupling.html">The QCD Piece</a>. Block one in full.</li>
+<li><a href="the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes.html">The QED Piece</a>. Block two in full.</li>
+<li><a href="the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html">The Charged-Current Piece</a>. Block three, and why it is two rows.</li>
+<li><a href="the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece</a>. Block four, and its two zeros.</li>
+<li><a href="the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The $hVV$ Pieces</a>. Block five's linear level.</li>
+<li><a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>. Where the forty-seven comes from.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

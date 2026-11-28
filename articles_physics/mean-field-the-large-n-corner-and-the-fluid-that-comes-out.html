@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mean Field: The Large-$N$ Corner and the Fluid That Comes Out — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Move two coordinates together — and the gradient, meaning that the density varies slowly compared with the inter-particle or coherence scale —…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="mean-field-the-large-math0-corner-and-the-fluid-that-comes-out"><strong>Mean Field: The Large-$N$ Corner and the Fluid That Comes Out</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Move two coordinates together — $1/N\to0$ and the gradient, meaning that the density varies slowly compared with the inter-particle or coherence scale — and the quantum field becomes a fluid. The variables are a density, a velocity and a spin; the equations are continuity, Euler and spin transport; and the quantum potential, which is the term that produces interference, is discarded by construction.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\partial_\mu(\rho u^\mu)=0,\qquad \rho\,u^\nu\partial_\nu u^\mu=\partial^\mu p,\qquad u^\nu\partial_\nu s^\mu=\text{BMT},\qquad \text{with } s\cdot u=0\;}
+$$</p>
+<p><strong>Why this corner is not case 2.</strong> <a href="classical-relativity-the-corner-with-no-quanta.html">Classical Relativity</a> removes the loop and keeps every degree of freedom, so its scalar sector is a field equation. Here the loop is not the coordinate being moved: $1/N$ is, together with the gradient, and the result is not a field equation but a closed system for a finite number of hydrodynamic variables. The difference is that a field has infinitely many degrees of freedom and a fluid has five per point.</p>
+<h2 id="the-arrow">The Arrow</h2>
+<p><strong>Three steps, and the third one is the truncation.</strong></p>
+<p><strong>Step one: the amplitude–phase split.</strong> Write the wavefunction or the field as $\psi=\sqrt\rho\,e^{iS/\hbar}$, so that $\rho$ is a density and $u^\mu=\partial^\mu S/m$ is a velocity. The substitution is exact; nothing has been discarded yet.</p>
+<p><strong>Step two: the quantum potential.</strong> The real part of the equation produces</p>
+<p>$$
+u^\nu\partial_\nu u^\mu=\partial^\mu\Bigl(-\frac{\hbar^2}{2m^2}\frac{\Box\sqrt\rho}{\sqrt\rho}\Bigr),
+$$</p>
+<p>which is Euler's equation with an extra pressure-like term — the quantum potential. It is the only term in the equation that is not a function of $\rho$ and $u$ alone through a local equation of state, and it is what makes the system quantum.</p>
+<p><strong>Step three: the gradient expansion.</strong> The quantum potential is $\mathcal{O}(\ell^2/L^2)$ where $\ell$ is the scale over which $\rho$ varies at the level of a wavelength and $L$ is the scale over which it varies macroscopically. Dropping it leaves Euler's equation for a perfect fluid, with the pressure supplied by the equation of state. That drop is the corner.</p>
+<p><strong>Where $1/N$ enters.</strong> For a many-body system the same expansion organises as $1/N$: the leading term is the mean field, the next term is the fluctuation, and the fluctuation is what the corner discards. The two coordinates are therefore the same statement written twice — small gradients and large $N$ both say that the collective variables are slow compared with the microscopic ones.</p>
+<h2 id="what-the-corner-reproduces">What the Corner Reproduces</h2>
+<p><strong>Four results, and the last two are the ones that make it a corner rather than an analogy.</strong></p>
+<p><strong>The continuity equation, exactly.</strong> It follows from the imaginary part of the wave equation with nothing discarded, so the corner's first equation is exact in both coordinates.</p>
+<p><strong>Euler's equation with the correct equation of state.</strong> For a relativistic gas the pressure and energy density satisfy $p=\varepsilon/3$ and the sound speed is $c_s^2=1/3$; the corner reproduces the relativistic Euler equation with the enthalpy in place of the mass density, which is the statement that the inertia of a relativistic fluid is its enthalpy and not its mass.</p>
+<p><strong>Quantised circulation.</strong> The velocity is a gradient, so $\oint u\cdot d\ell=(h/m)\times$ integer about a nodal line. The quantum of circulation survives the corner, because it is a topological statement about the phase and the phase is retained. This is a genuine success of the fluid reading: a quantum number emerging from a classical-looking system.</p>
+<p><strong>The spin transport equation.</strong> For a spin-½ system the fluid carries a spin density whose transport is the BMT equation with the Thomas term, and Takabayasi's four equations are exactly continuity, Euler, the spin transport, and the equation of state closure. The corner therefore contains the spin precession of <a href="wkb-and-eikonal-the-adiabatic-corner.html">the adiabatic corner</a>, derived from a different starting point, which is a check on both.</p>
+<h2 id="what-the-corner-cannot-reproduce">What the Corner Cannot Reproduce</h2>
+<p><strong>Four failures, and the first is the definition of a mean field.</strong></p>
+<p><strong>No interference.</strong> The double slit requires two packets with a definite phase relation, and the corner has a single-valued velocity field with no room for two branches. The quantum potential, which was dropped, is precisely the term that would produce the fringes; keeping it would make the system quantum again and would remove the closure.</p>
+<p><strong>No discrete spectrum.</strong> A fluid has a continuous set of states and no eigenvalues. Every quantised level — the hydrogen spectrum, the oscillator, the hadron masses — is outside, and the corner's own quantised circulation is the exception that proves the rule: it is topological and not spectral.</p>
+<p><strong>No tunnelling.</strong> A fluid cannot cross a barrier it does not have the energy for, because the velocity field is real. The exponentially small amplitude has no fluid counterpart.</p>
+<p><strong>No fluctuations.</strong> The $1/N$ correction is the fluctuation, and the corner is the leading term of the $1/N$ expansion. Correlations, variance, and every stochastic effect are in the next order, which is a different corner.</p>
+<h2 id="the-error-bar-stated">The Error Bar, Stated</h2>
+<p><strong>Two coordinates, and one of them is not small in this theory.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Size</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the gradient expansion</td>
+<td>$(\ell/L)^2$</td>
+<td>small for a slowly varying density, and controllable</td>
+</tr>
+<tr>
+<td>the $1/N$ expansion</td>
+<td>$1/N=1/3$ for colour</td>
+<td>not small, and not improvable by experiment</td>
+</tr>
+<tr>
+<td>the neglected quantum potential</td>
+<td>$\hbar^2\Box\sqrt\rho/(2m^2\sqrt\rho)$</td>
+<td>zero by construction in the corner</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The honest statement is that $1/N=1/3$ is not a small parameter.</strong> For QED with one species the expansion is in $1$ and there is no $N$; for QCD with three colours the expansion is in $1/3$, and a $30\%$ error is not an error bar but a warning. This is why the large-$N$ corner is used for <em>structure</em> — which operators are leading, which are suppressed, why the meson spectrum is narrow — rather than for numbers.</p>
+<p><strong>The corner is exact where the gradient term vanishes.</strong> For a uniform density the quantum potential is zero identically, so the corner is exact for homogeneous systems at any $N$. Its radius is the scale over which the density varies, and its accuracy there is the gradient expansion and nothing else.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The two coordinates. $1/N\to0$ and the gradient, moved together.</li>
+<li>The variables. Density, velocity, spin: five per point, against a field's infinity.</li>
+<li>The continuity equation. Exact, from the imaginary part.</li>
+<li>The quantum potential. Identified, of order $(\ell/L)^2$, and dropped.</li>
+<li>Euler. With the enthalpy replacing the mass, and $c_s^2=1/3$ for a relativistic gas.</li>
+<li>Quantised circulation. $h/m$ about a nodal line, and it survives.</li>
+<li>The spin transport. BMT with Thomas, agreeing with the adiabatic corner.</li>
+<li>The failures. No interference, no spectrum, no tunnelling, no fluctuations.</li>
+<li>The coupling. $1/N=1/3$, and it is not small.</li>
+<li>The exact case. Uniform density, where the corner is exact.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Sending $1/N$ and the gradient to zero turns a quantum field into a fluid with five variables per point: density, velocity and spin. Continuity is exact, Euler follows once the quantum potential is dropped, and the spin is transported by BMT.</p>
+<p>The corner keeps the topological quantum of circulation and loses everything spectral: interference, the discrete spectrum, tunnelling and fluctuations. Its gradient error is controllable and its $1/N$ error, at $1/3$ for colour, is not — which is why it is used for structure rather than for numbers.</p>
+<p>Its value in this section is as a demonstration that the quantum potential is a single identifiable term, and that dropping it is the whole difference between a wave and a fluid.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\rho$, $u^\mu$, $s^\mu$</td>
+<td>density, velocity, spin density: the fluid variables</td>
+</tr>
+<tr>
+<td>quantum potential</td>
+<td>$-\hbar^2\Box\sqrt\rho/(2m^2\sqrt\rho)$, the term the corner drops</td>
+</tr>
+<tr>
+<td>$\ell/L$</td>
+<td>the gradient expansion parameter</td>
+</tr>
+<tr>
+<td>$N$</td>
+<td>the number of species or colours; $1/N$ is the mean-field parameter</td>
+</tr>
+<tr>
+<td>Takabayasi equations</td>
+<td>continuity, Euler, spin transport, and closure for a spin-½ fluid</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classical-relativity-the-corner-with-no-quanta.html">Classical Relativity: The Corner with No Quanta</a>. The field equation this corner replaces by a fluid.</li>
+<li><a href="wkb-and-eikonal-the-adiabatic-corner.html">WKB and Eikonal: The Adiabatic Corner</a>. The same transport equation, from a different start.</li>
+<li><a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map</a>. The amplitude–phase split in the corpus's variables.</li>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. Why $1/N=1/3$ is a warning and not an error bar.</li>
+<li><a href="the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>. Where this corner sits, and why it is the weakest.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

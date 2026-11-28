@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $hVV$ Pieces: Two Mass-Term Normalisations, Two Couplings, and the Photon That Does Not Appear — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The list has two pieces in which the scalar multiplies a pair of vectors,">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear"><strong>The $hVV$ Pieces: Two Mass-Term Normalisations, Two Couplings, and the Photon That Does Not Appear</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The list has two pieces in which the scalar multiplies a pair of vectors,</p>
+<p>$$
+\mathcal{L}_{hVV}=-\frac{g^2v}{2}\,h\,W^+_\mu W^{-\mu}-\frac{(g^2+g_{\mathrm Y}^2)v}{4}\,h\,Z_\mu Z^\mu .
+$$</p>
+<p>The two coefficients are $2M_W^2/v$ and $M_Z^2/v$, and the factor of two between them is the one this article is about. Written with the conventional $\tfrac12$ in front of the $ZZ$ term the second reads $g_{hZZ}=2M_Z^2/v$. There is no $hAA$ piece and no $h\gamma Z$ piece at tree level.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\Bigl[\,hW^+W^-\,\Bigr]=\frac{2M_W^2}{v},\qquad \Bigl[\,hZZ\,\Bigr]=\frac{M_Z^2}{v},\qquad \frac{[hW^+W^-]}{[hZZ]}=\frac{2M_W^2}{M_Z^2}=2\cos^2\theta_W\;}
+$$</p>
+<p><strong>Why the two coefficients look unequal in one reading and equal in the other.</strong> This is the one place in the category where a normalisation convention creates an apparent physical discrepancy. Writing the $ZZ$ term with the conventional $\tfrac12$ puts a factor of two into the coupling, so both couplings read $2M_V^2/v$; writing it without the $\tfrac12$ takes the factor out, so the coefficients read $2$ and $1$. The corpus uses the first convention, and the section below separates the convention from the physics.</p>
+<p><strong>The standing.</strong> Both pieces are standard and the corpus's own table is <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking</a>, which prints $g_{hWW}=2M_W^2/v$ and $g_{hZZ}=2M_Z^2/v$. This article derives both from one line and shows why the photon is absent.</p>
+<h2 id="the-one-line-they-come-from">The One Line They Come From</h2>
+<p><strong>The scalar kinetic term in the unitary chart.</strong></p>
+<p>$$
+-\sum_\mu(D_\mu H)^\dagger(D_\mu H)\supset-\frac{(v+h)^2}{8}\Bigl[g^2(W_1^2+W_2^2)+(gW_3-g_{\mathrm Y}B)^2\Bigr] .
+$$</p>
+<p><strong>The linear level of the square.</strong> Writing $(v+h)^2=v^2+2vh+h^2$ and keeping the $2vh$ term,</p>
+<p>$$
+-\frac{vh}{4}\Bigl[2g^2W^+_\mu W^{-\mu}+(g^2+g_{\mathrm Y}^2)Z_\mu Z^\mu\Bigr],
+$$</p>
+<p>where $W_1^2+W_2^2=2W^+W^-$ and $(gW_3-g_{\mathrm Y}B)^2=(g^2+g_{\mathrm Y}^2)Z^2$ have been used.</p>
+<p><strong>Reading off the two couplings.</strong> The charged piece is $-\frac{g^2v}{2}hW^+W^-$, so with the convention $\mathcal{L}\supset-g_{hWW}hW^+W^-$ the coupling is $g^2v/2$. The neutral piece is $-\frac{(g^2+g_{\mathrm Y}^2)v}{4}hZ^2$, so with the convention $\mathcal{L}\supset-\frac12g_{hZZ}hZ^2$ the coupling is $\frac{(g^2+g_{\mathrm Y}^2)v}{2}$.</p>
+<p><strong>Both are $2M_V^2/v$, and the arithmetic is one line each.</strong></p>
+<p>$$
+\frac{g^2v}{2}=2\,\frac{g^2v^2}{4v}=\frac{2M_W^2}{v},
+\qquad
+\frac{(g^2+g_{\mathrm Y}^2)v}{2}=2\,\frac{(g^2+g_{\mathrm Y}^2)v^2}{4v}=\frac{2M_Z^2}{v} .
+$$</p>
+<h2 id="the-convention-that-creates-the-appearance-of-a-discrepancy">The Convention That Creates the Appearance of a Discrepancy</h2>
+<p><strong>Two ways of writing one vertex.</strong> For a real field the vertex from $\frac12c\,hZ_\mu Z_\nu$ is $ic\,g_{\mu\nu}$, and the vertex from $c'\,hZ_\mu Z_\nu$ is $2ic'g_{\mu\nu}$. The same Lagrangian term therefore carries a coupling that differs by a factor of two between the two conventions.</p>
+<p><strong>The two normalisations, stated once and kept apart.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Reading</th>
+<th>$hW^+W^-$</th>
+<th>$hZZ$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>coefficient in $\mathcal{L}$</td>
+<td>$2M_W^2/v$</td>
+<td>$M_Z^2/v$</td>
+</tr>
+<tr>
+<td>coupling with $\tfrac12$ in $\mathcal{L}$</td>
+<td>$2M_W^2/v$</td>
+<td>$2M_Z^2/v$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The charged row has no $\tfrac12$ because $W^+$ and $W^-$ are distinct fields, so the two ways of writing it coincide. The neutral row has one because $Z$ is its own conjugate, so the $\tfrac12$ convention and the coefficient convention differ by two.</p>
+<p><strong>Why the W's coefficient is twice the Z's.</strong> In units of $M^2/v$ the two coefficients are $2$ and $1$. That is the factor of two this article's title names: it is not a discrepancy but the statement that the charged pair contributes two real fields to the square and the $Z$ contributes one.</p>
+<p><strong>The physical statement, in either reading.</strong> The coefficients are $2M_W^2/v$ and $M_Z^2/v$; the $\tfrac12$-normalised couplings are twice each mass squared over $v$; and the two readings are the same Lagrangian.</p>
+<h2 id="why-the-photon-does-not-appear">Why the Photon Does Not Appear</h2>
+<p><strong>The charge of the vacuum is zero.</strong> The combinations in the square are $W_1^2+W_2^2$ and $(gW_3-g_{\mathrm Y}B)^2$. The photon is the orthogonal combination $A=\sin\theta_WW_3+\cos\theta_WB$, and the mass matrix has $A$ as its null direction. A term $h\,A_\mu A^\mu$ would require the vacuum to carry charge, which it does not.</p>
+<p><strong>No $h\gamma Z$ either.</strong> The neutral mass matrix is rank one: it is the outer product of one vector with itself. A rank-one matrix has no off-diagonal term between its eigenvector and its null direction, so the mixed piece is absent for the same reason that the photon mass is absent.</p>
+<p><strong>What this predicts.</strong> The $h\gamma\gamma$ and $h\gamma Z$ vertices exist at one loop and not at tree level. The tree-level zeros are pieces of the list; the loop-induced vertices are not, because the list is the tree-level Lagrangian.</p>
+<h2 id="the-ratio-and-the-math66-variable">The Ratio and the $\rho$ Variable</h2>
+<p><strong>One ratio, two readings.</strong></p>
+<p>$$
+\frac{[hW^+W^-]}{[hZZ]}=\frac{2M_W^2}{M_Z^2}=2\cos^2\theta_W,\qquad
+\frac{g_{hWW}}{g_{hZZ}}=\frac{M_W^2}{M_Z^2}=\cos^2\theta_W .
+$$</p>
+<p>The first compares the coefficients in $\mathcal{L}$; the second compares the $\tfrac12$-normalised couplings. They differ by the factor of two of the neutral row, and each is $\rho\cos^2\theta_W$ with $\rho=1$ once the comparison is made at the same level.</p>
+<p><strong>Why the custodial relation appears twice.</strong> The ratio of the couplings is the ratio of the masses squared, and the ratio of the masses is the statement $\rho=1$ of <a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>. The two statements are one, seen on the mass pieces and on the couplings.</p>
+<p><strong>What a deviation would mean.</strong> A scalar multiplet with a different isospin would change both the ratio of the masses and the ratio of the couplings, and it would do so by the same factor. The measurement of the two $hVV$ couplings is therefore a second, independent measurement of $\rho$.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Two rows, the seventh and eighth of the forty-seven.</li>
+<li>The coefficients. $g^2v/2=2M_W^2/v$ and $(g^2+g_{\mathrm Y}^2)v/4=M_Z^2/v$.</li>
+<li>The dimension. $hVV$ has dimension $1+1+1=3$, and the coefficient carries the missing unit.</li>
+<li>The ratio. $M_W^2/M_Z^2=\cos^2\theta_W$, from $M_Z=M_W/\cos\theta_W$.</li>
+<li>The photon. The mass matrix's null direction receives no piece, so neither $hAA$ nor $hAZ$ appears.</li>
+<li>The convention. $\frac12c\,hZ^2$ gives $icg_{\mu\nu}$ and $c'\,hZ^2$ gives $2ic'g_{\mu\nu}$, so the factor of two is the $\tfrac12$.</li>
+<li>The proportionality. $g_{hVV}=2M_V^2/v$, and the same $v$ as in the mass relation.</li>
+<li>The common origin. Both pieces are the linear level of $(v+h)^2$, as <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a> tabulates.</li>
+<li>The loop statement. $h\gamma\gamma$ and $h\gamma Z$ are absent at tree level and present at one loop, so their absence here is a statement about the order of the expansion.</li>
+<li>The corpus's table. $g_{hWW}=2M_W^2/v$ and $g_{hZZ}=2M_Z^2/v$ in <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking</a>: the second is the $\tfrac12$-normalised coupling, and its coefficient is $M_Z^2/v$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The two $hVV$ rows are $-\frac{g^2v}{2}hW^+W^-$ and $-\frac{(g^2+g_{\mathrm Y}^2)v}{4}hZZ$. They come from the linear level of the square $(v+h)^2$ in the scalar kinetic term, and their coefficients are $2M_W^2/v$ and $M_Z^2/v$ — the second equal to $g_{hZZ}/2$ in the $\tfrac12$ convention.</p>
+<p>The apparent factor of two between the two couplings is a convention. The vertex from a term with $\tfrac12$ in front of $hZ^2$ carries twice the coefficient of a term without it, and the corpus writes the vertex coupling. The ratio $M_W^2/M_Z^2=\cos^2\theta_W$ is the same in either convention.</p>
+<p>The photon does not appear, and neither does the $h\gamma Z$ piece. The neutral mass matrix is rank one, and its null direction is the photon; a coupling of the scalar to that direction would require the vacuum to carry charge.</p>
+<p>The ratio of the two couplings is the ratio of the two masses squared, which is the custodial relation $\rho=1$ seen on a second set of pieces. A measurement of the two couplings is a measurement of $\rho$.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{hWW}$, $g_{hZZ}$</td>
+<td>The $\tfrac12$-normalised couplings, $2M_W^2/v$ and $2M_Z^2/v$</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{hVV}$</td>
+<td>The two pieces</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>The vacuum value, the same as in the mass relations</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$M_W^2/(M_Z^2\cos^2\theta_W)$</td>
+</tr>
+<tr>
+<td>$A$</td>
+<td>The photon, the null direction of the neutral mass matrix</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses</a>. The expansion and the corpus's table of couplings.</li>
+<li><a href="the-two-vector-masses-proca-as-the-representative-of-the-condensate.html">The Two Vector Masses</a>. The constant level of the same square.</li>
+<li><a href="the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html">The Higgs Kinetic and Mass Pieces</a>. The scalar's own three rows among the six the square produces.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>. The ratio, twice.</li>
+<li><a href="the-lagrangian-and-the-higgs-field.html">The Lagrangian and the Higgs Field</a>. The potential and the radial variable in the corpus's variables.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

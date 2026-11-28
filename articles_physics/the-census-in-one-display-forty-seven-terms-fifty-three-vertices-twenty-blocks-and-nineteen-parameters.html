@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complete Lagrangian: Forty-Seven Terms, Fifty-Three Vertices, Twenty Blocks and Nineteen Parameters — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The whole broken-phase Lagrangian is one expression, and every row of it carries a number in a table of forty-seven. Two further rows, the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-complete-lagrangian-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters"><strong>The Complete Lagrangian: Forty-Seven Terms, Fifty-Three Vertices, Twenty Blocks and Nineteen Parameters</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The whole broken-phase Lagrangian is one expression, and every row of it carries a number in a table of forty-seven. Two further rows, the vector masses, sit outside it; six further structures, the gauge self-interactions, are vertices; and the numbers that multiply the rows are eighteen, or nineteen with the vacuum angle.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;47=4+8+17+18,\qquad 49=47+2,\qquad 53=47+6,\qquad 20=47-27,\qquad 19=18+1\;}
+$$</p>
+<p><strong>How to read it.</strong> The equation below writes the whole theory once, with each row's number printed under the piece it counts. The table that follows is its index: every row with its constant.</p>
+<h2 id="the-expression">The Expression</h2>
+<p><strong>One equation, and it is the whole theory at dimension four.</strong> Every term carries the number of its row, so the count can be made by counting on the equation itself.</p>
+<p>$$
+\begin{aligned}
+\mathcal{L}={}&amp;
+\underbrace{-\tfrac14G^a_{\mu\nu}G^{a\mu\nu}}_{1}
+\underbrace{{}-\tfrac14W^a_{\mu\nu}W^{a\mu\nu}}_{4}
+\underbrace{{}-\tfrac14B_{\mu\nu}B^{\mu\nu}}_{2,\;3}\\[3pt]
+&amp;{}+\underbrace{\tfrac12\,\partial_\mu h\,\partial^\mu h}_{5}
+\underbrace{{}-\tfrac12m_h^2h^2}_{6}
+\underbrace{{}-\frac{m_h^2}{2v}h^3}_{11}
+\underbrace{{}-\frac{m_h^2}{8v^2}h^4}_{12}\\[3pt]
+&amp;{}+\underbrace{\tfrac12M_W^2W^+_\mu W^{-\mu}}_{48}
+\underbrace{{}+\tfrac12M_Z^2Z_\mu Z^\mu}_{49}\\[3pt]
+&amp;{}+\underbrace{\frac{2M_W^2}{v}h\,W^+_\mu W^{-\mu}}_{7}
+\underbrace{{}+\frac{M_Z^2}{v}h\,Z_\mu Z^\mu}_{8}
+\underbrace{{}+\frac{M_W^2}{v^2}h^2W^+_\mu W^{-\mu}}_{9}
+\underbrace{{}+\frac{M_Z^2}{2v^2}h^2Z_\mu Z^\mu}_{10}\\[3pt]
+&amp;{}+\underbrace{\sum_{f}\bar\psi_f\,i\slashed{\partial}\psi_f}_{13\text{–}24}
+\underbrace{{}-\sum_{f}m_f\bar\psi_f\psi_f}_{30\text{–}38}
+\underbrace{{}-\sum_{f}\frac{m_f}{v}h\,\bar\psi_f\psi_f}_{39\text{–}47}\\[3pt]
+&amp;{}-\underbrace{g_s\,\bar q\slashed{G}T^aq}_{25}
+\underbrace{{}-e\,\bar\psi\slashed{A}Q\psi}_{26}\\[3pt]
+&amp;{}-\underbrace{\frac{g}{\sqrt2}\,\bar u_L\slashed{W}^+V_{\mathrm{CKM}}d_L}_{27}
+\underbrace{{}-\frac{g}{\sqrt2}\,\bar\nu_L\slashed{W}^+e_L}_{28}
++\mathrm{h.c.}\\[3pt]
+&amp;{}-\underbrace{\frac{g}{\cos\theta_W}\,\bar\psi\slashed{Z}\Bigl(T_3\frac{1-\gamma_5}{2}-Q\sin^2\theta_W\Bigr)\psi}_{29}.
+\end{aligned}
+$$</p>
+<p><strong>The three sums are the only compression.</strong> Rows $13$–$24$ are twelve separate kinetic terms, rows $30$–$38$ nine separate masses, rows $39$–$47$ nine separate couplings; each is written $\sum_f$ because the twelve, the nine and the nine differ only in $m_f$ and in the field. Nothing else in the expression stands for more than one row.</p>
+<p><strong>The overall sign of the scalar block is a convention.</strong> The expression above expands $+|D_\mu H|^2$; <a href="the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The $hVV$ Pieces</a> expands $-(D_\mu H)^\dagger(D^\mu H)$ and therefore carries a minus in front of the same two coefficients. The numbers $2M_W^2/v$ and $M_Z^2/v$ are the same in both, and so are the physical couplings.</p>
+<h2 id="the-numbered-table">The Numbered Table</h2>
+<p><strong>Every row of the equation above, with its number and its constant.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Piece</th>
+<th>Constant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>gluon kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>photon kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$Z$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$W$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$h$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$h$ mass</td>
+<td>$m_h$</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$hWW$</td>
+<td>$g$</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$hZZ$</td>
+<td>$g,g_{\mathrm Y}$</td>
+</tr>
+<tr>
+<td>9</td>
+<td>$hhWW$</td>
+<td>$g$</td>
+</tr>
+<tr>
+<td>10</td>
+<td>$hhZZ$</td>
+<td>$g,g_{\mathrm Y}$</td>
+</tr>
+<tr>
+<td>11</td>
+<td>$h^3$</td>
+<td>$m_h,v$</td>
+</tr>
+<tr>
+<td>12</td>
+<td>$h^4$</td>
+<td>$m_h,v$</td>
+</tr>
+<tr>
+<td>13</td>
+<td>$u$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>14</td>
+<td>$c$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>15</td>
+<td>$t$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>16</td>
+<td>$d$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>17</td>
+<td>$s$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>18</td>
+<td>$b$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>19</td>
+<td>$e$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>20</td>
+<td>$\mu$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>21</td>
+<td>$\tau$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>22</td>
+<td>$\nu_e$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>23</td>
+<td>$\nu_\mu$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>24</td>
+<td>$\nu_\tau$ kinetic</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>25</td>
+<td>QCD</td>
+<td>$g_s$</td>
+</tr>
+<tr>
+<td>26</td>
+<td>QED</td>
+<td>$e$</td>
+</tr>
+<tr>
+<td>27</td>
+<td>charged current, quarks</td>
+<td>$g,V_{\mathrm{CKM}}$</td>
+</tr>
+<tr>
+<td>28</td>
+<td>charged current, leptons</td>
+<td>$g$</td>
+</tr>
+<tr>
+<td>29</td>
+<td>neutral current</td>
+<td>$g,\theta_W$</td>
+</tr>
+<tr>
+<td>30</td>
+<td>mass of $u$</td>
+<td>$m_u$</td>
+</tr>
+<tr>
+<td>31</td>
+<td>mass of $c$</td>
+<td>$m_c$</td>
+</tr>
+<tr>
+<td>32</td>
+<td>mass of $t$</td>
+<td>$m_t$</td>
+</tr>
+<tr>
+<td>33</td>
+<td>mass of $d$</td>
+<td>$m_d$</td>
+</tr>
+<tr>
+<td>34</td>
+<td>mass of $s$</td>
+<td>$m_s$</td>
+</tr>
+<tr>
+<td>35</td>
+<td>mass of $b$</td>
+<td>$m_b$</td>
+</tr>
+<tr>
+<td>36</td>
+<td>mass of $e$</td>
+<td>$m_e$</td>
+</tr>
+<tr>
+<td>37</td>
+<td>mass of $\mu$</td>
+<td>$m_\mu$</td>
+</tr>
+<tr>
+<td>38</td>
+<td>mass of $\tau$</td>
+<td>$m_\tau$</td>
+</tr>
+<tr>
+<td>39</td>
+<td>$h\bar uu$</td>
+<td>$m_u$</td>
+</tr>
+<tr>
+<td>40</td>
+<td>$h\bar cc$</td>
+<td>$m_c$</td>
+</tr>
+<tr>
+<td>41</td>
+<td>$h\bar tt$</td>
+<td>$m_t$</td>
+</tr>
+<tr>
+<td>42</td>
+<td>$h\bar dd$</td>
+<td>$m_d$</td>
+</tr>
+<tr>
+<td>43</td>
+<td>$h\bar ss$</td>
+<td>$m_s$</td>
+</tr>
+<tr>
+<td>44</td>
+<td>$h\bar bb$</td>
+<td>$m_b$</td>
+</tr>
+<tr>
+<td>45</td>
+<td>$h\bar ee$</td>
+<td>$m_e$</td>
+</tr>
+<tr>
+<td>46</td>
+<td>$h\bar\mu\mu$</td>
+<td>$m_\mu$</td>
+</tr>
+<tr>
+<td>47</td>
+<td>$h\bar\tau\tau$</td>
+<td>$m_\tau$</td>
+</tr>
+<tr>
+<td>48</td>
+<td>$W$ mass</td>
+<td>$g,v$</td>
+</tr>
+<tr>
+<td>49</td>
+<td>$Z$ mass</td>
+<td>$g,g_{\mathrm Y},v$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The numbering follows the ancestors.</strong> The audit numbers the same rows by the constant that fixes them, so its numbers differ from these; both tables contain the same forty-nine rows.</p>
+<p><strong>Rows 48 and 49 are outside the forty-seven.</strong> They are not invariants of the unbroken group; they are the images of the vacuum, and <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a> states why they cannot be assigned an ancestor term.</p>
+<h2 id="the-four-counting-rules">The Four Counting Rules</h2>
+<p><strong>The rules that turn the table into the numbers.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rule</th>
+<th>Statement</th>
+<th>Consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1+1+2$</td>
+<td>one row per curvature, three for the electroweak ones</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$1+1+2+2+2$</td>
+<td>the scalar's eight rows: kinetic, mass, two $hVV$, two $hhVV$, two self</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$12+5$</td>
+<td>twelve kinetics and five interactions</td>
+<td>$17$</td>
+</tr>
+<tr>
+<td>$9+9$</td>
+<td>nine masses and nine $h\bar ff$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>$+6$</td>
+<td>the two triple and four quartic gauge structures</td>
+<td>$53$ vertices</td>
+</tr>
+<tr>
+<td>$-27$</td>
+<td>the three flavour sums folded</td>
+<td>$20$ blocks</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the arithmetic closes.</strong> $4+8+17+18=47$; $47+2=49$; $47+6=53$; $47-11-8-8=20$; and $18+1=19$.</p>
+<h2 id="the-three-confirmations">The Three Confirmations</h2>
+<p><strong>The parameter count.</strong> Eighteen constants carry the forty-seven rows, and the nineteenth multiplies none of them. The count is the same in the symmetric phase, as <a href="nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html">Nineteen and Nineteen</a> shows sector by sector.</p>
+<p><strong>The vertex count.</strong> Six structures are vertices and not rows. Counting them gives fifty-three, which is the number a diagrammatic calculation uses. Counting the eight monomials inside the four families gives fifty-seven, and <a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a> states the finer number.</p>
+<p><strong>The block count.</strong> Twenty blocks once the three sums over species are folded. The folding changes no physics and changes the count, which is why it is stated as a convention and not as a discovery.</p>
+<h2 id="what-the-display-is-for">What the Display Is For</h2>
+<p><strong>For checking a claim about the framework.</strong> A reader who wants to know what the corpus's algebra contributes can see that the display contains no element of $\mathbb{B}$: the list is the Standard Model's, and the algebra's contribution is exhausted at the $\mathrm{U}(2)$ ceiling, with the dictionary carrying the rest.</p>
+<p><strong>For checking a claim about the text.</strong> Every article of the category names a block and a number. A reader who finds a sentence that contradicts the table has found an error, and the table is the arbiter.</p>
+<p><strong>For checking a claim about a measurement.</strong> A measured coupling is one of the eighteen; a measured mass is one of the ten; a measured mixing parameter is one of the four. A number that appears in no cell of this table is not a parameter of the theory.</p>
+<h2 id="reading-the-eight-lines">Reading the Eight Lines</h2>
+<p><strong>Where the category's sections sit on the lines.</strong> Line 1 is the four curvatures, which contain the six gauge vertices; line 2 the scalar's kinetic, mass and two self-couplings; line 3 the two Proca masses; line 4 the two $hVV$ and two $hhVV$; line 5 the twelve fermion kinetics, nine masses and nine $h\bar ff$; line 6 QCD and QED; line 7 the charged current; line 8 the neutral current.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Rows</th>
+<th>Carries</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$1$–$4$</td>
+<td>curvatures, and inside them the six gauge vertices</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$5,6,11,12$</td>
+<td>$h$ kinetic, mass, $h^3$, $h^4$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$48,49$</td>
+<td>$W$ and $Z$ masses</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$7$–$10$</td>
+<td>$hVV$ and $hhVV$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$13$–$24$, $30$–$47$</td>
+<td>fermion kinetics, masses, $h\bar ff$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$25,26$</td>
+<td>QCD, QED</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$27,28$</td>
+<td>charged current, quarks and leptons</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$29$</td>
+<td>neutral current</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The Pieces the Covariant Derivative Produces is lines 6, 7 and 8; the Scalar Sector is line 4 and the last two terms of line 2; the Yukawa Block is the last sum of line 5; the Free Parts is the rest.</strong> No row is carried by two lines.</p>
+<p><strong>Each row once.</strong> The curvatures are nonlinear, so the triple and quartic gauge vertices sit inside line 1 and appear nowhere else; the fermion kinetic term carries $\partial_\mu$ and the interactions are lines 6 to 8, so no covariant derivative is expanded twice.</p>
+<p><strong>What is not in it.</strong> No gauge-fixing term and no ghost: the list is written in unitary gauge, which has neither. No $\theta_{\mathrm{QCD}}$: it is a total derivative, present as a parameter and absent as a row. No right-handed neutrino, no Majorana mass, no higher-dimension operator: the omissions of <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The same theory written with $D_\mu$ and the Higgs doublet is the symmetric-phase form, not another Lagrangian.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The row sum. $4+8+17+18=47$.</li>
+<li>The full count. $47+2=49$.</li>
+<li>The vertices. $47+6=53$.</li>
+<li>The blocks. $47-27=20$.</li>
+<li>The parameters. $18+1=19$.</li>
+<li>The scalar rows. $1+1+2+2+2=8$.</li>
+<li>The fermion rows. $12+5=17$.</li>
+<li>The Yukawa rows. $9+9=18$.</li>
+<li>The two outside. $48$ and $49$, the Proca masses, with no ancestor term.</li>
+<li>The equation's lines. Eight lines carrying $4,8,2,17,18$ rows in the order of the table.</li>
+<li>The complete Lagrangian. Eight lines, twenty-one underbraces, and every one of the forty-nine rows labelled exactly once on the equation.</li>
+<li>The sign convention. The scalar block written with $+|D_\mu H|^2$ gives $+2M_W^2/v$ and $+M_Z^2/v$; with $-(D_\mu H)^\dagger(D^\mu H)$ both signs reverse and both numbers stand.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The census, in one display: four curvatures, eight scalar rows, seventeen fermion rows and eighteen Yukawa rows make forty-seven; the two Proca masses make forty-nine rows; the six gauge structures make fifty-three vertices; the three folded sums make twenty blocks; and the eighteen constants with the vacuum angle make nineteen parameters.</p>
+<p>The complete Lagrangian is the equation at the top: eight lines, forty-nine rows, each row's number printed under it. The numbered table below it is the index, not a second writing.</p>
+<p>The numbered table is the arbiter of every claim in the category. A row that is not in it is not a piece, a number that is not in it is not a parameter, and a count that disagrees with it is a count of something else.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$[X]$</td>
+<td>the coefficient of the structure $X$ in $\mathcal{L}$</td>
+</tr>
+<tr>
+<td>rows $1$–$47$</td>
+<td>the invariant rows, with an ancestor term</td>
+</tr>
+<tr>
+<td>rows $48$–$49$</td>
+<td>the Proca rows, with the vacuum as ancestor</td>
+</tr>
+<tr>
+<td>$6$</td>
+<td>the gauge structures counted as vertices</td>
+</tr>
+<tr>
+<td>$27$</td>
+<td>$11+8+8$, the rows folded away in the block count</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>. The rule and the four conventions.</li>
+<li><a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>. The same forty-seven against their ancestors.</li>
+<li><a href="the-audit-every-constant-against-every-piece.html">The Audit</a>. The constants against the rows, one at a time.</li>
+<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. Why there is no fiftieth row.</li>
+<li><a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The four things outside the census.</li>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. The eighteen and the nineteenth.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

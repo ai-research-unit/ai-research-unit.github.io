@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complete Lagrangian Above $M_C$: Eleven Structures, Seven Vertex Types and Fifteen Constants — Biquaternion Universe</title>
+  <meta name="description" content="The question. What is the whole Lagrangian of this phase, written once, and which of its pieces are interactions?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-complete-lagrangian-above-math0-eleven-structures-seven-vertex-types-and-fifteen-constants"><strong>The Complete Lagrangian Above $M_C$: Eleven Structures, Seven Vertex Types and Fifteen Constants</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> What is the whole Lagrangian of this phase, written once, and which of its pieces are interactions?</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;11\ \text{rows},\quad 7\ \text{types},\quad 15=1+2+4+8,\quad 19=11+6+1+1.\;}
+$$</p>
+<p><strong>Eleven rows with nonzero coefficients, seven interaction types, fifteen constants, and three items outside the row count.</strong></p>
+<p><strong>Three items sit outside the eleven: the gauge-fixing row, the ghost row and the vacuum angle.</strong> Two of them carry a parameter and one carries none, and the distinction is stated in §<em>The Last Line</em>.</p>
+<p><strong>What this article is for.</strong> The pieces are built one at a time in the articles of this category. <strong>This article puts them in one expression and reads the interactions off it.</strong> The count that produces the eleven is <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">the census</a>'s argument and is not repeated here. The warrants of the six zeros are <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">the boundary</a>'s and are not repeated either. <strong>What is new here is the assembly and the vertex list.</strong></p>
+<p><strong>The scope sentence.</strong> The eleven are dimension four or below, one canonical kinetic term per field, with hermitian conjugates counted once, coefficients invisible and nothing that is a total derivative. <strong>The last line of the expression is outside that scope and is written anyway</strong>: a fixing, its ghosts and a vacuum angle are what a complete expression carries, and they are not what the eleven count.</p>
+<h2 id="the-assembly">The Assembly</h2>
+<p><strong>The eleven rows, numbered as the census numbers them so that the two articles can be read against each other.</strong></p>
+<p>$$
+\begin{aligned}
+\mathcal{L}={}&amp;
+\underbrace{-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}}_{1}
+\underbrace{{}+\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}D_{\imath}\xi_{f}}_{2}
+\underbrace{{}+\operatorname{tr}\bigl(D_{\imath}\Xi\bigr)^{\dagger}\bigl(D_{\imath}\Xi\bigr)}_{3}\\[3pt]
+&amp;{}\underbrace{{}-\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}}_{4}
+\underbrace{{}-\mu_{2}^{2}\bigl(\operatorname{tr}\Xi\bigr)^{2}}_{5}
+\underbrace{{}-\lambda_{1}\operatorname{tr}\Xi^{4}}_{6}
+\underbrace{{}-\lambda_{2}\bigl(\operatorname{tr}\Xi^{2}\bigr)^{2}}_{7}
+\underbrace{{}-\lambda_{3}\bigl(\operatorname{tr}\Xi\bigr)^{2}\operatorname{tr}\Xi^{2}}_{8}
+\underbrace{{}-\lambda_{4}\bigl(\operatorname{tr}\Xi\bigr)^{4}}_{9}\\[3pt]
+&amp;{}\underbrace{{}+y_{\alpha\beta}\,\bar\xi^{\alpha}\Xi_{0}\,\xi^{\beta}+\text{h.c.}}_{10}
+\underbrace{{}+y'_{\alpha\beta}\bigl(\operatorname{tr}\Xi\bigr)\bar\xi^{\alpha}\xi^{\beta}+\text{h.c.}}_{11}\\[3pt]
+&amp;{}\underbrace{-\frac{1}{2\zeta}\sum_{a}\bigl(\partial_{\imath}A_{a,\imath}\bigr)^{2}}_{\mathrm{gf}}
+\underbrace{{}-\sum_{a}\partial_{\imath}\bar c_{a}D_{\imath}c_{a}}_{\mathrm{gh}}
+\underbrace{{}+\theta_{4}\,\varepsilon^{\imath\jmath\kappa\lambda}\operatorname{tr}F_{\imath\jmath}F_{\kappa\lambda}}_{\theta_{4}},
+\end{aligned}
+$$</p>
+<p><strong>$\Xi_{0}=\Xi-\tfrac14(\operatorname{tr}\Xi)\mathbb 1$ is the traceless part.</strong></p>
+<p><strong>The last line is not among the eleven.</strong> Its first two terms are rows the group does not act on and the third is not a row at all, <strong>and the expression is complete only with them</strong>: a computation needs a gauge and therefore a fixing and its ghosts, and the vacuum angle is a parameter of the theory whether or not it is written.</p>
+<p><strong>The covariant derivatives are two, and both carry the one coupling.</strong></p>
+<p>$$
+D_{\imath}\xi_{f}=\partial_{\imath}\xi_{f}-ig_{4}\sum_{a}A_{a,\imath}\,\bigl(t_{a}\otimes\mathbb1_{2}\bigr)\xi_{f},
+\qquad
+D_{\imath}\Xi=\partial_{\imath}\Xi-ig_{4}\sum_{a}A_{a,\imath}\bigl[t_{a},\Xi\bigr].
+$$</p>
+<p><strong>The commutator on the scalar and the matrix on the fermion are the two ways one connection can act.</strong> The scalar carries one line index up and one down, so the adjoint action is the only invariant derivative. <strong>The fermion carries the quartet index and not the copy index</strong>, hence $t_{a}\otimes\mathbb 1_{2}$: the copy index is a commutant and no generator sees it.</p>
+<p><strong>Rows $4$–$9$ are one potential: two quadratics and four quartics.</strong> They are the invariant monomials of a Hermitian $4\times4$ matrix — the eleven monomials of the potential, the six zeros and the partition count $1,2,3,5$ are <a href="five-quartics-and-three-cubics-above-m-c-what-a-four-by-four-matrix-admits.html">the scalar article</a>'s.</p>
+<p><strong>Rows $10$ and $11$ are the tie the corpus writes.</strong> Writing one matrix $y\,\bar\xi\Xi\xi$ sets $y'=\tfrac14y$. <strong>The tie is a choice of coefficient and not a group-theoretic fact</strong>, and <a href="the-yukawa-block-above-m-c-two-matrices-eight-numbers-and-no-phase.html">the Yukawa article</a> prices it: eight numbers against two.</p>
+<h2 id="the-interactions-type-by-type">The Interactions, Type by Type</h2>
+<p><strong>Seven types, and each one is read off a written row.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>row</th>
+<th>constant</th>
+<th>realisations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$AAA$</td>
+<td>$1$</td>
+<td>$g_{4}$</td>
+<td>$80$ nonzero brackets of $105$ pairs</td>
+</tr>
+<tr>
+<td>$AAAA$</td>
+<td>$1$</td>
+<td>$g_{4}^{2}$</td>
+<td>$120$ symmetric pairs</td>
+</tr>
+<tr>
+<td>$\bar\xi A\xi$</td>
+<td>$2$</td>
+<td>$g_{4}$</td>
+<td>one $\gamma^{\imath}$, $15$ generators, two blocks</td>
+</tr>
+<tr>
+<td>$A\Xi\Xi$</td>
+<td>$3$</td>
+<td>$g_{4}$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$AA\Xi\Xi$</td>
+<td>$3$</td>
+<td>$g_{4}^{2}$</td>
+<td>$120$ symmetric pairs</td>
+</tr>
+<tr>
+<td>$\Xi\Xi\Xi\Xi$</td>
+<td>$6$–$9$</td>
+<td>$6$</td>
+<td>four monomials</td>
+</tr>
+<tr>
+<td>$\bar\xi\xi\Xi$</td>
+<td>$10$, $11$</td>
+<td>$8$</td>
+<td>two structures</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth column counts arrays and not couplings.</strong> $80$ is not eighty couplings and $120$ is not a hundred and twenty. <strong>The coupling is one number in each row, and the arrays are the components the group forces it into.</strong></p>
+<p><strong>Row $1$ carries both gauge vertices, and the ratio of their strengths is fixed.</strong> Expanding the curvature,</p>
+<p>$$
+\tfrac14\operatorname{tr}F_{\imath\jmath}F^{\imath\jmath}
+=\underbrace{\tfrac14\operatorname{tr}(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath})^{2}}_{\text{propagator}}
++\underbrace{\tfrac12g_{4}\operatorname{tr}\bigl(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath}\bigr)[A^{\imath},A^{\jmath}]}_{AAA}
++\underbrace{\tfrac14g_{4}^{2}\operatorname{tr}[A_{\imath},A_{\jmath}][A^{\imath},A^{\jmath}]}_{AAAA}.
+$$</p>
+<p><strong>The triple vertex is one Lorentz structure and the count of nonzero structure constants.</strong> $\mathrm{SU}(4)$ has $\binom{15}{2}=105$ pairs and <strong>eighty of them do not commute</strong>; the other twenty-five do. <strong>The quartic is the square of the commutator</strong>, so it exists because the triple does and its strength is fixed once the triple's is. <strong>A theory with no triple vertex has no quartic one</strong>, which is why the abelian factor below $M_C$ has neither.</p>
+<p><strong>Row $2$ carries one gamma structure, and hence one vertex shape.</strong> At dimension four the fermion bilinear can carry $\gamma^{\imath}$ and nothing else; the Pauli term is dimension five and belongs to the tower the census cuts off. <strong>So the vertex is $\bar\xi_{f}\gamma_{\imath}t_{a}\xi_{f}$ with $f$ summed and the copy index absent.</strong></p>
+<p><strong>Row $3$ produces two mixed vertices, and their realisations carry one generator index and two.</strong></p>
+<p>$$
+\operatorname{tr}(D_{\imath}\Xi)^{\dagger}(D^{\imath}\Xi)
+=\underbrace{\operatorname{tr}(\partial_{\imath}\Xi)^{\dagger}(\partial^{\imath}\Xi)}_{\text{propagator}}
++\underbrace{2g_{4}\operatorname{Re}\operatorname{tr}\bigl(\partial_{\imath}\Xi\bigr)^{\dagger}\bigl[-iA^{\imath},\Xi\bigr]}_{A\Xi\Xi:\ 15}
++\underbrace{g_{4}^{2}\operatorname{tr}\bigl[A_{\imath},\Xi\bigr]^{\dagger}\bigl[A^{\imath},\Xi\bigr]}_{AA\Xi\Xi:\ 120}.
+$$</p>
+<p><strong>A hundred and twenty and not two hundred and twenty-five</strong>, because $\operatorname{tr}[A_{a},\Xi]^{\dagger}[A_{b},\Xi]$ is symmetric in the pair and the antisymmetric part is absent. <strong>The count of ordered pairs would be $15^{2}$; the count here is the symmetric pairs, $15\cdot16/2$.</strong></p>
+<p><strong>Rows $6$–$9$ are one shape with four monomials, and the four-point scalar vertex carries the sum.</strong> No vertex separates $\lambda_{1}$ from $\lambda_{2}$: the amplitude is $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$ on the four external legs. <strong>Six constants stand behind one vertex shape</strong> — the four quartics and the two masses, the masses appearing squared.</p>
+<p><strong>Rows $10$ and $11$ are two structures and one vertex type.</strong> The traceless contraction and the trace contraction have the same external fields, <strong>so they are one shape in the Feynman rules and two rows in the ledger.</strong> That is why eleven rows give seven types and not eleven.</p>
+<h2 id="the-last-line">The Last Line</h2>
+<p><strong>Nineteen candidates and nineteen rows, and they are two different nineteens.</strong></p>
+<p>$$
+\underbrace{11+6+1+1}_{\text{candidates}}=19
+\qquad\text{against}\qquad
+\underbrace{11+6+2}_{\text{rows}}=19 .
+$$</p>
+<p><strong>The left is the census's ladder</strong>: eleven written, six declared zero, one removed by canonical normalisation, one removed as a total derivative. <strong>The right is the row count</strong>: the same eleven, the same six zeros, and the two gauge rows the group does not act on. <strong>The normalisation term and the vacuum angle are on one side and the fixing and the ghosts on the other, and each pair cancels</strong> — which is why the two nineteens are equal and not the same.</p>
+<p><strong>The fixing and the ghosts carry one parameter between them, and it is not physical.</strong> $\zeta$ cancels from every observable, and the ghost's interactions belong to $\zeta$'s row and not to the eleven.</p>
+<p><strong>$\theta_{4}$ carries no row.</strong> The structure it multiplies is a total derivative, <strong>so the fourth condition removed it before the row count began</strong>, and the angle survives as a parameter of the theory with no piece in the expression. <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The census</a> states the removal; this article states the consequence for the ledger.</p>
+<p><strong>The ledger therefore has three kinds of entry.</strong> Fifteen parameters in the eleven rows, one in the fixing, and one in no row at all: <strong>seventeen, of which fifteen multiply a row of the expression above.</strong></p>
+<h2 id="the-closure">The Closure</h2>
+<p><strong>The ladder's four rungs are four kinds of absence, and the article has now named each.</strong></p>
+<p><strong>The third term is $(\partial_{\imath}\operatorname{tr}\Xi)^{2}$</strong>, which the four conditions admit and canonical normalisation removes. <strong>The fourth is $\theta_{4}$</strong>, which the fourth condition removes. <strong>Neither is a zero coefficient, and that is why the ladder has four rungs and not two.</strong> The six zeros between them are <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">the boundary</a>'s warrant, and they are a decline, a forced zero, one symmetry and one separate declaration rather than six decisions.</p>
+<p><strong>The audit closes in both directions.</strong> Every constant reaches a vertex and every vertex traces to a row.</p>
+<p>$$
+\{g_{4}\}\cup\{\mu_{\Phi}^{2},\mu_{2}^{2}\}\cup\{\lambda_{1},\dots,\lambda_{4}\}\cup\{y,y'\}=15 .
+$$</p>
+<p><strong>A count of appearances would give twenty-one</strong> — <a href="the-audit-above-m-c-every-constant-against-every-piece.html">the audit</a> does the sum — because one constant can reach several types. <strong>The union gives fifteen, and fifteen is the number of constants the theory has.</strong></p>
+<p><strong>Two controls.</strong> $\theta_{4}$ reaches no vertex, <strong>which is correct and not a failure</strong>: its structure is a total derivative and carries no interaction. The ghost reaches a vertex that belongs to $\zeta$'s row and not to the eleven, <strong>which is also correct</strong>: a gauge choice produces its own interactions.</p>
+<p><strong>What the closure cannot check.</strong> It cannot check a value, a sign, or whether a structure nobody wrote exists. <strong>It checks presence, row and power</strong>, and it says so.</p>
+<h2 id="what-is-not-in-it">What Is Not in It</h2>
+<p><strong>No term above dimension four.</strong> No $F^{3}$, no Pauli term, no four-fermion term. <strong>The cut is the census rule's and the tower above it is infinite</strong>; <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">the boundary</a> prices the first three.</p>
+<p><strong>No bare fermion mass.</strong> It is invariant and admissible, and it is declared zero; <strong>the condensate is the one source of fermion mass the ledger holds.</strong> That declaration is the model's most consequential and its most contestable, and the boundary states the trade.</p>
+<p><strong>No vector mass.</strong> It is forbidden and not declined: <strong>a mass term for a connection in the adjoint of a simple group is not invariant.</strong> The fifteen stay massless until a vacuum picks a direction, which is the restructuring's work and not this phase's.</p>
+<p><strong>No scale.</strong> $\mu_{\Phi}$ is a mass and not a vacuum expectation. <strong>$M_C$ enters the expression nowhere</strong>; it is the scale at which the Lagrangian above stops being the right description.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Eleven rows, seven interaction types, fifteen constants, and two gauge rows the group does not act on.</strong> One coupling reaches five of the seven types because the covariant derivative sits in all three kinetic terms; the quartics and the Yukawa matrices are the reverse, six and eight constants behind one shape each.</p>
+<p><strong>The closure is nineteen candidates against nineteen rows</strong> — $11+6+1+1$ against $11+6+2$ — <strong>and the audit is a union.</strong> The controls are $\theta_{4}$, which reaches no vertex because its structure is a total derivative, and the ghost, which reaches a vertex that belongs to the gauge-fixing row.</p>
+<p><strong>The expression is complete at dimension four and silent above it.</strong> What it does not contain — the electroweak sector, the strong sector, flavour mixing beyond the two Yukawa structures, and every scale — is what the phase would have to acquire, and the article that lists those absences is the category's last.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{a,\imath\jmath}$</td>
+<td>the curvature of generator $a$; $F_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}$</td>
+</tr>
+<tr>
+<td>$t_{a}$</td>
+<td>the fifteen generators, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$g_{4}$</td>
+<td>the one coupling, in rows $1$, $2$, $3$</td>
+</tr>
+<tr>
+<td>$\Xi$, $\Xi_{0}$</td>
+<td>the Hermitian $4\times4$ scalar and its traceless part</td>
+</tr>
+<tr>
+<td>$\xi_{f}$</td>
+<td>the sixteen Weyl fields; $\alpha$ the copy index</td>
+</tr>
+<tr>
+<td>$y$, $y'$</td>
+<td>the traceless and trace Yukawa matrices</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>the gauge parameter of $\mathcal{L}_{\mathrm{gf}}$</td>
+</tr>
+<tr>
+<td>$\theta_{4}$</td>
+<td>the vacuum angle, a parameter with no row</td>
+</tr>
+<tr>
+<td>type</td>
+<td>a distinct interaction shape</td>
+</tr>
+<tr>
+<td>realisation</td>
+<td>a distinct array carrying one type</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The ladder that produces the eleven, and the row numbering used here.</li>
+<li><a href="the-audit-above-m-c-every-constant-against-every-piece.html">The Audit Above $M_C$</a>. The same closure read by rows, with the failure modes.</li>
+<li><a href="the-gauge-self-couplings-above-m-c-aaa-aaaa-and-the-eighty-brackets.html">The Gauge Self-Couplings Above $M_C$</a>. Row $1$ expanded, and the eighty brackets.</li>
+<li><a href="the-covariant-derivative-pieces-above-m-c-fifteen-a-xi-xi-and-one-hundred-and-twenty-aa-xi-xi.html">The Covariant Derivative Pieces Above $M_C$</a>. Row $3$ expanded, and the $120$.</li>
+<li><a href="the-fermion-connection-pieces-above-m-c-one-lorentz-structure-two-blocks-and-one-untouched-index.html">The Fermion–Connection Pieces Above $M_C$</a>. Row $2$, the two blocks and the inert copy index.</li>
+<li><a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">The Boundary of the List Above $M_C$</a>. What the list leaves out, and which omission is a theorem.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

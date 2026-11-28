@@ -71,19 +71,19 @@
       <div class="article-body">
         <h1 id="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field"><strong>The Census Rule: Dimension Four, Residual Invariance, and One Canonical Term per Field</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><strong>The claim.</strong> The Lagrangian of the Standard Model, written in the broken phase and in the mass basis, is a list. This article states the rule that generates the list, and then counts it. The count is not the point. The point is that the rule is stated before the list, so that a reader with a pencil can add the rows up and get the same number.</p>
+<p><strong>The claim.</strong> The Lagrangian of the Standard Model, written in the broken phase and in the mass basis, is a list. This article states the rule that generates the list and then counts it. The count is not the point. The point is that the rule is stated before the list, so that a reader with a pencil can add the rows up and get the same number.</p>
 <p><strong>The answer.</strong></p>
 <p>$$
-\boxed{\;49=4+2+1+1+12+9+5+9+4+2\;}
+\boxed{\;47=4+8+17+18,\qquad 49=47+2,\qquad 53=47+6,\qquad 20=47-27\;}
 $$</p>
-<p><strong>The standing.</strong> Every piece in the list is standard theory. Nothing here is derived from the biquaternion algebra, and no coefficient is computed. What the article and its twenty-two companions add is three things: a criterion that says which pieces are possible, a proof that nothing else is possible, and a count with its rule attached to it.</p>
+<p><strong>The standing.</strong> Every piece in the list is standard theory. Nothing here is derived from the biquaternion algebra and no coefficient is computed. What the article and its twenty-three companions add is three things: a criterion that says which pieces are possible, a proof that nothing else is possible, and a count with its rule attached to it.</p>
 <p><strong>Why a rule and not a list.</strong> A list of terms is unfalsifiable. Given a Lagrangian, a reader can delete a term and ask why it was there, and the answer "it is in the Standard Model" is circular. A criterion makes every term answerable: it is in the list because it is a dimension-four invariant of the residual group, and every dimension-four invariant of the residual group is in the list.</p>
 <h2 id="the-criterion">The Criterion</h2>
 <p><strong>Four conditions, and a piece must satisfy all four.</strong></p>
-<p>A piece is admissible when it is a Lorentz scalar, invariant under the residual group $SU(3)_c\times U(1)_{\mathrm{em}}$, of mass dimension at most four, and built from the fields the broken phase contains.</p>
+<p>A piece is admissible when it is a Lorentz scalar, invariant under the residual group $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}}$, of mass dimension at most four, and built from the fields the broken phase contains.</p>
 <p>The first two are symmetries. The third is renormalisability. The fourth is what makes this a broken-phase list rather than a symmetric-phase one: the fields are the mass eigenstates, so a piece is built from $G^a_\mu$, $A_\mu$, $Z_\mu$, $W^\pm_\mu$, $h$ and the twelve fermion species, and not from $W_{a,\mu}$, $B_\mu$ and the doublet.</p>
 <p><strong>Why the broken phase.</strong> Because the list is then one list. In the symmetric phase a piece may be built from a doublet, and the number of pieces depends on how the scalar is written, on whether the conjugate doublet is a second object, and on how many components are counted separately. In the broken phase every field has a definite mass, one scalar remains, and the residual group is a product of a colour factor and a phase. The pieces are then exactly the terms a calculator would use.</p>
-<p><strong>The price, stated now.</strong> The criterion of this article is residual invariance, and residual invariance alone is too weak. A Majorana mass $\tfrac12m_\nu\bar\nu^c_L\nu_L$ is a dimension-three invariant of $SU(3)_c\times U(1)_{\mathrm{em}}$ and would be admitted. It is excluded, and the exclusion does not come from this criterion but from a second one: every piece must descend from a dimension-four invariant of the <em>unbroken</em> group. That second criterion is stated and used in <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a> and <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>, and the neutrino mass is its one witness.</p>
+<p><strong>The price, stated now.</strong> Residual invariance alone is too weak. A Majorana mass $\tfrac12m_\nu\bar\nu^c_L\nu_L$ is a dimension-three invariant of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}}$ and would be admitted. It is excluded, and the exclusion does not come from this criterion but from a second one: every piece must descend from an invariant of the <em>unbroken</em> group, or from its vacuum. That second criterion is stated and used in <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a> and <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>, and the neutrino mass is its one witness.</p>
 <h2 id="the-four-counting-conventions">The Four Counting Conventions</h2>
 <p>A count needs a convention as much as a criterion needs a rule. Four are used, and each is stated so that it can be changed without ambiguity.</p>
 <div class="table-scroll"><table>
@@ -107,7 +107,7 @@ $$</p>
 </tr>
 <tr>
 <td>self-interactions inside the curvature</td>
-<td>the triple and quartic gauge vertices are sub-structures of the four field-strength pieces and are counted as vertices, not pieces</td>
+<td>the triple and quartic gauge vertices are sub-structures of the curvatures and are counted as vertices, not pieces</td>
 <td>six extra rows in the piece list</td>
 </tr>
 <tr>
@@ -117,127 +117,115 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The second convention is the one that decides the total.</strong> The charged current has two terms, one with quarks and one with leptons, and they are two pieces and not one. Its Hermitian conjugate is a third and a fourth term of the same two pieces.</p>
-<p><strong>The third convention is the one that decides between the two counts.</strong> With self-interactions folded into the curvatures the count is forty-nine. With them separated the count is fifty-five, and the six added rows are $\gamma W^+W^-$, $ZW^+W^-$, $W^+W^-W^+W^-$, $W^+W^-AA$, $W^+W^-AZ$ and $W^+W^-ZZ$. Both numbers are correct and they count different objects. The category uses forty-nine for pieces and fifty-five for vertices.</p>
+<p><strong>The second convention is the one that decides the total.</strong> The charged current has two terms, one with quarks and one with leptons, and they are two rows and not one. Its Hermitian conjugate is a third and a fourth term of the same two pieces.</p>
+<p><strong>The third convention is the one that decides between the two counts.</strong> With the self-interactions folded into the curvatures the count is forty-seven. With them separated the count is fifty-three, and the six added structures are the two triple vertices $\gamma W^+W^-$ and $ZW^+W^-$ and the four quartic vertices $W^+W^-W^+W^-$, $W^+W^-AA$, $W^+W^-ZZ$ and $W^+W^-AZ$. <a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a> counts the same six from the tensor structures. The category uses forty-seven for pieces and fifty-three for vertices.</p>
+<p><strong>The fourth convention is what keeps the count finite.</strong> Nine $h\bar ff$ rows differ only by which species carries the coefficient; they are nine and not one, because the coefficients differ, and the convention that makes them nine is the convention that a piece is a monomial with definite field content.</p>
 <h2 id="the-summation">The Summation</h2>
-<p><strong>The ten groups, in the order the companions present them.</strong></p>
+<p><strong>Four lines, one number.</strong></p>
+<p>$$
+\underbrace{4}_{\text{curvatures}}+\underbrace{8}_{\text{scalar}}+\underbrace{17}_{\text{fermion kinetic and interactions}}+\underbrace{18}_{\text{Yukawa}}=47 .
+$$</p>
+<p><strong>The blocks behind the four numbers.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>Group</th>
-<th>Pieces</th>
-<th>Where</th>
+<th>Block</th>
+<th>Rows</th>
+<th>What it contains</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>the four field strengths</td>
+<td>curvatures</td>
 <td>$4$</td>
-<td><a href="the-four-field-strengths-one-kinetic-piece-per-gauge-field.html">The Four Field Strengths</a></td>
+<td>gluon, photon, $Z$, $W$</td>
 </tr>
 <tr>
-<td>the two vector masses</td>
-<td>$2$</td>
-<td><a href="the-two-vector-masses-proca-as-the-representative-of-the-condensate.html">The Two Vector Masses</a></td>
+<td>scalar</td>
+<td>$8$</td>
+<td>kinetic, mass, $hWW$, $hZZ$, $hhWW$, $hhZZ$, $h^3$, $h^4$</td>
 </tr>
 <tr>
-<td>the Higgs kinetic piece</td>
-<td>$1$</td>
-<td><a href="the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition.html">The Higgs Kinetic and Mass Pieces</a></td>
+<td>fermion kinetic and interactions</td>
+<td>$17$</td>
+<td>twelve kinetics, QCD, QED, two charged currents, neutral current</td>
 </tr>
 <tr>
-<td>the Higgs mass piece</td>
-<td>$1$</td>
-<td>the same</td>
-</tr>
-<tr>
-<td>the twelve fermion kinetic pieces</td>
-<td>$12$</td>
-<td><a href="the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html">The Twelve Fermion Kinetic Pieces</a></td>
-</tr>
-<tr>
-<td>the nine fermion masses</td>
-<td>$9$</td>
-<td><a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a></td>
-</tr>
-<tr>
-<td>the five gauge interactions</td>
-<td>$5$</td>
-<td><a href="the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Five Blocks</a></td>
-</tr>
-<tr>
-<td>the nine Higgs–fermion pieces</td>
-<td>$9$</td>
-<td><a href="the-higgs-fermion-pieces-nine-couplings-fixed-by-nine-masses.html">The Higgs–Fermion Pieces</a></td>
-</tr>
-<tr>
-<td>the four Higgs–vector pieces</td>
-<td>$4$</td>
-<td><a href="the-four-higgs-vector-pieces-two-normalisations-and-the-photon-that-does-not-appear.html">The Four Higgs–Vector Pieces</a></td>
-</tr>
-<tr>
-<td>the two Higgs self-pieces</td>
-<td>$2$</td>
-<td><a href="the-higgs-self-pieces-two-couplings-and-one-quartic.html">The Higgs Self-Pieces</a></td>
+<td>Yukawa</td>
+<td>$18$</td>
+<td>nine masses, nine $h\bar ff$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The free and the interacting halves.</strong> The first six groups are the quadratic pieces: twenty-nine of them, each carrying one coefficient, each fixing one mass or one normalisation. The last four are the interactions: twenty of them. The split is a check, $29+20=49$, and it is also a statement: every free piece is fixed by a mass and every interaction by a coupling.</p>
-<p><strong>The four Higgs–vector pieces are the ones a first draft of this category omits.</strong> Expanding the scalar kinetic term in the unitary chart gives $\tfrac{(v+h)^2}{8}\bigl[g^2(W_1^2+W_2^2)+(gW_3-g_{\mathrm Y}B)^2\bigr]$, and the square brings four terms and not two: $hVV$ and $hhVV$. A list that carries $hWW$ and $hZZ$ and stops there is a list of the vertices a first-year course draws, not of the pieces the Lagrangian contains. The four are in the count and <a href="the-four-higgs-vector-pieces-two-normalisations-and-the-photon-that-does-not-appear.html">The Four Higgs–Vector Pieces</a> writes them.</p>
+<p><strong>The two rows the summation excludes, and why.</strong> The $W$ and $Z$ masses are not invariants of the unbroken group; they exist only after the vacuum is chosen, and they are counted separately. With them the row count is $47+2=49$. The forty-seven is the count of rows with an ancestor term; the forty-nine is the count of rows.</p>
+<p><strong>The three derived counts.</strong> Vertices: $47+6=53$. Blocks: folding the three sums of one type gives $47-11-8-8=20$. Parameters: eighteen constants, and nineteen with the vacuum angle. Each is a different question asked of the same list.</p>
 <h2 id="the-three-counts">The Three Counts</h2>
+<p><strong>Pieces, vertices, blocks.</strong></p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>Count</th>
 <th>Value</th>
-<th>Rule</th>
+<th>The question it answers</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>pieces</td>
+<td>$47$</td>
+<td>how many monomials with distinct field content and coefficient</td>
+</tr>
+<tr>
+<td>rows</td>
 <td>$49$</td>
-<td>the four conventions above</td>
+<td>how many monomials including the two Proca masses</td>
 </tr>
 <tr>
 <td>vertices</td>
-<td>$55$</td>
-<td>pieces, with the six gauge self-interaction structures separated out</td>
+<td>$53$</td>
+<td>how many Feynman rules at tree level</td>
 </tr>
 <tr>
 <td>blocks</td>
-<td>$22$</td>
-<td>pieces, with the three flavour sums folded ($12\to1$, $9\to1$, $9\to1$)</td>
+<td>$20$</td>
+<td>how many structures once the flavour sums are folded</td>
+</tr>
+<tr>
+<td>constants</td>
+<td>$18$</td>
+<td>how many numbers carry the rows</td>
 </tr>
 <tr>
 <td>parameters</td>
 <td>$19$</td>
-<td>$18$ multiplying a piece, $+1$ multiplying none</td>
+<td>how many numbers the theory has</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The block count is the least useful and it is stated for completeness.</strong> Folding the flavour sums removes $11+8+8=27$ rows from forty-nine. Any further folding — a single "gauge kinetic" block, a single "Yukawa" block — is a choice of presentation and not a fact about the Lagrangian, so the category does not print a fourth number for it.</p>
-<p><strong>The parameter count is the one that matters.</strong> Eighteen of the nineteen multiply a row of the list: the strong coupling, the electric charge, the weak mixing angle, the vacuum value, the Higgs mass, nine fermion masses and the four mixing parameters. The nineteenth, $\theta_{\mathrm{QCD}}$, multiplies no row, because the operator it multiplies is a total derivative and is not in the list. <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> prints the map.</p>
+<p><strong>Why the three do not contradict each other.</strong> They count different objects: a monomial, a vertex, a structure with a sum inside it. A reader who expects one number is expecting the list to have one purpose, and it has three, because it is used to enumerate terms, to draw diagrams and to count parameters.</p>
+<p><strong>Why the piece count is smaller than the vertex count.</strong> Six structures are vertices and not pieces, and each is a monomial in the field strength rather than in the fields. A vertex is what a diagram uses; a piece is what a Lagrangian writes.</p>
+<p><strong>Why the block count is smaller than the piece count.</strong> A block is a piece with its colour and flavour sums folded. Twelve kinetic rows are one block because they share a coefficient and a tensor structure; the same for nine masses and nine $h\bar ff$.</p>
 <h2 id="what-the-count-is-not">What the Count Is Not</h2>
-<p><strong>Not a count of diagrams.</strong> A piece with four fields contains more than one vertex once the fields are permuted; $-\tfrac14G^a_{\mu\nu}G^{a\mu\nu}$ contains a three-gluon and a four-gluon vertex. The list counts monomials.</p>
-<p><strong>Not a count of measurements.</strong> The nineteen parameters are measured many times each: the Higgs mass fixes the cubic and the quartic self-coupling too, and one coupling fixes a whole column of vertices. A count of measurements is larger and is a different object.</p>
-<p><strong>Not a claim of completeness by itself.</strong> A summation line is arithmetic. The claim that no other piece exists is a theorem, and it is proved in <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a> by enumerating the field multiplicities and excluding the rest one candidate at a time.</p>
+<p><strong>It is not a count of measurements.</strong> The nineteen parameters are nineteen measurements in principle, but several are measured once and determine many rows. A count of rows would be a count of observables only if every row were measured separately, and most are not.</p>
+<p><strong>It is not a derivation.</strong> The rule says which terms are possible; it does not say why the content is the content, why the group is the group, or why the couplings have the values they have. Those are the questions of <a href="the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase</a>, and this article does not answer them.</p>
+<p><strong>It is not invariant under a change of convention.</strong> Change the third convention and the piece count moves by six; change the first and it moves by twenty-seven. The invariance is in the rule and not in the number, which is why the rule is printed beside the number in every article of this category.</p>
 <h2 id="checks">Checks</h2>
 <ol>
-<li>The summation. $4+2+1+1+12+9+5+9+4+2=49$, recomputed term by term.</li>
-<li>The split. The twenty-nine quadratic pieces less the twenty interactions gives forty-nine, and the twenty interactions are $5+9+4+2$ by group.</li>
-<li>The vertex count. $49+6=55$, the six being the two triple and four quartic gauge structures inside the $W$ curvature.</li>
-<li>The block count. $49-11-8-8=22$.</li>
-<li>The parameter count. $1+1+1+1+1+9+4=18$, and $18+1=19$.</li>
-<li>The coefficient-per-piece check. Twenty-nine quadratic pieces, twenty-nine coefficients in <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> once the nine masses and the four mixing parameters are counted as they are used.</li>
-<li>The degree-of-freedom check, which belongs to the count and not to the criteria: twenty-eight before the rotation ($12$ vectors $\times2$ plus $4$ scalars) and twenty-eight after ($8$ massless vectors $\times2$, the photon $\times2$, three massive vectors $\times3$, one scalar).</li>
-<li>The list against the assembly. Four field strengths, one fermion kinetic term, one scalar kinetic term, one potential, one Yukawa sector and one vacuum-angle term: the six ancestors of <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a> account for every row, as <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a> tabulates.</li>
+<li>The criterion. Four conditions, and each is used at least once.</li>
+<li>The piece sum. $4+8+17+18=47$.</li>
+<li>The row count. $47+2=49$ with the two Proca masses.</li>
+<li>The vertex count. $47+6=53$, the six being two triple and four quartic structures.</li>
+<li>The block count. $47-11-8-8=20$.</li>
+<li>The constants. Eighteen, and nineteen with the vacuum angle.</li>
+<li>The scalar block. $1+1+2+2+2=8$: kinetic, mass, two $hVV$, two $hhVV$, two self-pieces.</li>
+<li>The fermion block. $12+5=17$: twelve kinetics and five interactions.</li>
+<li>The Yukawa block. $9+9=18$, in bijection through $m_f=y_fv/\sqrt2$.</li>
+<li>The conventions. Four stated, and each with the count it changes.</li>
 </ol>
 <h2 id="summary">Summary</h2>
-<p>The list of possible Lagrangian pieces of the Standard Model in the broken phase is generated by four conditions — Lorentz scalar, invariant under $SU(3)_c\times U(1)_{\mathrm{em}}$, dimension at most four, built from the mass eigenstates — together with a descent condition that excludes pieces with no dimension-four ancestor of the unbroken group. Four counting conventions fix the arithmetic: one piece per canonical term with colour and species summed, $\mathrm{h.c.}$ counted once, gauge self-interactions counted inside the curvatures, and a coefficient treated as a label of a piece and not as a new piece.</p>
-<p>The count is $49=4+2+1+1+12+9+5+9+4+2$: four field strengths, two vector masses, the Higgs kinetic and mass pieces, twelve fermion kinetic pieces, nine Dirac masses, five gauge interactions, nine Higgs–fermion pieces, four Higgs–vector pieces and two Higgs self-pieces. The same list carries fifty-five vertices once the six gauge self-interaction structures are separated out, twenty-two blocks once the three flavour sums are folded, and nineteen parameters.</p>
-<p>Twenty-nine of the pieces are quadratic and each fixes one mass or normalisation; twenty are interactions and each carries a coupling. The four Higgs–vector pieces are the ones a sketch of the list usually drops, and the omission is not a convention but an error: the square $(v+h)^2$ produces $hhVV$ as well as $hVV$.</p>
-<p>The criterion of residual invariance is too weak on its own: it would admit a Majorana neutrino mass. The descent condition is the second half of the criterion, and it is what makes the neutrino's absence from the list a statement about the symmetric phase and not a modelling choice.</p>
+<p>The list is generated by a criterion — Lorentz scalar, invariant under $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}}$, dimension at most four, built from the broken content — and counted by four stated conventions.</p>
+<p>The count is forty-seven pieces: four from the curvatures, eight from the scalar, seventeen from the fermion kinetic term and its interactions, eighteen from the Yukawa term. Two further rows, the Proca masses, are not invariants of the unbroken group and bring the row count to forty-nine. Six further structures are vertices and bring the vertex count to fifty-three. Folding the three flavour sums gives twenty blocks. The constants are eighteen and the parameters nineteen.</p>
+<p>The numbers differ because they count different objects, and each article of the category prints the rule beside the number it uses.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -248,46 +236,34 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\mathcal{L}$</td>
-<td>The Lagrangian density of the broken phase</td>
+<td>admissible</td>
+<td>satisfying the four conditions</td>
 </tr>
 <tr>
-<td>$G^a_\mu$, $A_\mu$, $Z_\mu$, $W^\pm_\mu$</td>
-<td>The twelve gauge fields in the mass basis</td>
+<td>piece</td>
+<td>one monomial with definite field content and coefficient</td>
 </tr>
 <tr>
-<td>$G^a_{\mu\nu}$, $F_{\mu\nu}$, $Z_{\mu\nu}$, $W^\pm_{\mu\nu}$</td>
-<td>Their field strengths</td>
+<td>row</td>
+<td>a piece, or one of the two Proca masses</td>
 </tr>
 <tr>
-<td>$h$</td>
-<td>The one physical scalar</td>
+<td>vertex</td>
+<td>a tree-level Feynman rule</td>
 </tr>
 <tr>
-<td>$g_s$, $e$, $g$, $g_{\mathrm Y}$, $\theta_W$</td>
-<td>The couplings and the weak mixing angle</td>
-</tr>
-<tr>
-<td>$v$</td>
-<td>The vacuum value, $M_W=gv/2$</td>
-</tr>
-<tr>
-<td>$\theta_{\mathrm{QCD}}$</td>
-<td>The vacuum angle, the parameter that multiplies no piece</td>
-</tr>
-<tr>
-<td>$49$, $55$, $22$, $19$</td>
-<td>Pieces, vertices, blocks, parameters</td>
+<td>block</td>
+<td>a piece with its colour and flavour sums folded</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. The theorem that the forty-nine are all of them, and the exclusions one candidate at a time.</li>
-<li><a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>. Each of the forty-nine rows against the ancestor it descends from.</li>
-<li><a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>. The symmetric-phase assembly whose pieces these are the images of.</li>
-<li><a href="the-data-boundary.html">The Data Boundary</a>. The rule that fixes where a measured number may be printed; this category prints symbols only.</li>
-<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. The nineteen, itemised and typed by the kind of object each one is.</li>
+<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. Why no fiftieth piece exists.</li>
+<li><a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>. The forty-seven rows against their ancestors.</li>
+<li><a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a>. The numbered table.</li>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. The eighteen and the nineteenth.</li>
+<li><a href="the-audit-every-constant-against-every-piece.html">The Audit</a>. The rows against the numbers that fix them.</li>
 </ul>
       </div>
     </main>

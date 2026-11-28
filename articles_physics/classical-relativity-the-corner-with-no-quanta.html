@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classical Relativity: The Corner with No Quanta — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Move one coordinate,, and nothing else. The complete Lagrangian becomes a set of classical field equations, one per sector: Yang–Mills and…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="classical-relativity-the-corner-with-no-quanta"><strong>Classical Relativity: The Corner with No Quanta</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Move one coordinate, $\hbar\to0$, and nothing else. The complete Lagrangian becomes a set of classical field equations, one per sector: Yang–Mills and Maxwell for the gauge fields, Proca for the massive vectors, a nonlinear Klein–Gordon equation for the scalar, and the Dirac equation read as a classical spinning particle for the fermions. Relativity survives in full; spin survives; antiparticles survive. What dies is the loop.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\hbar\to0,\ \text{tree level},\qquad \text{error}\ \frac{\alpha}{\pi}\approx2.3\times10^{-3}\ (\text{electroweak}),\qquad \frac{\alpha_s}{\pi}\approx4\%\ (\text{QCD})\;}
+$$</p>
+<p><strong>Why this corner is the one usually called "classical".</strong> It is the corner in which the fields are $c$-numbers and the sources are currents. It is not the corner of Newtonian mechanics: $v/c$ has not moved, so the equations are still Lorentz invariant, the dispersion laws still carry $\sqrt{p^2+m^2}$, and a particle may still be created in pairs if the source supplies the energy. That is why the corner is named classical <em>relativistic</em>, and why <a href="classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic</a> is a second move and not the same one.</p>
+<h2 id="the-arrow-sector-by-sector">The Arrow, Sector by Sector</h2>
+<p><strong>The arrow has three branches, and each starts at a row of the eight lines.</strong></p>
+<h3 id="the-gauge-sector-is-already-classical">The gauge sector is already classical</h3>
+<p><strong>The curvature rows are classical actions.</strong> $-\tfrac14G^a_{\mu\nu}G^{a\mu\nu}$ is a function of $c$-number fields, and varying it gives the Yang–Mills equation $D_\mu G^{a\mu\nu}=j^{a\nu}$ with no reference to $\hbar$. What the limit removes is not the equation but its corrections: the vacuum polarisation, the running of $g_s$, the $\mathrm{U}(1)$ anomaly, and the loop-induced vertices.</p>
+<p><strong>The massive vectors keep their Proca form.</strong> $-\tfrac14W^a_{\mu\nu}W^{a\mu\nu}+\tfrac12M_W^2W^+_\mu W^{-\mu}$ is the Proca Lagrangian, and its equation is $\partial_\mu W^{\mu\nu}+M_W^2W^\nu=j^\nu$, hence $\partial_\nu W^\nu=0$: four degrees of freedom, three of them physical. The mass term is a row of the list and it is not removed here, which is the statement that this corner is not the symmetric phase.</p>
+<p><strong>One consequence worth stating.</strong> In this corner the $W$ and $Z$ are ordinary massive vector fields with three polarisations each, and the Goldstone modes are already inside the longitudinal polarisation. Nothing in the corner remembers that they came from a doublet, which is why <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a> assigns them no ancestor term.</p>
+<h3 id="the-scalar-sector-becomes-hamiltonjacobi">The scalar sector becomes Hamilton–Jacobi</h3>
+<p><strong>The amplitude and the phase.</strong> For a complex scalar, writing $\phi=\sqrt\rho\,e^{iS/\hbar}$ and separating real and imaginary parts of the Klein–Gordon equation gives two equations: the continuity equation $\partial_\mu(\rho\,\partial^\mu S)=0$ and the Hamilton–Jacobi equation $(\partial S)^2=m^2$ with a quantum potential $-\hbar^2\Box\sqrt\rho/\sqrt\rho$. Send $\hbar\to0$ and the quantum potential vanishes, leaving exactly Hamilton–Jacobi.</p>
+<p><strong>In this category the scalar is real.</strong> The single $h$ has no phase, so the branch above does not run through the $h$ row: the real scalar's classical equation is $\Box h+V'(h)=0$, a nonlinear Klein–Gordon equation with the cubic and quartic self-couplings. The Hamilton–Jacobi reading is a statement about the <em>complex</em> scalar, and in the corpus it belongs to <a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map</a> and to the fluid articles. Stating this instead of pretending otherwise is the first requirement of <a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a> applied to the article itself.</p>
+<h3 id="the-fermion-sector-becomes-a-spinning-particle">The fermion sector becomes a spinning particle</h3>
+<p><strong>The Dirac equation survives; the interpretation changes.</strong> $\bigl(i\slashed\partial-m\bigr)\psi=0$ is unchanged by $\hbar\to0$ — it is already a one-particle equation. What the limit does is remove the fermion loop, and what it leaves behind is a classical description in which the bilinears are the variables: the current $\bar\psi\gamma^\mu\psi$ is the four-velocity, the axial current $\bar\psi\gamma^\mu\gamma_5\psi$ is the spin four-vector, and the equation of motion for that spin is the BMT equation</p>
+<p>$$
+\frac{ds^\mu}{d\tau}=\frac{e}{m}\Bigl[F^{\mu\nu}s_\nu+\frac{g}{2}\bigl(s_\nu F^{\nu\rho}u_\rho\bigr)u^\mu\Bigr]+\cdots
+$$</p>
+<p>with $g=2$ exactly, because $g-2$ is a loop effect and the loop has been removed.</p>
+<p><strong>Why $g=2$ exactly, and why that is the corner's signature.</strong> The Dirac equation's magnetic moment is $g=2$ at the level of the classical bilinears: the Gordon decomposition of the current separates the convection from the magnetisation, and the magnetisation carries the coefficient $2$. Every departure from $2$ is a quantum correction, so a corner that sets $\hbar\to0$ and returns $g=2$ is internally consistent, and the measured $2.0023$ is the corner's first quantitative failure.</p>
+<h2 id="what-the-corner-keeps">What the Corner Keeps</h2>
+<p><strong>Four things that a reader might expect to lose and does not.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kept</th>
+<th>Because</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lorentz invariance</td>
+<td>$v/c$ has not moved</td>
+</tr>
+<tr>
+<td>spin and its precession</td>
+<td>the BMT equation is a tree-level equation</td>
+</tr>
+<tr>
+<td>antiparticles</td>
+<td>$v/c$ has not moved, so the Dirac sea and pair creation remain</td>
+</tr>
+<tr>
+<td>tree-level widths</td>
+<td>the $W$, $Z$, $h$ and $t$ decay at tree level; those widths are in the corner</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The fourth deserves emphasis.</strong> It is common to describe the classical limit as "no decays", and that is wrong: a tree-level decay is a classical process in this sense, and its width is computable in the corner. What the corner cannot produce is a width that exists only because of a loop — the photon's, the gluon's, the neutrino's in the massless limit, and the entire $h\to\gamma\gamma$ channel.</p>
+<h2 id="what-the-corner-cannot-do">What the Corner Cannot Do</h2>
+<p><strong>Five failures, in descending order of size.</strong></p>
+<p><strong>No anomalous magnetic moment.</strong> $a_e=0$ against $1.1597\times10^{-3}$ measured. The relative error is $1.2\times10^{-3}$, which is $\alpha/2\pi$, and it is the corner's headline number.</p>
+<p><strong>No running.</strong> The couplings are constants here. A process at $100\ \mathrm{GeV}$ and the same process at $1\ \mathrm{GeV}$ are computed with the same $\alpha_s$, and the difference between them is a loop effect that the corner does not have. The error is $\alpha_s\log(Q_1/Q_2)/\pi$, which at a decade is about $9\%$ in $\alpha_s$ — an order of magnitude worse than the nominal $\alpha_s/\pi$.</p>
+<p><strong>No $h\to\gamma\gamma$.</strong> The decay is a loop process and the corner gives exactly zero for it, against a measured branching fraction of about $2.3\times10^{-3}$. This is the cleanest example in the section of a corner that is not merely imprecise but structurally silent: no order of the corner's own expansion produces the vertex.</p>
+<p><strong>No Lamb shift.</strong> The degeneracy of $2s_{1/2}$ and $2p_{1/2}$ is exact in the corner, and the measured splitting is $1057.845\ \mathrm{MHz}$.</p>
+<p><strong>No vacuum polarisation, hence no charge screening.</strong> The fine-structure constant is a number here, not a function of scale, and the muon's magnetic moment has no hadronic or electroweak contribution.</p>
+<h2 id="the-error-bar-stated">The Error Bar, Stated</h2>
+<p><strong>Two numbers, and they differ by a factor of twenty.</strong> For an electroweak observable the leading correction is $\mathcal{O}(\alpha/\pi)=2.3\times10^{-3}$; for a QCD observable it is $\mathcal{O}(\alpha_s/\pi)\approx3.8\%$. A process that involves both is a $4\%$ calculation, and quoting $10^{-3}$ for it would be false. The corner is therefore a $1\%$-level theory of the electroweak sector and a $4\%$-level theory of the strong sector, and the difference between those two statements is the whole content of the error budget.</p>
+<p><strong>The corner's radius.</strong> It is usable while the observable's loop correction is smaller than the effect being discussed. For a parity-violating asymmetry at tree level the correction is a few per cent and the corner is adequate; for a magnetic moment it is the entire signal and the corner is useless.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The move. One coordinate, $\hbar$, and nothing else.</li>
+<li>The gauge equations. Yang–Mills with a source, Proca with a mass, and no running.</li>
+<li>The scalar equation. Nonlinear Klein–Gordon for the real $h$; Hamilton–Jacobi for the complex scalar, cited and not claimed.</li>
+<li>The fermion equation. Dirac unchanged, with the bilinears as velocity and spin.</li>
+<li>The magnetic moment. $g=2$ exactly, from the Gordon decomposition.</li>
+<li>The antiparticles. Kept, because $v/c$ has not moved.</li>
+<li>The widths. Tree-level widths kept; loop widths absent.</li>
+<li>The failures. Five, and the largest is $\alpha/2\pi$.</li>
+<li>The error. $2.3\times10^{-3}$ electroweak, $3.8\%$ QCD, and the smaller is not the one to quote.</li>
+<li>The Goldstones. Inside the longitudinal polarisations, and not remembered.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Setting $\hbar\to0$ and moving nothing else turns the eight-line Lagrangian into the classical field equations of its sectors: Yang–Mills and Proca for the gauge fields, a nonlinear Klein–Gordon equation for the real scalar, and the Dirac equation read as a classical spinning particle with $g=2$ exactly.</p>
+<p>The corner is relativistic in full. It keeps Lorentz invariance, spin and its BMT precession, antiparticles, and every tree-level width. It loses every loop: the anomalous moment, the running, the vacuum polarisation, the Lamb shift, and the whole of $h\to\gamma\gamma$.</p>
+<p>Its error is $\alpha/\pi$ for the electroweak sector and $\alpha_s/\pi$ for the strong one, which makes it a $1\%$ theory and a $4\%$ theory rather than a single thing. That split is the reason the next two corners exist: the non-relativistic one keeps the loop and drops the antiparticle, and the low-energy one drops the heavy field and keeps everything else.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g$</td>
+<td>the gyromagnetic ratio, $2$ in this corner and $2.0023$ measured</td>
+</tr>
+<tr>
+<td>BMT</td>
+<td>the Bargmann–Michel–Telegdi equation for spin precession</td>
+</tr>
+<tr>
+<td>tree level</td>
+<td>no loops, i.e. $\hbar\to0$ in the loop-order sense</td>
+</tr>
+<tr>
+<td>$\alpha/\pi$</td>
+<td>the size of the leading electroweak loop correction</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. The four requirements this article applies to itself.</li>
+<li><a href="classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic: $\hbar\to0$ First, Then $v/c\to0$</a>. The next move, and the one where the order matters.</li>
+<li><a href="the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice</a>. Why $g-2$ is the commutator of two corners.</li>
+<li><a href="the-dirac-equation-in-biquaternionic-form-solutions-and-the-non-relativistic-limit.html">The Dirac Equation in Biquaternionic Form</a>. The Gordon split and the non-relativistic limit, in the corpus's variables.</li>
+<li><a href="the-reverse-madelung-map-fluid-to-nonlinear-wave.html">The Reverse Madelung Map</a>. The amplitude–phase split used above for the complex scalar.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

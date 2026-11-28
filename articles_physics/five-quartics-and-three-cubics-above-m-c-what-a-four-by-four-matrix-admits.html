@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Five Quartics and Three Cubics Above $M_C$: What a $4\times4$ Matrix Admits and a Doublet Does Not — Biquaternion Universe</title>
+  <meta name="description" content="The question. The scalar potential is eleven monomials. Where does eleven come from, which of the eleven are written, and why does a doublet&#x27;s potential…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="five-quartics-and-three-cubics-above-math0-what-a-math1-matrix-admits-and-a-doublet-does-not"><strong>Five Quartics and Three Cubics Above $M_C$: What a $4\times4$ Matrix Admits and a Doublet Does Not</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> The scalar potential is eleven monomials. <strong>Where does eleven come from, which of the eleven are written, and why does a doublet's potential have only two?</strong></p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\text{degrees }1,2,3,4:\quad 1,2,3,5\ \text{monomials};\qquad 1+2+3+5=11 .
+$$</p>
+<p><strong>A Hermitian $4\times4$ has eleven invariants at degree four or below. A doublet has two.</strong> That factor of five and a half is the whole reason this phase's census is not shorter than the broken phase's.</p>
+<h2 id="the-partition-count">The Partition Count</h2>
+<p><strong>The invariant monomials of a Hermitian matrix at degree $d$ are the partitions of $d$ into at most four parts.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>degree</th>
+<th>partitions into $\le4$ parts</th>
+<th>count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$1$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$2$; $1+1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$3$; $2+1$; $1+1+1$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$4$; $3+1$; $2+2$; $2+1+1$; $1+1+1+1$</td>
+<td>$5$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why partitions of $d$.</strong> An invariant is a product of traces, $\operatorname{tr}(\Xi^{k_{1}})\cdots\operatorname{tr}(\Xi^{k_{r}})$ with $k_{1}+\dots+k_{r}=d$. <strong>Cayley--Hamilton makes $\operatorname{tr}\Xi^{k}$ independent only for $k\le4$</strong>, so each part is at most $4$; and since $d\le4$ here, no part exceeds $d$ anyway. <strong>The monomials are the partitions of $d$ into parts of size at most four</strong>, which for $d\le4$ is the same list as partitions into at most four parts, and the count is the table.</p>
+<p><strong>The count is a theorem and not a choice.</strong> It is the Hilbert series of the invariant ring of a $4\times4$ Hermitian matrix under $\mathrm{U}(4)$ conjugation, <strong>and $1,2,3,5$ is its coefficient sequence up to degree four.</strong></p>
+<h2 id="the-eleven-named">The Eleven, Named</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>degree</th>
+<th>monomials</th>
+<th>coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$\operatorname{tr}\Xi$</td>
+<td>$c$ (declared zero)</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$\operatorname{tr}\Xi^{2}$; $(\operatorname{tr}\Xi)^{2}$</td>
+<td>$\mu_{\Phi}^{2}$; $\mu_{2}^{2}$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$\operatorname{tr}\Xi^{3}$; $\operatorname{tr}\Xi^{2}\operatorname{tr}\Xi$; $(\operatorname{tr}\Xi)^{3}$</td>
+<td>$c_{1},c_{2},c_{3}$ (declared zero)</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>$\operatorname{tr}\Xi^{4}$; $\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$; $(\operatorname{tr}\Xi^{2})^{2}$; $\operatorname{tr}\Xi^{2}(\operatorname{tr}\Xi)^{2}$; $(\operatorname{tr}\Xi)^{4}$</td>
+<td>$\lambda_{1}$–$\lambda_{4}$ and $\lambda_{5}$ (the fifth declared zero)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four are written and seven carry declared or forced zeros.</strong> The four quartics are $\operatorname{tr}\Xi^{4}$, $(\operatorname{tr}\Xi^{2})^{2}$, $\operatorname{tr}\Xi^{2}(\operatorname{tr}\Xi)^{2}$ and $(\operatorname{tr}\Xi)^{4}$; <strong>the fifth, $\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$, is row $17$ with a zero coefficient.</strong></p>
+<p><strong>The linear term is forced to zero and not declared.</strong> A symmetric vacuum at $\Xi=0$ requires the gradient to vanish there, <strong>and $\partial_{\Xi}\operatorname{tr}\Xi=\mathbb1\neq0$</strong>, so $c=0$ follows from the vacuum and not from a convention. <strong>That is why the census lists row $13$'s warrant as "forced" and rows $14$–$17$'s as "declared".</strong></p>
+<h2 id="why-the-cubics-are-declared-zero">Why the Cubics Are Declared Zero</h2>
+<p><strong>Three cubics and one fifth quartic, and the reason is evenness.</strong></p>
+<p>$$
+\Xi\to-\Xi:\qquad
+\operatorname{tr}\Xi^{3}\to-\operatorname{tr}\Xi^{3},
+\qquad
+\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi\to-\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi .
+$$</p>
+<p><strong>A potential even under $\Xi\to-\Xi$ excludes all three cubics and the fifth quartic at once</strong>, and the reason is not aesthetic: <strong>a $\mathbb Z_{2}$ on the scalar is what keeps the symmetric point a minimum with no cubic instability</strong>, and it is the same discrete symmetry that makes the model's scalar sector renormalisable in the sense of having no cubic counterterm.</p>
+<p><strong>"A potential with only quartics" is therefore a potential with a discrete symmetry</strong>, and the census says so rather than presenting the zeros as a minimality principle.</p>
+<p><strong>The fifth quartic is a separate declaration.</strong> Evenness does not remove $\operatorname{tr}\Xi^{3}\operatorname{tr}\Xi$ at leading order in the same way — <strong>it is odd under $\Xi\to-\Xi$ because $\operatorname{tr}\Xi^{3}$ is, so it is removed</strong> — but the corpus declares it zero separately, <strong>because a reader might restore the even symmetry and keep it.</strong></p>
+<h2 id="what-a-doublet-admits-and-this-does-not">What a Doublet Admits and This Does Not</h2>
+<p><strong>A doublet's potential has two monomials at degree four or below: $\phi^{\dagger}\phi$ and $(\phi^{\dagger}\phi)^{2}$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>degree $2$</th>
+<th>degree $4$</th>
+<th>total to degree $4$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>doublet</td>
+<td>$1$</td>
+<td>$1$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$4\times4$ Hermitian</td>
+<td>$2$</td>
+<td>$5$</td>
+<td>$7$ (+$1$+$3$ at degrees $1$ and $3$)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The difference is the number of independent traces.</strong> A doublet's invariant is one real number $\phi^{\dagger}\phi$; <strong>a matrix's invariants are traces of powers, and there are as many as there are partitions.</strong></p>
+<p><strong>This is why eleven of the nineteen candidates are scalar monomials.</strong> The scalar is not a bigger version of a doublet; <strong>it is a different kind of object with a richer invariant ring</strong>, and the census's size follows from that and not from adding fields.</p>
+<h2 id="the-boundedness-condition">The Boundedness Condition</h2>
+<p><strong>The potential must be bounded below, and that is two conditions at the quartic level.</strong></p>
+<p>$$
+\lambda_{1}+\lambda_{2}\ge0,
+\qquad
+\lambda_{1}+4\lambda_{2}\ge0,
+$$</p>
+<p><strong>from $\tfrac14x^{2}\le s_{2}\le x^{2}$</strong>, where $s_{2}=\operatorname{tr}\Xi^{2}$ and $x=\operatorname{tr}\Xi$. <strong>The two binding directions are the identity and a single entry</strong>, and <a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">the boundedness article</a> derives both.</p>
+<p><strong>Boundedness is not a condition on admissibility.</strong> A structure is admissible whether or not its coefficient keeps the potential bounded; <strong>boundedness is a condition on the values, and it is checked on the values.</strong></p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The partition count. $1,2,3,5$ at degrees $1$–$4$, so $11$.</li>
+<li>The written quartics. Four, with the fifth declared zero.</li>
+<li>The forced linear term. $\partial_{\Xi}\operatorname{tr}\Xi=\mathbb1\neq0$, so $c=0$ at a symmetric vacuum.</li>
+<li>The evenness. $\Xi\to-\Xi$ removes three cubics and the fifth quartic.</li>
+<li>The doublet comparison. Two monomials against eleven.</li>
+<li>The boundedness. $\lambda_{1}+\lambda_{2}\ge0$ and $\lambda_{1}+4\lambda_{2}\ge0$.</li>
+<li>The matrix split. $\operatorname{tr}\Xi^{2}=\operatorname{tr}\Xi_{0}^{2}+\tfrac14s^{2}$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Eleven monomials because a Hermitian $4\times4$ has the invariant-ring counts $1,2,3,5$ at degrees one to four.</strong> Four quartics are written, one is declared zero, three cubics are declared zero, and the linear term is forced to zero by the symmetric vacuum.</p>
+<p><strong>A doublet admits two monomials and this matrix admits eleven</strong>, which is why the unbroken phase's census is not shorter than the broken phase's despite having one force instead of four.</p>
+<p><strong>Evenness under $\Xi\to-\Xi$ is the reason the cubics are absent</strong>, and the article says so rather than presenting minimality as a principle.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$s$, $x$</td>
+<td>$\operatorname{tr}\Xi$</td>
+</tr>
+<tr>
+<td>$s_{2}$</td>
+<td>$\operatorname{tr}\Xi^{2}$</td>
+</tr>
+<tr>
+<td>$\lambda_{1}$–$\lambda_{4}$</td>
+<td>the four written quartic coefficients</td>
+</tr>
+<tr>
+<td>$\lambda_{5}$, $c_{1}$–$c_{3}$, $c$</td>
+<td>the declared and forced zeros</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The potential at working size.</li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a>. The quartics in components and the boundedness cone.</li>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The eleven potential rows.</li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a>. The four quartics in the ledger.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a>. Why the zeros are basis statements.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

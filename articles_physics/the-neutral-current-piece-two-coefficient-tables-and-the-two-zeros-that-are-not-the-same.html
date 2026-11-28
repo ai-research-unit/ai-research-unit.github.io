@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Neutral-Current Piece: Two Coefficient Tables and the Two Zeros That Are Not the Same — Biquaternion Universe</title>
+  <meta name="description" content="one row for all twelve species, and two coefficient tables inside it, one for the vector coupling and one for the axial. Its two zeros are not the same…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same"><strong>The Neutral-Current Piece: Two Coefficient Tables and the Two Zeros That Are Not the Same</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The list has one neutral-current row,</p>
+<p>$$
+\mathcal{L}_{\mathrm{NC}}=-\frac{g}{\cos\theta_W}\sum_f\bar f\gamma^\mu\Bigl(T_3^f\frac{1-\gamma_5}{2}-Q_f\sin^2\theta_W\Bigr)f\,Z_\mu ,
+$$</p>
+<p>one row for all twelve species, and two coefficient tables inside it, one for the vector coupling and one for the axial. Its two zeros are not the same kind of zero. The photon's zero is definitional: the neutrino's charge is zero, so its vector coupling equals its axial coupling. The other is content: the right-handed neutrino is absent, so the right-handed axial current has no field to be built from.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;c^f_V=T^f_3-2Q_f\sin^2\theta_W,\qquad c^f_A=T^f_3,\qquad 12+9=21\;}
+$$</p>
+<p><strong>Why one row and not twelve.</strong> The twelve species share one coefficient and one operator structure; they differ only in the two numbers $T_3$ and $Q$. A row is a term with a definite field content and a definite coefficient, and the coefficient here is the common $g/\cos\theta_W$. The species dependence is carried by the quantum numbers inside the sum.</p>
+<p><strong>The standing.</strong> The piece is standard and the corpus's own line is $\frac{\sin\theta_{\mathrm W}}{\cos\theta_{\mathrm W}}QdP_\gamma+\frac{1}{\cos\theta_{\mathrm W}}T_3dZ$ in <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>. This article derives the $1/\cos\theta_W$, tabulates the two couplings, and separates the two zeros from the one near-zero.</p>
+<h2 id="the-piece-and-its-coefficient">The Piece and Its Coefficient</h2>
+<p><strong>Written out.</strong></p>
+<p>$$
+-\frac{g}{\cos\theta_W}\sum_f\bar f\gamma^\mu\Bigl(T_3^f\frac{1-\gamma_5}{2}-Q_f\sin^2\theta_W\Bigr)f\,Z_\mu .
+$$</p>
+<p><strong>Where $1/\cos\theta_W$ comes from, in three lines.</strong> In the unbroken basis the neutral couplings are $gW^3_\mu T_3+g_{\mathrm Y}B_\mu Y$, with $Y=Q-T_3$ and $g_{\mathrm Y}=g\tan\theta_W$. Substituting $W^3=\cos\theta_WZ+\sin\theta_WA$ and $B=-\sin\theta_WZ+\cos\theta_WA$ and collecting the $Z$ terms,</p>
+<p>$$
+g\cos\theta_WT_3-\frac{g\sin^2\theta_W}{\cos\theta_W}(Q-T_3)=\frac{g}{\cos\theta_W}\Bigl[T_3(\cos^2\theta_W+\sin^2\theta_W)-Q\sin^2\theta_W\Bigr],
+$$</p>
+<p>and the identity $\cos^2\theta_W+\sin^2\theta_W=1$ collapses the bracket to $T_3-Q\sin^2\theta_W$.</p>
+<p><strong>The identity is the whole derivation.</strong> The $Z$ coupling is not a new coupling; it is the $T_3$ coupling divided by $\cos\theta_W$, and the division is what the sum of the two squares produces. The same identity is why the photon coupling is $Q$ and nothing else.</p>
+<p><strong>The $A$ terms cancel in the same step.</strong> Collecting the $A$ terms of the same substitution gives $g\sin\theta_WT_3+g_{\mathrm Y}\cos\theta_WY=g\sin\theta_W(T_3+Q-T_3)=g\sin\theta_WQ$, which is $eQ$ after the identification $e=g\sin\theta_W$. The photon's coupling is the charge and nothing else, and <a href="the-photon-as-the-unbroken-mixture.html">The Photon Piece</a> writes it.</p>
+<h2 id="the-two-couplings-per-species">The Two Couplings per Species</h2>
+<p><strong>Vector and axial, in one line.</strong></p>
+<p>$$
+T_3\frac{1-\gamma_5}{2}-Q\sin^2\theta_W=\frac12\Bigl[\bigl(T_3-2Q\sin^2\theta_W\bigr)-T_3\gamma_5\Bigr],
+$$</p>
+<p>so with the convention $\mathcal{L}\supset-\frac{g}{2\cos\theta_W}\bar f\gamma^\mu(c_V-c_A\gamma_5)fZ_\mu$ the two numbers are $c_V=T_3-2Q\sin^2\theta_W$ and $c_A=T_3$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Species</th>
+<th>$T_3$</th>
+<th>$Q$</th>
+<th>$c_V$</th>
+<th>$c_A$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\nu_L$</td>
+<td>$+\tfrac12$</td>
+<td>$0$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac12$</td>
+</tr>
+<tr>
+<td>$e_L$, $\mu_L$, $\tau_L$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+<td>$-\tfrac12+2\sin^2\theta_W$</td>
+<td>$-\tfrac12$</td>
+</tr>
+<tr>
+<td>$u_L$, $c_L$, $t_L$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac23$</td>
+<td>$\tfrac12-\tfrac43\sin^2\theta_W$</td>
+<td>$+\tfrac12$</td>
+</tr>
+<tr>
+<td>$d_L$, $s_L$, $b_L$</td>
+<td>$-\tfrac12$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac12+\tfrac23\sin^2\theta_W$</td>
+<td>$-\tfrac12$</td>
+</tr>
+<tr>
+<td>all right-handed</td>
+<td>$0$</td>
+<td>as charged</td>
+<td>$-2Q\sin^2\theta_W$</td>
+<td>$0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two entries per Dirac species and one per right-handed fermion.</strong> The table separates the two chiral components because they carry different quantum numbers: a Dirac field is not one entry in this table but two, and its right-handed half has no axial coupling. The distinction is the reason the neutral current is not simply proportional to the charge.</p>
+<h2 id="the-two-zeros-and-the-one-near-zero">The Two Zeros and the One Near-Zero</h2>
+<p><strong>First zero, and it is content: $c_A=0$ for right-handed fields.</strong> $T_3$ vanishes on a right-handed field, so the axial coupling vanishes and the right-handed neutral current is purely vector. For the charged fermions this is a consequence of their being singlets; for the neutrino it is a consequence of the field not existing at all. There is no right-handed neutrino, so there is no right-handed neutrino current to have a coupling.</p>
+<p><strong>Second zero, and it is definitional: $c_V=c_A$ for the neutrino.</strong> The neutrino has $Q=0$, so the vector coupling equals the axial coupling and the combination $(1-\gamma_5)$ survives as a whole. This is the photon's zero read through the $Z$: the same entry of the charge matrix that removes the photon coupling removes the neutrino's vector coupling, and the equality is a rewriting of $Q=0$.</p>
+<p><strong>The count.</strong> Twelve left-handed species and nine right-handed ones, since the three neutrinos have no right-handed partner, so twenty-one independent numbers. That is the count of the independent currents of <a href="the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html">The Twelve Fermion Kinetic Pieces</a>, and the agreement is not a coincidence: the same bilinears are being counted.</p>
+<p><strong>The near-zero that is not a zero.</strong> For the electron, $c_V=-\tfrac12+2\sin^2\theta_W\approx-0.038$, which is small because $\sin^2\theta_W\approx0.23$ is close to $\tfrac14$. A reader who sees a number of order $10^{-2}$ will look for a symmetry that would make it zero and will not find one; the smallness is an accident of the measured angle. The measurement of parity violation in electron scattering is the measurement of this coefficient, and it is a measurement of $\sin^2\theta_W$ and not of a cancellation.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. One row, and it is the twenty-ninth of the forty-seven.</li>
+<li>The coefficient. $g/\cos\theta_W$, from $\cos^2+\sin^2=1$.</li>
+<li>The photon. $g\sin\theta_WQ=eQ$, the same substitution.</li>
+<li>The two couplings. $c_V=T_3-2Q\sin^2\theta_W$ and $c_A=T_3$.</li>
+<li>The first zero. $c_A$ vanishes for right-handed fields because $T_3=0$.</li>
+<li>The second zero. $c_V=c_A$ for the neutrino because $Q=0$.</li>
+<li>The count of numbers. $12+9=21$: one per left-handed species and one per right-handed species, the same as the count of currents.</li>
+<li>The electron. $c_V^e=-0.5+2(0.231)=-0.038$, small and not zero.</li>
+<li>The absence of a $Z\gamma$ mixing piece. The $A$ terms collect to $eQ$ and mix with nothing, so the neutral current is diagonal in the mass basis.</li>
+<li>The dimension. $\bar ffZ$ has dimension four, and the coefficient carries none.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The neutral current is one row, with the common coefficient $g/\cos\theta_W$, and it carries two couplings per species: $c_V=T_3-2Q\sin^2\theta_W$ and $c_A=T_3$.</p>
+<p>The $1/\cos\theta_W$ is not a new coupling. It is what the $T_3$ coupling becomes when the two neutral connections are rotated, and the identity $\cos^2\theta_W+\sin^2\theta_W=1$ is the whole of the derivation. The same substitution gives the photon coupling $eQ$.</p>
+<p>Two zeros are structural. Right-handed fields have no axial coupling, because they have no weak isospin; and the neutrino has equal vector and axial couplings, because it has no charge, so its neutral current is purely left-handed. The three foldings leave twenty-one independent numbers, the same as the count of independent currents.</p>
+<p>The near-zero of the electron's vector coupling is not a zero. It is small because the measured angle is close to the value that would make it vanish, and the measurement of parity violation in electron scattering is a measurement of the angle.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$c_V$, $c_A$</td>
+<td>The vector and axial couplings of a species</td>
+</tr>
+<tr>
+<td>$T_3$</td>
+<td>Weak isospin, $+\tfrac12$ or $-\tfrac12$ for left-handed fields and zero for right-handed ones</td>
+</tr>
+<tr>
+<td>$Q$</td>
+<td>Electric charge in units of $e$</td>
+</tr>
+<tr>
+<td>$\sin^2\theta_W$</td>
+<td>The mixing parameter, $0.231$ in the $\overline{\mathrm{MS}}$ scheme</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>. The corpus's form of the neutral current.</li>
+<li><a href="the-photon-as-the-unbroken-mixture.html">The Photon as the Unbroken Mixture</a>. The same substitution's $A$ part.</li>
+<li><a href="the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html">The Charged-Current Pieces</a>. The companion, and why it is two rows.</li>
+<li>The Gauge Bosons and the Neutral Current. The $Z$ as the carrier.</li>
+<li><a href="electroweak-precision-observables-the-oblique-parameters-s-t-u.html">Electroweak Precision Observables</a>. The measurements that fix $\sin^2\theta_W$.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

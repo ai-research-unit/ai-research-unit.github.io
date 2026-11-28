@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Completeness of the List: Why No Other Dimension-Four Piece Exists — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The forty-seven pieces of The Census Rule are all of them. This article proves it by a method that cannot miss a term: it sorts every candidate…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists"><strong>The Completeness of the List: Why No Other Dimension-Four Piece Exists</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The forty-seven pieces of <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a> are all of them. This article proves it by a method that cannot miss a term: it sorts every candidate by how many fermions it carries and how many derivatives, lists the members of each class by mass dimension, and then answers for each one whether it is in the list, forbidden, a total derivative, or removable.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\text{admissible}=\{\text{in the list}\}\cup\{\text{total derivatives}\}\cup\{\text{removable by a field redefinition}\}\;}
+$$</p>
+<p><strong>Why the two conditions, not one.</strong> The four conditions of the census rule — Lorentz scalar, residual invariance, dimension at most four, built from the mass eigenstates — admit candidates that are not in the Standard Model. Two are $hF_{\mu\nu}F^{\mu\nu}$ and $hF_{\mu\nu}\tilde F^{\mu\nu}$: both are residual invariants of dimension five, so dimension already excludes them, but $hF\tilde F$ would be admitted at dimension three if the photon had a mass, and the point stands. The condition that removes this whole family is descent: every piece must be the image of a dimension-four invariant of the <em>unbroken</em> group. Residual invariance plus descent is the criterion; either alone is too weak.</p>
+<p><strong>What the article is not.</strong> It is not a proof from first principles of the Standard Model's content. The content is an input, fixed elsewhere. What is proved is that, given the content, the list is exhausted.</p>
+<h2 id="the-method">The Method</h2>
+<p><strong>Two quantum numbers and one dimension.</strong> Every candidate is classified by the number of fermion fields $n_F\in\{0,2,4\}$, by the number of derivatives $n_D\in\{0,1,2\}$, and by its mass dimension. With $[V_\mu]=1$, $[h]=1$, $[\psi]=\tfrac32$ and $[\partial]=1$, the dimension is</p>
+<p>$$
+[\mathcal{O}]=n_V+n_h+\tfrac32n_F+n_D ,
+$$</p>
+<p>and the condition is $[\mathcal{O}]\le4$. Lorentz invariance forces $n_F$ even and fixes how the spinor indices are contracted; gauge invariance fixes how the internal indices are contracted. What remains is the arithmetic of the table.</p>
+<p><strong>Why the classification cannot miss a term.</strong> A monomial is determined by its field content and its derivative count. The table lists every field content with $n_F$ even and dimension at most four, so every monomial appears exactly once.</p>
+<h2 id="the-bosonic-classes-without-derivatives">The Bosonic Classes Without Derivatives</h2>
+<p><strong>$n_F=0$, $n_D=0$.</strong> The candidates, by field content.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Dimension</th>
+<th>In the list?</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>none</td>
+<td>$0$</td>
+<td>no</td>
+<td>vacuum energy; not a particle term, and fixed by renormalisation</td>
+</tr>
+<tr>
+<td>$V_\mu V^\mu$</td>
+<td>$2$</td>
+<td>$W$, $Z$ only</td>
+<td>forbidden for $\gamma$ and $G^a$ by residual invariance</td>
+</tr>
+<tr>
+<td>$h^2$</td>
+<td>$2$</td>
+<td>yes</td>
+<td>the Higgs mass piece</td>
+</tr>
+<tr>
+<td>$h^3$</td>
+<td>$3$</td>
+<td>yes</td>
+<td>the cubic self-coupling</td>
+</tr>
+<tr>
+<td>$h\,V_\mu V^\mu$</td>
+<td>$3$</td>
+<td>$W$, $Z$ only</td>
+<td>the two $hVV$ pieces; $M_\gamma=M_g=0$</td>
+</tr>
+<tr>
+<td>$h^4$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>the quartic self-coupling</td>
+</tr>
+<tr>
+<td>$h^2V_\mu V^\mu$</td>
+<td>$4$</td>
+<td>$W$, $Z$ only</td>
+<td>the two $hhVV$ pieces</td>
+</tr>
+<tr>
+<td>$V_\mu V^\mu V_\nu V^\nu$</td>
+<td>$4$</td>
+<td>$W$ only</td>
+<td>four charged vectors; two of the four quartic structures</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vector mass row is the one that needs care.</strong> $A_\mu A^\mu$ is forbidden because $A_\mu$ is a connection of the unbroken $U(1)_{\mathrm{em}}$, and a mass term for a connection is not invariant — the argument is one argument with four instantiations, stated in <a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups</a>. $Z_\mu Z^\mu$ and $W^+_\mu W^{-\mu}$ are in the list only as the unitary-gauge image of the scalar kinetic term, which is the subject of <a href="the-two-vector-masses-proca-as-the-representative-of-the-condensate.html">The Two Vector Masses</a>. At the level of the unbroken group those two rows have no ancestor that is not the scalar kinetic term, and that is exactly what descent says.</p>
+<p><strong>The $V^4$ row and the counting convention.</strong> With self-interactions folded into the curvatures, the four-vector structures are not separate rows; they are vertices. The row is listed here because the completeness question is asked of monomials, and the four monomials exist. <a href="the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions</a> writes them.</p>
+<h2 id="the-bosonic-classes-with-two-derivatives">The Bosonic Classes With Two Derivatives</h2>
+<p><strong>$n_F=0$, $n_D=2$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>Dimension</th>
+<th>In the list?</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$V_\mu V_\nu$</td>
+<td>$4$</td>
+<td>yes, four</td>
+<td>the four field-strength pieces</td>
+</tr>
+<tr>
+<td>$V_\mu V_\nu$ mixed, $Z_{\mu\nu}F^{\mu\nu}$</td>
+<td>$4$</td>
+<td>no</td>
+<td>removable by the rotation to mass eigenstates</td>
+</tr>
+<tr>
+<td>$h\,h$</td>
+<td>$4$</td>
+<td>yes</td>
+<td>the Higgs kinetic piece</td>
+</tr>
+<tr>
+<td>$h\,V_\mu$</td>
+<td>$3$</td>
+<td>no</td>
+<td>total derivative, or removable by a shift of $V$</td>
+</tr>
+<tr>
+<td>$h\,h\,V_\mu$</td>
+<td>$4$</td>
+<td>no</td>
+<td>total derivative</td>
+</tr>
+<tr>
+<td>$h\,V_\mu V_\nu$</td>
+<td>$5$</td>
+<td>no</td>
+<td>dimension; this is the loop-induced family of The Loop-Induced Pieces</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The mixed curvature row is a redundancy and not an absence.</strong> Before the rotation, the neutral kinetic terms are $-\tfrac14W_{3,\mu\nu}W_3^{\mu\nu}-\tfrac14B_{\mu\nu}B^{\mu\nu}$, and a term $W_{3,\mu\nu}B^{\mu\nu}$ is forbidden by the product structure of the two factors. After the rotation to $A$ and $Z$ the same two pieces are diagonal, and a mixed term $Z_{\mu\nu}F^{\mu\nu}$ would be a third. Its absence is the statement that the rotation was performed, not that a term was forbidden.</p>
+<p><strong>The $h\partial h V$ row is the sharpest redundancy.</strong> A term $\partial_\mu h\,Z^\mu$ has dimension three and is a residual invariant, so the four conditions admit it. It is absent in unitary gauge because the Goldstone field it would mix with has been set to zero, and in a general gauge it is removed by the shift $Z_\mu\mapsto Z_\mu+\partial_\mu h$ at the cost of a shift in the $Z$ mass term. It is a redundancy, and the corpus's gauge-fixing article states where it goes.</p>
+<h2 id="the-fermionic-classes">The Fermionic Classes</h2>
+<p><strong>$n_F=2$.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Fields</th>
+<th>$n_D$</th>
+<th>Dimension</th>
+<th>In the list?</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\bar\psi\psi$</td>
+<td>$0$</td>
+<td>$3$</td>
+<td>nine of twelve</td>
+<td>a mass; no ancestor for the neutrino</td>
+</tr>
+<tr>
+<td>$\bar\psi\psi h$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>nine</td>
+<td>the Higgs–fermion pieces</td>
+</tr>
+<tr>
+<td>$\bar\psi\psi h$, pseudoscalar</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>no</td>
+<td>removable by a chiral rotation</td>
+</tr>
+<tr>
+<td>$\bar\psi\gamma_\mu\psi\,V^\mu$</td>
+<td>$0$</td>
+<td>$4$</td>
+<td>yes, five</td>
+<td>QCD, QED, the two charged currents, the neutral current</td>
+</tr>
+<tr>
+<td>$\bar\psi\gamma_\mu\psi\,\partial^\mu$</td>
+<td>$1$</td>
+<td>$4$</td>
+<td>yes, twelve</td>
+<td>the kinetic pieces</td>
+</tr>
+<tr>
+<td>$\bar\psi\sigma_{\mu\nu}\psi\,V^{\mu\nu}$</td>
+<td>$0$</td>
+<td>$5$</td>
+<td>no</td>
+<td>dimension; the dipole family</td>
+</tr>
+<tr>
+<td>$\bar\psi\psi\,h^2$</td>
+<td>$0$</td>
+<td>$5$</td>
+<td>no</td>
+<td>dimension</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>$n_F=4$.</strong> Every four-fermion monomial has dimension six and is excluded by dimension alone. This is the class the effective field theory adds, and <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a> records it.</p>
+<p><strong>$n_F$ odd.</strong> Excluded by Lorentz invariance: a Lorentz scalar needs an even number of spinors, and a single spinor has no scalar contraction. The one exception in principle is a spin-$\tfrac32$ field, which the content does not carry.</p>
+<h2 id="the-exclusions-one-at-a-time">The Exclusions, One at a Time</h2>
+<p><strong>Five candidates that a reader will look for, and the answer for each.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Candidate</th>
+<th>Dimension</th>
+<th>Why it is not in the list</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m_\gamma^2A_\mu A^\mu$</td>
+<td>$2$</td>
+<td>forbidden: a mass for an unbroken connection</td>
+</tr>
+<tr>
+<td>$m_g^2G^a_\mu G^{a\mu}$</td>
+<td>$2$</td>
+<td>forbidden, the same argument, colour adjoint</td>
+</tr>
+<tr>
+<td>$\tfrac12m_\nu\bar\nu^c_L\nu_L$</td>
+<td>$3$</td>
+<td>no dimension-four ancestor: the operator is dimension five before breaking</td>
+</tr>
+<tr>
+<td>$hF_{\mu\nu}F^{\mu\nu}$</td>
+<td>$5$</td>
+<td>dimension, and no ancestor; generated at one loop</td>
+</tr>
+<tr>
+<td>$\bar\psi\sigma_{\mu\nu}\psi F^{\mu\nu}$</td>
+<td>$5$</td>
+<td>dimension; the anomalous moment is a loop effect</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The neutrino mass deserves its own paragraph, because the residual criterion admits it.</strong> $\tfrac12m_\nu\bar\nu^c_L\nu_L$ carries no colour, no charge and dimension three. It is a perfectly good invariant of $SU(3)_c\times U(1)_{\mathrm{em}}$, and a list built on residual invariance alone would contain it. It is excluded because the broken-phase term has to come from somewhere: its only ancestor is the Weinberg operator $\frac{c_{ab}}{\Lambda}(L^T i\tau_2H)(L^T i\tau_2H)$, of dimension five, which is not in the symmetric-phase list either. The absence is therefore a statement about the unbroken theory. It is not a statement that neutrinos are massless in nature, and <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a> says so.</p>
+<p><strong>$hF\tilde F$ is the exclusion that tests descent.</strong> It is dimension three if written with a massless photon and a single $h$, it is CP-odd, and it is invariant under colour and electromagnetism. Nothing in the residual criterion removes it. What removes it is descent: the CP-odd dimension-four objects of the unbroken group are $G\tilde G$, $W\tilde W$ and $B\tilde B$, and all three are total derivatives. There is no CP-odd dimension-four operator with an $h$ in it, so there is none below. The same argument covers $hZ\tilde F$ and $hZ\tilde Z$.</p>
+<h2 id="three-ways-a-term-leaves-the-list-without-being-forbidden">Three Ways a Term Leaves the List Without Being Forbidden</h2>
+<p><strong>A candidate can be admissible and still not be a piece.</strong> Three mechanisms do this, and keeping them apart from the exclusions is what makes the theorem precise.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mechanism</th>
+<th>What it does</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>total derivative</td>
+<td>changes no equation of motion and no vertex</td>
+<td>$F_{\mu\nu}\tilde F^{\mu\nu}$, $G\tilde G$, $\partial_\mu(h\partial^\mu h)$</td>
+</tr>
+<tr>
+<td>field redefinition</td>
+<td>moves the term into others without changing any observable</td>
+<td>$Z_{\mu\nu}F^{\mu\nu}$ removed by the $\gamma$–$Z$ rotation</td>
+</tr>
+<tr>
+<td>equation of motion</td>
+<td>vanishes on the free equations, so it can be removed order by order</td>
+<td>$h\,\partial_\mu Z^\mu$ after the shift of $Z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The total derivative class is where $\theta_{\mathrm{QCD}}$ lives.</strong> $G^a_{\mu\nu}\tilde G^{a\mu\nu}$ is a total derivative and contributes no vertex at any order in the tree expansion; its effect is entirely quantum and is the subject of <a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP</a>. It is a parameter of the theory and not a piece of the list, which is why the count of parameters is nineteen and the count of pieces is forty-seven.</p>
+<p><strong>The distinction has a measurable consequence.</strong> A forbidden term is absent at every order. A redundant term is present in intermediate steps and cancels in the answer. A total derivative is present in the Lagrangian and absent from every amplitude. Three different statements, and a reader who runs them together will think the $\theta$ term is forbidden, which it is not.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The dimension formula. Recomputed on each row: $[V_\mu V^\mu]=2$, $[h^3]=3$, $[h^2V^2]=4$, $[\bar\psi\psi]=3$, $[\bar\psi\sigma\psi V]=5$, $[\bar\psi\psi h]=4$.</li>
+<li>The class count. Five bosonic classes without derivatives, three with two derivatives, four two-fermion classes with an admitted member, and two excluded fermionic classes: nine rows carry a member of the list.</li>
+<li>The arithmetic of the list. The admitted rows of the tables give $2+1+1+2+2+4+4+1+1$ bosonic and $9+9+5+12$ fermionic pieces, which regroup into the ten groups of the summation.</li>
+<li>The vector-mass row against the obstruction. $A_\mu A^\mu$ and $G^a_\mu G^{a\mu}$ fail the invariance argument of <a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups</a>; $W$ and $Z$ do not, because their mass arrives through the scalar kinetic term.</li>
+<li>The neutrino row against the Weinberg operator. The dimension-five operator is the only ancestor, and it requires a right-handed neutrino or an inverse scale; either way it is absent from a renormalisable symmetric phase.</li>
+<li>The $hF\tilde F$ row against the CP-odd inventory. The three CP-odd dimension-four objects of the unbroken group are all total derivatives, so the family has no ancestor.</li>
+<li>The four-fermion row. Every monomial has dimension six, since $4\times\tfrac32=6$.</li>
+<li>Consistency with the assembly. The six ancestors of <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a> are all dimension four, and every admitted row of this article's tables is an image of one of them.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The list is complete, and the proof is an enumeration. Every candidate is sorted by the number of fermions, the number of derivatives and the mass dimension; the bosonic classes without derivatives give the scalar potential, the vector masses and the four-vector structures; the bosonic classes with two derivatives give the four field strengths, the scalar kinetic piece and two redundancies; the two-fermion classes give the kinetic, mass, Yukawa and current pieces; the four-fermion class and the dipole family are excluded by dimension; odd fermion numbers are excluded by Lorentz invariance.</p>
+<p>Two conditions are needed and neither suffices alone. Residual invariance admits the Majorana neutrino mass and $hF\tilde F$; descent excludes both, because neither has a dimension-four ancestor in the unbroken theory. Descent alone would not fix the count, because residual invariance is what decides that the photon and the gluon take no mass and no $hVV$ piece.</p>
+<p>Three mechanisms remove admissible candidates without forbidding them: a total derivative changes no amplitude, a field redefinition moves a term into others, and a term proportional to a free equation of motion can be removed order by order. The $\theta$ term is in the first class, the $\gamma$–$Z$ mixing in the second, and the $h\partial Z$ mixing in the third.</p>
+<p>Five candidates a reader looks for are absent for five different reasons: the photon and gluon masses are forbidden, the neutrino mass and the dipole moments have no dimension-four ancestor, and $h\gamma\gamma$ is dimension five and generated only at one loop.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$n_F$, $n_D$</td>
+<td>Number of fermion fields and of derivatives in a candidate</td>
+</tr>
+<tr>
+<td>$[V_\mu]=1$, $[h]=1$, $[\psi]=\tfrac32$, $[\partial]=1$</td>
+<td>Mass dimensions</td>
+</tr>
+<tr>
+<td>$[\mathcal{O}]=n_V+n_h+\tfrac32n_F+n_D$</td>
+<td>The dimension formula</td>
+</tr>
+<tr>
+<td>$F_{\mu\nu}\tilde F^{\mu\nu}$</td>
+<td>The dual contraction, a total derivative</td>
+</tr>
+<tr>
+<td>$hF\tilde F$</td>
+<td>The CP-odd scalar–photon operator, excluded by descent</td>
+</tr>
+<tr>
+<td>$\bar\nu^c_L\nu_L$</td>
+<td>The Majorana mass, admitted by residual invariance alone</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>. The criterion and the four counting conventions this article proves sufficient.</li>
+<li><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</a>. The argument that removes $A_\mu A^\mu$ and $G^a_\mu G^{a\mu}$.</li>
+<li><a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>. The six ancestors, and the audit that the sum is invariant.</li>
+<li><a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a>. The total-derivative class, and why its parameter is counted apart.</li>
+<li><a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses and the Tenth the Minimal Model Omits</a>. The neutrino exclusion, in full.</li>
+<li>The Loop-Induced Pieces the Tree-Level Census Omits. The $hVV$ family that descent removes and loops restore.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

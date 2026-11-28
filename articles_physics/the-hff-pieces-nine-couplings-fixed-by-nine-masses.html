@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The $h\bar ff$ Pieces: Nine Couplings Fixed by Nine Masses — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Nine pieces couple the scalar to a fermion bilinear, and each carries the mass of the same species:">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-math0-pieces-nine-couplings-fixed-by-nine-masses"><strong>The $h\bar ff$ Pieces: Nine Couplings Fixed by Nine Masses</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Nine pieces couple the scalar to a fermion bilinear, and each carries the mass of the same species:</p>
+<p>$$
+\mathcal{L}_{hff}=-\sum_{f=1}^{9}\frac{m_f}{v}\,h\,\bar\psi_f\psi_f .
+$$</p>
+<p>The coupling is not a new number. It is the mass divided by $v$, and that division is the mechanism's strongest structural statement.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;g_{hff}=\frac{m_f}{v},\qquad \text{nine pieces, no new parameter}\;}
+$$</p>
+<p><strong>Why this is the statement to test.</strong> A reader can check the mass of the top quark in a table and the coupling of the Higgs to the top in another table, and the two numbers must stand in the ratio $1/v$. No other piece of the list makes a prediction of this kind at tree level, because no other piece ties a coupling to a mass without a new constant.</p>
+<p><strong>The standing.</strong> The nine pieces are standard, and the corpus's Yukawa sector is <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector of the $\mathrm{SU}(4)$ Model</a>. This article derives the proportionality, states why there is no tenth piece, and counts what the nine cost.</p>
+<h2 id="the-nine-pieces">The Nine Pieces</h2>
+<p><strong>From the invariant term to the broken one.</strong></p>
+<p>$$
+-\bar\psi\frac{y_fH}{\sqrt2}\psi+\mathrm{h.c.}\;\longrightarrow\;-\frac{y_f}{\sqrt2}(v+h)\bar\psi\psi
+=-\underbrace{m_f\bar\psi\psi}_{\text{mass piece}}-\underbrace{\frac{m_f}{v}h\bar\psi\psi}_{\text{this piece}} .
+$$</p>
+<p><strong>One line, two pieces.</strong> The same substitution produces the mass row and the coupling row, and the two share the number $y_f$. That is why the count of Yukawa pieces and the count of mass pieces are both nine: each species contributes one of each, from one term.</p>
+<p><strong>The broken-phase pieces carry the masses and not the eigenvalues.</strong> After diagonalisation the matrices $Y_f$ are diagonal, so the nine couplings are diagonal in the mass basis and there is no $h\bar ds$ piece. The flavour-changing couplings are absent at tree level, and their absence at one loop is the subject of the flavour-changing neutral current literature rather than of this list.</p>
+<h2 id="the-proportionality">The Proportionality</h2>
+<p><strong>One number per species, used twice.</strong></p>
+<p>$$
+g_{hff}=\frac{m_f}{v},\qquad \frac{g_{hff}}{m_f}=\frac1v\ \text{ for all nine}.
+$$</p>
+<p><strong>The numbers, in the order they are measured.</strong> The top quark's coupling is about $1$ in units of $m_t/v$; the electron's is about $3\times10^{-6}$. The ratio of the two couplings is the ratio of the two masses, and the ratio of either to $1/v$ is the mass.</p>
+<p><strong>Why the proportionality is not an accident of the normalisation.</strong> The $v$ cancels between the mass and the coupling because both come from the same term evaluated at the same point. A different expansion point would give a different $v$ in both and the ratio would be unchanged.</p>
+<p><strong>What a deviation would mean.</strong> A coupling that differed from $m_f/v$ by a factor $\kappa_f$ would mean that the mass and the coupling did not come from one Yukawa matrix. The measurement of $\kappa_f$ for the top and the bottom is one of the quantitative tests of the mechanism, and a deviation would be evidence for a second source of mass.</p>
+<h2 id="why-there-is-no-tenth-piece">Why There Is No Tenth Piece</h2>
+<p><strong>No mass, no coupling.</strong> The three neutrinos have no Dirac mass in this content, and the piece $-\frac{m_\nu}{v}h\bar\nu\nu$ therefore has no $m_\nu$ to carry. The exclusion is the same one as in <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a>, seen on the coupling rather than on the mass.</p>
+<p><strong>What a neutrino Yukawa would require.</strong> A right-handed neutrino and a Yukawa matrix for it: three more pieces of this kind, three more mass pieces and three more kinetic pieces. The count would rise by nine, and the parameter count by the entries of the new matrix.</p>
+<p><strong>The Majorana alternative has no Higgs coupling at all.</strong> A term $\frac12m_\nu\bar\nu^c_L\nu_L$ contains no scalar, so even if it were admitted it would add no $h\nu\nu$ piece. The two absences are linked: the minimal content has neither a neutrino mass nor a neutrino–Higgs coupling.</p>
+<h2 id="what-the-nine-cost">What the Nine Cost</h2>
+<p><strong>Nine pieces, one parameter each, and the parameters are the masses.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Count</th>
+<th>Value</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pieces</td>
+<td>$9$</td>
+<td>one per massive species</td>
+</tr>
+<tr>
+<td>new parameters</td>
+<td>$0$</td>
+<td>the masses are already counted</td>
+</tr>
+<tr>
+<td>rows in the coefficient table</td>
+<td>$9$</td>
+<td>each carries $m_f/v$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the count of parameters does not move.</strong> The nine masses are in the parameter list because the mass pieces need them. The coupling pieces reuse them, which is why <a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a> has eighteen constants carrying forty-seven pieces and not twenty-seven.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Nine rows, numbered 30 to 38 of the forty-seven for the masses and 39 to 47 for the couplings.</li>
+<li>The proportionality. $g_{hff}=m_f/v$ for each of the nine.</li>
+<li>The $\sqrt2$. The factor in the Yukawa term is $1/\sqrt2$, from $H=(0,(v+h)/\sqrt2)$, and it cancels between the mass and the coupling.</li>
+<li>The diagonal form. After diagonalisation there is no $h\bar d s$ piece.</li>
+<li>The absence of $h\nu\nu$. No Dirac neutrino mass in this content.</li>
+<li>The Majorana case. No scalar in the bilinear, so no Higgs coupling even if admitted.</li>
+<li>The parameter count. Nine constants, reused, no new one.</li>
+<li>The largest coupling. $g_{htt}\approx1$ in units of $m_t/v$.</li>
+<li>The smallest. $g_{hee}\approx3\times10^{-6}$.</li>
+<li>The line's origin. One Yukawa term per species produces both its mass row and its coupling row.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>There are nine Higgs–fermion pieces, one per massive species, each with the coupling $m_f/v$. They come from the same terms that produce the nine mass pieces, and the number $y_f$ appears in both.</p>
+<p>The proportionality $g_{hff}=m_f/v$ is the mechanism's strongest structural statement. It ties a coupling to a mass with no new constant, and it is the reason the nine coupling pieces cost no parameters.</p>
+<p>The tenth piece is absent for the same reason as the tenth mass piece: the neutrinos have no Dirac mass in this content. A Majorana mass would add no Higgs coupling either, because its bilinear contains no scalar.</p>
+<p>The nine pieces reuse nine constants. The coefficient table has eighteen entries carrying forty-seven pieces, and the Yukawa sector's contribution to that table is the nine masses it shares with the mass rows.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{hff}$</td>
+<td>The Higgs–fermion coupling of a species, $m_f/v$</td>
+</tr>
+<tr>
+<td>$y_f$</td>
+<td>The Yukawa eigenvalue, shared by the mass and the coupling</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>The vacuum value</td>
+</tr>
+<tr>
+<td>$\kappa_f$</td>
+<td>A hypothetical deviation of the coupling from $m_f/v$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">The Yukawa Sector of the $\mathrm{SU}(4)$ Model: One Matrix and Its Diagonalisation</a>. The matrices and their singular values.</li>
+<li><a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses and the Tenth the Minimal Model Omits</a>. The mass rows of the same nine terms.</li>
+<li><a href="the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The Higgs–Vector Pieces</a>. The other couplings of the scalar, tied to masses squared.</li>
+<li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. Why the nine cost nothing new.</li>
+<li><a href="an-introduction-to-flavour.html">An Introduction to Flavour</a>. The flavour structure that the tree-level list diagonalises away, and the place the loop-level couplings would sit.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

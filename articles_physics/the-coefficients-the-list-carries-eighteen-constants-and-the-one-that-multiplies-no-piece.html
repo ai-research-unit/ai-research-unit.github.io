@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coefficients the List Carries: Eighteen Constants and the One That Multiplies No Piece — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The forty-seven pieces carry eighteen constants, and the theory has nineteen parameters. The nineteenth multiplies no piece. This article…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece"><strong>The Coefficients the List Carries: Eighteen Constants and the One That Multiplies No Piece</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The forty-seven pieces carry eighteen constants, and the theory has nineteen parameters. The nineteenth multiplies no piece. This article prints the map from constant to rows, both parametrisations of the eighteen, and the reason the nineteenth is counted apart.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;18=1+1+1+1+1+9+4,\qquad 18+1=19\;}
+$$</p>
+<p><strong>Why a map and not a table of numbers.</strong> The corpus prints a measured strength only where the <a href="the-data-boundary.html">Data Boundary</a> allows, and this category is not one of those places. Every constant below appears as a symbol and every relation as an equation, so the article states which pieces are fixed by which parameter and prints no value.</p>
+<p><strong>The standing.</strong> The eighteen are the Standard Model's, transcribed. The map is standard bookkeeping, with one structural point the bookkeeping makes visible: the parameter count is the same in the broken phase and in the symmetric one, and the maps between them are invertible.</p>
+<h2 id="the-eighteen">The Eighteen</h2>
+<p><strong>By group, with the rows each constant fixes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Constant</th>
+<th>Pieces it fixes</th>
+<th>Rows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_s$</td>
+<td>gluon kinetic, QCD</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>photon kinetic, QED, $\gamma W^+W^-$, $W^+W^-AA$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>$Z$ kinetic, $ZWW$, $WWZZ$, $WWAZ$, neutral current, $hZZ$, $hhZZ$</td>
+<td>$7$</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>$W$ and $Z$ masses, $hWW$, $hZZ$, $hhWW$, $hhZZ$, nine $h\bar ff$</td>
+<td>$15$</td>
+</tr>
+<tr>
+<td>$m_h$</td>
+<td>Higgs mass, $h^3$, $h^4$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$m_f$, one per species</td>
+<td>that species' mass, that species' $h\bar ff$</td>
+<td>$18$</td>
+</tr>
+<tr>
+<td>four mixing parameters</td>
+<td>the two charged-current pieces</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The rows are shared, and the column does not sum to forty-seven.</strong> The $W^+W^-ZZ$ vertex needs both $e$ and $\theta_W$; a mass needs $v$ and the species' constant; a $h\bar ff$ piece needs $v$ and the species' mass. A map from parameters to rows is not a partition, and the article does not present it as one.</p>
+<p><strong>The nine masses are the nine Yukawa eigenvalues times the vacuum value.</strong> Writing them as masses rather than as couplings is a choice, and it is the choice the broken phase makes: in the mass basis each of the nine rows carries one number, and the mixing is carried by the two charged-current pieces alone.</p>
+<p><strong>The four mixing parameters are three angles and one phase.</strong> They enter no mass, no kinetic term and no neutral-current piece at tree level; they enter the charged current, and through it every flavour-changing process.</p>
+<h2 id="the-two-parametrisations">The Two Parametrisations</h2>
+<p><strong>Broken and symmetric, with the same count.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Broken phase</th>
+<th>Symmetric phase</th>
+<th>Relation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_s$</td>
+<td>$g_s$</td>
+<td>identical</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>$g$, $g_{\mathrm Y}$</td>
+<td>$e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>$g$, $g_{\mathrm Y}$</td>
+<td>$\tan\theta_W=g_{\mathrm Y}/g$</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>$\mu^2$, $\varpi_{\mathrm{cpl}}$</td>
+<td>$v^2=\mu^2/\varpi_{\mathrm{cpl}}$</td>
+</tr>
+<tr>
+<td>$m_h$</td>
+<td>$\varpi_{\mathrm{cpl}}$, $v$</td>
+<td>$m_h^2=2\varpi_{\mathrm{cpl}}v^2$</td>
+</tr>
+<tr>
+<td>$m_f$</td>
+<td>$y_f$, $v$</td>
+<td>$m_f=y_fv/\sqrt2$</td>
+</tr>
+<tr>
+<td>four mixing parameters</td>
+<td>the Yukawa matrices</td>
+<td>the mismatch of the two diagonalisations</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The gauge pair is a change of coordinates on a plane.</strong> The symmetric phase carries $g$ and $g_{\mathrm Y}$; the broken phase carries $e$ and $\theta_W$. Two numbers on each side, and the map is invertible: $g=e/\sin\theta_W$ and $g_{\mathrm Y}=e/\cos\theta_W$.</p>
+<p><strong>The scalar pair is a change of coordinates and not a simplification.</strong> The symmetric phase carries $\mu^2$ and $\varpi_{\mathrm{cpl}}$; the broken phase carries $v$ and $m_h$. The map is invertible: $\varpi_{\mathrm{cpl}}=m_h^2/(2v^2)$ and $\mu^2=\varpi_{\mathrm{cpl}}v^2=m_h^2/2$. The broken pair looks more physical and carries the same two numbers.</p>
+<p><strong>The nine masses are nine to nine.</strong> Nine Yukawa eigenvalues become nine masses at one scale $v$. What the change of variables buys is that the $h\bar ff$ coupling is then a number in units of $v$, which is the statement that the Higgs couples in proportion to mass.</p>
+<h2 id="the-nineteen-in-two-columns">The Nineteen in Two Columns</h2>
+<p><strong>Ten masses, one scale, eight dimensionless numbers.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Entries</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>masses</td>
+<td>nine fermion masses and $m_h$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>one scale</td>
+<td>$v$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>dimensionless</td>
+<td>$g_s$, $e$, $\theta_W$, the four mixing parameters, $\theta_{\mathrm{QCD}}$</td>
+<td>$8$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why the Higgs mass is in the first column.</strong> It is a mass and it is measured like one; putting it with the couplings because it comes from $\varpi_{\mathrm{cpl}}$ would be a statement about the symmetric variables and not about the broken list.</p>
+<p><strong>Why $v$ is alone.</strong> It is the only number with the dimension of mass that is not a particle's mass. Every dimensionful entry is either a mass or this one scale, and the scale is what converts the nine Yukawa eigenvalues into masses.</p>
+<p><strong>Why the vacuum angle is in the third column although it multiplies no row.</strong> The columns are sorted by dimension and not by the census. $\theta_{\mathrm{QCD}}$ is dimensionless, so it belongs with the dimensionless numbers, and the fact that no row carries it is stated in the next section.</p>
+<p><strong>The count.</strong> $10+1+8=19$, and the same table read without the vacuum angle is $10+1+7=18$, which is the count of the constants that carry rows.</p>
+<h2 id="the-one-that-multiplies-no-piece">The One That Multiplies No Piece</h2>
+<p><strong>$\theta_{\mathrm{QCD}}$, and why it is counted.</strong> The operator $G^a_{\mu\nu}\tilde G^{a\mu\nu}$ is a total derivative, so it contributes no vertex at any order of the tree expansion and is not a piece of the list. Its parameter is nevertheless a parameter of the theory, for two reasons: no field redefinition that leaves the rest of the list fixed removes it, and its effect is not zero, because the fermion measure is not invariant under the chiral rotation that would remove it.</p>
+<p><strong>Where nineteen comes from.</strong> Eighteen constants multiply the forty-seven rows, and the nineteenth multiplies the operator that is not a row. A count that omitted it would be a count of the couplings of the list and not of the parameters of the theory, and <a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a> says which of the two it prints.</p>
+<p><strong>Why it is not a piece.</strong> A piece changes a vertex, and this parameter changes none. It changes the vacuum, and through the vacuum the neutron's electric dipole moment. The distinction is the distinction between a coupling and a vacuum angle, and <a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP</a> carries it.</p>
+<h2 id="why-the-symbols">Why the Symbols</h2>
+<p><strong>One rule, obeyed by construction.</strong> A page that printed the eighteen values would be a fifteenth entry in the register of the <a href="the-data-boundary.html">Data Boundary</a>, and the register is closed. The category therefore prints relations: $M_W=gv/2$, $M_Z=M_W/\cos\theta_W$, $m_h=\sqrt{2\varpi_{\mathrm{cpl}}}\,v$, $m_f=y_fv/\sqrt2$.</p>
+<p><strong>What the symbols buy.</strong> A relation is checkable and a number is not. The reader can verify that $m_f=y_fv/\sqrt2$ has the dimensions of a mass, that $M_Z=M_W/\cos\theta_W$ gives $\rho=1$, and that $m_h^2=2\varpi_{\mathrm{cpl}}v^2$ makes the cubic and quartic self-couplings functions of one number. A table of values would show none of the three.</p>
+<p><strong>What the symbols cost.</strong> A reader who wants the numbers must go to the parameter table of <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>, where they are printed once with scheme and scale. That is the price of one register, paid deliberately.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. $1+1+1+1+1+9+4=18$, and $18+1=19$.</li>
+<li>The invertibility. $(g,g_{\mathrm Y})\leftrightarrow(e,\theta_W)$ is two to two; $(\mu^2,\varpi_{\mathrm{cpl}})\leftrightarrow(v,m_h)$ is two to two; nine $y_f\leftrightarrow$ nine $m_f$ at fixed $v$.</li>
+<li>The dimensions. $m_f=y_fv/\sqrt2$ is a dimensionless number times a mass; $m_h^2=2\varpi_{\mathrm{cpl}}v^2$ is dimensionless times a mass squared; $M_Z=M_W/\cos\theta_W$ is a ratio.</li>
+<li>The coverage. Each of the eighteen appears in at least one row of the first table, and every row of the forty-seven is fixed by at least one of them.</li>
+<li>The non-partition. $e$ and $\theta_W$ share the $W^+W^-ZZ$ row; $v$ and $m_f$ share every $h\bar ff$ row.</li>
+<li>The theta check. $G\tilde G$ is a total derivative, contributes no vertex, and is not removable by any field redefinition that preserves the rest of the list.</li>
+<li>The register. No numeric value of any of the eighteen appears in this article or in its companions; the values are the parameter table's.</li>
+<li>The symmetric-phase count. $g_s$, $g$, $g_{\mathrm Y}$, $\mu^2$, $\varpi_{\mathrm{cpl}}$, nine $y_f$ and four mixing parameters is $1+1+1+1+1+9+4=18$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The forty-seven pieces carry eighteen constants: the strong coupling, the electric charge, the weak mixing angle, the vacuum value, the Higgs mass, nine fermion masses and four mixing parameters. Each constant fixes a set of rows, the sets overlap, and the map from constants to rows is not a partition.</p>
+<p>The same eighteen appear in the symmetric phase as two gauge couplings, two scalar parameters, nine Yukawa eigenvalues and four mixing parameters. The two parametrisations are related by invertible changes of variables on the gauge pair and on the scalar pair, so the count is preserved. Nine Yukawa couplings becoming nine masses at one scale is a change of variables that exposes the proportionality of the Higgs coupling to mass.</p>
+<p>The nineteenth parameter, $\theta_{\mathrm{QCD}}$, multiplies no piece. Its operator is a total derivative, contributes no vertex, and is not removable, so it counts as a parameter of the theory and not as a coupling of the list.</p>
+<p>The category prints symbols and relations and no values, by the rule of the data boundary. The values live in the parameter table, where they are printed once.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_s$</td>
+<td>Strong coupling</td>
+</tr>
+<tr>
+<td>$e$</td>
+<td>Electric charge, $e=g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$</td>
+</tr>
+<tr>
+<td>$\theta_W$</td>
+<td>Weak mixing angle, $\tan\theta_W=g_{\mathrm Y}/g$</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>Vacuum value, $M_W=gv/2$</td>
+</tr>
+<tr>
+<td>$m_h$</td>
+<td>Higgs mass, $m_h^2=2\varpi_{\mathrm{cpl}}v^2$</td>
+</tr>
+<tr>
+<td>$m_f$</td>
+<td>A fermion mass, $m_f=y_fv/\sqrt2$</td>
+</tr>
+<tr>
+<td>four mixing parameters</td>
+<td>Three angles and one phase of the quark mixing matrix</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>The vacuum angle, the parameter that multiplies no piece</td>
+</tr>
+<tr>
+<td>$\varpi_{\mathrm{cpl}}$</td>
+<td>The quartic of the potential, the symmetric-phase partner of $m_h$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-data-boundary.html">The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test</a>. The register that keeps the values out of this category.</li>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The values themselves, with scheme and scale.</li>
+<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. The nineteen typed by the kind of object each one is.</li>
+<li><a href="nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html">Nineteen and Nineteen</a>. The two-column count, sector by sector.</li>
+<li><a href="the-theta-parameter-and-strong-cp-in-biquaternionic-form.html">The Theta Parameter and Strong CP in Biquaternionic Form</a>. The operator whose parameter multiplies no piece.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

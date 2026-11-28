@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local and Low Energy: The Derivative Cut and the Fermi Theory — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Move the derivative coordinate,, and keep everything else. Every operator of dimension five and above is suppressed by a power of, so the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="local-and-low-energy-the-derivative-cut-and-the-fermi-theory"><strong>Local and Low Energy: The Derivative Cut and the Fermi Theory</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Move the derivative coordinate, $p/\Lambda\to0$, and keep everything else. Every operator of dimension five and above is suppressed by a power of $\Lambda$, so the theory reduces to the renormalisable one: the eight lines, forty-nine rows, nineteen parameters. This is the corner the category has been written in from the beginning, and saying so makes the census rule a truncation rather than a postulate.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\mathcal{L}=\mathcal{L}^{(4)}+\sum_{d\ge5}\frac{C_i}{\Lambda^{d-4}}\,\mathcal{O}_i\;\xrightarrow{\ p/\Lambda\to0\ }\;\mathcal{L}^{(4)}\;\text{— and }\Lambda\ \text{is in none of the eight lines}\;}
+$$</p>
+<p><strong>Why this is the category's own corner.</strong> <a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a> admits a piece when it is a Lorentz scalar, invariant under $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{\mathrm{em}}$, built from the broken-phase fields, and of mass dimension at most four. The fourth condition is this article's limit, stated once and applied to every row. That is why the category is a standard model effective field theory truncated at its leading order, and why the truncation should be named rather than left implicit.</p>
+<h2 id="the-arrow">The Arrow</h2>
+<p><strong>The archetype is the Fermi theory, and it is the same arrow every threshold uses.</strong></p>
+<p><strong>Step one: the $W$ propagator at low momentum.</strong> The charged-current rows couple fermions to $W$ with strength $g/\sqrt2$. Exchanging a $W$ between two currents gives, at momentum transfer $q\ll M_W$,</p>
+<p>$$
+\frac{g^2/2}{q^2-M_W^2}\;\longrightarrow\;-\frac{g^2}{2M_W^2}\Bigl(1+\frac{q^2}{M_W^2}+\cdots\Bigr).
+$$</p>
+<p><strong>Step two: the contact term.</strong> The leading piece is a four-fermion operator with no propagator, and its coefficient defines the Fermi constant:</p>
+<p>$$
+\frac{G_F}{\sqrt2}=\frac{g^2}{8M_W^2}=1.1663787\times10^{-5}\ \mathrm{GeV}^{-2}.
+$$</p>
+<p><strong>Step three: the corrections are the tower.</strong> The terms in $q^2/M_W^2$ are the dimension-six operators of the local expansion, and they are the size of the error. The arrow has therefore produced both the leading term and its own error bar.</p>
+<p><strong>The other thresholds are the same arrow.</strong> Integrating out the $Z$ gives the neutral-current contact terms; integrating out the top gives the $W$ and $Z$ self-energies and the $h\gamma\gamma$, $hgg$ couplings; integrating out the Higgs gives the $W$ and $Z$ masses as matching conditions rather than as a condensate. Each is a coefficient, and none is a row.</p>
+<h2 id="the-tower-and-where-the-category-stops">The Tower, and Where the Category Stops</h2>
+<p><strong>Dimension five, dimension six, and the reason the list ends at four.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Order</th>
+<th>Examples</th>
+<th>Status in the category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$d=4$</td>
+<td>the forty-seven rows</td>
+<td>the list</td>
+</tr>
+<tr>
+<td>$d=5$</td>
+<td>the Weinberg operator $\ell\ell HH$; $hF_{\mu\nu}F^{\mu\nu}$</td>
+<td>omitted, and the loop-induced ones are named in <a href="the-loop-induced-pieces-the-tree-level-census-omits.html">The Loop-Induced Pieces</a></td>
+</tr>
+<tr>
+<td>$d=6$</td>
+<td>four-fermion contact terms, dipole moments, $H^\dagger H\,F^2$</td>
+<td>excluded by dimension in <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The size of the tower is the reason for the cut.</strong> The dimension-six basis, counted with flavour, is thousands of operators and thousands of coefficients; the dimension-eight basis is larger again. A list that included them would have no end and no nineteen. The cut at four is the statement that the coefficients of the tower are unknown, and a theory with thousands of unknown coefficients is not a theory but a parametrisation.</p>
+<p><strong>The cut is also a physical statement.</strong> Every $d&gt;4$ operator is suppressed by a power of a scale that has not been observed. The category's claim is that the eight lines describe the data at the accuracy the data has, and that claim is testable: a deviation from the eight lines at the $10^{-3}$ level in a four-fermion process would be a dimension-six coefficient.</p>
+<h2 id="what-the-corner-reproduces">What the Corner Reproduces</h2>
+<p><strong>Four results, and the first is exact at leading order.</strong></p>
+<p><strong>The muon lifetime.</strong> $\tau_\mu=2.1969811\ \mu s$ measured, and the corner gives $192\pi^3/(G_F^2m_\mu^5)$ with phase-space and radiative corrections. The prediction uses no $W$ and no $M_W$: the corner has one number, $G_F$, and it is measured in the same decay. The check is therefore on the <em>corrections</em>, which are known to two loops.</p>
+<p><strong>$\beta$ decay and the whole charged-current phenomenology.</strong> Neutron decay, pion decay, kaon decay: each is a four-fermion process with a coefficient fixed by $G_F$ and a matrix element. The corner is the language in which nuclear and particle physics was written before the $W$ was seen.</p>
+<p><strong>The $d\le4$ list itself.</strong> The corner is the only one whose content is a finite list, and reproducing the list — that no other $d\le4$ piece exists — is the check performed in <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>.</p>
+<p><strong>The running, as a matching condition.</strong> $\alpha_s$ at $1\ \mathrm{GeV}$ and at $m_Z$ are related by integrating out the heavy quarks; the corner does not run, it <em>matches</em>, and the two descriptions agree at the threshold by construction.</p>
+<h2 id="what-the-corner-cannot-reproduce">What the Corner Cannot Reproduce</h2>
+<p><strong>Four failures, and the third is a warning about the whole category.</strong></p>
+<p><strong>The $W$ as a propagating field.</strong> Above its threshold the $W$ is a degree of freedom with a width and a resonance shape. The corner has a contact term, and a contact term has no resonance. The $W$ width, $2.085\ \mathrm{GeV}$, is a matching condition here and a process in case 1.</p>
+<p><strong>The logarithms above the threshold.</strong> A process at $10\ \mathrm{TeV}$ in a theory matched at $m_Z$ has logs of $10\ \mathrm{TeV}/m_Z$ that the corner cannot generate; they must be resumed by the renormalisation group. A corner without resummation is accurate to one logarithm and no further.</p>
+<p><strong>The loop-induced vertices are coefficients, not loops.</strong> In the corner $h\to\gamma\gamma$ is a contact term whose coefficient was computed by matching. If that coefficient is set to its tree-level value, which is zero, the corner predicts zero. This is the failure that makes the derivative cut and the loop cut non-commuting, and it is the reason <a href="the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice</a> insists on the order.</p>
+<p><strong>The parameter values are inputs.</strong> The nineteen numbers are matching coefficients of the local expansion, and the corner says nothing about their values. A reader who expects the corner to explain why $m_\mu/m_e=206.77$ has mistaken the corner for the origin: the origin has the same nineteen numbers and does not explain them either.</p>
+<h2 id="the-error-bar-stated">The Error Bar, Stated</h2>
+<p><strong>Two powers of the ratio, and one logarithm.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Size</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the leading correction, $\mathcal{O}(m_\mu^2/M_W^2)$</td>
+<td>$1.7\times10^{-6}$</td>
+<td>the first dimension-six coefficient</td>
+</tr>
+<tr>
+<td>the next order</td>
+<td>$3\times10^{-12}$</td>
+<td>and negligible</td>
+</tr>
+<tr>
+<td>the un-resummed logarithm</td>
+<td>$\alpha_s\log(Q/m)$</td>
+<td>the real limitation at high $Q$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corner's radius is the threshold itself.</strong> Below $M_W$ it is accurate to a part in $10^6$ in the muon sector and better elsewhere; above $M_W$ it is not a description at all, because the field it deleted is the one that is being produced. The radius is not a matter of accuracy; it is a matter of the field content.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The move. $p/\Lambda\to0$, and nothing else.</li>
+<li>The rule. The census condition $d\le4$ is this limit.</li>
+<li>The archetype. $G_F/\sqrt2=g^2/8M_W^2$, from the $W$ propagator at low momentum.</li>
+<li>The number. $G_F=1.1663787\times10^{-5}\ \mathrm{GeV}^{-2}$.</li>
+<li>The lifetime. $2.1969811\ \mu s$, from $G_F$ and phase space.</li>
+<li>The tower. $d=5$ omitted and named; $d=6$ excluded by dimension.</li>
+<li>The size of the tower. Thousands of coefficients, which is why the cut is at four.</li>
+<li>The failures. No $W$ resonance, no logs, no loop vertices, no parameter values.</li>
+<li>The error. $1.7\times10^{-6}$ from $m_\mu^2/M_W^2$.</li>
+<li>The radius. $M_W$, and beyond it the corner is silent.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Sending $p/\Lambda\to0$ produces the renormalisable theory: the eight lines, forty-nine rows, nineteen parameters, and no scale $\Lambda$ anywhere in them. The census rule of this category is exactly this truncation, which is why the category is an effective field theory at its leading order.</p>
+<p>The arrow is the integration of a heavy field, and the Fermi constant is its archetype: $G_F/\sqrt2=g^2/8M_W^2$ from the $W$ propagator at low momentum, with the corrections forming the tower that the category deliberately omits. The tower's size is the justification for the cut; its unobserved coefficients are the reason the cut is a physical statement rather than a convenience.</p>
+<p>The corner reproduces the muon lifetime, the whole charged-current phenomenology, and the finite $d\le4$ list, to a part in $10^6$. It cannot produce a resonance, a resummed logarithm, a loop-induced vertex, or a parameter value, and above $M_W$ it is not a description of anything.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$</td>
+<td>the scale of the omitted tower; not a parameter of the list</td>
+</tr>
+<tr>
+<td>matching</td>
+<td>fixing a coefficient by requiring agreement with the theory above the threshold</td>
+</tr>
+<tr>
+<td>$G_F$</td>
+<td>the Fermi constant, a matching coefficient</td>
+</tr>
+<tr>
+<td>the tower</td>
+<td>the $d\ge5$ operators, ordered by dimension</td>
+</tr>
+<tr>
+<td>radius of the corner</td>
+<td>the threshold $M_W$, beyond which the deleted field is produced</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule</a>. The $d\le4$ condition, which is this corner's truncation.</li>
+<li><a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a>. Why the tower is excluded by dimension.</li>
+<li><a href="the-loop-induced-pieces-the-tree-level-census-omits.html">The Loop-Induced Pieces</a>. The three $d=5$ operators the cut removes and the loops regenerate.</li>
+<li><a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The omissions that are not the tower.</li>
+<li><a href="quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html">Quantum Non-Relativistic: $v/c\to0$ Alone</a>. The other corner that works by deleting a field.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

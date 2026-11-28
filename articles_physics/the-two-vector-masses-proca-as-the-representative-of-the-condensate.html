@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Vector Masses: Proca as the Representative of the Condensate — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Two pieces of the list give the vector fields their masses,">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-vector-masses-proca-as-the-representative-of-the-condensate"><strong>The Two Vector Masses: Proca as the Representative of the Condensate</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Two pieces of the list give the vector fields their masses,</p>
+<p>$$
+\mathcal{L}_{\mathrm{mass},V}=-M_W^2W^+_\mu W^{-\mu}-\tfrac12M_Z^2Z_\mu Z^\mu ,
+$$</p>
+<p>and these two are the only rows of the forty-nine with no counterpart in the invariant enumeration of the unbroken theory. They are not added terms. They are what the scalar kinetic piece becomes when the scalar sits at its minimum, written in the gauge in which the Goldstones are zero.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;M_W=\tfrac12gv,\qquad M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v=\frac{M_W}{\cos\theta_W}\;}
+$$</p>
+<p><strong>Why the qualification matters.</strong> The corpus argues, in <a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups</a>, that a mass term for a connection is never an invariant term. That argument is correct and it is not contradicted here. What changes is the representative: the same theory written around the vacuum has a mass term in it, and the term is the residue of a piece that is invariant.</p>
+<p><strong>The standing.</strong> The Proca term, its equation and its three polarisations are standard. The corpus's own reading is <a href="the-lagrangian-and-the-w-and-z-bosons.html">The Lagrangian and the W and Z Bosons</a>, and the expansion that produces the two masses is <a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking</a>. This article's subject is the status of the two rows, not their derivation.</p>
+<h2 id="the-two-pieces">The Two Pieces</h2>
+<p><strong>Written out.</strong></p>
+<p>$$
+\mathcal{L}_{\mathrm{mass},V}=-M_W^2\,W^+_\mu W^{-\mu}-\tfrac12\,M_Z^2\,Z_\mu Z^\mu .
+$$</p>
+<p><strong>The factor of two is the reality of the neutral field.</strong> $W^+_\mu W^{-\mu}$ is the modulus squared of one complex field and carries a coefficient of one; $Z_\mu Z^\mu$ is the square of one real field and carries $\tfrac12$. The same factor appears in the kinetic pieces and in the propagators, and <a href="the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The Higgs–Vector Pieces</a> shows how it is absorbed when the two $hVV$ couplings are written as $2M_V^2/v$.</p>
+<p><strong>Why the photon and the gluon have no such row.</strong> Their masses are zero. A piece $M_\gamma^2A_\mu A^\mu$ would break the $U(1)_{\mathrm{em}}$ that the photon gauges, and a piece $M_g^2G^a_\mu G^{a\mu}$ would break colour. The two zeros are the statement that the vacuum is neutral under both groups.</p>
+<h2 id="the-obstruction-and-its-resolution">The Obstruction and Its Resolution</h2>
+<p><strong>The obstruction, restated in one line.</strong> Under a gauge transformation the connection shifts by a derivative, $\delta A_\mu=\partial_\mu\alpha$, so $\delta(A_\mu A^\mu)=2A^\mu\partial_\mu\alpha$, which is not zero and is not a total derivative unless $\partial\cdot A=0$. A mass term therefore cannot be invariant.</p>
+<p><strong>The resolution, restated in one line.</strong> The mass term is not in the invariant Lagrangian. It is in the expansion of $-\sum_\mu(D_\mu H)^\dagger(D_\mu H)$ about $H=(0,(v+h)/\sqrt2)$, and the field that would have made it non-invariant — the Goldstone — has been removed by the gauge choice.</p>
+<p><strong>The two statements are one statement.</strong> In a general gauge the mass term is accompanied by the mixing term $M_W\partial_\mu G^+W^{-\mu}$ and by the Goldstone's own kinetic term, and the combination is invariant. In unitary gauge the mixing term and the Goldstone are gone and the mass term stands alone, which is why it looks like a Proca term added by hand.</p>
+<p><strong>What a reader should not conclude.</strong> That the two rows are exceptions to the audit of <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>. The audit is of the unbroken expression, where these two rows do not appear. The broken expression has them because it is a different basis for the same function.</p>
+<h2 id="the-proca-equation-and-the-constraint">The Proca Equation and the Constraint</h2>
+<p><strong>The variation.</strong> Varying $W^+_\mu$ in the two pieces plus its kinetic piece gives</p>
+<p>$$
+\partial_\nu W^{+\nu\mu}+M_W^2W^{+\mu}=0 ,
+$$</p>
+<p>and taking the divergence gives $M_W^2\partial_\mu W^{+\mu}=0$, so $\partial\cdot W^+=0$. The constraint is what reduces four components to three.</p>
+<p><strong>Three polarisations, and where the third came from.</strong> A massless vector has two transverse polarisations. The constraint removes the longitudinal one when $M=0$ and permits it when $M\ne0$. The permitted one is the Goldstone mode, and the count $2\to3$ is the count of the eaten scalar.</p>
+<p><strong>Why the equation has no gauge invariance left.</strong> The Proca equation is not invariant under $W_\mu\mapsto W_\mu+\partial_\mu\alpha$; the mass term breaks it. That is not a defect of the broken description. It is the statement that the gauge symmetry is realised non-linearly, with the Goldstone absorbed.</p>
+<h2 id="the-masses-are-one-number-and-one-angle">The Masses Are One Number and One Angle</h2>
+<p><strong>Two masses from three constants.</strong></p>
+<p>$$
+M_W=\tfrac12gv,\qquad M_Z=\tfrac12\sqrt{g^2+g_{\mathrm Y}^2}\,v,
+\qquad
+\frac{M_W^2}{M_Z^2}=\frac{g^2}{g^2+g_{\mathrm Y}^2}=\cos^2\theta_W .
+$$</p>
+<p><strong>The ratio is the content.</strong> The two masses are not independent. One vacuum value and one angle fix both, and the ratio is $1$ in the variable $\rho=M_W^2/(M_Z^2\cos^2\theta_W)$, which is the tree-level custodial relation of <a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>.</p>
+<p><strong>What the framework does not supply.</strong> Neither $g$ nor $v$ nor $\theta_W$. The three are imported, and the two masses are three constants in two combinations.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count. Two rows, numbered 48 and 49 in the display, and the only two outside the forty-seven.</li>
+<li>The dimensions. $M_W^2W^+W^-$ has dimension four: $2+1+1$.</li>
+<li>The factor of two. $W^+W^-$ is a modulus squared, $Z^2$ is a square, and the kinetic pieces carry the same $\tfrac12$ against $-\tfrac14$.</li>
+<li>The constraint. The divergence of the Proca equation gives $\partial\cdot W=0$ for $M\ne0$.</li>
+<li>The polarisation count. $2\to3$ per massive vector, and the third is the eaten Goldstone.</li>
+<li>The ratio. $M_W^2/M_Z^2=\cos^2\theta_W$, recomputed from the two relations.</li>
+<li>The invariance test. $\delta(M^2W_\mu W^\mu)=2M^2W^\mu\partial_\mu\alpha\ne0$, so the piece is not invariant on its own.</li>
+<li>The audit's consistency. The two rows are absent from the unbroken list, which is why <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a> excludes $V_\mu V^\mu$ for $\gamma$ and $G^a$ and admits it for $W$ and $Z$ only through the scalar kinetic term.</li>
+<li>The lineage. Both rows descend from $-\sum_\mu(D_\mu H)^\dagger(D_\mu H)$, as <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a> tabulates.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The two vector mass pieces are $-M_W^2W^+_\mu W^{-\mu}$ and $-\tfrac12M_Z^2Z_\mu Z^\mu$. They are unitary-gauge images of the scalar kinetic term and not additions to the invariant Lagrangian, and their presence in the broken list does not contradict the statement that no gauge mass is an invariant term.</p>
+<p>The factor of two between them is the difference between a complex field and a real one, and it propagates into the $hVV$ couplings, the propagators and the polarisation sums.</p>
+<p>The Proca equation follows from the two pieces and the kinetic one, and its divergence gives the constraint $\partial\cdot W=0$, which is what reduces four components to three. The third polarisation is the Goldstone mode, and its appearance is the degree-of-freedom count of the breaking.</p>
+<p>The two masses are functions of three constants: $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$. Their ratio is the tree-level custodial relation, and the framework supplies none of the three constants.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$M_W$, $M_Z$</td>
+<td>The two vector masses</td>
+</tr>
+<tr>
+<td>$v$</td>
+<td>The vacuum value</td>
+</tr>
+<tr>
+<td>$g$, $g_{\mathrm Y}$, $\theta_W$</td>
+<td>The couplings and the mixing angle</td>
+</tr>
+<tr>
+<td>$\rho$</td>
+<td>$M_W^2/(M_Z^2\cos^2\theta_W)$, equal to one at tree level</td>
+</tr>
+<tr>
+<td>$G^\pm$, $G^0$</td>
+<td>The Goldstones, set to zero in unitary gauge</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html">One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted</a>. The argument that the mass term is not an invariant, which this article reconciles with the Proca row.</li>
+<li><a href="the-lagrangian-and-the-w-and-z-bosons.html">The Lagrangian and the W and Z Bosons</a>. The action and the Proca equation derived from it.</li>
+<li><a href="electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses</a>. The expansion that produces the two masses.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>. The ratio of the two masses.</li>
+<li><a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>. The lineage of the two rows.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

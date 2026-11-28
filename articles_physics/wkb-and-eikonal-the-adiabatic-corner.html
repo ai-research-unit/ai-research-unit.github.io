@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WKB and Eikonal: The Adiabatic Corner and the Spin That Precesses — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Move two coordinates at once — the loop order and the adiabatic ratio, meaning that the action varies rapidly compared with the wavelength —…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="wkb-and-eikonal-the-adiabatic-corner-and-the-spin-that-precesses"><strong>WKB and Eikonal: The Adiabatic Corner and the Spin That Precesses</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Move two coordinates at once — the loop order and the adiabatic ratio, meaning that the action varies rapidly compared with the wavelength — and the wave equation becomes a phase carried along a trajectory. The result is the WKB approximation in bound systems and the eikonal approximation in scattering: one phase, one trajectory, one spin that precesses. What survives is interference between nearby paths; what dies is the wave-optical correction.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\psi\sim\frac{1}{\sqrt{|\mathbf p|}}\exp\!\Bigl(\frac{i}{\hbar}\int\mathbf p\cdot d\mathbf x\Bigr),\qquad \dot{\mathbf p}=-\nabla V,\qquad \frac{ds^\mu}{d\tau}=\text{BMT}\;}
+$$</p>
+<p><strong>Why this corner is separate from case 2.</strong> <a href="classical-relativity-the-corner-with-no-quanta.html">Classical Relativity</a> sends $\hbar\to0$ and says nothing about how fast the action varies; the result is the exact classical field equation. Here the further statement that $\partial S$ is large selects the <em>stationary phase</em> of the path integral, and that selection produces a trajectory rather than a field. The two moves are different: one removes the loop, the other removes all but one path.</p>
+<h2 id="the-arrow">The Arrow</h2>
+<p><strong>An ansatz, substituted into the wave equation, with the orders in $\hbar$ collected.</strong></p>
+<p><strong>Step one: the phase.</strong> Write $\psi=A\,e^{iS/\hbar}$ with $A$ slowly varying, substitute into the Klein–Gordon or Schrödinger equation, and collect powers of $\hbar$. At order $\hbar^0$ the phase satisfies $(\partial S)^2=m^2$, which is Hamilton–Jacobi. At order $\hbar^1$ the amplitude satisfies the transport equation $\partial_\mu(A^2\partial^\mu S)=0$, which is conservation of the current along the flow. The two together are the corner.</p>
+<p><strong>Step two: the spin.</strong> The spin does not enter the phase; it enters the transport. The spin vector is parallel-transported along the trajectory and precesses by the BMT equation, so the corner carries both the orbital phase and the spin precession, computed from the same trajectory.</p>
+<p><strong>Step three: the same expansion in scattering form.</strong> For a fast particle crossing a potential, the phase is $\exp(-i\int V\,dz/\hbar v)$ along a straight line, and the amplitude is the Fourier transform of $e^{i\chi(\mathbf b)}-1$ in the impact parameter $\mathbf b$. That is stationary phase applied to the path integral, with the trajectory frozen while the phase accumulates.</p>
+<p><strong>The two names are one expansion.</strong> WKB is the bound-state version, with the trajectory closed and the phase quantised; eikonal is the scattering version, with the trajectory open and the phase integrated. The adiabatic ratio is the same in both: the potential must vary slowly over a wavelength.</p>
+<h2 id="what-the-corner-reproduces">What the Corner Reproduces</h2>
+<p><strong>Four results, and the second is the one that makes it legitimate.</strong></p>
+<p><strong>Bohr–Sommerfeld quantisation.</strong> $\oint p\,dq=2\pi\hbar\,(n+\tfrac12)$ reproduces the Coulomb spectrum exactly, including the Rydberg constant, and the harmonic oscillator exactly. These are the two cases where the WKB series terminates, which is why they are exact and not merely accurate.</p>
+<p><strong>The Born amplitude, from the eikonal phase.</strong> Expanding $e^{i\chi}-1$ in $\chi$ and Fourier transforming gives the first Born approximation. The corner contains perturbation theory as its weak-potential limit, and that is a genuine check: the eikonal is derived without Feynman diagrams and must agree with them.</p>
+<p><strong>Spin precession in a storage ring.</strong> The BMT equation along a circular trajectory gives a precession rate proportional to $a=(g-2)/2$ plus the Thomas term, and this is the operating principle of the muon $g-2$ experiment and of every polarised-beam measurement. The corner is not an approximation to that experiment; it is the description of it.</p>
+<p><strong>The Airy connection at a turning point.</strong> Where $p$ vanishes the WKB solution is replaced by an Airy function, and the connection formulas supply the correct phase shift — the $\tfrac12$ in Bohr–Sommerfeld, and the Stokes phenomenon at a caustic.</p>
+<h2 id="what-the-corner-cannot-reproduce">What the Corner Cannot Reproduce</h2>
+<p><strong>Four failures, and the first two define the corner rather than limiting it.</strong></p>
+<p><strong>No tunnelling.</strong> A forbidden region requires a complex action, and the transmitted amplitude is $e^{-2\,\mathrm{Im}\,S/\hbar}$ — exponentially small in $\hbar$ and therefore invisible in the asymptotic series. The corner can be <em>extended</em> to produce the exponential, but the extension is a different, non-perturbative statement.</p>
+<p><strong>No interference between non-stationary paths.</strong> Stationary phase keeps the paths whose action is stationary and discards the rest. Two slits give two stationary paths and the corner keeps their interference — but any path whose action differs from the stationary one by more than $\hbar$ is discarded, and with it every diffraction correction.</p>
+<p><strong>No exact spectrum beyond two cases.</strong> The WKB series is asymptotic: exact for Coulomb and oscillator, approximate for everything else, and divergent if pushed. The anharmonic oscillator is reproduced to the correct order in the expansion and not beyond.</p>
+<p><strong>No caustics without repair.</strong> At a turning point the amplitude diverges, and the repair is a local Airy analysis. Where several caustics meet the repair needs a higher special function, and until one is supplied the corner is silent.</p>
+<h2 id="the-error-bar-stated">The Error Bar, Stated</h2>
+<p><strong>The neglected term has a name: the curvature of the action relative to its gradient.</strong></p>
+<p><strong>The dimensionless quantity.</strong> The expansion is in $\lambda|\partial^2S|/|\partial S|^2$ — the de Broglie wavelength against the scale over which the potential varies. Call it $\epsilon$. For a hydrogenic orbit $\epsilon\sim Z\alpha$, so the corner is good to $10^{-2}$ in hydrogen and to $10^{-3}$ in heavier atoms: worse than the non-relativistic corner, which is why the two are used for different problems.</p>
+<p><strong>The Fresnel zone.</strong> The discarded paths are those outside a tube of width $\sqrt{\lambda L}$ around the classical trajectory, and the correction is the ratio of that width to the transverse scale of the potential. In the eikonal this is the statement that the straight-line approximation holds when the deflection is small against the momentum over the transverse scale.</p>
+<p><strong>Where the corner is exact.</strong> The linear potential after the Airy connection, the Coulomb problem, and the oscillator. These are the corner's exact islands, and a user should know that they are islands.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The two coordinates. The loop order and the adiabatic ratio, moved together.</li>
+<li>The ansatz. Amplitude times phase, phase at $\mathcal{O}(\hbar^0)$ and amplitude at $\mathcal{O}(\hbar^1)$.</li>
+<li>The transport equation. Conservation of the current along the flow.</li>
+<li>The spin. Parallel transport plus BMT, on the same trajectory.</li>
+<li>The two names. WKB closed, eikonal open, and one expansion behind both.</li>
+<li>The exact cases. Coulomb and oscillator, where the series terminates.</li>
+<li>The Born limit. Expanding the eikonal phase in $\chi$ returns the first Born amplitude.</li>
+<li>The measurement. Storage-ring precession is described, not approximated, by the corner.</li>
+<li>The failure. Tunnelling lies beyond all orders.</li>
+<li>The error. $\epsilon\sim Z\alpha$ in hydrogen, and the Fresnel zone in scattering.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Sending the loop order and the adiabatic ratio to zero together turns the wave equation into a phase carried along a trajectory, with the amplitude transported by the current and the spin precessed by BMT. The corner is the stationary-phase approximation, written once and used twice: WKB for bound states, eikonal for scattering.</p>
+<p>It reproduces Bohr–Sommerfeld quantisation in its two exact cases, the Born amplitude in the weak-potential limit, the equations that operate every storage-ring spin measurement, and the Airy connection at a turning point. It loses tunnelling, which is beyond all orders, every non-stationary path, and every wave-optical correction.</p>
+<p>Its error is the curvature of the action relative to its gradient, of order $Z\alpha$ in hydrogen. That makes it the least accurate of the semiclassical corners and the only one that describes a spin-precession experiment directly.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S$</td>
+<td>the action, as a function on configuration space</td>
+</tr>
+<tr>
+<td>adiabatic ratio</td>
+<td>$\lambda|\partial^2S|/|\partial S|^2$, the expansion parameter of the corner</td>
+</tr>
+<tr>
+<td>eikonal phase $\chi(\mathbf b)$</td>
+<td>the accumulated phase at impact parameter $\mathbf b$</td>
+</tr>
+<tr>
+<td>Fresnel zone</td>
+<td>the tube around the classical path that the corner retains</td>
+</tr>
+<tr>
+<td>caustic</td>
+<td>a surface where the amplitude diverges and the corner needs repair</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="classical-relativity-the-corner-with-no-quanta.html">Classical Relativity: The Corner with No Quanta</a>. The exact classical limit that this corner approximates by one path.</li>
+<li><a href="classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic: $\hbar\to0$ First, Then $v/c\to0$</a>. The other corner where the Thomas term appears.</li>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. The four requirements, applied here to an asymptotic series.</li>
+<li><a href="thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>. The spin transport, computed.</li>
+<li><a href="the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>. Where this corner sits between the exact classical limit and the non-relativistic one.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

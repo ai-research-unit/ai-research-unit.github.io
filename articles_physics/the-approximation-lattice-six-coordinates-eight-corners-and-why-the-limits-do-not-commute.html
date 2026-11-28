@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Approximation Lattice: Six Coordinates, Eight Corners, and Why the Limits Do Not Commute — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The Complete Lagrangian writes the complete Lagrangian in eight lines. That expression is one point in a space of theories, and every…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute"><strong>The Approximation Lattice: Six Coordinates, Eight Corners, and Why the Limits Do Not Commute</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> <a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a> writes the complete Lagrangian in eight lines. That expression is one point in a space of theories, and every calculable statement in physics is a different point, reached from it by shrinking one or more of six independent expansion parameters. A limit is legitimate when three things are said before the result: which coordinates were moved, how far, and what error the movement incurred.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;6\ \text{coordinates},\qquad 8\ \text{named corners},\qquad \text{at least }2\ \text{pairs of limits that do not commute}\;}
+$$</p>
+<p><strong>Why a lattice and not a list.</strong> Approximations are usually presented as a list — non-relativistic quantum mechanics, the classical limit, the Fermi theory — with no relation between the entries and no statement of where one stops being usable. A list cannot answer the only question that matters when a calculation is quoted: is this number's error dominated by the approximation I just made, or by one I made three steps earlier? A lattice answers it, because a point in it carries its distance from the origin.</p>
+<p><strong>What the origin is.</strong> The complete Lagrangian, and nothing else. No corner of this section adds a term. Every one of them is reached by <em>discarding</em> — a loop, a component, a derivative, a non-perturbative sector — and discarding is the only operation that keeps the parameter count at nineteen. That is the structural claim of the section, and it is what makes the seven corners below a study of one theory rather than seven theories.</p>
+<h2 id="the-six-coordinates">The Six Coordinates</h2>
+<p><strong>Each is an independent small (or large) quantity, and each suppresses a different class of term.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Coordinate</th>
+<th>Small when</th>
+<th>What vanishes with it</th>
+<th>Sectors touched</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>$\hbar$, or the loop order</td>
+<td>tree level</td>
+<td>loops, running, anomalies, vacuum polarisation, every width that is a loop effect</td>
+<td>all</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$v/c$, or $p^2/m^2$</td>
+<td>non-relativistic</td>
+<td>antiparticles, pair production, and every relativistic correction including spin–orbit</td>
+<td>$\tfrac12$, $0$, $1$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$p/\Lambda$</td>
+<td>low energy</td>
+<td>operators of dimension five and above, hence every contact term and every non-renormalisable coupling</td>
+<td>all</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$\alpha$, $\alpha_s$, $y$</td>
+<td>perturbative</td>
+<td>solitons, instantons, monopoles, confinement, the whole non-perturbative sector</td>
+<td>all</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$1/N$ and the gradient</td>
+<td>mean field</td>
+<td>the quantum potential, fluctuations, the discrete spectrum</td>
+<td>fluids, large-$N$</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$\hbar/\partial S$, or $\partial S$ large</td>
+<td>adiabatic, eikonal</td>
+<td>interference, the fringe contrast between separated amplitudes</td>
+<td>$\tfrac12$ (WKB $\to$ BMT)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The numbers, so that the coordinates are not abstractions.</strong> $\alpha=1/137.036$; $\alpha_s(m_Z)=0.118$ and rising below it; $v/c=Z\alpha=7.3\times10^{-3}$ for the electron in hydrogen, so $(v/c)^2=5.3\times10^{-5}$; $p/\Lambda$ equal to $1$ at the scale of the completions the corpus does not have a name for, and $10^{-3}$ at the electroweak scale in a process at $100$ MeV; $N=3$ for colour, which is why the large-$N$ coordinate is the weakest of the six here.</p>
+<p><strong>The coordinate that is not a parameter of the list.</strong> $\Lambda$ appears in no row of the forty-nine and in none of the nineteen. It is the scale at which the eight-line Lagrangian stops being the whole story, and the theory is silent about its value. Sending $p/\Lambda\to0$ therefore states something about the <em>process</em> and nothing about the theory — which is why <a href="the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List</a> can exclude the dimension-six operators by dimension alone while <a href="the-loop-induced-pieces-the-tree-level-census-omits.html">The Loop-Induced Pieces</a> still has to generate three of them.</p>
+<h2 id="why-six-and-not-one">Why Six and Not One</h2>
+<p><strong>A single "small parameter" is a category error, and the numbers show it.</strong> Four of the six are of order $10^{-3}$ to $10^{-1}$, one is $1/3$ at best, and one can be anything: a muon in a storage ring has $\gamma=29.3$, so $v/c=0.99942$ and the relativistic coordinate is not small at all while the quantum one is as small as ever. A calculation that quotes one error and means "the expansion parameter" has silently assumed that the six move together.</p>
+<p><strong>They do not.</strong> $\alpha_s$ grows as the other coordinates shrink; $v/c$ grows with energy while $p/\Lambda$ grows with it too, so an experiment that improves one makes the other worse; $1/N$ is stuck at $1/3$ and is not improvable by any experiment, which is the honest reason the mean-field corner is the least predictive of the seven.</p>
+<p><strong>What the six have in common is only the origin.</strong> Each coordinate is a ratio of a quantity the process supplies to a quantity the theory supplies — an energy to a mass, a coupling to $4\pi$, a wavelength to a curvature scale. That is why the lattice is finite-dimensional and why its corners can be enumerated.</p>
+<h2 id="the-lattice-is-not-a-line">The Lattice Is Not a Line</h2>
+<p><strong>Two pairs of limits do not commute, and each non-commutation is a piece of physics rather than a technicality.</strong></p>
+<h3 id="first-pair-math40-and-math41-which-is-the-thomas-precession">First pair: $\hbar$ and $v/c$, which is the Thomas precession</h3>
+<p><strong>The two orders.</strong> Take $\hbar\to0$ first and then $v/c\to0$: the spin is still a relativistic object, its precession is the BMT equation, and expanding that equation in $v/c$ leaves a spin–orbit term whose coefficient is $\tfrac12$ of the value a naive substitution would give. Take $v/c\to0$ first and then $\hbar\to0$: the spin is a Galilean vector, it does not precess, and the $\tfrac12$ has nowhere to come from, because there is no comoving frame to rotate.</p>
+<p><strong>So the commutator of the two limits is the Thomas term itself.</strong> The naive coefficient is the one a scalar's angular momentum would have; the measured coefficient is half of it; and the difference is the Wigner rotation of the frame that carries the spin. A reader who takes the non-relativistic limit first and then wonders where the factor went has taken the limits in the wrong order, and no amount of care in the later step recovers it.</p>
+<p><strong>This is the section's one exact demonstration.</strong> It is exact in the sense that the two orders differ by a definite, computable term, not by a remainder of unknown size, and it is why <a href="thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a> is cited from both corners rather than from one.</p>
+<h3 id="second-pair-math49-and-math50-which-is-the-anomalous-magnetic-moment">Second pair: $\hbar$ and $p/\Lambda$, which is the anomalous magnetic moment</h3>
+<p><strong>The two orders.</strong> Take $p/\Lambda\to0$ first, keeping loops: the theory is the renormalisable Standard Model with its full quantum corrections, and the electron's magnetic moment is $g=2(1+\alpha/2\pi+\cdots)=2.00232\ldots$, which is measured. Take $\hbar\to0$ first: the tree-level theory, and $g=2$ exactly, with the anomaly zero.</p>
+<p><strong>So the commutator is $a=(g-2)/2$ in its entirety.</strong> The anomaly is a loop effect that exists in exactly one order of the two limits, and this is why it is quoted as an $\mathcal{O}(\alpha)$ quantity and never as a correction to a tree-level value: at tree level there is nothing to correct. The same structure produces the whole of the running of $\alpha$ and the whole of the $\mathrm{U}(1)$ anomaly, which is why coordinate 1 and coordinate 3 must be moved in the stated order whenever a coefficient is matched between them.</p>
+<p><strong>The lesson in one line.</strong> A limit is a path, not a projection, and the path is part of the result.</p>
+<h2 id="the-eight-corners">The Eight Corners</h2>
+<p><strong>Case 1 is the origin and the other seven are the corners.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Coordinates moved</th>
+<th>Resulting theory</th>
+<th>Observable that tests it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>none</td>
+<td>the complete Lagrangian</td>
+<td>everything</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\hbar\to0$</td>
+<td>Klein–Gordon, Proca, Dirac, Madelung–Hamilton–Jacobi</td>
+<td>Proca and KG polarisation; $g=2$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\hbar\to0$, then $v/c\to0$</td>
+<td>Pauli, then Schrödinger, with the Thomas factor</td>
+<td>fine structure, partial</td>
+</tr>
+<tr>
+<td>4</td>
+<td>$v/c\to0$ alone</td>
+<td>NRQED</td>
+<td>Lamb shift, hyperfine, $a_e$</td>
+</tr>
+<tr>
+<td>5</td>
+<td>$\hbar\to0$, $\partial S$ large</td>
+<td>Hamilton–Jacobi with BMT and Thomas</td>
+<td>spin precession in storage rings</td>
+</tr>
+<tr>
+<td>6</td>
+<td>$p/\Lambda\to0$</td>
+<td>Fermi theory, then the renormalisable Standard Model</td>
+<td>muon lifetime, $\beta$ decay</td>
+</tr>
+<tr>
+<td>7</td>
+<td>$1/N\to0$, gradients</td>
+<td>the relativistic spin fluid</td>
+<td>the fluid equations</td>
+</tr>
+<tr>
+<td>8</td>
+<td>$\alpha$ large</td>
+<td>solitons, instantons</td>
+<td>none measured</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Cases 2 to 7 introduce no new parameter.</strong> Each is the complete Lagrangian with something discarded, and each of the seven articles that follow shows the discarded piece explicitly. Case 8 is the exception in both directions: it discards the expansion rather than a term, and it is the only corner whose error bar this section cannot supply.</p>
+<h2 id="what-a-point-means">What a Point Means</h2>
+<p><strong>A case is a region, not a point.</strong> Saying "non-relativistic" states a coordinate and not a distance. The distance must be given, and the three quantities that give it are the expansion parameter's value, the order at which the series was truncated, and the size of the first neglected term.</p>
+<p><strong>Errors from independent coordinates add in quadrature; errors from one coordinate do not.</strong> A calculation at $\mathcal{O}(\alpha)$ with the non-relativistic expansion at $\mathcal{O}(v^2/c^2)$ has two independent remainders and their sum in quadrature is the error; a calculation that keeps $\alpha^2$ but drops $\alpha^3$ has one remainder and no quadrature to do. The rule matters because the coordinates differ in size by orders of magnitude, and a budget that adds them linearly will be dominated by whichever is largest, correctly or not.</p>
+<p><strong>The error bar is the deliverable.</strong> <a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a> states the four requirements a corner must satisfy, and the first of them is this one: a truncation without a size is a claim, and a claim is not a result.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The count of coordinates. Six, and each suppresses a different class of term.</li>
+<li>The count of corners. Eight, one of them the origin.</li>
+<li>The first non-commutation. $\hbar$ before $v/c$ keeps the Thomas factor; the reverse order loses it, and the difference is the term.</li>
+<li>The second non-commutation. $p/\Lambda$ before $\hbar$ gives $a=\alpha/2\pi$; the reverse gives $a=0$, and the difference is the anomaly.</li>
+<li>The parameter count. No corner adds a number; case 8 adds none either, it only removes the expansion.</li>
+<li>The values. $\alpha=1/137.036$; $(Z\alpha)^2=5.3\times10^{-5}$; $\alpha_s(m_Z)=0.118$; $N=3$.</li>
+<li>The coordinate outside the list. $\Lambda$ is a scale of a completion and not a parameter of the forty-nine.</li>
+<li>The independence. A muon at $\gamma=29.3$ has $v/c=0.99942$ while $\hbar$ is as small as ever, so the six do not move together.</li>
+<li>The direction of every move. Each corner discards; none adds.</li>
+<li>The deliverable. Every corner states its truncation and its error, and a corner that cannot is named as such.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The complete Lagrangian is the origin of a six-dimensional lattice of approximation parameters: loop order, velocity, momentum over the cutoff, coupling, $1/N$ with gradients, and the adiabatic ratio. Eight named corners sit in it, and seven of them are reached from the origin by discarding something, which is why the parameter count does not move.</p>
+<p>At least two pairs of limits do not commute, and each non-commutation is a measured quantity: the Thomas precession is the difference between taking the classical limit before and after the non-relativistic one, and the anomalous magnetic moment is the difference between taking the derivative cut before and after the loop cut. A limit is therefore a path, and a path must be stated.</p>
+<p>The rest of this section is one article per corner, each with the four requirements of the discipline: the truncation with its error, the explicit arrow from the eight-line Lagrangian, the known result it must reproduce, and the statement of what it fails to reproduce.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>coordinate</td>
+<td>one of the six expansion parameters</td>
+</tr>
+<tr>
+<td>corner or case</td>
+<td>a point of the lattice, specified by which coordinates moved</td>
+</tr>
+<tr>
+<td>origin</td>
+<td>case 1, the complete Lagrangian with nothing discarded</td>
+</tr>
+<tr>
+<td>commutator of two limits</td>
+<td>the difference between the two orders, which is a physical quantity</td>
+</tr>
+<tr>
+<td>truncation</td>
+<td>the order at which a series was stopped, with the size of the first neglected term</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit</a>. The four requirements, applied to every corner.</li>
+<li><a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a>. The origin: the eight-line Lagrangian.</li>
+<li><a href="the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>. The whole lattice on one page, with errors.</li>
+<li><a href="thomas-precession-as-a-biquaternion-rotor-effect.html">Thomas Precession as a Biquaternion Rotor Effect</a>. The first non-commutation, computed.</li>
+<li><a href="the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form.html">The Non-Relativistic Limit of Relativistic Mechanics</a>. The second coordinate, in the corpus's variables.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

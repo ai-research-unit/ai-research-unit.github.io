@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Canonical Basis Above $M_C$: One Rescaling, Three Costs and the Numbers That Are Not Invariants — Biquaternion Universe</title>
+  <meta name="description" content="The census quotes eleven structures with fifteen coefficients. This article states the coordinates they are quoted in.">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-canonical-basis-above-math0-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants"><strong>The Canonical Basis Above $M_C$: One Rescaling, Three Costs and the Numbers That Are Not Invariants</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The census</a> quotes eleven structures with fifteen coefficients. This article states the coordinates they are quoted in.</p>
+<p>One shift of the trace mode,</p>
+<p>$$
+\Xi\ \longrightarrow\ \Xi+b\,(\operatorname{tr}\Xi)\,\mathbb 1,
+$$</p>
+<p>leaves the traceless part fixed and rescales the trace by $1+4b$. Three things move: the scalar kinetic term, the potential, and one of the two Yukawa matrices. Canonical normalisation fixes $b$ and so fixes all three.</p>
+<h2 id="the-shift">The Shift</h2>
+<p>Every Hermitian matrix splits once.</p>
+<p>$$
+\Xi=\Xi_{0}+\frac{1}{4}\bigl(\operatorname{tr}\Xi\bigr)\mathbb 1,
+\qquad
+\operatorname{tr}\Xi_{0}=0 .
+$$</p>
+<p>Under the shift, $\Xi_{0}$ is unchanged and</p>
+<p>$$
+\operatorname{tr}\Xi\ \longrightarrow\ (1+4b)\operatorname{tr}\Xi .
+$$</p>
+<p>The redefinition is invertible for $1+4b\neq0$ and changes no path integral. Anything that moves under it was never physical; only its count survives.</p>
+<h2 id="the-first-cost-the-kinetic-term">The First Cost: The Kinetic Term</h2>
+<p>$$
+\operatorname{tr}(D_{\imath}\Xi)^{\dagger}(D_{\imath}\Xi)=\operatorname{tr}(D_{\imath}\Xi_{0})^{\dagger}(D_{\imath}\Xi_{0})+\tfrac14\bigl(\partial_{\imath}\operatorname{tr}\Xi\bigr)^{2},
+$$</p>
+<p>with no cross term, because $\operatorname{tr}(D\Xi_{0})^{\dagger}=0$. A general kinetic term adds $c\,(\partial\operatorname{tr}\Xi)^{2}$, and the total coefficient $\tfrac14+c$ scales as</p>
+<p>$$
+\tfrac14+c\ \longrightarrow\ (1+4b)^{2}\bigl(\tfrac14+c\bigr).
+$$</p>
+<p>So $c$ is removable, and canonical normalisation sets $1+4b=(1+4c)^{-1/2}$.</p>
+<h2 id="the-second-cost-the-potential">The Second Cost: The Potential</h2>
+<p>$$
+\operatorname{tr}\Xi^{2}=\operatorname{tr}\Xi_{0}^{2}+\tfrac14 s^{2},
+\qquad s\equiv\operatorname{tr}\Xi .
+$$</p>
+<p>$\mu_{\Phi}^{2}$ is fixed as the coefficient of $\operatorname{tr}\Xi_{0}^{2}$; the trace mass $\mu_{\Phi}^{2}+4\mu_{2}^{2}$ is not.</p>
+<p>The quartic expands with four different powers of $s$.</p>
+<p>$$
+\operatorname{tr}\Xi^{4}=\operatorname{tr}\Xi_{0}^{4}+s\operatorname{tr}\Xi_{0}^{3}+\tfrac{3}{8}s^{2}\operatorname{tr}\Xi_{0}^{2}+\tfrac{1}{64}s^{4},
+$$</p>
+<p>so the four pieces scale as $(1+4b)^{0,1,2,4}$. One shift moves four couplings; their number stays four because one parameter cannot collapse four directions.</p>
+<h2 id="the-third-cost-the-yukawa-matrices">The Third Cost: The Yukawa Matrices</h2>
+<p>$$
+\bar\xi^{\alpha}\Xi\,\xi^{\beta}=\bar\xi^{\alpha}\Xi_{0}\,\xi^{\beta}+\tfrac14\bigl(\operatorname{tr}\Xi\bigr)\bar\xi^{\alpha}\xi^{\beta},
+$$</p>
+<p>so</p>
+<p>$$
+y\ \longrightarrow\ y,
+\qquad
+y'\ \longrightarrow\ \frac{y'}{1+4b},
+\qquad
+\frac{y'}{y}\ \longrightarrow\ \frac{1}{1+4b}\,\frac{y'}{y}.
+$$</p>
+<p>The ratio moves. The pair's eight numbers stay eight, and $y$'s spectrum alone is invariant.</p>
+<h2 id="what-moves">What Moves</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>under the shift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the eleven rows</td>
+<td>unchanged</td>
+</tr>
+<tr>
+<td>$\Xi_{0}$, $\operatorname{tr}\Xi_{0}^{2}$</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>$\operatorname{tr}\Xi$</td>
+<td>$\times(1+4b)$</td>
+</tr>
+<tr>
+<td>kinetic coefficient</td>
+<td>$\times(1+4b)^{2}$</td>
+</tr>
+<tr>
+<td>trace mass $\mu_{\Phi}^{2}+4\mu_{2}^{2}$</td>
+<td>moves</td>
+</tr>
+<tr>
+<td>the four $\lambda$'s</td>
+<td>move, each differently</td>
+</tr>
+<tr>
+<td>$y$</td>
+<td>fixed</td>
+</tr>
+<tr>
+<td>$y'$</td>
+<td>$\times(1+4b)^{-1}$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Anything built on $\Xi_{0}$ is invariant; anything touching the trace is not. The count never moves, because a coordinate change cannot change how many invariant monomials the group admits.</p>
+<h2 id="the-zeros-are-basis-statements">The Zeros Are Basis Statements</h2>
+<p>$$
+\operatorname{tr}\Xi^{3}=\operatorname{tr}\Xi_{0}^{3}+\tfrac34 s\operatorname{tr}\Xi_{0}^{2}+\tfrac{1}{16}s^{3}.
+$$</p>
+<p>A basis with no cubic is not a basis with no cubic after a trace shift. So "declared zero" means zero in the canonical basis, and the census says so. A reader who shifts and finds a cubic has changed coordinates, not found an error.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>$\Xi_{0}$ fixed, $\operatorname{tr}\Xi\to(1+4b)\operatorname{tr}\Xi$.</li>
+<li>The kinetic split has no cross term.</li>
+<li>$\tfrac14+c\to(1+4b)^{2}(\tfrac14+c)$.</li>
+<li>The quartic powers are $0,1,2,4$.</li>
+<li>$y$ fixed, $y'\to y'/(1+4b)$.</li>
+<li>Eleven rows in every basis.</li>
+<li>$\operatorname{tr}\Xi^{3}$ contains $\tfrac34s\operatorname{tr}\Xi_{0}^{2}$.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>One rescaling of the trace mode costs the kinetic coefficient a factor $(1+4b)^{2}$, costs the potential four couplings moving with different powers, and divides $y'$ by $1+4b$ while $y$ stays put. The count of structures is unmoved, since a coordinate change is not a change in the invariant ring. The declared zeros hold in the canonical basis only: a trace shift turns on a cubic and turns $(\partial\operatorname{tr}\Xi)^{2}$ into a second kinetic term.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Xi_{0}$</td>
+<td>traceless part</td>
+</tr>
+<tr>
+<td>$s$</td>
+<td>$\operatorname{tr}\Xi$</td>
+</tr>
+<tr>
+<td>$b$</td>
+<td>shift parameter</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>coefficient of $(\partial\operatorname{tr}\Xi)^{2}$</td>
+</tr>
+<tr>
+<td>canonical basis</td>
+<td>$c=0$, $b=0$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a></li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a></li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a></li>
+<li><a href="the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html">The Lagrangian and the Scalar Matrix</a></li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Audit Above $M_C$: Every Constant Against Every Piece — Biquaternion Universe</title>
+  <meta name="description" content="Three lists describe one Lagrangian: eleven written structures, fifteen constants, seven vertex types. This article checks them against each other in both…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-audit-above-math0-every-constant-against-every-piece"><strong>The Audit Above $M_C$: Every Constant Against Every Piece</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Three lists describe one Lagrangian: eleven written structures, fifteen constants, seven vertex types. This article checks them against each other in both directions.</p>
+<p>Both directions close. Every constant reaches a vertex; every vertex traces to a row. Nothing is orphaned.</p>
+<h2 id="the-three-lists">The Three Lists</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>list</th>
+<th>size</th>
+<th>source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>structures</td>
+<td>$11$ written, $19$ admitted</td>
+<td>the invariant ring</td>
+</tr>
+<tr>
+<td>constants</td>
+<td>$15$</td>
+<td><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">the coefficients</a></td>
+</tr>
+<tr>
+<td>vertex types</td>
+<td>$7$</td>
+<td><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">the Feynman rules</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>The sizes agree by no formula. Eleven rows give seven types because the four quartics are one type with four monomials; fifteen constants give seven types because eight Yukawa numbers are one type. Each list is derived independently, which is what makes their agreement evidence.</p>
+<h2 id="constant-by-constant">Constant by Constant</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>constant</th>
+<th>rows</th>
+<th>types</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{4}$</td>
+<td>$1$, $2$, $3$</td>
+<td>$AAA$, $AAAA$, $\bar\xi A\xi$, $A\Xi\Xi$, $AA\Xi\Xi$</td>
+</tr>
+<tr>
+<td>$\mu_{\Phi}^{2}$, $\mu_{2}^{2}$</td>
+<td>$4$, $5$</td>
+<td>$\Xi\Xi$, $\Xi\Xi\Xi\Xi$</td>
+</tr>
+<tr>
+<td>$\lambda_{1}$–$\lambda_{4}$</td>
+<td>$6$–$9$</td>
+<td>$\Xi\Xi\Xi\Xi$</td>
+</tr>
+<tr>
+<td>$y$, $y'$</td>
+<td>$10$, $11$</td>
+<td>$\bar\xi\xi\Xi$</td>
+</tr>
+</tbody>
+</table></div>
+<p>$g_{4}$ reaches five types because the covariant derivative sits in all three kinetic terms. The masses reach two, appearing squared in the quartic. The quartics and the Yukawa matrices reach one each, and no vertex shape separates them: the four-point scalar vertex carries the sum $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$.</p>
+<h2 id="vertex-by-vertex">Vertex by Vertex</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>type</th>
+<th>constants</th>
+<th>row</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$AAA$</td>
+<td>$g_{4}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$AAAA$</td>
+<td>$g_{4}^{2}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>$\bar\xi A\xi$</td>
+<td>$g_{4}$</td>
+<td>$2$</td>
+</tr>
+<tr>
+<td>$A\Xi\Xi$</td>
+<td>$g_{4}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$AA\Xi\Xi$</td>
+<td>$g_{4}^{2}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>$\Xi\Xi\Xi\Xi$</td>
+<td>$6$</td>
+<td>$4$–$9$</td>
+</tr>
+<tr>
+<td>$\bar\xi\xi\Xi$</td>
+<td>$8$</td>
+<td>$10$, $11$</td>
+</tr>
+</tbody>
+</table></div>
+<p>Every type carries at least one constant. The counts here are constants, not realisations: $A\Xi\Xi$ has fifteen realisations and one constant, $AA\Xi\Xi$ has a hundred and twenty pairs and one.</p>
+<p>The audit's statement is a union, not a sum.</p>
+<p>$$
+\{g_{4}\}\cup\{\mu_{\Phi}^{2},\mu_{2}^{2}\}\cup\{\lambda_{1},\dots,\lambda_{4}\}\cup\{y,y'\}=15.
+$$</p>
+<p>Adding appearances would give twenty-one.</p>
+<h2 id="the-three-failures">The Three Failures</h2>
+<p>A constant with no vertex: $\theta_4$ is this case and is the control. It is a parameter, it multiplies no row, and it correctly reaches nothing.</p>
+<p>A vertex with no row: none found. The nearest miss is the ghost vertex, which comes from $\zeta$'s gauge-fixing row and not from the eleven.</p>
+<p>A constant counted twice: the quietest. $g_{4}$ is one parameter in three rows and five vertices.</p>
+<h2 id="what-the-audit-cannot-do">What the Audit Cannot Do</h2>
+<p>It cannot check a value, so it says nothing about whether $\lambda_{2}$ is $0.3$ or $3$. It cannot check a sign. And it cannot check completeness, because it compares three descriptions of one Lagrangian and cannot see a structure nobody wrote.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>Fifteen constants, seven types, no orphan either way.</li>
+<li>$1+2+4+8=15$, and the union over types is the same fifteen.</li>
+<li>Appearances give twenty-one; the answer is fifteen.</li>
+<li>Every type has at least one constant.</li>
+<li>$\theta_4$ reaches no vertex.</li>
+<li>The ghost belongs to $\zeta$'s row, not to the eleven.</li>
+<li>$15$, $80$, $120$ are realisations, not parameters.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Fifteen constants, eleven structures, seven vertex types, and both directions of the audit close. $g_{4}$ is one constant with five doors; the quartics and Yukawa matrices are the reverse, many constants behind one shape. The control is $\theta_4$, a parameter that reaches nothing. The audit checks presence, row and power, and cannot check a value, a sign, or a completeness claim.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$g_{4}$</td>
+<td>one coupling, rows $1$–$3$, five types</td>
+</tr>
+<tr>
+<td>type</td>
+<td>a distinct interaction shape</td>
+</tr>
+<tr>
+<td>realisation</td>
+<td>a distinct array: $15$, $80$, $120$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a></li>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a></li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a></li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List</a></li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

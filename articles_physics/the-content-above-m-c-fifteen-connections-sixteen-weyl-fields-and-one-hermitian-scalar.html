@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Content Above $M_C$: Fifteen Connections, Sixteen Weyl Fields and One Hermitian Scalar — Biquaternion Universe</title>
+  <meta name="description" content="The question. The census counts structures. Before it can, there must be fields to build them from. This article states the content, counts its degrees of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-content-above-math0-fifteen-connections-sixteen-weyl-fields-and-one-hermitian-scalar"><strong>The Content Above $M_C$: Fifteen Connections, Sixteen Weyl Fields and One Hermitian Scalar</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The census</a> counts structures. <strong>Before it can, there must be fields to build them from.</strong> This article states the content, counts its degrees of freedom, and says which masses the content permits.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;\underbrace{15}_{\text{connections}}+\underbrace{16}_{\text{Weyl fields}}+\underbrace{16}_{4\times4\text{ Hermitian}}=78\ \text{real degrees of freedom}.\;}
+$$</p>
+<p><strong>Three fields and no fourth.</strong> One connection in the adjoint of $\mathrm{SU}(4)$, sixteen Weyl fields in two copies of $\mathbf4\oplus\bar{\mathbf4}$, and one Hermitian $4\times4$ matrix. <strong>There is no second scalar, no second connection and no family index</strong>, and each absence is a declaration the census inherits.</p>
+<h2 id="the-connection">The Connection</h2>
+<p><strong>Fifteen real vector fields, all massless, all in one multiplet.</strong></p>
+<p>$$
+A_{\imath}=A_{a,\imath}t_{a},\qquad a=1,\dots,15,\qquad [t_{a},t_{b}]=if_{abc}t_{c}.
+$$</p>
+<p><strong>Fifteen and not sixteen</strong>: the adjoint of $\mathrm{SU}(4)$ is $\mathbf{15}$, because the group has rank three and $4^{2}-1=15$. <strong>The generators are Hermitian and traceless</strong>, and their normalisation is $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, which is the convention every trace in this category uses.</p>
+<p><strong>The connection is one field and not fifteen forces.</strong> A local symmetry has one coupling per simple factor; $\mathrm{SU}(4)$ has one factor, so <strong>one $g_{4}$ multiplies all fifteen.</strong> The fifteen directions differ by what they act on and not by what they cost.</p>
+<p><strong>Masslessness is forced here, unlike the fermions.</strong> The term $m^{2}\operatorname{tr}A_{\imath}A^{\imath}$ is a Lorentz scalar of dimension two, <strong>and it is not invariant under the local transformation</strong>: with $A_{\imath}\to UA_{\imath}U^{\dagger}+(i/g_{4})U\partial_{\imath}U^{\dagger}$ the shift contributes a piece linear in $A$ that no quadratic term can cancel. <strong>So the vector mass is forbidden by local invariance and not declined by the author</strong>, and <a href="the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html">the force content</a> draws the consequence: the fifteen stay massless until a condensate supplies a direction and the gauge is fixed.</p>
+<p><strong>Two degrees of freedom each.</strong> A massless vector in four dimensions carries two polarisations, so the connection contributes $15\times2=30$.</p>
+<h2 id="the-sixteen-weyl-fields">The Sixteen Weyl Fields</h2>
+<p><strong>Two copies of the quartet and its conjugate.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>representation</th>
+<th>Weyl fields</th>
+<th>states</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbf4$</td>
+<td>$2$ per copy value</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td>$\bar{\mathbf4}$</td>
+<td>$2$ per copy value</td>
+<td>$8$</td>
+</tr>
+<tr>
+<td><strong>total</strong></td>
+<td>$\mathbf{16}$</td>
+<td>$\mathbf{32}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The "two per copy value" is the whole subtlety.</strong> The copy index $\alpha=1,2$ is a two-valued degeneracy and not a family label; <strong>it is the index the Yukawa matrix lives on</strong>, and <a href="the-scalars-two-indices-and-the-count-sixteen.html">the copy index's article</a> shows it to be a commutant of the gauge action. <strong>No generator sees it.</strong></p>
+<p><strong>Sixteen Weyl fields carry thirty-two states.</strong> Each Weyl field has two helicities, and <strong>the pair $\mathbf4\oplus\bar{\mathbf4}$ is what makes a Dirac mass possible at all</strong>: a mass needs a left-handed and a right-handed field of the same charge, and the content supplies them. <strong>So the absent fermion mass is a choice and not a prohibition</strong>, which is the one place this phase differs in kind from the Standard Model's.</p>
+<p><strong>The currents are vector currents and their ordinary divergence does not vanish.</strong></p>
+<p>$$
+j^{\xi}_{a,\imath}=\sum_{f=1}^{16}\bar\xi_{f}\gamma_{\imath}t_{a}\xi_{f},
+\qquad
+\partial^{\imath}j^{\xi}_{a,\imath}\neq0,\qquad
+D^{\imath}j^{\xi}_{a,\imath}=0 .
+$$</p>
+<p><strong>No conserved charge exists in this phase</strong>, and the corpus's conserved charges are properties of the residual group below $M_C$.</p>
+<h2 id="the-scalar">The Scalar</h2>
+<p><strong>One Hermitian $4\times4$ matrix, sixteen real components.</strong></p>
+<p>$$
+\Xi=\Xi^{\dagger},\qquad \Xi=\Xi_{0}+\tfrac14\bigl(\operatorname{tr}\Xi\bigr)\mathbb 1,\qquad \operatorname{tr}\Xi_{0}=0 .
+$$</p>
+<p><strong>Sixteen and not fifteen or twenty-five.</strong> A Hermitian $4\times4$ has $4^{2}=16$ real entries by the diagonal-real, off-diagonal-complex count; <strong>the group acts as $\Xi\to U\Xi U^{\dagger}$</strong>, which is the $\mathbf{15}\oplus\mathbf1$ of $\mathrm{SU}(4)$.</p>
+<p><strong>The split into traceless and trace is the article's working tool.</strong> Fifteen components ride in the traceless part and one in the trace; <strong><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">the canonical basis</a> shows the trace mode to be the one that rescales under a field redefinition</strong>, and every basis statement in the category is a statement about it.</p>
+<p><strong>The scalar is not a doublet and the difference is a factor of eight.</strong> A doublet has four real components and two invariants at degree two; <strong>this matrix has sixteen and needs a partition count to enumerate its potential</strong> — $1,2,3,5$ monomials at degrees one to four, eleven in all. <strong>That eleven is the reason this phase's census is not shorter than the broken phase's.</strong></p>
+<p><strong>Sixteen degrees of freedom and no eaten ones.</strong> Above $M_C$ there is no condensate, so <strong>no Goldstone is absorbed and no scalar is subtracted</strong>; the sixteen are all physical, and the count $30+32+16=78$ is the count of propagating modes.</p>
+<h2 id="what-the-content-forbids-declines-and-permits">What the Content Forbids, Declines and Permits</h2>
+<p><strong>Three verdicts, and they are not the same verdict.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>structure</th>
+<th>verdict</th>
+<th>reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>vector mass</td>
+<td><strong>forbidden</strong></td>
+<td>no invariant of dimension two in the adjoint</td>
+</tr>
+<tr>
+<td>fermion mass</td>
+<td><strong>declined</strong></td>
+<td>allowed by the group, omitted by the ledger</td>
+</tr>
+<tr>
+<td>scalar mass</td>
+<td><strong>permitted</strong>, two of them</td>
+<td>$\operatorname{tr}\Xi^{2}$ and $(\operatorname{tr}\Xi)^{2}$</td>
+</tr>
+<tr>
+<td>gravity</td>
+<td><strong>absent</strong></td>
+<td>no slot in the connection</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vector mass's prohibition is a theorem and the fermion mass's absence is a choice.</strong> A reader who treats them alike will think the model forbids $\bar\xi\xi$; <strong>it does not, and <a href="the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html">the Yukawa sector</a> says what that costs.</strong> The corpus omits the bare mass because the ledger carries one source of fermion mass and not two.</p>
+<p><strong>The scalar's two masses are the only dimensionful constants in the phase.</strong> Combined with $g_{4}$ they give one scale and one ratio, and <strong>no vacuum expectation value appears</strong> — $v$ is what the restructuring creates, and above $M_C$ the potential's minimum is the symmetric point $\Xi=0$.</p>
+<h2 id="the-ledger">The Ledger</h2>
+<p><strong>Every number in the category is downstream of this table.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>count</th>
+<th>where it enters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>connections</td>
+<td>$15$</td>
+<td>the $AAA$ and $AAAA$ vertices; the $80$ brackets</td>
+</tr>
+<tr>
+<td>Weyl fields</td>
+<td>$16$</td>
+<td>the $\bar\xi A\xi$ block; the Yukawa matrix</td>
+</tr>
+<tr>
+<td>scalar components</td>
+<td>$16$</td>
+<td>the eleven potential monomials; the $\mathbf{15}\oplus\mathbf1$</td>
+</tr>
+<tr>
+<td>degrees of freedom</td>
+<td>$78$</td>
+<td>the loop count and the thermal count</td>
+</tr>
+<tr>
+<td>couplings</td>
+<td>$1$</td>
+<td>$g_{4}$, in rows $1$, $2$, $3$</td>
+</tr>
+<tr>
+<td>dimensionful constants</td>
+<td>$2$</td>
+<td>$\mu_{\Phi}^{2}$, $\mu_{2}^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The content is small and the census is not.</strong> Three fields, one coupling, two masses — <strong>and nineteen structures, because a $4\times4$ matrix admits eleven monomials where a doublet admits two.</strong> The content's size and the census's size are different questions.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The adjoint. $4^{2}-1=15$.</li>
+<li>The fermions. $2$ copies $\times\,2$ representations $\times\,2$ chiralities $\times\,4=32$ states in $16$ Weyl fields.</li>
+<li>The scalar. $4^{2}=16$ real entries; $\mathbf{15}\oplus\mathbf1$ under $\mathrm{SU}(4)$.</li>
+<li>The degrees of freedom. $30+32+16=78$.</li>
+<li>The generator normalisation. $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$.</li>
+<li>The mass verdicts. Vector forbidden, fermion declined, scalar permitted twice.</li>
+<li>The minimum. $\Xi=0$ above $M_C$; the condensate is the restructuring's.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p><strong>Fifteen connections, sixteen Weyl fields and one Hermitian $4\times4$ scalar: three fields and seventy-eight real degrees of freedom.</strong> One coupling multiplies the fifteen, and the copy index is a degeneracy no generator sees.</p>
+<p><strong>The three mass verdicts differ and must not be merged.</strong> The vector mass is forbidden by invariance; <strong>the fermion mass is allowed and declined</strong>; the scalar mass is permitted twice, and those two are the phase's only dimensionful constants.</p>
+<p><strong>The scalar's sixteen components are why the census is not small.</strong> A doublet admits two invariants at degree two and this matrix admits eleven monomials at degree four or below, <strong>and that eleven is the whole difference from a Standard Model count.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{a,\imath}$</td>
+<td>the fifteen connection fields, $a=1,\dots,15$</td>
+</tr>
+<tr>
+<td>$t_{a}$</td>
+<td>the fifteen Hermitian traceless generators, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$\xi_{f}$, $\bar\xi_{f}$</td>
+<td>the sixteen Weyl fields, $f=1,\dots,16$</td>
+</tr>
+<tr>
+<td>$\alpha$</td>
+<td>the copy index, $\alpha=1,2$; a degeneracy, not a family</td>
+</tr>
+<tr>
+<td>$\Xi$</td>
+<td>the Hermitian $4\times4$ scalar, sixteen real components</td>
+</tr>
+<tr>
+<td>$\Xi_{0}$</td>
+<td>its traceless part</td>
+</tr>
+<tr>
+<td>$g_{4}$</td>
+<td>the one coupling</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The nineteen structures this content admits.</li>
+<li><a href="the-sixteen-weyl-fields-above-m-c.html">The Sixteen Weyl Fields Above $M_C$</a>. Why they are massless and what the choice costs.</li>
+<li><a href="the-scalars-two-indices-and-the-count-sixteen.html">The Scalars, Two Indices and the Count Sixteen</a>. The index structure of the matrix.</li>
+<li><a href="the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html">The Force Content of the $\mathrm{SU}(4)$ Model</a>. What one connection means.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis Above $M_C$</a>. The trace mode and the basis.</li>
+<li><a href="the-coefficients-above-m-c-fifteen-constants-one-gauge-parameter-and-one-angle-without-a-row.html">The Coefficients Above $M_C$</a>. The fifteen constants the content carries.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

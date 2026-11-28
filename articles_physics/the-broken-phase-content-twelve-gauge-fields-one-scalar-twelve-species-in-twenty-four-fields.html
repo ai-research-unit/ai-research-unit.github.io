@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Broken-Phase Content: Twelve Gauge Fields, One Scalar, Twelve Species in Twenty-Four Fields — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The list of pieces is a list over a field content, so the content is stated before the list. In the broken phase the content is twelve gauge…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-broken-phase-content-twelve-gauge-fields-one-scalar-twelve-species-in-twenty-four-fields"><strong>The Broken-Phase Content: Twelve Gauge Fields, One Scalar, Twelve Species in Twenty-Four Fields</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The list of pieces is a list over a field content, so the content is stated before the list. In the broken phase the content is twelve gauge fields, one real scalar, and twelve fermion species written in twenty-four fields — two chiral slots per species — of which twenty-one are filled. Counting colour, the same content is forty-five Weyl fields.</p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;12+1+2\times12=37\ \text{slots},\qquad 45=36+9\ \text{Weyl fields},\qquad 21=18+3\ \text{filled slots without colour}\;}
+$$</p>
+<p><strong>Why there are two counts of the fermions.</strong> A species is one object with a mass; a field is one chirality. Nine species have a mass and two slots each, and three neutrinos have no mass and one filled slot each, so the slots are twenty-four and the filled ones are twenty-one. Colour multiplies the six quark species by three and leaves the leptons alone, which raises the filled count from twenty-one to forty-five. A reader who says "twelve species" and a reader who says "forty-five fields" are both right.</p>
+<p><strong>The standing.</strong> The content is an input. Nothing here selects it; the selection is the subject of <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>, and the parts of it the corpus can and cannot reach are the subject of <a href="the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase</a>. What this article does is fix the letters the twenty-three companions use.</p>
+<h2 id="the-gauge-fields">The Gauge Fields</h2>
+<p><strong>Twelve fields, in the mass basis.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Multiplicity</th>
+<th>Colour</th>
+<th>Charge</th>
+<th>Mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G^a_\mu$</td>
+<td>$8$</td>
+<td>$\mathbf8$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$A_\mu$</td>
+<td>$1$</td>
+<td>$\mathbf1$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$Z_\mu$</td>
+<td>$1$</td>
+<td>$\mathbf1$</td>
+<td>$0$</td>
+<td>$M_Z$</td>
+</tr>
+<tr>
+<td>$W^+_\mu$, $W^-_\mu$</td>
+<td>$2$</td>
+<td>$\mathbf1$</td>
+<td>$\pm1$</td>
+<td>$M_W$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why twelve and not eleven.</strong> The eight gluons are the adjoint of $\mathrm{SU}(3)_c$; the photon, the $Z$ and the charged pair are four real fields. Eight plus four is twelve.</p>
+<p><strong>Four fields and eleven names is the same count.</strong> Before the rotation there are four fields $W_1,W_2,W_3,B$; after it there are four fields $W^+,W^-,Z,A$. The rotation is orthogonal on the neutral pair and unitary on the charged pair, so it is invertible, and the number is four on both sides. <a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States</a> states the rotation; this article states only that the count survives it.</p>
+<p><strong>Why three of them are massive and one is not.</strong> The scalar vacuum is neutral, so it can give a mass to the charged pair and to one neutral combination, and it cannot give one to the orthogonal neutral combination. That combination is the photon, and its masslessness is the statement that the vacuum is invariant under the $\mathrm{U}(1)$ the photon gauges. The two masses obey $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$, which is the $\rho=1$ relation of <a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>.</p>
+<h2 id="the-scalar">The Scalar</h2>
+<p><strong>One field.</strong> The doublet has four real components. Three are eaten by the three longitudinal polarisations the massive vector fields acquire, and one remains as a physical scalar $h$ of mass $m_h$. The bookkeeping is $4-3=1$ and it closes the degree-of-freedom count: twelve massless vector fields would carry twenty-four, the breaking makes three of them massive and leaves one scalar, and the total is twenty-eight before and after.</p>
+<p><strong>The eaten three are not in the content and they are not absent from the theory.</strong> They are the Goldstone fields of the broken symmetry, and in unitary gauge they are set to zero. Their bookkeeping, and the statement that nothing is lost, is the subject of <a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>.</p>
+<p><strong>One scalar and not two.</strong> The minimal model has one doublet. A second doublet would add a charged scalar, a pseudoscalar and two neutral scalars, and with them flavour-changing neutral couplings at tree level; the content of this article has none of those, and the absence is part of what makes the list forty-seven pieces long instead of longer.</p>
+<h2 id="the-fermions">The Fermions</h2>
+<p><strong>Twelve species, twenty-four slots, twenty-one filled, forty-five fields with colour.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Species</th>
+<th>Colour</th>
+<th>Slots</th>
+<th>Filled</th>
+<th>Fields with colour</th>
+<th>Mass</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u,c,t$</td>
+<td>$\mathbf3$</td>
+<td>$2$ each</td>
+<td>$2$</td>
+<td>$6\times3=18$</td>
+<td>$m_u,m_c,m_t$</td>
+</tr>
+<tr>
+<td>$d,s,b$</td>
+<td>$\mathbf3$</td>
+<td>$2$ each</td>
+<td>$2$</td>
+<td>$6\times3=18$</td>
+<td>$m_d,m_s,m_b$</td>
+</tr>
+<tr>
+<td>$e,\mu,\tau$</td>
+<td>$\mathbf1$</td>
+<td>$2$ each</td>
+<td>$2$</td>
+<td>$3\times2=6$</td>
+<td>$m_e,m_\mu,m_\tau$</td>
+</tr>
+<tr>
+<td>$\nu_e,\nu_\mu,\nu_\tau$</td>
+<td>$\mathbf1$</td>
+<td>$2$ each</td>
+<td>$1$</td>
+<td>$3\times1=3$</td>
+<td>none</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The arithmetic in three steps.</strong> Twelve species times two slots is twenty-four. The three right-handed neutrino slots are empty, so the filled slots without colour are $18+3=21$. Colour multiplies the six quark species by three, which replaces twelve of the twenty-one by thirty-six and gives $36+6+3=45$.</p>
+<p><strong>Which count a piece uses.</strong> A kinetic or mass piece is per species and not per slot, so the list's fermion rows are twelve and nine; the field count of forty-five is what tells a reader how many independent degrees of freedom the kinetic matrix acts on. Both numbers are kept because they answer different questions, and neither is a correction of the other.</p>
+<p><strong>Why the neutrino has no right-handed partner.</strong> The content has no $\nu_R$. This is not a statement that a right-handed neutrino cannot exist; it is a statement that the minimal model does not contain one. With $\nu_R$ the slot count would be twenty-four filled instead of twenty-one, the Weyl count forty-eight, the neutrino would acquire a Dirac mass $y_\nu v/\sqrt2$, and the list would gain three kinetic pieces, three mass pieces, three Higgs–fermion pieces and a mixing matrix. <a href="the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses</a> states the price.</p>
+<p><strong>The neutrino still propagates.</strong> It has a kinetic piece, which is why the count of fermion kinetic pieces is twelve and not nine. A list that couples a field to a current and gives it no free term is not a Lagrangian; it is half of one.</p>
+<h2 id="the-charges">The Charges</h2>
+<p><strong>One relation, $Q=T_3+Y$, and the table it fixes.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>$T_3$</th>
+<th>$Y$</th>
+<th>$Q$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$u_L$</td>
+<td>$+\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$u_R$</td>
+<td>$0$</td>
+<td>$+\tfrac23$</td>
+<td>$+\tfrac23$</td>
+</tr>
+<tr>
+<td>$d_L$</td>
+<td>$-\tfrac12$</td>
+<td>$+\tfrac16$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$d_R$</td>
+<td>$0$</td>
+<td>$-\tfrac13$</td>
+<td>$-\tfrac13$</td>
+</tr>
+<tr>
+<td>$\nu_L$</td>
+<td>$+\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_L$</td>
+<td>$-\tfrac12$</td>
+<td>$-\tfrac12$</td>
+<td>$-1$</td>
+</tr>
+<tr>
+<td>$e_R$</td>
+<td>$0$</td>
+<td>$-1$</td>
+<td>$-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table has three properties worth naming.</strong> Each left-handed doublet has two members differing by one unit of charge, because the members differ by one unit of $T_3$ and share $Y$. Each right-handed field is a singlet, so its charge is its hypercharge. And the charges are rational with denominator three, which is what makes the atom neutral: $2\times\tfrac23-\tfrac13-1=0$.</p>
+<p><strong>What the table does not fix.</strong> It does not fix the number of generations, the hypercharges beyond their ratios, or the mixing. It fixes the charges of the fields it lists, given the assignments, and the anomaly conditions of <a href="anomalies-and-anomaly-cancellation.html">Anomalies and Anomaly Cancellation</a> are what make the assignment consistent rather than arbitrary.</p>
+<h2 id="what-the-content-does-not-contain">What the Content Does Not Contain</h2>
+<p><strong>Five absences, named once, so that no companion has to argue them.</strong></p>
+<ul>
+<li>No right-handed neutrino. The minimal model, and the reason the neutrino has no mass term.</li>
+<li>No second scalar doublet or any other scalar. One doublet, four real components, one physical.</li>
+<li>No leptoquark, and no multiplet carrying colour and lepton number at once.</li>
+<li>No dark-matter candidate. Every field in the table couples to the photon, the $Z$ or the gluon.</li>
+<li>No axion, and no field whose mass comes from a second scale.</li>
+</ul>
+<p><strong>Why the absences matter for the count.</strong> Each would add rows. A second doublet adds four scalars and a family of couplings; a $\nu_R$ adds three kinetic, three mass and three Yukawa rows; a leptoquark adds a gauge multiplet and its couplings. The forty-seven is the count for this content and not for a larger one, and the sensitivity of the count to the content is the subject of <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>.</p>
+<h2 id="checks">Checks</h2>
+<ol>
+<li>The slot count. $12+1+24=37$: twelve vectors, one scalar, twenty-four fermion slots.</li>
+<li>The filled slots. $18+3=21$, the three empty slots being the right-handed neutrinos.</li>
+<li>The Weyl count. $36+6+3=45$, which is twenty-one plus the colour multiplicity of the quarks.</li>
+<li>The per-generation count. $45/3=15$, the Weyl content of one generation in the symmetric phase.</li>
+<li>The gauge count. $8+1+1+2=12$, recomputed from the multiplicities of the table.</li>
+<li>The scalar count. $4-3=1$, the doublet's four real components less the three eaten.</li>
+<li>The degree-of-freedom count. $12\times2+4=28$ before, and $8\times2+1\times2+3\times3+1=28$ after.</li>
+<li>The charge check. $Q=T_3+Y$ on each row, and the hydrogen combination $2\times\tfrac23-\tfrac13-1=0$.</li>
+<li>The mass relations. $M_W=gv/2$ and $M_Z=M_W/\cos\theta_W$ hold with the two masses of the gauge table.</li>
+<li>The sensitivity check. Adding one $\nu_R$ raises the Weyl count from $45$ to $48$ and the piece count above $47$ by nine.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>The content of the broken phase is twelve gauge fields, one real scalar and twelve fermion species. Written in fields, the species occupy twenty-four chiral slots, twenty-one of them filled, and forty-five Weyl fields once colour is counted.</p>
+<p>The counts are connected and each is checkable. Eight plus four is twelve; four minus three is one; twelve times two is twenty-four; the three empty slots give twenty-one; colour gives forty-five, which is fifteen per generation and is the count of the symmetric phase. The degree-of-freedom count is twenty-eight on both sides of the rotation.</p>
+<p>The charges follow from one relation, $Q=T_3+Y$, and the table has three properties: the doublet members differ by one unit of charge, the singlets carry their hypercharge as charge, and the denominators are three, which is what makes the atom neutral.</p>
+<p>The content has five absences, and each would add rows: no right-handed neutrino, no second scalar, no leptoquark, no dark-matter candidate, no axion. The neutrino's absence is a statement about the minimal model and not about nature.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$G^a_\mu$, $A_\mu$, $Z_\mu$, $W^\pm_\mu$</td>
+<td>The twelve gauge fields in the mass basis</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>The one physical scalar</td>
+</tr>
+<tr>
+<td>slot</td>
+<td>one chirality of one species</td>
+</tr>
+<tr>
+<td>$T_3$, $Y$, $Q=T_3+Y$</td>
+<td>Weak isospin, hypercharge and electric charge</td>
+</tr>
+<tr>
+<td>$24$, $21$, $45$</td>
+<td>Slots, filled slots, Weyl fields with colour</td>
+</tr>
+<tr>
+<td>$28$</td>
+<td>The degree-of-freedom count, before and after the breaking</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The content in the symmetric phase, and the parameter table.</li>
+<li><a href="the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a>. Which parts of the content the algebra reaches.</li>
+<li><a href="the-weinberg-angle-and-the-three-neutral-states.html">The Weinberg Angle and the Three Neutral States</a>. The rotation of the four neutral components into $A$ and $Z$.</li>
+<li><a href="custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter</a>. The relation $M_W=M_Z\cos\theta_W$ and what protects it.</li>
+<li><a href="anomalies-and-anomaly-cancellation.html">Anomalies and Anomaly Cancellation</a>. The conditions that make the charge assignment consistent.</li>
+<li><a href="the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image</a>. Where the three eaten scalars are accounted for.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
