@@ -54,12 +54,12 @@ and the four groups have four different jobs.
 
 | group | degree | what it is | where it goes |
 |---|---|---|---|
-| $\mathcal L_{0}$ | $0$ | a constant, a vacuum energy | fixed to zero by the corpus's normalisation, or kept as a cosmological term |
+| $\mathcal L_{0}$ | $0$ | a constant, a vacuum energy | a number: the gravity article carries it as an additive $\Lambda$ and calls it "not part of the action problem" |
 | $\mathcal L_{1}$ | $1$ | a term linear in the field | the source $J$, and a tadpole that a chosen expansion point removes |
 | $\mathcal L_{2}$ | $2$ | kinetic, mass, fixing | the Gaussian, hence the propagator |
 | $\mathcal L_{\ge3}$ | $\ge3$ | every interaction monomial | the vertices |
 
-**The two groups that matter are $\mathcal L_{2}$ and $\mathcal L_{\ge3}$, and the other two are bookkeeping.** $\mathcal L_{1}$ is not an interaction: a linear term is a source, and the generating functional carries it in the exponent as $\int J\phi$. $\mathcal L_{0}$ is a number and shifts nothing in flat space. The plan's two-way split is therefore the operative one, and the grading above says where the two omitted groups went.
+**The two groups that matter are $\mathcal L_{2}$ and $\mathcal L_{\ge3}$, and the other two are bookkeeping.** $\mathcal L_{1}$ is not an interaction: a linear term is a source, and the generating functional carries it in the exponent as the source term $\frac{2\pi}{h}\int J\phi$. $\mathcal L_{0}$ is a number: it shifts the action by a volume and enters neither a propagator nor a vertex, and whether it is carried is the cosmological-constant question and not this section's. The plan's two-way split is therefore the operative one, and the grading above says where the two omitted groups went.
 
 **The grouping is a reorganisation and not a truncation.** Nothing is deleted. $\mathcal L_{2}+\mathcal L_{\ge3}$ is $\mathcal L$ minus a constant and a source, and a constant and a source are not physics at the level of the diagrams. If a term were dropped, a propagator or a vertex would be missing, and the missing object would show up as a wrong answer at the first order that needed it.
 

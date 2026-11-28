@@ -21,8 +21,9 @@
 **One functional carries the theory.** With the source $J$ coupled to the field,
 
 $$
-Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\int J\phi\Bigr),\qquad
-\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S[\phi],
+Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}}\Bigr),\qquad
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S[\phi],\qquad
+\theta_{\mathrm{src}}=\frac{2\pi}{h}\int J\phi,
 $$
 
 and the correlators are its derivatives,
@@ -49,7 +50,13 @@ $$
 
 **The identity is exact and it is the whole content of "perturbation theory".** No approximation has been made. The non-Gaussian part has been moved out of the integral and into an operator acting on the Gaussian's value. Everything after this line is either the evaluation of $Z_{0}$ or the expansion of that operator.
 
-**The shift is where the source's meaning is fixed.** Completing the square in $Z_{0}$ gives the exponent $-\frac{i}{2}\int J\Delta J$, and $\Delta$ is the inverse of the quadratic kernel. The source therefore couples to the field through the propagator, and the two-point function at zeroth order in the interaction is $\Delta$ itself. That is the sentence the diagrams call *the internal line is the propagator*.
+**The shift is where the source's meaning is fixed, and where the factor of $\frac{h}{2\pi}$ enters.** Completing the square in $Z_{0}$ gives the exponent $-\frac{1}{2}\int J\Delta J$ with
+
+$$
+\Delta=\frac{h}{2\pi}\,i\,W^{-1},
+$$
+
+so the source couples to the field through the propagator, and the two-point function at zeroth order in the interaction is $\Delta$ itself. The $\frac{h}{2\pi}$ is what the correlator formula's $\bigl(\frac{h}{2\pi i}\bigr)^{n}$ demands: each derivative brings $\frac{2\pi}{h}$ of field, and the two factors must cancel in a two-point function. In the units $\frac{2\pi}{h}=1$, which the rest of the section uses, $\Delta=iW^{-1}$ and the exponent is $-\frac12\int J\Delta J$ with no visible $h$. That is the sentence the diagrams call *the internal line is the propagator*.
 
 **The operator's argument is a derivative, and the derivative is with respect to the source.** Writing $S_{\mathrm{int}}[\delta/i\delta J]$ means: replace every field in the interaction by $\delta/i\delta J$, then act on $Z_{0}$. Each derivative brings down one factor of $\Delta J$ or one $\Delta$ from the exponent, which is why the expansion produces exactly the two objects the diagrams draw: lines and vertices.
 
@@ -62,7 +69,7 @@ $$
 =\bigl(\det A\bigr)^{-1/2}\exp\Bigl(\tfrac12J^{T}A^{-1}J\Bigr).
 $$
 
-**The identity was checked by exact quadrature, not by trusting the formula.** For one hundred random positive-definite $2\times2$ matrices and one hundred random sources, tensor Gauss–Hermite quadrature reproduced the closed form with a largest relative deviation of $1.3\times10^{-15}$; at dimension four with ten-point nodes the deviation was $2.8\times10^{-10}$, which is the quadrature's error and not the identity's. The check is small and it fixes the sign of the exponent, which is the one thing a reader is entitled to doubt.
+**The identity was checked by exact quadrature, not by trusting the formula.** For one hundred random positive-definite $2\times2$ matrices and one hundred random sources, and again in dimension four, the integral was computed in the eigenbasis of $A$, where it factorises into one-dimensional quadratures, and compared with the closed form: the largest relative deviation over the hundred samples was $8.3\times10^{-15}$ at $2\times2$ and $1.4\times10^{-14}$ at $4\times4$, which is the quadrature's own error and not the identity's. The check is small and it fixes the sign of the exponent, which is the one thing a reader is entitled to doubt.
 
 **The corpus's version differs by the measure and by the pairing.** With $\langle\cdot,\cdot\rangle_{\mathbb R}$ the real part of the scalar pairing and $W$ the quadratic operator,
 
@@ -110,7 +117,7 @@ which is the standard $p^{2}-m^{2}$ in the $(+,-,-,-)$ convention. The sign is t
 | connection, unfixed | $p^{2}\delta_{\imath\jmath}-p_{\imath}p_{\jmath}$ | none: singular on $p$ | nothing, until the representative is fixed |
 | connection, fixed | the $R_{\xi}$ kernel | the transverse part plus the $\zeta$ part | one matrix, invertible |
 
-**The third row is the row that fails, and it fails before any loop is drawn.** The unfixed connection's kernel annihilates the momentum itself, because $p^{2}p_{\imath}-p_{\imath}p^{2}=0$; on one hundred random momenta the residual $\lVert Kp\rVert/\lVert p\rVert$ was $1.1\times10^{-15}$ and the smallest eigenvalue was $2\times10^{-15}$, while the Proca kernel $K+M^{2}\delta$ had smallest eigenvalue $M^{2}$ to machine precision. The zero mode is the orbit of the local symmetry, and it is [stage $2$'s only structural failure](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html).
+**The third row is the row that fails, and it fails before any loop is drawn.** The unfixed connection's kernel annihilates the momentum itself, $p^{2}p_{\imath}-p_{\imath}p^{2}=0$ identically, so its spectrum is $\{p^{2},p^{2},0\}$ for every momentum and $p$ is the zero eigenvector; the singularity is exact and not a small eigenvalue. The Proca kernel $K+M^{2}\delta$ has smallest eigenvalue $M^{2}$. The zero mode is the orbit of the local symmetry, and it is [stage $2$'s only structural failure](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html).
 
 ## The Determinant Is the Vacuum Bubble
 
@@ -143,7 +150,7 @@ which is the sum of the one-loop diagrams with no external legs. [The Functional
 
 **Stage $1$ defines the object and stage $2$ computes its quadratic part.** The generating functional $Z[J]$ carries the theory, and every correlator is a derivative of it. Writing $S=S_{2}+S_{\mathrm{int}}$ factors the integral into an operator acting on a Gaussian, and the Gaussian is exact per mode: its inverse is the propagator, and its determinant is the vacuum's one-loop factor.
 
-**The propagator is the inverse of the quadratic operator, and its sign is the one the corpus displays.** With $W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$ the symbol is $-\mathcal M$, so $\Delta=i/[-\mathcal M+i\epsilon]$ and $-\mathcal M=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2}$. The Gaussian identity was checked by exact quadrature to $1.3\times10^{-15}$ in dimension two.
+**The propagator is the inverse of the quadratic operator, and its sign is the one the corpus displays.** With $W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$ the symbol is $-\mathcal M$, so $\Delta=i/[-\mathcal M+i\epsilon]$ and $-\mathcal M=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2}$. The Gaussian identity was checked by exact quadrature to $8.3\times10^{-15}$ in dimension two.
 
 **The stage's one failure is structural and it is stated here.** An unfixed connection's quadratic kernel annihilates the momentum, so it has no inverse and no propagator; the zero mode is the orbit, and fixing the representative is what removes it.
 

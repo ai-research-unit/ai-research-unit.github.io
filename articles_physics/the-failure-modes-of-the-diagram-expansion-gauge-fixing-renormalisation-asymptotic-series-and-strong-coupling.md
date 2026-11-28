@@ -18,7 +18,7 @@ $$
 \bigl(p^{2}\delta_{\imath\jmath}-p_{\imath}p_{\jmath}\bigr)p_{\jmath}=p^{2}p_{\imath}-p_{\imath}p^{2}=0 ,
 $$
 
-so there is no inverse and no propagator. The statement was checked on one hundred random momenta: the residual $\lVert Kp\rVert/\lVert p\rVert$ never exceeded $1.1\times10^{-15}$ and the kernel's smallest eigenvalue never exceeded $2\times10^{-15}$, while adding $M^{2}\delta_{\imath\jmath}$ gave smallest eigenvalue $M^{2}$ to machine precision. The zero mode is not a numerical accident; it is the local symmetry seen at the level of the free theory.
+so there is no inverse and no propagator. The statement is not numerical: the kernel's spectrum is $\{p^{2},p^{2},0\}$ exactly, since $p^{2}p_{\imath}-p_{\imath}(p\cdot p)=0$ identically, so $p$ is a zero eigenvector for every momentum and the zero is not a coincidence of rounding. Adding $M^{2}\delta_{\imath\jmath}$ moves that eigenvalue to $M^{2}$ and leaves the other two at $p^{2}+M^{2}$, so the deformed kernel is invertible and its smallest eigenvalue is $M^{2}$. The zero mode is the orbit of the local symmetry seen at the level of the free theory.
 
 **The repair is a fixing condition, and the price is two new sectors.** Adding $-\frac{1}{2\zeta}(\partial\cdot A)^{2}$ makes the kernel invertible, and the Faddeev–Popov identity supplies the ghost determinant that keeps unitarity. The resulting propagator is the $R_{\xi}$ family,
 
@@ -38,9 +38,9 @@ with $\zeta=1$ the Feynman–'t Hooft choice, $\zeta=0$ the Landau choice and $\
 
 ## The Second Failure: The Series Is Asymptotic
 
-**The expansion in the coupling has zero radius of convergence, and the reason is the growth of the coefficients.** The standard illustration is the integral $\int_{-\infty}^{\infty}\mathrm{d}x\,\exp\bigl(-\tfrac12x^{2}-\lambda x^{4}\bigr)$, whose expansion in $\lambda$ has coefficients growing factorially. Computing them to one hundred orders gave $\lvert a_{k}\rvert^{1/k}$ equal to $54.25$, $111.11$, $284.97$ and $577.20$ at $k=10,20,50,100$, so the radius is zero: the coefficients outrun any exponential.
+**The expansion in the coupling has zero radius of convergence, and the reason is the growth of the coefficients.** The standard illustration is the integral $\int_{-\infty}^{\infty}\mathrm{d}x\,\exp\bigl(-\tfrac12x^{2}-\lambda x^{4}\bigr)$, whose expansion in $\lambda$ has coefficients $a_{k}=(-1)^{k}(4k-1)!!\sqrt{2\pi}/k!$ growing factorially. Computing them in logarithms to one hundred orders gave $\lvert a_{k}\rvert^{1/k}$ equal to $49.49$, $106.12$, $279.78$ and $571.92$ at $k=10,20,50,100$ — rising like $\frac{16k}{e}$ — so the radius is zero: the coefficients outrun any exponential.
 
-**The consequence is visible in one number.** At $\lambda=0.1$ the exact integral is $2.1497$ and the series' terms are $0.752$, $-1.316$, $4.343$ and $-21.17$, so the partial sums run $1.7546$, $3.0706$, $-1.2721$ and $19.8987$. They do not approach the answer; they leave it, and continue to leave it. A fixed-order truncation is therefore an approximation whose error falls until an optimal order and then grows, and the optimal order is not known without a non-perturbative estimate.
+**The consequence is visible in one number.** At $\lambda=0.1$ the exact integral is $2.1497$ and the series' terms are $-0.752$, $1.316$, $-4.343$ and $21.17$, so the partial sums run $1.7546$, $3.0706$, $-1.2721$ and $19.8987$. They do not approach the answer; they leave it, and continue to leave it. A fixed-order truncation is therefore an approximation whose error falls until an optimal order and then grows, and the optimal order is not known without a non-perturbative estimate.
 
 **The honest statement, in one sentence.** The method computes each order exactly and never computes the sum exactly. That is the same sentence as the corpus's general statement about the method, and it is the one a reader should be able to repeat.
 
@@ -71,7 +71,7 @@ with $\zeta=1$ the Feynman–'t Hooft choice, $\zeta=0$ the Landau choice and $\
 | failure | the symptom | the repair, or the regime | the article that owns it |
 |---|---|---|---|
 | the quadratic part is not invertible | the kernel has a zero eigenvalue on the orbit | gauge fixing and ghosts; the $R_{\xi}$ family | [$R_{\xi}$](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) |
-| the series is asymptotic | coefficients grow factorially; zero radius | truncate and estimate; the error is bounded by the first omitted term | this article's section on the second failure |
+| the series is asymptotic | coefficients grow factorially; zero radius | truncate at the optimal order; the error there is of the order of the first omitted term | this article's section on the second failure |
 | the loops diverge | power divergences at every order | counterterms, order by order; renormalisability as the criterion | [the renormalization group](the-renormalization-group-in-biquaternionic-form.html) |
 | the coupling is large | the expansion parameter is of order one | a different method; diagrams say nothing | [hadron structure](hadron-structure-from-qcd-the-bound-state-problem.html) |
 
@@ -87,7 +87,7 @@ with $\zeta=1$ the Feynman–'t Hooft choice, $\zeta=0$ the Landau choice and $\
 
 **The method fails in four ways, and each failure has a location and a repair.** The quadratic kernel may be singular on the gauge orbit, and fixing plus ghosts repairs it. The series may diverge factorially, and there is no repair beyond truncation with a stated error. The loops may diverge, and counterterms absorb them order by order where the theory is renormalisable. The coupling may be large, and then the method has nothing to say.
 
-**Each failure was illustrated with a computation in this article's section.** The kernel's zero mode had residual $1.1\times10^{-15}$ and smallest eigenvalue $2\times10^{-15}$; the toy series' coefficients had $\lvert a_{k}\rvert^{1/k}$ rising to $577$ at $k=100$ and its partial sums left the exact value; and the one-loop integral's ratio to $\Lambda^{2}$ approached $\pi^{2}$.
+**Each failure was illustrated with a computation in this article's section.** The kernel's zero mode is exact rather than numerical — its spectrum is $\{p^{2},p^{2},0\}$ because $Kp=0$ identically, and the deformation moves the zero to $M^{2}$; the toy series' coefficients had $\lvert a_{k}\rvert^{1/k}$ rising to $571.92$ at $k=100$, and its partial sums left the exact value $2.1497$; and the one-loop integral's ratio to $\Lambda^{2}$ approached $\pi^{2}$.
 
 **All four are properties of the method and not of the algebra.** The corpus's contribution is to read each one in its own terms and to cite the article that owns the repair, and that is what this section claims and no more.
 
