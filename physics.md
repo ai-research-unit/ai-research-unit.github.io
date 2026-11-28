@@ -873,6 +873,63 @@
 <a href="articles_physics/redundancy-and-the-information-in-the-orbit-in-biquaternionic-form.html">Redundancy and the Information in the Orbit in Biquaternionic Form</a>
 <!-- the orbit as a torsor; the orbit as the fibre of the curvature map; what the orbit carries, redundancy not state; information-theoretic invariance of the orbit; the global information of the orbit, holonomy; redundancy and loss, three operations compared. -->
 
+### The Lagrangian Method
+
+<!-- the capstone: the quantum arrow stated once, stage by stage, as *Five Steps from a Lagrangian to Fluid Equations*
+     states the classical arrow once for the fluid. The method is the composite a physicist calls perturbative QFT —
+     collect the density, define Z[J], invert the quadratic part, expand the polynomial part, contract into diagrams —
+     and the section states the order rather than re-deriving the parts, each of which already has its article above.
+     It sits after the promotion because it uses the action quantum, and its first claim is that only the full L is
+     physical: the split into L_2 and L_>=3 is bookkeeping, and it moves under field redefinitions and changes of
+     expansion point. The interacting scalar's quartic is the running example at every stage: one field, one
+     coupling, one vertex, every step visible without an index. Two boundary articles close it; the second is what
+     keeps the section from claiming universal competence. Nothing here is derived from the algebra, and each article
+     names which of its objects the algebra supplies. -->
+
+#### The Method and Its Name
+
+<a href="articles_physics/the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">The Lagrangian Method: From the Collected Lagrangian to the Feynman Diagram</a>
+<!-- the four stages in one display; the seven names and what each denotes; the two gradings of one density, by field
+     degree for the split and by coupling for the expansion; why the order is the content; what the section does not
+     derive. The hub of the seven. -->
+
+#### The Four Stages
+
+<a href="articles_physics/the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html">The Collection of Lagrangian Components: The Full Action as the Input to Perturbation Theory</a>
+<!-- stage zero: the list, the three bounds on it, the three sources of a coefficient, the grading by field degree and
+     where the constant and the linear term go. Only the sum is physical — the split moves under field redefinitions
+     and expansion points, worked on the quartic about a background, where the radial direction takes three times the
+     transverse mass. -->
+
+<a href="articles_physics/the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html">The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator</a>
+<!-- stages one and two: Z[J] and its derivatives; the split and the shift; the Gaussian, checked by exact quadrature;
+     the inverse as the propagator, with the sign of the mass-shell operator verified; the determinant as the vacuum
+     bubble; the unfixed connection's zero mode as the stage's one structural failure. -->
+
+<a href="articles_physics/the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action</a>
+<!-- stage three: the expansion of the exponential; one monomial, one vertex; the matching counts computed on the
+     corpus's own N, so that the quartic's coefficient is read rather than guessed; Wick's theorem; the 1/n! against
+     the vertex orderings, and the leftover as the symmetry factor; the number of vertices as the order. -->
+
+<a href="articles_physics/the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors</a>
+<!-- stage four: the four rules and what each reads; the diagrams ordered by vertex count; the tree amplitude; the
+     one-loop divergence with the cutoff taken; amputation by the mass-shell operator and the residue as Z; the four
+     rule sets the corpus has already transcribed, and the four things the rules do not give. -->
+
+#### The Two Boundaries
+
+<a href="articles_physics/the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">The Classical Limit of the Diagram Series: Tree Diagrams as the Stationary Phase of the Path Integral</a>
+<!-- stationary phase and the classical equation; the tree series as the perturbative solution, checked against a
+     Newton solution; one loop as one power of h/(2pi), checked by the linear vanishing of the deviation; the two
+     routes as one table; and the three things the equivalence does not say — no convergence, no small loops, no
+     global existence. -->
+
+<a href="articles_physics/the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">The Failure Modes of the Diagram Expansion: Gauge Fixing, Renormalisation, Asymptotic Series and Strong Coupling</a>
+<!-- the four failures, each located: the singular kernel and the R_xi repair; the factorial growth, with the toy
+     series' coefficients computed to a hundred orders; the divergences and the counterterms; the large coupling and
+     the four classes of physics it hides. Each is a property of the method and not of the algebra, and the article
+     is what keeps the section honest. -->
+
 ### Other aspects
 
 <!-- the catch-all, and it has four occupants now: one of the third kind, one of the second, and two results.
