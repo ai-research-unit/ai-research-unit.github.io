@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Observables: Correlation Functions and Their Reduction — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The method produces one object, the generating functional, and every observable is obtained from it by a fixed sequence of reductions. The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-observables-correlation-functions-and-their-reduction"><strong>The Observables: Correlation Functions and Their Reduction</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The method produces one object, the generating functional, and every observable is obtained from it by a fixed sequence of reductions. The sequence is the <em>ladder</em>: differentiate to obtain a correlator, amputate the external lines, put the external momenta on the shell, and read the residue. Each rung is a definite algebraic operation, and each discards something. The article states the ladder once, because the commonest error in reading a perturbative result is a comparison made at the wrong rung.</p>
+<p><strong>Why it belongs at the end of the section.</strong> The four stages produce diagrams; the ladder converts diagrams into numbers that an experiment can compare with. Without the ladder the section would stop at a formal series, and a formal series is not an observable. The dependence that the ladder removes — the wave-function normalisation, the source, the off-shell continuation — is the dependence a reader must know is unphysical before he can interpret any number in the corpus.</p>
+<p><strong>The strongest objection.</strong> <em>The ladder is standard, and each of its rungs already has its own article.</em> It is standard, and the articles exist: <a href="the-functional-integral-in-biquaternionic-form.html">the functional integral</a>, <a href="the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">the generating functional</a>, <a href="the-s-matrix-in-biquaternionic-form.html">the $S$-matrix</a> and <a href="the-lsz-reduction-formula-in-biquaternionic-form.html">the LSZ reduction</a>. What none of them states is the <em>order</em> — which subtraction happens at which rung, and which of the discarded quantities is unphysical and which is physical but unmeasured. This article states the order and adds no derivation to the four.</p>
+<p><strong>Position.</strong> The section's last constructive article before <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits</a>. It consumes the diagrams of <a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">stage $4$</a> and produces the quantities that the limits apply to.</p>
+<h2 id="the-ladder">The Ladder</h2>
+<p><strong>Four rungs, one direction, and each rung is a stated operation.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>the operation</th>
+<th>what it removes</th>
+<th>what it leaves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>differentiate $Z[J]$ $n$ times, then set $J=0$</td>
+<td>the source</td>
+<td>the $n$-point correlator, off shell</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>multiply by the inverse propagators of the external legs</td>
+<td>the external propagators</td>
+<td>the amputated correlator</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>put the external momenta on the shell</td>
+<td>the off-shell continuation</td>
+<td>the on-shell amplitude</td>
+</tr>
+<tr>
+<td>$4$</td>
+<td>multiply by the residues</td>
+<td>the field normalisation</td>
+<td>the $S$-matrix element</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the fourth rung is directly comparable with a cross-section.</strong> Everything above it is a statement about a quantity that depends on how the field was normalised. This is the fact the ladder exists to make explicit, and it is why a reader comparing two loop amplitudes should first check that both were taken to the same rung.</p>
+<p><strong>The order is not negotiable.</strong> Amputating before differentiating removes the wrong object. Putting on the shell before amputating leaves the external propagators' poles uncancelled. Reading the residue before the shell is reached multiplies by the residue of something that is not yet on its pole. Each misordering produces a finite, plausible, wrong number.</p>
+<h2 id="what-each-rung-discards">What Each Rung Discards</h2>
+<p><strong>Rung $1$ discards the source, and the discard is legitimate because the source was a device.</strong> The generating functional is defined with a source so that differentiation is possible; no observable contains it. The correlator is therefore the first object in the ladder that is a property of the theory alone, and it is still not an observable, because it is off shell.</p>
+<p><strong>Rung $2$ discards the external propagators, and they are not physical.</strong> An external line of a diagram carries the propagator of a virtual particle, and an asymptotic state is not a virtual particle. Amputation removes the artefact. What remains is the sum of everything that can happen between the external points, and that is the object a vertex is a term of.</p>
+<p><strong>Rung $3$ discards the off-shell continuation, and this is the rung that requires a physical assumption.</strong> The correlator is defined at arbitrary external momenta; an asymptotic state has a definite one. Putting the momenta on the shell is legitimate when the asymptotic states are well separated, which is the assumption the $S$-matrix is defined under. Where the assumption fails — in a bound state, in a confining regime — the ladder does not produce an $S$-matrix, and that is a boundary of the method and not of the algebra. It is the fourth class of <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits</a>.</p>
+<p><strong>Rung $4$ discards the field normalisation, and the discard is the residue.</strong> The residue at the pole is what converts a correlator, which depends on how the field was defined, into an $S$-matrix element, which does not. This is the rung at which a change of representation in <a href="the-dictionary-field-redefinition-and-change-of-representation.html">the dictionary</a> stops mattering: two representations that differ by a field rescaling differ at rungs $1$ to $3$ and agree at rung $4$.</p>
+<h2 id="the-dependence-that-does-not-cancel">The Dependence That Does Not Cancel</h2>
+<p><strong>Three dependences are removed by the ladder, and three are not.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>dependence</th>
+<th>removed at</th>
+<th>what to do with it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the source</td>
+<td>rung $1$</td>
+<td>nothing: it was a device</td>
+</tr>
+<tr>
+<td>the external propagators</td>
+<td>rung $2$</td>
+<td>nothing: they are artefacts</td>
+</tr>
+<tr>
+<td>the field normalisation</td>
+<td>rung $4$</td>
+<td>nothing: the residue absorbs it</td>
+</tr>
+<tr>
+<td>the truncation label</td>
+<td>never</td>
+<td>quote it with the number</td>
+</tr>
+<tr>
+<td>the scheme</td>
+<td>never</td>
+<td>quote it, or convert</td>
+</tr>
+<tr>
+<td>the ordering parameter</td>
+<td>never</td>
+<td>quote the order</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The lower three are the reason a number in the corpus is quoted with its order.</strong> A result quoted without its truncation label, its scheme and its order is not a prediction; it is a number whose dependence has been hidden. The ladder removes exactly the dependences that are unphysical, and it is the community's recurring error to assume it removes more.</p>
+<p><strong>The middle of the table is the subtle one.</strong> A quantity that depends on the scheme but not on the label, or on the label but not on the scheme, is a quantity whose dependence is partly physical. <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation</a> is the article that separates the two dependencies, and this one only records that the ladder does not.</p>
+<h2 id="the-reduction-and-the-physical-assumption">The Reduction and the Physical Assumption</h2>
+<p><strong>The ladder is algebraic up to rung $3$ and physical at rung $3$.</strong> This asymmetry is worth stating plainly, because it is where the method's scope is decided.</p>
+<ul>
+<li><strong>Rungs $1$, $2$ and $4$ are algebraic.</strong> They can be performed for any theory, at any coupling, at any order. Nothing about the regime enters.</li>
+<li><strong>Rung $3$ requires asymptotic separation.</strong> It is where the method assumes that the states in and out are free at early and late times, and where a theory with no such states gives no $S$-matrix at all.</li>
+</ul>
+<p><strong>The consequence is that a correlator is more general than an $S$-matrix element.</strong> A correlator exists whenever the generating functional does; an $S$-matrix element exists only where the asymptotic assumption holds. A reader who identifies the two has restricted the method without saying so, and it is the identification that makes confinement look like a failure of the diagrams rather than a failure of rung $3$.</p>
+<p><strong>The corpus's reduction articles state the assumption where they use it.</strong> <a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula</a> states the asymptotic condition as a hypothesis, and <a href="the-s-matrix-in-biquaternionic-form.html">The $S$-Matrix</a> states what follows from it. This article only places them on the ladder.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>The algebra supplies the vertices and the propagators that the correlators are built from, and it supplies nothing about the ladder.</strong> The rungs are operations on the generating functional, and they are the same operations in every transcription. What the corpus's representation changes is the <em>form</em> of the correlator at rung $1$ — the biquaternion field's components and their pairings — and by rung $4$ that difference has been divided out by the residues. This is the sense in which the corpus's $S$-matrix elements are the standard ones, and the sense in which its intermediate quantities are not.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Every observable is obtained from the generating functional by a ladder of four reductions: differentiate, amputate, put on the shell, read the residue.</strong> Each rung is a stated operation; each discards something; and the order is not negotiable.</p>
+<p><strong>The ladder removes the source, the external propagators and the field normalisation — and only those.</strong> The truncation label, the scheme and the order survive to the end and must be quoted with any number.</p>
+<p><strong>Rung $3$ is where the ladder stops being algebraic.</strong> It assumes asymptotic separation, and where that assumption fails the method produces correlators and no $S$-matrix. That is a boundary of rung $3$ and not of the diagrams.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z[J]$</td>
+<td>the generating functional with source $J$</td>
+</tr>
+<tr>
+<td>$G^{(n)}$</td>
+<td>the $n$-point correlator, $Z$ differentiated $n$ times</td>
+</tr>
+<tr>
+<td>$\Gamma^{(n)}$</td>
+<td>the amputated correlator, the one-particle-irreducible functional</td>
+</tr>
+<tr>
+<td>$\mathcal M$</td>
+<td>the on-shell amplitude</td>
+</tr>
+<tr>
+<td>$\mathcal S$</td>
+<td>the $S$-matrix element, the amplitude times the residues</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>, the object the ladder starts from.</li>
+<li><a href="the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>, rung $1$ and the Legendre transform to $\Gamma$.</li>
+<li><a href="the-s-matrix-in-biquaternionic-form.html">The $S$-Matrix in Biquaternionic Form</a>, rung $4$ and what follows from it.</li>
+<li><a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>, rung $3$ and the asymptotic hypothesis it assumes.</li>
+<li><a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors</a>, the diagrams that the ladder reduces.</li>
+<li><a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling</a>, the boundaries that apply to the numbers the ladder produces.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

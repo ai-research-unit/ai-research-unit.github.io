@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Expansion Parameter: Order Counting and Non-Commuting Truncations — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The diagram sum is a formal series, and a series is truncated only by a number that orders it. This article states what that number is, what it…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-expansion-parameter-order-counting-and-non-commuting-truncations"><strong>The Expansion Parameter: Order Counting and Non-Commuting Truncations</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The diagram sum is a formal series, and a series is truncated only by a number that orders it. This article states what that number is, what it is not, and the one property of it that the rest of the section relies on: <strong>two truncations in different parameters generally do not commute</strong>, so the order in which they are applied is part of the calculation and must be declared.</p>
+<p><strong>Why the article is not bookkeeping.</strong> Almost every dispute about a perturbative result is a dispute about the order at which it was computed, and almost every such dispute is settled by writing down the grading. A result quoted without its grading cannot be compared with any other result, because the comparison is a comparison of two different truncations that have been given the same name. Stating the grading is what makes two calculations comparable, and the non-commutation is what makes a comparison subtle rather than mechanical.</p>
+<p><strong>The strongest objection.</strong> <em>The grading is a convention, so it cannot change the physics.</em> The grading is a convention; the truncation is not. A convention fixes the order in which terms are added; the truncation throws away everything past a point in that order; and the thrown-away part is a physical contribution. Two gradings are two different throwings-away, hence two different approximations, hence two different answers — and the difference between them is a computation of the residue, not a matter of taste. <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The limits of the expansion</a> is where the residue becomes visible as a boundary.</p>
+<p><strong>Position.</strong> After <a href="the-parameterised-action-an-ordered-family-of-theories.html">the parameterised action</a>, whose list it grades, and after <a href="the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html">the four stages</a>, whose output it orders. It is the article that converts the diagram expansion from a topology into an approximation.</p>
+<h2 id="the-grading">The Grading</h2>
+<p><strong>A grading assigns to each coupling a power of the ordering parameter, and to each diagram the sum of its vertices' powers.</strong></p>
+<p>$$
+\text{order of a diagram}=\sum_i \nu_i V_i ,
+\qquad \nu_i \text{ the power carried by } g_i .
+$$</p>
+<p><strong>Two properties matter, and each is a statement of method.</strong></p>
+<ul>
+<li><strong>The grading is homogeneous in each coupling.</strong> The order of a diagram depends only on its vertex content, not on its topology. This is what lets the truncation be decided combinatorially, before any integral is evaluated: a reader can say which diagrams survive a truncation by counting vertices.</li>
+<li><strong>The grading is a choice.</strong> Nothing forbids assigning the same power to every coupling, and nothing forbids unequal weights. Both are legitimate. Which is <em>useful</em> depends on whether the resulting parameter is small in the regime of interest, and that is an empirical question about the application, not a theorem.</li>
+</ul>
+<p><strong>The corpus's two gradings are distinct and the distinction is the section's.</strong> <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">Stage $0$</a> grades the <em>list</em> by degree in the field, for the split. This article grades the <em>series</em> by power of the coupling, for the truncation. The first decides which diagrams exist; the second decides which are kept. Confusing the two produces the classic error of calling a change of split a change of order.</p>
+<p><strong>The choice of grading is where the corpus's loop expansion and its coupling expansion part company.</strong> The loop number counts internal integrations; the coupling power counts vertices. They are different gradings of the same diagrams, and <a href="the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">the leading order</a> states the one case in which they agree.</p>
+<h2 id="several-parameters-at-once">Several Parameters at Once</h2>
+<p><strong>In practice the grading is a vector, and the series is a multiple expansion.</strong></p>
+<p>$$
+\varepsilon=\{\varepsilon_1,\varepsilon_2,\dots\},\qquad p=\sum_a p_a\,\varepsilon_a .
+$$</p>
+<p><strong>Three consequences, each a statement of method.</strong></p>
+<ol>
+<li><strong>A multi-parameter truncation is a region, not a threshold.</strong> "The leading order" is not a number; it is a corner of an order lattice. A reader who says "leading order" without saying which corner has said nothing.</li>
+<li><strong>The parameters are independent as bookkeeping but not as physics.</strong> If a coupling is small because a second parameter is small, the two orders are not independent, and the grading must say which dominates. Otherwise a term can be counted twice — once as a coupling order and once as a parameter order.</li>
+<li><strong>The error is the first term outside the region.</strong> With one parameter that is a single number. With several it is a boundary, and its size must be estimated <em>on that boundary</em>, not at the origin.</li>
+</ol>
+<p><strong>The corpus's own counting is of the second kind.</strong> <a href="power-counting-on-a-frame.html">Power Counting on a Frame</a> uses a frame in which a parameter multiplies the monomials, so the order of a term is its degree in that parameter; <a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List</a> uses the dimension bound. The two gradings coexist, and where they disagree the disagreement is a statement about which parameter is smaller in the regime, not about which counting is right.</p>
+<h2 id="non-commuting-truncations">Non-Commuting Truncations</h2>
+<p><strong>This is the article's central statement, and it is easy to state and easy to overlook.</strong></p>
+<blockquote>
+<p>Truncating in one parameter and then in another generally gives a different result from truncating in the other order.</p>
+</blockquote>
+<p><strong>Formally, if $T_1$ and $T_2$ are the two truncations,</strong></p>
+<p>$$
+T_1^{(n)}\,T_2^{(m)}\neq T_2^{(m)}\,T_1^{(n)} .
+$$</p>
+<p><strong>The reason is not exotic.</strong> Each truncation discards terms. A term that lies inside the retained region for one order of operations may lie outside it for the other, and the discarded remainder propagates differently through the subsequent stages. The simplest instance is a residue of order $\varepsilon_1^{\,n+1}\varepsilon_2^{\,0}$ that one ordering retains and the other drops.</p>
+<p><strong>Three consequences follow, and each changes how a calculation is written.</strong></p>
+<ul>
+<li><strong>The order of operations is part of the method.</strong> It must be declared, exactly as the grading is declared. An undeclared order of truncations is not a calculation; it is a number whose provenance is unknown.</li>
+<li><strong>The residue is content, not error.</strong> Where the two orderings differ, the difference is a real contribution that one ordering keeps. That residue is frequently the most interesting object in the calculation, and it is invisible whenever the ordering is left implicit. This is why the section treats the non-commutation as a subject rather than as a nuisance.</li>
+<li><strong>Commutativity is a special case, and it must be proved.</strong> For a pair of parameters the two orderings may agree to the order of interest. That agreement is a result; it is not a default, and a reader who assumes it has assumed the answer.</li>
+</ul>
+<p><strong>The corpus has one worked instance of the residue, and it is the reason the corpus's reading order is stated.</strong> The action quantum enters once, in the promotion stated in <a href="the-lagrangian-and-the-second-quantisation.html">The Lagrangian and the Second Quantisation</a>, and nowhere earlier. That rule is a statement about the order of two truncations: the truncation that defines the classical bracket must be taken before the truncation that counts loops, and reversing them is not the same calculation. <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion</a> is where the reversal becomes visible as the asymptotic boundary.</p>
+<h2 id="the-composition-law">The Composition Law</h2>
+<p><strong>Two truncations composed give a truncation of the composed order, plus a remainder.</strong></p>
+<p>$$
+T_1^{(n)}\,T_2^{(m)}=\sum_{p_1\le n,\ p_2\le m}\text{terms}\;+\;\text{remainder},
+\qquad
+\text{remainder}=O(\varepsilon_1^{n+1})+O(\varepsilon_2^{m+1})+\text{cross terms}.
+$$</p>
+<p><strong>Composing three or more multiplies the number of orderings that must be considered, and the number of possible residues.</strong> This is why a systematic study is organised as a lattice of orderings rather than as a list of cases: the cases are the corners, and the corners are fewer than the paths between them. A study that enumerates paths instead of corners will report the same corner many times and call the repetitions independent checks.</p>
+<p><strong>The corpus's structure follows this law.</strong> The sections are ordered so that each truncation is taken once, in one place, and the articles that follow rely on the order rather than re-taking it. That is why the reading order of the constants is stated as a rule and not as a preference.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>The algebra supplies no grading.</strong> The powers $\nu_i$ are properties of the density and of the regime, not of the biquaternion structure. What the algebra supplies is the <em>degrees</em> that <a href="the-parameterised-action-an-ordered-family-of-theories.html">the parameterised action</a> sorts by, and the pairing that makes the diagrams computable once the order is fixed. A reader who expects the algebra to fix the ordering parameter is asking it to fix a physical regime, which is not a mathematical question.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>A series is truncated only by an ordering parameter, and the grading is a choice that must be declared.</strong> The order of a diagram is fixed by its vertex content, which is what makes the truncation combinatorial, and the choice of grading is decided by whether the resulting parameter is small.</p>
+<p><strong>With several parameters the truncation is a region, not a threshold, and the error is estimated on the boundary.</strong> The parameters are independent as bookkeeping and not as physics, and the corpus's two gradings — by frame parameter and by dimension — coexist with a stated relation.</p>
+<p><strong>Truncations in different parameters do not commute, and the residue is content.</strong> The order of operations is part of the method; commutativity is a special case to be proved and not a default; and a study is organised as a lattice of orderings, not as a list of paths.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\varepsilon$</td>
+<td>the ordering parameter, or the vector of them</td>
+</tr>
+<tr>
+<td>$\nu_i$</td>
+<td>the power of $\varepsilon$ carried by the coupling $g_i$</td>
+</tr>
+<tr>
+<td>$V_i$</td>
+<td>the number of vertices of type $i$</td>
+</tr>
+<tr>
+<td>$T^{(n)}$</td>
+<td>the truncation operator that keeps orders up to $n$</td>
+</tr>
+<tr>
+<td>$p$</td>
+<td>the total order of a diagram, $\sum_i\nu_iV_i$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-parameterised-action-an-ordered-family-of-theories.html">The Parameterised Action: An Ordered Family of Theories</a>, the list that this article grades.</li>
+<li><a href="the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">The Leading Order: Tree Diagrams as the Stationary Phase of the Path Integral</a>, the one case in which the loop grading and the coupling grading agree.</li>
+<li><a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling</a>, where a chosen grading stops being an approximation.</li>
+<li><a href="power-counting-on-a-frame.html">Power Counting on a Frame</a>, the corpus's frame-parameter grading.</li>
+<li><a href="the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html">The Closure of the Term List: Dimension, Locality and the Count That Ends the Search</a>, the corpus's dimension grading.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

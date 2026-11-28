@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Parameterised Action: An Ordered Family of Theories — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The density that stage supplies is not one object but a member of a family, labelled by a truncation scale and ordered by the degrees of its…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-parameterised-action-an-ordered-family-of-theories"><strong>The Parameterised Action: An Ordered Family of Theories</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The density that <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">stage $0$</a> supplies is not one object but a member of a family, labelled by a truncation scale and ordered by the degrees of its operators. Two things follow at once, and the section depends on both. The method's input is always <em>a family read at a stated member</em>, never <em>the</em> density. And the family has a direction: raising the label restores operators, lowering it discards them, and the discarded part carries an error that must be quoted.</p>
+<p><strong>Why the family is not a pedantry.</strong> A reader who takes the density as a single object will read every later stage as exact, and will have no place to put the error bar that <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits of the expansion</a> insist on. A reader who takes it as a family sees where the error bar comes from: it is the size of the first member not read. The family is what makes a truncated list an <em>approximation</em> rather than an arbitrary subset, and the difference is the difference between a calculation and an assertion.</p>
+<p><strong>The strongest objection.</strong> <em>If the density is a family, the theory is not defined.</em> The objection mistakes definiteness for completeness. The theory at a stated member is perfectly definite: finitely many operators, finitely many coefficients, finitely many diagrams at each order. What is indefinite is only the claim that this member is the last one — and that claim is not made. The family is how the method says <em>this is the theory I am using, and here is what I am not using</em>.</p>
+<p><strong>Position.</strong> The first of the articles that stand outside the four stages. It governs <em>which</em> action <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">stage $0$</a> is handed; <a href="the-expansion-parameter-order-counting-and-non-commuting-truncations.html">the expansion parameter</a> governs how the list is graded once it is handed over.</p>
+<h2 id="the-family-and-its-label">The Family and Its Label</h2>
+<p><strong>The density at a label $\Lambda$ is the list of operators whose degree does not exceed the label's bound.</strong></p>
+<p>$$
+\mathcal L_\Lambda=\sum_{d_i\le d_{\max}(\Lambda)} g_i(\Lambda)\,\mathcal O_i[\Phi] ,
+\qquad d_1\le d_2\le\cdots
+$$</p>
+<p><strong>The label is part of the definition, not a cut imposed from outside.</strong> "The density" of an application is always "the family at this label, truncated at this degree". Symmetry and the field content fix which operators <em>may</em> appear; they do not fix how many, because the admitted set is infinite once derivatives are allowed. The label is what turns an infinite admissible set into a finite list, and it is the reason the list can be written at all.</p>
+<p><strong>The coefficients depend on the label, and the dependence is not optional.</strong> A coefficient at one label absorbs the effect of the operators dropped at that label; a coefficient at another label absorbs a different set. The two are not the same number, and a coefficient quoted without its label is an incomplete statement. <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation</a> is the article that performs the translation between labels; this one states that the translation is needed.</p>
+<h2 id="what-the-same-theory-at-the-next-order-means">What "the Same Theory at the Next Order" Means</h2>
+<p><strong>The family is ordered, so the next member can be named, and the naming is by agreement on observables.</strong></p>
+<blockquote>
+<p>Two members $\mathcal L_\Lambda$ and $\mathcal L_{\Lambda'}$, with $\Lambda'$ the lower label, agree to order $k$ if every observable computed from either differs by terms of order $k+1$ in the ordering parameter.</p>
+</blockquote>
+<p><strong>Three consequences, and each is used in a later article.</strong></p>
+<ul>
+<li><strong>Agreement is a statement about observables, not about densities.</strong> Two densities that differ by an operator vanishing on the equations of motion agree at every order without being equal. This is why the family is an equivalence class of densities and not a set of them, and it is the content of <a href="the-dictionary-field-redefinition-and-change-of-representation.html">the dictionary</a>.</li>
+<li><strong>Agreement is order by order.</strong> Advancing a member is not "adding a term"; it is "restoring a term whose effect was previously estimated as small". The estimate and the term are the same information read twice, and a reader who adds terms without updating the estimate has lost the error bar.</li>
+<li><strong>Agreement is transitive only within the claimed order.</strong> Two members that both agree with a third to order $k$ need not agree with each other to order $k+1$. The relation is an approximation, and approximations do not compose for free.</li>
+</ul>
+<h2 id="the-three-regimes-of-an-operator">The Three Regimes of an Operator</h2>
+<p><strong>The degree of an operator, read against the dimension of the base space, sorts the list into three regimes, and the sort is what gives the family its direction.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>regime</th>
+<th>what it does as the label is lowered</th>
+<th>can it be cut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>below the marginal degree</td>
+<td>grows</td>
+<td>no: relevant operators cannot be dropped at any order</td>
+</tr>
+<tr>
+<td>at the marginal degree</td>
+<td>stationary</td>
+<td>no: marginal operators are unsuppressed and their coefficients must be measured</td>
+</tr>
+<tr>
+<td>above the marginal degree</td>
+<td>shrinks</td>
+<td>yes: irrelevant operators are cut with a controlled error</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The sort is a sort of the list and not of the physics.</strong> An irrelevant operator is not "unphysical"; it is an operator whose effect at the label in use is smaller than the error being quoted. Raising the label makes it relevant and it must be restored. This is why the family is a family and not a hierarchy of truths.</p>
+<p><strong>The corpus's own truncations sit at the marginal degree, and the reason is stated in <a href="ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky</a>.</strong> A rung stops at two derivatives because the third derivative's operator is irrelevant at the rung's label and would be restored only at a label the corpus does not use. <a href="power-counting-on-a-frame.html">Power Counting on a Frame</a> states the degrees that make the sort computable.</p>
+<h2 id="choosing-the-label">Choosing the Label</h2>
+<p><strong>Selecting a member is a two-sided decision, and both sides are constraints.</strong></p>
+<ul>
+<li><strong>From below.</strong> The label must be high enough that the cut operators are irrelevant <em>for the observables of interest</em> — not for all observables, and not in general. An operator cut for being small at one kinematics may be large at another.</li>
+<li><strong>From above.</strong> The label must be low enough that the retained marginal coefficients are measurable, or at least that their number does not exceed what the application can supply.</li>
+</ul>
+<p><strong>The interval between the two is the domain in which the method is useful.</strong> When the interval is empty — when the label needed for accuracy retains more coefficients than can be measured — the application has no valid member at that location, and the remedy is not a better calculation. It is a different member, or a different grading, or a different method. <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The limits of the expansion</a> names the third response.</p>
+<p><strong>The corpus states the same squeeze in its own terms at the vacuum restructuring.</strong> <a href="matching-at-m-c.html">Matching at $M_C$</a> fixes four quantities at one label; the count of conditions there is the "from above" constraint, and the requirement that the matching reproduce the low-energy numbers is the "from below" constraint.</p>
+<h2 id="the-two-traps">The Two Traps</h2>
+<p><strong>The first trap is a truncation that is not closed under lowering the degree.</strong> If an operator of degree $d$ is retained, every operator of lower degree permitted by the same symmetry must be retained. A list that keeps a high-degree operator and drops a lower-degree one of the same symmetry class is not a member of the family, and its error estimate is meaningless. The check is a sort of the retained list, and it is trivial to perform.</p>
+<p><strong>The second trap is a coefficient attributed to the wrong label.</strong> A number measured at one label, inserted into a density written at another, is wrong by the running — and the error is finite, not small. The count of coefficients and the count of measurements must be made at the <em>same</em> label; <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">the operation</a> is what moves between them.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>The algebra supplies the grading of the operators, and it does not supply the label.</strong> The degrees are read from the biquaternion structure: the corpus's carriers have dimensions $1$, $2$ and $3$, so the monomials built from them have degrees the algebra fixes. What the algebra does not supply is where the list stops — that is a choice of the application, made against a measurement, and it is the one thing in this article that no derivation produces.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The density is a family ordered by the degrees of its operators, and the method reads it at a stated member.</strong> The label is part of the definition; the coefficients depend on the label; and "the same theory at the next order" is an agreement on observables, order by order.</p>
+<p><strong>The three regimes of an operator give the family its direction.</strong> Relevant operators cannot be cut, marginal ones must be measured, irrelevant ones are cut with a controlled error. The label is chosen by a two-sided squeeze, and the interval between the two sides is the method's domain of usefulness.</p>
+<p><strong>Two traps: a list not closed under lowering the degree, and a coefficient attributed to the wrong label.</strong> Both are checkable before any integral is evaluated.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$</td>
+<td>the truncation label: the scale at which the family is read</td>
+</tr>
+<tr>
+<td>$d_i$</td>
+<td>the degree of the operator $\mathcal O_i$</td>
+</tr>
+<tr>
+<td>$d_{\max}(\Lambda)$</td>
+<td>the highest degree retained at the label $\Lambda$</td>
+</tr>
+<tr>
+<td>$g_i(\Lambda)$</td>
+<td>the coefficient of $\mathcal O_i$ at the label $\Lambda$</td>
+</tr>
+<tr>
+<td>$\mathcal O_i[\Phi]$</td>
+<td>an operator built from the fields and their derivatives</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation</a>, the stage that consumes this family.</li>
+<li><a href="the-expansion-parameter-order-counting-and-non-commuting-truncations.html">The Expansion Parameter: Order Counting and Non-Commuting Truncations</a>, the grading of the list once the member is chosen.</li>
+<li><a href="renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation: The Arbitrary Scale</a>, the translation of coefficients between labels.</li>
+<li><a href="power-counting-on-a-frame.html">Power Counting on a Frame</a>, the degrees that make the sort computable.</li>
+<li><a href="ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky, or Why No Rung Goes Past Two Derivatives</a>, the corpus's rungs as truncations.</li>
+<li><a href="matching-at-m-c.html">Matching at $M_C$: Four Quantities Cross, and Every Mass Comes from the Vacuum That Made It</a>, the two-sided squeeze worked at the corpus's own threshold.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

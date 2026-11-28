@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renormalisation as an Operation: The Arbitrary Scale — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Renormalisation is not a repair of a breakdown; it is an operation the method performs whether or not anything diverges. A truncated density…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="renormalisation-as-an-operation-the-arbitrary-scale"><strong>Renormalisation as an Operation: The Arbitrary Scale</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Renormalisation is not a repair of a breakdown; it is an operation the method performs whether or not anything diverges. A truncated density carries a scale $\Lambda$ that is a choice, so its coefficients are functions of that scale and not numbers. The operation consists of three steps — define the coefficients at a scale, fix them on a set of conditions, and evolve them — and its content is that the third step has no freedom: the evolution is determined by the requirement that observables not depend on the choice made in the first two.</p>
+<p><strong>Why it is separated from the limits of the expansion.</strong> The method's genuine boundaries are stated <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">in the next article</a>: a kernel that cannot be inverted, a series that does not converge, and a coupling that is of order one. Renormalisation is none of these. Every one of the three boundaries is a place where the method stops applying <em>even when performed perfectly</em>; the scale is a place where the method applies and must be performed. Filing the two together makes the method look fragile in a way it is not, and it hides the one operation that a reader must be able to carry out before the boundaries can even be stated.</p>
+<p><strong>The strongest objection.</strong> <em>If the coefficients depend on an arbitrary scale, nothing is predicted.</em> The objection is the reason the operation exists. The coefficients depend on the scale; the observables do not; and the statement that the observables do not is a differential equation for the coefficients. That equation is what converts a family of arbitrary numbers into a prediction: the value at one scale fixes the value at every other.</p>
+<p><strong>Position.</strong> After <a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">the diagram expansion</a> and before <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits of the expansion</a>. It is the operation that the third of those limits presupposes.</p>
+<h2 id="the-scale-enters-with-the-truncation">The Scale Enters with the Truncation</h2>
+<p><strong>A truncated density is a family, and the label of the family is a scale.</strong> The corpus's density at a truncation is</p>
+<p>$$
+\mathcal L_\Lambda=\sum_{d_i\le d_{\max}(\Lambda)} g_i(\Lambda)\,\mathcal O_i[\Phi] ,
+$$</p>
+<p>and the coefficients $g_i(\Lambda)$ are not the coefficients of anything else. Each one absorbs the effect of the operators that were discarded at that truncation, so a coefficient quoted without its scale is an incomplete statement in the same way that a length quoted without units is incomplete.</p>
+<p><strong>This is a consequence of truncating, not of diverging.</strong> Two readers who truncate the same exact density at two different degrees write two different lists of coefficients, both correct, both describing the same physics. Nothing has diverged; the difference is that each has folded a different set of operators into the numbers he keeps. The scale is the price of keeping a finite list, and the price is paid whether or not an integral is infinite.</p>
+<p><strong>The corpus's own truncations are of exactly this kind.</strong> <a href="ostrogradsky-or-why-no-rung-goes-past-two-derivatives.html">Ostrogradsky, or Why No Rung Goes Past Two Derivatives</a> states that the corpus's rungs stop at two derivatives; that statement is a truncation, and the coefficients of the rung are understood at the rung's scale. <a href="power-counting-on-a-frame.html">Power Counting on a Frame</a> states the degrees that the truncation orders.</p>
+<h2 id="the-operation-in-three-steps">The Operation, in Three Steps</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>step</th>
+<th>what is done</th>
+<th>what is free</th>
+<th>what is not free</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>define</strong></td>
+<td>express the density in parameters at a chosen scale</td>
+<td>the scale, and the scheme: which conditions are imposed</td>
+<td>that a choice must be made</td>
+</tr>
+<tr>
+<td><strong>fix</strong></td>
+<td>determine the parameters from chosen conditions</td>
+<td>which observables, at which kinematics</td>
+<td>that enough conditions are needed to fix every coefficient</td>
+</tr>
+<tr>
+<td><strong>evolve</strong></td>
+<td>compute the change of the parameters with the scale</td>
+<td>nothing</td>
+<td>the evolution, which is determined</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The freedom in the first two steps is real and it is not a defect.</strong> Two schemes give different intermediate numbers and the same observables. A reader who compares two computations done in different schemes and reports a discrepancy has compared the schemes and not the physics.</p>
+<p><strong>The freedom in the third step is zero, and that is the content of the operation.</strong> Once the density is fixed and the conditions are chosen, the way the coefficients move with the scale is computed, not selected.</p>
+<p><strong>The count of conditions is the craft.</strong> Matching the number of coefficients to the number of conditions is what makes the reduced density either underdetermined or overconstrained; a mismatch is not a small error but a statement that the operation was not defined. This is the same count that <a href="integrating-out-and-matching-from-one-action-to-another.html">Integrating Out and Matching</a> performs for the reduction between rungs.</p>
+<h2 id="what-must-cancel">What Must Cancel</h2>
+<p><strong>The statement that makes the operation well defined is that no observable depends on the scale.</strong> Since an observable depends on the scale both explicitly and through the coefficients,</p>
+<p>$$
+\Lambda\frac{\mathrm d}{\mathrm d\Lambda}\,\mathcal O=0
+\quad\Longrightarrow\quad
+\Lambda\frac{\mathrm d g_i}{\mathrm d\Lambda}=\beta_i(g) .
+$$</p>
+<p><strong>The $\beta$ functions are computed, not chosen.</strong> They follow from the cancellation, once the density is fixed and the conditions are chosen. <a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a> states the shell integration that produces them and the fixed points of the resulting flow.</p>
+<p><strong>The cancellation is exact only where the truncation is exact.</strong> In a truncated density the cancellation holds to the truncation's order, and the remainder is of the size of the discarded operators. The running of a truncated density is therefore itself a truncated statement, and it must be reported with the same error as everything else — the size of the first omitted term. A reader who quotes a $\beta$ function to more orders than his truncation supports has quoted an artefact.</p>
+<p><strong>The cancellation is the consistency condition that ties the three operations together.</strong> A family truncated at $\Lambda$, matched at $\Lambda$ and evolved away from it must return the same observables as a family truncated and matched at the new scale. Whether it does is a nontrivial check, and it fails exactly when the truncation is not closed under the evolution.</p>
+<h2 id="why-it-is-not-a-failure">Why It Is Not a Failure</h2>
+<p><strong>A failure is a place where the method stops applying even when performed perfectly. The scale is not such a place.</strong></p>
+<ul>
+<li>If the cancellation is implemented correctly, the result is finite and scale-independent and the method proceeds. There is no residual limitation: the operation is complete.</li>
+<li>If it is implemented incorrectly, the result is wrong. That is an arithmetic error, and an arithmetic error is not a boundary of the method.</li>
+</ul>
+<p><strong>The only genuine limitation nearby belongs to the truncation, not to the operation.</strong> The $\beta$ functions of a truncated density are themselves truncated, and that limitation is a property of the finite list. It is stated, with the other three, in <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits of the expansion</a>.</p>
+<p><strong>This distinction is worth stating plainly because the opposite reading is common.</strong> Treating the scale as a breakdown leads to the belief that the method is valid only when the answers are finite, which is false: the operation is required precisely because the coefficient is a function of the scale, and it is required in every finite theory as much as in any other.</p>
+<h2 id="the-two-directions">The Two Directions</h2>
+<p><strong>The operation is used twice, and the two uses are the same operation applied in opposite directions.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>use</th>
+<th>the question</th>
+<th>what the coefficients absorb</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>raising the scale</td>
+<td>what happens as the truncation is lifted</td>
+<td>the ignored operators of higher degree, which are restored</td>
+</tr>
+<tr>
+<td>lowering the scale</td>
+<td>what happens as the regime is approached</td>
+<td>the operators that become relevant, which are integrated out</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both are consistent with the ordering of the truncation.</strong> Raising $\Lambda$ restores operators; lowering it discards the irrelevant ones and shifts the coefficients to compensate. The only difference between the two uses is which end of the family is being described, and confusing them produces the standard error of treating the scale as if it had a single direction.</p>
+<p><strong>The corpus reads the two directions differently in one respect, and the difference is a strength.</strong> The upward direction is where the list grows and the corpus's rungs are compared; the downward direction is where <a href="integrating-out-and-matching-from-one-action-to-another.html">the reduction</a> is performed and the corpus's thresholds appear. Keeping the directions apart is what lets the same operation serve both.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>The algebra supplies the pairing that makes the cutoff sector-blind.</strong> The corpus's position, stated in <a href="the-renormalization-group-in-biquaternionic-form.html">the renormalization group article</a> and repeated here, is that the flow, the coefficients and the fixed points are transcribed, and that the algebra supplies the central scalar on which the shell integration is performed. The operation itself is a property of the integral, and no transcription avoids it.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Renormalisation is an operation in three steps — define, fix, evolve — and its content is that the evolution is determined.</strong> The coefficients of a truncated density are functions of the scale because each absorbs the discarded operators; the observables are not; and the requirement that they are not is the differential equation the coefficients obey.</p>
+<p><strong>It is not a failure.</strong> The three genuine boundaries are the singular kernel, the asymptotic series and the strong coupling; the scale is a place where the method applies and must be performed. The one limitation adjacent to it — that the $\beta$ functions of a truncated density are themselves truncated — belongs to the truncation and is stated with the others.</p>
+<p><strong>The two directions of the operation are the two ends of the family.</strong> Raising the scale restores operators; lowering it discards the irrelevant ones and shifts the coefficients. The same operation serves both, and the shift is what keeps the observables fixed.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Lambda$</td>
+<td>the truncation scale, and in loop integrals a momentum cutoff</td>
+</tr>
+<tr>
+<td>$g_i(\Lambda)$</td>
+<td>the coefficient of $\mathcal O_i$ at the scale $\Lambda$</td>
+</tr>
+<tr>
+<td>$d_i$</td>
+<td>the degree of the operator $\mathcal O_i$</td>
+</tr>
+<tr>
+<td>$\beta_i$</td>
+<td>the flow of $g_i$, $\Lambda\,\mathrm d g_i/\mathrm d\Lambda$</td>
+</tr>
+<tr>
+<td>$\mathcal O$</td>
+<td>an observable, independent of the scale</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling</a>, the three boundaries that this operation is not.</li>
+<li><a href="integrating-out-and-matching-from-one-action-to-another.html">Integrating Out and Matching: From One Action to Another</a>, the two operations that pair with this one, and the count of conditions they share.</li>
+<li><a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>, the shell integration, the flow and the fixed points.</li>
+<li><a href="the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html">The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop</a>, the downward direction worked at the corpus's own threshold.</li>
+<li><a href="power-counting-on-a-frame.html">Power Counting on a Frame</a>, the degrees by which the family is ordered.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
