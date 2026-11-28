@@ -12,7 +12,7 @@ $$
 \mathcal{L}_{\mathrm{Yuk}}=y_{\alpha\beta}\,\bar\xi^{\alpha}Ξ\,\xi^{\beta}+\text{h.c.}\;}
 $$
 
-**One covariant derivative with fifteen matrices of each kind, and one Yukawa matrix on the copy index.** The kinetic term is fixed by the representation and carries no free number; the Yukawa term is one $2\times2$ complex matrix and carries four real numbers.
+**One covariant derivative with fifteen matrices of each kind, and one Yukawa matrix on the copy index.** The kinetic term is fixed by the representation and carries no free number; the Yukawa term is one $2\times2$ complex matrix and carries two real numbers.
 
 **What this article does.** It writes both pieces, counts the states and the vertices, derives why the Yukawa operator needs the matrix index, extracts the mass matrix after the condensate, and computes the one ratio the sector predicts — the ratio that falsifies it.
 
@@ -70,13 +70,13 @@ $$
 \bar{\mathbf4}\otimes\bigl(\mathbf{15}\oplus\mathbf1\bigr)\otimes\mathbf4\supset\mathbf1 .
 $$
 
-**The product contains exactly one singlet, and it comes from the $\mathbf1$ in $Ξ$.** The $\mathbf{15}$ part contributes nothing: $\bar{\mathbf4}\otimes\mathbf{15}\otimes\mathbf4$ has no invariant with one $\bar\xi$ and one $\xi$. **So the operator is unique and the Yukawa matrix is $2\times2$, not a matrix per block.**
+**The singlet exists for the whole matrix, and what is unique is the pairing.** $\bar{\mathbf4}\otimes\mathbf4=\mathbf{15}\oplus\mathbf1$ is exactly the space $Ξ$ occupies, so $\bar\xi^{\alpha}\Xi\xi^{\beta}$ is invariant for all sixteen components — the trace and the fifteen traceless ones alike, the traceless ones being the part the condensate uses, since $\operatorname{tr}D=0$ and the mass matrix below is $y\,v_C D$. **One $\bar\xi$ and one $\xi$ admit one contraction**, so the operator carries no index beyond the copy pair, and the Yukawa matrix is $2\times2$ rather than a matrix per block. **What the group does not do is tie the two pieces together**: written in terms of $\Xi_{0}=\Xi-\tfrac14(\operatorname{tr}\Xi)\mathbb 1$, the term $y\,\bar\xi\Xi\xi$ is the pair $y\,\bar\xi\Xi_{0}\xi+\tfrac14y(\operatorname{tr}\Xi)\bar\xi\xi$, and an independent coefficient on the second piece is invariant. **This article writes one, which is the choice $y'=\tfrac14y$**, and [the census above $M_C$](the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html) counts the two structures separately so that the choice is visible.
 
 **The quartet would have given nothing at all.** $\bar{\mathbf4}\otimes\mathbf4\otimes\mathbf4$ has no singlet because $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$, and neither summand is $\bar{\mathbf4}$. **A scalar in the fundamental has no Yukawa coupling to these sixteen fermions**, so the operator's existence is an argument for the matrix index and not a convention about it.
 
 **The copy index is what the matrix $y$ acts on.** $\alpha,\beta$ run over the two values, and the sector is blind to them: no vertex in the kinetic term carries $\alpha$. **So the Yukawa matrix is the only place where the two copies mix**, and its diagonalisation is a change of basis that no connection interaction can see.
 
-**Four real parameters, and their count.** A $2\times2$ complex matrix has eight real entries, of which three phases are removed by rephasing the fermions and one by an overall phase that is unobservable; that leaves four. **The corpus's Yukawa article states the same count from the other side**, and the four are the sector's whole content.
+**Two real parameters, and their count.** A $2\times2$ complex matrix has eight real entries. **The copy index carries no gauge quantum number** — every generator acts as $X\otimes\mathbb 1_2$ — so a global $\mathrm{U}(2)$ acts on $\xi^{\alpha}$ and an independent one on $\bar\xi^{\alpha}$, and the redefinition group is $\mathrm{U}(2)\times\mathrm{U}(2)$ with eight real parameters. **A generic $y$ is fixed by two of those eight** (the diagonal phases that leave it alone), so six are removed and **$8-6=2$ survive: the two singular values.** That is the singular-value decomposition, and it exists for every $2\times2$ matrix. **The count must not be made with phases alone**: rephasing removes four and stopping there leaves four, which double-counts, because the copy basis itself is unobservable. [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html) tabulates the same derivation step by step.
 
 ## The Mass Matrix After the Condensate
 
@@ -155,7 +155,7 @@ $$
 | --- | --- |
 | $\xi_{f}$, $\bar\xi_{f}$ | the sixteen Weyl fields, $f=1,\dots,16$, of $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ |
 | $t_{a}$ | the fifteen generators in the $\mathbf4$; $-t_{a}^{T}$ in the $\bar{\mathbf4}$ |
-| $y_{\alpha\beta}$ | the $2\times2$ Yukawa matrix on the copy index, four real parameters |
+| $y_{\alpha\beta}$ | the $2\times2$ Yukawa matrix on the copy index, two physical parameters |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$, the condensate's shape |
 | $v_{C}$ | the condensate's magnitude, $6.82\times10^{4}\ \mathrm{GeV}$ |
 | $M_X$ | $\sqrt{16g_4^{2}v_{C}^{2}}=2.33\times10^{5}\ \mathrm{GeV}$ |

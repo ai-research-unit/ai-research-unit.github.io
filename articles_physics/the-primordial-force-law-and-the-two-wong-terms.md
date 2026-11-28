@@ -92,7 +92,7 @@ $$
 \partial_{\jmath}M_{\imath}=U_{\mathrm{frm}}^{\dagger}\,\partial_{\jmath}\bigl(D_{\imath}\Xi\bigr)U_{\mathrm{frm}}-\Gamma_{\jmath}M_{\imath}+M_{\imath}\Gamma_{\jmath},
 $$
 
-and $\partial_{\jmath}D_{\imath}\Xi=D_{\jmath}D_{\imath}\Xi+ig_{4}[A_{\jmath},D_{\imath}\Xi]$. Conjugating that commutator gives $ig_{4}[B_{\jmath},M_{\imath}]$, so the last three pieces are $ig_{4}[B_{\jmath},M_{\imath}]-[\Gamma_{\jmath},M_{\imath}]=-[\Omega_{\jmath},M_{\imath}]$. $\square$
+and $\partial_{\jmath}D_{\imath}\Xi=D_{\jmath}D_{\imath}\Xi+ig_{4}[A_{\jmath},D_{\imath}\Xi]$. Conjugating that commutator gives $ig_{4}[B_{\jmath},M_{\imath}]$, so the last three pieces are $ig_{4}[B_{\jmath},M_{\imath}]-[\Gamma_{\jmath},M_{\imath}]=-[\Omega_{\jmath},M_{\imath}]$.
 
 **The lemma says what a derivative of a frame component costs.** The rate of the momentum, measured in the frame, is the field's own second covariant derivative plus the frame's rotation acting on the momentum. **The second term is the price of differentiating in a basis that moves**, and at the abelian rungs the analogous term is the connection acting on the charge.
 
