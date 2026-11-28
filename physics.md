@@ -1251,16 +1251,6 @@
 <a href="articles_physics/wave-particle-duality-and-the-count-of-degrees-of-freedom.html">Wave–Particle Duality and the Count of Degrees of Freedom: The Symbol's Rank On and Off the Cone</a>
 <!-- the count of polarisations as one integer and one rank: the symbol of the gradient as left multiplication on the vector part, read as $-k_{t}^{\prime}$ times the identity plus $k_\Phi$ times left multiplication by the Hermitian element $i\vec u_\Phi$, so that the symbol is the helicity multiplication shifted by the energy wave number; the photon article's circular basis and its $\mp i$ eigenvalue relation quoted as the spectrum that the shift acts on; the eigenvalues on the circular pair, $-(k_{t}^{\prime}\mp k_{\Phi})$, whose product is minus the quaternion norm, so the mass shell is the vanishing of one eigenvalue; the rank three off the light cone with empty kernel and one-dimensional cokernel, and the rank two on it with the kernel spanned by one circular polarisation, over one hundred sampled frequency points each way; the polarisation the symbol loses on the cone as circular and not longitudinal, since the longitudinal direction leaves the vector part at every frequency and its scalar image is the constraint; the conjugate symbol annihilating the opposite circular direction, so the two kernels span the transverse plane; the eigenvectors null, $\varepsilon^2=0$; the three counts of the corpus as three readings of one rank, Proca three off the cone, Maxwell two on it, the graviton two by a projector on a different carrier; and the duality read as one integer twice, the dimension of an image on the wave side and the number of states on the particle side; the limits, no local invariance, no Higgs mechanism, no value of a mass, no statement about a state. -->
 
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/spin-one-fluid-equations-from-the-proca-polar-action.html">Spin-One Fluid Equations from the Proca Polar Action: A Divergence, a Projection and a Stiff Equation of State</a>
-<!-- the Proca polar action varied in its four parameters; the fluid's two equations as two operations on the four variations — continuity as the divergence across them, which is the Lorenz condition and is continuity because the field is the current, and the Euler equation as the transverse part of the frame's transport, with a density-gradient force and no other; the scale's equation as the fourth and not a fluid equation; the stiff equation of state $\epsilon=p=\tfrac12m^{2}\varrho^{2}$ and the sound speed $c$ read off the mass term's algebraicity, and with it the absence of a baroclinic torque; the Hessian's rank three, the primary constraint and its secondary Lorenz partner; the four-parameter count as exactly what a barotropic fluid needs -->
-
-<a href="articles_physics/the-spin-one-fluid.html">The Spin-One Fluid</a>
-<!-- the Proca polar word read as fluid data: the two branches and the exact 4-for-4 count, the timelike branch alone being a flow, the potential as the current $A_\mu=ru_\mu$ with $r=\sqrt{-A^{2}}$ so that the density is the field's own norm and the sign $\varepsilon$ is a branch label and not a derived function, unlike the spinor case; the Lorenz condition as the continuity equation outright and the polar article's denial read as a denial of the pair and not of the single equation; the Euler equation $a_\mu=-\nabla_\mu\ln r-E_\mu/r$ checked to zero in four components, with the gradient force the pressure force of a stiff fluid $p=\epsilon=\tfrac12m^{2}r^{2}$ read off $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and confirmed by projecting the mass term of the stress, and the field strength the only non-gradient force in any of the three field fluids; geodesic iff $E_\mu=-\nabla_\mu r$ and irrotational flows geodesic by the two-line $u=\partial\phi$ argument; the decomposition $F=\mathrm{d}r\wedge u+r\omega$ checked to zero in sixteen slots, so that the vorticity is what is left of the field strength when the density gradient is subtracted, the baroclinic torque absent because the pressure is barotropic and the generator being $E/r$ instead; $\omega\wedge\omega=0$ for every unit timelike flow against $\det F=0.3176$ generically, so the vorticity can never reach a rank the field strength reaches; the two polar equations read as a density equation with the rapidity gradient as its source and a conservation law $\partial_\mu(r^{2}\partial^\mu\theta)=0$ whose current is not the number current, hence no guidance and no quantum potential; the stress as a stiff perfect-fluid mass term plus a traceless anisotropic field-strength part the four parameters cannot carry, the word under-describing its field where the Dirac word over-describes its fluid; the table of the three fluids by word, density, velocity, force, vorticity, spin, equation of state and degenerate set; and the lightlike set as a hypersurface rather than a nodal set, the plane wave's rigid geodesic flow closing the Euler equation against its own word and reading a density and not a motion; twelve properties listed; and the correspondence set against the other two: the forward arrow exact and total, the reverse arrow defined on the whole fluid state space and not on a class, closure being $\partial_\nu F^{\nu\mu}=m^{2}ru^{\mu}$ — Maxwell with the fluid's own current as source, the London response of a charged fluid — so that the three fields pick the three ways a medium exceeds a dust, Korteweg for the scalar, London for the Proca, Cosserat for the spinor, with the pair one scalar and one vector and the counts $2,4,8$; the continuity equation forced by the mass and evaporating at $m=0$; and the quantum content a shear energy rather than a guidance term, the home being the quantum fluid-physics plasma and not Bohmian mechanics. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-proca-equation-in-biquaternionic-form.html">The Path Integral and the Proca Equation in Biquaternionic Form</a>
@@ -1278,6 +1268,16 @@
 #### The applications
 
 #### Neighbouring objects
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/spin-one-fluid-equations-from-the-proca-polar-action.html">Spin-One Fluid Equations from the Proca Polar Action: A Divergence, a Projection and a Stiff Equation of State</a>
+<!-- the Proca polar action varied in its four parameters; the fluid's two equations as two operations on the four variations — continuity as the divergence across them, which is the Lorenz condition and is continuity because the field is the current, and the Euler equation as the transverse part of the frame's transport, with a density-gradient force and no other; the scale's equation as the fourth and not a fluid equation; the stiff equation of state $\epsilon=p=\tfrac12m^{2}\varrho^{2}$ and the sound speed $c$ read off the mass term's algebraicity, and with it the absence of a baroclinic torque; the Hessian's rank three, the primary constraint and its secondary Lorenz partner; the four-parameter count as exactly what a barotropic fluid needs -->
+
+<a href="articles_physics/the-spin-one-fluid.html">The Spin-One Fluid</a>
+<!-- the Proca polar word read as fluid data: the two branches and the exact 4-for-4 count, the timelike branch alone being a flow, the potential as the current $A_\mu=ru_\mu$ with $r=\sqrt{-A^{2}}$ so that the density is the field's own norm and the sign $\varepsilon$ is a branch label and not a derived function, unlike the spinor case; the Lorenz condition as the continuity equation outright and the polar article's denial read as a denial of the pair and not of the single equation; the Euler equation $a_\mu=-\nabla_\mu\ln r-E_\mu/r$ checked to zero in four components, with the gradient force the pressure force of a stiff fluid $p=\epsilon=\tfrac12m^{2}r^{2}$ read off $\mathrm{d}p/(\epsilon+p)=\mathrm{d}\ln r$ and confirmed by projecting the mass term of the stress, and the field strength the only non-gradient force in any of the three field fluids; geodesic iff $E_\mu=-\nabla_\mu r$ and irrotational flows geodesic by the two-line $u=\partial\phi$ argument; the decomposition $F=\mathrm{d}r\wedge u+r\omega$ checked to zero in sixteen slots, so that the vorticity is what is left of the field strength when the density gradient is subtracted, the baroclinic torque absent because the pressure is barotropic and the generator being $E/r$ instead; $\omega\wedge\omega=0$ for every unit timelike flow against $\det F=0.3176$ generically, so the vorticity can never reach a rank the field strength reaches; the two polar equations read as a density equation with the rapidity gradient as its source and a conservation law $\partial_\mu(r^{2}\partial^\mu\theta)=0$ whose current is not the number current, hence no guidance and no quantum potential; the stress as a stiff perfect-fluid mass term plus a traceless anisotropic field-strength part the four parameters cannot carry, the word under-describing its field where the Dirac word over-describes its fluid; the table of the three fluids by word, density, velocity, force, vorticity, spin, equation of state and degenerate set; and the lightlike set as a hypersurface rather than a nodal set, the plane wave's rigid geodesic flow closing the Euler equation against its own word and reading a density and not a motion; twelve properties listed; and the correspondence set against the other two: the forward arrow exact and total, the reverse arrow defined on the whole fluid state space and not on a class, closure being $\partial_\nu F^{\nu\mu}=m^{2}ru^{\mu}$ — Maxwell with the fluid's own current as source, the London response of a charged fluid — so that the three fields pick the three ways a medium exceeds a dust, Korteweg for the scalar, London for the Proca, Cosserat for the spinor, with the pair one scalar and one vector and the counts $2,4,8$; the continuity equation forced by the mass and evaporating at $m=0$; and the quantum content a shear energy rather than a guidance term, the home being the quantum fluid-physics plasma and not Bohmian mechanics. -->
+
+#### The fluid's thermodynamic equations and their solutions
 
 ### Spin 1/2
 
@@ -1329,22 +1329,6 @@
 <a href="articles_physics/exercise-the-non-relativistic-limit-and-the-pauli-equation.html">Exercise: The Non-Relativistic Limit and the Pauli Equation</a>
 <!-- five problems: the Foldy–Wouthuysen elimination of the small component, with the note that the rest energy must be factored out before the small component is eliminated, since the expansion parameter is $(\varepsilon-qΞ)/(2mc^2)$ and expanding around zero instead gives a factor of two, $p^{2}/m$ and then $p^{2}/4m$, which no local redefinition removes; minimal substitution, the electromagnetic terms and $g=2$; the spin–orbit and Darwin terms at the next order; hermiticity and the $\mathbb{B}_{\Psi}/\mathbb{B}_{\Phi}$ decomposition; the physical dimensions of each term. -->
 
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/spin-half-fluid-equations-from-the-dirac-polar-action.html">Spin-Half Fluid Equations from the Dirac Polar Action: Vorticity as the Curl of the Frame's Gradient</a>
-<!-- the first-order Dirac polar action varied in eight coordinates; continuity from the phase, the spin current as the rotor's momentum rather than a bilinear, and the scale's equation as a constraint rather than an evolution; five constraints against three evolutions with the four vanishing momenta; the vorticity as the frame's Maurer–Cartan form read through the velocity, with the action's own gradient term as its source and no independent dynamics; the velocity a unit element squared and therefore not a gradient; the mass direction as a ninth object the word does not carry; the frame's gradient block named as the gap that is not closed -->
-
-<a href="articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html">The Spin-Half Fluid and the Takabayasi Correspondence</a>
-<!-- the fluid of the spinor field and its tensor counterpart, Takabayasi's 1957 spin fluid; the mapping $\rho\leftrightarrow r^{2}$, $v\leftrightarrow$ boost, $w\leftrightarrow$ rotor, $k\leftrightarrow\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, $\theta\leftrightarrow\theta_{\mathrm{axr}}$, graded by warrant, three rows identities, one forced by the count and one a reading; the four brackets as the fluid's four equations and the non-closure that his second subsidiary condition closes in tensor language; the domain where the word is smaller than his, the one-sided plane waves that are nowhere zero and have no word; and the ledger, no prediction and a cleaner origin. -->
-
-<a href="articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html">The Spin-Half Fluid of the Biquaternion Dirac Field</a>
-<!-- the Dirac polar form joined to the Gordon decomposition: the density, the frame element and the spin direction as the fluid's triple; the boost as the four-velocity and the rotor as the spin; the flow is not a gradient, so the vorticity is sourced by the boost's gradient, with the shear-flow circulation checked against the closed form; the vorticity treated here and in no article of its own, because it is a property of the frame element; the Clebsch reading applied, which gives the vorticity proper rank two for every solution, the rank-four row to the raw derivative and its acceleration, no transport law to a vorticity that is a function of a flat connection, and the loop integral as a Lorentz holonomy rather than a circulation; the scalar case as the frozen-frame sector; and the caution that closure and rigidity are different conditions. -->
-
-<a href="articles_physics/the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>
-<!-- the stress of the Dirac field and the antisymmetric part that carries the spin; the count sixteen, ten and six against the element's eight and its four usable slots, and why the count is not a defeat, the antisymmetric part being the divergence of the spin tensor and carrying no charge; the spin tensor's twenty-four components cut to twelve by the Frenkel condition and to three at an event, one Hermitian element with a vanishing scalar slot; the pair of conservation laws, the spin current's divergence read off the rotor's own equation with a torque that vanishes when the connection turns about the spin; the Gordon spin term as a bound current distinguished from the vorticity; and the Frenkel condition as the vanishing of the scalar part. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html">The Path Integral and the Dirac Equation in Biquaternionic Form</a>
@@ -1362,6 +1346,22 @@
 #### The applications
 
 #### Neighbouring objects
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/spin-half-fluid-equations-from-the-dirac-polar-action.html">Spin-Half Fluid Equations from the Dirac Polar Action: Vorticity as the Curl of the Frame's Gradient</a>
+<!-- the first-order Dirac polar action varied in eight coordinates; continuity from the phase, the spin current as the rotor's momentum rather than a bilinear, and the scale's equation as a constraint rather than an evolution; five constraints against three evolutions with the four vanishing momenta; the vorticity as the frame's Maurer–Cartan form read through the velocity, with the action's own gradient term as its source and no independent dynamics; the velocity a unit element squared and therefore not a gradient; the mass direction as a ninth object the word does not carry; the frame's gradient block named as the gap that is not closed -->
+
+<a href="articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html">The Spin-Half Fluid and the Takabayasi Correspondence</a>
+<!-- the fluid of the spinor field and its tensor counterpart, Takabayasi's 1957 spin fluid; the mapping $\rho\leftrightarrow r^{2}$, $v\leftrightarrow$ boost, $w\leftrightarrow$ rotor, $k\leftrightarrow\tilde\nabla_\Phi\theta_{\mathrm{pha}}$, $\theta\leftrightarrow\theta_{\mathrm{axr}}$, graded by warrant, three rows identities, one forced by the count and one a reading; the four brackets as the fluid's four equations and the non-closure that his second subsidiary condition closes in tensor language; the domain where the word is smaller than his, the one-sided plane waves that are nowhere zero and have no word; and the ledger, no prediction and a cleaner origin. -->
+
+<a href="articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html">The Spin-Half Fluid of the Biquaternion Dirac Field</a>
+<!-- the Dirac polar form joined to the Gordon decomposition: the density, the frame element and the spin direction as the fluid's triple; the boost as the four-velocity and the rotor as the spin; the flow is not a gradient, so the vorticity is sourced by the boost's gradient, with the shear-flow circulation checked against the closed form; the vorticity treated here and in no article of its own, because it is a property of the frame element; the Clebsch reading applied, which gives the vorticity proper rank two for every solution, the rank-four row to the raw derivative and its acceleration, no transport law to a vorticity that is a function of a flat connection, and the loop integral as a Lorentz holonomy rather than a circulation; the scalar case as the frozen-frame sector; and the caution that closure and rigidity are different conditions. -->
+
+<a href="articles_physics/the-spin-half-energy-momentum-tensor.html">The Spin-Half Energy-Momentum Tensor</a>
+<!-- the stress of the Dirac field and the antisymmetric part that carries the spin; the count sixteen, ten and six against the element's eight and its four usable slots, and why the count is not a defeat, the antisymmetric part being the divergence of the spin tensor and carrying no charge; the spin tensor's twenty-four components cut to twelve by the Frenkel condition and to three at an event, one Hermitian element with a vanishing scalar slot; the pair of conservation laws, the spin current's divergence read off the rotor's own equation with a torque that vanishes when the connection turns about the spin; the Gordon spin term as a bound current distinguished from the vorticity; and the Frenkel condition as the vanishing of the scalar part. -->
+
+#### The fluid's thermodynamic equations and their solutions
 
 ### Spin 0
 
@@ -1404,19 +1404,6 @@
 <a href="articles_physics/wave-particle-duality-and-the-weight-of-a-level-set.html">Wave–Particle Duality and the Weight of a Level Set: Coarea, Exponential Type and the Projection That Cannot Be Local</a>
 <!-- the set and the measure, since the four preceding articles read where the symbol vanishes and a set carries no number: the weight of a label on the shell as the coarea cofactor $1/\lvert\nabla_{\vec k}k_{t}^{\prime}\rvert$, from the delta function change of variable, with the symbol and the dispersion sharing a zero set and differing in gradient by the constant $2\kappa$ at fixed energy, so the level set is the symbol's and the weight is the dispersion's; the exact relativistic weight $k_{\Phi}\kappa/(2\pi^{2})$, vanishing at the threshold $\kappa=k_m$ and growing above it, the massless case $\kappa^{2}/(2\pi^{2})$ with no threshold, and the linear symbol giving $\kappa^{2}/(2\pi^{2}v^{3})$ because a constant gradient is what a Dirac cone is; the flat band as a level set of positive measure, where the weight is a delta on a surface and the propagator has a pole on a surface; the failure at a critical point of the symbol, the square-lattice saddle diverging logarithmically with coefficient $-1/(2\pi^{2})$ matched by seven measured slopes, so the van Hove singularity is a critical point of the symbol and its strength is the constant in front of the logarithm, and every periodic symbol must have one; the reach of a state as the exponential type of its transform by Paley–Wiener, $R=\lim(1/b)\log\lvert\mathcal{F}[\tilde F](ib)\rvert$, measured on an indicator at $b=80$ and $b=160$ as $0.94522467$ and $0.96828016$ against the limit $1$, and on a smooth bump as the slow approach that smoothness forces; the front moving the type at exactly the speed of the front, increments $0.5$, $0.5$, $1.0$ at two values of $b$, so finite propagation is a finite rate of growth of the type; the heat and Schrödinger multipliers giving no finite type, since the test is the power of the wave number and whether it carries an $i$; a decay rate as the height of a pole and a support radius as the growth at infinity, the two read at the two ends of one axis and mutually exclusive in one variable, a compact support having an entire transform and therefore no pole, which is why the corpus needs both Green's functions; the exact projection as an indicator, idempotence being pointwise, with residuals $0$, $0.25$, $0.25$ for the indicator, the Gaussian and the tent, so the algebraic projection of the decoherence article has its spatial half here; the kernel of a band as a sinc, $x\,K(x)=1/\pi=0.31830989$ at six peaks, so resolution and range are conjugate and no operator both projects exactly and acts locally, with the lattice closing the band and removing the tail; the three read as one transform of an indicator, of a shell, of a ball, of a band; the count as the level set plus the weight, which is where the two arms of the duality meet, and the twin of the statement that a count built on the quaternion norm would count nothing; the checks in one table, the symmetry $\rho(+E)=\rho(-E)$, the relativistic weight to $4.7\times10^{-7}$; and the limits, the weight a distribution at a critical point, coarea needing a regular point, the density a count of labels and not an observable, Paley–Wiener stated in one variable and used on four, the reach a property of the state and not of the algebra, the sinc a statement about exactness and not about measurement, and no claim of novelty. -->
 
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/klein-gordon-fluid-equations-from-the-polar-action.html">Klein–Gordon Fluid Equations from the Polar Action: Continuity, Mass Shell and the Frame's Transport</a>
-<!-- the second-order polar action varied in eight coordinates; continuity from the phase, the mass shell with the quantum potential from the scale, and the rapidity's gradient as a source in the mass shell; the field's rapidity as the flow's Lorentz factor on shell; the frame in the density and not only in the potential, so the pair closes only where the frame is frozen; no vanishing momentum and therefore no constraint analysis at this rung, against the first-order rungs' eight and two; the mass term algebraic, supplying a mass shell and a stress and no metric; the two-field chart as the central class of the eight-coordinate one -->
-
-<a href="articles_physics/the-spin-zero-fluid.html">The Spin-Zero Fluid</a>
-<!-- the fluid of the scalar field, where the boost and the rotor have nothing to carry and the word collapses to a scale, an angle and a sign; the pair as continuity plus the mass shell with $2mQ_{\mathrm{qnt}}$; the conserved density as the charge density $\gamma\rho_{\mathrm{num}}$ and not the marker density; the acceleration law $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$ as the gradient of the mass shell, with $\gamma m$ the inertia; the vorticity 2-form vanishing while the three-velocity's curl does not, the difference being a frame artefact; and no algebraic equation of state, because $Q_{\mathrm{qnt}}$ carries the first two derivatives of $\ln\rho_{\mathrm{num}}$ and the quantum stress is anisotropic. the four items of the reverse map's criterion applied and met, the force item exactly in the four-vector form, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$, every index low, and the velocity item only up to $\gamma$, with the curl of $\vec v$ and the non-gradient term of the velocity equation the same $\gamma$; the viscosity item met structurally, the operator second order and even in time so that no first-order dissipative term can exist; and the linearity consequence, $V=0$ giving $(\Box_\Phi-k_m^{2})\psi=0$, whose substitution returns the pair exactly, the real part the amplitude equation and the imaginary part the transport equation, so that the scalar fluid is the one case in the block where both directions close on a local linear equation, while the interference term $2\sqrt{\rho_1\rho_2}\cos((S_1-S_2)/\hbar)$ keeps the data nonlinear; -->
-
-<a href="articles_physics/the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>
-<!-- the nodal set as the zero-divisor cone, where the phase is undefined and the flow is no longer irrotational; what the winding of the phase around a nodal line carries, and whether a circulation is quantized; the algebra rather than the phase as the carrier of the charge; closes open question 2 of the scalar polar form; and the scalar exception, that the identification of the nodal set with the chart's boundary does not survive to the spinor case. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html">The Path Integral and the Klein–Gordon Equation in Biquaternionic Form</a>
@@ -1434,6 +1421,19 @@
 #### The applications
 
 #### Neighbouring objects
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/klein-gordon-fluid-equations-from-the-polar-action.html">Klein–Gordon Fluid Equations from the Polar Action: Continuity, Mass Shell and the Frame's Transport</a>
+<!-- the second-order polar action varied in eight coordinates; continuity from the phase, the mass shell with the quantum potential from the scale, and the rapidity's gradient as a source in the mass shell; the field's rapidity as the flow's Lorentz factor on shell; the frame in the density and not only in the potential, so the pair closes only where the frame is frozen; no vanishing momentum and therefore no constraint analysis at this rung, against the first-order rungs' eight and two; the mass term algebraic, supplying a mass shell and a stress and no metric; the two-field chart as the central class of the eight-coordinate one -->
+
+<a href="articles_physics/the-spin-zero-fluid.html">The Spin-Zero Fluid</a>
+<!-- the fluid of the scalar field, where the boost and the rotor have nothing to carry and the word collapses to a scale, an angle and a sign; the pair as continuity plus the mass shell with $2mQ_{\mathrm{qnt}}$; the conserved density as the charge density $\gamma\rho_{\mathrm{num}}$ and not the marker density; the acceleration law $\mathrm{d}\vec p/\mathrm{d}t=-\gamma^{-1}\nabla Q_{\mathrm{qnt}}$ as the gradient of the mass shell, with $\gamma m$ the inertia; the vorticity 2-form vanishing while the three-velocity's curl does not, the difference being a frame artefact; and no algebraic equation of state, because $Q_{\mathrm{qnt}}$ carries the first two derivatives of $\ln\rho_{\mathrm{num}}$ and the quantum stress is anisotropic. the four items of the reverse map's criterion applied and met, the force item exactly in the four-vector form, $\sum_\nu V_\nu\partial_\nu V_\mu=-\partial_\mu(Q_{\mathrm{qnt}}/m)$, every index low, and the velocity item only up to $\gamma$, with the curl of $\vec v$ and the non-gradient term of the velocity equation the same $\gamma$; the viscosity item met structurally, the operator second order and even in time so that no first-order dissipative term can exist; and the linearity consequence, $V=0$ giving $(\Box_\Phi-k_m^{2})\psi=0$, whose substitution returns the pair exactly, the real part the amplitude equation and the imaginary part the transport equation, so that the scalar fluid is the one case in the block where both directions close on a local linear equation, while the interference term $2\sqrt{\rho_1\rho_2}\cos((S_1-S_2)/\hbar)$ keeps the data nonlinear; -->
+
+<a href="articles_physics/the-nodal-set-and-quantized-circulation.html">The Nodal Set and Quantized Circulation</a>
+<!-- the nodal set as the zero-divisor cone, where the phase is undefined and the flow is no longer irrotational; what the winding of the phase around a nodal line carries, and whether a circulation is quantized; the algebra rather than the phase as the carrier of the charge; closes open question 2 of the scalar polar form; and the scalar exception, that the identification of the nodal set with the chart's boundary does not survive to the spinor case. -->
+
+#### The fluid's thermodynamic equations and their solutions
 
 ### Focus on informational aspects
 
@@ -1538,19 +1538,6 @@
 <a href="articles_physics/the-primordial-force-law-and-the-two-wong-terms.html">The Primordial Force Law: Differentiating the Guidance Equation, and the Two Wong Terms</a>
 <!-- the step every charged rung takes, taken at the primordial rung where there is no mass shell to differentiate: the chart's transport identity read as a guidance equation $\Omega_{\imath,kl}=[U_{\mathrm{frm}}^{\dagger}D_{\imath}\Xi U_{\mathrm{frm}}]_{kl}/(\rho_{l}-\rho_{k})$, velocity as covariant gradient over an inertia that is the density splitting, fixing twelve parameters and leaving four quotiented so that the chart's $16-4=12$ is derived rather than counted; the lemma $\partial_{\jmath}M_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\jmath}D_{\imath}\Xi U_{\mathrm{frm}}-[\Omega_{\jmath},M_{\imath}]$ proved in two lines and checked to $1.2\times10^{-7}$; the differentiated guidance equation with its three terms assigned to force, transport and the product rule; the finding that the abelian Lorentz force is a cancellation of second derivatives and the non-abelian force is the failure of that cancellation, the residue being $-ig_{4}[\mathbb{F}_{\jmath\imath},\Xi]$, and that the residue is a three-species effect, exact at two to $5.6\times10^{-17}$ and absent there, so that a two-density truncation reproduces the abelian force law exactly and the non-abelian one not at all; and Wong's two equations placed where they live — the force on the frame's curvature, the precession on the frame in the fundamental and on the vorticity in the adjoint, and neither of them on the densities, because eigenvalues of a Hermitian matrix are gauge singlets and cannot precess; with the crossing where mass, flow and charge vanish together as one statement about one weight, and the honesty that the fluid is the background and not a probe. -->
 
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/su4-fluid-equations-from-the-primordial-action.html">The $\mathrm{SU}(4)$ Fluid Equations from the Primordial Action: Fifteen Vorticities, a Four-Component Condensate and One Covariant Continuity</a>
-<!-- the primordial action read as a fluid, the block's missing hydrodynamics: the four densities are the scalar matrix's eigenvalues and the velocity is its frame's covariant logarithmic derivative $\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$, so the kinetic term decouples into the four densities' gradients plus the frame's rotation weighted by $(\rho_{k}-\rho_{l})^{2}$ — the connection reaching the frame and never the densities, and the $\mathrm{U}(1)$ direction invisible to a Hermitian condensate; the vorticity is the fifteen connections' curvature, a fundamental field with its own equation rather than the derived object it was at all eight matter rungs; continuity and Helmholtz covariant with the ordinary versions failing by one and the same term, the connection contracted with the field it transports, and no combination of the fifteen ordinarily conserved because a closed combination would be a central element of a simple algebra; the Gauss law as the constraint in place of an incompressibility, since the fifteen have no mass term; the six heavy vectors as the six frame directions the vacuum's eigenvalue splitting singles out, with mass $g_{4}^{2}(\rho_{k}-\rho_{l})^{2}$, the Higgs mechanism read as the frame's inertia against a density difference; $\theta_{4}$ as the flow's helicity, a total derivative absent from the equations -->
-
-#### The fluid's thermodynamic equations and their solutions
-
-<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
-     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
-     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
-     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
-     restated here. -->
-
 #### The quantum apparatus
 
 #### The applications
@@ -1563,6 +1550,19 @@
 
 <a href="articles_physics/no-confinement-above-m-c.html">No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling</a>
 <!-- the negative statement the block owes a reader who has met the strong sector: nothing confines above $M_C$; the coupling there, $\alpha_s\approx0.08$ at $250\ \mathrm{TeV}$, so the phase is perturbative; the group broken at $M_C$ by $\Phi$, so that no confining $\mathrm{SU}(4)$ phase occurs anywhere in the model's history; the contrast with $\mathrm{SU}(3)_c$, where confinement is the residual's long-distance regime and is described in *Confinement and the Loss of Partonic Information*; the two mechanisms kept apart, a phase that never exists and a phase that confines; and the ledger, what the absence forbids and what it leaves open, no deconfinement transition, no primordial plasma of free preons, no cosmological relic of the unbroken phase. -->
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/su4-fluid-equations-from-the-primordial-action.html">The $\mathrm{SU}(4)$ Fluid Equations from the Primordial Action: Fifteen Vorticities, a Four-Component Condensate and One Covariant Continuity</a>
+<!-- the primordial action read as a fluid, the block's missing hydrodynamics: the four densities are the scalar matrix's eigenvalues and the velocity is its frame's covariant logarithmic derivative $\Omega_{\imath}=U_{\mathrm{frm}}^{\dagger}D_{\imath}U_{\mathrm{frm}}$, so the kinetic term decouples into the four densities' gradients plus the frame's rotation weighted by $(\rho_{k}-\rho_{l})^{2}$ — the connection reaching the frame and never the densities, and the $\mathrm{U}(1)$ direction invisible to a Hermitian condensate; the vorticity is the fifteen connections' curvature, a fundamental field with its own equation rather than the derived object it was at all eight matter rungs; continuity and Helmholtz covariant with the ordinary versions failing by one and the same term, the connection contracted with the field it transports, and no combination of the fifteen ordinarily conserved because a closed combination would be a central element of a simple algebra; the Gauss law as the constraint in place of an incompressibility, since the fifteen have no mass term; the six heavy vectors as the six frame directions the vacuum's eigenvalue splitting singles out, with mass $g_{4}^{2}(\rho_{k}-\rho_{l})^{2}$, the Higgs mechanism read as the frame's inertia against a density difference; $\theta_{4}$ as the flow's helicity, a total derivative absent from the equations -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 ### Spin 1/2
 
@@ -1581,11 +1581,11 @@
 
 #### The field equation and its solutions
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
+
+#### The fluid's equations and their solutions
 
 ### Spin 0
 
@@ -1604,14 +1604,14 @@
 
 #### The field equation and its solutions
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
 
 <a href="articles_physics/the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html">The One-Loop Effective Potential of the Scalar Matrix at Sixteen Real Components: $0.0570\lambda_1^{2}$</a>
 <!-- the constant-field reduction applied to the matrix rather than to a doublet, where the two existing effective-potential articles stop: the functional determinant over the sixteen entries and the fifteen generators, the multiplicity sixteen and the trace over the adjoint, the coefficient of $\rho^{2}\ln\rho$, the sign that decides whether the symmetric minimum survives the correction, and the comparison with the doublet's coefficient; the renormalisation scale, the stability bound it produces and the reading of that bound as a statement about $M_C$; the honest boundary, a one-loop number for a phase the corpus only describes at tree level, with no two-loop and no resummation. -->
+
+#### The fluid's equations and their solutions
 
 ## Biquaternion Universe Symmetry Breaking
 
@@ -1775,8 +1775,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 #### The field equation and its solutions
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 <a href="articles_physics/the-yang-mills-path-integral-and-the-faddeev-popov-procedure-in-biquaternionic-form.html">The Yang–Mills Path Integral and the Faddeev–Popov Procedure in Biquaternionic Form</a>
@@ -1799,6 +1797,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/jets-the-qcd-cross-section-and-the-infrared-structure.html">Jets, the QCD Cross Section and the Infrared Structure</a>
 <!-- standard input, and the one article whose own perturbative terms are individually infinite. the ratio $R=3\sum Q_f^2[1+\alpha_s/\pi+\dots]$ as a staircase $2$, $10/3$, $11/3$, $5$ at the quark thresholds, with the corrections evaluated at 34 GeV and $M_Z$ and the point that $R$ is a blunt instrument — a four per cent correction makes a two per cent measurement a $\delta\alpha_s$ of $0.06$, and inverting $R=3.9$ against $R_0=11/3$ gives $0.20$ where the running demands $0.14$, so $R$ counts lines rather than measuring the strength; jets as definitions, with the fixed-cone versus sequential distinction and the generalised $k_T$ distance; the three-jet rate $\frac{2\alpha_sC_F}{\pi}\ln^2(1/y)$ tabulated at four resolutions up to $1.53$ at $y=0.02$, where a rate above one is not a rate and the truncation is invalid rather than imprecise; the soft ($dE/E$) and collinear ($d\theta/\theta$) divergences as the volume of the region where $n$ and $n+1$ partons are indistinguishable; Bloch--Nordsieck and KLN as the statement that a hard process is never observed in isolation, with the $+1$ in $1+\alpha_s/\pi$ identified as what is left after two infinities are subtracted; the splitting functions with their sum rules computed, $\int P_{qq}=0$ exactly, $\int zP_{qq}=-16/9$, $\int zP_{gq}=+16/9$, $\int P_{qg}=1/3$, and $\int z[P_{qq}+P_{gq}]=0$ to $10^{-16}$ as energy conservation that no one imposed; the eikonal and the double logarithm, $W=0.84$ at $M_Z$ with $Q_0=5$ GeV, so the expansion parameter is $\alpha_s\ln^2$ and is of order one; the Sudakov form factor with the two-jets fraction falling from $0.93$ at $40$ GeV to $0.43$ at $5$ GeV, and the table showing that improving one logarithm to $\ln(Q/\Lambda)$ moves the exponent from $0.84$ to $1.78$, a factor of two that is the size of the leading correction; the shower as that exponent plus a random number generator, ordered in angle for coherence; hadronisation at $0.5$ GeV$/Q$, ten per cent at $M_Z$ and seventy per cent at $14$ GeV; and infrared safety as the criterion that decides whether an observable has a perturbative expansion at all. -->
 
+#### The fluid's equations and their solutions
+
 ### Spin 1/2
 
 #### The content
@@ -1812,8 +1812,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 #### The action
 
 #### The field equation and its solutions
-
-#### The fluid's equations and their solutions
 
 #### The quantum apparatus
 
@@ -1830,6 +1828,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-proton-in-biquaternionic-form.html">The Proton in Biquaternionic Form</a>
 <!-- the proton as a spin-half biquaternion Dirac field; the charge operator on the field; which generator carries the electric charge; what the framework does not supply, compositeness and the strong group; spin, statistics and the magnetic moment. -->
+
+#### The fluid's equations and their solutions
 
 ### Spin 0
 
@@ -1860,11 +1860,11 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-axion-and-the-peccei-quinn-mechanism-in-biquaternionic-form.html">The Axion and the Peccei–Quinn Mechanism in Biquaternionic Form</a>
 <!-- the strong CP problem and the theta parameter; the Peccei–Quinn symmetry as the central phase; the axion potential and its mass; the anomalous coupling and the shift symmetry. -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
+
+#### The fluid's equations and their solutions
 
 ### Focus on informational aspects
 
@@ -1953,11 +1953,11 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-stueckelberg-mechanism-in-biquaternionic-form.html">The Stueckelberg Mechanism in Biquaternionic Form</a>
 <!-- the Proca obstruction; the shift field and the invariant mass term; fixing and the degree-of-freedom count; the relation to the abelian Higgs; the algebra's reading. -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
+
+#### The fluid's equations and their solutions
 
 ### Spin 1/2
 
@@ -1975,8 +1975,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-majorana-equation-in-biquaternionic-form.html">The Majorana Equation in Biquaternionic Form</a>
 <!-- the equation and its three forms: the charge-conjugate form and the verified charge-conjugation cell, the real form in $\mathrm{Cl}_{3,1}\cong M_4(\mathbb{R})$ with purely real generators, and the two-component form with the antilinear mass term; the two-component Weyl operators with $W_RW_L=\Box$; the charge-conjugation eigenstates, the four-real-dimensional Majorana and ELKO sectors, and the common mass shell; solutions and the counting of states; what the algebra supplies, transcribes and does not supply. -->
-
-#### The fluid's equations and their solutions
 
 #### The quantum apparatus
 
@@ -2003,6 +2001,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html">Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test</a>
 <!-- standard input, and the one article in the corpus that exhibits a consistency check instead of a list of inputs. the two-level system with $\Delta m=2|M_{12}|$, $x=\Delta m/\Gamma$ and $\chi=x^2/2(1+x^2)$ computed for three systems — $\Delta m/m$ spanning $7.0\times10^{-15}$ to $2.2\times10^{-12}$, $\chi_d=0.186$ and $\chi_s=0.4993$ against a ceiling of $0.5$, so the $B_s$ forgets its flavour before it decays; GIM stated as an identity rather than a trick, the constant term cancelling because $VV^{\dagger}=1$ and the survivor proportional to the failure of the mass operator to be central on the flavour factor, which is the article's one framework-level contribution to the physics; the charm prediction read backwards out of $\Delta m_K$ in 1974 giving $m_c\approx1.5$ GeV against the current mass $1.27$ GeV, with the $D$ meson's $1.87$ GeV identified as the wrong quantity to compare and the link made to the current/constituent distinction of the hadron article; the kaon system with $|\varepsilon_K|=2.228\times10^{-3}$ proportional to the triangle's height, and $\varepsilon'/\varepsilon$ recorded as the one number that does not close, measured $1.66\times10^{-3}$ against a lattice $1.4\times10^{-4}$; the two $B$ systems with $\Delta m_{B_s}/\Delta m_{B_d}=35.06$ giving $|V_{ts}/V_{td}|=4.83$ and hence $R_t$ without any tree decay; rare decays $b\to s\gamma$ at $0.988$ of prediction and $B_s\to\mu\mu$ at $0.913$, plus the 2014--2021 $b\to s\ell\ell$ anomalies and their 2022 dissolution as the argument for the corpus's number-first discipline; the triangle with $R_b=0.3866$, $R_t=0.9117$, angles $91.6^\circ$, $22.7^\circ$, $65.7^\circ$, area $0.1762$ by Heron and $0.1762$ by $\bar\eta/2$; and the closure test proper — five measurements by four kinds of physics, $R_t$ from loops at $0.914$ against $0.9117$ from the fit, $\sin2\beta=0.7128$ against $0.699\pm0.017$, the law of cosines checked to four decimals as an arithmetic identity and explicitly distinguished from the physical test; then what closure proves (self-consistency) and does not (uniqueness, or the origin of the four Wolfenstein parameters). -->
 
+#### The fluid's equations and their solutions
+
 ### Spin 0
 
 #### The content
@@ -2020,8 +2020,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html">Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses</a>
 <!-- the three requirements on the scalar and why a doublet meets them; the potential and the three-sphere of minima; the alignment $Q\langle\varphi\rangle=0$ as the reason the photon stays massless; the four actions of the generators on the vacuum; the $4\times4$ mass matrix and its eigenvalues $g^2v^2/4$ twice, $0$ and $(g^2+g_{\mathrm Y}^2)v^2/4$, with the neutral determinant vanishing identically; the trace sum rule $2M_W^2+M_Z^2=\tfrac{v^2}{4}(3g^2+g_{\mathrm Y}^2)$; the mixing angle as the diagonalising angle; the count $12=12$ with the table of which component was eaten; the unitary representative and the couplings $g_{hWW}$, $g_{hZZ}$, $g_{hhh}$, $g_{hhhh}$ fixed by the masses; the numbers by three routes, $80.24/91.51$ from $g,g_{\mathrm Y},v$ and $79.83$ or $80.94$ for $M_W$ from $\alpha,G_F,M_Z$ according to which $\alpha$, with $\Delta r=0.0355$ decomposed as $+0.071$ running and $-0.033$ loops; $\Gamma(W\to e\nu)=227$ MeV against $223$; $\rho=1$ as an identity, the general multiplet formula, and custodial symmetry; the equivalence theorem and the $1.2$ TeV unitarity bound; and the three items the framework does not supply, the group, the representation and the hypercharge, with the singlet obstruction stated. -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
@@ -2031,6 +2029,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/custodial-symmetry-and-the-rho-parameter.html">Custodial Symmetry and the Rho Parameter: From Accidental to Local</a>
 <!-- the custodial symmetry of a scalar sector; the custodial action in the biquaternion algebra; the mass matrices and the value of $\rho$; custodial symmetry and the chiral Lagrangian; empirical status. -->
+
+#### The fluid's equations and their solutions
 
 ### Focus on informational aspects
 
@@ -2291,22 +2291,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/wave-particle-duality-and-charge-conservation.html">Wave–Particle Duality and Charge Conservation: The Cokernel of Maxwell's Symbol</a>
 <!-- the cokernel of Maxwell's symbol as the other half of rank–nullity: the symbol as left multiplication by $i\tilde K_{\Phi}$ on the three-dimensional vector part of the algebra and its cokernel written as the space of multipliers $M$ with $M\,i\tilde K_{\Phi}$ central, one complex condition read through the scalar part, and that space a subspace of the algebra rather than a quotient of it; the cokernel one-dimensional off the light cone, the single line spanned by $\tilde K_{\Phi}^{\natural}$, its functional $\mathrm{Sc}(\tilde K_{\Phi}^{\natural}\tilde J_{\Phi})=\vec k_{\Phi}\cdot\vec J-k_{t}^{\prime}c\rho$, and charge conservation as the whole cokernel there, which is the integrability condition of the Maxwell article read on the source instead of on the equation; the cokernel two-dimensional on the cone, spanned by $\tilde K_{\Phi}^{\natural}$ and the circular element $\varepsilon_{\mathrm{fop},-}$, which is the direction the symbol scales and not the one it annihilates, with $\mathrm{Sc}(\varepsilon_{\mathrm{fop},-}\varepsilon_{\mathrm{fop},+})=-1$ making the second condition the statement that the current has no component along $\varepsilon_{\mathrm{fop},+}$; charge conservation necessary and not sufficient on the cone, the admissible sources $a_{\parallel}\tilde K_{\Phi}+a_{-}\varepsilon_{\mathrm{fop},-}$ with two free complex amplitudes, and the least-squares residual of an unfittable current equal to the modulus of its $\varepsilon_{\mathrm{fop},+}$ component, exactly $3$ in the worked point $k_{t}^{\prime}=k_{\Phi}=5$; the budget of four, rank plus cokernel, the reachable field strengths and the admissible sources both of dimension $r$, and the duality read as $r$ polarisations on the particle side against $4-r$ conditions on the wave side; residuals over one hundred sampled points each way; the limits, constant coefficients, the forward cone with the origin excluded, the negative cone by exchange of the circular labels, and no connection statement, no value of a mass, no statement about a state. -->
 
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/charged-spin-one-fluid-equations-from-the-polar-action.html">The Charged Spin-One Fluid from the Polar Action: Compressibility, Covariant Vorticity and Three Currents</a>
-<!-- the coupled Proca polar action with its sigma-model metric; the connection reaching the derivative term and never the mass term, so the vorticity is covariantized and gains a bilinear piece while the stiff equation of state survives; the covariant Lorenz condition as the constraint and the ordinary divergence as the field's own complex norm, so the compressibility is the distance between two divergences; the phase's shift a symmetry and the rotor's not, so the extra four parameters carry one conserved density and not two — the rotor a shape parameter and not a second fluid; three currents and one conservation law; the massless limit's residue a conserved charge current with no constraint -->
-
-<a href="articles_physics/the-charged-spin-one-fluid.html">The Charged Spin-One Fluid: Three Currents and a Compressibility</a>
-<!-- the covariant Proca equation read as a self-acting compressible medium, the case where the coupling changes most because the free fluid *was* its field: the carrier doubles to the eight-parameter word and the free word is its real slice $\theta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial; the domain shrinks from the lightlike wall to $r=0$, so the free article's hypersurface of failure becomes an ordinary origin; the density is not the field's norm, since $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial, checked to machine precision, so $r$ is an amplitude and not a density; three currents where the free article had one — the response $m^{2}\tilde A$, the direction $\tilde A/r$ and the conserved charge bilinear that vanishes on the real slice; the Lorenz condition no longer continuity but a constraint, the ordinary divergence fixed on it by the identity $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\theta_{\mathrm{pha}}$, so the free incompressibility was the mass's gift and the charged fluid's expansion is its amplitude; the stiff equation of state surviving as a formula on the $F=0$ sector and dying as a law; the field's own stress inside the fluid's stress, with the self-interaction term in the covariant field strength; and the massless limit keeping the current and losing the constraint, which locates the free article's "the photon has no fluid" at the constraint and not at the spin. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
-<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
-     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
-     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
-     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
-     restated here. -->
-
 #### The quantum apparatus
 
 <a href="articles_physics/the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-form.html">The Path Integral and the Coupled Proca Equation in Biquaternionic Form</a>
@@ -2345,6 +2329,22 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-lagrangian-and-the-topologically-massive-connection.html">The Lagrangian and the Topologically Massive Connection</a>
 <!-- one parent functional, linear in $H_\mu$ and quadratic in the s-vector $G_\mu$, with two exact eliminations: varying $H$ gives the Dirac theory in the vector representation, varying $G$ gives Maxwell plus Chern–Simons; the duality exact because one field enters linearly and the other quadratically; the topological mass readable as a derivative count, one derivative and one power of $m$ and one Levi-Civita symbol, so its local variation is a boundary term; one degree of freedom in three dimensions and the invertibility condition $m\neq a$; the Chern–Simons current conserved identically; the four- and three-dimensional settings compared; and the family's three kinds of vector mass separated by the derivative count. -->
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/charged-spin-one-fluid-equations-from-the-polar-action.html">The Charged Spin-One Fluid from the Polar Action: Compressibility, Covariant Vorticity and Three Currents</a>
+<!-- the coupled Proca polar action with its sigma-model metric; the connection reaching the derivative term and never the mass term, so the vorticity is covariantized and gains a bilinear piece while the stiff equation of state survives; the covariant Lorenz condition as the constraint and the ordinary divergence as the field's own complex norm, so the compressibility is the distance between two divergences; the phase's shift a symmetry and the rotor's not, so the extra four parameters carry one conserved density and not two — the rotor a shape parameter and not a second fluid; three currents and one conservation law; the massless limit's residue a conserved charge current with no constraint -->
+
+<a href="articles_physics/the-charged-spin-one-fluid.html">The Charged Spin-One Fluid: Three Currents and a Compressibility</a>
+<!-- the covariant Proca equation read as a self-acting compressible medium, the case where the coupling changes most because the free fluid *was* its field: the carrier doubles to the eight-parameter word and the free word is its real slice $\theta_{\mathrm{pha}}\in\{0,\pi\}$ with the rotor trivial; the domain shrinks from the lightlike wall to $r=0$, so the free article's hypersurface of failure becomes an ordinary origin; the density is not the field's norm, since $\tilde A\tilde A^{\natural}=r^{2}e^{2i\theta_{\mathrm{pha}}}$ is complex and the mass term's invariant $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$ is $r^{2}$ only where the rotor is trivial, checked to machine precision, so $r$ is an amplitude and not a density; three currents where the free article had one — the response $m^{2}\tilde A$, the direction $\tilde A/r$ and the conserved charge bilinear that vanishes on the real slice; the Lorenz condition no longer continuity but a constraint, the ordinary divergence fixed on it by the identity $\mathrm{Sc}(\tilde\nabla^{\natural}\tilde A)=-\frac{iϙ}{\hbar}r^{2}e^{2i\theta_{\mathrm{pha}}}$, with real part $\frac{ϙ}{\hbar}r^{2}\sin2\theta_{\mathrm{pha}}$ and imaginary part $-\frac{ϙ}{\hbar}r^{2}\cos2\theta_{\mathrm{pha}}$, so the free incompressibility was the mass's gift and the charged fluid's expansion is its amplitude; the stiff equation of state surviving as a formula on the $F=0$ sector and dying as a law; the field's own stress inside the fluid's stress, with the self-interaction term in the covariant field strength; and the massless limit keeping the current and losing the constraint, which locates the free article's "the photon has no fluid" at the constraint and not at the spin. -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 ### Spin 1/2
 
@@ -2389,22 +2389,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html">Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation</a>
 <!-- the matrix of the gradient and the source's four matrices; the square of the shifted gradient and why it is not Klein-Gordon; the exponential substitution; the KGFSh fundamental solution on the light cone and the contrast with the massive scalar's tail; the class question in the homogeneous equation; the general solution of the inhomogeneous equation, with its free term named as a solution of the first-order equation and that equation's kernel recorded as non-empty in both cases, plane waves on the shifted cone and the singular solutions of the real-mass case; the plane-wave family, the linear dispersion, the group of invertibles velocity and the stationary mode; the harmonic bispinor as a null element of the minimal left ideal, $i\tilde\Pi_2(\hat\xi)$, in the material sector; the stationary Helmholtz route and the omega-spinors; what the solution theory establishes and what it does not. -->
-
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/charged-spin-half-fluid-equations-from-the-polar-action.html">The Charged Spin-Half Fluid from the Polar Action: Charge Reaches the Velocity and Not the Spin</a>
-<!-- the coupled Dirac polar action with the rotor on the left; the type table as the instrument — the connection joining the phase's bracket in time and the boost's in space and neither the scale's nor the rotor's; continuity covariant with the proper density as its coefficient; the velocity a frame element and not a gradient, which is why the connection reaches it at this rung and could not at the scalar rungs; the spin's equation free of the coupling and its trajectory not, which is what neutrality means; two evolutions and six constraints, no multipliers for the unit conditions, two conserved densities where the scalar rungs have one -->
-
-<a href="articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html">The Charged Spin-Half Fluid: Charge Couples to the Lorentz Force, Spin Does Not</a>
-<!-- the coupled Dirac equation in polar variables read as a Cosserat medium in a background: the connection is central per component, so by type it reaches the phase and boost brackets and can reach neither the scale bracket nor the rotor bracket, which is the article's proof and not a case check; the density and the spin direction are therefore untouched, the velocity is the kinetic one named by the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-ϙ\tilde A_\Phi/\hbar$, and $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, the normalisation being kinematical where the scalar one is dynamical; the vorticity is the frame's logarithmic derivative and contains no connection, its proper part rank two for every solution, the singular values $0.19442,0.19442,0,0$ against $0.20582,0.20582,0.02742,0.02742$ for the raw derivative, so $ϙF/m$ is not transferable and the sum is a two-form of a different kind; the loop invariant a Lorentz transformation times a phase, an element of $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$, the frozen-frame sector's circulation becoming that phase; the Gordon split surviving with a charge-blind bound current; the coupling adding a force and no torque, the Larmor precession second order through the frame's transport rather than a rotor term, $g=2$ being where the composition is carried out; and the three open items of the free article surviving the coupling, the reason stated as a fact of type, the missing closure living in the bracket the connection cannot reach. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
-<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
-     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
-     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
-     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
-     restated here. -->
 
 #### The quantum apparatus
 
@@ -2526,6 +2510,22 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/charge-conjugation-and-the-division-ring-charged-neutral-and-truly-neutral-particles-in-biquaternionic-form.html">Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</a>
 <!-- the three conjugations of the spinor module and the division ring $\mathrm{F}=\mathbb{R},\mathbb{C},\mathbb{H}$; the pseudo-automorphism of the complex Clifford algebra and the discrete symmetry group $\{\mathrm{Id},\star,e,e\star\}$; particles and antiparticles as the two summands of $\Delta=S\oplus\bar{S}$; the charge states $+1,0,\bar{0}$ and the truly neutral particle; $C$, $P$, $T$ as elements of the symmetry group and the CPT composition; the division-ring obstruction to a uniform charge-conjugation operator; what the algebra supplies and does not. -->
 
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/charged-spin-half-fluid-equations-from-the-polar-action.html">The Charged Spin-Half Fluid from the Polar Action: Charge Reaches the Velocity and Not the Spin</a>
+<!-- the coupled Dirac polar action with the rotor on the left; the type table as the instrument — the connection joining the phase's bracket in time and the boost's in space and neither the scale's nor the rotor's; continuity covariant with the proper density as its coefficient; the velocity a frame element and not a gradient, which is why the connection reaches it at this rung and could not at the scalar rungs; the spin's equation free of the coupling and its trajectory not, which is what neutrality means; two evolutions and six constraints, no multipliers for the unit conditions, two conserved densities where the scalar rungs have one -->
+
+<a href="articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html">The Charged Spin-Half Fluid: Charge Couples to the Lorentz Force, Spin Does Not</a>
+<!-- the coupled Dirac equation in polar variables read as a Cosserat medium in a background: the connection is central per component, so by type it reaches the phase and boost brackets and can reach neither the scale bracket nor the rotor bracket, which is the article's proof and not a case check; the density and the spin direction are therefore untouched, the velocity is the kinetic one named by the covariant wavevector $\tilde K_{\Phi,\mathrm{gco}}=ik_m\tilde U_{\Psi,\mathrm b}^{-2}$ with $\tilde K_\Phi=\tilde K_{\Phi,\mathrm{gco}}-ϙ\tilde A_\Phi/\hbar$, and $\langle\tilde V_\Phi\rangle_\natural=-c^{2}$ for every field, the normalisation being kinematical where the scalar one is dynamical; the vorticity is the frame's logarithmic derivative and contains no connection, its proper part rank two for every solution, the singular values $0.19442,0.19442,0,0$ against $0.20582,0.20582,0.02742,0.02742$ for the raw derivative, so $ϙF/m$ is not transferable and the sum is a two-form of a different kind; the loop invariant a Lorentz transformation times a phase, an element of $\mathbb{C}^{\ast}\times SL(2,\mathbb{C})$, the frozen-frame sector's circulation becoming that phase; the Gordon split surviving with a charge-blind bound current; the coupling adding a force and no torque, the Larmor precession second order through the frame's transport rather than a rotor term, $g=2$ being where the composition is carried out; and the three open items of the free article surviving the coupling, the reason stated as a fact of type, the missing closure living in the bracket the connection cannot reach. -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
+
 ### Spin 0
 
 #### The content
@@ -2566,31 +2566,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/wave-particle-duality-and-the-galilean-limit.html">Wave–Particle Duality and the Galilean Limit: Why the Schrödinger Symbol Is Affine</a>
 <!-- the Galilean limit as a truncation of the degree of the symbol rather than an approximation of a solution: the Klein–Gordon symbol as a scalar, since $\Box$ is the gradient composed with its conjugate and the symbol is the central norm, so its left multiplication has rank all or nothing while the graded three-then-two belongs to the first-order symbol $i\tilde K_{\Phi}$ alone; the degree in the energy, two against one, and the two kinds of inhomogeneity that the two degrees produce, a constant offset whose zero set is a level set of the quadratic form $k_{t}^{\prime\,2}-k_{\Phi}^{2}$ against a linear term whose zero set is no level set of any quadratic form; homogeneity in all three wave numbers together, of degree two and of degree one, and the failure of homogeneity in the kinematic pair alone; the affine variable $k_{\mathrm{s}}=k_{t}^{\prime}-k_m$ and the exact identity $\sigma_{\mathcal{P}}=2k_m\sigma_{\mathrm{s}}+k_{\mathrm{s}}^{2}$, the residue one named term whose relative size is $k_{\mathrm{s}}/(2k_m)=(\gamma-1)/2$; the Schrödinger symbol $k_{\mathrm{s}}-k_{\Phi}^{2}/(2k_m)$ as one homogeneous piece of degree one beside one of degree two, so affine, not linear, and homogeneous of no degree; the Galilei boost law with its quadratic term $\frac{1}{2}k_m\lvert\vec\beta_b\rvert^{2}$, the exact invariance of the affine symbol checked over two hundred random points, and the theorem that the invariant symbols of degree at most one in the energy and at most two in the momentum are exactly $c\,\sigma_{\mathrm{s}}+d$, a two-dimensional family with the wave-number coefficients locked at $a=-2ck_m$ and the additive constant free, that constant being a constant potential which the boost phase absorbs; so uniqueness holds modulo that constant and every invariant shape of these degrees is affine; the mass as the cocycle of the boost and the central charge of the Galilei extension; the degree fixing one integer three times, the order in the energy, the number of sheets of the zero set, and the number of initial data, two against one; the two roots separated by $2\sqrt{k_m^{2}+k_{\Phi}^{2}}$, the discarded sheet at $k_{\mathrm{s}}\approx-2k_m$, and the region $\lvert k_{\mathrm{s}}\rvert\ll2k_m$ that excludes it, so the gap that makes the truncation consistent is the mass and a massless theory would have none; the scalar symbol\'s all-or-nothing rank on the module $\mathbb{B}\tilde\Pi$, the graded step gone, and the polarisation count changing its origin from a rank of a first-order element to the dimension of the module; the condition on the source homogeneous in either variable, $\vec k_\Phi\cdot\vec J=k_{t}^{\prime}c\rho$ and $\vec k_\Phi\cdot\vec J=k_{\mathrm{s}}c\rho$ being one equation with one current read at two frequencies, so that the affineness of the symbol and the homogeneity of the condition are independent; the identification with the cokernel surviving while the selection member does not; and the limits, constant coefficients, the region of validity and not $c\to\infty$, the module as a choice, and no statement about an antiparticle in nature. -->
-
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/charged-klein-gordon-fluid-equations-from-the-polar-action.html">The Charged Klein–Gordon Fluid from the Polar Action: Two Shifted Slots and the Frame Untouched</a>
-<!-- the coupled polar action; the connection as a central imaginary addition that joins the scale's bracket in the temporal slot and the phase's in the spatial ones, which are exactly the fluid's two equations; the shift entering the mass shell as a substitution and not as a term, by one integration by parts; the quantum potential charge-blind because the scale's gradient energy carries no connection; the vorticity as the field strength on the central class, with the rank qualification the order of the action forces; the frame's six equations untouched, so the charged scalar fluid is a charged fluid without spin -->
-
-<a href="articles_physics/the-charged-spin-zero-fluid.html">The Charged Spin-Zero Fluid: Vorticity Is the Field Strength</a>
-<!-- the scalar fluid with a central connection: the velocity reads from the kinetic momentum $\tilde V_\Phi=\tilde P^{\mathrm{mech}}/m$, so it is a unit only where the quantum potential vanishes, unlike the two companions; $\mathrm{d}V=ϙF/m$ exactly at every event, and the vorticity of the charged scalar fluid *is* the field strength, which is the article's identity and not an analogy, checked symbolically in both components; the circulation splits into a winding $2\pi\hbar n/m$ and a flux $ϙ\Phi_B/m$, the flux quantised only together with the winding, the Aharonov–Bohm phase the same statement read on a loop; the vorticity rank four exactly when $\vec E\cdot\vec B\ne0$ and without accelerating, so the charged scalar reaches with its vorticity proper the row the spin-half fluid reaches only with its raw derivative; the force a Lorentz force plus the quantum potential, and the sign of $ϙ$ the sign of $\varepsilon$, with the Klein paradox at $ϙa'_t>mc^{2}$ named as the threshold where the pair closes; the reverse map carried over, the extra structure being the connection and not a new variable, and the criterion of the four items applied one by one; and the three charged fluids set side by side, this one the only column where the charge changes the vorticity's kind, because it is the only column where the velocity is a momentum and therefore a gradient plus a potential. -->
-
-<a href="articles_physics/the-schrodinger-fluid.html">The Schrödinger Fluid</a>
-<!-- the first-order rung of the scalar ladder: the word collapses to a scale, an action and a branch exactly as on the Klein–Gordon rung, and the fluid differs from that rung by three absences — no normalisation of the velocity, so $\mathrm{D}\vec v/\mathrm{D}t=-\nabla(V+Q)/m$ with inertia $m$ and no factor $\gamma^{-1}$; no signed density, so the marker density and the conserved density coincide and there is one sheet rather than two; and no dispersion constraint, so the pair of a Hamilton–Jacobi equation and a continuity equation is unconstrained in both directions; the vorticity is the curl of the three-velocity and vanishes identically, with no frame caveat, because the velocity is a three-vector and not the spatial part of a four-vector, which is the one rung where the vanishing of the curl *is* the vorticity statement; the quantum term is an exact stress $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ with $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ and trace $-\rho_{\mathrm{num}}Q-\frac{\hbar^{2}}{8m}\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}$, so the stress is anisotropic and no function of the density reproduces it; the second-order article's anti-viscosity argument does not transfer as stated, and what transfers is the reversibility, as an anti-linear involution $\mathcal{T}:\tilde\Xi(t')\mapsto\tilde\Xi^{*}(-t')$ rather than as a parity; and the fluid is the direction article's pressureless row, with $V\ne0$ giving its fourth row's output by the other of its two routes. -->
-
-<a href="articles_physics/the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>
-<!-- the coupling does three things and no more: it turns the vorticity from zero into $\vec\omega=ϙ\vec B/m$, adds the Lorentz force $-\ϙ(\vec E+\vec v\times\vec B)$ to the acceleration law, and splits the momentum into the canonical $\nabla S$ and the kinetic $\nabla S+ϙ\vec A$; everything else is untouched by type, the connection being central imaginary and so joining the phase bracket alone, which leaves the density, the quantum potential and the stress invariant and the free stress identity holding verbatim; the vorticity identity is exact and unconditional where the charged Klein–Gordon form of it needs the qualification that its velocity is a unit only where $Q$ vanishes, and it is the cleanest instance of the identity in the block because this is the lowest rung that has a charge; the vorticity then has no dynamics of its own — $\partial_{t'}\vec\omega=-\frac{ϙ}{m}\nabla\times\vec E$ is Faraday's law with no velocity in it, and $\nabla\cdot\vec\omega=0$ together with the identity gives $\nabla\cdot\vec B=0$ as an identity of the chart rather than an extra equation; the rank is two and the electric field never enters, so the charged Klein–Gordon rank-four condition $\vec E\cdot\vec B\ne0$ has no Galilean image, a boost being what mixes the two halves of $F$; the kinetic circulation is $(2\pi\hbar n+ϙ\Phi_B)/m$ and the canonical one $2\pi\hbar n/m$ unconditionally; and the charge density $ϙ\rho_{\mathrm{num}}$ has one sign, so the two-sheet structure of the second-order fluid is absent. -->
-
-<a href="articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>
-<!-- the energy density, the stress and the flux in one element $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$; the count, ten components against eight and four usable slots; the quantum potential as its divergence; imported from the stress-energy and Noether articles rather than re-derived; and the pointer to the spinor case, where the antisymmetric part is a total divergence and the spin needs another element. -->
-
-#### The fluid's thermodynamic equations and their solutions
-
-<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
-     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
-     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
-     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
-     restated here. -->
 
 #### The quantum apparatus
 
@@ -2634,6 +2609,31 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/scalar-pair-creation-in-biquaternionic-form.html">Scalar Pair Creation in Biquaternionic Form</a>
 <!-- the background and the mode equation; in and out regions and the Bogoliubov transformation; the number of created pairs and the vacuum persistence amplitude; an exactly solvable case, the sudden quench; the biquaternion reading. -->
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/charged-klein-gordon-fluid-equations-from-the-polar-action.html">The Charged Klein–Gordon Fluid from the Polar Action: Two Shifted Slots and the Frame Untouched</a>
+<!-- the coupled polar action; the connection as a central imaginary addition that joins the scale's bracket in the temporal slot and the phase's in the spatial ones, which are exactly the fluid's two equations; the shift entering the mass shell as a substitution and not as a term, by one integration by parts; the quantum potential charge-blind because the scale's gradient energy carries no connection; the vorticity as the field strength on the central class, with the rank qualification the order of the action forces; the frame's six equations untouched, so the charged scalar fluid is a charged fluid without spin -->
+
+<a href="articles_physics/the-charged-spin-zero-fluid.html">The Charged Spin-Zero Fluid: Vorticity Is the Field Strength</a>
+<!-- the scalar fluid with a central connection: the velocity reads from the kinetic momentum $\tilde V_\Phi=\tilde P^{\mathrm{mech}}/m$, so it is a unit only where the quantum potential vanishes, unlike the two companions; $\mathrm{d}V=ϙF/m$ exactly at every event, and the vorticity of the charged scalar fluid *is* the field strength, which is the article's identity and not an analogy, checked symbolically in both components; the circulation splits into a winding $2\pi\hbar n/m$ and a flux $ϙ\Phi_B/m$, the flux quantised only together with the winding, the Aharonov–Bohm phase the same statement read on a loop; the vorticity rank four exactly when $\vec E\cdot\vec B\ne0$ and without accelerating, so the charged scalar reaches with its vorticity proper the row the spin-half fluid reaches only with its raw derivative; the force a Lorentz force plus the quantum potential, and the sign of $ϙ$ the sign of $\varepsilon$, with the Klein paradox at $ϙa'_t>mc^{2}$ named as the threshold where the pair closes; the reverse map carried over, the extra structure being the connection and not a new variable, and the criterion of the four items applied one by one; and the three charged fluids set side by side, this one the only column where the charge changes the vorticity's kind, because it is the only column where the velocity is a momentum and therefore a gradient plus a potential. -->
+
+<a href="articles_physics/the-schrodinger-fluid.html">The Schrödinger Fluid</a>
+<!-- the first-order rung of the scalar ladder: the word collapses to a scale, an action and a branch exactly as on the Klein–Gordon rung, and the fluid differs from that rung by three absences — no normalisation of the velocity, so $\mathrm{D}\vec v/\mathrm{D}t=-\nabla(V+Q)/m$ with inertia $m$ and no factor $\gamma^{-1}$; no signed density, so the marker density and the conserved density coincide and there is one sheet rather than two; and no dispersion constraint, so the pair of a Hamilton–Jacobi equation and a continuity equation is unconstrained in both directions; the vorticity is the curl of the three-velocity and vanishes identically, with no frame caveat, because the velocity is a three-vector and not the spatial part of a four-vector, which is the one rung where the vanishing of the curl *is* the vorticity statement; the quantum term is an exact stress $\sigma^{Q}_{ij}=\frac{\hbar^{2}}{4m}\rho_{\mathrm{num}}\partial_{i}\partial_{j}\ln\rho_{\mathrm{num}}$ with $\partial_{j}\sigma^{Q}_{ij}=-\rho_{\mathrm{num}}\partial_{i}Q$ and trace $-\rho_{\mathrm{num}}Q-\frac{\hbar^{2}}{8m}\rho_{\mathrm{num}}\lvert\nabla\ln\rho_{\mathrm{num}}\rvert^{2}$, so the stress is anisotropic and no function of the density reproduces it; the second-order article's anti-viscosity argument does not transfer as stated, and what transfers is the reversibility, as an anti-linear involution $\mathcal{T}:\tilde\Xi(t')\mapsto\tilde\Xi^{*}(-t')$ rather than as a parity; and the fluid is the direction article's pressureless row, with $V\ne0$ giving its fourth row's output by the other of its two routes. -->
+
+<a href="articles_physics/the-charged-schrodinger-fluid.html">The Charged Schrödinger Fluid: The Vorticity Is the Magnetic Field</a>
+<!-- the coupling does three things and no more: it turns the vorticity from zero into $\vec\omega=ϙ\vec B/m$, adds the Lorentz force $-\ϙ(\vec E+\vec v\times\vec B)$ to the acceleration law, and splits the momentum into the canonical $\nabla S$ and the kinetic $\nabla S+ϙ\vec A$; everything else is untouched by type, the connection being central imaginary and so joining the phase bracket alone, which leaves the density, the quantum potential and the stress invariant and the free stress identity holding verbatim; the vorticity identity is exact and unconditional where the charged Klein–Gordon form of it needs the qualification that its velocity is a unit only where $Q$ vanishes, and it is the cleanest instance of the identity in the block because this is the lowest rung that has a charge; the vorticity then has no dynamics of its own — $\partial_{t'}\vec\omega=-\frac{ϙ}{m}\nabla\times\vec E$ is Faraday's law with no velocity in it, and $\nabla\cdot\vec\omega=0$ together with the identity gives $\nabla\cdot\vec B=0$ as an identity of the chart rather than an extra equation; the rank is two and the electric field never enters, so the charged Klein–Gordon rank-four condition $\vec E\cdot\vec B\ne0$ has no Galilean image, a boost being what mixes the two halves of $F$; the kinetic circulation is $(2\pi\hbar n+ϙ\Phi_B)/m$ and the canonical one $2\pi\hbar n/m$ unconditionally; and the charge density $ϙ\rho_{\mathrm{num}}$ has one sign, so the two-sheet structure of the second-order fluid is absent. -->
+
+<a href="articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html">The Quantum Stress Tensor of the Biquaternion Scalar Field</a>
+<!-- the energy density, the stress and the flux in one element $\tilde\Sigma_\Psi=w_{\mathrm{fl}}e_t+\tfrac{i}{c}\vec S_{\mathrm P}$; the count, ten components against eight and four usable slots; the quantum potential as its divergence; imported from the stress-energy and Noether articles rather than re-derived; and the pointer to the spinor case, where the antisymmetric part is a total divergence and the spin needs another element. -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 ### Focus on informational aspects
 
@@ -2710,14 +2710,14 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 #### The field equation and its solutions
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
 
 <a href="articles_physics/spin-1-condensates-and-the-spinor-order-parameter-in-biquaternionic-form.html">Spin-1 Condensates and the Spinor Order Parameter in Biquaternionic Form</a>
 <!-- the spin-one condensate in mean-field theory; the spinor as a vector in the symmetric sector; ferromagnetic and polar states from the algebra; the energy functional in the framework. -->
+
+#### The fluid's equations and their solutions
 
 ### Spin 1/2
 
@@ -2750,8 +2750,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/exercise-two-spins-in-the-singlet-state.html">Exercise: Two Spins in the Singlet State</a>
 <!-- the exercise; solution in the standard formulation and in the biquaternion formulation; limiting cases; and the comparison with the companion spin exercises. -->
-
-#### The fluid's equations and their solutions
 
 #### The quantum apparatus
 
@@ -2795,6 +2793,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/anyons-and-braid-statistics-in-biquaternionic-form.html">Anyons and Braid Statistics in Biquaternionic Form</a>
 <!-- the braid group and the failure of the permutation group; the flux–charge composite and the Aharonov–Bohm phase; the Chern–Simons origin of fractional statistics; non-abelian anyons; the two-sector statement. -->
+
+#### The fluid's equations and their solutions
 
 ### Spin 0
 
@@ -2848,22 +2848,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-coupled-schrodinger-equation-in-the-non-quantum-limit.html">The Coupled Schrödinger Equation in the Non-Quantum Limit</a>
 <!-- the warning that the parent's split into free, paramagnetic and diamagnetic pieces invites a second expansion in powers of $q$ that is neither this limit nor compatible with it, all three pieces carrying the same order in $\epsilon$; the deleted term the same one as in the free companion, carrying no $\theta_{\mathrm{pha}}$ and no $\vec A$; the leading equation the full covariant Hamilton–Jacobi equation, which changes value when the potential is switched on and never changes order -->
-
-#### The fluid's equations and their solutions
-
-<a href="articles_physics/schrodinger-fluid-equations-from-the-polar-action.html">Schrödinger Fluid Equations from the Polar Action: Continuity and Guidance as Two Euler–Lagrange Equations</a>
-<!-- the polar action varied in its eight coordinates; the phase's equation as continuity for the phase momentum, which is the charge density and not the proper density; the scale's equation as the guidance equation with Madelung's quantum potential, and the quantum potential as the scale's gradient energy that no frame term reaches; the four vanishing momenta and the frame that is therefore not transported; continuity independent of the frame's equations while guidance is not; the central class as Madelung's pair, standard since 1927, and the general word as the same pair with the frame in the potential; what the route adds — one fluid equation per coordinate — and what it relabels -->
-
-<a href="articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html">The Charged Schrödinger Fluid from the Polar Action: The Connection Shifts the Potential and Not the Continuity</a>
-<!-- the coupled polar action varied; the connection as a central imaginary addition that joins the phase's bracket and no other, so continuity survives with the mechanical momentum as the velocity and Madelung's quantum potential is charge-blind; the vorticity as an identity of the chart rather than of the equation, $\vec\omega=\varkappa\vec B/m$ because the curl of a gradient vanishes; the quadratic term in $A$ as the interaction and the reason the stress is gauge-invariant; the chart's redundant direction as the phase, whose conjugate momentum is the charge; the four vanishing momenta unchanged -->
-
-#### The fluid's thermodynamic equations and their solutions
-
-<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
-     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
-     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
-     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
-     restated here. -->
 
 #### The quantum apparatus
 
@@ -2924,6 +2908,22 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html">Zero Divisors as a Physical Locus in Biquaternionic Form</a>
 <!-- the algebraic locus; the locus in momentum space, in configuration space and in state space; null solutions of the free equation; what stops at the locus. -->
+
+#### The fluid's equations and their solutions
+
+<a href="articles_physics/schrodinger-fluid-equations-from-the-polar-action.html">Schrödinger Fluid Equations from the Polar Action: Continuity and Guidance as Two Euler–Lagrange Equations</a>
+<!-- the polar action varied in its eight coordinates; the phase's equation as continuity for the phase momentum, which is the charge density and not the proper density; the scale's equation as the guidance equation with Madelung's quantum potential, and the quantum potential as the scale's gradient energy that no frame term reaches; the four vanishing momenta and the frame that is therefore not transported; continuity independent of the frame's equations while guidance is not; the central class as Madelung's pair, standard since 1927, and the general word as the same pair with the frame in the potential; what the route adds — one fluid equation per coordinate — and what it relabels -->
+
+<a href="articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html">The Charged Schrödinger Fluid from the Polar Action: The Connection Shifts the Potential and Not the Continuity</a>
+<!-- the coupled polar action varied; the connection as a central imaginary addition that joins the phase's bracket and no other, so continuity survives with the mechanical momentum as the velocity and Madelung's quantum potential is charge-blind; the vorticity as an identity of the chart rather than of the equation, $\vec\omega=\varkappa\vec B/m$ because the curl of a gradient vanishes; the quadratic term in $A$ as the interaction and the reason the stress is gauge-invariant; the chart's redundant direction as the phase, whose conjugate momentum is the charge; the four vanishing momenta unchanged -->
+
+#### The fluid's thermodynamic equations and their solutions
+
+<!-- the band's fluid equations closed into thermodynamic ones: the local thermal state, its equation of
+     state, the entropy current and the departures from equilibrium, with the band's own count of independent data.
+     Empty until the band's fluid equations are read thermally; the rung and its three tests are stated once, in
+     *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion Universe Action*, and are not
+     restated here. -->
 
 ### Focus on informational aspects
 
@@ -3036,11 +3036,11 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-coupled-proca-equation-in-the-non-quantum-limit.html">The Coupled Proca Equation in the Non-Quantum Limit</a>
 <!-- the same deletion that fails in the free action succeeding here, the amplitude's block at order two against the phase's bracket and the mass term at order zero; exactness on a constant envelope, where the deleted block vanishes identically, so the limit's error is exactly the envelope's curvature; the phase's variation giving the covariant transport unchanged, the amplitude's the shell with the frame factor, the frame's the polarisation's transport; the invariant length not closed in the six angles, so the frame's variation stays formal and the article says so -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
+
+#### The fluid's equations and their solutions
 
 ### Spin 1/2 origin: effects and non-quantum limits
 
@@ -3065,8 +3065,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-coupled-dirac-equation-in-the-non-quantum-limit.html">The Coupled Dirac Equation in the Non-Quantum Limit</a>
 <!-- the parent's two displays confronted, the boxed constant-setting action being the operator-setting one with the gradients of $r$, $\theta_{\mathrm{rpd}}$ and $\theta_{\mathrm{axr}}$ deleted, so that the limit's ledger is printed rather than reconstructed; the type table as a prediction that the density and the spin are untouched at a point, confirmed by the equation route; seven momenta zero or fixed, two evolution equations and six constraints, with no multiplier because the parameterisation is exact -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
@@ -3076,6 +3074,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-classical-spinning-particle-the-bargmann-michel-telegdi-equation-in-biquaternionic-form.html">The Classical Spinning Particle: The Bargmann–Michel–Telegdi Equation in Biquaternionic Form</a>
 <!-- the spin four-vector; the covariant equation from the two available structures; the biquaternion form; the rest frame and the meaning of $g$; the degenerate case $g=2$ and the spin-follows-velocity property; the laboratory-frame limit, Larmor and Thomas. -->
+
+#### The fluid's equations and their solutions
 
 ### Spin 0 origin: effects and non-quantum limits
 
@@ -3100,8 +3100,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-coupled-klein-gordon-equation-in-the-non-quantum-limit.html">The Coupled Klein–Gordon Equation in the Non-Quantum Limit</a>
 <!-- the four blocks and their orders, with both interaction pieces — the current times the potential and the potential squared — of order zero, so that no part of the interaction is deleted; the quadratic piece required by boundedness below and by local invariance, which is why no truncation in powers of $q$ is this limit; the scale's variation the mechanical mass shell, the phase's the covariant transport unchanged; the truncated action $r^{2}\left[\left(\partial_{r'_{t}}S+q\varphi/c\right)^{2}-\lvert\vec\pi\rvert^{2}-m^{2}c^{2}\right]$ degenerate in the scale, its content charged relativistic dust -->
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
@@ -3111,6 +3109,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 <a href="articles_physics/the-central-scalar-field-classical-dynamics-in-the-biquaternion-centre.html">The Central Scalar Field: Classical Dynamics in the Biquaternion Centre</a>
 <!-- the centre as the scalar's value space; the classical action and the field equation; plane waves and the range of the field; the static central solution; the field energy and the stress–energy; the test particle and the reduction to the central-force problem; why there is no intrinsic magnetism. -->
+
+#### The fluid's equations and their solutions
 
 ### Focus on informational aspects
 
@@ -3154,14 +3154,14 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 
 #### The field equation and its solutions
 
-#### The fluid's equations and their solutions
-
 #### The quantum apparatus
 
 #### The applications
 
 <a href="articles_physics/the-elastic-displacement-field-in-a-classical-solid-three-polarizations-at-two-speeds.html">The Elastic Displacement Field in a Classical Solid: Three Polarizations at Two Speeds</a>
 <!-- the displacement as a material vector and the adjoint carrier; the gradient decomposed into dilatation, local rotation and shear, $3\otimes3=1\oplus3\oplus5$; the symmetric and antisymmetric products of the derivative with the field; the energy as bulk modulus times the squared dilatation plus shear modulus times the squared shear, with the local rotation free; the two branches and the two speeds; the polarization triad as a basis of the adjoint; the Poisson ratio as the single number in the ratio of the speeds and the incompressible limit as the removal of the third mode. -->
+
+#### The fluid's equations and their solutions
 
 ### Effects with intrinsic magnetism (spin 1/2 origin)
 
@@ -3170,8 +3170,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 #### The action
 
 #### The field equation and its solutions
-
-#### The fluid's equations and their solutions
 
 #### The quantum apparatus
 
@@ -3186,6 +3184,8 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/the-classical-origin-of-g-2-in-biquaternionic-form.html">The Classical Origin of g = 2 in Biquaternionic Form</a>
 <!-- the gyromagnetic factor; the convective theorem and why it gives $g=1$; why convection does not give $g=2$; the algebraic factor two; consistency checks; the measured value and the anomaly. -->
 
+#### The fluid's equations and their solutions
+
 ### Effects without intrinsic magnetism (spin 0 origin)
 
 #### The content
@@ -3193,6 +3193,28 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 #### The action
 
 #### The field equation and its solutions
+
+#### The quantum apparatus
+
+#### The applications
+
+<a href="articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a>
+<!-- the worldline in the material sector; inertial frames as rotors; the non-relativistic limit and the boost as a shear; the free particle as the spin-zero benchmark. -->
+
+<a href="articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html">The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form</a>
+<!-- the oscillator in the material sector; the complex amplitude and the centre; the phase advance as the sector exchange; energy and the Hermitian form; the flow as a bracket derivation. -->
+
+<a href="articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html">The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</a>
+<!-- the non-relativistic configuration; the definition of the central-scalar limit; two limits distinguished; central forces and angular momentum; the reduction to one dimension; the rotation group and the bracket algebra; what the limit excludes. -->
+
+<a href="articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.html">Central Forces and the Classical Kepler Problem in Biquaternionic Form</a>
+<!-- the Kepler potential; the orbit and the conic sections; Kepler's three laws; the Runge–Lenz vector; closed orbits and Bertrand's theorem; the algebraic reading. -->
+
+<a href="articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html">The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</a>
+<!-- the classical Coulomb problem; the six conserved quantities; the symmetry algebra; the classical origin of the degeneracy; the reach and the limits of the algebra. -->
+
+<a href="articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a>
+<!-- inertial and rotating frames; the pendulum in the rotating frame; the geometric meaning, geodesic turning and holonomy; the rotor and the double cover; the relation to other geometric phases. Spin 0 in origin by its carrier, but the content is a holonomy statement: the article continues the geometric-phase chain that runs through Hannay's angles. -->
 
 #### The fluid's equations and their solutions
 
@@ -3231,28 +3253,6 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
      and the thermal parameter that would make the closure a thermodynamics is the missing input. The rung and its
      three tests are stated once, in *From the Fluid Equations to the Thermodynamic Equations* under *Biquaternion
      Universe Action*. -->
-
-#### The quantum apparatus
-
-#### The applications
-
-<a href="articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html">The Classical Free Particle and Inertial Frames in Biquaternionic Form</a>
-<!-- the worldline in the material sector; inertial frames as rotors; the non-relativistic limit and the boost as a shear; the free particle as the spin-zero benchmark. -->
-
-<a href="articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html">The Classical Harmonic Oscillator and the Two-Sector Structure in Biquaternionic Form</a>
-<!-- the oscillator in the material sector; the complex amplitude and the centre; the phase advance as the sector exchange; energy and the Hermitian form; the flow as a bracket derivation. -->
-
-<a href="articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html">The Central-Scalar Limit of Classical Mechanics in Biquaternionic Form</a>
-<!-- the non-relativistic configuration; the definition of the central-scalar limit; two limits distinguished; central forces and angular momentum; the reduction to one dimension; the rotation group and the bracket algebra; what the limit excludes. -->
-
-<a href="articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.html">Central Forces and the Classical Kepler Problem in Biquaternionic Form</a>
-<!-- the Kepler potential; the orbit and the conic sections; Kepler's three laws; the Runge–Lenz vector; closed orbits and Bertrand's theorem; the algebraic reading. -->
-
-<a href="articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html">The Classical Coulomb Problem and Its Hidden SO(4) Symmetry in Biquaternionic Form</a>
-<!-- the classical Coulomb problem; the six conserved quantities; the symmetry algebra; the classical origin of the degeneracy; the reach and the limits of the algebra. -->
-
-<a href="articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html">The Foucault Pendulum and Classical Holonomy in Biquaternionic Form</a>
-<!-- inertial and rotating frames; the pendulum in the rotating frame; the geometric meaning, geodesic turning and holonomy; the rotor and the double cover; the relation to other geometric phases. Spin 0 in origin by its carrier, but the content is a holonomy statement: the article continues the geometric-phase chain that runs through Hannay's angles. -->
 
 ### Focus on informational aspects
 
