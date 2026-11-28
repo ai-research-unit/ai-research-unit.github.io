@@ -35,7 +35,7 @@ gives $\rho = 1$ for the doublet, $\rho > 1$ for a $T = 1$, $T_3 = 0$ triplet ad
 - Companion article *The Chiral Theory and the Lagrangian: The Pion and the Decay Constant*, for the adjoint isospin action on a triplet and the relation of the custodial group to the chiral group.
 - Companion article *The Minimal Coupling in Biquaternionic Form*, for the non-abelian connection construction and its left-multiplication action on matter.
 - Companion article *Non-Abelian Connections in Biquaternionic Form*, for the field strength and the adjoint representation.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the boundary that this article states — no doublet, no hypercharge, no chiral $SU(2)_L$.
 - Companion article *Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall*, for the vector-like obstruction and the electroweak quantum numbers.
 
 **Custodial symmetry is not accidental.** The global $\mathrm{SU}(2)$ the potential possesses is the **diagonal of a local pair**, $\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R$ broken to its diagonal, so $\rho=1$ follows from a local symmetry and its breaking pattern rather than from a property of one scalar multiplet. **The measured value, the mass matrices and every coefficient below stand, and the reason the equality holds is the breaking pattern.** The tier is T3.

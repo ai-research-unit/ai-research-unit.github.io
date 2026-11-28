@@ -8,7 +8,7 @@
 
 **The strongest objection.** *If two densities are related by a field redefinition, the difference between them is unobservable, so nothing needs to be proved.* The premise is true only for redefinitions of a particular form, and the form is exactly what the condition identifies. A general redefinition changes the measure, and the measure's change is an observable contribution. Asserting invariance without the condition is how an anomaly is missed.
 
-**Position.** After [the parameterised action](the-parameterised-action-an-ordered-family-of-theories.html) and [the expansion parameter](the-expansion-parameter-order-counting-and-non-commuting-truncations.html), because commutation is with those two that is hardest to check. It is the article that licenses every other article's transcription.
+**Position.** After [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html) and [the expansion parameter](the-expansion-parameter-order-counting-and-non-commuting-truncations.html), because commutation is with those two that is hardest to check. It is the article that licenses every other article's transcription.
 
 ## The Invariance of the Integral
 
@@ -111,7 +111,7 @@ $$
 ## Further Reading
 
 - [The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html), the stage whose split moves under a redefinition.
-- [The Parameterised Action: An Ordered Family of Theories](the-parameterised-action-an-ordered-family-of-theories.html), the equivalence class of densities that this article defines.
+- [The Parameterised Action: An Ordered Family of Effective Field Theories](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), the equivalence class of densities that this article defines.
 - [The Expansion Parameter: Order Counting and Non-Commuting Truncations](the-expansion-parameter-order-counting-and-non-commuting-truncations.html), the grading that the third test must preserve.
 - [What Invariance Cannot Decide: Declared Coefficients, Signs and Normalisations](what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html), the invariant part of the class.
 - [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html), the corpus's largest single transcription, and its stated gap.

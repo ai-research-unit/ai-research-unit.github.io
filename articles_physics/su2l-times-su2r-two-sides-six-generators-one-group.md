@@ -20,7 +20,7 @@ $$
 
 **What this article does not claim.** That the algebra supplies a chiral connection theory. It does not: one-sided multiplication is vector-like, and the tie between an operator side and a spinor letter is not in the algebra. That failure is the *chiral wall*, stated in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and restated for the frame in [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html); *One Group, Two Modules* and *What Would Settle It* quote it and do not re-derive it. **Nor does this article state any coupling value**; where the two factors' strengths would enter, it names the structure and stops.
 
-**Where the other question is answered.** Why the low-energy symmetry group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*. **This article keeps the group; that section keeps the comparison.**
+**Where the other question is answered.** Why the low-energy symmetry group has one weak factor and not two is a question about hypercharge, about the multiplet assignment and about a breaking, and it is the Standard Model's chapter: [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html), §*Weak Hypercharge: Nothing Derives It*. **This article keeps the group; that section keeps the comparison.**
 
 **One word, five jobs.** *Left* and *right* name, in this corpus, the slot an operator acts on, the label of an element, the helicity of a field, the multiplication side in a product, and — in $\mathrm{SU}(2)_L$ — a group factor. **Five meanings of two words is how this subject goes wrong**, so this article says *side* for the multiplication, *letter* for the chirality slot, and *factor* for the symmetry group.
 
@@ -195,7 +195,7 @@ $$
 
 The corpus recomputes it: the quaternion-valued scalar admits $\tilde Q\mapsto g_L\tilde Qg_R^{*}$, a central vacuum is diagonal-invariant, and the two mass matrices come out proportional. The detail is in [Custodial Symmetry and the $\rho$ Parameter](custodial-symmetry-and-the-rho-parameter.html).
 
-**Role four, the local symmetry.** The only role not realised: the two sides promoted to local symmetries with their own connections. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), §*Why the Standard Model Makes One Side Local and Not Two*.
+**Role four, the local symmetry.** The only role not realised: the two sides promoted to local symmetries with their own connections. **Nothing in the data requires it, and nothing excludes it above its breaking scale.** Why the observed theory stops at one factor is a question about hypercharge and the multiplet assignment, and it is answered in [Electroweak Theory in the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html), §*Weak Hypercharge: Nothing Derives It*.
 
 **The lesson of the table.** The group is not an unused object. **Three of the four roles are realised: an exact global symmetry of the strong sector, an approximate one in the scalar sector, and the rotation group of the carrier.** The fourth is the only one nature does not exhibit at low energy, and the reason belongs to the Standard Model's chapter rather than to this one. **What the table settles here is narrower and enough: the group is native, and only its use is a choice.**
 
@@ -255,7 +255,7 @@ Native is not made local. The group's presence at the element level is a fact ab
 
 Spacetime is not internal. The same group is $\mathrm{Spin}(4)_{E}$ on the carrier and an internal factor on the tensor factors, and the left–right model needs the second (*One Group, Two Modules*).
 
-Parity is broken by the module and not by the charges. The multiplet assignment is what breaks it; a charge bookkeeping symmetric under $L\leftrightarrow R$ is compatible with either choice, which is the point [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) makes about the observed spectrum.
+Parity is broken by the module and not by the charges. The multiplet assignment is what breaks it; a charge bookkeeping symmetric under $L\leftrightarrow R$ is compatible with either choice, which is the point [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html) makes about the observed spectrum.
 
 Broken is not absent. A factor that is no longer made local below a scale has not left the algebra; the breaking chain is the Standard Model's chapter, and it is where the survivor is identified.
 
@@ -273,7 +273,7 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 **The four roles.** Spacetime rotations, exact; the chiral symmetry of the strong sector, approximate and spontaneously broken; the custodial symmetry of the scalar sector, approximate and giving $\rho=1$; the local left–right symmetry, not observed.
 
-**Where the fourth role is decided.** Not here. Whether nature makes the local group, and why the low-energy theory makes one local factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html) takes them up, and this article stops at the group the algebra supplies.
+**Where the fourth role is decided.** Not here. Whether nature makes the local group, and why the low-energy theory makes one local factor of it, are questions about hypercharge, about the multiplet assignment and about a breaking; [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html) takes them up, and this article stops at the group the algebra supplies.
 
 **The cost.** Two $\mathrm{SU}(2)$'s and a circle are free, because the alphabet is $\mathrm{SU}(2)$; the spatial block costs a layer; a group needing a separate $\mathrm{SU}(3)$ with a commuting $\mathrm{SU}(2)$ is over budget.
 
@@ -294,7 +294,6 @@ Not observed is not excluded. The fourth role is bounded from below only, and th
 
 ## Further Reading
 
-- [The Standard Model as the Low-Energy Phase: The $\mathrm{U}(2)$ Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Why the low-energy theory makes one local side and not two, and hypercharge as the broken factor's remnant.
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The frame that uses this group, where each factor comes from, and the ceiling that forces the tensor product.
 - [The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock](the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html). $\mathrm{SU}(2)\times\mathrm{U}(1)$ against the algebra's $\mathrm{U}(2)$, and the selection rule the quotient imposes.
 - [Electroweak Theory in the Biquaternion Framework: The $\mathrm{U}(2)$ Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html). The wall of *One Group, Two Modules* at its four levels, and the ledger of what each level would need.

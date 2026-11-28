@@ -277,7 +277,7 @@ It could be wrong in two ways.
 - Selection. If there are many vacua, a small ratio is not tuned, it is selected. The heuristic then has no force because the ensemble is not the one it assumes.
 - Structure. The criterion assumes that the parameters are independent inputs. If the underlying theory relates them — if $m_H$ is a function of the same quantity that sets $M_{\mathrm{Pl}}$ — then the ratio is not tuned but computed, and the heuristic is measuring the wrong thing.
 
-The corpus's position is to record the tension, to state the criterion's status, and not to use naturalness as evidence for or against anything. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) already established that the framework's defence is geometric rather than numerical; a naturalness argument would be a numerical defence, and the framework cannot mount one.
+The corpus's position is to record the tension, to state the criterion's status, and not to use naturalness as evidence for or against anything. [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html) already established that the framework's defence is geometric rather than numerical; a naturalness argument would be a numerical defence, and the framework cannot mount one.
 
 A reader who has been told that the hierarchy problem is "the deepest problem in physics" will read a framework that is silent on it as deficient. A heuristic is silent because it is a heuristic: it states no number for $m_H/v$, so there is no number to check.
 
@@ -369,7 +369,6 @@ Naturalness is a heuristic with one success (GIM) and one failure (weak-scale su
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The potential whose two parameters carry the tuning.
 - [The Higgs Mechanism in Biquaternionic Form](the-higgs-mechanism-in-biquaternionic-form.html). What the framework does represent of the scalar sector, and what it does not.
 - [Electroweak Precision Observables: the Oblique Parameters $S$, $T$, $U$](electroweak-precision-observables-the-oblique-parameters-s-t-u.html). How the scalar mass and any new heavy state enter the fit, and why $T$ is the observable that measures them.
-- [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). Where $v$ and $M_H$ appear as two of the nineteen, both in the group with no arena.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The running that makes the QCD scale possible, and the contrast the framework's silence on $v$ is measured against.
 - [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). Why no second confining sector is available, and hence why compositeness cannot be built here.
 - [Meson Mixing, Rare Decays and the Unitarity Triangle as a Closure Test](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html). GIM as the naturalness argument that worked, and the standard for what "worked" means.

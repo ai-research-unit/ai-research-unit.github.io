@@ -1,8 +1,8 @@
-# __The Lagrangian Method: From the Truncated Action to the Feynman Diagram__
+# __The Lagrangian Method: From a Truncated Effective Lagrangian to the Feynman Diagram__
 
 ## Introduction
 
-**The claim.** A situation in this corpus begins with a truncation: the density for the fields it contains, cut at a stated degree. From that truncation one method returns diagrams. The method has one input and four stages, and the stages are not alternatives. Stage $0$ supplies the input by writing the truncated density; stage $1$ defines the integral; stage $2$ solves its quadratic part exactly; stage $3$ expands the rest; stage $4$ contracts the expansion into graphs. This article states the method once and names it, so that the articles of the corpus that carry its stages can be read as one machine.
+**The claim.** A situation in this corpus begins with a truncation: the density for the fields it contains, cut at a stated degree. From that truncation one method returns diagrams. The method has one input and four stages, and the stages are not alternatives. Stage $0$ supplies the input by writing the truncated density; stage $1$ defines the integral; stage $2$ solves its quadratic part exactly; stage $3$ expands the rest; stage $4$ contracts the expansion into graphs. This article states the method once and names it, so that the articles of the corpus that carry its stages can be read as one machine. The density is an effective Lagrangian at a stated cutoff, and the method that works with it is an effective field theory; the vocabulary is fixed in its own section below.
 
 **Why it is worth stating once.** The corpus already contains every part. The [functional integral](the-functional-integral-in-biquaternionic-form.html), the [generating functional](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), the [Wick theorem](the-wick-theorem-in-biquaternionic-form.html), the [$S$-matrix](the-s-matrix-in-biquaternionic-form.html) and the [LSZ reduction](the-lsz-reduction-formula-in-biquaternionic-form.html) each have their own article, their own derivation and their own declared gap, and [The Quantisation Hub](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html) lists them in the order in which the operation is performed. The hub is the index of the parts. What no article states is the machine they compose: the split of one density into a quadratic and a polynomial part, the inversion of the first into the propagator, the expansion of the second into vertices, and the contraction of both into diagrams. That chain begins before the hub's list, at the density, and ends after it, at the amputated amplitude. A reader who begins at the $S$-matrix does not know that the vertex was fixed two stages earlier, in the split of the density. A reader who begins at the Gaussian does not know that its inverse is what the diagrams call the propagator.
 
@@ -82,6 +82,26 @@ Stage $4$ collects. The terms are the diagrams, and the diagrams are read by fou
 
 **The loop expansion is not a second expansion.** It groups the same diagrams by the number of closed loops instead of by the power of the coupling. The two groupings are different, and truncating at fixed loop order is not the same as truncating at fixed coupling order. [The Leading Order](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) states where the equivalence holds and where it stops.
 
+## The Input Is an Effective Lagrangian
+
+**The input has a name in the literature, and the method is the one that goes with it.** A density cut at a stated degree, carrying every term the symmetries admit below that degree, is an *effective Lagrangian*. The method that computes with it is an *effective field theory*. The name is not decoration: it is the reason the cut is legitimate, and it is the reason the coefficients are not predictions.
+
+**Five words change, and nothing else does.**
+
+| the corpus's word | the literature's word | what it denotes |
+|---|---|---|
+| the density cut at a stated degree | the effective Lagrangian | the input of stage $0$ |
+| the label $\Lambda$ | the cutoff | the member of the family that is read |
+| $g_i(\Lambda)$ | the Wilson coefficient | a coefficient, a function of the label |
+| the degree $d_i$ | the power counting | the exponent that sizes a term |
+| the ratio $Q/\Lambda$ | the expansion parameter of the effective theory | the small number the truncation is ordered by |
+
+**The stages are unchanged under the name, and this is the section's point.** Nothing in stages $1$ to $4$ refers to a scale ratio: they invert an operator, expand a polynomial, and contract fields. What the name adds is a statement about the *input* — that it is the most general density consistent with the symmetries, cut where the accuracy requires — and one decision the stages do not contain. That decision is which of the admitted terms to keep for a stated accuracy, and it is [term selection](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html).
+
+**Two expansions are at work and they are not the same.** The *series* is the expansion of the exponential in the coupling, and it is what stages $3$ and $4$ truncate. The *family* is the expansion of the density in the ratio of the observable's scale to the cutoff, and it is what stage $0$ truncates. A calculation that declares one and not the other is ordered in one direction only, and [the expansion parameter](the-expansion-parameter-order-counting-and-non-commuting-truncations.html) shows why the two orderings do not commute.
+
+**The applications live outside this section, and the plan says where.** Two categories carry a complete Lagrangian written at a stated label: *Biquaternion Universe Primordial Force Effective Field Theory* (PFEFT) and *Biquaternion Universe Standard Model Effective Field Theory* (SMEFT). They are read after this section, because each is one member of the family of [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html) written out in full. This section states the method those two sections apply, and it takes no example from either.
+
 ## Why the Split Is the Right Organisation
 
 Four facts do the work, and each has one consequence.
@@ -115,6 +135,8 @@ Four facts do the work, and each has one consequence.
 
 **The name is composite.** Perturbative quantum field theory is the framework, the Feynman–Dyson series is the series, path-integral perturbation theory is the route, and the Feynman diagram expansion is the output. The loop expansion regroups the same diagrams by the action quantum; it is not a second expansion.
 
+**The input is an effective Lagrangian, and the method is the effective field theory built on it.** The cutoff, the Wilson coefficient, the power counting and the ratio $Q/\Lambda$ rename the label, the coefficient, the degree and the small parameter, and no stage changes under the rename. What the name adds is the decision the stages do not contain: which terms to keep for a stated accuracy, made once at stage $0$ and never revisited.
+
 **The order is the content.** The split is by field degree and the expansion is by coupling, so a quartic is one vertex at order $\lambda$. What is cut is cut at a stated degree and carries a stated error. And the three ways the route fails are named in the section's last article, each with the object that repairs it — together with the one operation, renormalisation, that is not a failure at all.
 
 ## Summary of Notation
@@ -133,13 +155,14 @@ Four facts do the work, and each has one consequence.
 ## Further Reading
 
 - [The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html), stage $0$, and the sense in which only the sum is physical.
+- [Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html), the decision that fixes what stage $0$ is handed.
 - [The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html), stages $1$ and $2$, and the inversion that defines the propagator.
 - [The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html), stage $3$, and the counting that makes one monomial one vertex.
 - [The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html), stage $4$, and the four reading instructions.
 - [Three Diagrams of the SU(4) Model: The Kaon, the Proton Chain and a Gluon Exchange](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html), the method's diagrams drawn in the corpus's own strong sector.
-- [The Parameterised Action: An Ordered Family of Theories](the-parameterised-action-an-ordered-family-of-theories.html), the family of which stage $0$'s density is a member.
+- [The Parameterised Action: An Ordered Family of Effective Field Theories](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), the family of which stage $0$'s density is a member.
 - [The Expansion Parameter: Order Counting and Non-Commuting Truncations](the-expansion-parameter-order-counting-and-non-commuting-truncations.html), the grading that turns the diagram sum into an approximation.
-- [Integrating Out and Matching: From One Action to Another](integrating-out-and-matching-from-one-action-to-another.html), how one member of the family is derived from another.
+- [Integrating Out and Matching: From One Effective Field Theory to Another](integrating-out-and-matching-from-one-effective-field-theory-to-another.html), how one member of the family is derived from another.
 - [The Dictionary: Field Redefinition and Change of Representation](the-dictionary-field-redefinition-and-change-of-representation.html), the condition under which a transcription of this corpus is a rewriting.
 - [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), the postulate this section imports.
 - [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html), the classical counterpart, from which this section takes its shape.

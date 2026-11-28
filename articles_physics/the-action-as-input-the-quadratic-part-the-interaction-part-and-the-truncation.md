@@ -10,7 +10,7 @@
 
 **The strongest objection.** *If the split is arbitrary, the diagrams are arbitrary.* The answer is the sentence above, read as a theorem of the method: a change of split changes which diagrams one draws and not what their sum is, because the sum is the density's. [The Leading Order](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) makes the same point from the other side, where the sum of the tree diagrams is the solution of the equation the unsplit density defines.
 
-**Position.** The first article of the section *The Lagrangian Method*, and stage $0$ of the chain that [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html) states.
+**Position.** The first article of the section *The Lagrangian Method*, and stage $0$ of the chain that [the hub](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html) states.
 
 ## The Input Is a Truncated List, Not an Order
 
@@ -41,6 +41,16 @@
 | declared | a choice among survivors, labelled as a choice | the quartics of the primordial potential, with the odd-power one set to zero |
 
 **A "collection" that skipped the classification would be a list of numbers with no ledger.** [What Invariance Cannot Decide](what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html) is the article that keeps the three apart, and this stage inherits its verdicts rather than re-arguing them.
+
+## The Filter That Is Not Applied
+
+**A reader coming from the older literature expects a fourth filter, and this stage does not apply it.** The filter is renormalisability: keep only the terms whose divergences can be absorbed by the terms already written. It is a theorem about one special list, not a condition a density must meet. Applied as a rule it would delete every operator above the marginal degree, and delete with them the finite corrections those operators carry — the corrections a measurement at a finite accuracy can see.
+
+**What replaces it is the degree bound, and the bound is a statement about accuracy.** Every term the symmetries admit is written down, and the bound says where the writing stops. The bound is set by the size of the first term omitted, as [term selection](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html) computes it, and not by any property of the terms themselves.
+
+**A renormalisable theory is then a special case of the family, not a different kind of density.** It is the case in which the coefficients above the marginal degree are zero at the label in use and stay negligible at every scale the application reaches. That is a strong and useful accident, and it is an accident: nothing in the filters produces it. A census that stops at degree four is a choice of label, and a choice that must be declared as one.
+
+**Nothing in the stages changes when the bound is raised.** Stage $2$ inverts a quadratic operator and stage $3$ expands a polynomial; a list carrying operators of degree six is as finite as a list stopping at four, and the four stages treat the two identically. What changes is the counterterms: each order in the expansion brings the operators of that order, the list does not close at any finite degree, and it does not need to. That is the sense in which [the operation](renormalisation-as-an-operation-the-arbitrary-scale.html) runs infinitely many coefficients rather than repairing a breakdown.
 
 ## The Grouping into Two Parts
 
@@ -127,6 +137,8 @@ so the radial direction acquires three times the mass the transverse directions 
 
 **The split is by field degree and the expansion is by coupling.** A quartic is one vertex at order $\lambda$. What is cut is cut at a stated degree and carries a stated error, and the two groups that matter are the quadratic part, which becomes the propagator, and the polynomial part, which becomes the vertices.
 
+**No renormalisability filter is applied, and the degree bound is what stands in its place.** The list is every term the symmetries admit; the bound is where the writing stops, and it is set by the size of the first term omitted. A renormalisable theory is the special case in which the coefficients above the marginal degree vanish at the label and stay negligible at every scale the application reaches.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -143,6 +155,7 @@ so the radial direction acquires three times the mass the transverse directions 
 
 - [The Closure of the Term List: Dimension, Locality and the Count That Ends the Search](the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html), the bound that makes the list finite.
 - [What Invariance Cannot Decide: Declared Coefficients, Signs and Normalisations](what-invariance-cannot-decide-declared-coefficients-signs-and-normalisations.html), the three sources of a coefficient.
+- [Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html), the decision that places the degree bound.
 - [The Lagrangian and the Interacting Scalar Field](the-lagrangian-and-the-interacting-scalar-field.html), the quartic this article expands, and the reason its coefficient is $\frac{\varpi_{\mathrm{cpl}}}{4}$.
 - [The Lagrangian and Quantum Electrodynamics](the-lagrangian-and-quantum-electrodynamics.html), the collection that stops at the classical action and says so.
 - [The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html), the stage that inverts what this one isolated.

@@ -8,7 +8,7 @@
 
 **The strongest objection.** *Feynman rules are a calculational device with no content.* The objection mistakes the diagram for the physics. What the diagrams carry is the *order*: which processes contribute at which power of the coupling, which are tree and which are loop, and which are forbidden. That information is not in the density in any form a reader can see, and it is not in the equation of motion at all.
 
-**Position.** Stage $4$ of the chain in [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), and the article that hands the diagrams to [the classical limit](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) and to [the failure modes](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html).
+**Position.** Stage $4$ of the chain in [the hub](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html), and the article that hands the diagrams to [the classical limit](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) and to [the failure modes](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html).
 
 ## The Four Rules
 

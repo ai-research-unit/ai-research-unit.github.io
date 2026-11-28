@@ -18,7 +18,7 @@ $$
 
 **Why one row and not twelve.** The twelve species share one coefficient and one operator structure; they differ only in the two numbers $T_3$ and $Q$. A row is a term with a definite field content and a definite coefficient, and the coefficient here is the common $g/\cos\theta_W$. The species dependence is carried by the quantum numbers inside the sum.
 
-**The standing.** The piece is standard and the corpus's own line is $\frac{\sin\theta_{\mathrm W}}{\cos\theta_{\mathrm W}}QdP_\gamma+\frac{1}{\cos\theta_{\mathrm W}}T_3dZ$ in [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). This article derives the $1/\cos\theta_W$, tabulates the two couplings, and separates the two zeros from the one near-zero.
+**The standing.** The piece is standard and the corpus's own line is $\frac{\sin\theta_{\mathrm W}}{\cos\theta_{\mathrm W}}QdP_\gamma+\frac{1}{\cos\theta_{\mathrm W}}T_3dZ$ in [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html). This article derives the $1/\cos\theta_W$, tabulates the two couplings, and separates the two zeros from the one near-zero.
 
 ## The Piece and Its Coefficient
 
@@ -104,7 +104,6 @@ The near-zero of the electron's vector coupling is not a zero. It is small becau
 
 ## Further Reading
 
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The corpus's form of the neutral current.
 - [The Photon as the Unbroken Mixture](the-photon-as-the-unbroken-mixture.html). The same substitution's $A$ part.
 - [The Charged-Current Pieces](the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html). The companion, and why it is two rows.
 - The Gauge Bosons and the Neutral Current. The $Z$ as the carrier.

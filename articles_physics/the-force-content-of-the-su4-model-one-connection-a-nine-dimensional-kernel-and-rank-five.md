@@ -319,6 +319,4 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 - [Curved Spacetime and the Biquaternion Framework](curved-spacetime-and-the-biquaternion-framework.html). Curvature outside the algebra, and the frame route.
 - [Linearized Gravity in Biquaternionic Form](linearized-gravity-in-biquaternionic-form.html). The counting $16=10+6$ and the single-element obstruction.
 - [The Lagrangian and Linearised Gravity](the-lagrangian-and-linearised-gravity.html). The quadratic action and its gaps.
-- [The Sector Hub](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html). What the family reaches in each of the four sectors.
-- [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html). The ceiling and the four unbuilt sectors.
 - [No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling](no-confinement-above-m-c.html). The weakly coupled phase and the two mechanisms kept apart.

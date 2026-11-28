@@ -127,6 +127,5 @@ The category prints symbols and relations and no values, by the rule of the data
 
 - [The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test](the-data-boundary.html). The register that keeps the values out of this category.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The values themselves, with scheme and scale.
-- [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). The nineteen typed by the kind of object each one is.
 - [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html). The two-column count, sector by sector.
 - [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html). The operator whose parameter multiplies no piece.

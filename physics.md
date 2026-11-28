@@ -59,6 +59,15 @@
 <a href="articles_physics/reading-an-extra-component-the-gursey-default-the-reversion-test-and-the-prior-art-warning.html">Reading an Extra Component: The Gürsey Default, the Reversion Test, and the Prior-Art Warning</a>
 <!-- why every biquaternion reformulation doubles something and how the surplus is read; the difficulties a noncommutative formulation creates, the lost index, the ordering ambiguities, the twice-raised component count and the implicit quantum imaginary that the complexified algebra avoids; the Gürsey default, an extra component as a spin or isospin multiplicity, with the Lanczos pair $A$, $B$, the superpositions $D_{\pm}$ and the proton-neutron reading; the Einstein-Mayer promoted mass $E$, the degenerate case $EE^{\dagger}=m^{2}$, the null case $EE=0$, Petiau's double-periodic waves and the sigma-model reading with the manifest $SU(2)_L\times SU(2)_R$; the legitimacy test, irreducibility under the full Poincaré group and covariance under reversion, with the qualifier that it is a condition and not a theorem; the prior-art warning that most apparently new results are re-descriptions; and what the criteria do not do, choose between plural readings, supply a prediction or build a sector. -->
 
+<a href="articles_physics/the-hierarchy-problem-and-naturalness.html">The Hierarchy Problem and Naturalness</a>
+<!-- the divergence separated from the sensitivity: the one-loop shift $\delta m_H^2=(c/16\pi^2)\Lambda^2$ with coefficients $0.239$ representative, $1.476$ top, $0.774$ quartic, summing to $2.489$; the point most accounts lose — dimensional regularisation gives no quadratic term at all, because the only locally invariant dimension-two operator is $\phi^{\dagger}\phi$ itself, so the divergence is a convention while the sensitivity to heavy states is not; the tuning table from $1$ TeV to $M_{\mathrm{Pl}}$, one part in $3.0\times10^{32}$; the stability edge at $\Lambda=996$ GeV and the closed window the LHC has left; why only the scalar — chiral symmetry protects the fermion and local symmetry the vector, and $\phi^{\dagger}\phi$ is a singlet under everything, so the problem is the absence of a symmetry; supersymmetry, compositeness, the landscape, and Veltman's condition refuted arithmetically; then what the algebra says, which is nothing, for three exact reasons (no measure so no cutoff, no second confining sector because of the ceiling, one vacuum so no landscape); the article's one real contribution, the contrast between the two scales, $\Lambda_{\mathrm{QCD}}$ generated non-perturbatively and $v$ not, so the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector has; and naturalness recorded as a heuristic with one success (GIM) and one failure (weak-scale supersymmetry), refused as evidence in either direction. -->
+
+<a href="articles_physics/the-landau-pole-triviality-and-vacuum-stability.html">The Landau Pole, Triviality and Vacuum Stability</a>
+<!-- three questions in one calculation: the coefficients $b_1=+41/6$, $b_2=-19/6$, $b_3=-7$ with the signs doing all the work; the hypercharge pole at $1.8\times10^{41}$ GeV, never reached but structural, because a central abelian factor has no self-coupling and therefore no antiscreening, so $b_1>0$ is a theorem about central factors and the framework's most native object is the only one that cannot be UV-complete alone; triviality with the bound $m_H<\sqrt{16\pi^2/(12\ln(\Lambda/v))}\,v$ — $754$ GeV at $1$ TeV falling to $144$ at $M_{\mathrm{Pl}}$, so a larger cutoff gives a tighter bound and at infinity the theory is free, with the measured $125.09$ GeV at $86.8\%$ of the Planck ceiling printed and refused as a hint; the near miss of the three measured strengths at $M_{\mathrm{Pl}}$, a spread of $5.7\%$, with the exact statement that the framework forbids the completion; the fate of $\lambda$, $\beta_\lambda$ printed term by term and the methodological point that this is a difference of terms of order one whose exponential is the crossing scale; absolute stability, metastability and instability distinguished, with the bounce $S_E=1880$ against a threshold near $440$ and the margin of $10^{649}$; the metastability window in the top mass with the measurement $4.6\sigma$ inside it, recorded and not interpreted; and what the algebra says — the sign of $b_1$ as its one structural result, and the honest conclusion that the space of strengths lies outside the algebra entirely. -->
+
+<a href="articles_physics/three-gaps-in-the-standard-model.html">Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron</a>
+<!-- two exact failures and one success that forbids its own use: the missing mass at $\Omega_{\mathrm{DM}}h^2=0.1200$ against $\Omega_b h^2=0.02237$, with the model's matter content accounting for $15.7\%$ of the budget and no knob to turn because the spectrum is closed, so the failure is in the list of objects and not in the nineteen values; the inventory examined one by one, and the cleanest exclusion in the model, $N_\nu=2.9963\pm0.0074$ from the $Z$ width, shutting the fourth-generation door twice; direct detection fourteen orders below a weak cross-section; then the matter excess $\eta=6.1\times10^{-10}$, the Jarlskog invariant $J=3.13\times10^{-5}$ and the eleven orders it is short by; the Sakharov scorecard in which all three conditions hold nominally and each fails quantitatively, $B-L$ conserved exactly so the answer from a symmetric start is zero and not merely small; the anomaly identity $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$; the sphaleron, $E_{\mathrm{sph}}=9.0$ TeV, with the rate table and a proton lifetime above $10^{160}$ years; instanton against sphaleron — Euclidean against Minkowski, solution against saddle point, self-dual against not — and the exact reason the corpus hosts the first and not the second, the biquaternion topological machinery being a self-duality machinery while the sphaleron admits no algebraic shortcut; the crossover for any $m_H>72$ GeV and $T_c=159.5$ GeV, so the third Sakharov condition fails outright; leptogenesis as the one route the corpus can build, $B=28L/79$, existing as a by-product of the Majorana and seesaw articles; and what the framework does not supply, item by item. -->
+
 ### Conventions & Notations
 
 <a href="articles_physics/algebra-and-element-conventions.html">Algebra and Element Conventions</a>
@@ -568,7 +577,7 @@
      any rung is unique, since normalisation and the overall sign are conventions the corpus fixes rather than
      derives; nor that it is deduced from anything more primitive than the symmetries the corpus asks of it.
      Where the sector Lagrangians live: the family "The Lagrangian and ..." sits inside each sector block, one
-     article per object per rung, and *The Sector Hub* states which sectors that family reaches and which it
+     article per object per rung, and *What a Group Can Accept* states which sectors that family reaches and which it
      does not. One table sits between the density and the Hamiltonian: *The Rung Dictionary* fills the object
      side of the five-by-five matrix — what each general symbol denotes at each of the five rungs — so that a
      one-carrier article can state its column and the category's scalar default is visible rather than unstated.
@@ -885,36 +894,56 @@
      series is graded by a parameter that can be chosen and whose truncations do not commute; a rung is derived from
      its parent by integrating out and matching; and a change of representation is legitimate only where it commutes
      with the operations. The interacting scalar's quartic stays the running example at every stage: one field, one
-     coupling, one vertex, every step visible without an index. The last article is what keeps the section from
+     coupling, one vertex, every step visible without an index. The method is an effective field theory method and is
+     named as one: the density is an effective Lagrangian at a stated cutoff, the coefficients are Wilson coefficients,
+     and which of the admitted terms a stated accuracy keeps is decided by one rule, stated here once. The two sections
+     that write a complete Lagrangian — the primordial and the Standard Model effective field theories — apply the
+     method, and this section takes no example from either. The last article is what keeps the section from
      claiming universal competence. Nothing here is derived from the algebra, and each article names which of its
      objects the algebra supplies. -->
 
 #### The Method and Its Name
 
-<a href="articles_physics/the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html">The Lagrangian Method: From the Truncated Action to the Feynman Diagram</a>
+<a href="articles_physics/the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html">The Lagrangian Method: From a Truncated Effective Lagrangian to the Feynman Diagram</a>
 <!-- the four stages in one display; the seven names and what each denotes; the two gradings of one density, by field
      degree for the split and by coupling for the expansion; why the order is the content; the cut that is part of the
-     input and the three statements a truncated density must carry. The hub of the thirteen. -->
+     input and the three statements a truncated density must carry; the vocabulary of the effective field theory —
+     cutoff, Wilson coefficient, power counting, the ratio of scales — with the statement that no stage changes under
+     the rename and that two expansions, the series and the family, are at work. The hub of the fourteen. -->
 
 #### The Input: A Truncated Action
 
-<a href="articles_physics/the-parameterised-action-an-ordered-family-of-theories.html">The Parameterised Action: An Ordered Family of Theories</a>
+<a href="articles_physics/the-parameterised-action-an-ordered-family-of-effective-field-theories.html">The Parameterised Action: An Ordered Family of Effective Field Theories</a>
 <!-- the density as a member of a family, labelled by a truncation scale and ordered by the degrees of its operators;
      what "the same theory at the next order" means, stated as agreement on observables; the three regimes of an
      operator and the direction they give the family; the two-sided squeeze that chooses the label; the two traps, a
-     list not closed under lowering the degree and a coefficient attributed to the wrong label. -->
+     list not closed under lowering the degree and a coefficient attributed to the wrong label; the name of the family
+     — effective field theory, the cutoff, the Wilson coefficients — with the theorem that the most general density
+     consistent with the symmetries reproduces any parent's low-energy limit; and the two constructions, top-down by
+     integrating out and matching, bottom-up by symmetry and measurement, which must agree where both exist. -->
 
 <a href="articles_physics/the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation</a>
 <!-- stage zero: the list, the three bounds on it, the cut that makes it finite, the three sources of a coefficient,
      the grading by field degree and where the constant and the linear term go. Only the sum is physical — the split
      moves under field redefinitions and expansion points, worked on the quartic about a background, where the radial
-     direction takes three times the transverse mass. The truncation at three rungs. -->
+     direction takes three times the transverse mass. The filter that is not applied, renormalisability, and the
+     degree bound that stands in its place. The truncation at three rungs. -->
 
 <a href="articles_physics/the-expansion-parameter-order-counting-and-non-commuting-truncations.html">The Expansion Parameter: Order Counting and Non-Commuting Truncations</a>
 <!-- the grading by power of the ordering parameter; the order of a diagram fixed by its vertex content, so that the
      truncation is combinatorial; several parameters at once, where a truncation is a region and not a threshold; the
      central statement that truncations in different parameters do not commute, and that the residue is content and
-     not error; the composition law, and why a study is a lattice of orderings rather than a list of paths. -->
+     not error; the composition law, and why a study is a lattice of orderings rather than a list of paths; and the
+     third grading, the ratio of scales, which orders the list instead of the diagrams and enters inside the coupling
+     grading through the estimated size of a coefficient. -->
+
+<a href="articles_physics/term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut</a>
+<!-- the decision that precedes the four stages and is not one of them: the accuracy, the scale of the observable and
+     the label, and the one inequality that keeps a term; the three regimes recovered as a consequence and the closure
+     under lowering the degree implied; the estimate of a coefficient at its generation label with the loop, coupling
+     and strong-coupling factors, and its three failures; the two senses of relevant, with the arithmetic that shows a
+     degree-six term beating a degree-four one; the three fates of a term — computed, cut and sized, neither; and the
+     three-line check run before any integral. -->
 
 #### The Four Stages
 
@@ -948,16 +977,19 @@
 
 #### The Reduction Between Theories
 
-<a href="articles_physics/integrating-out-and-matching-from-one-action-to-another.html">Integrating Out and Matching: From One Action to Another</a>
+<a href="articles_physics/integrating-out-and-matching-from-one-effective-field-theory-to-another.html">Integrating Out and Matching: From One Effective Field Theory to Another</a>
 <!-- a rung derived from its parent rather than postulated beside it: the integration of the field beyond the regime,
      its locality, its series, and its residue; matching as equality of observables and the count of conditions that
      makes it neither under- nor over-determined; running as a third operation; the invariant, tested on a quantity
-     not used in matching. The corpus's heavy sector and its threshold matching as the worked instances. -->
+     not used in matching; and the other route to the same member, bottom-up from symmetry with one measurement per
+     coefficient, which must agree with the top-down one wherever both exist. The corpus's heavy sector and its
+     threshold matching as the worked instances. -->
 
 <a href="articles_physics/renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation: The Arbitrary Scale</a>
 <!-- the scale as the price of truncating, not as a breakdown; the three steps — define, fix, evolve — with the
      freedom located in the first two and none in the third; the cancellation that defines the beta functions, and the
      reminder that a truncated density's beta functions are themselves truncated; the two directions of the operation;
+     the infinite tower of coefficients and the renormalisable member as the case whose label can be sent to infinity;
      and the argument that this is an operation and not a boundary. -->
 
 <a href="articles_physics/the-dictionary-field-redefinition-and-change-of-representation.html">The Dictionary: Field Redefinition and Change of Representation</a>
@@ -972,8 +1004,9 @@
 <a href="articles_physics/the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling</a>
 <!-- three boundaries, each located: the singular kernel and the R_xi repair; the factorial growth, with the toy
      series' coefficients computed to a hundred orders; the large coupling and the four classes of physics it hides.
-     Renormalisation is not among them, and the correction of that earlier count is stated. Each is a property of the
-     method and not of the algebra, and the article is what keeps the section honest. -->
+     Renormalisation is not among them, and the correction of that earlier count is stated, together with the removal
+     of non-renormalisability from the same count: the tower is the price of the label and not a boundary. Each is a
+     property of the method and not of the algebra, and the article is what keeps the section honest. -->
 
 ### Other aspects
 
@@ -1670,6 +1703,9 @@
 <a href="articles_physics/the-excitation-ladder-theory-of-flavour.html">The Excitation Ladder Theory of Flavour</a>
 <!-- flavour as a level of combined excitation and not a charge, kept out of the classification article on purpose so that the grids stay clean; the structural reason no quantum number can separate the rungs, the tripling as a tensor product with the algebra trivial on the second factor, and rung 1 stable by conservation and not by dynamics; the ladder counted in mass and its failure, the two steps $206.77$ and $16.82$ shrinking by $12.3$ and integer quanta off by two and three orders of magnitude, with the corpus's own algebra unable to produce any ladder because it is kinematics; the ladder counted in the square root of the mass ratio, the steps $13.379$ and $44.589$ growing by $3.3326$, the change of variable and the three variables compared; the closure, Koide's $Q=0.6666605$ against $2/3$ at $6.1\times10^{-6}$, written only in the two ratios $\rho_2=m_\mu/m_e$ and $\rho_3=m_\tau/m_e$, $Q=(1+\rho_2+\rho_3)/(1+\sqrt{\rho_2}+\sqrt{\rho_3})^{2}=2/3$, with no mass unit in the display, the three roots $1$, $14.379$ and $58.968$ on the cosine of coefficient $\sqrt2$, $\theta=132.732^{\circ}$, and why a fourth member repeats the first; the rung count, the generalisation to $N$ rungs, the vanishing of the cosine sum for every $N\ge2$ so that two numbers always suffice, the economy $N-2$ predictions, the fit table from $N=3$ to $N=8$ with three rungs at $6.1\times10^{-4}$ and every other count off by a factor of three, and the sharp consequence that extra rungs fill the gaps and not the top, $45.7$ and $425.5$ MeV for $N=4$; the early universe, the Boltzmann abundance table from $2$ MeV to $10$ GeV, the approach to parity and never past it, detailed balance, and the difference between lit and existing; the fourth rung, chiral excluded at any mass by $H\to gg$ and $H\to\gamma\gamma$ against a medium level decoupling as $1/m$, with the four bounds and what each one bites; the three debts, dispersion relation, composition rule and width rule, and why the corpus can pay none of them; the ledger of what is explained and what is absent; four falsifiers; and thirteen checks. -->
 
+<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
+<!-- the counting of generations, and why the algebra cannot supply three: the multiplicity factor $\mathcal V=\mathcal S\otimes\mathbb C^{N_g}$ on which every generator acts as $O\otimes\mathbb 1_{N_g}$, so that $N_g$ is the dimension of a commutant and the centre stays $\mathbb C$; the tensor structure and the trace, all invariants and anomaly sums being $N_g$-independent; the constraints that do touch $N_g$ and the ones that do not; the real structure, $C\otimes I$ against $C\otimes J$, and why halving components is not halving generations; and the warning that costs a reader a week — the three imaginary units $e_x,e_y,e_z$ are the spatial vector and the $SU(2)$ generators, they transform under the Lorentz group, and generation labels must be inert, so the three units and the three generations are different threes. -->
+
 ### Spin 1
 
 #### The content
@@ -1862,16 +1898,34 @@ since a candidate can fail for three different reasons. -->
 
 ### The Free Parts
 
-<!-- to write: *The Three Kinetic Terms: One Derivative, One Coupling and No $\tfrac12$ on the Scalar*, which
-reads rows $1$, $3$ and $5$ together and shows why the curvature carries $\tfrac14$, the fermion carries none and
-the scalar carries none, the difference being $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ and not a choice;
-*The Mass Terms of the Primordial Phase: Two Scalars, No Vector, No Fermion*, which is the category's answer to
-the question a reader brings from the broken phase, and which keeps the forbidden vector mass and the declined
-fermion mass in separate paragraphs; and *The Three Diagonals and Their Sum: Why $D=M_1+M_2+M_3$ Is a Direction
-and Not a Generator*, which prints the corner $iD=\operatorname{diag}(-3i,i,i,i)$ at trace norm $12$, shows the
-sum of the three diagonal generators to be that corner, and states that the unbroken Lagrangian distinguishes no
-direction among the fifteen — the direction becomes an object only at the restructuring, which is why this
-article stops at the algebra. -->
+<a href="articles_physics/the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html">The Free Parts Above $M_C$: Three Kinetic Terms, One Derivative and One Coupling</a>
+<!-- rows $1$, $2$ and $3$ read as one article, and the three coefficients $\tfrac14$, $1$, $1$ derived rather than quoted: why
+$-\tfrac14\sum_aF_aF_a$ is $-\tfrac12\operatorname{tr}F^{2}$ in the census's basis and needs $\tfrac18$ in the printed one, so
+that a display with $\tfrac14$ against a trace is half the canonical value and the two bases are printed side by side;
+why the fermion carries no $\tfrac12$ at all, because a Grassmann field is complex and first order, the sixteen split as
+$2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$ with $\pm t_{a}\otimes\mathbb 1_{2}$ and the copy index untouched; why the scalar
+carries none and does not need one, since $\operatorname{tr}(t_at_b)=\tfrac12\delta_{ab}$ supplies the $\tfrac12$ for the fifteen,
+while the trace mode comes out at $\tfrac14(\partial\operatorname{tr}\Xi)^{2}$ and the canonical trace field is
+$\operatorname{tr}\Xi/\sqrt2$ — the $\sqrt2$ that the mass $\mu_\Phi^{2}+4\mu_2^{2}$ is quoted in; the second kinetic term
+$(\partial\operatorname{tr}\Xi)^{2}$ as admissible and removed by the canonical basis, so that the coefficient $1$ in row $3$ is a
+choice of basis and nothing else; the four propagators that follow, the fifteen vectors, the sixteen Weyl fields, the fifteen
+$\chi_{a}$ and the one $\tau$; and the statement that no ghost kinetic term is among the eleven because the ghost belongs to the
+fixing row. -->
+
+<a href="articles_physics/the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html">The Two Masses Above $M_C$: One Traceless Block, One Trace and No Third</a>
+<!-- rows $4$ and $5$ as one quadratic form in two orthogonal blocks, and the arithmetic that makes the second block one field:
+$\operatorname{tr}\Xi^{2}=\operatorname{tr}\Xi_0^{2}+\tfrac14s^{2}$ with no cross term, so nothing needs diagonalising; the fifteen
+degenerate at $\mu_\Phi^{2}$ because a single invariant of degree two cannot split them, and the trace at
+$\mu_\Phi^{2}+4\mu_2^{2}$ with $4=\operatorname{tr}\mathbb 1$ read off the ratio $16/4$ along $\Xi=c\,\mathbb 1$; the Hessian in
+the unnormalised $s$ giving $\mu_\Phi^{2}/2+2\mu_2^{2}$ and the physical mass being twice that, which is the $\sqrt2$ of the trace
+mode and not a discrepancy; why two and not one, the ratio $\mu_2^{2}/\mu_\Phi^{2}$ being the sector's one dimensionless number and
+the degenerate point $\mu_2^{2}=0$ joining the trace to the fifteen; the vector mass as forbidden by locality and not by invariance,
+since $\operatorname{tr}A_\mu A^{\mu}$ is globally invariant and destroyed only by the inhomogeneous term, which is why the fifteen are
+massless above $M_C$ and split $9+6$ at $32v^{2}$ below it; the fermion mass as declined rather than forbidden, row $12$ at zero
+coefficient, with the two kinds of zero kept apart and the cost stated as an entire flavour sector deferred to the Yukawa block; and
+$\S$*No Direction Among the Fifteen*, where the corner $iD=\operatorname{diag}(-3i,i,i,i)$ at trace norm $12$ is the traceless part of
+the symmetric sum of the three diagonals and is an array above $M_C$ and a vacuum below it, so that the free parts cannot name the
+direction the restructuring will pick. -->
 
 ### The Pieces the Covariant Derivative Produces
 
@@ -1931,8 +1985,8 @@ four. -->
 <!-- three independently derived lists — eleven written structures, fifteen constants, seven vertex types — checked
 against each other in both directions, with a witness for every entry; the constant-by-constant table showing
 $g_{4}$ alone reaching five vertex types because the covariant derivative sits in all three kinetic terms; the
-vertex-by-vertex table showing the six constants behind the four-point scalar vertex and the eight behind
-$\bar\xi\xi\Xi$; the union argument $\{g_{4}\}\cup\{\mu_{\Phi}^{2},\mu_{2}^{2}\}\cup\{\lambda_{1},\dots,\lambda_{4}\}\cup\{y,y'\}=15$
+vertex-by-vertex table showing the four quartics behind the four-point scalar vertex, the two masses behind the
+two-point one, and the eight behind $\bar\xi\xi\Xi$; the union argument $\{g_{4}\}\cup\{\mu_{\Phi}^{2},\mu_{2}^{2}\}\cup\{\lambda_{1},\dots,\lambda_{4}\}\cup\{y,y'\}=15$
 against the twenty-one an appearance-count would give; the three failure modes, with $\theta_{4}$ as the control
 that correctly reaches nothing; and the three things an internal audit cannot check — a value, a sign and a
 completeness claim. -->
@@ -1962,17 +2016,17 @@ phase would have to acquire for it to appear. -->
      index that arrives with the doublet; then the matching, the mass matrix, the one coupling and the
      thresholds, which end the restructuring at the heavy sector; and closes on the force content of the
      model, the leptoquark sector at work and the Goldstone mode. What the restructuring returns is assembled
-     and audited against its own parameters in *Biquaternion Universe The Standard Model Assembly*,
-     which stands after the sectors because the assembly counts them. The rule that governs which
-     articles may print a number stands at the head of that category, since it governs the register
-     the assembly keeps. -->
+     and audited against its own parameters in *Biquaternion Universe Standard Model Effective Field
+     Theory (SMEFT)*, which stands after the sectors because the census counts them. The rule that
+     governs which articles may print a number stands at the head of that category, in the tests the
+     boundary imposes on a value. -->
 
 ### From the SU(4) Model to the Standard Model
 
 <!-- one restructuring at M_C: the SU(4) group breaks into the four-factor group, which
      has no width, and the Standard Model is what remains below that scale once the heavy fields are
-     removed. What remains is assembled and counted against its own parameters in *Biquaternion Universe
-     The Standard Model Assembly*, after the sectors. The toolbox the block opens with is
+     removed. What remains is enumerated and counted against its own parameters in *Biquaternion Universe Standard
+     Model Effective Field Theory (SMEFT)*, after the sectors. The toolbox the block opens with is
      *Action in the Biquaternion Universe*, the first section of the category *Biquaternion Universe
      Action* above. -->
 
@@ -2056,189 +2110,16 @@ objections answered; the ledger $3\to5\to4\to3$, the five gaps and the sixteen c
 <a href="articles_physics/goldstones-theorem-in-biquaternionic-form.html">Goldstone's Theorem in Biquaternionic Form</a>
 <!-- the symmetry and its spontaneous breaking; the potential, the vacuum manifold and the order parameter; the Goldstone mode and the mass matrix; the Goldstone current and the decay constant; the theorem and its proof; counting the Goldstone bosons and the coset; the effective Lagrangian and the soft limit. -->
 
-## Biquaternion Universe Standard Model Effective Field Theory (SMEFT)
+### What the Sectors Inherit
 
-<!-- the category the restructuring returns: the Standard Model's broken phase enumerated as a census
-     instead of quoted. The content after the vacuum $iD$: twelve gauge fields, one real scalar, twelve
-     species in twenty-four field slots. The rule that decides what is admissible — a Lorentz scalar, invariant
-     under the residual group, of dimension at most four, and built from the fields the broken phase
-     contains — read with four counting conventions, which returns forty-seven invariant rows, two
-     further Proca rows outside them, fifty-three vertices, twenty blocks, eighteen constants and
-     nineteen parameters, one of which multiplies no piece. The method is enumeration and not derivation:
-     physical particles first, then the free kinetic and mass terms, then the minimal interactions, and
-     no symmetric-phase derivation anywhere, since the symmetric side belongs to *Biquaternion Universe
-     Vacuum Restructuring* and this category only reads what that restructuring leaves. What the
-     category refuses to claim is that the enumeration derives the Standard Model from $\mathbb{B}$; it
-     does not, and the corpus's $\mathrm{U}(2)$ ceiling is where that question is answered. -->
+<a href="articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Restructuring: The Strong Group, $B-L$, Weak Isospin and the Electric Charge</a>
+<!-- the charges read off the same list the mass matrix gives, by one criterion: a generator that annihilates the vacuum is conserved and its boson is massless. the table of six charges with the scale at which each is lost; the strong group exact at every scale and $Q$ exact below $v$; $T_{3R}$ and $B-L$ lost at $M_C$, $T_{3L}$ and $Y$ at $v$; $B-L$ kept as a fixed eigenvalue while its charge goes, because the lepton-line vev carries $B-L=-1$, and $B$ surviving in its place by accident of the content; $L$ broken at dimension three by the right-handed neutrino's mass, which is the seesaw's licence; the proton stable because the leptoquarks carry $B-L=\pm\tfrac43$ and no diquark vertex is available; the anomaly of $B-L$ vanishing, so $B+L$ is erased by sphalerons and $B-L$ is not; the three distinctions a reader loses first, conserved against realised, made local against broken against accidental, broken against violated. -->
 
-### The Census
+<a href="articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One</a>
+<!-- which algebra and which module each sector is built in once the chain has run, the strong group in $\mathrm{End}(\mathbb C^3)$ and the weak factor on the doublet lines, the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$, and what the reduction loses, so that the two sector sections open with the algebra they need already named. -->
 
-<a href="articles_physics/the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule: Dimension Four, Residual Invariance, and One Canonical Term per Field</a>
-<!-- the criterion, four conditions, and the four counting conventions, each with the number it changes:
-one piece per canonical term, h.c. counted once, self-interactions inside the curvature, coefficient-
-blind. The summation $47=4+8+17+18$; the two Proca rows that bring it to $49$; the six structures that
-bring the vertices to $53$; the three folded sums that bring the blocks to $20$. -->
-
-<a href="articles_physics/the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List: Why No Other Dimension-Four Piece Exists</a>
-<!-- every candidate class tested once: the bosonic classes without derivatives, with two derivatives,
-and the fermionic classes. The exclusions one at a time, then the closing section on redundancy rather
-than exclusion: total derivatives, terms removed by field redefinition, and the $hZ_\mu A^\mu$ mixing
-that the $\gamma$/$Z$ rotation eliminates. Why there is no forty-eighth invariant row. -->
-
-<a href="articles_physics/the-broken-phase-content-twelve-gauge-fields-one-scalar-twelve-species-in-twenty-four-fields.html">The Broken-Phase Content: Twelve Gauge Fields, One Scalar, Twelve Species in Twenty-Four Fields</a>
-<!-- the content item by item: eight gluons, the $W$ pair, $Z$, the photon, one real scalar, and twelve
-species in twenty-four chiral slots, twenty-one filled and forty-five Weyl fields once colour is
-counted. The two counts of the fermions and why neither corrects the other; the fifty-eight fields and
-twenty-eight degrees of freedom. -->
-
-<a href="articles_physics/the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries: Eighteen Constants and the One That Multiplies No Piece</a>
-<!-- the eighteen constants by name and the rows each fixes, symbols only, with the values deferred to
-The Data Boundary. The two parametrisations and the correspondences $e=g\sin\theta_W$, $v^2=\mu^2/
-\varpi_{\mathrm{cpl}}$, $m_h^2=2\varpi_{\mathrm{cpl}}v^2$, $m_f=y_fv/\sqrt2$. The nineteen in two
-columns: ten masses, one scale, eight dimensionless. The vacuum angle, absent as a piece and present as
-a parameter. -->
-
-<a href="articles_physics/nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html">Nineteen and Nineteen: The Parameter Count Before and After the Rotation</a>
-<!-- sector by sector, in two tables: $60\to19$, with the removal graded $26$ in the quark sector and $15$
-in the lepton sector. Why the count cannot drift, and the CKM parameters as what survives the mismatch
-of two diagonalisations. -->
-
-<a href="articles_physics/the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image: The Lineage of Every Piece and Where the Three Goldstones Went</a>
-<!-- the map of the category: the forty-seven-row ancestor table over the five invariant pieces, the two
-rows with no ancestor term, and the field-count bookkeeping $16\to13$. The statement that a rotation in
-field space adds and loses nothing, and where the three Goldstones went. -->
-
-### The Free Parts
-
-<a href="articles_physics/the-four-field-strengths-one-kinetic-piece-per-gauge-field.html">The Four Field Strengths: One Kinetic Piece per Gauge Field</a>
-<!-- four curvatures and four kinetic rows with canonical coefficients; why $Z$ and $A$ each get one and
-the $W$ pair gets one for the pair; the normalisations $-\tfrac14$ and $-\tfrac12$; why no mass term
-sits inside a curvature. -->
-
-<a href="articles_physics/the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions: Two Triple Vertices and Four Quartic Vertices Inside Four Field Strengths</a>
-<!-- $\gamma WW$ and $ZWW$; $WWWW$, $WWAA$, $WWAZ$, $WWZZ$; the gluon pair as the colour analogue; no new
-constant, and the ratio $\cot\theta_W$ between the two triple couplings. The geometric-mean identity
-that ties the four quartic ones to the triple, and the eight-structure count inside the six. -->
-
-<a href="articles_physics/the-two-vector-masses-proca-as-the-representative-of-the-condensate.html">The Two Vector Masses: Proca as the Representative of the Condensate</a>
-<!-- the only two rows absent from the invariant enumeration, and why: a vector mass is not an invariant
-of the unbroken group, so its ancestor is the vacuum and not a term. Proca as the representative of the
-condensate, with the two coefficients $g^2v^2/4$ and $(g^2+g_{\mathrm Y}^2)v^2/4$. -->
-
-<a href="articles_physics/the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html">The Twelve Fermion Kinetic Pieces: Nine Massive Species, Three Neutrinos and Their Currents</a>
-<!-- twelve rows and not nine: a neutrino that couples to a current and has no free term is half a
-Lagrangian. The currents as the bilinears the interactions are built from, and the $21$ independent
-currents that the neutral-current count reuses. -->
-
-<a href="articles_physics/the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses and the Tenth the Minimal Model Omits</a>
-<!-- nine mass rows and the price of a tenth: three kinetic, three mass, three $h\bar ff$ rows and a
-mixing matrix, none of which the minimal model has. Why the price is quoted and not paid. -->
-
-<a href="articles_physics/the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html">The Higgs Kinetic and Mass Pieces, and the Tadpole Condition That Fixes $v$</a>
-<!-- the two quadratic rows and the condition that is not a row: the vanishing of the linear term. Why
-$v$ is derived from $\mu^2$ and $\varpi_{\mathrm{cpl}}$ and not added to them, and why the tadpole is a
-condition on the vacuum rather than a piece. -->
-
-### The Pieces the Covariant Derivative Produces
-
-<a href="articles_physics/the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Replacement $\partial\to D$: Five Blocks and Nothing Else</a>
-<!-- five blocks: QCD, QED, the charged current, the neutral current and the scalar's derivative block,
-with the charged current named as one block of two terms. Nine rows in all, $47=38+9$; the absences
-that each state a quantum number, and why a sixth block would need a sixth kind of charge carrier. -->
-
-<a href="articles_physics/the-qcd-piece-eight-generators-three-colours-one-coupling.html">The QCD Piece: Eight Generators, Three Colours, One Coupling</a>
-<!-- one row for six flavours and three colours, folded; $T^a=\tfrac12\lambda^a$, $N_c=3$, $C_F=4/3$;
-one coupling because colour is unbroken and flavour-blind; no mixing matrix, and no coupling to the
-photon or the $Z$. -->
-
-<a href="articles_physics/the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes.html">The QED Piece: One Charge Matrix and the Charge Table It Fixes</a>
-<!-- one row and one diagonal matrix $Q$; the table from $Q=T_3+Y$; the proton's $+1$ and the neutron's
-$0$ as sums of three entries; $e=g\sin\theta_W$, so the row costs one constant and not a pair. -->
-
-<a href="articles_physics/the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html">The Charged-Current Piece: Two Terms, One CKM Matrix, One Purely Left Vertex</a>
-<!-- two terms and two rows, because the quark term carries $V_{\mathrm{CKM}}$ and the lepton term does
-not; the coefficient $g/\sqrt2$; the $V-A$ structure and the two chiral normalisations; why no
-right-handed partner exists in the content. -->
-
-<a href="articles_physics/the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece: Two Coefficient Tables and the Two Zeros That Are Not the Same</a>
-<!-- $c_V=T_3-2Q\sin^2\theta_W$ and $c_A=T_3$, per species; the $1/\cos\theta_W$ from
-$\cos^2+\sin^2=1$; the photon zero as definitional and the missing right-handed partner as content;
-the electron's $-0.038$ as a near-zero and not a zero. -->
-
-### The Scalar Sector
-
-<a href="articles_physics/the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The $hVV$ Pieces: Two Mass-Term Normalisations, Two Couplings, and the Photon That Does Not Appear</a>
-<!-- the coefficients $2M_W^2/v$ and $M_Z^2/v$, with the factor of two stated; the $\tfrac12$ convention
-that reads the second as $g_{hZZ}=2M_Z^2/v$; why $h\gamma\gamma$ and $hZ\gamma$ are absent at tree level,
-the photon being the combination that annihilates the vacuum. -->
-
-<a href="articles_physics/the-higgs-self-pieces-two-couplings-and-one-quartic.html">The Higgs Self-Pieces: Two Couplings and One Quartic</a>
-<!-- the two remaining scalar rows, $h^3$ and $h^4$, both fixed by $m_h$ and $v$; why their couplings are
-not new parameters, and that neither is measured yet. -->
-
-### The Yukawa Block
-
-<a href="articles_physics/the-hff-pieces-nine-couplings-fixed-by-nine-masses.html">The $h\bar ff$ Pieces: Nine Couplings Fixed by Nine Masses</a>
-<!-- nine rows, one per mass, with $g_{hff}=m_f/v$; why the coupling is not a new number, and why the
-nine masses fix eighteen rows between them. -->
-
-### The Boundary of the List
-
-<a href="articles_physics/the-loop-induced-pieces-the-tree-level-census-omits.html">The Loop-Induced Pieces the Tree-Level Census Omits: $h\gamma\gamma$, $hgg$, $hZ\gamma$</a>
-<!-- three dimension-five operators, outside the census by the dimension-four cut and generated by loops
-of fields that are inside it. Why no new constant appears, and why the tower above dimension four is
-infinite. -->
-
-<a href="articles_physics/what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits: Ghosts, the Theta Term, Neutrino Mass and Gravity</a>
-<!-- four omissions, each with the reason the list supplies: the ghosts of a general gauge, the vacuum
-angle, the Majorana mass, and gravity. Absent as pieces, and in one case present as a parameter. -->
-
-### The Complete Lagrangian
-
-<a href="articles_physics/the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian: Forty-Seven Terms, Fifty-Three Vertices, Twenty Blocks and Nineteen Parameters</a>
-<!-- the numbered table, rows $1$ to $47$, with the two Proca rows as $48$ and $49$; the four counting
-rules; and then the complete broken-phase Lagrangian, written once as one equation of eight lines with
-every one of the forty-nine rows labelled on the equation by its number, so that the count can be made by
-counting on the display itself; the map from each line to its rows; the map from each earlier section of
-the category to the lines that carry it, so that no argued piece is left out; and the statement of what is
-deliberately absent (no gauge fixing, no ghosts, no $\theta$ term, no higher-dimension operator). -->
-
-<a href="articles_physics/the-audit-every-constant-against-every-piece.html">The Audit: Every Constant Against Every Piece</a>
-<!-- the same content as *The Coefficients*, read by rows instead of by columns: all forty-nine rows
-against the numbers that fix them, seventeen canonical and thirty-two parameter rows, and the one number
-that fixes no row. -->
-
-### The Approximations
-
-<a href="articles_physics/the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice: Six Coordinates, Eight Corners, and Why the Limits Do Not Commute</a>
-<!-- the complete Lagrangian as the origin of a six-dimensional lattice — loop order, $v/c$, $p/\Lambda$, coupling, $1/N$ with the gradient, and the adiabatic ratio — with the values of each; why six and not one; and the two pairs of limits that do not commute, the Thomas precession as the commutator of the loop cut with the velocity cut and the anomalous moment as the commutator of the derivative cut with the loop cut. -->
-
-<a href="articles_physics/the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit: Truncation, Error Bar, Arrow and Check</a>
-<!-- the four requirements a corner must satisfy — the truncation with the size of the first neglected term, the explicit derivation from the eight-line Lagrangian, an independently known result reproduced, and the effect the corner provably cannot produce — with the error budget that adds independent coordinates in quadrature, the three techniques for drawing an arrow, and a failure ledger covering all seven corners. -->
-
-<a href="articles_physics/classical-relativity-the-corner-with-no-quanta.html">Classical Relativity: The Corner with No Quanta</a>
-<!-- case 2: the loop cut alone; Yang–Mills and Proca for the gauge fields, a nonlinear Klein–Gordon equation for the real scalar, the Dirac equation read as a classical spinning particle with $g=2$ exactly; Lorentz invariance, spin, antiparticles and tree-level widths all kept; the error $\alpha/\pi$ against $\alpha_s/\pi$, and the two numbers differ by a factor of twenty. -->
-
-<a href="articles_physics/classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic: $\hbar\to0$ First, Then $v/c\to0$</a>
-<!-- case 3: Newton with a spin and the Thomas factor of one half, which exists only in this order; the two readings of one expansion, as a classical spinning particle and as the Pauli equation; the Bohr spectrum and the $j$-dependent fine structure reproduced; the Lamb shift absent at every order, which is why the fine structure is called partial; the budget where the omitted loop is a hundred times larger than the term kept beyond leading order. -->
-
-<a href="articles_physics/quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html">Quantum Non-Relativistic: $v/c\to0$ Alone, and the Terms That Survive</a>
-<!-- case 4: NRQED, with three routes to the same operator list and coefficients fixed by matching; the Lamb shift, the hyperfine splitting and the anomalous moment to twelve digits; pairs, positronium and the running above $2m_e$ absent; the proton radius as an input, and the exponential $e^{-2mr}$ that explains why this is the most accurate corner in physics while its expansion parameter is $Z\alpha$. -->
-
-<a href="articles_physics/wkb-and-eikonal-the-adiabatic-corner.html">WKB and Eikonal: The Adiabatic Corner and the Spin That Precesses</a>
-<!-- case 5: the loop cut with the adiabatic ratio, giving one phase carried along one trajectory, the amplitude transported by the current, and the spin precessed by BMT; Bohr–Sommerfeld in its two exact cases and the Born amplitude recovered from the eikonal phase; tunnelling beyond all orders; the error as the curvature of the action, of order $Z\alpha$ in hydrogen. -->
-
-<a href="articles_physics/local-and-low-energy-the-derivative-cut.html">Local and Low Energy: The Derivative Cut and the Fermi Theory</a>
-<!-- case 6, and the corner this whole category is written in: $p/\Lambda\to0$ produces the eight lines, so the census condition $d\le4$ is a truncation and the category is an effective field theory at its leading order; the Fermi constant from the $W$ propagator at low momentum; the tower of dimension five and six and why its size justifies the cut; no $W$ resonance, no resummed logarithm, no loop-induced vertex, and no parameter value. -->
-
-<a href="articles_physics/mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html">Mean Field: The Large-$N$ Corner and the Fluid That Comes Out</a>
-<!-- case 7: $1/N$ with the gradient, giving five fluid variables per point in place of a field's infinity; continuity exact, Euler once the quantum potential is dropped, and the spin transported by BMT; quantised circulation $h/m$ surviving as a topological statement; interference, the discrete spectrum, tunnelling and fluctuations all absent, and $1/N=1/3$ a warning rather than an error bar. -->
-
-<a href="articles_physics/strong-field-the-non-perturbative-corner.html">Strong Field: The Non-Perturbative Corner and What It Refuses</a>
-<!-- case 8, reached by not taking a limit at all: the instanton weight $e^{-2\pi/\alpha_s}$, the $\theta$ angle that stops being a total derivative, confinement, and the chiral condensate; error bars only by symmetry, by a lattice spacing or by large $N$, and none in general; dimensional transmutation as a scale that is not a nineteenth parameter; and the appeal to the $\eta'$ mass and the hadronic vacuum polarisation. -->
-
-<a href="articles_physics/the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>
-<!-- the section on one page: eight rows of coordinates, theory, check, error and failure; three structural lessons, that the lattice is not a line, that the errors are of four different kinds, and that the corners are used together; the hydrogen spectrum assembled from four corners and limited by the proton radius; the muon anomalous moment assembled from four corners and limited by the one corner with no error bar. -->
+<a href="articles_physics/the-connection-below-the-breaking.html">The Connection Below the Restructuring: Three Pieces, Three Couplings, and One Relation from Orthogonality</a>
+<!-- the frame's one covariant derivative rewritten after each step, the fifteen, the three and the three separating into the pieces the residual groups keep, with every coupling left symbolic and no value printed; the one exact relation $1/g_{\mathrm Y}^2=1/g_R^2+1/(2g_{B-L})^2$, whose factor of two is the $\tfrac12$ of $Y=T_{3R}+\tfrac12(B-L)$ read through the orthogonality of the fields; the coupling count $1\to4\to3\to2$ and the single step at $M_C$; and what each piece multiplies stated, so that the strong and electroweak sections inherit their notation instead of inventing it. -->
 
 ## Biquaternion Universe Strong Force
 
@@ -2560,71 +2441,197 @@ that fixes no row. -->
 <a href="articles_physics/the-higgs-mechanism-as-an-erasure-of-information-in-biquaternionic-form.html">The Higgs Mechanism as an Erasure of Information in Biquaternionic Form</a>
 <!-- the symmetric phase and the information in its vacuum; the flat directions of the potential; the erasure as the elimination of a representative direction; where the information goes, the longitudinal mode and the mass; the symmetry-breaking map as a channel; the vacuum as a stable record. -->
 
-## Biquaternion Universe The Standard Model Assembly
+## Biquaternion Universe Standard Model Effective Field Theory (SMEFT)
 
-<!-- the model the breaking returns, assembled and then counted against itself. The rule that governs
-     which articles may print a number stands first, with its two registers: the single claim and the
-     sixteen articles that print a measured strength, and the five tests a new article must pass — the
-     register is here because the assembly is what prints and counts the values. Then the content, the
-     quantum numbers and the nineteen parameters with scheme and scale on every row; the Lagrangian in
-     four sectors and the low-energy phase with its $\mathrm{U}(2)$ ceiling; the parameter count as the
-     measure of the framework's boundary; the generations, the hierarchy and the Landau pole; the three
-     gaps of dark matter, baryogenesis and the sphaleron; and where grand unification fails. Then what
-     the sectors inherit from the breaking: the six charges with the scale at which each is lost, the
-     $\mathfrak{su}(3)$ and $\mathfrak{su}(2)$ algebras on the two sectors, the connection below the
-     breaking with one relation among its three couplings, closed by the hub that states what the
-     Lagrangian family reaches in each sector. It stands after the sectors it assembles, because the
-     assembly counts them, and nothing here is an input to the breaking. -->
+<!-- the category the restructuring returns: the Standard Model's broken phase enumerated as a census
+     instead of quoted. The content after the vacuum $iD$: twelve gauge fields, one real scalar, twelve
+     species in twenty-four field slots. The rule that decides what is admissible — a Lorentz scalar, invariant
+     under the residual group, of dimension at most four, and built from the fields the broken phase
+     contains — read with four counting conventions, which returns forty-seven invariant rows, two
+     further Proca rows outside them, fifty-three vertices, twenty blocks, eighteen constants and
+     nineteen parameters, one of which multiplies no piece. The method is enumeration and not derivation:
+     physical particles first, then the free kinetic and mass terms, then the minimal interactions, and
+     no symmetric-phase derivation anywhere, since the symmetric side belongs to *Biquaternion Universe
+     Vacuum Restructuring* and this category only reads what that restructuring leaves. What the
+     category refuses to claim is that the enumeration derives the Standard Model from $\mathbb{B}$; it
+     does not, and the corpus's $\mathrm{U}(2)$ ceiling is where that question is answered. -->
 
-### The Rule of the Section
+### The Boundary and the Register
 
 <a href="articles_physics/the-data-boundary.html">The Data Boundary: Two Claims, Sixteen Measured Strengths, and a Deletion Test</a>
-<!-- the register that makes the coupling rule checkable: the three categories defined by one test — does the sentence survive the deletion of every value; the claim register, two articles, the first the part's own coupling statement and the second the angle in the electroweak part; the data register, sixteen articles with the quantity each prints and why the number is data; the structural remainder named as a rule and not as a list; the five tests a new article must pass before it may print a value; and the four abuses the boundary forbids, of which the sharpest is that the low-energy limit is shared with the Standard Model while a coupling statement is not. -->
-
-### The Standard Model, Audited
+<!-- the register that makes every number in this category checkable: the three categories defined by one test — does the sentence survive the deletion of every value; the claim register, two articles, the first the part's own coupling statement and the second the angle in the electroweak part; the data register with the quantity each article prints and why the number is data; the structural remainder named as a rule and not as a list; the five tests a new article must pass before it may print a value; and the four abuses the boundary forbids, of which the sharpest is that the low-energy limit is shared with the Standard Model while a coupling statement is not. -->
 
 <a href="articles_physics/the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>
-<!-- the group $SU(3)\times SU(2)_L\times\mathrm{U}(1)_Y$ and the three measured strengths, as data; the five multiplets with $T_3$, $Y$ and $Ϙ=Y+T_3$, counted $15=6+3+3+2+1$; the twelve vector bosons and the degree-of-freedom check $24+4=16+2+9+1$; the scalar doublet and its components; the four anomaly conditions solved, three rays of hypercharge assignment of which one carries the observed charges; the nineteen parameters with scheme and scale on every row; the count $9+4+3+1+1+1$ and the regrouping $3+1+2+13$; the neutrino and axion variants $26$, $27$, $18$; and the count of what the algebra fixes, which is none. -->
+<!-- the values register of the whole corpus, and the content this category enumerates: the group $SU(3)\times SU(2)_L\times\mathrm{U}(1)_Y$ and the three measured strengths, as data; the five multiplets with $T_3$, $Y$ and $Ϙ=Y+T_3$, counted $15=6+3+3+2+1$; the twelve vector bosons and the degree-of-freedom check $24+4=16+2+9+1$; the scalar doublet and its components; the four anomaly conditions solved, three rays of hypercharge assignment of which one carries the observed charges; the nineteen parameters with scheme and scale on every row — the table the rest of the corpus defers to; the count $9+4+3+1+1+1$ and the regrouping $3+1+2+13$; the neutrino and axion variants $26$, $27$, $18$; and the count of what the algebra fixes, which is none. -->
 
-<a href="articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>
-<!-- the four sectors and why there are four; the sign rule $-\sum_\mu X_\mu Y_\mu=X_\mu Y^\mu$ proved once and used to identify the corpus's kinetic terms with the standard ones, with the abelian check $\sum F F=2(B^2-E^2)$; the three curvatures and their kinetic terms; the fermion term and the covariant gradient; the scalar potential and its minimum; the three Yukawa matrices with the conjugate doublet of hypercharge $-\tfrac12$ and the hypercharge audit; the sum; the local invariance audit term by term; sixty parameters written against nineteen physical, the removal graded $36\to10$ over $U(3)^3$ and $18\to3$ over $U(3)^2$; the dimension-five neutrino operator, gravity and the dark sector as the three omissions; and the corpus's own action beside the standard one, sector by sector. -->
+### The Census
 
-<a href="articles_physics/the-standard-model-as-the-low-energy-phase.html">The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors</a>
-<!-- the audit of the whole model, where the sector articles are cut from it; what the framework already reaches, the abelian factor on the centre and the compact factor in the material sector; the ceiling, a compact subalgebra of $\mathbb{B}$ of dimension at most four and every module of even complex dimension; the three representative factors, each with its source and what it reaches, $\mathrm{U}(1)$ present but not hypercharge, the $\mathrm{SU}(2)$ present but not weak isospin, $SU(3)$ absent; the matter sector, the chirality kinematics exact and the chiral symmetry group missing, the hypercharge underived and the content unselected; the scalar and symmetry-breaking sector unbuilt; the table of items with the object each row needs, the three upstream items and the two prerequisites; and the electroweak pair itself, which is the companion article in the electroweak part. -->
+<a href="articles_physics/the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html">The Census Rule: Dimension Four, Residual Invariance, and One Canonical Term per Field</a>
+<!-- the criterion, four conditions, and the four counting conventions, each with the number it changes:
+one piece per canonical term, h.c. counted once, self-interactions inside the curvature, coefficient-
+blind. The summation $47=4+8+17+18$; the two Proca rows that bring it to $49$; the six structures that
+bring the vertices to $53$; the three folded sums that bring the blocks to $20$. -->
 
-<a href="articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>
-<!-- standard input, and the article that turns the boundary into a number. the nineteen itemised and regrouped, $13+3+1+2=19$ with the flavour block at $68.4\%$ of the total and the observation that the boundary is concentrated where the algebra is emptiest; the three grades of fixing — a value, a relation, a constraint — kept apart because a framework that derives nothing may still relate or forbid something; then a typology of the nineteen by kind of mathematical object, four group coordinates, three connection normalisations, one central phase, ten eigenvalues and one scale, because the five kinds need five different machines; the arena count, eight with an arena (mixing, couplings, vacuum angle), nine with an eigenvalue and no spectral principle, two with nothing, shares $42.1\%$, $47.4\%$, $10.5\%$, and $M_H$ explained as the one entry whose kind and whose arena disagree; the framework's own three parameters $ϙ$, $m$, $k_m$ counted in the same language, giving $19+3=22$ and an imported share of $86.4\%$, so the reformulation is not more parsimonious and its defence is geometric rather than numerical; one unit removed leaving eighteen dimensionless ratios, with $m_t/m_e=3.4\times10^{5}$ and $v/M_{\mathrm{Pl}}=2.0\times10^{-17}$ printed as the two ratios nobody explains; the neutrino addition at $26$ or $27$ with the difference marked as a physical discriminator rather than a convention; the over-determination quantified, five measurements for two triangle parameters giving three degrees of freedom, and the framework's own score printed as twenty-two parameters against zero predictions not shared with the model; the test applied to the corpus's own proposals in one table, one relation of a restricted kind, five arenas, zero values, and the ceiling row noted as forbidding a representation and no number; and the four machines that would reduce the count — spectral, scale, flavour, threshold — each named as absent. -->
+<a href="articles_physics/the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html">The Completeness of the List: Why No Other Dimension-Four Piece Exists</a>
+<!-- every candidate class tested once: the bosonic classes without derivatives, with two derivatives,
+and the fermionic classes. The exclusions one at a time, then the closing section on redundancy rather
+than exclusion: total derivatives, terms removed by field redefinition, and the $hZ_\mu A^\mu$ mixing
+that the $\gamma$/$Z$ rotation eliminates. Why there is no forty-eighth invariant row. -->
 
-<a href="articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html">The Number of Generations and the Biquaternion Algebra</a>
-<!-- the counting of generations in the Standard Model; how the framework carries a generation index; why the algebra does not fix $N_g$; the tensor structure and the trace; flavour symmetry and its breaking; the constraints that do touch $N_g$; the three imaginary units are not three generations. -->
+<a href="articles_physics/the-broken-phase-content-twelve-gauge-fields-one-scalar-twelve-species-in-twenty-four-fields.html">The Broken-Phase Content: Twelve Gauge Fields, One Scalar, Twelve Species in Twenty-Four Fields</a>
+<!-- the content item by item: eight gluons, the $W$ pair, $Z$, the photon, one real scalar, and twelve
+species in twenty-four chiral slots, twenty-one filled and forty-five Weyl fields once colour is
+counted. The two counts of the fermions and why neither corrects the other; the fifty-eight fields and
+twenty-eight degrees of freedom. -->
 
-##### The Open Problems
+<a href="articles_physics/the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries: Eighteen Constants and the One That Multiplies No Piece</a>
+<!-- the eighteen constants by name and the rows each fixes, symbols only, with the values deferred to
+The Data Boundary. The two parametrisations and the correspondences $e=g\sin\theta_W$, $v^2=\mu^2/
+\varpi_{\mathrm{cpl}}$, $m_h^2=2\varpi_{\mathrm{cpl}}v^2$, $m_f=y_fv/\sqrt2$. The nineteen in two
+columns: ten masses, one scale, eight dimensionless. The vacuum angle, absent as a piece and present as
+a parameter. -->
 
-<a href="articles_physics/the-hierarchy-problem-and-naturalness.html">The Hierarchy Problem and Naturalness</a>
-<!-- standard input, and the article that separates the divergence from the sensitivity. the one-loop shift $\delta m_H^2=(c/16\pi^2)\Lambda^2$ with coefficients $0.239$ representative, $1.476$ top, $0.774$ quartic, summing to $2.489$, the top at $59\%$ as everywhere in the scalar sector; then the point most accounts lose — dimensional regularisation gives no quadratic term at all, because the only locally invariant dimension-two operator is $\phi^{\dagger}\phi$ itself, so the divergence is a convention while the sensitivity, a statement about heavy states, is not; the tuning table from $1$ TeV (nothing) through $10$ TeV (one part in $100$) to $M_{\mathrm{Pl}}$ ($2.35\times10^{36}$ GeV$^2$ against $7.82\times10^{3}$, one part in $3.0\times10^{32}$); the stability edge at $\Lambda=996$ GeV $=8.0\,m_H=4.05\,v$, and the observation that the LHC has closed that window for Standard-Model-like couplings, so the tension is a closed window and not a discovery failure; why only the scalar — chiral symmetry protects the fermion and local symmetry the vector, and $\phi^{\dagger}\phi$ is a singlet under everything, so the problem is the absence of a symmetry and is exact in that form; supersymmetry with the cancellation $\delta m_H^2\propto(m_B^2-m_F^2)$, a stop table in which $1$ TeV costs $30\%$ and $5$ TeV a factor of twenty, and the independent tension that $m_h\le M_Z=91.2$ GeV at tree level in the MSSM pulls the stops heavy while naturalness pulls them light; compositeness with $\Delta=(f/v)^2$, $4.1$ at $f=500$ GeV and $16.5$ at $1$ TeV, and the link to the hadron article where the same mechanism is known to work; the landscape, which predicts nothing and so is not a third theory competing on the same data, and which needs a measure nobody has; Veltman's condition as a fourth response that is arithmetically refuted — it needs $m_t=143$ GeV against $172.7$; then what the algebra says, which is nothing, for three exact reasons (no measure so no cutoff, no second confining sector because of the ceiling, one vacuum so no landscape), followed by the article's one real contribution, the contrast between the two scales: $\Lambda_{\mathrm{QCD}}$ is generated non-perturbatively and $v$ is not, so the tuning is the statement that the electroweak sector has no counterpart of the mechanism the strong sector does have; and naturalness recorded as a heuristic with a score of one success (GIM) and one failure (weak-scale supersymmetry), the corpus refusing to use it as evidence in either direction. -->
+<a href="articles_physics/nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html">Nineteen and Nineteen: The Parameter Count Before and After the Rotation</a>
+<!-- sector by sector, in two tables: $60\to19$, with the removal graded $26$ in the quark sector and $15$
+in the lepton sector. Why the count cannot drift, and the CKM parameters as what survives the mismatch
+of two diagonalisations. -->
 
-<a href="articles_physics/the-landau-pole-triviality-and-vacuum-stability.html">The Landau Pole, Triviality and Vacuum Stability</a>
-<!-- standard input, and three questions collected into one calculation. the three one-loop coefficients $b_1=+41/6$, $b_2=-19/6$, $b_3=-7$ with the signs doing all the work; the hypercharge Landau pole at $1.8\times10^{41}$ GeV, that is $1.5\times10^{22}$ Planck masses, with $g_{\mathrm Y}$ climbing only from $0.357$ to $0.476$ on the way — a pole never reached, but structural, because a central abelian factor has no self-coupling and therefore no antiscreening, so $b_1>0$ is a theorem about central factors and the framework's most native object is its only one that cannot be UV-complete alone; then triviality, $1/\lambda(\mu)=1/\lambda(v)-24\ln(\mu/v)/16\pi^2$, giving a quartic pole at $3.4\times10^{24}$ GeV but a much sharper *bound*, $m_H<\sqrt{16\pi^2/(12\ln(\Lambda/v))}\,v$ — $754$ GeV at $1$ TeV, $464$ at $10$ TeV, $310$ at $10^6$ GeV, $144$ at $M_{\mathrm{Pl}}$, so a larger cutoff gives a *tighter* bound and at infinity the theory is free, with the measured $125.09$ GeV at $86.8\%$ of the Planck-scale ceiling, printed and refused as a hint; the near miss of the three measured strengths, $0.476$, $0.504$, $0.490$ at $M_{\mathrm{Pl}}$, a spread of $0.028$ or $5.7\%$ of the mean, with the exact statement that the framework forbids the completion; then the fate of $\lambda$, with $\beta_\lambda$ printed term by term ($+0.400$, $-5.81$, $+0.250$, $+0.981$, sum $-4.18$, $\beta=-0.0265$) and the methodological point that this is a *difference* of terms of order one whose exponential is the crossing scale, so the answer is a precision question and the one-loop estimate gets the sign right and the scale wrong by orders; the three-loop answer quoted as imported, $\lambda=0$ at $10^{11}$ GeV and $\lambda(M_{\mathrm{Pl}})=-0.014$; then the three distinct statements — absolute stability, metastability, instability — and the bounce calculation $S_E=8\pi^2/(3|\lambda|)=1880$ against a threshold near $440$, so $e^{S_E}=10^{816}$ against $H_0^{-4}=10^{167}$, a margin of $10^{649}$, which is the difference between "not the global minimum" and "unstable"; the metastability window in the top mass, $171.3$ GeV for absolute stability and $178$ for a lifetime exceeding the age, with the measurement $172.69\pm0.30$ sitting $1.39$ GeV or $4.6\sigma$ inside it; the same statement in the Higgs mass, $m_h^{\mathrm{crit}}\approx129.5$ GeV and a window $[129.5,144]$, with the measured value $4.4$ GeV below it — recorded and not interpreted, because the window is conditional on the Standard Model holding to $M_{\mathrm{Pl}}$ and $\lambda$ crosses zero eight orders below it; then the renormalisation-group input and the observation that the framework's single central-norm cutoff spans $42$ orders of magnitude and cannot be any one sector's physical cutoff; and what the algebra says — the sign of $b_1$ as its one structural result, triviality and the bounce both imported, and the honest conclusion that the space of strengths lies outside the algebra entirely. -->
+<a href="articles_physics/the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html">The Unitary-Gauge Image: The Lineage of Every Piece and Where the Three Goldstones Went</a>
+<!-- the map of the category: the forty-seven-row ancestor table over the five invariant pieces, the two
+rows with no ancestor term, and the field-count bookkeeping $16\to13$. The statement that a rotation in
+field space adds and loses nothing, and where the three Goldstones went. -->
 
-<a href="articles_physics/three-gaps-in-the-standard-model.html">Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron</a>
-<!-- standard input, and the article that separates two exact failures from one success that forbids its own use. the missing mass at $\Omega_{\mathrm{DM}}h^2=0.1200$ against $\Omega_b h^2=0.02237$, a ratio of $5.36$, with the model's matter content accounting for $15.7\%$ of the budget and no knob to turn because the spectrum is closed — the failure is in the list of objects, not in the nineteen values; the inventory examined one by one, neutrinos at $1.1\%$ of the dark density at the mass bound, the Higgs at $10^{-22}$ s, the neutron at $880$ s; the cleanest exclusion in the model, $N_\nu=2.9963\pm0.0074$ from the $Z$ width, confirming three species to a part in three hundred and shutting the fourth-generation door twice; direct detection at $2.6\times10^{-47}$ cm$^2$, which is $1.5\times10^{14}$ below a weak cross-section, so the simplest WIMP is excluded by fourteen orders and the surviving models need a heavy mediator or a cancellation; then the matter excess $\eta=6.1\times10^{-10}$, one baryon per $1.6\times10^{9}$ photons, which cannot be an initial condition because inflation erases it; the Jarlskog invariant $J=3.13\times10^{-5}$ computed from the Wolfenstein inputs and the statement that the $\eta\sim10^{-20}$ it produces is short by eleven orders, with the reason (three loop factors and $J$ already give $10^{-11}$); the Sakharov scorecard in which the model satisfies all three conditions nominally and fails each quantitatively — $B$ violated but $B-L$ conserved exactly so the answer from a symmetric start is zero and not merely small, $CP$ violated but in the wrong sector at the wrong size, out-of-equilibrium failing outright; the anomaly identity $\partial_\mu j^\mu_B=N_g g^2F\tilde F/32\pi^2$ with $\Delta B=\Delta L=3$ and the classification of every mechanism by where it violates $B-L$; the sphaleron itself, $E_{\mathrm{sph}}=4\pi v B(\lambda/g^2)/g=9.0$ TeV at $B=1.90$, with the rate table $10^{-39}$ at $T=100$ GeV, $10^{-24}$ near $T_c$, and exactly zero today, hence a proton lifetime above $10^{160}$ years; then instanton against sphaleron, Euclidean against Minkowski, solution against saddle point, self-dual against not, and the exact reason the corpus hosts the first and not the second: the biquaternion topological machinery is a self-duality machinery and the sphaleron admits no algebraic shortcut; the phase transition as a crossover for any $m_H>72$ GeV, with $125.09$ GeV sitting $74\%$ above the threshold and $T_c=159.5$ GeV established on the lattice, so the third Sakharov condition fails outright rather than marginally; leptogenesis as the one route the corpus can build, with $B=28L/79$ and the reason it exists at all — the Majorana and seesaw articles needed those objects for other purposes, and the lepton phases are not constrained by the quark sector's eleven-orders failure; and finally what the framework does not supply, item by item: no dark matter candidate, no sphaleron, no first-order transition, no $B-L$ violation at a high scale. -->
+### The Free Parts
 
-<a href="articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html">Grand Unification in the Biquaternion Framework: Where the Embedding Fails</a>
-<!-- the threshold a unified group must clear; the framework's own unification, electroweak and abelian; what a biquaternionic grand unification would require; the representation content and the even-dimension obstruction. -->
+<a href="articles_physics/the-four-field-strengths-one-kinetic-piece-per-gauge-field.html">The Four Field Strengths: One Kinetic Piece per Gauge Field</a>
+<!-- four curvatures and four kinetic rows with canonical coefficients; why $Z$ and $A$ each get one and
+the $W$ pair gets one for the pair; the normalisations $-\tfrac14$ and $-\tfrac12$; why no mass term
+sits inside a curvature. -->
 
-### What the Sectors Inherit
+<a href="articles_physics/the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html">The Gauge Self-Interactions: Two Triple Vertices and Four Quartic Vertices Inside Four Field Strengths</a>
+<!-- $\gamma WW$ and $ZWW$; $WWWW$, $WWAA$, $WWAZ$, $WWZZ$; the gluon pair as the colour analogue; no new
+constant, and the ratio $\cot\theta_W$ between the two triple couplings. The geometric-mean identity
+that ties the four quartic ones to the triple, and the eight-structure count inside the six. -->
 
-<a href="articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html">The Quantum Numbers Below the Restructuring: The Strong Group, $B-L$, Weak Isospin and the Electric Charge</a>
-<!-- the charges read off the same list the mass matrix gives, by one criterion: a generator that annihilates the vacuum is conserved and its boson is massless. the table of six charges with the scale at which each is lost; the strong group exact at every scale and $Q$ exact below $v$; $T_{3R}$ and $B-L$ lost at $M_C$, $T_{3L}$ and $Y$ at $v$; $B-L$ kept as a fixed eigenvalue while its charge goes, because the lepton-line vev carries $B-L=-1$, and $B$ surviving in its place by accident of the content; $L$ broken at dimension three by the right-handed neutrino's mass, which is the seesaw's licence; the proton stable because the leptoquarks carry $B-L=\pm\tfrac43$ and no diquark vertex is available; the anomaly of $B-L$ vanishing, so $B+L$ is erased by sphalerons and $B-L$ is not; the three distinctions a reader loses first, conserved against realised, made local against broken against accidental, broken against violated. -->
+<a href="articles_physics/the-two-vector-masses-proca-as-the-representative-of-the-condensate.html">The Two Vector Masses: Proca as the Representative of the Condensate</a>
+<!-- the only two rows absent from the invariant enumeration, and why: a vector mass is not an invariant
+of the unbroken group, so its ancestor is the vacuum and not a term. Proca as the representative of the
+condensate, with the two coefficients $g^2v^2/4$ and $(g^2+g_{\mathrm Y}^2)v^2/4$. -->
 
-<a href="articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html">The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One</a>
-<!-- which algebra and which module each sector is built in once the chain has run, the strong group in $\mathrm{End}(\mathbb C^3)$ and the weak factor on the doublet lines, the address each residual algebra has in $\mathrm{End}_{\mathbb C}(\mathbb B)$, and what the reduction loses, so that the two sector sections open with the algebra they need already named. -->
+<a href="articles_physics/the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html">The Twelve Fermion Kinetic Pieces: Nine Massive Species, Three Neutrinos and Their Currents</a>
+<!-- twelve rows and not nine: a neutrino that couples to a current and has no free term is half a
+Lagrangian. The currents as the bilinears the interactions are built from, and the $21$ independent
+currents that the neutral-current count reuses. -->
 
-<a href="articles_physics/the-connection-below-the-breaking.html">The Connection Below the Restructuring: Three Pieces, Three Couplings, and One Relation from Orthogonality</a>
-<!-- the frame's one covariant derivative rewritten after each step, the fifteen, the three and the three separating into the pieces the residual groups keep, with every coupling left symbolic and no value printed, and with what each piece multiplies stated so that the strong and electroweak sections inherit their notation instead of inventing it. -->
+<a href="articles_physics/the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html">The Nine Dirac Masses and the Tenth the Minimal Model Omits</a>
+<!-- nine mass rows and the price of a tenth: three kinetic, three mass, three $h\bar ff$ rows and a
+mixing matrix, none of which the minimal model has. Why the price is quoted and not paid. -->
 
-<a href="articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html">The Sector Hub: What the Lagrangian Family Reaches in Each Sector</a>
-<!-- four sectors and four answers: the electromagnetic carried exactly, the electroweak partly, the strong not at all because the compact group is U(2), and the gravitational by a frame and not an element; the table that puts the four in two independent columns. -->
+<a href="articles_physics/the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html">The Higgs Kinetic and Mass Pieces, and the Tadpole Condition That Fixes $v$</a>
+<!-- the two quadratic rows and the condition that is not a row: the vanishing of the linear term. Why
+$v$ is derived from $\mu^2$ and $\varpi_{\mathrm{cpl}}$ and not added to them, and why the tadpole is a
+condition on the vacuum rather than a piece. -->
+
+### The Pieces the Covariant Derivative Produces
+
+<a href="articles_physics/the-replacement-of-the-derivative-five-blocks-and-nothing-else.html">The Replacement $\partial\to D$: Five Blocks and Nothing Else</a>
+<!-- five blocks: QCD, QED, the charged current, the neutral current and the scalar's derivative block,
+with the charged current named as one block of two terms. Nine rows in all, $47=38+9$; the absences
+that each state a quantum number, and why a sixth block would need a sixth kind of charge carrier. -->
+
+<a href="articles_physics/the-qcd-piece-eight-generators-three-colours-one-coupling.html">The QCD Piece: Eight Generators, Three Colours, One Coupling</a>
+<!-- one row for six flavours and three colours, folded; $T^a=\tfrac12\lambda^a$, $N_c=3$, $C_F=4/3$;
+one coupling because colour is unbroken and flavour-blind; no mixing matrix, and no coupling to the
+photon or the $Z$. -->
+
+<a href="articles_physics/the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes.html">The QED Piece: One Charge Matrix and the Charge Table It Fixes</a>
+<!-- one row and one diagonal matrix $Q$; the table from $Q=T_3+Y$; the proton's $+1$ and the neutron's
+$0$ as sums of three entries; $e=g\sin\theta_W$, so the row costs one constant and not a pair. -->
+
+<a href="articles_physics/the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html">The Charged-Current Piece: Two Terms, One CKM Matrix, One Purely Left Vertex</a>
+<!-- two terms and two rows, because the quark term carries $V_{\mathrm{CKM}}$ and the lepton term does
+not; the coefficient $g/\sqrt2$; the $V-A$ structure and the two chiral normalisations; why no
+right-handed partner exists in the content. -->
+
+<a href="articles_physics/the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html">The Neutral-Current Piece: Two Coefficient Tables and the Two Zeros That Are Not the Same</a>
+<!-- $c_V=T_3-2Q\sin^2\theta_W$ and $c_A=T_3$, per species; the $1/\cos\theta_W$ from
+$\cos^2+\sin^2=1$; the photon zero as definitional and the missing right-handed partner as content;
+the electron's $-0.038$ as a near-zero and not a zero. -->
+
+### The Scalar Sector
+
+<a href="articles_physics/the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html">The $hVV$ Pieces: Two Mass-Term Normalisations, Two Couplings, and the Photon That Does Not Appear</a>
+<!-- the coefficients $2M_W^2/v$ and $M_Z^2/v$, with the factor of two stated; the $\tfrac12$ convention
+that reads the second as $g_{hZZ}=2M_Z^2/v$; why $h\gamma\gamma$ and $hZ\gamma$ are absent at tree level,
+the photon being the combination that annihilates the vacuum. -->
+
+<a href="articles_physics/the-higgs-self-pieces-two-couplings-and-one-quartic.html">The Higgs Self-Pieces: Two Couplings and One Quartic</a>
+<!-- the two remaining scalar rows, $h^3$ and $h^4$, both fixed by $m_h$ and $v$; why their couplings are
+not new parameters, and that neither is measured yet. -->
+
+### The Yukawa Block
+
+<a href="articles_physics/the-hff-pieces-nine-couplings-fixed-by-nine-masses.html">The $h\bar ff$ Pieces: Nine Couplings Fixed by Nine Masses</a>
+<!-- nine rows, one per mass, with $g_{hff}=m_f/v$; why the coupling is not a new number, and why the
+nine masses fix eighteen rows between them. -->
+
+### The Boundary of the List
+
+<a href="articles_physics/the-loop-induced-pieces-the-tree-level-census-omits.html">The Loop-Induced Pieces the Tree-Level Census Omits: $h\gamma\gamma$, $hgg$, $hZ\gamma$</a>
+<!-- three dimension-five operators, outside the census by the dimension-four cut and generated by loops
+of fields that are inside it. Why no new constant appears, and why the tower above dimension four is
+infinite. -->
+
+<a href="articles_physics/what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits: Ghosts, the Theta Term, Neutrino Mass and Gravity</a>
+<!-- four omissions, each with the reason the list supplies: the ghosts of a general gauge, the vacuum
+angle, the Majorana mass, and gravity. Absent as pieces, and in one case present as a parameter. -->
+
+### The Complete Lagrangian
+
+<a href="articles_physics/the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian: Forty-Seven Terms, Fifty-Three Vertices, Twenty Blocks and Nineteen Parameters</a>
+<!-- the numbered table, rows $1$ to $47$, with the two Proca rows as $48$ and $49$; the four counting
+rules; and then the complete broken-phase Lagrangian, written once as one equation of eight lines with
+every one of the forty-nine rows labelled on the equation by its number, so that the count can be made by
+counting on the display itself; the map from each line to its rows; the map from each earlier section of
+the category to the lines that carry it, so that no argued piece is left out; and the statement of what is
+deliberately absent (no gauge fixing, no ghosts, no $\theta$ term, no higher-dimension operator). -->
+
+<a href="articles_physics/the-audit-every-constant-against-every-piece.html">The Audit: Every Constant Against Every Piece</a>
+<!-- the same content as *The Coefficients*, read by rows instead of by columns: all forty-nine rows
+against the numbers that fix them, seventeen canonical and thirty-two parameter rows, and the one number
+that fixes no row. -->
+
+### The Approximations
+
+<a href="articles_physics/the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html">The Approximation Lattice: Six Coordinates, Eight Corners, and Why the Limits Do Not Commute</a>
+<!-- the complete Lagrangian as the origin of a six-dimensional lattice — loop order, $v/c$, $p/\Lambda$, coupling, $1/N$ with the gradient, and the adiabatic ratio — with the values of each; why six and not one; and the two pairs of limits that do not commute, the Thomas precession as the commutator of the loop cut with the velocity cut and the anomalous moment as the commutator of the derivative cut with the loop cut. -->
+
+<a href="articles_physics/the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html">The Discipline of a Limit: Truncation, Error Bar, Arrow and Check</a>
+<!-- the four requirements a corner must satisfy — the truncation with the size of the first neglected term, the explicit derivation from the eight-line Lagrangian, an independently known result reproduced, and the effect the corner provably cannot produce — with the error budget that adds independent coordinates in quadrature, the three techniques for drawing an arrow, and a failure ledger covering all seven corners. -->
+
+<a href="articles_physics/classical-relativity-the-corner-with-no-quanta.html">Classical Relativity: The Corner with No Quanta</a>
+<!-- case 2: the loop cut alone; Yang–Mills and Proca for the gauge fields, a nonlinear Klein–Gordon equation for the real scalar, the Dirac equation read as a classical spinning particle with $g=2$ exactly; Lorentz invariance, spin, antiparticles and tree-level widths all kept; the error $\alpha/\pi$ against $\alpha_s/\pi$, and the two numbers differ by a factor of twenty. -->
+
+<a href="articles_physics/classical-non-relativistic-planck-first-then-velocity.html">Classical Non-Relativistic: $\hbar\to0$ First, Then $v/c\to0$</a>
+<!-- case 3: Newton with a spin and the Thomas factor of one half, which exists only in this order; the two readings of one expansion, as a classical spinning particle and as the Pauli equation; the Bohr spectrum and the $j$-dependent fine structure reproduced; the Lamb shift absent at every order, which is why the fine structure is called partial; the budget where the omitted loop is a hundred times larger than the term kept beyond leading order. -->
+
+<a href="articles_physics/quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html">Quantum Non-Relativistic: $v/c\to0$ Alone, and the Terms That Survive</a>
+<!-- case 4: NRQED, with three routes to the same operator list and coefficients fixed by matching; the Lamb shift, the hyperfine splitting and the anomalous moment to twelve digits; pairs, positronium and the running above $2m_e$ absent; the proton radius as an input, and the exponential $e^{-2mr}$ that explains why this is the most accurate corner in physics while its expansion parameter is $Z\alpha$. -->
+
+<a href="articles_physics/wkb-and-eikonal-the-adiabatic-corner.html">WKB and Eikonal: The Adiabatic Corner and the Spin That Precesses</a>
+<!-- case 5: the loop cut with the adiabatic ratio, giving one phase carried along one trajectory, the amplitude transported by the current, and the spin precessed by BMT; Bohr–Sommerfeld in its two exact cases and the Born amplitude recovered from the eikonal phase; tunnelling beyond all orders; the error as the curvature of the action, of order $Z\alpha$ in hydrogen. -->
+
+<a href="articles_physics/local-and-low-energy-the-derivative-cut.html">Local and Low Energy: The Derivative Cut and the Fermi Theory</a>
+<!-- case 6, and the corner this whole category is written in: $p/\Lambda\to0$ produces the eight lines, so the census condition $d\le4$ is a truncation and the category is an effective field theory at its leading order; the Fermi constant from the $W$ propagator at low momentum; the tower of dimension five and six and why its size justifies the cut; no $W$ resonance, no resummed logarithm, no loop-induced vertex, and no parameter value. -->
+
+<a href="articles_physics/mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html">Mean Field: The Large-$N$ Corner and the Fluid That Comes Out</a>
+<!-- case 7: $1/N$ with the gradient, giving five fluid variables per point in place of a field's infinity; continuity exact, Euler once the quantum potential is dropped, and the spin transported by BMT; quantised circulation $h/m$ surviving as a topological statement; interference, the discrete spectrum, tunnelling and fluctuations all absent, and $1/N=1/3$ a warning rather than an error bar. -->
+
+<a href="articles_physics/strong-field-the-non-perturbative-corner.html">Strong Field: The Non-Perturbative Corner and What It Refuses</a>
+<!-- case 8, reached by not taking a limit at all: the instanton weight $e^{-2\pi/\alpha_s}$, the $\theta$ angle that stops being a total derivative, confinement, and the chiral condensate; error bars only by symmetry, by a lattice spacing or by large $N$, and none in general; dimensional transmutation as a scale that is not a nineteenth parameter; and the appeal to the $\eta'$ mass and the hadronic vacuum polarisation. -->
+
+<a href="articles_physics/the-eight-corners-in-one-table.html">The Eight Corners in One Table</a>
+<!-- the section on one page: eight rows of coordinates, theory, check, error and failure; three structural lessons, that the lattice is not a line, that the errors are of four different kinds, and that the corners are used together; the hydrogen spectrum assembled from four corners and limited by the proton radius; the muon anomalous moment assembled from four corners and limited by the one corner with no error bar. -->
 
 ## Biquaternion Universe Electromagnetism
 

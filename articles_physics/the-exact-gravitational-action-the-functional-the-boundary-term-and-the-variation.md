@@ -7,9 +7,9 @@
 | sector | action written | where |
 | --- | --- | --- |
 | electromagnetic, free | one | the Maxwell articles of this corpus |
-| electromagnetic, coupled | sixteen | *The Sector Hub* |
-| electroweak | one, both phases | *The Sector Hub* |
-| strong | none, and cannot be | *The Sector Hub* |
+| electromagnetic, coupled | sixteen | *What a Group Can Accept* |
+| electroweak | one, both phases | *What a Group Can Accept* |
+| strong | none, and cannot be | *What a Group Can Accept* |
 | gravitational, quadratic | yes | *The Lagrangian and Linearised Gravity* |
 | gravitational, exact | not yet | this article |
 | primordial block | yes, ghosts included | *The Machinery Under the Primordial Action* |

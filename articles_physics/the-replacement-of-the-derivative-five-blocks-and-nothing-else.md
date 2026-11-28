@@ -12,7 +12,7 @@ $$
 
 **Why the five and not four.** The scalar's derivative block is the fifth, and it is the one a reader is most likely to forget: $|D_\mu H|^2$ produces the two $hVV$ rows and the two $hhVV$ rows, and those four rows are interactions in exactly the sense the other five are. A count that names only QCD, QED and the two weak currents is counting the derivative on the fermions and forgetting it on the scalar.
 
-**The standing.** The replacement is standard. The corpus's own version is the line $\partial\to\partial+igA$ in [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). What this article adds is the enumeration of what the replacement produces, and the statement of what it does not.
+**The standing.** The replacement is standard. The corpus's own version is the line $\partial\to\partial+igA$ in [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html). What this article adds is the enumeration of what the replacement produces, and the statement of what it does not.
 
 ## One Derivative, One Connection per Factor
 

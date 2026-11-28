@@ -243,5 +243,4 @@ The boundary. Both lines are carried by the algebra, since the compact factor is
 - [The $W$, $Z$ and $W_R$ Bosons in Biquaternionic Form](the-w-and-z-bosons-in-biquaternionic-form.html) — the parent: the mixing, the pole observables and the effective angle.
 - [The Lagrangian and the Electroweak Theory](the-lagrangian-and-the-electroweak-theory.html) — the same action in element form, with the four Gauss constraints written out.
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html) — the vacuum and the potential's minimum.
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) — this sector inside the assembled action.
 - [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html) — the representative-dependent bookkeeping of the same count.

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ai-research-unit.github.io/index.html</loc>
-    <lastmod>2026-11-26</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/disclaimer.html</loc>
@@ -78,6 +78,18 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/reading-an-extra-component-the-gursey-default-the-reversion-test-and-the-prior-art-warning.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-hierarchy-problem-and-naturalness.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-landau-pole-triviality-and-vacuum-stability.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/three-gaps-in-the-standard-model.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
@@ -693,11 +705,11 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-parameterised-action-an-ordered-family-of-theories.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-parameterised-action-an-ordered-family-of-effective-field-theories.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
@@ -706,6 +718,10 @@
   </url>
   <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-expansion-parameter-order-counting-and-non-commuting-truncations.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
@@ -729,7 +745,7 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/integrating-out-and-matching-from-one-action-to-another.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/integrating-out-and-matching-from-one-effective-field-theory-to-another.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
@@ -1221,6 +1237,10 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
@@ -1325,6 +1345,14 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.github.io/articles_physics/the-covariant-derivative-pieces-above-m-c-fifteen-a-xi-xi-and-one-hundred-and-twenty-aa-xi-xi.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
@@ -1425,139 +1453,15 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-broken-phase-content-twelve-gauge-fields-one-scalar-twelve-species-in-twenty-four-fields.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-four-field-strengths-one-kinetic-piece-per-gauge-field.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-two-vector-masses-proca-as-the-representative-of-the-condensate.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-replacement-of-the-derivative-five-blocks-and-nothing-else.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-qcd-piece-eight-generators-three-colours-one-coupling.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-higgs-self-pieces-two-couplings-and-one-quartic.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-hff-pieces-nine-couplings-fixed-by-nine-masses.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-loop-induced-pieces-the-tree-level-census-omits.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-audit-every-constant-against-every-piece.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/classical-relativity-the-corner-with-no-quanta.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/classical-non-relativistic-planck-first-then-velocity.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/wkb-and-eikonal-the-adiabatic-corner.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/local-and-low-energy-the-derivative-cut.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/strong-field-the-non-perturbative-corner.html</loc>
-    <lastmod>2026-11-28</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-eight-corners-in-one-table.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-connection-below-the-breaking.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
@@ -1841,51 +1745,139 @@
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-standard-model-as-the-low-energy-phase.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-completeness-of-the-list-why-no-other-dimension-four-piece-exists.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-parameter-count-as-the-measure-of-the-frameworks-boundary.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-broken-phase-content-twelve-gauge-fields-one-scalar-twelve-species-in-twenty-four-fields.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-number-of-generations-and-the-biquaternion-algebra.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-hierarchy-problem-and-naturalness.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-landau-pole-triviality-and-vacuum-stability.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-unitary-gauge-image-the-lineage-of-every-piece-and-where-the-three-goldstones-went.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/three-gaps-in-the-standard-model.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-four-field-strengths-one-kinetic-piece-per-gauge-field.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-gauge-self-interactions-two-triple-vertices-and-four-quartic-vertices.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-two-vector-masses-proca-as-the-representative-of-the-condensate.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-twelve-fermion-kinetic-pieces-nine-massive-species-three-neutrinos-and-their-currents.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-connection-below-the-breaking.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.github.io/articles_physics/the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html</loc>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-higgs-kinetic-and-mass-pieces-and-the-tadpole-condition-that-fixes-v.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-replacement-of-the-derivative-five-blocks-and-nothing-else.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-qcd-piece-eight-generators-three-colours-one-coupling.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-qed-piece-one-charge-matrix-and-the-charge-table-it-fixes.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-charged-current-piece-two-terms-one-ckm-matrix-one-purely-left-vertex.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-neutral-current-piece-two-coefficient-tables-and-the-two-zeros-that-are-not-the-same.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-higgs-self-pieces-two-couplings-and-one-quartic.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-hff-pieces-nine-couplings-fixed-by-nine-masses.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-loop-induced-pieces-the-tree-level-census-omits.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-audit-every-constant-against-every-piece.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-approximation-lattice-six-coordinates-eight-corners-and-why-the-limits-do-not-commute.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-discipline-of-a-limit-truncation-error-bar-arrow-and-check.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/classical-relativity-the-corner-with-no-quanta.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/classical-non-relativistic-planck-first-then-velocity.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/quantum-non-relativistic-velocity-alone-and-the-terms-that-survive.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/wkb-and-eikonal-the-adiabatic-corner.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/local-and-low-energy-the-derivative-cut.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/mean-field-the-large-n-corner-and-the-fluid-that-comes-out.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/strong-field-the-non-perturbative-corner.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.github.io/articles_physics/the-eight-corners-in-one-table.html</loc>
     <lastmod>2026-11-28</lastmod>
   </url>
   <url>

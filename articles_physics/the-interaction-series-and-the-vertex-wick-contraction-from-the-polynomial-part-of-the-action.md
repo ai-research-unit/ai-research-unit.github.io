@@ -8,7 +8,7 @@
 
 **The strongest objection.** *The vertex is a definition, so the stage proves nothing.* Half right. The vertex's value is a definition — it is the interaction's coefficient, and no computation produces it. What the expansion proves is that the vertex is the *same* number at every order, that its position is a single point, and that the leftover multiplicity is the symmetry factor. Those three are the content, and they are what a reader who has only the definition cannot get.
 
-**Position.** Stage $3$ of the chain in [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html). It takes the factored operator of [stage $2$](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) and hands the diagrams to [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html).
+**Position.** Stage $3$ of the chain in [the hub](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html). It takes the factored operator of [stage $2$](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) and hands the diagrams to [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html).
 
 ## The Expansion of the Exponential
 

@@ -34,7 +34,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - Companion article *The Proton in Biquaternionic Form*, for the nucleon as a spin-$\tfrac12$ state.
 - Companion article *The Neutron in Biquaternionic Form*, for the neutral member of the same isospin doublet.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context of the Wess–Zumino–Witten term.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the flavour and matter content.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the flavour and matter content.
 
 ## The Skyrme Field and the Skyrme Term
 

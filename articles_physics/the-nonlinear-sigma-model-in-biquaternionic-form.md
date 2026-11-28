@@ -21,7 +21,7 @@ which was verified numerically to the finite-difference error. The two-derivativ
 - Companion article *Goldstone's Theorem in Biquaternionic Form*, for the Goldstone boson, its derivative couplings, its effective Lagrangian and its decay constant, whose abelian reduction this article generalises to the group-valued case.
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the linear model whose radial mode is integrated out.
 - Companion article *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the loop-level treatment of the same scalar potential.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the framework's compact non-abelian structure and the programme the chiral case belongs to.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the framework's compact non-abelian structure and the programme the chiral case belongs to.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the matter representation and the chiral obstruction at the level of the target manifold.
 - Companion article *The Skyrme Model and the Topological Baryon in Biquaternionic Form*, for the stabilising fourth-order term that turns the three-dimensional model into a soliton theory.
 

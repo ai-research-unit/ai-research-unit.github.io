@@ -21,11 +21,11 @@ The sizes agree by no formula. Eleven rows give seven types because the four qua
 | constant | rows | types |
 |---|---|---|
 | $g_{4}$ | $1$, $2$, $3$ | $AAA$, $AAAA$, $\bar\xi A\xi$, $A\Xi\Xi$, $AA\Xi\Xi$ |
-| $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$ | $4$, $5$ | $\Xi\Xi$, $\Xi\Xi\Xi\Xi$ |
+| $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$ | $4$, $5$ | $\Xi\Xi$ |
 | $\lambda_{1}$–$\lambda_{4}$ | $6$–$9$ | $\Xi\Xi\Xi\Xi$ |
 | $y$, $y'$ | $10$, $11$ | $\bar\xi\xi\Xi$ |
 
-$g_{4}$ reaches five types because the covariant derivative sits in all three kinetic terms. The masses reach two, appearing squared in the quartic. The quartics and the Yukawa matrices reach one each, and no vertex shape separates them: the four-point scalar vertex carries the sum $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$.
+$g_{4}$ reaches five types because the covariant derivative sits in all three kinetic terms. **The masses reach one, the two-point vertex, and they do not reach the four-point one**: a quadratic monomial has no fourth derivative, so $\partial^{4}$ of $\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}$ vanishes identically. The quartics and the Yukawa matrices reach one each, and no vertex shape separates them: the four-point scalar vertex carries the sum $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$ and **only that sum**.
 
 ## Vertex by Vertex
 
@@ -36,7 +36,7 @@ $g_{4}$ reaches five types because the covariant derivative sits in all three ki
 | $\bar\xi A\xi$ | $g_{4}$ | $2$ |
 | $A\Xi\Xi$ | $g_{4}$ | $3$ |
 | $AA\Xi\Xi$ | $g_{4}^{2}$ | $3$ |
-| $\Xi\Xi\Xi\Xi$ | $6$ | $4$–$9$ |
+| $\Xi\Xi\Xi\Xi$ | $4$ | $6$–$9$ |
 | $\bar\xi\xi\Xi$ | $8$ | $10$, $11$ |
 
 Every type carries at least one constant. The counts here are constants, not realisations: $A\Xi\Xi$ has fifteen realisations and one constant, $AA\Xi\Xi$ has a hundred and twenty pairs and one.

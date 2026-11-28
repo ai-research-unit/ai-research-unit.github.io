@@ -8,7 +8,7 @@
 
 **The strongest objection.** *The grading is a convention, so it cannot change the physics.* The grading is a convention; the truncation is not. A convention fixes the order in which terms are added; the truncation throws away everything past a point in that order; and the thrown-away part is a physical contribution. Two gradings are two different throwings-away, hence two different approximations, hence two different answers — and the difference between them is a computation of the residue, not a matter of taste. [The limits of the expansion](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html) is where the residue becomes visible as a boundary.
 
-**Position.** After [the parameterised action](the-parameterised-action-an-ordered-family-of-theories.html), whose list it grades, and after [the four stages](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), whose output it orders. It is the article that converts the diagram expansion from a topology into an approximation.
+**Position.** After [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), whose list it grades, and after [the four stages](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html), whose output it orders. It is the article that converts the diagram expansion from a topology into an approximation.
 
 ## The Grading
 
@@ -24,9 +24,31 @@ $$
 - **The grading is homogeneous in each coupling.** The order of a diagram depends only on its vertex content, not on its topology. This is what lets the truncation be decided combinatorially, before any integral is evaluated: a reader can say which diagrams survive a truncation by counting vertices.
 - **The grading is a choice.** Nothing forbids assigning the same power to every coupling, and nothing forbids unequal weights. Both are legitimate. Which is *useful* depends on whether the resulting parameter is small in the regime of interest, and that is an empirical question about the application, not a theorem.
 
-**The corpus's two gradings are distinct and the distinction is the section's.** [Stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) grades the *list* by degree in the field, for the split. This article grades the *series* by power of the coupling, for the truncation. The first decides which diagrams exist; the second decides which are kept. Confusing the two produces the classic error of calling a change of split a change of order.
+**The grading of the list and the grading of the series are distinct, and the distinction is the section's.** [Stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) grades the *list* by degree in the field, for the split. This article grades the *series* by power of the coupling, for the truncation. The first decides which diagrams exist; the second decides which are kept. Confusing the two produces the classic error of calling a change of split a change of order.
 
 **The choice of grading is where the corpus's loop expansion and its coupling expansion part company.** The loop number counts internal integrations; the coupling power counts vertices. They are different gradings of the same diagrams, and [the leading order](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) states the one case in which they agree.
+
+## The Ratio of Scales Is a Third Grading
+
+**An effective field theory carries a third grading, and the literature's power counting is that one.**
+
+$$
+\text{order of }\mathcal O_i=d_i-4,
+\qquad
+\text{its contribution}\sim\Bigl(\frac{Q}{\Lambda}\Bigr)^{d_i-4},
+$$
+
+with $Q$ the scale of the observable and $\Lambda$ the label. It grades the *list* and not the diagrams, and a term is sized by it before any integral is evaluated.
+
+**Three differences separate it from the two gradings above, and each changes how a calculation is written.**
+
+- **It orders the list, not the series.** The coupling grading of this article assigns a power to a vertex and hence to a diagram. The scale grading assigns a power to an operator and hence to a coefficient. The first decides which diagrams are kept; the second decides which terms exist to be drawn.
+- **Its small parameter is a regime and not a theory.** $Q/\Lambda$ is small in a regime of a theory. The same density read at another $Q$ has another ordering, and the same diagram has another size. A coupling, by contrast, is small or large independently of the kinematics.
+- **The application supplies it.** The powers $\nu_i$ are a choice of bookkeeping, as this article says; $d_i-4$ is fixed by the operator's dimension and by nothing else. The scale ratio is the one grading the algebra fixes the exponents of and the application fixes the value of.
+
+**The two gradings are multiplied and neither replaces the other.** A diagram's size is the product of its vertices' coefficients and of its loop factors, and each coefficient carries the scale ratio of its operator. So the scale grading enters *inside* the coupling grading, through the estimated size of the coefficient, and [term selection](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html) is the article where the multiplication is performed.
+
+**A reader who conflates the two calls a term of higher order when it is only of higher dimension.** A dimension-six operator can be first order in its coupling and second order in the scale ratio at once. Which of the two orders is meant must be said, and saying it is the whole of this article's discipline.
 
 ## Several Parameters at Once
 
@@ -82,7 +104,7 @@ $$
 
 ## What the Algebra Supplies Here
 
-**The algebra supplies no grading.** The powers $\nu_i$ are properties of the density and of the regime, not of the biquaternion structure. What the algebra supplies is the *degrees* that [the parameterised action](the-parameterised-action-an-ordered-family-of-theories.html) sorts by, and the pairing that makes the diagrams computable once the order is fixed. A reader who expects the algebra to fix the ordering parameter is asking it to fix a physical regime, which is not a mathematical question.
+**The algebra supplies no grading.** The powers $\nu_i$ are properties of the density and of the regime, not of the biquaternion structure. What the algebra supplies is the *degrees* that [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html) sorts by, and the pairing that makes the diagrams computable once the order is fixed. A reader who expects the algebra to fix the ordering parameter is asking it to fix a physical regime, which is not a mathematical question.
 
 ## Summary
 
@@ -91,6 +113,8 @@ $$
 **With several parameters the truncation is a region, not a threshold, and the error is estimated on the boundary.** The parameters are independent as bookkeeping and not as physics, and the corpus's two gradings — by frame parameter and by dimension — coexist with a stated relation.
 
 **Truncations in different parameters do not commute, and the residue is content.** The order of operations is part of the method; commutativity is a special case to be proved and not a default; and a study is organised as a lattice of orderings, not as a list of paths.
+
+**The ratio of scales is a third grading, and it is the one an effective field theory is organised by.** It orders the list rather than the diagrams, its small parameter is a regime rather than a theory, and it enters inside the coupling grading through the estimated size of a coefficient. Its exponents are fixed by dimension; its value is supplied by the application.
 
 ## Summary of Notation
 
@@ -101,10 +125,13 @@ $$
 | $V_i$ | the number of vertices of type $i$ |
 | $T^{(n)}$ | the truncation operator that keeps orders up to $n$ |
 | $p$ | the total order of a diagram, $\sum_i\nu_iV_i$ |
+| $Q$, $\Lambda$ | the scale of the observable and the label, whose ratio grades the list |
+| $d_i$ | the degree of the operator $\mathcal O_i$, so that $d_i-4$ is its order in the ratio |
 
 ## Further Reading
 
-- [The Parameterised Action: An Ordered Family of Theories](the-parameterised-action-an-ordered-family-of-theories.html), the list that this article grades.
+- [The Parameterised Action: An Ordered Family of Effective Field Theories](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), the list that this article grades.
+- [Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html), the multiplication of the scale grading into the coupling grading.
 - [The Leading Order: Tree Diagrams as the Stationary Phase of the Path Integral](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html), the one case in which the loop grading and the coupling grading agree.
 - [The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html), where a chosen grading stops being an approximation.
 - [Power Counting on a Frame](power-counting-on-a-frame.html), the corpus's frame-parameter grading.

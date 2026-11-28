@@ -119,7 +119,7 @@ and the condition is $[\mathcal{O}]\le4$. Lorentz invariance forces $n_F$ even a
 5. The neutrino row against the Weinberg operator. The dimension-five operator is the only ancestor, and it requires a right-handed neutrino or an inverse scale; either way it is absent from a renormalisable symmetric phase.
 6. The $hF\tilde F$ row against the CP-odd inventory. The three CP-odd dimension-four objects of the unbroken group are all total derivatives, so the family has no ancestor.
 7. The four-fermion row. Every monomial has dimension six, since $4\times\tfrac32=6$.
-8. Consistency with the assembly. The six ancestors of [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) are all dimension four, and every admitted row of this article's tables is an image of one of them.
+8. Consistency with the assembly. The six ancestors of [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html) are all dimension four, and every admitted row of this article's tables is an image of one of them.
 
 ## Summary
 
@@ -146,7 +146,6 @@ Five candidates a reader looks for are absent for five different reasons: the ph
 
 - [The Census Rule](the-census-rule-dimension-four-residual-invariance-and-one-canonical-term-per-field.html). The criterion and the four counting conventions this article proves sufficient.
 - [One Obstruction, Four Groups: The Gauge Mass That Is Never Admitted](one-obstruction-four-groups-the-gauge-mass-that-is-never-admitted.html). The argument that removes $A_\mu A^\mu$ and $G^a_\mu G^{a\mu}$.
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The six ancestors, and the audit that the sum is invariant.
 - [The Theta Parameter and Strong CP in Biquaternionic Form](the-theta-parameter-and-strong-cp-in-biquaternionic-form.html). The total-derivative class, and why its parameter is counted apart.
 - [The Nine Dirac Masses and the Tenth the Minimal Model Omits](the-nine-dirac-masses-and-the-tenth-the-minimal-model-omits.html). The neutrino exclusion, in full.
 - The Loop-Induced Pieces the Tree-Level Census Omits. The $hVV$ family that descent removes and loops restore.

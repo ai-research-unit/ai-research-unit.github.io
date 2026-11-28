@@ -51,7 +51,7 @@
 | **the write cannot be made** | the chiral fermion of electroweak | the field and the term exist, and the algebra cannot state them |
 | **the filing was not needed** | the quark, inside QCD | the field exists and is written elsewhere |
 
-**Only the first is acceptance.** The second is [which terms survive](which-terms-survive-invariance-as-a-linear-condition-on-a-density.html); the third is the corpus's reach; the fourth is editorial. **A reader who conflates them will take a boundary of the algebra for a boundary of the method, or the reverse** — the error the sector hub is written to prevent.
+**Only the first is acceptance.** The second is [which terms survive](which-terms-survive-invariance-as-a-linear-condition-on-a-density.html); the third is the corpus's reach; the fourth is editorial. **A reader who conflates them will take a boundary of the algebra for a boundary of the method, or the reverse** — the error this article is written to prevent.
 
 **And the converse, stated because it is easy to overreach.** Acceptance is necessary and not sufficient. **A group accepting a carrier does not mean the sector has an action for it**: the electroweak spinor is accepted and has only a *named* term, $\mathcal L_{\mathrm{matter}}$, and no display. The filter admits the object; it does not write it.
 
@@ -95,4 +95,3 @@ Read off the condition, the four sectors are: $\mathrm{SU}(3)$ declines the scal
 - [The Algebras of the Two Sectors: The Strong Group on Three Dimensions, Weak Isospin on Two, the Photon on One](the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html) — the three groups' dimensions side by side.
 - [Which Terms Survive: Invariance as a Linear Condition on a Density](which-terms-survive-invariance-as-a-linear-condition-on-a-density.html) — the filter that decides admissibility once acceptance is granted.
 - [Electroweak Theory in the Biquaternion Framework: The U(2) Reach and the Chiral Wall](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) — the sector that passes acceptance and fails the write.
-- [The Sector Hub: What the Lagrangian Family Reaches in Each Sector](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html) — the four sector answers compared.

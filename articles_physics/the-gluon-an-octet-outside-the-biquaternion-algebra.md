@@ -32,7 +32,7 @@ We use the conventions of the companion articles: the algebra, the invertibles, 
 - Companion article *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane*, for the helicity decomposition of the material vector.
 - Companion article *Integer-Spin Quantization and the Adjoint Action on the Material Sector in Biquaternionic Form*, for the spin-one representation and the charge eigenvalues.
 - Companion article *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*, for the matter side of the spin ceiling.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the factor-by-factor comparison with the Standard Model symmetry group.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the factor-by-factor comparison with the Standard Model symmetry group.
 
 **The octet is inside the carrier's group and still outside the algebra.** The strong group sits in $\mathfrak{su}(4)$ as $\mathbf8_0\subset\mathbf{15}$, which is $8=15-1-6$: the gluons share the adjoint with the $B$-$L$ boson and the six leptoquarks. The algebra's own action still cannot carry it, because $\mathfrak{su}(4)\cap\operatorname{Comm}L(\mathbb H)=\mathfrak{su}(2)$ — so the larger group does not remove the obstruction; it turns the octet into the residual of a group rather than an object outside every group. The tier is T3.
 

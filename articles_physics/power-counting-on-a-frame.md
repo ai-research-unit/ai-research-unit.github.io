@@ -132,4 +132,3 @@ Nothing in the menu is unwritable in the algebra's operations, and nothing in th
 - [The Variation in Frame Letters](the-variation-in-frame-letters.html), for why the frame variation of $R^{2}$ is further out of reach than the frame variation of $R$.
 - [The Lagrangian and Linearised Gravity](the-lagrangian-and-linearised-gravity.html), for the quadratic action, its surface term, and the coefficient $16\pi G/c^{4}$ calibrated by the Newtonian limit.
 - [The Scalar Sector on a Frame](the-scalar-sector-on-a-frame.html), for the conformal coupling $\xi R\phi^{\dagger}\phi$ and the frame in which $\rho$ and $p$ are read.
-- [The Sector Hub](the-sector-hub-what-the-lagrangian-family-reaches-in-each-sector.html), for the matter sector's entries in the same table.

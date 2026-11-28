@@ -32,7 +32,7 @@ gives the canonical pion kinetic term $\tfrac12\sum_{\imath\in\{x,y,z\}}\big((\p
 - Companion article *The Nonlinear Sigma Model in Biquaternionic Form*, for the group-valued field, its invariant metric and its flat connection, of which this article is the chiral specialisation.
 - Companion article *The Higgs Mechanism in Biquaternionic Form*, for the symmetry-breaking potential and the vacuum expectation value.
 - Companion article *The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form*, for the loop-level treatment of that potential.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the non-abelian compact structure of the framework, the flavour assignment, and the programme to which the pion belongs.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the non-abelian compact structure of the framework, the flavour assignment, and the programme to which the pion belongs.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral obstruction and the matter representation.
 - Companion article *The Proton in Biquaternionic Form*, for the nucleon couplings that the Goldberger–Treiman relation relates to $f_\pi$.
 - Companion article *The Neutron in Biquaternionic Form*, for the same couplings in the neutral channel.

@@ -1,8 +1,10 @@
-# __Integrating Out and Matching: From One Action to Another__
+# __Integrating Out and Matching: From One Effective Field Theory to Another__
 
 ## Introduction
 
-**The claim.** A member of the family of [the parameterised action](the-parameterised-action-an-ordered-family-of-theories.html) can be *derived* from another member, rather than postulated beside it, by two operations performed in a fixed order. First the field whose scale lies outside the regime of interest is integrated out. Then the coefficients of what remains are fixed by requiring that it reproduce the parent's observables to the required order. The first operation alone gives a density with undetermined coefficients; the second alone gives coefficients with no origin; together they define what it means for one rung to stand on another.
+**The claim.** A member of the family of [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html) can be *derived* from another member, rather than postulated beside it, by two operations performed in a fixed order. First the field whose scale lies outside the regime of interest is integrated out. Then the coefficients of what remains are fixed by requiring that it reproduce the parent's observables to the required order. The first operation alone gives a density with undetermined coefficients; the second alone gives coefficients with no origin; together they define what it means for one rung to stand on another.
+
+**The derivation is one of two routes to a member, and the article states both.** The route just described runs from a parent down and needs the parent. The other writes the most general density the symmetries admit and measures its coefficients, and it needs no parent at all. Where both are available they must agree, and the agreement is the strongest check in the corpus. The two are stated in fixed order below, because the second is unintelligible until the first has said what a coefficient is.
 
 **Why this is the section's load-bearing article.** Without it, every rung of the corpus is an independent postulate that happens to agree with its neighbours, and the agreement is a coincidence. With it, the rungs are a chain, and the chain is checkable: the derived coefficients are computed from the parent and compared with the measured ones, and the comparison is the falsifiable content of the reduction. [Matching at $M_C$](matching-at-m-c.html) is the corpus doing exactly this at its own threshold, and the count of conditions it performs is the craft this article states in general.
 
@@ -45,7 +47,25 @@ $$
 - **Matching is order by order, and the orders must be aligned.** A coefficient matched at one order in the parent must be matched at the corresponding order in the reduced density. Misaligning the orders produces an answer that is wrong by a finite amount and looks entirely reasonable.
 - **Matching is done at a label, and the label must be the same on both sides.** The coefficient fixed here is the coefficient at this label; using it at another label requires [the running](renormalisation-as-an-operation-the-arbitrary-scale.html).
 
-**The count in the corpus is four.** [Matching at $M_C$](matching-at-m-c.html) fixes four quantities at the threshold and reads every mass from the vacuum that made it. The number four is the "from above" side of the squeeze in [the parameterised action](the-parameterised-action-an-ordered-family-of-theories.html): it is as many conditions as the application can supply at that label.
+**The count in the corpus is four.** [Matching at $M_C$](matching-at-m-c.html) fixes four quantities at the threshold and reads every mass from the vacuum that made it. The number four is the "from above" side of the squeeze in [the parameterised action](the-parameterised-action-an-ordered-family-of-effective-field-theories.html): it is as many conditions as the application can supply at that label.
+
+## The Other Route to the Same Member
+
+**A member of the family can also be reached without a parent, and the section must say so.** The route of this article is *top-down*: a parent is known, a field is removed, and the coefficients are computed. The other route is *bottom-up*: the symmetries and the field content are written down as the most general density at a label, and every coefficient is measured. The bottom-up route needs no parent and predicts no coefficient.
+
+$$
+\text{top-down: } \text{parent}\to\text{integrate out}\to\text{match}
+\qquad\qquad
+\text{bottom-up: } \text{symmetries}\to\text{the most general list}\to\text{measure}
+$$
+
+**The bottom-up route is licensed, and the licence is a theorem about lists.** The most general density consistent with the symmetries reproduces the low-energy limit of every parent that shares those symmetries, the parent entering only through the coefficient values. That statement is [the name of the family](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), and it is what makes a list written from symmetry alone a legitimate member rather than a guess at one.
+
+**Where both routes exist they must agree, and the agreement is the strongest check the corpus has.** A coefficient measured bottom-up and computed top-down are two determinations of one number; a disagreement is an error in the parent, in the matching, or in the measurement, and it is not resolved by preferring either. The check is not optional because the two routes are not equivalent in what they can be asked: only the top-down route can say *why* a coefficient has the value it has.
+
+**The two routes differ in cost and not in status.** Top-down pays for a parent and returns a reason with the number. Bottom-up pays one measurement per coefficient and returns the number alone. [Term Selection](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html) states which coefficients either route must supply for a stated accuracy, and the count is the same for both.
+
+**This article states the top-down route because it is the one the corpus's chain performs.** The sections that apply the method to a complete Lagrangian use both: a census written from symmetry is bottom-up by construction, and a rung derived from the rung above it is top-down. The two are the same family read from two ends.
 
 ## Running Is a Third Operation and Not Part of These Two
 
@@ -95,6 +115,8 @@ $$
 
 **The reduction buys calculability, not content.** Its validation is agreement on a quantity that was not used in matching, and that agreement is the falsifiable statement the construction makes.
 
+**The same member can be reached from below, by symmetry alone, and the two routes must agree where both exist.** The bottom-up route writes the most general density the symmetries admit and measures each coefficient; the top-down route computes them from a parent. The agreement is the strongest check the corpus has, and only the top-down route can say why a coefficient has the value it does.
+
 ## Summary of Notation
 
 | symbol | meaning |
@@ -108,7 +130,7 @@ $$
 
 ## Further Reading
 
-- [The Parameterised Action: An Ordered Family of Theories](the-parameterised-action-an-ordered-family-of-theories.html), the family between whose members this article moves.
+- [The Parameterised Action: An Ordered Family of Effective Field Theories](the-parameterised-action-an-ordered-family-of-effective-field-theories.html), the family between whose members this article moves.
 - [Renormalisation as an Operation: The Arbitrary Scale](renormalisation-as-an-operation-the-arbitrary-scale.html), the third operation and the count of conditions it shares with matching.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html), the corpus's integration worked at its own threshold.
 - [Matching at $M_C$: Four Quantities Cross, and Every Mass Comes from the Vacuum That Made It](matching-at-m-c.html), the count of four conditions, worked.

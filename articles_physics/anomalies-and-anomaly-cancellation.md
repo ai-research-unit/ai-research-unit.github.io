@@ -55,7 +55,7 @@ The framework results used here are those of the companion articles:
 - Companion article *Instantons and Solitons in Biquaternionic Form*, for the topological density and its identification with the invariant $I_2$.
 - Companion article *The Field-Strength Biquaternion and Its Invariants*, for the field strength, the invariants $I_1$ and $I_2$, and the biquaternion norm.
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the chiral classification, the Dirac pair, and the symmetry quantum numbers of the left- and right-handed fields.
-- Companion article *The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors*, for the multiplet structure whose charge sums are the cancellation conditions.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, for the multiplet structure whose charge sums are the cancellation conditions.
 
 **The conditions this article cancels are vacuous:** with $Y=T_{3R}+\tfrac12(B-L)$ there are **four rows and no free charge to adjust**, and the cubic one cancels between the quartet and its conjugate as $-\tfrac29+\tfrac29=0$. The row that mixed the two factors, $\operatorname{tr}(T_{3L}^2Y)$, reduces to $\tfrac12\operatorname{tr}_{\mathbf4}(B-L)$, which vanishes because the quartet's eigenvalues sum to $3\cdot\tfrac13-1=0$. **The triangle coefficients computed below stand, and no choice remains to be made.** The tier is T3.
 

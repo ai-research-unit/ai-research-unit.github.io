@@ -12,6 +12,8 @@ $$
 
 **Eleven rows with nonzero coefficients, seven interaction types, fifteen constants, and three items outside the row count.**
 
+**"Complete" means complete at dimension four, for the content of §*The Assembly*, with the six scalar coefficients as declared in [the boundary](the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html) and no bare fermion mass.** The tower above dimension four, and the general potential with its cubics restored, are outside this article; both are named at the end.
+
 **Three items sit outside the eleven: the gauge-fixing row, the ghost row and the vacuum angle.** Two of them carry a parameter and one carries none, and the distinction is stated in §*The Last Line*.
 
 **What this article is for.** The pieces are built one at a time in the articles of this category. **This article puts them in one expression and reads the interactions off it.** The count that produces the eleven is [the census](the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html)'s argument and is not repeated here. The warrants of the six zeros are [the boundary](the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html)'s and are not repeated either. **What is new here is the assembly and the vertex list.**
@@ -55,6 +57,8 @@ D_{\imath}\Xi=\partial_{\imath}\Xi-ig_{4}\sum_{a}A_{a,\imath}\bigl[t_{a},\Xi\big
 $$
 
 **The commutator on the scalar and the matrix on the fermion are the two ways one connection can act.** The scalar carries one line index up and one down, so the adjoint action is the only invariant derivative. **The fermion carries the quartet index and not the copy index**, hence $t_{a}\otimes\mathbb 1_{2}$: the copy index is a commutant and no generator sees it.
+
+**The content is vector-like, and that is what makes the expression gauge-consistent.** It is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, so the cubic anomaly $\mathrm{Tr}\,[t_{a}\{t_{b},t_{c}\}]$ cancels between the $\mathbf4$ and the $\bar{\mathbf4}$ within one copy. **The cancellation is a property of the content and not of a coefficient**, and it is the reason no row above is adjusted to secure it. [The anomalies article](anomalies-and-anomaly-cancellation.html) states the condition and its solution.
 
 **Rows $4$–$9$ are one potential: two quadratics and four quartics.** They are the invariant monomials of a Hermitian $4\times4$ matrix — the eleven monomials of the potential, the six zeros and the partition count $1,2,3,5$ are [the scalar article](five-quartics-and-three-cubics-above-m-c-what-a-four-by-four-matrix-admits.html)'s.
 
@@ -100,7 +104,7 @@ $$
 
 **A hundred and twenty and not two hundred and twenty-five**, because $\operatorname{tr}[A_{a},\Xi]^{\dagger}[A_{b},\Xi]$ is symmetric in the pair and the antisymmetric part is absent. **The count of ordered pairs would be $15^{2}$; the count here is the symmetric pairs, $15\cdot16/2$.**
 
-**Rows $6$–$9$ are one shape with four monomials, and the four-point scalar vertex carries the sum.** No vertex separates $\lambda_{1}$ from $\lambda_{2}$: the amplitude is $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$ on the four external legs. **Six constants stand behind one vertex shape** — the four quartics and the two masses, the masses appearing squared.
+**Rows $6$–$9$ are one shape with four monomials, and the four-point scalar vertex carries the sum.** No vertex separates $\lambda_{1}$ from $\lambda_{2}$: the amplitude is $\lambda_{1}\mathcal{O}_{1}+\dots+\lambda_{4}\mathcal{O}_{4}$ on the four external legs. **Four constants stand behind that vertex and not six**, because rows $4$ and $5$ are quadratic and a quadratic monomial has no fourth derivative: $\partial^{4}(\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2})=0$ identically. **The sector carries six in all** — two masses on the two-point vertices and four quartics on the four-point one — and the six are what the census counts as one block.
 
 **Rows $10$ and $11$ are two structures and one vertex type.** The traceless contraction and the trace contraction have the same external fields, **so they are one shape in the Feynman rules and two rows in the ledger.** That is why eleven rows give seven types and not eleven.
 
@@ -117,6 +121,8 @@ $$
 **The left is the census's ladder**: eleven written, six declared zero, one removed by canonical normalisation, one removed as a total derivative. **The right is the row count**: the same eleven, the same six zeros, and the two gauge rows the group does not act on. **The normalisation term and the vacuum angle are on one side and the fixing and the ghosts on the other, and each pair cancels** — which is why the two nineteens are equal and not the same.
 
 **The fixing and the ghosts carry one parameter between them, and it is not physical.** $\zeta$ cancels from every observable, and the ghost's interactions belong to $\zeta$'s row and not to the eleven.
+
+**The broken phase's complete Lagrangian omits both, and is right to.** [That expression](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html) is written in unitary gauge, which exists there because the Goldstones are eaten and the physical field basis is available. **A phase with no vacuum has no such basis**, so an unbroken Lagrangian carries the fixing and its ghosts or it cannot be used; and this is the one line on which the two complete expressions differ.
 
 **$\theta_{4}$ carries no row.** The structure it multiplies is a total derivative, **so the fourth condition removed it before the row count began**, and the angle survives as a parameter of the theory with no piece in the expression. [The census](the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html) states the removal; this article states the consequence for the ledger.
 
@@ -152,7 +158,7 @@ $$
 
 ## Summary
 
-**Eleven rows, seven interaction types, fifteen constants, and two gauge rows the group does not act on.** One coupling reaches five of the seven types because the covariant derivative sits in all three kinetic terms; the quartics and the Yukawa matrices are the reverse, six and eight constants behind one shape each.
+**Eleven rows, seven interaction types, fifteen constants, and two gauge rows the group does not act on.** One coupling reaches five of the seven types because the covariant derivative sits in all three kinetic terms; the quartics and the Yukawa matrices are the reverse, four and eight constants behind one shape each, with the two masses on the two-point vertices and not on the four-point one.
 
 **The closure is nineteen candidates against nineteen rows** — $11+6+1+1$ against $11+6+2$ — **and the audit is a union.** The controls are $\theta_{4}$, which reaches no vertex because its structure is a total derivative, and the ghost, which reaches a vertex that belongs to the gauge-fixing row.
 
@@ -180,4 +186,6 @@ $$
 - [The Gauge Self-Couplings Above $M_C$](the-gauge-self-couplings-above-m-c-aaa-aaaa-and-the-eighty-brackets.html). Row $1$ expanded, and the eighty brackets.
 - [The Covariant Derivative Pieces Above $M_C$](the-covariant-derivative-pieces-above-m-c-fifteen-a-xi-xi-and-one-hundred-and-twenty-aa-xi-xi.html). Row $3$ expanded, and the $120$.
 - [The Fermion–Connection Pieces Above $M_C$](the-fermion-connection-pieces-above-m-c-one-lorentz-structure-two-blocks-and-one-untouched-index.html). Row $2$, the two blocks and the inert copy index.
+- [The Free Parts Above $M_C$](the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html). Rows $1$, $2$ and $3$ as propagators, and the three coefficients that are not parameters.
+- [The Two Masses Above $M_C$](the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html). Rows $4$ and $5$, the $\sqrt2$ of the trace mode, and the two masses that are absent.
 - [The Boundary of the List Above $M_C$](the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html). What the list leaves out, and which omission is a theorem.

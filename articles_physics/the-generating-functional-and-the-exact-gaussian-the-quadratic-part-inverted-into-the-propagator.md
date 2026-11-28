@@ -14,7 +14,7 @@
 
 **The strongest objection.** *The functional integral is not a definition; nothing infinite-dimensional is exact.* The objection is half right, and the article states which half. The Gaussian is exact per mode: the operator is inverted exactly, and the algebra of the inversion is finite at every momentum. What is not exact is the measure, and the measure is not the algebra's. The exactness claimed here is exactness of the inversion, which is the whole of what the propagator needs.
 
-**Position.** Stage $1$ and stage $2$ of the chain in [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), and the article that turns the collection of [stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) into the vertices and lines of [stage $3$](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html).
+**Position.** Stage $1$ and stage $2$ of the chain in [the hub](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html), and the article that turns the collection of [stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) into the vertices and lines of [stage $3$](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html).
 
 ## The Generating Functional
 
@@ -172,5 +172,5 @@ which is the sum of the one-loop diagrams with no external legs. [The Functional
 - [The Feynman Propagator in Biquaternionic Form](the-feynman-propagator-in-biquaternionic-form.html), the displayed propagator whose sign this article checks.
 - [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), the leftover factor and its regularisation.
 - [The Mass Shell and the Scalar Part: What a Congruence Preserves](the-mass-shell-and-the-scalar-part.html), the level set that $N$ and $\mathcal M$ define, and what the congruence preserves on it.
-- [The Lagrangian Method: From the Truncated Action to the Feynman Diagram](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), the chain this stage belongs to.
+- [The Lagrangian Method: From a Truncated Effective Lagrangian to the Feynman Diagram](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html), the chain this stage belongs to.
 - [The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html), the stage that expands the operator this one factored out.

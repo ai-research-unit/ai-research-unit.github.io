@@ -278,5 +278,4 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 - [The Matching at $M_C$](matching-at-m-c.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
 - [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.
-- [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). Why the larger group that would close the gap is not available on the carrier.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). What the recovery recovers, counted.

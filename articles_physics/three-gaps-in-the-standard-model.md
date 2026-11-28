@@ -37,7 +37,7 @@ $$
 
 So there is $5.36$ times as much mass in the dark component as in all the protons and neutrons in existence. The model's matter content accounts for $15.7\%$ of that budget and none of the rest, and no particle it contains can supply the other $84.3\%$.
 
-The failure is in the inventory and not in the parameters. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) established that the nineteen parameters are values the model does not fix. Dark matter is different: no value of any of the nineteen produces a dark matter candidate, because the model's spectrum is closed. There is no knob to turn. The failure is not in the numbers; it is in the list of objects.
+The failure is in the inventory and not in the parameters. [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html) established that the nineteen parameters are values the model does not fix. Dark matter is different: no value of any of the nineteen produces a dark matter candidate, because the model's spectrum is closed. There is no knob to turn. The failure is not in the numbers; it is in the list of objects.
 
 Any candidate must have three properties.
 
@@ -95,7 +95,7 @@ This bound closes the simplest door. The obvious way to make dark matter out of 
 
 There is a loophole. $N_{\xi_{\mathrm{neu}}}$ counts species in equilibrium with the $Z$ at $T\sim M_Z$. A particle that decoupled earlier, or never coupled to the $Z$ at all, is invisible to this measurement. So the bound excludes a *class* of candidates — those with full weak interactions — and not the possibility of a new sector. The hidden sector is where the model's extensions have gone, and this is why.
 
-The framework has no position on any of this. $N_{\xi_{\mathrm{neu}}}$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [The parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
+The framework has no position on any of this. $N_{\xi_{\mathrm{neu}}}$ is a measurement of a coupling the framework imports, and the generation count of three is an input it does not explain. [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html) recorded the count of generations among the discrete inputs. This article adds only that the count is measured to a part in three hundred, which is a precision the framework has no way to address.
 
 ## What the Dark Matter Could Be
 
@@ -183,7 +183,7 @@ The scorecard has four rows.
 
 So the model fails on two of three and is vacuous on the third. The section *The Phase Transition* gives the fourth row its number; the section *$B$ Violation* gives the first row its exact reason; the section *The Matter Excess* gave the third row its arithmetic.
 
-The lesson is the one [the parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) states: a list of conditions that are "satisfied" is not the same as a mechanism. The corpus's standard — print the number, not the label — applies with full force here, and it is the reason this article's scorecard has four rows rather than three checks.
+The lesson is the one [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html) states: a list of conditions that are "satisfied" is not the same as a mechanism. The corpus's standard — print the number, not the label — applies with full force here, and it is the reason this article's scorecard has four rows rather than three checks.
 
 ## $B$ Violation: the Anomaly Identity
 
@@ -315,7 +315,6 @@ This is the corpus's route, because [the Majorana article](the-majorana-equation
 The claim has limits.
 
 - The framework hosts the mechanism: the objects exist in the corpus and no new algebraic machinery is needed.
-- The framework does not fix the heavy scale $M$, the light neutrino masses, or the two Majorana phases. Those are four of the seven or eight parameters [the parameter-count article](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html) added to the count.
 - The mechanism can fail: for hierarchical light neutrinos there is an upper bound on the CP asymmetry, and part of the parameter space gives too small an asymmetry. So hosting the mechanism is not the same as producing the number.
 
 GUT baryogenesis needs a leptoquark, which the ceiling forbids. Affleck–Dine needs a flat direction in a supersymmetric theory, which the framework does not have. Electroweak baryogenesis needs a first-order transition, which the measured Higgs mass forbids. So of the four mechanisms, one is forbidden by the framework's own structure, one by the measured Higgs mass, one by the absence of supersymmetry, and one is available.
@@ -401,4 +400,3 @@ The one route it can build is leptogenesis, with $B=28L/79$, and that route exis
 - [The PMNS Matrix and Lepton Mixing](the-pmns-matrix-and-lepton-mixing.html). The two Majorana phases that leptogenesis needs, and why the quark sector's failure does not constrain them.
 - [The Effective Potential and the Coleman–Weinberg Mechanism in Biquaternionic Form](the-effective-potential-and-the-coleman-weinberg-mechanism-in-biquaternionic-form.html). The object whose finite-temperature behaviour decides whether the transition is first order.
 - [The Landau Pole, Triviality and Vacuum Stability](the-landau-pole-triviality-and-vacuum-stability.html). The quartic at $m_H=2.230\times10^{-25}\ \mathrm{kg}$, which is also what makes the transition a crossover.
-- [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). The discrete inputs — the group, the content, the generation count — and where dark matter and $B-L$ violation would appear if they existed.

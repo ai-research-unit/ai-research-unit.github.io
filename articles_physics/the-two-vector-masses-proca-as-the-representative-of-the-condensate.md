@@ -40,7 +40,7 @@ $$
 
 **The two statements are one statement.** In a general gauge the mass term is accompanied by the mixing term $M_W\partial_\mu G^+W^{-\mu}$ and by the Goldstone's own kinetic term, and the combination is invariant. In unitary gauge the mixing term and the Goldstone are gone and the mass term stands alone, which is why it looks like a Proca term added by hand.
 
-**What a reader should not conclude.** That the two rows are exceptions to the audit of [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The audit is of the unbroken expression, where these two rows do not appear. The broken expression has them because it is a different basis for the same function.
+**What a reader should not conclude.** That the two rows are exceptions to the audit of [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html). The audit is of the unbroken expression, where these two rows do not appear. The broken expression has them because it is a different basis for the same function.
 
 ## The Proca Equation and the Constraint
 

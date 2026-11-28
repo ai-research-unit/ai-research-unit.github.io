@@ -12,7 +12,7 @@ $$
 
 **Why the equality is not obvious.** The two descriptions do not look alike. One carries three gauge couplings and two scalar parameters; the other carries one charge, one mixing angle, one vacuum value and one mass. One carries three complex Yukawa matrices; the other carries nine masses and four mixing parameters. A reader who counts the letters will get different answers unless the map between the two sets of letters is written out.
 
-**The standing.** The symmetric-phase count is the corpus's, from [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html); the broken-phase count is the parameter table's, from [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). What this article adds is the comparison, which neither of those makes.
+**The standing.** The symmetric-phase count is the corpus's, from [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html); the broken-phase count is the parameter table's, from [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). What this article adds is the comparison, which neither of those makes.
 
 ## The Symmetric Count, in One Table
 
@@ -52,6 +52,43 @@ $$
 **The quark flavour block is ten: six masses and four mixing parameters.** The four are three angles and one phase, and their counting is the counting of a unitary matrix modulo rephasing. A general $3\times3$ unitary has nine parameters; rephasing the six quark fields removes $2N-1=5$; four remain.
 
 **The lepton flavour block is three: three masses and no mixing.** In the minimal model there is no right-handed neutrino, so there is no leptonic mixing matrix to count. The matrix exists in principle, but it multiplies a neutrino mass term that the model does not have, and a matrix that multiplies nothing is not a parameter.
+
+## The Typology of the Nineteen
+
+The two tables above count by sector. A second cut counts by *kind of mathematical object*, and it is the one that says what would have to be built.
+
+| Kind | What it is | Which entries | Count |
+|---|---|---|---|
+| Group coordinate | A point in a parameter space the algebra supplies | mixing parameters | $4$ |
+| Connection normalisation | The size of a coupling in a covariant derivative | $g_s$, $g$, $g_{\mathrm Y}$ | $3$ |
+| Central phase | The phase of a topological term | $\theta_{\mathrm{QCD}}$ | $1$ |
+| Eigenvalue | A mass, that is a spectrum of an operator | nine fermion masses, $M_H$ | $10$ |
+| Scale | The one dimensionful normalisation | $v$ | $1$ |
+
+The counts add to nineteen, and the classification is exhaustive: a number in a Lagrangian is a coupling, a phase, an eigenvalue or a scale, and the mixing angles are coordinates with no other home.
+
+**The kinds matter more than the sectors.** The sector split is about physics; the kind split is about what would have to be built. A group coordinate needs a group and a selection principle; a connection normalisation needs a connection and a normalisation principle; a central phase needs a topology and a value; an eigenvalue needs an operator and a spectral principle; a scale needs a mechanism that breaks dilatation invariance. Those are five different machines, and the framework has some of them and not others.
+
+## Eight With an Arena, Nine With an Eigenvalue, Two With Nothing
+
+The same nineteen, cut by what the framework can *represent* rather than by what the number is.
+
+| Group | Entries | Count | What the framework has |
+|---|---|---|---|
+| Arena | mixing, couplings, vacuum angle | $8$ | The group, the connection, the phase: represented, value free |
+| Eigenvalue only | the nine fermion masses | $9$ | A mass term, but no spectral principle |
+| Nothing | $v$, $M_H$ | $2$ | No scale mechanism, no scalar mass principle |
+
+The shares are $42.1\%$, $47.4\%$ and $10.5\%$. One entry is in two groups, and the reason is exact: $M_H$ is an eigenvalue by kind and belongs to "nothing" by arena, because the operator it is a spectrum of sits in a scalar sector the framework does not host. For the nine fermion masses the framework does host the operator — the Dirac mass term and the Yukawa matrices — and lacks only the principle that picks the eigenvalues. The kind and the arena are two different questions, and $M_H$ is the one entry where the answers differ.
+
+**The framework's own list, counted the same way.** Three continuous parameters: $ϙ$, the central charge of the minimal coupling; $m$, the mass of the massive field equation; and $k_m$, the constant of that equation. None is fixed by the algebra, and none overlaps the nineteen. The total is therefore
+
+$$
+19+3=22 ,\qquad
+\text{imported share}=\frac{19}{22}=86.4\% ,
+$$
+
+so the reformulation is not more parsimonious than the model it reformulates; it has a different list, and it adds a short one to a long one. Its defence is that its objects are geometric, not that its count is small. And the score on the same measure is stark: twenty-two parameters and **zero predictions not shared with the model**.
 
 ## The Map Between the Two Tables
 
@@ -115,8 +152,6 @@ The four mixing parameters are what survives the mismatch of the up-type and dow
 
 ## Further Reading
 
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sixty written and the forty-one removed, in full.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The nineteen, itemised.
 - [The Coefficients the List Carries](the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html). The same eighteen in the broken phase, with the map to rows.
 - [The CKM Matrix and CP Violation in Biquaternionic Form](the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html). The four mixing parameters and where the phase enters.
-- [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html). Why the count is the sharpest statement of what the algebra does not supply.

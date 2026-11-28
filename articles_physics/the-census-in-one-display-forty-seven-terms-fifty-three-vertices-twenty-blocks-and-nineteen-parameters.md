@@ -4,6 +4,8 @@
 
 **The claim.** The whole broken-phase Lagrangian is one expression, and every row of it carries a number in a table of forty-seven. Two further rows, the vector masses, sit outside it; six further structures, the gauge self-interactions, are vertices; and the numbers that multiply the rows are eighteen, or nineteen with the vacuum angle.
 
+**"Complete" means complete at dimension four, in unitary gauge, under the four conventions of §*The Four Counting Rules*.** The tower above dimension four, and the covariant-gauge form with its ghosts, are outside this article; the first is named at the end and the second is the price of the gauge, not a different theory.
+
 **The answer.**
 
 $$
@@ -158,7 +160,28 @@ $$
 
 **Each row once.** The curvatures are nonlinear, so the triple and quartic gauge vertices sit inside line 1 and appear nowhere else; the fermion kinetic term carries $\partial_\mu$ and the interactions are lines 6 to 8, so no covariant derivative is expanded twice.
 
-**What is not in it.** No gauge-fixing term and no ghost: the list is written in unitary gauge, which has neither. No $\theta_{\mathrm{QCD}}$: it is a total derivative, present as a parameter and absent as a row. No right-handed neutrino, no Majorana mass, no higher-dimension operator: the omissions of [What the List Omits](what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html). The same theory written with $D_\mu$ and the Higgs doublet is the symmetric-phase form, not another Lagrangian.
+**What is not in it.** No gauge-fixing term and no ghost: the list is written in unitary gauge, which has neither. **The choice is available here and not above $M_C$**, because a broken phase has a field basis in which the Goldstones are eaten and an unbroken one has none — which is why [the PFEFT complete Lagrangian](the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html) carries a fixing and its ghosts and this one does not. **Unitary gauge is the physical form and not the convenient one**: a loop calculation prefers the covariant gauge with ghosts, and that calculation is the same theory in another gauge. No $\theta_{\mathrm{QCD}}$: it is a total derivative, present as a parameter and absent as a row. No right-handed neutrino, no Majorana mass, no higher-dimension operator: the omissions of [What the List Omits](what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html). The same theory written with $D_\mu$ and the Higgs doublet is the symmetric-phase form, not another Lagrangian.
+
+## The Sign Rule Between the Two Bookkeepings
+
+The eight lines above are written in the corpus's coordinates, where $R_t=Q_t=iq'_t$. A display in a standard text uses the opposite convention on the time component, and one identity reconciles them.
+
+$$
+-\sum_{\imath} X_{\imath} Y_{\imath} = X\cdot Y ,
+$$
+
+where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.
+
+**The proof.** The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, so $\sum_{\imath}X_{\imath}Y_{\imath}=-X_0Y_0+\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, and the leading minus makes the left-hand side $X_0Y_0-\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, which is exactly the contraction on the right.
+
+**Where it bites, and where it does not.** The rule fixes the sign of a kinetic term and nothing else.
+
+- **The scalar kinetic term.** A text writes $+\tfrac12\partial\xi\cdot\partial\xi$; the rule turns it into $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$, whose expansion is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla\xi)^2$.
+- **The connection kinetic term.** A text writes $-\tfrac14F\cdot F$; the rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}F_{\imath\jmath}F_{\imath\jmath}$. Here the sign is unchanged, because the weight over the two indices cancels the flip.
+- **The abelian check.** With $F_{tk}=iE_k$ and $F_{kl}=\epsilon_{kln}B_n$, $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=-2E^2+2B^2$, so $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$ — the standard $-\tfrac14F\cdot F$ evaluated on the same fields.
+- **The fermion bilinear.** The rule does not fix it, because a bilinear carries the spin structure. That sign belongs to [the Dirac article](the-dirac-equation-in-biquaternionic-form.html) and is not restated here.
+
+The rule is what lets a display in this bookkeeping be read as a standard one without keeping a second Lagrangian beside it, and it is stated once, here, rather than in each sector. Its one structural consequence is separate from its arithmetic: **local invariance is a property of the sum and not of the pieces.** The fermion kinetic term is invariant only if its covariant derivative is built from the same three connections whose curvatures line 1 carries, and the Yukawa block is invariant only if the conjugate doublet carries the hypercharge the up-type singlet needs. Neither statement can be checked inside a single sector, which is why the audit is run on the eight lines and not on the pieces.
 
 ## Checks
 
@@ -181,7 +204,7 @@ The census, in one display: four curvatures, eight scalar rows, seventeen fermio
 
 The complete Lagrangian is the equation at the top: eight lines, forty-nine rows, each row's number printed under it. The numbered table below it is the index, not a second writing.
 
-The numbered table is the arbiter of every claim in the category. A row that is not in it is not a piece, a number that is not in it is not a parameter, and a count that disagrees with it is a count of something else.
+The numbered table is the arbiter of every claim in this category **about this list**. A row that is not in it is not a piece of it, and a number that is not in it is not a parameter of it. **The sentence stops there, and the stopping is deliberate:** a count that disagrees with the table is a count at a different rung or under a different convention, and the fifty-three, the fifty-seven and the twenty above are three such counts, each printed with the rule that produces it. **What the table settles is what this corpus means by "the number of terms"; it does not settle what another author means by it**, and no article in the category claims otherwise.
 
 ## Summary of Notation
 

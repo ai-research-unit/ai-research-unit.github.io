@@ -36,7 +36,7 @@ and the coefficients $g_i(\Lambda)$ are not the coefficients of anything else. E
 
 **The freedom in the third step is zero, and that is the content of the operation.** Once the density is fixed and the conditions are chosen, the way the coefficients move with the scale is computed, not selected.
 
-**The count of conditions is the craft.** Matching the number of coefficients to the number of conditions is what makes the reduced density either underdetermined or overconstrained; a mismatch is not a small error but a statement that the operation was not defined. This is the same count that [Integrating Out and Matching](integrating-out-and-matching-from-one-action-to-another.html) performs for the reduction between rungs.
+**The count of conditions is the craft.** Matching the number of coefficients to the number of conditions is what makes the reduced density either underdetermined or overconstrained; a mismatch is not a small error but a statement that the operation was not defined. This is the same count that [Integrating Out and Matching](integrating-out-and-matching-from-one-effective-field-theory-to-another.html) performs for the reduction between rungs.
 
 ## What Must Cancel
 
@@ -76,7 +76,17 @@ $$
 
 **Both are consistent with the ordering of the truncation.** Raising $\Lambda$ restores operators; lowering it discards the irrelevant ones and shifts the coefficients to compensate. The only difference between the two uses is which end of the family is being described, and confusing them produces the standard error of treating the scale as if it had a single direction.
 
-**The corpus reads the two directions differently in one respect, and the difference is a strength.** The upward direction is where the list grows and the corpus's rungs are compared; the downward direction is where [the reduction](integrating-out-and-matching-from-one-action-to-another.html) is performed and the corpus's thresholds appear. Keeping the directions apart is what lets the same operation serve both.
+**The corpus reads the two directions differently in one respect, and the difference is a strength.** The upward direction is where the list grows and the corpus's rungs are compared; the downward direction is where [the reduction](integrating-out-and-matching-from-one-effective-field-theory-to-another.html) is performed and the corpus's thresholds appear. Keeping the directions apart is what lets the same operation serve both.
+
+## The Tower and the Renormalisable Special Case
+
+**A member of the family carries one coefficient per operator, so the general case is an infinite tower, and the operation is what makes the tower usable.** Each degree brings its coefficients and each order in the expansion brings its counterterms. The coefficients at one label fix them at every other, and that is the whole content of the three steps: no coefficient is determined by the method, and each is determined everywhere once it is determined somewhere.
+
+**A renormalisable theory is the member whose label can be sent to infinity.** In a generic member the limit does not exist: removing the cutoff changes the predictions unless infinitely many coefficients are tuned as it is removed. Where the limit does exist at fixed predictions, the finitely many coefficients absorb everything and the tower's contributions vanish with the ratio $Q/\Lambda$. That is the property the older literature read as a selection principle, and it is a property of one member and not of the family.
+
+**Removability is therefore a statement about the list, and the method treats both kinds of member alike.** A member whose label cannot be removed is not a worse member; it is a member whose label is a physical scale, and whose predictions carry the ratio $Q/\Lambda$ as a parameter. [Term Selection](term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html) is where that ratio is used, and this article is where the coefficients it sizes are moved between labels.
+
+**Nothing in the three steps changes with the kind of member.** Defining, fixing and evolving are performed on a renormalisable theory and on a truncated one in the same way; what changes is the number of coefficients carried and whether the label has a limit. A reader who expects a different operation for the second kind is looking for a difference the method does not make.
 
 ## What the Algebra Supplies Here
 
@@ -89,6 +99,8 @@ $$
 **It is not a failure.** The three genuine boundaries are the singular kernel, the asymptotic series and the strong coupling; the scale is a place where the method applies and must be performed. The one limitation adjacent to it — that the $\beta$ functions of a truncated density are themselves truncated — belongs to the truncation and is stated with the others.
 
 **The two directions of the operation are the two ends of the family.** Raising the scale restores operators; lowering it discards the irrelevant ones and shifts the coefficients. The same operation serves both, and the shift is what keeps the observables fixed.
+
+**The general member carries an infinite tower, and the tower is what the three steps make usable.** A renormalisable theory is the special member whose label can be sent to infinity at fixed predictions, with finitely many coefficients absorbing everything. Removability is a property of that member's list and not of the method, and the three steps are performed identically on both kinds.
 
 ## Summary of Notation
 
@@ -103,7 +115,7 @@ $$
 ## Further Reading
 
 - [The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html), the three boundaries that this operation is not.
-- [Integrating Out and Matching: From One Action to Another](integrating-out-and-matching-from-one-action-to-another.html), the two operations that pair with this one, and the count of conditions they share.
+- [Integrating Out and Matching: From One Effective Field Theory to Another](integrating-out-and-matching-from-one-effective-field-theory-to-another.html), the two operations that pair with this one, and the count of conditions they share.
 - [The Renormalization Group in Biquaternionic Form](the-renormalization-group-in-biquaternionic-form.html), the shell integration, the flow and the fixed points.
 - [The Heavy Sector Below Its Threshold: Decoupling, Matching, and the One Loop](the-heavy-sector-below-its-threshold-decoupling-matching-and-the-one-loop.html), the downward direction worked at the corpus's own threshold.
 - [Power Counting on a Frame](power-counting-on-a-frame.html), the degrees by which the family is ordered.

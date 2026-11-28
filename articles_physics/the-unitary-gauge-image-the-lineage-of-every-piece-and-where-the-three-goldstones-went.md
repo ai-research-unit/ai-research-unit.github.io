@@ -183,7 +183,6 @@ The three fields missing from the broken content are the Goldstones. They are re
 ## Further Reading
 
 - [Electroweak Symmetry Breaking: the Doublet, the Potential and the Vector-Boson Masses](electroweak-symmetry-breaking-the-doublet-the-potential-and-the-vector-boson-masses.html). The expansion this article accounts for.
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The five invariant pieces, written in full.
 - [The Two Vector Masses](the-two-vector-masses-proca-as-the-representative-of-the-condensate.html). The two rows with no ancestor term.
 - [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html). The parameter count on both sides, which is what rules out a lost piece.
 - [The $hVV$ Pieces](the-hvv-pieces-two-mass-term-normalisations-two-couplings-and-the-photon-that-does-not-appear.html). The two couplings and the normalisations behind them.

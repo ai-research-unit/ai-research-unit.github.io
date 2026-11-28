@@ -87,7 +87,7 @@ $$
 
 **It is not a count of measurements.** The nineteen parameters are nineteen measurements in principle, but several are measured once and determine many rows. A count of rows would be a count of observables only if every row were measured separately, and most are not.
 
-**It is not a derivation.** The rule says which terms are possible; it does not say why the content is the content, why the group is the group, or why the couplings have the values they have. Those are the questions of [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html), and this article does not answer them.
+**It is not a derivation.** The rule says which terms are possible; it does not say why the content is the content, why the group is the group, or why the couplings have the values they have. Those are the questions of [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html), and this article does not answer them.
 
 **It is not invariant under a change of convention.** Change the third convention and the piece count moves by six; change the first and it moves by twenty-seven. The invariance is in the rule and not in the number, which is why the rule is printed beside the number in every article of this category.
 

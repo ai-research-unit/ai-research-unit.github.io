@@ -12,7 +12,7 @@ $$
 
 **Why there are two counts of the fermions.** A species is one object with a mass; a field is one chirality. Nine species have a mass and two slots each, and three neutrinos have no mass and one filled slot each, so the slots are twenty-four and the filled ones are twenty-one. Colour multiplies the six quark species by three and leaves the leptons alone, which raises the filled count from twenty-one to forty-five. A reader who says "twelve species" and a reader who says "forty-five fields" are both right.
 
-**The standing.** The content is an input. Nothing here selects it; the selection is the subject of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html), and the parts of it the corpus can and cannot reach are the subject of [The Standard Model as the Low-Energy Phase](the-standard-model-as-the-low-energy-phase.html). What this article does is fix the letters the twenty-three companions use.
+**The standing.** The content is an input. Nothing here selects it; the selection is the subject of [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html), and the parts of it the corpus can and cannot reach are the subject of [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html). What this article does is fix the letters the twenty-three companions use.
 
 ## The Gauge Fields
 
@@ -125,7 +125,6 @@ The content has five absences, and each would add rows: no right-handed neutrino
 ## Further Reading
 
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The content in the symmetric phase, and the parameter table.
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). Which parts of the content the algebra reaches.
 - [The Weinberg Angle and the Three Neutral States](the-weinberg-angle-and-the-three-neutral-states.html). The rotation of the four neutral components into $A$ and $Z$.
 - [Custodial Symmetry and the Rho Parameter](custodial-symmetry-and-the-rho-parameter.html). The relation $M_W=M_Z\cos\theta_W$ and what protects it.
 - [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html). The conditions that make the charge assignment consistent.

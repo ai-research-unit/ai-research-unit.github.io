@@ -16,7 +16,7 @@ $$
 
 **The standing.** Every object below is standard theory, recorded in the corpus's symbols and displayed in the corpus's tables. Nothing here is a framework result. No object in this section follows from the biquaternion algebra, and the article says so again in the last section, where the count is read against the algebra.
 
-**Why a table is needed.** The three articles — [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html), [Electroweak Theory under the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and [Quantum Chromodynamics under the Biquaternion Framework](quantum-chromodynamics-as-the-residual-of-su4.html) — sort the model into objects the framework reaches and objects it does not. Each sorts item by item, and each says what is absent. None of the three prints the content in one place, because none of them is an exposition. This article is that place. It is the table the other articles of the series quote when they name a field, a charge or a parameter.
+**Why a table is needed.** The three articles — [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html), [Electroweak Theory under the Biquaternion Framework](electroweak-theory-in-the-biquaternion-framework-the-u2-reach-and-the-chiral-wall.html) and [Quantum Chromodynamics under the Biquaternion Framework](quantum-chromodynamics-as-the-residual-of-su4.html) — sort the model into objects the framework reaches and objects it does not. Each sorts item by item, and each says what is absent. None of the three prints the content in one place, because none of them is an exposition. This article is that place. It is the table the other articles of the series quote when they name a field, a charge or a parameter.
 
 **The strongest objection, named at the start.** A table of imported content is worth nothing if it is mistaken for a result. The objection is exact, and the answer is the standing: the table is a checklist. Its use is to say what a derivation would have to reproduce. A reader who wants the boundary in one number should read the parameter count, which is the subject of the last two sections.
 
@@ -239,13 +239,13 @@ The six entries sum to $9+4+3+1+1+1=19$.
 
 ## What the Algebra Fixes
 
-**Nothing in the list.** The framework's minimal coupling supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Standard Model under the Biquaternion Framework](the-standard-model-as-the-low-energy-phase.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
+**Nothing in the list.** The framework's minimal coupling supplies a central abelian factor with a charge parameter $ϙ$, a connection, a covariant derivative and a curvature; [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html) records that the parameter is free, that no relation binds it to a second coupling, and that no hypercharge assignment or scalar sector follows. The count above is therefore inherited whole.
 
 **The framework's own parameters.** The algebra's parameters are not the model's. The minimal coupling carries $ϙ$, and the mass formula carries the mass $m$ and the constant $\nu_m$ of the massive equation; none of the three is one of the nineteen, and none of them is fixed by the algebra either. The framework is in the same position as the model it reformulates, with a different list.
 
 **The one proposal that touches the list.** A mass formula in which the masses are proportional to the dimensions of the Lorentz representations, normalised to the electron, is Varlamov's. It fixes no absolute scale, and the absolute scale is what a mass parameter is. It cannot be read as a derivation of the nine masses.
 
-**The count as the measure.** The nineteen measure how much the model does not explain. The framework inherits the whole count, so the count measures the boundary as well. The measurement is the subject of [The Parameter Count as the Measure of the Framework's Boundary](the-parameter-count-as-the-measure-of-the-frameworks-boundary.html), which takes the list above as its input and asks, item by item, what a biquaternionic construction would have to produce.
+**The count as the measure.** The nineteen measure how much the model does not explain. The framework inherits the whole count, so the count measures the boundary as well. The measurement is the subject of [Nineteen and Nineteen](nineteen-and-nineteen-the-parameter-count-before-and-after-the-rotation.html), which takes the list above as its input and asks, item by item, what a biquaternionic construction would have to produce.
 
 **The sharpest statement of the boundary.** The algebra supplies the arena: one space, one metric, two sectors, and the forms on them. The dynamics is imported, and the nineteen are the price of the dynamics. A reader who wants to know whether the framework is a theory of the model or a language for it should ask which of the nineteen it fixes, and the answer recorded here is none.
 
@@ -281,7 +281,6 @@ The framework fixes none of the nineteen. Its own parameters — the charge $ϙ$
 
 ## Further Reading
 
-- [The Standard Model as the Low-Energy Phase: The U(2) Ceiling and the Four Unbuilt Sectors](the-standard-model-as-the-low-energy-phase.html). The boundary in item-by-item form, and the three refusals this article respects.
 - [Anomalies and Anomaly Cancellation: Four Conditions Become None](anomalies-and-anomaly-cancellation.html). The derivation of the four conditions.
 - [The Number of Generations and the Biquaternion Algebra](the-number-of-generations-and-the-biquaternion-algebra.html). Why the three is accommodated and not derived.
 - [The Seesaw Mechanism and Majorana Mass in Biquaternionic Form](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html). The seven or eight parameters that a neutrino mass costs.

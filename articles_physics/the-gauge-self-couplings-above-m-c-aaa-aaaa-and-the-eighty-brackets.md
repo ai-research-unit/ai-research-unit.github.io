@@ -2,12 +2,12 @@
 
 ## Introduction
 
-**The question.** Row $1$ is one number, $\tfrac14\operatorname{tr}F_{\imath\jmath}F^{\imath\jmath}$. **What interactions does one number contain?** This article expands the row and counts them.
+**The question.** Row $1$ is one number, $-\tfrac14\sum_{a}F_{a,\imath\jmath}F_{a,\imath\jmath}$. **What interactions does one number contain?** This article expands the row and counts them.
 
 **The answer.** Two types and five structures.
 
 $$
-\boxed{\;\tfrac14\operatorname{tr}F^{2}\ \longrightarrow\ AAA\ \text{and}\ AAAA,\qquad
+\boxed{\;\tfrac14\sum_{a}F_{a}F_{a}\ \longrightarrow\ AAA\ \text{and}\ AAAA,\qquad
 80\ \text{nonzero brackets of } 105\ \text{pairs}.\;}
 $$
 
@@ -26,7 +26,7 @@ $$
 
 **The first term is the propagator and carries no coupling.** The second and third carry $g_{4}$ and $g_{4}^{2}$; **their ratio is fixed by the same number**, which is what "one coupling" means at the level of Feynman rules.
 
-**The factor $\tfrac14$ is not arbitrary.** It is $\tfrac14$ because $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$ and the field strength carries two generators: **$\tfrac14\cdot\tfrac12\cdot2=\tfrac14$ for the canonical normalisation**, and [the kinetic terms' article](the-lagrangian-and-the-primordial-force.html) derives it rather than positing it.
+**The factor $\tfrac14$ is the canonical normalisation, and it needs its basis printed beside it.** In the basis $\operatorname{tr}(t_{a}t_{b})=\delta_{ab}$ — the census's $t_{a}$ scaled by $\sqrt2$ — the row is $\tfrac14\operatorname{tr}F^{2}=\tfrac14\sum_{a}F_{a}F_{a}$, and the coefficients above are the component-form ones. **In the census's own basis, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, the same row is $\tfrac12\operatorname{tr}F^{2}$, and a display that writes $\tfrac14$ against a trace there is half the canonical value.** [The free parts](the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html) fixes the number once and prints the factor of two between the two bases. **No vertex below depends on which of the two is used**, because every strength is read as a ratio: $1$, $g_{4}$ and $g_{4}^{2}$.
 
 ## The Triple Vertex
 
@@ -92,13 +92,13 @@ $$
 2. The coupling powers. $g_{4}^{0}$, $g_{4}^{1}$, $g_{4}^{2}$.
 3. The brackets. $\binom{15}{2}=105$ pairs, $80$ nonzero, $25$ commuting.
 4. The quartic. $\binom{16}{2}=120$ symmetric pairs.
-5. The factor. $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, giving $\tfrac14$ on $\operatorname{tr}F^{2}$.
+5. The factor. $\tfrac14$ on $\operatorname{tr}F^{2}$ in the $\operatorname{tr}(t_{a}t_{b})=\delta_{ab}$ basis, which is $\tfrac12\operatorname{tr}F^{2}=\tfrac14\sum_{a}F_{a}F_{a}$ in the census's $\tfrac12\delta_{ab}$ basis; the two differ by the trace norm and by nothing else.
 6. The absence. No $d_{abc}$ cubic for $\mathrm{SU}(N)$, $N\ge3$, in the fundamental.
 7. The ratio. Quartic over cubic squared is fixed: one coupling, not two.
 
 ## Summary
 
-**One row, $\tfrac14\operatorname{tr}F^{2}$, contains a propagator, a triple vertex and a quartic vertex, with couplings $1$, $g_{4}$ and $g_{4}^{2}$.** The triple vertex carries the eighty nonzero structure constants of a hundred and five pairs; **the quartic carries a hundred and twenty symmetric pairs.**
+**One row, $\tfrac14\sum_{a}F_{a}F_{a}$, contains a propagator, a triple vertex and a quartic vertex, with couplings $1$, $g_{4}$ and $g_{4}^{2}$.** The triple vertex carries the eighty nonzero structure constants of a hundred and five pairs; **the quartic carries a hundred and twenty symmetric pairs.**
 
 **Both counts are realisation counts and neither is a count of couplings.** There is one coupling, **and the quartic's strength is the cube's squared** — which is what makes the connection a gauge field rather than three unrelated interactions.
 

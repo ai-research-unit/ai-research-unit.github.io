@@ -55,7 +55,7 @@ Each row names the quantity and does not give its value. The value is in the art
 | [Meson Mixing, Rare Decays and the Unitarity Triangle](meson-mixing-rare-decays-and-the-unitarity-triangle-as-a-closure-test.html) | the mixing parameters, as standard input | a closure test against measured flavour data |
 | [The Proton in Biquaternionic Form](the-proton-in-biquaternionic-form.html) | standard input, transcribed | the subject is a measured object |
 | [Three Gaps in the Standard Model](three-gaps-in-the-standard-model.html) | standard input, transcribed | the article audits the model's open questions, not this one's strengths |
-| [Grand Unification in the Biquaternion Framework](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html) | the measured strengths, to test the meeting | the meeting of measured strengths is the test, and it fails on data |
+| [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html) | the measured strengths, to test the meeting | the meeting of measured strengths is the test, and it fails on data |
 | [The Petiau System and the Quantisation of Mass](the-petiau-system-and-the-quantisation-of-mass-in-biquaternionic-form.html) | the fine-structure value, inside an empirical leptonic formula | the formula is empirical, and the article says so |
 
 Two of the corpus's articles make a claim, sixteen print a measured strength, and every other article is structural. They state a group, a carrier, a multiplet list, a charge, an anomaly identity, a boson count, a dimension budget or a diagram, with every strength a symbol and no value attached. They are not listed here because the list would be the corpus.

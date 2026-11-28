@@ -8,7 +8,7 @@
 
 **The strongest objection.** *Tree diagrams and the classical solution are different objects, because the classical solution is not a diagram.* The objection is right at finite coupling and wrong order by order. The classical solution is a series in the coupling; its $n$-th term is the sum of the tree diagrams with $n$ vertices; the two are equal term by term. What is not equal is the sum, because the sum need not converge. The article states the identification order by order and states the gap.
 
-**Position.** After [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) in the section [The Lagrangian Method](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), and the article that ties the section back to the variation that produces the field equation.
+**Position.** After [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) in the section [The Lagrangian Method](the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html), and the article that ties the section back to the variation that produces the field equation.
 
 ## The Stationary Phase
 

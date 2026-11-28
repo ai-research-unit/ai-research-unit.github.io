@@ -26,7 +26,7 @@ One convention is a restriction. Spinors, generators and projectors are written 
 
 ## The Action in Element Form
 
-The four pieces, in the corpus's coordinates. With $\partial/\partial R_{\imath}$ the derivative of [the assembled Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html) and the sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ applying to every display,
+The four pieces, in the corpus's coordinates. With $\partial/\partial R_{\imath}$ the derivative of [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html) and the sign rule $\sum_{\imath} X_{\imath} Y_{\imath}=-X\cdot Y$ applying to every display,
 
 $$
 \mathcal{L}_{\mathrm{QCD}}=-\frac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}+\sum_f\barΞ_{\mathrm{wfn},f}\left(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath} D_{\imath}-m_f\right)Ξ_{\mathrm{wfn},f}-\frac{1}{2\zeta}\sum_{a,\imath}\left(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\right)^2+\sum_{a}\bar c_{a}\left(-\frac{\partial^2}{\partial R_{\imath}\partial R_{\imath}}\right)c_{a}+\mathcal{L}_{cG} .
@@ -485,7 +485,6 @@ The framework supplies the sign rule and the projectors and nothing else. The gr
 - [The Gluon: An Octet Inside the Carrier's Group](the-gluon-an-octet-outside-the-biquaternion-algebra.html). The structure constants, the $d$ tensor and the embedded $\mathrm{SU}(3)$ elements that this article uses without repeating.
 - [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators](the-compact-sector-of-the-biquaternions-is-u2.html). The dimension bound quoted in the introduction.
 - [SU(3) Representations and the Gell-Mann–Okubo Mass Formula](su3-representations-and-the-gell-mann-okubo-mass-formula-in-biquaternionic-form.html). The representation theory behind the decompositions of the section on the triplet and the octet.
-- [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule, and the strong sector in its place among the four.
 - [Fixing the Representative in the Electroweak Theory: $R_\xi$ Conditions, Ghosts and the Goldstone Equivalence Theorem](fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html). The choice of representative mechanism that QCD borrows unchanged.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated](quantum-chromodynamics-as-the-residual-of-su4.html). The classification that the ledger follows.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). The strong quantum numbers of the fifteen fields, and $\alpha_s$ among the parameters.

@@ -23,7 +23,7 @@ The article answers the first three, and the answers are consistent: the algebra
 - The mathematics articles *Biquaternion Rotations and Lorentz Transformations* and *Biquaternion Versors and the Orthogonal Group*, for the representation theory of the algebra and for its spinor and Clifford realizations.
 - The mathematics article *The Biquaternion Group of Invertibles as a Topological Group*, for the topological obstructions.
 - Companion article *The Hopf Fibration and the Biquaternion Bundle*, for the intrinsic $\mathrm{U}(2)$ as a structure group.
-- Companion article *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*, for the consequence for unification.
+- Companion article *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, §*The Unified Rungs*, for the consequence for unification.
 
 ## The Algebra's Own Compact Structure
 
@@ -176,7 +176,61 @@ $$
 $$
 of complex dimension $64$. It is a Clifford algebra, hence associative, and its commutator is a genuine Lie bracket; it carries an intrinsic $SU(3)$ as the stabiliser of a maximal totally isotropic subspace, equivalently of an invertible element $e_7$ inside $G_2=\mathrm{Aut}(\mathbb O)$. The strong group here is the algebra's own and not an import, so within this carrier the ceiling does not apply — the carrier is not $\mathbb B$ and the modules are not $\mathbb B$-modules, and the three-dimensional triplet has a home as a minimal left ideal. What it costs is the change of carrier, which is a real cost: $SU(3)$ is *the algebra's own* only after the algebra has been replaced by one of complex dimension $64$. The structural statement below therefore stands as a statement about $\mathbb B$ — the group ceases to be the algebra's own as soon as the carrier changes — with the correction that associativity, at least, need not be the casualty.
 
-**The structural statement.** Within the associative four-dimensional complex algebra, the symmetry group is $\mathrm{U}(2)$ and no more. $SU(3)$ is reachable only by enlarging the carrier, and every enlargement pays in canonicity: the group ceases to be the algebra's own. This is the sense in which the ceiling is a sharp result about the algebra rather than a limitation of effort. It also connects directly to the last article of this group, *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*, where the same count is used to determine how far a unification based on the algebra can go.
+**The structural statement.** Within the associative four-dimensional complex algebra, the symmetry group is $\mathrm{U}(2)$ and no more. $SU(3)$ is reachable only by enlarging the carrier, and every enlargement pays in canonicity: the group ceases to be the algebra's own. This is the sense in which the ceiling is a sharp result about the algebra rather than a limitation of effort. It also connects directly to the last article of this group, *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, §*The Unified Rungs*, where the same count is used to determine how far a unification based on the algebra can go.
+
+### The Unified Rungs: Which $n$ Each Group Needs
+
+Enlarging the carrier passes the dimension and rank thresholds, and the cost is stated exactly. With $M_n(\mathbb B)\cong M_{2n}(\mathbb C)$,
+
+$$
+\text{compact part}=\mathrm{U}(2n),
+\qquad
+\dim_{\mathbb R}\mathrm{U}(2n)=(2n)^2=4n^2,
+\qquad
+\mathrm{rank}=2n .
+$$
+
+The numerical threshold — rank at least four, dimension at least twelve — is met for $n\ge2$, since $\mathrm{U}(4)$ has rank $4$ and dimension $16$. But the threshold is necessary and not sufficient: the carrier $\mathbb C^{2n}$ must contain a faithful representation of the group being embedded, so $2n$ must be at least the dimension of that group's smallest faithful representation. That gives a higher floor:
+
+$$
+SU(3)\subset\mathrm{U}(4)\ (n=2),
+\qquad
+SU(5)\subset\mathrm{U}(6)\ (n=3),
+\qquad
+SO(10)\subset\mathrm{U}(10)\ (n=5),
+$$
+
+$$
+E_6\subset\mathrm{U}(28)\ (n=14),
+\qquad
+E_7\subset\mathrm{U}(56)\ (n=28),
+\qquad
+E_8\subset\mathrm{U}(248)\ (n=124),
+$$
+
+using the spinor $\mathbf{16}$ for $SO(10)$, the fundamental $\mathbf{27}$ for $E_6$, the fundamental $\mathbf{56}$ for $E_7$, and the adjoint $\mathbf{248}$ for $E_8$, which has nothing smaller.
+
+**The even-dimension obstruction is finer than the dimension count, and it is the one that bites.** A generation of the Standard Model in $SU(5)$ sits in $\bar{\mathbf 5}\oplus\mathbf{10}$, of complex dimension $5+10=15$ — odd. Every $\mathbb B$-module has even complex dimension, so no generation fits a module of $M_n(\mathbb B)$ without an extra singlet:
+
+$$
+\bar{\mathbf 5}\oplus\mathbf{10}\oplus\mathbf 1=\mathbb C^{15}\oplus\mathbb C=\mathbb C^{16}
+\quad\Longrightarrow\quad 2n=16,\ n=8,\ \mathrm{U}(16).
+$$
+
+So the *economical* embedding of $SU(5)$ — $n=3$ for the $\mathbf 5$ alone — is not available once the matter content is required, and the minimal carrier for a generation is $M_8(\mathbb B)$, one full rung above the group's own floor, carrying a spurious singlet. The $SO(10)$ spinor $\mathbf{16}$ fits $\mathbb C^{16}$ at the same $n=8$; the $E_6$ $\mathbf{27}$ needs $\mathbb C^{28}$, $n=14$. **The module structure rules out the economical unified embeddings, not the existence of an embedding.**
+
+**The rank ladder, which is the compact statement of the whole ceiling.**
+
+$$
+\underbrace{2}_{\mathrm{U}(2),\ \text{framework}}<
+\underbrace{4}_{G_{\mathrm{SM}},\ SU(5)}<
+\underbrace{5}_{SO(10),\ \text{left–right}}<
+\underbrace{6}_{E_6}<\underbrace{7}_{E_7}<\underbrace{8}_{E_8}<\underbrace{16}_{E_8\times E_8}.
+$$
+
+Every rung above the first is inaccessible to the algebra's intrinsic structure, and the gap is a property of the algebra and not of any particular model. Three costs attach to every rung that is bought by enlargement: **the group is no longer the algebra's own** — the intrinsic group of $M_n(\mathbb B)$ is $\mathrm{U}(2n)$, never a simple GUT group, so its selection is an extra input; **unwanted commuting factors arrive** — $\mathrm{U}(2n)$ is locally $SU(2n)\times\mathrm{U}(1)$, and $SU(5)$ inside $SU(6)\subset\mathrm{U}(6)$ carries the commutant of the split $\mathbb C^6=\mathbf 5\oplus\mathbf 1$, all of which must be removed by a mechanism outside the algebra; and **the module dimension doubles**, which is the singlet above.
+
+Two consequences worth stating. First, the framework cannot predict a unification scale or a proton lifetime, because it has no simple group and no unified coupling of its own: the running of the three couplings and their meeting point are standard quantum field theory, and the framework supplies only the connections between which they run. Second, the $E_8$ rung is closed independently of any framework: Distler and Garibaldi showed that the only $E_8$ embeddings compatible with the Standard-Model symmetry group require the fermions to fill a complete $\mathbf{248}$ — three generations plus a conjugate set — and the resulting spectrum is not chiral in the required sense. That theorem is about $E_8$ and not about biquaternions, and its relevance is that it removes the top rung from the list of targets a biquaternionic construction could be measured against: the sharpest illustration of the ceiling's own lesson, that a large group is not by itself an explanation.
 
 ## The Ceiling and the Standard Model
 

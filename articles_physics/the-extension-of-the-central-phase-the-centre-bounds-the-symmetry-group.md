@@ -130,7 +130,7 @@ Where the computation is. The refusal is computed, with the assignment table and
   localisation ceiling. Owner: *The Physical Interpretation of the 12 Products*.
 - Non-centrality is non-locality's algebraic price. The interpretation is that a local symmetry costs a
   non-central generator, so the framework's globality is the price it pays for having a scalar centre, and
-  the enlargement is the price it would pay to escape. Owners: *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators* and *Grand Unification in the Biquaternion Framework: Where the Embedding Fails*.
+  the enlargement is the price it would pay to escape. Owners: *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators* and *The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*, §*The Unified Rungs*.
 
 ## Summary
 
@@ -164,4 +164,3 @@ does not contain.
   one generator on remarkable subspaces.
 - [The Four Products: Composition, Probability, Causality and the Indefinite Form](the-four-products-composition-probability-causality-and-the-indefinite-form.html), for the compact slice and the discrete
   charge.
-- [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html), for the constructive interpretation of the obstruction.

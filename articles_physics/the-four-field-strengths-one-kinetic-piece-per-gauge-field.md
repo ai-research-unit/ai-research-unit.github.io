@@ -16,7 +16,7 @@ $$
 
 ## Conventions
 
-**The metric and the indices.** The displays of this category use $g_{\mu\nu}=(1,-1,-1,-1)$ and $\partial_\mu=\partial/\partial x^\mu$. The corpus writes the same pieces with $\imath$ indices and the rule $\sum_{\imath}X_{\imath}Y_{\imath}=-X\cdot Y$; the dictionary is that one line, and it is stated in [The Standard Model and the Lagrangian](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html).
+**The metric and the indices.** The displays of this category use $g_{\mu\nu}=(1,-1,-1,-1)$ and $\partial_\mu=\partial/\partial x^\mu$. The corpus writes the same pieces with $\imath$ indices and the rule $\sum_{\imath}X_{\imath}Y_{\imath}=-X\cdot Y$; the dictionary is that one line, and it is stated in [The Complete Lagrangian](the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html).
 
 **The covariant derivative on the charged field.** On $W^+_\mu$,
 
