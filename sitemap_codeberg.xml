@@ -941,14 +941,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-one-fluid-equations-from-the-proca-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-one-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-proca-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -963,6 +955,14 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-proca-equation-in-biquaternionic-polar-variables.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-one-fluid-equations-from-the-proca-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-one-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.html</loc>
@@ -1021,22 +1021,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-half-fluid-equations-from-the-dirac-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-energy-momentum-tensor.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-dirac-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1050,6 +1034,22 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-dirac-equation-in-biquaternionic-polar-variables.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-half-fluid-equations-from-the-dirac-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-and-the-takabayasi-correspondence.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-fluid-of-the-biquaternion-dirac-field.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-energy-momentum-tensor.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1097,18 +1097,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/klein-gordon-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-nodal-set-and-quantized-circulation.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-klein-gordon-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1122,6 +1110,18 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourier-transform-and-the-klein-gordon-equation-in-biquaternionic-polar-variables.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/klein-gordon-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-nodal-set-and-quantized-circulation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -1205,10 +1205,6 @@
     <lastmod>2026-11-27</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/su4-fluid-equations-from-the-primordial-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1219,6 +1215,10 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/no-confinement-above-m-c.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/su4-fluid-equations-from-the-primordial-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html</loc>
@@ -1837,14 +1837,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-spin-one-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-one-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-coupled-proca-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1889,6 +1881,14 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-spin-one-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-one-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-coupled-dirac-equation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1930,14 +1930,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/bispinor-fields-and-the-fundamental-solution-of-the-generalized-maxwell-dirac-equation.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-spin-half-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2093,6 +2085,14 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-spin-half-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-half-fluid-charge-couples-to-the-lorentz-force-spin-does-not.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-interacting-scalar-field.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -2134,26 +2134,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/wave-particle-duality-and-the-galilean-limit.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-klein-gordon-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-zero-fluid.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-schrodinger-fluid.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2206,6 +2186,26 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/scalar-pair-creation-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-klein-gordon-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-spin-zero-fluid.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-charged-schrodinger-fluid.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-quantum-stress-tensor-of-the-biquaternion-scalar-field.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
@@ -2453,14 +2453,6 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/schrodinger-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-path-integral-and-the-schrodinger-equation-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -2531,6 +2523,14 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/zero-divisors-as-a-physical-locus-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/schrodinger-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/charged-schrodinger-fluid-equations-from-the-polar-action.html</loc>
+    <lastmod>2026-11-27</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-native-qubit-and-the-defining-module-of-the-biquaternion-algebra.html</loc>
@@ -2769,6 +2769,30 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html</loc>
+    <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-euler-and-continuity-equations-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-27</lastmod>
   </url>
@@ -2803,30 +2827,6 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/superfluids-and-becs-the-gross-pitaevskii-equation-as-the-nonlinear-reverse-map.html</loc>
     <lastmod>2026-11-27</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-free-particle-and-inertial-frames-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-harmonic-oscillator-and-the-two-sector-structure-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-central-scalar-limit-of-classical-mechanics-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/central-forces-and-the-classical-kepler-problem-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-classical-coulomb-problem-and-its-hidden-so4-symmetry-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-foucault-pendulum-and-classical-holonomy-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/fisher-information-and-the-biquaternion-norm.html</loc>
