@@ -78,12 +78,12 @@
 <h2 id="the-stationary-phase">The Stationary Phase</h2>
 <p><strong>The path integral is an oscillating integral with a large parameter, so its leading behaviour is its saddle.</strong> With the corpus's weight,</p>
 <p>$$
-Z[J]=\int\mathcal D\phi\;\exp\Bigl(\frac{2\pi i}{h}S[\phi]+\frac{i}{h}\int J\phi\Bigr)
-=\int\mathcal D\phi\;\exp\Bigl(\frac{2\pi i}{h}\bigl(S[\phi]+\tfrac{1}{2\pi}\!\int J\phi\bigr)\Bigr),
+Z[J]=\int\mathcal D\phi\;\exp\Bigl(\frac{2\pi i}{h}S[\phi]+\frac{2\pi i}{h}\int J\phi\Bigr)
+=\int\mathcal D\phi\;\exp\Bigl(\frac{2\pi i}{h}\bigl(S[\phi]+\!\int J\phi\bigr)\Bigr),
 $$</p>
 <p>the stationary points solve</p>
 <p>$$
-\frac{\delta S}{\delta\phi}+\frac{J}{2\pi}=0 ,
+\frac{\delta S}{\delta\phi}+J=0 ,
 $$</p>
 <p>which is the Euler–Lagrange equation with the source. At $J=0$ the condition is $\delta S=0$, the classical equation of the corpus's <a href="the-lagrangian-and-the-klein-gordon-equation.html">Klein–Gordon derivation</a>.</p>
 <p><strong>The next order is the Gaussian about the saddle, and the next is the determinant of its second variation.</strong> Writing $\phi=\phi_{\mathrm c}+\eta$ and expanding,</p>
@@ -104,7 +104,7 @@ $$</p>
 \bigl(\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}\bigr)\Xi_{1}=\varpi_{\mathrm{cpl}}\,N_{0}\,\Xi_{0},
 $$</p>
 <p>so $\Xi_{1}$ is the propagator applied to the source $\varpi_{\mathrm{cpl}}N_{0}\Xi_{0}$. Amputating the external leg and putting it on the shell returns the tree vertex of <a href="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">stage $3$</a>, and nothing else. The equation's solution <em>is</em> the tree diagram, written in position space.</p>
-<p><strong>The correspondence was checked on a model where both sides are computable to machine precision.</strong> In the zero-dimensional truncation of the same structure, with $m^{2}x+\lambda x^{3}=J$ as the classical equation and $x=J/m^{2}-\lambda(J/m^{2})^{3}/m^{2}-\cdots$ as the tree series, the iterated series approached the Newton solution with errors $1.37\times10^{-2}$, $2.00\times10^{-3}$, $2.78\times10^{-4}$, $3.88\times10^{-5}$, $5.42\times10^{-6}$, $7.56\times10^{-7}$ at orders zero to five, and the ratio of successive errors settled at $0.1396$, which is $\lambda\cdot3x_{\mathrm c}^{2}/m^{2}$ at the solution to three figures. The tree series is the classical solution's Taylor series, and the check is the statement that the coefficients agree.</p>
+<p><strong>The correspondence was checked on a model where both sides are computable to machine precision.</strong> In the zero-dimensional truncation of the same structure, with $m^{2}x+\lambda x^{3}=J$ as the classical equation and $x=J/m^{2}-\lambda(J/m^{2})^{3}/m^{2}-\cdots$ as the tree series, take $m=1$, $\lambda=1$, $J=0.225$. The classical root is $x_{\mathrm c}=0.21505$, and iterating $x\mapsto\bigl(J-\lambda x^{3}\bigr)/m^{2}$ gave errors $9.95\times10^{-3}$, $1.45\times10^{-3}$, $1.99\times10^{-4}$, $2.77\times10^{-5}$, $3.84\times10^{-6}$, $5.32\times10^{-7}$ at orders zero to five. The ratio of successive errors settled at $0.1387$, which is $\lambda\cdot3x_{\mathrm c}^{2}/m^{2}=0.1387$ to four figures: each iteration multiplies the error by the derivative of the classical map at its fixed point, and the tree series is the classical solution's Taylor series.</p>
 <h2 id="the-loops-are-the-powers-of-the-action-quantum">The Loops Are the Powers of the Action Quantum</h2>
 <p><strong>One closed loop is one order in $\frac{h}{2\pi}$, and the determinant is the first such term.</strong> The loop count is the graph's cycle rank,</p>
 <p>$$
@@ -137,7 +137,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two expansions are different groupings of one series, and the difference was checked numerically.</strong> In the same zero-dimensional model the expectation $\langle x\rangle$ was computed by quadrature at four values of the action quantum, and the deviation from the classical value was $-4.10\times10^{-2}$, $-2.36\times10^{-2}$, $-1.28\times10^{-2}$, $-6.70\times10^{-3}$ at $\frac{h}{2\pi}=0.2,0.1,0.05,0.025$. The deviation falls by half when the parameter halves, so it is linear in the parameter: one power, one loop. The ratio to the parameter drifted from $-0.205$ to $-0.268$ over the four values, which is the $O\bigl((h/2\pi)^{2}\bigr)$ contamination and the reason the four values are quoted rather than one.</p>
+<p><strong>The two expansions are different groupings of one series, and the difference was checked numerically.</strong> In a zero-dimensional model with $S=\tfrac12m^{2}x^{2}+\lambda x^{4}-Jx$ and $m=1$, $\lambda=0.5$, $J=0.05$, the expectation $\langle x\rangle$ was computed by quadrature at four values of the action quantum, and the deviation from the classical value $x_{\mathrm c}=0.049754$ was $-4.56\times10^{-3}$, $-2.54\times10^{-3}$, $-1.35\times10^{-3}$, $-6.99\times10^{-4}$ at $\frac{h}{2\pi}=0.02,0.01,0.005,0.0025$. Successive deviations have ratio $0.557$, $0.532$, $0.517$: the deviation halves when the parameter halves, so it is linear in the parameter — one power, one loop. The ratio of the deviation to the parameter drifted from $-0.228$ to $-0.280$ over the four values, converging on the analytic first-order coefficient $-\tfrac12 S'''/S''^{2}=-0.290$; that drift is the $O\bigl((h/2\pi)^{2}\bigr)$ contamination and the reason four values are quoted rather than one.</p>
 <p><strong>The equivalence is precise and it is bounded.</strong> The two expansions are the same diagrams, grouped by loop number instead of by coupling power. Truncating at fixed loop order is not the same as truncating at fixed coupling order: a fixed-order truncation contains finitely many loops, and a fixed-loop truncation contains infinitely many orders. A reader who treats the two truncations as interchangeable will compare two different approximations and call the difference a discrepancy.</p>
 <h2 id="the-two-routes-are-one">The Two Routes Are One</h2>
 <p><strong>Stated as a table, the identification is exact line by line.</strong></p>
@@ -180,7 +180,7 @@ $$</p>
 <p><strong>The claim is therefore one-directional and order by order.</strong> Every tree diagram is a term in the classical solution's expansion, and every term of that expansion is a tree diagram. That is enough to identify the two computations, and it is all that is claimed.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>The classical limit of the diagram series is the stationary phase of the path integral.</strong> $\delta S=0$ gives the Euler–Lagrange equation; the Gaussian about the saddle gives the determinant; and the expansion about the saddle reproduces the tree diagrams order by order in the coupling. The tree diagrams are the perturbative classical solution, and each closed loop is one power of $\frac{h}{2\pi}$.</p>
-<p><strong>The identification was checked on a model where both sides are exact.</strong> The tree series matched the Newton solution with errors falling by $0.1396$ per order, and the deviation of the expectation from the classical value halved when the action quantum halved, as one power of it does.</p>
+<p><strong>The identification was checked on a model where both sides are exact.</strong> The tree series matched the Newton solution with errors falling by $0.1387$ per order, and the deviation of the expectation from the classical value halved when the action quantum halved, as one power of it does.</p>
 <p><strong>The equivalence of the coupling and loop expansions is a regrouping of the same diagrams and nothing more.</strong> Truncating at fixed loop order is not truncating at fixed coupling order, and the identification of trees with the classical solution holds order by order and not as a statement about sums or convergence.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>

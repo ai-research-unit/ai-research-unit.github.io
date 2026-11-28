@@ -84,15 +84,18 @@ S[\phi]=\int\mathrm{d}^{4}r\;\mathcal L(\phi,\partial\phi),\qquad \mathcal L=\ma
 $$</p>
 <p>Stage $1$ defines the object every later stage works on,</p>
 <p>$$
-Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\int J\phi\Bigr),\qquad \theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S ,
+Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}}\Bigr),\qquad
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S,\qquad
+\theta_{\mathrm{src}}=\frac{2\pi}{h}\int J\phi ,
 $$</p>
 <p>and all physics is a derivative of $Z[J]$ with respect to the source.</p>
 <p>Stage $2$ splits and factorises. The quadratic part is integrated exactly, and its inverse is the propagator,</p>
 <p>$$
 Z[J]=e^{\,iS_{\mathrm{int}}[\delta/i\delta J]}\,Z_{0}[J],\qquad
-Z_{0}[J]=\bigl(\det W\bigr)^{-1/2}\exp\Bigl(-\tfrac{i}{2}\int J\Delta J\Bigr),\qquad
-\Delta=W^{-1}.
+Z_{0}[J]=\bigl(\det W\bigr)^{-1/2}\exp\Bigl(-\tfrac12\int J\Delta J\Bigr),\qquad
+\Delta=iW^{-1},
 $$</p>
+<p>where $Z_{0}$ and $\Delta$ in the second line are written in the units $\frac{2\pi}{h}=1$ that the rest of the section uses.</p>
 <p>Stage $3$ expands the rest. One monomial of $\mathcal L_{\ge3}$ is one vertex, and the functional derivatives bring down fields that Wick's theorem pairs,</p>
 <p>$$
 e^{\,iS_{\mathrm{int}}[\delta/i\delta J]}=\sum_{n\ge0}\frac{1}{n!}\bigl(iS_{\mathrm{int}}\bigr)^{n},
@@ -142,7 +145,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The four stages are one order and not a preference.</strong> Stage $2$ follows stage $0$, because it inverts the part that stage $0$ isolated. Stage $3$ follows stage $2$, because it expands the exponential whose action on the Gaussian is now known. Stage $4$ follows stage $3$, because a contraction needs a series to contract. Any other order either inverts what is not there or expands what has not been defined.</p>
+<p><strong>The stages form one order and not a preference.</strong> Stage $2$ follows stage $0$, because it inverts the part that stage $0$ isolated. Stage $3$ follows stage $2$, because it expands the exponential whose action on the Gaussian is now known. Stage $4$ follows stage $3$, because a contraction needs a series to contract. Any other order either inverts what is not there or expands what has not been defined.</p>
 <h2 id="what-the-process-is-called">What the Process Is Called</h2>
 <p><strong>The chain has no single canonical name, and the absence is why it is often mistaken for four techniques.</strong> Each name below denotes one part. The whole is the composite, and the composite is what a physicist means by doing perturbation theory.</p>
 <div class="table-scroll"><table>

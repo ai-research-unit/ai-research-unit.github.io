@@ -104,8 +104,9 @@
 <h2 id="the-generating-functional">The Generating Functional</h2>
 <p><strong>One functional carries the theory.</strong> With the source $J$ coupled to the field,</p>
 <p>$$
-Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\int J\phi\Bigr),\qquad
-\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S[\phi],
+Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\theta_{\mathrm{src}}\Bigr),\qquad
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S[\phi],\qquad
+\theta_{\mathrm{src}}=\frac{2\pi}{h}\int J\phi,
 $$</p>
 <p>and the correlators are its derivatives,</p>
 <p>$$
@@ -123,7 +124,11 @@ Z[J]=\exp\Bigl(iS_{\mathrm{int}}\bigl[\tfrac{\delta}{i\delta J}\bigr]\Bigr)\,Z_{
 Z_{0}[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{2}+i\int J\phi\Bigr).
 $$</p>
 <p><strong>The identity is exact and it is the whole content of "perturbation theory".</strong> No approximation has been made. The non-Gaussian part has been moved out of the integral and into an operator acting on the Gaussian's value. Everything after this line is either the evaluation of $Z_{0}$ or the expansion of that operator.</p>
-<p><strong>The shift is where the source's meaning is fixed.</strong> Completing the square in $Z_{0}$ gives the exponent $-\frac{i}{2}\int J\Delta J$, and $\Delta$ is the inverse of the quadratic kernel. The source therefore couples to the field through the propagator, and the two-point function at zeroth order in the interaction is $\Delta$ itself. That is the sentence the diagrams call <em>the internal line is the propagator</em>.</p>
+<p><strong>The shift is where the source's meaning is fixed, and where the factor of $\frac{h}{2\pi}$ enters.</strong> Completing the square in $Z_{0}$ gives the exponent $-\frac{1}{2}\int J\Delta J$ with</p>
+<p>$$
+\Delta=\frac{h}{2\pi}\,i\,W^{-1},
+$$</p>
+<p>so the source couples to the field through the propagator, and the two-point function at zeroth order in the interaction is $\Delta$ itself. The $\frac{h}{2\pi}$ is what the correlator formula's $\bigl(\frac{h}{2\pi i}\bigr)^{n}$ demands: each derivative brings $\frac{2\pi}{h}$ of field, and the two factors must cancel in a two-point function. In the units $\frac{2\pi}{h}=1$, which the rest of the section uses, $\Delta=iW^{-1}$ and the exponent is $-\frac12\int J\Delta J$ with no visible $h$. That is the sentence the diagrams call <em>the internal line is the propagator</em>.</p>
 <p><strong>The operator's argument is a derivative, and the derivative is with respect to the source.</strong> Writing $S_{\mathrm{int}}[\delta/i\delta J]$ means: replace every field in the interaction by $\delta/i\delta J$, then act on $Z_{0}$. Each derivative brings down one factor of $\Delta J$ or one $\Delta$ from the exponent, which is why the expansion produces exactly the two objects the diagrams draw: lines and vertices.</p>
 <h2 id="the-gaussian-exact">The Gaussian, Exact</h2>
 <p><strong>The finite-dimensional identity is elementary, and the field case is the same identity per mode.</strong></p>
@@ -131,7 +136,7 @@ $$</p>
 \int\mathrm{d}^{n}x\;\exp\Bigl(-\tfrac12x^{T}Ax+J^{T}x\Bigr)
 =\bigl(\det A\bigr)^{-1/2}\exp\Bigl(\tfrac12J^{T}A^{-1}J\Bigr).
 $$</p>
-<p><strong>The identity was checked by exact quadrature, not by trusting the formula.</strong> For one hundred random positive-definite $2\times2$ matrices and one hundred random sources, tensor Gauss–Hermite quadrature reproduced the closed form with a largest relative deviation of $1.3\times10^{-15}$; at dimension four with ten-point nodes the deviation was $2.8\times10^{-10}$, which is the quadrature's error and not the identity's. The check is small and it fixes the sign of the exponent, which is the one thing a reader is entitled to doubt.</p>
+<p><strong>The identity was checked by exact quadrature, not by trusting the formula.</strong> For one hundred random positive-definite $2\times2$ matrices and one hundred random sources, and again in dimension four, the integral was computed in the eigenbasis of $A$, where it factorises into one-dimensional quadratures, and compared with the closed form: the largest relative deviation over the hundred samples was $8.3\times10^{-15}$ at $2\times2$ and $1.4\times10^{-14}$ at $4\times4$, which is the quadrature's own error and not the identity's. The check is small and it fixes the sign of the exponent, which is the one thing a reader is entitled to doubt.</p>
 <p><strong>The corpus's version differs by the measure and by the pairing.</strong> With $\langle\cdot,\cdot\rangle_{\mathbb R}$ the real part of the scalar pairing and $W$ the quadratic operator,</p>
 <p>$$
 \int\mathcal D\tilde\Xi\;\exp\Bigl(-\tfrac12\bigl\langle\tilde\Xi,W\tilde\Xi\bigr\rangle_{\mathbb R}
@@ -193,7 +198,7 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The third row is the row that fails, and it fails before any loop is drawn.</strong> The unfixed connection's kernel annihilates the momentum itself, because $p^{2}p_{\imath}-p_{\imath}p^{2}=0$; on one hundred random momenta the residual $\lVert Kp\rVert/\lVert p\rVert$ was $1.1\times10^{-15}$ and the smallest eigenvalue was $2\times10^{-15}$, while the Proca kernel $K+M^{2}\delta$ had smallest eigenvalue $M^{2}$ to machine precision. The zero mode is the orbit of the local symmetry, and it is <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">stage $2$'s only structural failure</a>.</p>
+<p><strong>The third row is the row that fails, and it fails before any loop is drawn.</strong> The unfixed connection's kernel annihilates the momentum itself, $p^{2}p_{\imath}-p_{\imath}p^{2}=0$ identically, so its spectrum is $\{p^{2},p^{2},0\}$ for every momentum and $p$ is the zero eigenvector; the singularity is exact and not a small eigenvalue. The Proca kernel $K+M^{2}\delta$ has smallest eigenvalue $M^{2}$. The zero mode is the orbit of the local symmetry, and it is <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">stage $2$'s only structural failure</a>.</p>
 <h2 id="the-determinant-is-the-vacuum-bubble">The Determinant Is the Vacuum Bubble</h2>
 <p><strong>The leftover factor is a closed loop, and this is the first appearance of the count that organises the quantum corrections.</strong> The Gaussian's $(\det W)^{-1/2}$ is the product over modes of $W$'s eigenvalues, and its logarithm is a trace,</p>
 <p>$$
@@ -240,7 +245,7 @@ $$</p>
 <p><strong>The honest reading is that the inverse is the algebra's and the integral is not.</strong> The mass-shell operator is a real function of four real numbers, its inverse exists off the shell, and the residue at its zero is the wave-function renormalisation. All of that is algebra. The measure, the convergence and the regularisation are not, and the <a href="the-functional-integral-in-biquaternionic-form.html">functional integral article</a> says so in its own words. A reader who wants a derivation of the path integral from $\mathbb B$ will not find one, and this stage says that rather than dressing the import.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>Stage $1$ defines the object and stage $2$ computes its quadratic part.</strong> The generating functional $Z[J]$ carries the theory, and every correlator is a derivative of it. Writing $S=S_{2}+S_{\mathrm{int}}$ factors the integral into an operator acting on a Gaussian, and the Gaussian is exact per mode: its inverse is the propagator, and its determinant is the vacuum's one-loop factor.</p>
-<p><strong>The propagator is the inverse of the quadratic operator, and its sign is the one the corpus displays.</strong> With $W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$ the symbol is $-\mathcal M$, so $\Delta=i/[-\mathcal M+i\epsilon]$ and $-\mathcal M=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2}$. The Gaussian identity was checked by exact quadrature to $1.3\times10^{-15}$ in dimension two.</p>
+<p><strong>The propagator is the inverse of the quadratic operator, and its sign is the one the corpus displays.</strong> With $W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$ the symbol is $-\mathcal M$, so $\Delta=i/[-\mathcal M+i\epsilon]$ and $-\mathcal M=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2}$. The Gaussian identity was checked by exact quadrature to $8.3\times10^{-15}$ in dimension two.</p>
 <p><strong>The stage's one failure is structural and it is stated here.</strong> An unfixed connection's quadratic kernel annihilates the momentum, so it has no inverse and no propagator; the zero mode is the orbit, and fixing the representative is what removes it.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
