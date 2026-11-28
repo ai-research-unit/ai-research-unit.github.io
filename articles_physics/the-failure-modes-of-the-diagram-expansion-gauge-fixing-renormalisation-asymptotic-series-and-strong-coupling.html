@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Failure Modes of the Diagram Expansion: Gauge Fixing, Renormalisation, Asymptotic Series and Strong Coupling — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The method of the four stages fails in four ways, and each failure is located. The quadratic part may not be invertible, and then there is no…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling"><strong>The Failure Modes of the Diagram Expansion: Gauge Fixing, Renormalisation, Asymptotic Series and Strong Coupling</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The method of <a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">the four stages</a> fails in four ways, and each failure is located. The quadratic part may not be invertible, and then there is no propagator until a representative is fixed. The series may be asymptotic, and then a fixed-order truncation is an approximation whose error grows past an optimal order. The loops may diverge, and then the parameters must be redefined order by order. And the coupling may be large, and then the expansion parameter is of order one and the route says nothing.</p>
+<p><strong>Why the article exists.</strong> A method stated without its failures is a claim of universal competence, and this method has none. The corpus's discipline is that a computation states its domain; <a href="five-steps-from-a-lagrangian-to-fluid-equations.html">Five Steps from a Lagrangian to Fluid Equations</a> states its five failures the same way, one per step. This article does it for the four stages, one per failure, with the repairing object named.</p>
+<p><strong>The strongest objection.</strong> <em>If it fails four ways, why use it.</em> Because each failure is a boundary and not a refutation, and a boundary that is known is a computation with a stated domain. The alternatives — a lattice, a bootstrap, a holographic dual — are different methods with their own boundaries, and none of them is the corpus's. The method's case is that it answers a large class of questions exactly at each order, with the error of truncation and the regime of validity both stated.</p>
+<p><strong>Position.</strong> The section's last article, and the one that keeps the section from overclaiming. It cites the corpus's articles that own each repair and adds no new physics to them.</p>
+<h2 id="the-first-failure-the-quadratic-part-is-not-invertible">The First Failure: The Quadratic Part Is Not Invertible</h2>
+<p><strong>A gauge field's quadratic kernel has a zero eigenvalue, and the zero mode is the orbit.</strong> For the connection, the unfixed kernel is $p^{2}\delta_{\imath\jmath}-p_{\imath}p_{\jmath}$, and it annihilates the momentum itself,</p>
+<p>$$
+\bigl(p^{2}\delta_{\imath\jmath}-p_{\imath}p_{\jmath}\bigr)p_{\jmath}=p^{2}p_{\imath}-p_{\imath}p^{2}=0 ,
+$$</p>
+<p>so there is no inverse and no propagator. The statement was checked on one hundred random momenta: the residual $\lVert Kp\rVert/\lVert p\rVert$ never exceeded $1.1\times10^{-15}$ and the kernel's smallest eigenvalue never exceeded $2\times10^{-15}$, while adding $M^{2}\delta_{\imath\jmath}$ gave smallest eigenvalue $M^{2}$ to machine precision. The zero mode is not a numerical accident; it is the local symmetry seen at the level of the free theory.</p>
+<p><strong>The repair is a fixing condition, and the price is two new sectors.</strong> Adding $-\frac{1}{2\zeta}(\partial\cdot A)^{2}$ makes the kernel invertible, and the Faddeev–Popov identity supplies the ghost determinant that keeps unitarity. The resulting propagator is the $R_{\xi}$ family,</p>
+<p>$$
+\frac{P}{\Pi-M^{2}}+\frac{\zeta L}{\Pi-\zeta M^{2}},
+$$</p>
+<p>with $\zeta=1$ the Feynman–'t Hooft choice, $\zeta=0$ the Landau choice and $\zeta\to\infty$ the Proca propagator. <a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">Fixing the Representative in the Electroweak Theory</a> states the three and the $\zeta$-pole that the Goldstone and the ghost share; <a href="the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral</a> states the identity; <a href="brst-symmetry-in-biquaternionic-form.html">BRST Symmetry</a> states why the ghost's minus sign preserves unitarity.</p>
+<p><strong>The failure is structural and it is not the algebra's.</strong> The kernel is singular because the density is invariant under a local transformation, and that invariance is a property of any transcription. What the algebra adds is the axis of the deformation, not the existence of the zero mode.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the parameter</th>
+<th>the propagator</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta=1$</td>
+<td>$\delta_{\imath\jmath}/(\Pi-M^{2})$</td>
+<td>Feynman–'t Hooft, the pole at the physical mass</td>
+</tr>
+<tr>
+<td>$\zeta=0$</td>
+<td>$P/(\Pi-M^{2})$</td>
+<td>Landau, the transverse part alone</td>
+</tr>
+<tr>
+<td>$\zeta\to\infty$</td>
+<td>the Proca form</td>
+<td>the unitary gauge, the Goldstones removed</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="the-second-failure-the-series-is-asymptotic">The Second Failure: The Series Is Asymptotic</h2>
+<p><strong>The expansion in the coupling has zero radius of convergence, and the reason is the growth of the coefficients.</strong> The standard illustration is the integral $\int_{-\infty}^{\infty}\mathrm{d}x\,\exp\bigl(-\tfrac12x^{2}-\lambda x^{4}\bigr)$, whose expansion in $\lambda$ has coefficients growing factorially. Computing them to one hundred orders gave $\lvert a_{k}\rvert^{1/k}$ equal to $54.25$, $111.11$, $284.97$ and $577.20$ at $k=10,20,50,100$, so the radius is zero: the coefficients outrun any exponential.</p>
+<p><strong>The consequence is visible in one number.</strong> At $\lambda=0.1$ the exact integral is $2.1497$ and the series' terms are $0.752$, $-1.316$, $4.343$ and $-21.17$, so the partial sums run $1.7546$, $3.0706$, $-1.2721$ and $19.8987$. They do not approach the answer; they leave it, and continue to leave it. A fixed-order truncation is therefore an approximation whose error falls until an optimal order and then grows, and the optimal order is not known without a non-perturbative estimate.</p>
+<p><strong>The honest statement, in one sentence.</strong> The method computes each order exactly and never computes the sum exactly. That is the same sentence as the corpus's general statement about the method, and it is the one a reader should be able to repeat.</p>
+<p><strong>What is not a failure.</strong> The per-order exactness is real: the coefficient at order $n$ is right, and it is right for all $n$ that anyone computes. The series' divergence is a statement about the limit and not about any term.</p>
+<h2 id="the-third-failure-the-loops-diverge">The Third Failure: The Loops Diverge</h2>
+<p><strong>The loop integrals are divergent, and the divergence is power-counting's.</strong> The one-loop two-point integral grows like $\Lambda^{2}$, as <a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">stage $4$</a> records with the ratio to $\Lambda^{2}$ approaching $\pi^{2}$; the four-point integral grows like $\log\Lambda$; and in a non-renormalisable theory the divergences multiply with the order.</p>
+<p><strong>The repair is absorption, and the criterion is that the absorption works at every order.</strong> Write the bare parameters as physical ones plus counterterms, choose the counterterms to cancel the divergences order by order, and the criterion of renormalisability is that finitely many counterterms suffice at every order. Where it does, the theory has predictive content: finitely many measurements fix the parameters and every other number is a prediction. Where it does not, the theory is an effective one with a cutoff and a stated range.</p>
+<p><strong>The absorbed divergence becomes a flow, and the flow is the theory's scale dependence.</strong> <a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group</a> states the Wetterich equation, the shell integration and the beta functions; <a href="the-conformal-anomaly-in-biquaternionic-form.html">The Conformal Anomaly</a> states the one-loop trace anomaly that no classical symmetry forbids; <a href="the-index-theorem-and-the-zero-mode-count-in-biquaternionic-form.html">The Index Theorem and the Zero-Mode Count</a> states the topological half. The corpus's position on all three is the same and it is stated in each: the flow, the coefficients and the fixed points are transcribed, and what the algebra supplies is the central scalar that makes the cutoff sector-blind.</p>
+<p><strong>The failure is a property of the integral and not of the density.</strong> A divergence is what an integral over infinitely many modes does; every transcription meets it.</p>
+<h2 id="the-fourth-failure-strong-coupling">The Fourth Failure: Strong Coupling</h2>
+<p><strong>The expansion parameter is the coupling, so a coupling of order one ends the method.</strong> When $g\gtrsim1$ the terms of the series do not fall, the optimal truncation is at order zero, and the diagrams say nothing. The failure is not a lack of ingenuity; it is the statement that the series was organised by a parameter that is not small.</p>
+<p><strong>Four classes of physics are invisible order by order, and each has a name.</strong> Confinement: the potential between two charges grows with separation, which no finite set of exchanged gluons produces. Chiral symmetry breaking: the pseudoscalar octet's masslessness in the chiral limit is a property of the vacuum and not of any vertex. Instantons and monopoles: solutions of the classical equation that are not connected to the perturbative vacuum and therefore appear in no Taylor coefficient. Phase transitions: a non-analyticity in a parameter, which a power series cannot represent.</p>
+<p><strong>The corpus's position is that these are cited and not derived.</strong> <a href="hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD</a> states the bound-state gap; <a href="the-skyrme-model-and-the-topological-baryon-in-biquaternionic-form.html">The Skyrme Model and the Topological Baryon</a> states the topological sector as the corpus's nearest approach to a non-perturbative object; and the strong sector's numbers in the corpus are transcriptions.</p>
+<p><strong>The failure is the method's, not the algebra's.</strong> Nothing in $\mathbb B$ makes a coupling large or small; the coupling is a coefficient in a density, and the density is physics.</p>
+<h2 id="the-four-in-one-table">The Four in One Table</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>failure</th>
+<th>the symptom</th>
+<th>the repair, or the regime</th>
+<th>the article that owns it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the quadratic part is not invertible</td>
+<td>the kernel has a zero eigenvalue on the orbit</td>
+<td>gauge fixing and ghosts; the $R_{\xi}$ family</td>
+<td><a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">$R_{\xi}$</a></td>
+</tr>
+<tr>
+<td>the series is asymptotic</td>
+<td>coefficients grow factorially; zero radius</td>
+<td>truncate and estimate; the error is bounded by the first omitted term</td>
+<td>this article's section on the second failure</td>
+</tr>
+<tr>
+<td>the loops diverge</td>
+<td>power divergences at every order</td>
+<td>counterterms, order by order; renormalisability as the criterion</td>
+<td><a href="the-renormalization-group-in-biquaternionic-form.html">the renormalization group</a></td>
+</tr>
+<tr>
+<td>the coupling is large</td>
+<td>the expansion parameter is of order one</td>
+<td>a different method; diagrams say nothing</td>
+<td><a href="hadron-structure-from-qcd-the-bound-state-problem.html">hadron structure</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The four are independent, and a computation can meet two at once.</strong> QCD at low momentum meets the fourth and, through its bound states, the fourth's consequences; QED meets the second and the third and never the first or the fourth at accessible energies.</p>
+<h2 id="what-the-four-have-in-common">What the Four Have in Common</h2>
+<p><strong>Each is a property of the method and none is a property of the algebra.</strong> That is the article's close and the section's. The zero mode, the factorial growth, the divergence and the large coupling would be there in any transcription of the same integral, because they are properties of the integral. What the algebra changes is where each one is <em>read</em>: the zero mode is the orbit in $\mathbb B_\Phi$, the divergence is regulated on the central scalar, and the coupling is a coefficient in a density built from the corpus's pairings.</p>
+<p><strong>The ledger, therefore, is not a scoreboard of successes and failures.</strong> It is a list of what each stage reads and what it does not. A reader who wants the corpus's honest position on the method reads this article with the other six, and the position is: four stages, one exact inversion, one asymptotic series, four located failures, and no claim that any of it is derived from $\mathbb B$.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>The method fails in four ways, and each failure has a location and a repair.</strong> The quadratic kernel may be singular on the gauge orbit, and fixing plus ghosts repairs it. The series may diverge factorially, and there is no repair beyond truncation with a stated error. The loops may diverge, and counterterms absorb them order by order where the theory is renormalisable. The coupling may be large, and then the method has nothing to say.</p>
+<p><strong>Each failure was illustrated with a computation in this article's section.</strong> The kernel's zero mode had residual $1.1\times10^{-15}$ and smallest eigenvalue $2\times10^{-15}$; the toy series' coefficients had $\lvert a_{k}\rvert^{1/k}$ rising to $577$ at $k=100$ and its partial sums left the exact value; and the one-loop integral's ratio to $\Lambda^{2}$ approached $\pi^{2}$.</p>
+<p><strong>All four are properties of the method and not of the algebra.</strong> The corpus's contribution is to read each one in its own terms and to cite the article that owns the repair, and that is what this section claims and no more.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\zeta$</td>
+<td>the gauge-fixing parameter, $\xi$ in the older literature</td>
+</tr>
+<tr>
+<td>$M$, $\Pi$</td>
+<td>the mass and the positive momentum invariant of the $R_{\xi}$ propagator</td>
+</tr>
+<tr>
+<td>$P$, $L$</td>
+<td>the transverse and longitudinal projectors</td>
+</tr>
+<tr>
+<td>$a_{k}$</td>
+<td>the $k$-th coefficient of the toy integral's expansion</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>a momentum cutoff</td>
+</tr>
+<tr>
+<td>$g$</td>
+<td>a coupling, the expansion parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">Fixing the Representative in the Electroweak Theory: $R_{\xi}$ Conditions, Ghosts and the Goldstone Equivalence Theorem</a>, the first failure and its repair.</li>
+<li><a href="the-connection-path-integral-in-biquaternionic-form.html">The Connection Path Integral in Biquaternionic Form</a>, the Faddeev–Popov identity and the ghost determinant.</li>
+<li><a href="brst-symmetry-in-biquaternionic-form.html">BRST Symmetry in Biquaternionic Form</a>, why the ghost's sign preserves unitarity.</li>
+<li><a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>, the third failure's repair and the flow it defines.</li>
+<li><a href="hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD: The Bound-State Problem</a>, the fourth failure in the corpus's own strong sector.</li>
+<li><a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">The Lagrangian Method: From the Collected Lagrangian to the Feynman Diagram</a>, the method whose four failures these are.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

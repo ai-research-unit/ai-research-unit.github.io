@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Audit: Does Each Category Have Its Own Lagrangian? — Biquaternion Universe</title>
-  <meta name="description" content="Status of this file. A review, not an edit of any article, menu, plan or build file: only this audit is changed. Rewritten 2026-11-28 into one master…">
+  <meta name="description" content="Status of this file. A review, not an edit of any article, menu, plan or build file: only this audit is changed. Rewritten around one formula: every…">
   <link rel="stylesheet" href="../../assets/css/base.css">
   <link rel="stylesheet" href="../../assets/css/layout.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
@@ -70,9 +70,9 @@
     <main class="article">
       <div class="article-body">
         <h1 id="audit-does-each-category-have-its-own-lagrangian"><strong>Audit: Does Each Category Have Its Own Lagrangian?</strong></h1>
-<p><em>Status of this file.</em> A review, not an edit of any article, menu, plan or build file: only this audit is changed. <strong>Rewritten 2026-11-28 into one master ledger</strong>: one row per category and spin, <strong>two Lagrangian columns</strong> (uncoupled and coupled), the mass discussion moved to a note (§6), and provenance — transcribed versus derived — moved out of the verdict into §8. The earlier version's seven-column tables mixed "is it written", "may the framework claim it" and "does it exist" in one cell; the SU(4) row was the worst case and §3.1 answers it directly.</p>
+<p><em>Status of this file.</em> A review, not an edit of any article, menu, plan or build file: only this audit is changed. <strong>Rewritten around one formula: every Lagrangian is $\mathcal{L}_{\mathrm{gauge}}+\mathcal{L}_{\mathrm{matter}}+\mathcal{L}_{\mathrm{coupling}}$, and every table in §6 writes those three pieces out for every line.</strong> "Without the coupling" therefore has one meaning — delete the third piece — and the mass columns sit beside them because a mass is not a coupling term. The argument is stated in words before any table** (§<em>The short answer, in words</em>); the tables are the evidence for it. The four forces and the charts have different carriers, different groups and different mass objects, and one flat ledger of thirty-seven rows hid that; the categories are now separated, and the cross-cutting definitions they share are stated once before them.</p>
 <h2 id="1-the-question-and-the-only-two-answers">1. The question, and the only two answers</h2>
-<p><strong>In this category, at this spin, does a genuine action exist in the theory?</strong> One question. Whether the corpus has printed it, which article holds it, and which menu heading it sits under are not part of the question. Those are provenance, and they are in §8.</p>
+<p><strong>In this category, at this spin, does a genuine action exist in the theory?</strong> One question. Whether the corpus has printed it, which article holds it, and which menu heading it sits under are not part of the question.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
@@ -83,18 +83,22 @@
 <tbody>
 <tr>
 <td><strong>yes</strong></td>
-<td>there is a carrier of this spin in this category, and a functional on it whose variation is that carrier's equation</td>
+<td>there is a field of this spin in this category, and a functional on it whose variation is that field's equation</td>
 </tr>
 <tr>
 <td><strong>no</strong></td>
-<td>there is not, and the failing condition is named</td>
+<td>there is not, and a reason is named</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>"Spin" means one of the corpus's three carriers</strong>: spin $0$ is the line $\mathbb{R}e_t$, spin $\tfrac12$ the plane $\Sigma(\vec u)$, spin $1$ the vector part $\mathfrak{k}$ — dimensions $1$, $2$, $3$. <strong>It does not mean "any field of that Lorentz spin".</strong> A colour-triplet scalar is an ordinary field with a perfectly good Lagrangian and is not a carrier here; the same holds for the Rarita–Schwinger field of spin $\tfrac32$. <strong>A <code>no</code> row is a statement about this roster and never about field theory at large.</strong></p>
-<p><strong><code>exists</code> is judged on the uncoupled functional.</strong> The coupled functional is a second object in its own column; it can be absent from a category that has no connection, and its absence never turns a <code>yes</code> into a <code>no</code> (§5).</p>
-<p><strong>The verdict.</strong> Every category has a functional at every spin that has a carrier. <strong>Thirty-seven rows: thirty-five category rows and two roster rows; thirty-four <code>yes</code>, three <code>no</code>.</strong> The three <code>no</code> rows fail on conditions outside the categories proper: no biquaternionic density at spin $\tfrac32$, no carrier above spin $2$, no commuting classical limit at NRNQ spin $\tfrac12$.</p>
-<p><strong>One sentence the corpus also prints, and how it is read here.</strong> <em>The Sector Hub</em> says "the strong sector has no action and cannot have one in this algebra". That sentence is about <strong>an action in the algebra's own variables</strong>, and it is true. It is not about the transcribed QCD functional, which exists. §9 states the collision and which sentence this audit means.</p>
+<p><strong>"Spin" means one of the corpus's three carriers</strong>: spin $0$ is the line $\mathbb{R}e_t$, spin $\tfrac12$ the plane $\Sigma(\vec u)$, spin $1$ the vector part $\mathfrak{k}$ — dimensions $1$, $2$, $3$. <strong>It does not mean "any field of that Lorentz spin".</strong> A colour-triplet scalar is an ordinary field with a perfectly good Lagrangian and is not a carrier here; the same holds for the Rarita–Schwinger field of spin $\tfrac32$ and for Fronsdal and Vasiliev fields. <strong>A "no" row is a statement about the roster and never about field theory at large.</strong></p>
+<p><strong>The verdict.</strong> Every category has a Lagrangian at every spin that has a carrier. <strong>Thirty-seven lines, thirty-four occupied, three empty</strong>, and all three empty lines fail for a reason outside the category proper: one has no carrier in the roster, one has no biquaternionic density, one has no commuting classical limit. <strong>No category is without a Lagrangian.</strong></p>
+<h3 id="11-the-answer-in-one-paragraph">1.1 The answer in one paragraph</h3>
+<p><strong>Every Lagrangian in this audit is three pieces: the connection alone, the free carrier, and the term that needs both.</strong></p>
+<p>$$
+\mathcal{L}=\underbrace{\mathcal{L}_{\mathrm{gauge}}}_{\text{connection alone}}+\underbrace{\mathcal{L}_{\mathrm{matter}}}_{\text{free carrier}}+\underbrace{\mathcal{L}_{\mathrm{coupling}}}_{\text{connection}\times\text{current}}
+$$</p>
+<p><strong>"Without the coupling" means deleting the third piece and nothing else</strong> — and what survives is a self-interacting gauge field plus a free, still-massive carrier, which is why that phrase caused so much trouble (§4). <strong>No line here is unchanged by its coupling.</strong> What the coupling generally does <em>not</em> do is create a mass: mass lives in the first two pieces, and only two mechanisms move it into the third — a vev multiplying $g^{2}A^{2}\lvert\phi\rvert^{2}$, and a vev multiplying a Yukawa.</p>
 <h2 id="2-lagrangian-action-equation-one-formula-used-three-ways">2. Lagrangian, action, equation: one formula, used three ways</h2>
 <p><strong>A Lagrangian is a density; an action is that density added up.</strong></p>
 <p>$$
@@ -122,178 +126,1371 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p><strong>So "does a Lagrangian exist here" and "does an action exist here" is one question asked twice.</strong> Every density in this corpus is local, a local density can always be integrated, and a functional that is an integral of a local density hands its integrand back. The tables write the <strong>density</strong>; the action is its integral.</p>
-<p><strong>The relation that can genuinely fail is the next one, and it is not this one.</strong> Maxwell's Hessian is degenerate, so the Maxwell row has a Lagrangian and no Hamiltonian and pays with a constraint and the Lorenz condition. <strong>Lagrangian without Hamiltonian is ordinary; Hamiltonian without Lagrangian is not.</strong> Nothing here is of the second kind.</p>
-<p><strong>Where an action can exist with no Lagrangian — not a case here.</strong> A one-loop effective action carrying $\operatorname{Tr}\log$, Hamilton's principal function, an action defined only as a lattice limit: no integrand to point at. No row of this ledger is of that kind.</p>
-<p><strong>And one case where both fail together.</strong> Helmholtz's condition is asked of the <em>equation</em> and decides whether any density has it as its variation (<code>physics.md:487</code>). A non-variational equation has neither a Lagrangian nor an action — the viscous term, and the only place in the audit where the failure is of this kind.</p>
+<p><strong>So "does a Lagrangian exist here" and "does an action exist here" is one question asked twice.</strong> Every density in this corpus is local, a local density can always be integrated, and a functional that is an integral of a local density hands its integrand back. The two words are interchangeable in this audit, and the tables write the <strong>density</strong> — the object at a point — with the action being its integral.</p>
+<p><strong>The relation that can genuinely fail is the next one, and it is not this one.</strong> From a Lagrangian you may ask for canonical momenta and a Hamiltonian; Maxwell's Hessian is degenerate, so the Maxwell line has a Lagrangian and no Hamiltonian and pays with a constraint and the Lorenz condition. <strong>Lagrangian without Hamiltonian is ordinary; Hamiltonian without Lagrangian is not.</strong> Nothing here is of the second kind.</p>
+<p><strong>Where an action can exist with no Lagrangian — not a case here.</strong> A functional that is not the integral of any local density has no integrand to point at: a one-loop effective action carrying $\operatorname{Tr}\log$, Hamilton's principal function, an action defined only as a lattice limit. No line of this ledger is of that kind.</p>
+<p><strong>And one case where both fail together.</strong> Helmholtz's condition is asked of the <em>equation</em> and decides whether any density has it as its variation (<code>physics.md:487</code>). A non-variational equation has neither a Lagrangian nor an action — the viscous term, and the only entry in the audit where the failure is of this kind.</p>
 <h2 id="3-the-verdict-at-a-glance">3. The verdict at a glance</h2>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>category</th>
 <th>the group</th>
+<th>$\dim$</th>
+<th>rank</th>
 <th>lines</th>
-<th><code>yes</code></th>
-<th>the coupled column</th>
-<th>the one thing</th>
+<th>yes</th>
+<th>no</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$ sits</th>
+<th>the mass object</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Action</td>
 <td>any $G$</td>
+<td>—</td>
+<td>—</td>
 <td>1</td>
-<td>1/1</td>
-<td>yes: the same functional at $g\ne0$</td>
-<td>machinery, not a sector</td>
+<td>1</td>
+<td>0</td>
+<td>nowhere — no matter field is named</td>
+<td>none</td>
 </tr>
 <tr>
 <td>Force-Free</td>
 <td>$\mathrm{SU}(1)$</td>
+<td>$0$</td>
+<td>$0$</td>
 <td>3</td>
-<td>3/3</td>
-<td><strong>none</strong> — nothing is gauged</td>
-<td>a medium, not a potential</td>
+<td>3</td>
+<td>0</td>
+<td>nowhere — nothing gauged</td>
+<td>Proca $\nu_m^2$; Dirac $\nu_m$; KG $\nu_m^2$</td>
 </tr>
 <tr>
 <td>Primordial</td>
 <td>$\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>$3$</td>
 <td>3</td>
-<td>3/3</td>
-<td>yes</td>
-<td>transcribed, not derived (§3.1)</td>
+<td>3</td>
+<td>0</td>
+<td>on the two matter rows</td>
+<td>scalar $\mu^2&gt;0$ only</td>
 </tr>
 <tr>
 <td>Strong</td>
 <td>$\mathrm{SU}(3)$</td>
+<td>$8$</td>
+<td>$2$</td>
 <td>3</td>
-<td>3/3</td>
-<td>yes</td>
-<td>transcribed; no coloured scalar (§3.2)</td>
+<td>3</td>
+<td>0</td>
+<td>on the two matter rows</td>
+<td>$m_f$; pion and axion derived</td>
 </tr>
 <tr>
 <td>Electroweak</td>
 <td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$4$</td>
+<td>$2$</td>
 <td>3</td>
-<td>3/3</td>
-<td>yes</td>
-<td>the vector mass is the scalar's number</td>
+<td>3</td>
+<td>0</td>
+<td>on all three lines</td>
+<td>$-\mu^2&lt;0$; $v^2g^2/8$ on $W^2$</td>
 </tr>
 <tr>
 <td>Standard Model Assembly</td>
 <td>$\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$</td>
+<td>$12$</td>
+<td>$4$</td>
 <td>3</td>
-<td>3/3</td>
-<td>yes</td>
-<td>assembly: no new term</td>
+<td>3</td>
+<td>0</td>
+<td>on all three lines</td>
+<td>$-\mu^2$ block repeated</td>
 </tr>
 <tr>
 <td>Electromagnetism</td>
 <td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$1$</td>
+<td>$1$</td>
 <td>3</td>
-<td>3/3</td>
-<td>the photon is neutral: same functional</td>
-<td>mass on matter only</td>
+<td>3</td>
+<td>0</td>
+<td>on the matter rows; <strong>not on the photon</strong></td>
+<td>$\nu_m$ on matter only</td>
 </tr>
 <tr>
 <td>Relativistic Quantum Theory</td>
 <td>$\mathrm{U}(1)_{\mathrm{em}}$ / $\mathrm{SU}(1)$</td>
+<td>$1/0$</td>
+<td>$1/0$</td>
 <td>3</td>
-<td>3/3</td>
-<td>yes</td>
-<td>the chart with $h$ and $c$</td>
+<td>3</td>
+<td>0</td>
+<td>on all three lines</td>
+<td>$\nu_m^2$; $\nu_m$; $\tfrac1m$</td>
 </tr>
 <tr>
 <td>Non-Relativistic Quantum Theory</td>
 <td>$\mathrm{U}(1)_{\mathrm{em}}$ / $\mathrm{SU}(1)$</td>
+<td>$1/0$</td>
+<td>$1/0$</td>
 <td>3</td>
-<td>3/3</td>
-<td>partial: scalar and spinor only</td>
-<td>$\tfrac{1}{\nu_m}$, not $2m$</td>
+<td>3</td>
+<td>0</td>
+<td>scalar and spinor; <strong>not on the vector</strong></td>
+<td>$\tfrac{1}{\nu_m}$ inverted</td>
 </tr>
 <tr>
 <td>Relativistic Non-Quantum</td>
-<td>$\mathrm{SU}(1)$, $\mathrm{U}(1)_{\mathrm{em}}$ on the scalar</td>
+<td>$\mathrm{SU}(1)$, $\mathrm{U}(1)_{\mathrm{em}}$ on the coupled line</td>
+<td>$0/1$</td>
+<td>$0/1$</td>
 <td>3</td>
-<td>3/3</td>
-<td>scalar only</td>
-<td>the same fields in fluid variables</td>
+<td>3</td>
+<td>0</td>
+<td>vector and scalar; <strong>not on the spinor</strong></td>
+<td>$mc^2\varrho^2$</td>
 </tr>
 <tr>
 <td>Non-Relativistic Non-Quantum</td>
 <td>$\mathrm{SU}(1)$</td>
+<td>$0$</td>
+<td>$0$</td>
 <td>3</td>
-<td>2/3</td>
-<td><strong>none</strong> — no connection at this rung</td>
-<td>one empty: no commuting limit</td>
+<td>2</td>
+<td>1</td>
+<td>nowhere — no connection</td>
+<td>$\tfrac{1}{2m}$</td>
 </tr>
 <tr>
 <td>Gravity</td>
 <td>$\mathrm{Diff}(M)$</td>
+<td>$\infty$</td>
+<td>—</td>
 <td>4</td>
-<td>4/4</td>
-<td>yes: metric and spin connection</td>
-<td>the carrier is a frame, not an element</td>
+<td>4</td>
+<td>0</td>
+<td>on the matter rows</td>
+<td>$m$; $m^2$; $\Lambda$ is not one</td>
 </tr>
 <tr>
 <td>roster</td>
 <td>—</td>
-<td>2</td>
-<td>0/2</td>
 <td>—</td>
-<td>outside the roster</td>
+<td>—</td>
+<td>2</td>
+<td>0</td>
+<td>2</td>
+<td>—</td>
+<td>—</td>
 </tr>
 <tr>
 <td><strong>total</strong></td>
 <td>—</td>
-<td><strong>37</strong></td>
-<td><strong>34/37</strong></td>
 <td>—</td>
+<td>—</td>
+<td><strong>37</strong></td>
+<td><strong>34</strong></td>
+<td><strong>3</strong></td>
+<td><strong>22 rows; 2 on a neighbour row; 13 nothing to couple</strong></td>
 <td>—</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>Three features are the audit's substance.</strong> The four force categories form one nested chain, $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$, counted $0,3,8,15$, with the electroweak rung off it at four. <strong>A mass on a connection appears in exactly one row</strong> — the electroweak vector — and there it is a scalar's number written in $v$. And <strong>no category is without a functional</strong>: the absences are two roster rows and one classical limit.</p>
-<h3 id="31-the-su4-row-there-is-a-lagrangian-but-it-leads-to-nothing">3.1 The SU(4) row: "there is a Lagrangian, but it leads to nothing?"</h3>
-<p><strong>No.</strong> Three different statements were packed into one cell — <em>the functional exists</em>, <em>it is transcribed rather than derived</em>, <em>its group is not the observed one</em> — and only the first two are about existence.</p>
-<ol>
-<li><strong>The functional exists, and it is a theory, not a nullity.</strong> $\mathcal{L}$ in row 5 of §4 varies to $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=+g_4j_{a,\jmath}$ plus fifteen Gauss laws, with $15\times2$ connection degrees of freedom, $32$ fermion states and $16$ real scalars. It has a conserved current, a first-class constraint algebra and a well-posed Cauchy problem. That is what "leads somewhere" means for a classical functional.</li>
-<li><strong>It is transcribed, not derived.</strong> The compact group of $\mathbb{B}$ is $\mathrm{U}(2)$, dimension four; fifteen generators do not fit. So $\mathrm{SU}(4)$ is written <strong>on</strong> the algebra, not <strong>in</strong> it. What is missing is a derivation of fifteen from four — not a Lagrangian. The same holds for $\mathrm{SU}(3)$.</li>
-<li><strong>It does not lead to the observed world by itself.</strong> $\mathrm{SU}(4)$ contains $\mathrm{SU}(3)\times\mathrm{U}(1)$, so seven generators are not the strong ones, the fifteen include leptoquarks, and a fourth colour exists. The corpus's claim is that the residual $\mathrm{SU}(3)\times\mathrm{U}(1)$ is what survives below $M_C$. <strong>That is a hypothesis with a scale, and it is falsifiable; it is not a derivation.</strong></li>
-</ol>
-<p><strong>So the honest answer to "leads to nothing?" is: the functional leads to an equation, the equation leads to a consistent gauge theory, and that theory is not the Standard Model unless a breaking is added. "Transcribed; derived impossible" is a statement about provenance, and it sits in §8, not in the <code>exists</code> column.</strong></p>
-<h3 id="32-the-su3-rows-which-spin-has-a-functional-and-which-does-not">3.2 The SU(3) rows: which spin has a functional, and which does not</h3>
+<p><strong>Four features of that table are the audit's substance.</strong> The four force categories form one nested chain, $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$, counted $0,3,8,15$, with the electroweak rung off it at four. <strong>A mass appears on a connection in exactly one row</strong> — the electroweak vector — and there it is a scalar's number written in $v$. <strong>Every other vector line is <code>no</code></strong> in both mass columns, which is what those columns exist to show. <strong>Nine of the thirty-five category lines carry no coupled functional</strong> — six in the categories where nothing is gauged, plus the non-relativistic-quantum vector, the relativistic-non-quantum spinor, and the gravity spin-$2$ line, whose couplings are carried by the three lines below it — and none of those nine is an empty line, since the <code>exists</code> column is judged on the uncoupled functional. And <strong>the three empty lines sit outside the categories proper</strong>: one in the classical limit, two in the roster.</p>
+<h3 id="31-the-four-groups">3.1 The four groups</h3>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>spin</th>
-<th>exists</th>
-<th>what is there</th>
-<th>what is not there</th>
+<th>rung</th>
+<th>category</th>
+<th>the group</th>
+<th>$\dim$</th>
+<th>rank</th>
+<th>source</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>$4$</td>
+<td>Primordial</td>
+<td>$\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>$3$</td>
+<td><code>articles_physics/the-symmetry-group-su4-of-the-primordial-force.md:92</code></td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>Strong</td>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$</td>
+<td>$8$</td>
+<td>$2$</td>
+<td><code>articles_physics/the-symmetry-group-su3-of-the-strong-force.md:77</code></td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>Electroweak</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$4=3+1$</td>
+<td>$2=1+1$</td>
+<td><code>articles_physics/the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.md:8</code></td>
+</tr>
+<tr>
 <td>$1$</td>
-<td><strong>yes</strong></td>
-<td>the QCD gauge sector: curvature, fixing, ghost pair, $\mathcal{L}_{cG}$ (row 8)</td>
-<td>not derived: $\mathfrak{su}(3)$ is outside the algebra's $\mathfrak{u}(2)$, so the eight are written on it</td>
-</tr>
-<tr>
-<td>$\tfrac12$</td>
-<td><strong>yes</strong></td>
-<td>the quark term with $m_f$ and the triplet covariant derivative (row 9)</td>
-<td>not a separate action: one action with row 8, and the colour assignment is standard QCD, not a corpus result</td>
-</tr>
-<tr>
+<td>Force-Free</td>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
 <td>$0$</td>
-<td><strong>yes</strong></td>
-<td>four effective functionals — sigma, pion, Skyrme, axion — plus the ghost, which is a spin-$0$ colour <strong>octet</strong> inside row 8</td>
-<td><strong>no fundamental coloured scalar</strong>: BSM scalars in $\mathbf3$ or $\mathbf8$ are ordinary fields and none is in this roster</td>
+<td>$0$</td>
+<td><code>articles_physics/the-symmetry-group-su1-of-the-force-free-case.md:123</code></td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The spin-$0$ case is where the "certain SU(3) spin cases" confusion comes from.</strong> The row is <code>yes</code> because four functionals exist and one of them (the ghost) is coloured. It is not <code>no</code>, and it is not "a coloured scalar exists": the corpus's scalar carrier is the singlet row, and the octet at spin $0$ is the Faddeev–Popov field, which carries no independent degree of freedom.</p>
+<p><strong>The extra electroweak generator is the hypercharge factor</strong>, which is an index on the condensate rather than a member of the chain: the strong rung is the stabiliser of the line, and the weak factors arrive as the index that breaks the rung above rather than as debris of it. <strong>The algebra's own compact group is $\mathrm{U}(2)=(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$</strong> — the same algebra and dimension, a <em>different group</em>, since the quotient identifies $(-1,-1)$ with the identity and the product does not (<code>articles_physics/the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.md:35</code>). Both statements are needed and neither replaces the other.</p>
+<h3 id="32-three-math138s-and-they-are-not-the-same-group">3.2 Three $\mathrm{U}(1)$s, and they are not the same group</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the $\mathrm{U}(1)$</th>
+<th>what it is</th>
+<th>where it appears</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the centre</td>
+<td>the algebra's central phase, $\tilde\Xi\mapsto e^{i\theta_{\mathrm{cen}}}\tilde\Xi$; the reason a charge can be defined at all</td>
+<td>every coupled line, and the $\mathrm{U}(1)$ inside $\mathrm{U}(2)$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_Y$</td>
+<td>hypercharge, the abelian factor of the product</td>
+<td>the electroweak and Standard Model lines only</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>the unbroken mixture, generated by $Q=T_{3L}+\tfrac12Y$</td>
+<td>the electromagnetism lines, and every coupled line below them</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The corpus builds the coupling not by postulating $\mathrm{U}(1)$ but by localising the central phase</strong>: $\tilde\nabla_{\Phi}+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$, with $ϙ$ a parameter of the field and $ϙ=-e$ for the electron (<code>articles_physics/the-coupled-dirac-equation-in-biquaternionic-form.md:17</code>, <code>:83</code>). So the $\mathrm{U}(1)_{\mathrm{em}}$ of the coupled lines is <strong>the centre's phase, localised</strong>, with the electric charge as its parameter — not hypercharge. The three share one algebra, one generator and one dimension, and no two are interchangeable.</p>
+<h2 id="4-the-three-pieces">4. The three pieces</h2>
+<p><strong>One formula, and every table in §6 is a row of it.</strong> The split is not decoration: it is the only way to say what a coupling does without the sentence collapsing into "it depends".</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the piece</th>
+<th>what it is</th>
+<th>what it contains</th>
+<th>what it depends on</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathcal{L}_{\mathrm{gauge}}$</td>
+<td>the connection's own functional</td>
+<td>$-\tfrac14F^{2}$, the gauge fixing, the ghosts; <strong>and the commutator</strong>, if the group is non-abelian</td>
+<td>the group — no matter field</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{\mathrm{matter}}$</td>
+<td>the free carrier</td>
+<td>kinetic terms with $\partial_{\imath}$, <strong>and whatever mass a free field of that carrier may carry</strong></td>
+<td>the carrier — no connection</td>
+</tr>
+<tr>
+<td>$\mathcal{L}_{\mathrm{coupling}}$</td>
+<td>the interaction</td>
+<td>$gA_{\imath}j_{\imath}$, $g^{2}A^{2}\lvert\phi\rvert^{2}$, and — with no connection at all — the Yukawa</td>
+<td>both</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="41-without-the-coupling-means-delete-the-third-piece">4.1 "Without the coupling" means: delete the third piece</h3>
+<p><strong>And what survives depends on which piece you are looking at.</strong> That is the whole of the confusion, and it dissolves once the three are separated:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the piece</th>
+<th>survives?</th>
+<th>so the coupling-off theory is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the connection</td>
+<td><strong>yes, entirely</strong> — including the commutator if the group is non-abelian</td>
+<td>pure Yang–Mills: <strong>self-interacting</strong>, not a free photon</td>
+</tr>
+<tr>
+<td>the carrier</td>
+<td><strong>yes, entirely</strong> — including its mass</td>
+<td>a free massive field, which is a perfectly good theory</td>
+</tr>
+<tr>
+<td>the interaction</td>
+<td><strong>no</strong> — this is the piece deleted</td>
+<td>nothing left of it</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three consequences, and they are the audit's answer to its own earlier mistakes.</strong></p>
+<ol>
+<li><strong>The coupling always changes the Lagrangian.</strong> Deleting the third piece removes real terms on every line where it is not empty. No row in §6 shows a density that the coupling leaves alone.</li>
+<li><strong>The coupling is not a choice to be made per line.</strong> Once the group and the carrier are fixed, the third piece is fixed with them: the carrier says <em>which</em> generator acts, the group says whether there is one $g$ for all representations or a charge per field. The one genuine variable is whether the group is <strong>gauged</strong> — local, needing a connection — or left <strong>global</strong>, which needs none.</li>
+<li><strong>The mass lives in the first two pieces.</strong> This is the fact that wrecked the earlier column designs: a mass term is not a coupling term. Nearly every mass in this corpus is written with the connection switched off, and the two exceptions are vev effects.</li>
+</ol>
+<h3 id="42-where-a-mass-can-sit-in-the-three-piece-language">4.2 Where a mass can sit, in the three-piece language</h3>
+<p><strong>A mass term is the only term with no derivative</strong>, so it must pair the field with something. <em>What</em> it pairs with fixes both the power of mass and which piece the term belongs to:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the mass</th>
+<th>the piece</th>
+<th>what allows or forbids it</th>
+<th>the lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$m^{2}A_{\imath}A_{\imath}$ on the connection</td>
+<td>$\mathcal{L}_{\mathrm{gauge}}$</td>
+<td><strong>gauge invariance forbids it whenever the group is larger than $\{e\}$</strong>; nothing forbids it when there is no gauge symmetry</td>
+<td>Force-Free Proca only</td>
+</tr>
+<tr>
+<td>$\bar\psi\psi$, $\lvert\phi\rvert^{2}$, $\Xi^{*}\Xi$ — the field with its own conjugate or its chiral partner</td>
+<td>$\mathcal{L}_{\mathrm{matter}}$</td>
+<td>the representation: <strong>allowed if real, forbidden if chiral</strong></td>
+<td>electromagnetism, quark, gravity, every free row</td>
+</tr>
+<tr>
+<td>$\bar\psi\phi\psi$ — two fermions and a scalar</td>
+<td>$\mathcal{L}_{\mathrm{matter}}$ (a bare $\mu^{2}$) <strong>and</strong> $\mathcal{L}_{\mathrm{coupling}}$ (the Yukawa)</td>
+<td>allowed, but the value arrives only at a vev</td>
+<td>primordial, electroweak, Standard Model</td>
+</tr>
+<tr>
+<td>$g^{2}A^{2}\lvert\phi\rvert^{2}$ — the connection squared against a scalar</td>
+<td>$\mathcal{L}_{\mathrm{coupling}}$</td>
+<td>allowed; it becomes $\tfrac{v^{2}}{8}g^{2}A^{2}$ at a vev</td>
+<td>electroweak $W$ and $Z$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>So there are several masses, and they are not interchangeable.</strong> Four distinct things carry the name:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the sense</th>
+<th>what it is</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>a coefficient of mass dimension</strong></td>
+<td>the number in front of a term; $[\mathcal{L}]=4$ fixes the power</td>
+<td>$\nu_{m}$ ($[\nu_{m}]=1$), $\mu^{2}$ ($[\mu^{2}]=2$), $\Lambda$ ($[\Lambda]=4$)</td>
+</tr>
+<tr>
+<td><strong>a term with no derivatives</strong></td>
+<td>the structural definition — it must pair the field with something</td>
+<td>$A^{2}$, $\lvert\phi\rvert^{2}$, $\bar\psi\psi$</td>
+</tr>
+<tr>
+<td><strong>the physical mass</strong></td>
+<td>the number a measurement returns, computed from the density</td>
+<td>$M_{W}=\tfrac{gv}{2}$, $m_{h}=\sqrt2\lvert\mu\rvert$, $m_{\pi}^{2}=2B_{0}\hat m$</td>
+</tr>
+<tr>
+<td><strong>not a mass</strong></td>
+<td>things with the shape of one</td>
+<td>$\Lambda$ (an energy density), $\xi R\phi^{2}$ (a coupling), $\tfrac{1}{\nu_{m}}$ (an inverse mass in a normalisation), $\vec S\cdot\vec B$ (a spin coupling)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Both tables in §4.2 say the same thing from two sides</strong>, and that is the answer to "is the mass forced?": on a connection, gauge invariance forbids it except where there is no gauge symmetry; on matter, the representation allows or forbids it, and when it allows, <strong>the value is a free parameter the category cannot explain</strong>.</p>
+<h3 id="43-the-two-mass-columns-and-the-one-line-diagnostic">4.3 The two mass columns, and the one-line diagnostic</h3>
+<p><strong>Each row carries two mass columns because the answer changes when the third piece is added, and it changes in only three ways:</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>if the two cells</th>
+<th>the mass is</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>agree</strong> — "the same", same symbol</td>
+<td>a <strong>parameter</strong> the category cannot explain</td>
+<td>electromagnetism, the quark, every free row</td>
+</tr>
+<tr>
+<td><strong>differ</strong>, "yes" only on the right</td>
+<td><strong>written by the coupling</strong>, through a vev</td>
+<td>$W$, $Z$, every Yukawa mass, the pion</td>
+</tr>
+<tr>
+<td><strong>differ</strong> by "re-described"</td>
+<td>the <strong>same number</strong>, a different object or symmetry</td>
+<td>the Higgs radial mode $m_{h}^{2}=2\mu^{2}$ with the Goldstones eaten; the chart Proca $\mathrm{Sc}(\tilde A^{*}\tilde A^{\natural})$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The diagnostic is one line: if the two mass cells agree, the mass is a parameter; if they differ, the coupling is its author.</strong> That is the whole content of the second pair of columns — one column can record a number but cannot say who wrote it.</p>
+<h2 id="5-why-a-line-is-empty">5. Why a line is empty</h2>
+<p><strong>Six conditions, and a line falls when one fails.</strong> A genuine action needs a carrier of the spin; a representation of the group of that carrier's dimension and reality type; an invariant of the required dimension; a density built from the algebra's own elements; an integrable density (Helmholtz); and, for a classical or non-quantum line, a classical limit to take.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>condition</th>
+<th>what fails</th>
+<th>the lines</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a carrier</td>
+<td>there is no carrier of that spin in this roster</td>
+<td>$\geq\tfrac52$</td>
+</tr>
+<tr>
+<td>a density in the algebra's own elements</td>
+<td>the field is imported and the object that writes its invariant is not built</td>
+<td>$\tfrac32$</td>
+</tr>
+<tr>
+<td>the group's representation</td>
+<td>no representation of that dimension, so no field</td>
+<td>none</td>
+</tr>
+<tr>
+<td>invariance</td>
+<td>the field exists and the term is forbidden</td>
+<td>no line — three <em>terms</em> are forbidden</td>
+</tr>
+<tr>
+<td>Helmholtz</td>
+<td>no density has that term as its Euler–Lagrange expression</td>
+<td>no line — the viscous term only</td>
+</tr>
+<tr>
+<td>a classical limit</td>
+<td>an anticommuting field has no real-valued one</td>
+<td>NRNQ $\tfrac12$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Three of the six empty the term and not the line, and that distinction is the whole audit.</strong> The strong spin-$0$ line declines a <em>fundamental coloured scalar</em> and still carries four actions. The primordial spin-$1$ line forbids its mass and still carries the action. The NRNQ spin-$1$ line forbids viscosity and still carries the classical fluid functional. <strong>A declined term is not an empty line.</strong></p>
+<h2 id="6-the-categories-one-section-at-a-time">6. The categories, one section at a time</h2>
+<p><strong>Ordered as the corpus orders them.</strong> Each section states the group, the carrier situation and the table for that category alone. The tables carry the same nine columns; the category is the heading rather than a column, since it would otherwise repeat thirty-seven times.</p>
+<p><strong>Every row is one carrier in one category, split three ways.</strong> <em>$\mathcal{L}_{\mathrm{gauge}}$</em> is the connection's density with no matter in it; <em>$\mathcal{L}_{\mathrm{matter}}$</em> is the carrier's density with $\partial_{\imath}$ everywhere and its own mass; <em>$\mathcal{L}_{\mathrm{coupling}}$</em> is what needs both. <strong>A <code>—</code> in the first column on a matter row is not an omission</strong>: the gauge piece of that sector is the vector row of the same section, and the cell says so.</p>
+<p><strong>Three reasons a $\mathcal{L}_{\mathrm{coupling}}$ cell is empty, and they are different statements.</strong> <em>Nothing is gauged</em> — $\mathrm{SU}(1)=\{e\}$ has no generator (§6.2, §6.9 vector, §6.11). <em>Nothing has a charge</em> — the carrier is uncharged but the group is not trivial; this happens only to the photon (§6.7 vector), because the photon <strong>is</strong> the connection. <em>The current is on another row</em> — the connection's own row cannot carry its own current (§6.3, §6.4 vector rows).</p>
+<p><strong>The two mass columns then ask one question of the same row, twice:</strong> what mass does the free density carry, and what mass is there once the third piece is in. They agree, differ by "yes", or differ by "re-described" — §4.3, and the three cases exhaust the ledger.</p>
+<p><strong>Read one row at a time and the audit's claim becomes checkable in a single line.</strong> Take the quark: a free massive fermion, plus one term $g_{s}\bar\Xi\gamma A t\Xi$. The coupling changed the Lagrangian and left the mass where it was. Take the $W$: a massless vector, plus $g^{2}A^{2}\lvert\phi\rvert^{2}$, which at the vev <strong>is</strong> the mass. Same structure, different answer, and both visible without prose.</p>
+<h3 id="61-action">6.1 Action</h3>
+<p><strong>The group:</strong> any $G$. <strong>Lines: 1</strong> (1 occupied, 0 empty). <em>The generic density, before any group is chosen.</em></p>
+<p><strong>Machinery, not a sector.</strong> Yang–Mills is the density every non-abelian line below specialises, written before a group is chosen: it is form-invariant on a connection in any matrix algebra, which is why it fixes no representation and no matter content. <strong>The category's remaining articles are arrows</strong> — from a density to an equation, and from that equation to a commutator — and an arrow is not an integrand. The article whose title carries both "the Lagrangian" and "second quantisation" therefore contributes no row: it describes a promotion, and a promotion has neither a Lagrangian nor an action.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>any $G$</td>
+<td>$1$</td>
+<td>Yang–Mills</td>
+<td>$-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}$ with the commutator inside $F$, $-\tfrac{1}{2\zeta}(\partial A)^{2}$ and ghosts — <strong>this is the whole density on this line</strong></td>
+<td>— (the spin-$1$ field here <em>is</em> the connection; no carrier is named)</td>
+<td>— (nothing to couple it to: the currents appear in §6.3–§6.7)</td>
+<td><strong>no</strong> — a bare $m^{2}\operatorname{tr}(A_{\imath}A_{\imath})$ breaks the invariance</td>
+<td><strong>no</strong> — and none of the coupling terms is one: $[A_{\imath},A_{\jmath}]^{2}$ carries no mass</td>
+<td><strong>yes</strong></td>
+<td><strong>not specific to a group</strong>: form-invariant on a connection in any matrix algebra, so it fixes no representation and no matter content</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="62-force-free">6.2 Force-Free</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(1)=\{e\}$. $\dim=0$, rank $0$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>No generator is gauged, so nothing is a connection.</em></p>
+<p><strong>No force means nothing is gauged.</strong> $\mathrm{SU}(1)=\{e\}$ is not a small group; it is the absence of a group, and its consequences are exact: no generator, no connection, no field strength built from a shift, and no redundancy in the potential. What the category carries is a <strong>medium</strong>, not a potential — the Proca field read as $A_{\imath}=r\,u_{\imath}$, a density and a velocity (<code>articles_physics/the-lagrangian-and-the-spin-one-fluid.md:17</code>). The density is one field term and one mass term, with $\tilde F=\mathrm{Vect}\bigl((\tilde\nabla_\Phi)^{\natural}\tilde A_\Phi\bigr)$ a pure vector (<code>articles_physics/the-lagrangian-and-the-proca-equation.md:12</code>).</p>
+<p><strong>This is where an earlier version of this file was wrong, twice.</strong> It listed the spin-$1$ line as "free Maxwell; free Proca" and described the two as differing by the mass term alone. Both are wrong here. <strong>Maxwell is a gauge theory and belongs to Electromagnetism</strong>; at $\nu_m\to0$ the Proca equation acquires the shift symmetry, loses a mode, and its potential becomes a connection — the object changes category rather than staying here at zero mass. The corpus says it in as many words: <em>"In the massless theory $S=0$ can be reached from any potential by a local transformation, so it is a choice of representative; here no local transformation exists"</em> (<code>articles_physics/the-lagrangian-and-the-proca-equation.md:115</code>), and <em>"No pure-gradient solution"</em> (<code>:248</code>).</p>
+<p><strong>The mass is therefore not decoration on this line; it is the term that makes the field a field.</strong> The polarisation count is the check: three for Proca, two for Maxwell (<code>articles_physics/the-proca-equation-massive-spin-1-in-biquaternionic-form.md:5</code>).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$1$</td>
+<td>Free Proca</td>
+<td>$\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde F\tilde F)-\tfrac12 4\pi^{2}\nu_{m}^{2}\langle\tilde A_{\Phi}\rangle_{\natural}$ — <strong>the mass is here, on the connection, and allowed because $\mathrm{SU}(1)=\{e\}$ has no invariance to break</strong></td>
+<td>— (the vector is the connection)</td>
+<td>— (nothing is gauged, so there is no third piece to write)</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}\langle\tilde A_{\Phi}\rangle_{\natural}$, $[\nu_{m}^{2}]=2$</td>
+<td><strong>the same</strong> — nothing is gauged, so nothing can change it</td>
+<td><strong>yes</strong></td>
+<td><strong>not a Maxwell line</strong>: at $\nu_m\to0$ the shift $\tilde A_\Phi\mapsto\tilde A_\Phi+\tilde\nabla_\Phi\Lambda$ becomes a symmetry, the potential becomes a connection, one mode is removed and the object leaves this category for Electromagnetism; the mass term is what keeps three modes rather than two (<code>articles_physics/the-lagrangian-and-the-proca-equation.md:115</code>, <code>:248</code>)</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$\tfrac12$</td>
+<td>Free Dirac</td>
+<td>— (nothing is gauged on this line)</td>
+<td>$\tfrac{hc}{4\pi}\mathrm{Re}\,\mathrm{Sc}\bigl[\tilde\Xi_{L}^{*}(\tilde\nabla_{\Phi})^{\natural}\tilde\Xi_{L}+\tilde\Xi_{R}^{*}\tilde\nabla_{\Phi}\tilde\Xi_{R}\bigr]-2\pi\nu_{m}(\tilde\Xi_{L}^{*}\tilde\Xi_{R}+\tilde\Xi_{R}^{*}\tilde\Xi_{L})$ — kinetic <strong>and</strong> the mass cross term, both free</td>
+<td>—</td>
+<td><strong>yes</strong> — $\nu_{m}$ on the chiral pair, $[\nu_{m}]=1$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not second order</strong>: first order, the mass a cross term joining the two chiral parts</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$0$</td>
+<td>Free Klein–Gordon</td>
+<td>—</td>
+<td>$\mathrm{Sc}\bigl[\sum_{\imath}(\partial_{\imath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi\bigr]-4\pi^{2}\nu_{m}^{2}\tilde\Xi^{*}\tilde\Xi$ — kinetic and mass, both free</td>
+<td>—</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$, $[\nu_{m}^{2}]=2$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not first order in time</strong>: second order, and the mass sits in the potential</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="63-primordial">6.3 Primordial</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(4)$. $\dim=15$, rank $3$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The rung above the strong force; one coupling on fifteen generators.</em></p>
+<p><strong>One coupling, one connection, one scalar matrix.</strong> The sector is $\mathrm{SU}(4)$ with a single $g_4$ in the representative, fermion and scalar kinetic terms, and the scalar is a Hermitian $4\times4$ matrix — sixteen real scalars — and not a quartet.</p>
+<p><strong>Two structural facts decide the rows.</strong> <strong>No mass term is written for the connection</strong>: a bare mass breaks the invariance the curvature term rests on. And <strong>the sixteen Weyl fields carry no mass in $\mathcal{L}_\xi$</strong>; the mass is in the Yukawa, and above the condensation the minimum is symmetric, $\langle\Xi\rangle=0$, so the group is exact and the fermions are massless. That is why the scalar is the matrix and not the quartet: $\mathbf{4}\otimes\mathbf{4}=\mathbf{6}\oplus\mathbf{10}$ has no $\bar{\mathbf{4}}$, so a quartet scalar could not give the sixteen a mass even after condensing.</p>
+<p><strong>The scalar's own quadratic terms are a mass, and they break nothing.</strong> $\mu_\Phi^2$ and $\mu_2^2$ are both <strong>positive</strong> — the corpus is explicit that the origin is the minimum and the group is exact (<code>articles_physics/the-lagrangian-and-the-primordial-force.md:121</code>). A mass term with the sign that does not condense.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$1$</td>
+<td>The $\mathrm{SU}(4)$ curvature term</td>
+<td>$-\tfrac14\sum_{a=1}^{15}\sum_{\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}$ with $F=\partial A-\partial A-ig_{4}[A,A]$, plus fixing and ghosts</td>
+<td>— (the connection is the carrier on this row)</td>
+<td>— <strong>on this row</strong>: the two currents are on the rows below, and both need this connection</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong> — no power of $g_{4}$ produces one while $\langle\Xi\rangle=0$</td>
+<td><strong>yes</strong></td>
+<td><strong>no explicit mass term</strong>: a bare mass for a connection breaks the invariance, so any mass would have to come from a mechanism — Higgs or Stueckelberg — and none is in this display</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$\tfrac12$</td>
+<td>The $\mathrm{SU}(4)$ sixteen Weyl fields</td>
+<td>— (the $\mathrm{SU}(4)$ kinetic term is the row above)</td>
+<td>$\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}\partial_{\imath}\xi_{f}$ — free and <strong>massless</strong>: no invariant $\bar\xi\xi$ exists for this multiplet</td>
+<td>$-g_{4}\sum_{f,a}\bar\xi_{f}\gamma_{\imath}A_{a,\imath}t_{a}\xi_{f}$ — one term, and it is the whole gauge interaction</td>
+<td><strong>no</strong></td>
+<td><strong>not from the gauge coupling</strong>: $m_{f}=y\langle\Xi\rangle$ is the Yukawa contribution, and it vanishes above $M_{C}$ where $\langle\Xi\rangle=0$</td>
+<td><strong>yes</strong></td>
+<td><strong>not a mass in the quartet reading</strong>: $\mathbf4\otimes\mathbf4=\mathbf6\oplus\mathbf{10}$ has no $\bar{\mathbf4}$, so a quartet scalar would leave the sixteen massless — which is why the scalar is the matrix and not the quartet</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>$0$</td>
+<td>The Hermitian scalar matrix, four quartics</td>
+<td>—</td>
+<td>$\operatorname{tr}(\partial_{\imath}\Xi)^{\dagger}(\partial_{\imath}\Xi)-V(\Xi)$ with $V$ at $\mu_{\Phi}^{2}&gt;0$</td>
+<td>$-2g_{4}\operatorname{tr}\bigl((\partial_{\imath}\Xi)^{\dagger}[A_{a,\imath}t_{a},\Xi]\bigr)+g_{4}^{2}\operatorname{tr}\bigl([A_{a,\imath}t_{a},\Xi]^{\dagger}[A_{b,\imath}t_{b},\Xi]\bigr)$ — and the second term would be a vector mass <strong>if</strong> $\langle\Xi\rangle\neq0$</td>
+<td><strong>yes</strong> — $\mu_{\Phi}^{2},\mu_{2}^{2}$ on $\Xi^{2}$, both positive</td>
+<td><strong>the same</strong> — no quadratic term appears while $\langle\Xi\rangle=0$</td>
+<td><strong>yes</strong></td>
+<td><strong>not a quartet Higgs</strong>: the field is the whole matrix, so 16 real scalars</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="64-strong">6.4 Strong</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. $\dim=8$, rank $2$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The stabiliser of the line inside $\mathrm{SU}(4)$.</em></p>
+<p><strong>One Lagrangian, three lines.</strong> The rows are spins and the row-to-action map is not one-to-one: the gauge sector and the quark term are two terms of one QCD action, and the quark term cannot be written without $G_{a,\imath}$ because $D_{\imath}$ carries it.</p>
+<p>$$
+\mathcal{L}_{\mathrm{QCD}}
+=-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}
++\sum_{f}\bar\Xi_{\mathrm{wfn},f}\Bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}D_{\imath}-m_{f}\Bigr)\Xi_{\mathrm{wfn},f}
+-\frac{1}{2\zeta}\sum_{a,\imath}\Bigl(\frac{\partial G_{a,\imath}}{\partial R_{\imath}}\Bigr)^{2}
++\sum_{a}\bar c_{a}\Bigl(-\frac{\partial^{2}}{\partial R_{\imath}\partial R_{\imath}}\Bigr)c_{a}
++\mathcal{L}_{cG}
+$$</p>
+<p><strong>In the action the gluon carries no mass and the quark carries one</strong>, and the asymmetry is the sector's whole mass content: $m_f$ is a free parameter of the triplet, while a local bare gluon mass is forbidden by gauge invariance. <strong>That is a statement about the density, not about the spectrum</strong>: QCD confines, the physical states are colour singlets with a mass gap, and "massless in the action" must not be read as "a massless gluon propagates".</p>
+<p><strong>The spin-$0$ line is not colour at all.</strong> It holds four effective functionals — sigma, chiral pion, Skyrme, axion — and only the axion carries a colour coupling, through the <strong>CP-odd</strong> $G\tilde G$. <strong>A CP-even scalar would couple through $GG$ instead, and no line here does that</strong>; the two invariants are different operators and the corpus writes one of them. The pion action rests on the approximate $\mathrm{SU}(3)_L\times\mathrm{SU}(3)_R$ chiral symmetry of the light quarks, which is flavour and not colour, and that is why it is written on the unit quaternion $\tilde U$ with no colour index. <strong>The axion is a colour singlet and sits in no colour multiplet</strong>: naming $\mathrm{SU}(3)$ on its line records only that the operator carries the gluon field strength.</p>
+<p><strong>Three tiers of claim are in this section, and the table cells must not be read as one.</strong> Rows 1 and 2 are standard QCD in the corpus's letters. Row 3 is standard <strong>effective field theory</strong> — true as an expansion, not as a fundamental Lagrangian. The carrier statements are the corpus's own language and are true only inside it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the claim</th>
+<th>its status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no local bare gluon mass; $m_f$ a free parameter</td>
+<td>standard QCD</td>
+</tr>
+<tr>
+<td>quarks in the $\mathbf3$, gluons in the $\mathbf8$</td>
+<td>standard QCD</td>
+</tr>
+<tr>
+<td>the gauge and quark lines are one action</td>
+<td>standard QCD</td>
+</tr>
+<tr>
+<td>pion, Skyrme, axion describe the strong sector</td>
+<td><strong>effective theory</strong>, not fundamental</td>
+</tr>
+<tr>
+<td>$m_\pi^2=2B_0\hat m$, $m_a^2=\Lambda^4/f_a^2$</td>
+<td>effective theory: derived, not put in</td>
+</tr>
+<tr>
+<td>the spin-$0$ carrier is the one-dimensional line</td>
+<td><strong>framework-specific</strong></td>
+</tr>
+<tr>
+<td>"the same obstruction as the primordial vector"</td>
+<td>framework-specific, and not checkable from QCD alone</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The correction this section records.</strong> An earlier version said $\mathrm{SU}(3)$ "declines a scalar", that nothing couples a scalar to a gluon, and that the strong force had three Lagrangians of $\mathrm{SU}(3)$ "depending on spin". Three separate falsehoods. <strong>The Faddeev–Popov ghost $c_a$ in the QCD display is itself a spin-$0$ colour octet coupling to the gluon</strong> through $\mathcal{L}_{cG}$; the axion is a colour singlet that couples through $G\tilde G$; and a coloured scalar — triplet, octet, squark, GUT scalar — is an ordinary field. What is true is narrower: <strong>this corpus's spin-$0$ carrier is the one-dimensional line, whose $\mathrm{SU}(3)$ representation is the singlet, so no fundamental coloured scalar is a carrier here.</strong> Colour and spin are independent.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>$1$</td>
+<td>QCD, gauge sector: kinetic, fixing, ghosts</td>
+<td>$-\tfrac14\sum_{a,\imath,\jmath}G_{a,\imath\jmath}G_{a,\imath\jmath}-\tfrac{1}{2\zeta}\sum_{a,\imath}(\partial_{\imath}G_{a,\imath})^{2}+\mathcal{L}_{\mathrm{gh}}$, commutator inside $G$</td>
+<td>— (the connection is the carrier on this row)</td>
+<td>— <strong>on this row</strong>: the quark current is the row below</td>
+<td><strong>no</strong> — none in the action</td>
+<td><strong>no</strong> — a gluon mass would break the invariance, and asymptotic freedom keeps the pole at zero</td>
+<td><strong>yes</strong></td>
+<td><strong>no explicit mass term</strong> — gauge invariance forbids a local bare gluon mass, and that is standard QCD. <strong>But it is not "a massless gluon exists"</strong>: the spectrum confines and is gapped. <strong>And the label is loose</strong>: this line carries the fixing term and the ghost pair as well as the gluon kinetic term, so it is the gauge sector, not the gluon alone</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>$\tfrac12$</td>
+<td>QCD, quark term</td>
+<td>— (the gluon kinetic term is the row above)</td>
+<td>$\sum_{f}\bar\Xi_{f}\bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}\partial_{\imath}-m_{f}\bigr)\Xi_{f}$ — free, and <strong>$m_{f}$ is already there</strong></td>
+<td>$-g_{s}\sum_{f}\bar\Xi_{f}\gamma_{\imath}A^{a}_{\imath}t_{a}\Xi_{f}$ — the entire strong interaction of quarks, in one term</td>
+<td><strong>yes</strong> — $m_{f}$, $[m_{f}]=1$, a parameter</td>
+<td><strong>the same</strong> — the coupling term carries no mass</td>
+<td><strong>yes</strong></td>
+<td><strong>not a separate Lagrangian</strong> — the same action as the line above, and $D_{\imath}$ needs its gluon. <strong>The colour assignment is the standard one</strong>: quarks in the $\mathbf3$, gluons in the $\mathbf8$. What is peculiar to the corpus is the <em>module</em> it writes them on, the $3\times3$ block of $M_2(\mathbb{B})$, and not the representation</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$ through the axion $G\tilde G$; flavour $\mathrm{SU}(3)_L\times\mathrm{SU}(3)_R$ for the pion; nothing gauged otherwise</td>
+<td>$0$</td>
+<td>Effective field theory: nonlinear sigma; chiral pion; Skyrme; axion</td>
+<td>—</td>
+<td>the sigma, pion, Skyrme and axion densities, written with $\partial$</td>
+<td><strong>nothing for the pion, the sigma or Skyrme</strong> — colour singlets; for the axion $\tfrac{g_{s}^{2}}{32\pi^{2}}\tfrac{a}{f_{a}}G\tilde G$. The pion exists <em>because</em> colour breaks chiral symmetry and still carries no colour</td>
+<td><strong>yes</strong> — derived: $m_{\pi}^{2}=2B_{0}\hat m$, $m_{a}^{2}=\Lambda^{4}/f_{a}^{2}$</td>
+<td><strong>the same</strong> — both follow from the breaking, and neither is a term of the third piece</td>
+<td><strong>yes</strong></td>
+<td><strong>not a fundamental QCD Lagrangian</strong> — these are effective functionals, and the masses are derived: $m_\pi^2=2B_0\hat m$, $m_a^2=\Lambda^4/f_a^2$. <strong>The axion is a colour singlet</strong> and couples through the CP-odd $G\tilde G$; a CP-even scalar would couple through $GG$, which no line here does. <strong>No fundamental coloured scalar in the Standard Model</strong> — BSM scalars in $\mathbf3$ or $\mathbf8$ are ordinary fields, and their absence here is a fact about this roster</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="65-electroweak">6.5 Electroweak</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$. $\dim=4=3+1$, rank $2=1+1$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>Off the chain: the extra generator is hypercharge, an index on the condensate.</em></p>
+<p><strong>Two groups share one algebra, and only one is written here.</strong> The Standard Model's group is the product $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$: four generators, rank two. The algebra's own compact group is $\mathrm{U}(2)=(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$, of the same algebra, the same dimension and a <strong>different group</strong> — the quotient identifies $(-1,-1)$ with the identity and the product does not. The table writes the product, because the electroweak lines are the Standard Model's.</p>
+<p><strong>The vector mass is the one place in this audit where a mass sits on a connection — and it is not a bare mass.</strong> It arrives as $\tfrac{v^2}{8}g^2A_{\imath} A_{\imath}$ from $\lvert D\phi\rvert^2$ at the vev, so $M_W=\tfrac{gv}{2}$ is a scalar's number written in $v$. <strong>A Proca term written by hand would destroy the invariance; this term does not, because it is gauge invariant before the doublet is shifted.</strong> The contrast with the primordial and strong vector lines — both <code>no</code> — is the mass column's content.</p>
+<p><strong>The fermion mass is not in the density at all.</strong> A chiral mass term $\bar\psi\psi$ is not invariant, so the matter line carries <code>no</code> and the mass arrives through $Y_{ab}\langle\omicron_{\mathrm{hgs}}\rangle$ after breaking.</p>
+<p><strong>And the scalar's quadratic term has the sign that breaks.</strong> $-\mu^2\lvert\phi\rvert^2$ with $\mu^2&gt;0$ — the mirror image of the primordial $\mu_\Phi^2&gt;0$: same shape, opposite sign, opposite physics.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$1$</td>
+<td>$W$ and $Z$</td>
+<td>$-\tfrac14\sum W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14\sum B_{\imath\jmath}B_{\imath\jmath}$ — massless, with the $\mathrm{SU}(2)$ commutator</td>
+<td>— (the connection is the carrier on this row)</td>
+<td>the two gauge currents of the rows below <strong>and</strong> $g^{2}A^{2}\omicron^{\dagger}\omicron$, which at the vev becomes $\tfrac{v^{2}}{8}\bigl[g^{2}(W_{1,\imath}W_{1,\imath}+W_{2,\imath}W_{2,\imath})+(gW_{3,\imath}-g_{\mathrm{Y}}B_{\imath})^{2}\bigr]$</td>
+<td><strong>no</strong> — gauge invariance forbids a bare vector mass</td>
+<td><strong>yes</strong> — $\tfrac{v^{2}}{8}g^{2}$; it <em>is</em> the $g^{2}A^{2}$ term of the third piece, so $g=0$ makes it vanish</td>
+<td><strong>yes</strong></td>
+<td><strong>not a bare mass</strong>: $M_W=gv/2$ comes from the scalar, and a gauge mass is forbidden before breaking</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$\tfrac12$</td>
+<td>Lepton and quark doublets</td>
+<td>—</td>
+<td>$\bar Q_{L}i\gamma_{\imath}\partial_{\imath}Q_{L}+\bar L_{L}i\gamma_{\imath}\partial_{\imath}L_{L}+\ldots$ — chiral and <strong>massless</strong></td>
+<td>the gauge currents $-g\bar Q\gamma W Q-g_{\mathrm{Y}}\bar Q\gamma B Q$ <strong>and</strong> the Yukawa $-\bar Q\omicron Y_{d}d-\ldots$, which is a different third piece acting on the same carriers</td>
+<td><strong>no</strong> — $\bar\psi\psi$ is not invariant</td>
+<td><strong>yes, but from the Yukawa and not the gauge current</strong>: $m_{f}=Y_{ab}v/\sqrt2$ after breaking</td>
+<td><strong>yes</strong></td>
+<td><strong>not a gauge-invariant Dirac mass</strong>: mass appears only through the Yukawa coupling after breaking</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$0$</td>
+<td>Higgs</td>
+<td>—</td>
+<td>$(\partial_{\imath}\omicron)^{\dagger}\partial_{\imath}\omicron-\mu^{2}\omicron^{\dagger}\omicron-\varpi(\omicron^{\dagger}\omicron)^{2}$, $\mu^{2}&lt;0$ — the mass is free and negative</td>
+<td>the $gA$ cross term and $g^{2}A^{2}\omicron^{\dagger}\omicron$ — at the vev the second is the vector mass of the row above</td>
+<td><strong>yes</strong> — $-\mu^{2}$, $[\mu^{2}]=2$, negative</td>
+<td><strong>re-described</strong> — the same $-\mu^{2}$ becomes $m_{h}^{2}=2\mu^{2}$ for the radial field, and the three Goldstones are eaten</td>
+<td><strong>yes</strong></td>
+<td><strong>not a quartet</strong>: one doublet, read in the radial and the physical chart</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="66-standard-model-assembly">6.6 Standard Model Assembly</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$. $\dim=12=8+3+1$, rank $4$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The product, assembled from the rungs below it.</em></p>
+<p><strong>Not a new sector: the rungs side by side.</strong> Three lines, and none adds a term — the vector line is the QCD and electroweak densities written together, the matter line is the Yukawa block, the scalar line is the electroweak Higgs block repeated.</p>
+<p><strong>Why the assembly is not a transcription exercise.</strong> Written out, the four sectors and the vacuum-angle term carry <strong>sixty real parameters</strong>, of which <strong>nineteen</strong> are physical and forty-one are removed by field redefinitions that change no physics (<code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md:20</code>). <strong>Nothing in these three lines predicts a coupling</strong>: the Yukawa matrices are inputs and no number follows for them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$1$</td>
+<td>The vector sectors, combined</td>
+<td>$-\tfrac14\sum(\partial G)^{2}-\tfrac14\sum(\partial W)^{2}-\tfrac14\sum(\partial B)^{2}$ with all three commutators, fixing and ghosts</td>
+<td>—</td>
+<td>the three currents and the $g^{2}A^{2}\omicron^{\dagger}\omicron$ of the doublet — one per factor, as in §6.4 and §6.5</td>
+<td><strong>no</strong></td>
+<td><strong>yes on $W$ and $Z$ only</strong> — the gluon receives none</td>
+<td><strong>yes</strong></td>
+<td><strong>not a new term</strong>: the same QCD and electroweak densities side by side</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$\tfrac12$</td>
+<td>Three generations, three Yukawa matrices</td>
+<td>—</td>
+<td>three generations with $\partial$ and no mass</td>
+<td>three gauge currents and three Yukawa matrices</td>
+<td><strong>no</strong></td>
+<td><strong>yes</strong> — $m_{f}=Y_{ab}v/\sqrt2$, all after breaking</td>
+<td><strong>yes</strong></td>
+<td><strong>not predicted couplings</strong>: the matrices are inputs, and no number follows for them</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)\times\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>$0$</td>
+<td>The Higgs term</td>
+<td>—</td>
+<td>$(\partial\omicron)^{\dagger}\partial\omicron-V(\omicron)$</td>
+<td>the $D_{\imath}$ of the product — the same block as §6.5, written once</td>
+<td><strong>yes</strong> — the same $-\mu^{2}$</td>
+<td><strong>re-described</strong> — $m_{h}^{2}=2\mu^{2}$, one scalar and not three</td>
+<td><strong>yes</strong></td>
+<td><strong>not a second scalar</strong>: the same block as the electroweak line</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="67-electromagnetism">6.7 Electromagnetism</h3>
+<p><strong>The group:</strong> $\mathrm{U}(1)_{\mathrm{em}}$. $\dim=1$, rank $1$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The unbroken mixture $Q=T_{3L}+\tfrac12Y$.</em></p>
+<p><strong>A mass on the matter and never on the connection.</strong> Maxwell's functional is one term, and the potential enters only inside $\tilde F$, which is what makes the shift a symmetry of the density. <strong>A Proca mass would break exactly that</strong>, which is why the spin-$1$ line is <code>no</code> and the photon mass is bounded by measurement rather than set by the action.</p>
+<p><strong>The matter masses are free parameters here, and that is not an oversight.</strong> A $\mathrm{U}(1)$ mass term $\bar\psi\psi$ is itself gauge invariant, so nothing forbids it — unlike the electroweak line, where the chiral structure makes the scalar mandatory. The electron mass is a number in the density, and its smallness has no explanation in this category.</p>
+<p><strong>This is the category the first version of this audit declared empty at all three spins</strong>, on the ground that no article under the heading is called a Lagrangian. That was filing mistaken for existence: $S=\int\tfrac{\epsilon}{2}\operatorname{Re}\operatorname{Sc}(\tilde F\tilde F)$ varies to $\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi$ (<code>articles_physics/the-lagrangian-and-the-electromagnetic-field.md:158</code>).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$1$</td>
+<td>Maxwell</td>
+<td>$-\tfrac14\sum_{\imath,\jmath}(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath})(\partial_{\imath}A_{\jmath}-\partial_{\jmath}A_{\imath})$ — abelian, so no commutator: <strong>the density is already complete</strong></td>
+<td>— (the connection is the carrier on this row)</td>
+<td>— <strong>for a second reason</strong>: the photon is neutral, so $D_{\imath}=\partial_{\imath}$ on it and there is no current to multiply. §6.2 is empty because nothing is gauged; here something is gauged and the carrier is the connection itself</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong> — only a Proca term written by hand could, and that breaks the redundancy</td>
+<td><strong>yes</strong></td>
+<td><strong>no explicit mass term</strong>: $S=\int\tfrac{\epsilon}{2}\operatorname{Re}\operatorname{Sc}(\tilde F\tilde F)$; a Proca mass breaks the gauge redundancy the functional rests on, and the photon mass is bounded by measurement</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$\tfrac12$</td>
+<td>Dirac with minimal coupling</td>
+<td>—</td>
+<td>$\bar\psi(i\gamma_{\imath}\partial_{\imath}-\nu_{m})\psi$ — free, with $\nu_{m}$</td>
+<td>$-q\bar\psi\gamma_{\imath}A_{\imath}\psi$ — the current times the connection; the photon's own $-\tfrac14FF$ is the row above</td>
+<td><strong>yes</strong> — $\nu_{m}$, $[\nu_{m}]=1$</td>
+<td><strong>the same</strong> — the coupling term carries a derivative</td>
+<td><strong>yes</strong></td>
+<td><strong>not a mass the gauge principle fixes</strong>: a $\mathrm{U}(1)$ mass term $\bar\psi\psi$ is itself gauge invariant, so the electron mass is a free parameter here — unlike the electroweak line, where the scalar is required</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$0$</td>
+<td>Charged scalar</td>
+<td>—</td>
+<td>$\sum_{\imath}(\partial_{\imath}\tilde\Xi)^{*}\partial_{\imath}\tilde\Xi-4\pi^{2}\nu_{m}^{2}\tilde\Xi^{*}\tilde\Xi$</td>
+<td>$-qA_{\imath}\bigl(\tilde\Xi^{*}\partial_{\imath}\tilde\Xi-(\partial_{\imath}\tilde\Xi)^{*}\tilde\Xi\bigr)+q^{2}A_{\imath}A_{\imath}\tilde\Xi^{*}\tilde\Xi$</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$, $[\nu_{m}^{2}]=2$</td>
+<td><strong>the same</strong> — $q^{2}A^{2}\tilde\Xi^{*}\tilde\Xi$ is a coupling of the scalar, not a mass for it</td>
+<td><strong>yes</strong></td>
+<td><strong>not uncharged</strong>: two real components with a $\mathrm{U}(1)$ covariant derivative, which is what distinguishes it from free Klein–Gordon</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="68-relativistic-quantum-theory">6.8 Relativistic Quantum Theory</h3>
+<p><strong>The group:</strong> $\mathrm{U}(1)_{\mathrm{em}}$ on the coupled lines, $\mathrm{SU}(1)$ on the free ones. $\dim=1$ / $0$, rank $1$ / $0$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The chart where the quantum of action is present and relativity is exact.</em></p>
+<p><strong>The chart, not a force.</strong> Every line here is an electromagnetic or force-free density read where the quantum of action is present and relativity is exact; the group is $\mathrm{U}(1)_{\mathrm{em}}$ on the coupled lines because the coupling is the electromagnetic one, and $\mathrm{SU}(1)$ on the free ones.</p>
+<p><strong>The spin-$1$ line holds three different functionals, and they are not one functional at three couplings.</strong> The <em>coupled Proca</em> carries a Proca mass and a covariant derivative; the <em>Maxwell</em> is the free one; the <em>topologically massive</em> is a $2+1$-dimensional theory — Maxwell plus a Chern–Simons term — whose mass has one derivative and no metric, so its variation is a total derivative and the equations stay invariant while the Lagrangian does not (<code>articles_physics/the-lagrangian-and-the-topologically-massive-connection.md:27</code>).</p>
+<p><strong>The coupling adds two terms and neither is written out in the source.</strong> Replacing $\tilde\nabla_\Phi$ by $\tilde\nabla_\Phi+\frac{2\pi i\,ϙ}{h}\tilde A_\Phi$ inside $\tilde F$ produces a linear term — current times connection — and a quadratic one, required for invariance. The mass term is <em>upgraded</em> rather than added: $\langle\tilde A_\Phi\rangle_\natural$ is not real on a complex carrier, so it becomes $\mathrm{Sc}(\tilde A^*\tilde A^\natural)$, which agrees with the free term on the material slice (<code>articles_physics/the-lagrangian-and-the-coupled-proca-equation.md:25</code>).</p>
+<p><strong>What changes physically is the symmetry, not the mass.</strong> On the complex carrier the mass term <em>keeps</em> the central phase, so a massive charged vector exists and a second Noether current appears: $j_{\imath}=\mathrm{Sc}(\tilde A^*i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$, the source the inhomogeneous Maxwell equation needs. In the free article the same term is what forbids that current, and the difference is the carrier's reality, not the coupling.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$1$</td>
+<td>Coupled Proca; Maxwell; topologically massive</td>
+<td>the vector densities of this category: coupled Proca, Maxwell, and the topologically massive term — the Proca mass is on the connection, kept at the cost of a modified symmetry</td>
+<td>—</td>
+<td>$-qA_{\imath}j_{\imath}$ with a second current $j_{\imath}=\mathrm{Sc}\bigl(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A\bigr)$, which only the upgraded mass term permits</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$</td>
+<td><strong>the same value, a different symmetry</strong> — it keeps the central phase, so a massive charged vector exists and a second current $j_{\imath}=\mathrm{Sc}(\tilde A^{*}i\tilde\nabla_{\mathrm{gco},\Phi,\imath}\tilde A)$ appears</td>
+<td><strong>yes</strong></td>
+<td><strong>three different densities, not the free ones restated</strong>: the <em>coupled Proca</em> has a Proca mass put in by hand and a source current $ϙ\tilde A$ in the derivative; the <em>Maxwell</em> is the free one, unchanged; the <em>topologically massive</em> is a <strong>$2+1$-dimensional</strong> theory — Maxwell plus a Chern–Simons term, no metric in the mass — so it is not a $3+1$-dimensional line at all. <strong>All three are abelian: the group is $\mathrm{U}(1)_{\mathrm{em}}$, not the electroweak product, and the only term shared with the electroweak row is $-\tfrac14FF$. W and Z need a Higgs; this row's mass needs either a Proca term or a Chern–Simons one</strong></td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$\tfrac12$</td>
+<td>Coupled Dirac; QED</td>
+<td>—</td>
+<td>the free Dirac density of §6.2, with $\nu_{m}$</td>
+<td>$-q\bar\psi\gamma_{\imath}A_{\imath}\psi$ — QED</td>
+<td><strong>yes</strong> — $\nu_{m}$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not one half for a mass</strong>: a massless chiral half is a legitimate charged field, and it is the mass term that pairs the two halves</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$ on the coupled line; $\mathrm{SU}(1)$ on the other two</td>
+<td>$0$</td>
+<td>Interacting scalar; coupled Klein–Gordon; Goldstone</td>
+<td>—</td>
+<td>the free Klein–Gordon density of §6.2</td>
+<td>the covariant gradient and $q^{2}A^{2}\lvert\phi\rvert^{2}$ — scalar QED</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$</td>
+<td><strong>the same</strong>; the Goldstone carries none, every term being a derivative</td>
+<td><strong>yes</strong></td>
+<td><strong>not a potential for Goldstone</strong>: every term carries a derivative, so no mass term can be written</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="69-non-relativistic-quantum-theory">6.9 Non-Relativistic Quantum Theory</h3>
+<p><strong>The group:</strong> $\mathrm{U}(1)_{\mathrm{em}}$ / $\mathrm{SU}(1)$. $\dim=1$ / $0$, rank $1$ / $0$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The Galilean chart with the quantum of action.</em></p>
+<p><strong>The Galilean chart.</strong> The quantum of action is present and $c$ has been taken away, so the densities are first order in time and the mass appears <strong>inverted</strong>: the kinetic coefficient is $\tfrac{hc}{8\pi^2\nu_m}$, one over a mass. That is not a typographical oddity — it is what $2m$ becomes when the equation is written first order.</p>
+<p><strong>The spin-$1$ line repeats the free-Proca density verbatim.</strong> That is deliberate and it is the honest entry: the Proca functional is already the Galilean vector density at this rung, and no separate object exists to write. <strong>A repeated functional is not a second Lagrangian</strong>, and the row says so.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$ on the coupled line; $\mathrm{SU}(1)$ on the free and classical ones</td>
+<td>$0$</td>
+<td>Free Schrödinger; coupled; both classical rungs</td>
+<td>— (nothing is gauged in the free rung)</td>
+<td>$\mathrm{Sc}\bigl[\tfrac{ihc}{4\pi}\bigl(\tilde\Xi^{*}\partial_{r^{\prime}_{t}}\tilde\Xi-(\partial_{r^{\prime}_{t}}\tilde\Xi^{*})\tilde\Xi\bigr)-\tilde\Xi^{*}\tilde H_{\Psi}\tilde\Xi\bigr]$</td>
+<td>$-q\omicron_{\mathrm{pot}}\tilde\Xi^{*}\tilde\Xi$ and the mechanical gradient $\tilde\nabla^{\mathrm{mech}}_{\Phi}$</td>
+<td><strong>yes</strong> — $\tfrac{1}{\nu_{m}}$ in the kinetic coefficient</td>
+<td><strong>the same</strong> — the coupling terms are a potential and a gradient, not a mass</td>
+<td><strong>yes</strong></td>
+<td><strong>not second order in time</strong>: first order, which is why the momenta themselves are the constraints</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$\tfrac12$</td>
+<td>Pauli</td>
+<td>—</td>
+<td>the free Pauli density, without $A$</td>
+<td>$qA_{t}$, the mechanical gradient, and $\tfrac{q}{m}\vec S\cdot\vec B$ — a spin coupling, not a mass</td>
+<td><strong>yes</strong> — $\tfrac{1}{\nu_{m}}$</td>
+<td><strong>the same</strong> — $\vec S\cdot\vec B$ is a spin coupling</td>
+<td><strong>yes</strong></td>
+<td><strong>not relativistic</strong>: no antiparticle, and the spin enters through a single $\sigma\cdot B$ term</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$1$</td>
+<td>Galilean massive vector</td>
+<td>$\tfrac12\sum_{\imath}\varepsilon_{\imath}(\partial_{\imath}\varrho)^{2}-\tfrac12 4\pi^{2}\nu_{m}^{2}\varrho^{2}$ — the Proca mass on the connection, as in §6.2</td>
+<td>—</td>
+<td>— (Galilean, $\mathrm{SU}(1)$ gauges nothing; the coupled vector is §6.8)</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not four free polarisations</strong>: the mass-shell constraint removes the timelike component and leaves three</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="610-relativistic-non-quantum">6.10 Relativistic Non-Quantum</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(1)=\{e\}$, with $\mathrm{U}(1)_{\mathrm{em}}$ on the coupled scalar line. $\dim=0$, rank $0$. <strong>Lines: 3</strong> (3 occupied, 0 empty). <em>The fluid reading: exact relativity, no quantum of action.</em></p>
+<p><strong>The fluid reading: exact relativity, no quantum of action.</strong> These are the same fields in polar variables, and the mass changes character with the chart. In the spin-$\tfrac12$ line it is a <strong>rest-energy density</strong> $mc^2\varrho^2$; in the spin-$0$ line it is $\tfrac{1}{24}4\pi^2\nu_m^2\xi^2$ on the central scalar; in the coupled scalar it is absorbed into $V_{\Phi,\imath}=(\partial_{\imath} S_{\tilde\Xi}-qA_{\imath})/m$, where the mass sits in the denominator of a velocity.</p>
+<p><strong>The spin-$1$ line is where the Proca mass becomes the density's own equation.</strong> $\tfrac12(\partial_{\imath}\varrho)^2-\tfrac12 4\pi^2\nu_m^2\varrho^2$ is the mass-shell relation written as a functional of the magnitude alone — the same field, a different variable, and a mass that reads as a frequency rather than as a coupling.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$ on the coupled line; $\mathrm{SU}(1)$ on the other</td>
+<td>$1$</td>
+<td>Proca fluid; coupled Proca fluid</td>
+<td>the Proca density in fluid variables, with $mc^{2}\varrho^{2}$</td>
+<td>—</td>
+<td>$\kappa^{\mathrm{kin}}_{\imath}=\partial_{\imath}\theta_{\mathrm{pha}}+\tfrac{2\pi q}{h}A_{\imath}$ in place of $\partial_{\imath}\theta_{\mathrm{pha}}$</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}$, and $mc^{2}\varrho^{2}$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not a different field</strong>: the same field in the fluid variables, where the mass-shell relation becomes the density's own equation</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$\tfrac12$</td>
+<td>Dirac in $S_{\mathrm{op}}$; Dirac in $S_{\mathrm{box}}$</td>
+<td>—</td>
+<td>$-\tfrac{h}{2\pi}c\rho_{\mathrm{num}}\partial_{r^{\prime}_{t}}\theta_{\mathrm{pha}}-\rho_{\mathrm{num}}V-mc^{2}\varrho^{2}$</td>
+<td>— (no connection on the spinor fluid line)</td>
+<td><strong>yes</strong> — $mc^{2}\varrho^{2}$, an energy density</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not the full gradient structure</strong> in $S_{\mathrm{box}}$: it drops the gradients and with them part of the domain</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$ on the coupled line; $\mathrm{SU}(1)$ on the other two</td>
+<td>$0$</td>
+<td>Central scalar; scalar fluid; coupled scalar fluid</td>
+<td>—</td>
+<td>$-\tfrac12\sum_{\imath}(\partial_{\imath}\xi)^{2}-\tfrac1{24}4\pi^{2}\nu_{m}^{2}\xi^{2}+g\rho\,\xi$</td>
+<td>$V_{\Phi,\imath}=(\partial_{\imath}S_{\tilde\Xi}-qA_{\imath})/m$ in place of $\partial_{\imath}S_{\tilde\Xi}/m$</td>
+<td><strong>yes</strong> — $\nu_{m}^{2}\xi^{2}$</td>
+<td><strong>the same, moved into a denominator</strong> — the mass now sits in $V_{\Phi,\imath}$</td>
+<td><strong>yes</strong></td>
+<td><strong>not the complex field</strong>: the central scalar is real, and the fluids drop the density gradient</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="611-non-relativistic-non-quantum">6.11 Non-Relativistic Non-Quantum</h3>
+<p><strong>The group:</strong> $\mathrm{SU}(1)=\{e\}$. $\dim=0$, rank $0$. <strong>Lines: 3</strong> (2 occupied, 1 empty). <em>The classical limit: neither relativity nor the quantum of action.</em></p>
+<p><strong>The classical limit, and the one line that is empty because the limit does not exist.</strong> Two of the three spins carry functionals — the Madelung form of the Schrödinger equation and a Clebsch-parametrised vector fluid — and both carry <strong>no mass term</strong>: what appears instead is $\tfrac{1}{2m}$ in the kinetic coefficient and $\mathcal{E}(\rho_{\mathrm{num}})$, an internal energy.</p>
+<p><strong>The spin-$\tfrac12$ line is empty for a reason that is not about writing.</strong> The carrier is anticommuting, so its classical limit is Grassmann-valued rather than real-valued: there is no commuting classical spinor field for a density to be a function of. The classical spin in this block is a <strong>rotor variable, not a spinor field</strong>, and a rotor is not this carrier.</p>
+<p><strong>The line is not empty for lack of trying.</strong> It fails on the classical-limit condition, one of the six in §5, and it is the only line in the audit that fails on that one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$0$</td>
+<td>Classical Schrödinger, the Madelung form</td>
+<td>—</td>
+<td>$\mathcal{L}_{\mathrm{fl}}=-\rho_{\mathrm{num}}\bigl(\partial_{t^{\prime}}S+\tfrac{\sum_{\imath}\partial_{\imath}S\,\partial_{\imath}S}{2m}+V\bigr)$</td>
+<td>— (no connection at this rung)</td>
+<td><strong>yes</strong> — $\tfrac{1}{2m}$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not a viscous action</strong>: Helmholtz, since the viscous term is no density's Euler–Lagrange expression</td>
+</tr>
+<tr>
+<td>—</td>
+<td>$\tfrac12$</td>
+<td>nothing</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>no</strong></td>
+<td><strong>no commuting classical limit</strong>: the carrier is anticommuting, so the limit is a Grassmann-valued theory rather than a real-valued one; the classical spin in this block is a rotor variable, not a spinor field</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$1$</td>
+<td>Classical vector fluid</td>
+<td>—</td>
+<td>$-\rho_{\mathrm{num}}\bigl(\partial_{t^{\prime}}\xi_{\mathrm{pot,clb}}+\alpha_{\mathrm{clb}}\partial_{t^{\prime}}\beta_{\mathrm{clb}}+\tfrac12(\partial_{\imath}\xi_{\mathrm{pot,clb}}+\alpha_{\mathrm{clb}}\partial_{\imath}\beta_{\mathrm{clb}})^{2}+\mathcal{E}(\rho_{\mathrm{num}})\bigr)$</td>
+<td>— ($\alpha_{\mathrm{clb}},\beta_{\mathrm{clb}}$ are Clebsch potentials, not gauge potentials)</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not viscous</strong>: the same Helmholtz obstruction</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="612-gravity">6.12 Gravity</h3>
+<p><strong>The group:</strong> $\mathrm{Diff}(M)$, no internal group. $\dim=\infty$, <strong>Lines: 4</strong> (4 occupied, 0 empty). <em>The metric is its own connection; there is no internal index to gauge.</em></p>
+<p><strong>The metric is its own connection.</strong> There is no internal group, so the group column records the diffeomorphisms and the density is written with $\sqrt{\lvert\det G\rvert}$ and covariant derivatives. Four lines: the exact functional with its quadratic truncation, and Maxwell, Dirac and Klein–Gordon minimally coupled.</p>
+<p><strong>$\Lambda$ is not a mass.</strong> It has dimension four and enters as an energy density; calling it a mass would make the cosmological constant a particle. The spin-$2$ line is therefore <code>no</code> in the mass column despite being the one line where a constant with the units of curvature sits in the density.</p>
+<p><strong>$\xi R\phi^2$ is not a mass either.</strong> It has the shape of a mass term — field squared, no derivative of the field — and the coefficient of a coupling. The distinction is the one §4 draws twice: what pairs, and with what dimension — and whether the coupling touches it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{Diff}(M)$, no internal group</td>
+<td>$2$</td>
+<td>Exact Einstein–Hilbert; its quadratic part</td>
+<td>$\tfrac{1}{2\kappa^{2}}\sqrt{\lvert\det G\rvert}(R-2\Lambda)$ — <strong>the metric is the connection</strong>, so gauge and matter coincide here</td>
+<td>—</td>
+<td>— internal (there is no internal group; the metric's coupling to the other lines is their own $\sqrt{\lvert\det G\rvert}$)</td>
+<td><strong>no</strong> — $\Lambda$ has $[\Lambda]=4$ and is not a mass</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not renormalisable</strong>: the quadratic part is the truncation that is quantised, and it is not the whole functional</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>$1$</td>
+<td>Maxwell, minimally coupled</td>
+<td>$-\tfrac14\sqrt{\lvert\det G\rvert}\sum_{\imath,\jmath}F_{\imath\jmath}F^{\imath\jmath}$ — the metric is already inside</td>
+<td>—</td>
+<td>$\sqrt{\lvert\det G\rvert}$ and the raised indices $g^{\imath\jmath}$ — the metric acting on the photon</td>
+<td><strong>no</strong></td>
+<td><strong>no</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not a new term</strong>: $\sqrt{g}F F$ is the flat action with the volume element and indices changed</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$ plus the $\mathrm{SO}(1,3)$ spin connection</td>
+<td>$\tfrac12$</td>
+<td>Dirac, minimally coupled</td>
+<td>—</td>
+<td>$\bar\psi(i\gamma_{\imath}\partial_{\imath}-m)\psi$</td>
+<td>the spin connection inside $D_{\imath}=\partial_{\imath}+\tfrac18\omega_{ab,\imath}[\gamma^{a},\gamma^{b}]$, and $\sqrt{\lvert\det G\rvert}$</td>
+<td><strong>yes</strong> — $m$</td>
+<td><strong>the same</strong></td>
+<td><strong>yes</strong></td>
+<td><strong>not minimally coupled in the naive sense</strong>: the spin connection is required, so the coupling is fixed and not chosen</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$0$</td>
+<td>Klein–Gordon, minimally coupled</td>
+<td>—</td>
+<td>$\tfrac12\sum_{\imath}(\partial_{\imath}\phi)^{2}-\tfrac12m^{2}\phi^{2}$</td>
+<td>$\sqrt{\lvert\det G\rvert}$, $g^{\imath\jmath}$, and the coupling $\tfrac12\xi R\phi^{2}$ — a coupling, not a mass</td>
+<td><strong>yes</strong> — $m^{2}$</td>
+<td><strong>the same</strong> — $\xi R\phi^{2}$ is a coupling and not a mass</td>
+<td><strong>yes</strong></td>
+<td><strong>not conformally invariant for arbitrary $\xi$</strong>: the $\xi R$ coupling is a free parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="613-outside-the-roster-spin-math629-and-above">6.13 Outside the roster: spin $\tfrac32$ and above</h3>
+<p><strong>The group:</strong> none: the field is outside the roster. <strong>Lines: 2</strong> (0 occupied, 2 empty). <em>Outside the carrier roster.</em></p>
+<p><strong>Outside the roster, and the two lines that carry the audit's only real absences.</strong> The carrier scheme ends at spin $2$, the symmetric square of the vector carrier, so nothing above it is a line of this ledger.</p>
+<p><strong>The $\tfrac32$ line is the subtle one, and it was wrong here before.</strong> The family has the <strong>Rarita–Schwinger equation</strong> but not the <strong>Rarita–Schwinger action</strong>: the standard functional $S_{\mathrm{RS}}=\int\bar\Xi_{\mathrm{wfn},\imath}\bigl(i\gamma_{\imath\jmath\rho}\partial_\rho-m\gamma_{\imath\jmath}\bigr)\Xi_{\mathrm{wfn},\jmath}$ is the literature's, and no element of $\mathbb{B}$ that contracts the vector index against the chiral structure — the object the two multipliers need — has been constructed. <strong>What is missing is the density's biquaternionic form, not the term.</strong> An earlier version instead argued from a reducibility of $S\otimes V=\mathbf{4}\oplus\mathbf{2}$; that argument was wrong, and the narrower statement is the one the corpus supports.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the group</th>
+<th>spin</th>
+<th>the action</th>
+<th>$\mathcal{L}_{\mathrm{gauge}}$</th>
+<th>$\mathcal{L}_{\mathrm{matter}}$</th>
+<th>$\mathcal{L}_{\mathrm{coupling}}$</th>
+<th>a mass factor, coupling off</th>
+<th>a mass factor, coupling on</th>
+<th>exists</th>
+<th>what is not the case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>—</td>
+<td>$\tfrac32$</td>
+<td>Rarita–Schwinger, imported</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>no</strong></td>
+<td><strong>the action is named and not written</strong>: the standard functional $S_{\mathrm{RS}}=\int\bar\Xi_{\mathrm{wfn},\imath}\bigl(i\gamma_{\imath\jmath\rho}\partial_\rho-m\gamma_{\imath\jmath}\bigr)\Xi_{\mathrm{wfn},\jmath}$ is the literature's, and no element of $\mathbb{B}$ that contracts the vector index with the chiral structure — the object the two multipliers need — has been constructed, so no biquaternionic density exists. The field is imported as $S\otimes V=4\oplus2$ with its constraint, so this is an absence in the algebra and not in field theory</td>
+</tr>
+<tr>
+<td>—</td>
+<td>$\geq\tfrac52$</td>
+<td>nothing</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td><strong>no</strong></td>
+<td><strong>no carrier in the roster</strong>: the frame construction ends at spin $2$, the symmetric square of the vector carrier. Fronsdal free fields and Vasiliev theories exist outside it, and interacting massless higher spin in flat space is constrained by no-go theorems; neither statement supplies a carrier here</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="7-the-functionals-written-out">7. The functionals, written out</h2>
+<p><strong>Written here rather than cited, because whether an article holds them is not the question.</strong></p>
+<p><strong>Primordial, one coupling on fifteen generators</strong>, with $D_{\imath}=\partial_{\imath}-ig_4\sum_{a=1}^{15}A_{a,\imath}t_{a}$:</p>
+<p>$$
+\mathcal{L}
+=-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}
++\sum_{f}\bar\xi_{f}\Bigl(-i\sum_{\imath}\varepsilon_{\imath}\gamma_{\imath}D_{\imath}\Bigr)\xi_{f}
++\operatorname{tr}\bigl(D_{\imath}Ξ\bigr)^{\dagger}\bigl(D_{\imath}Ξ\bigr)-V(Ξ)
++\mathcal{L}_{\mathrm{gf}}+\mathcal{L}_{\mathrm{gh}}+\mathcal{L}_{\mathrm{Yuk}}
+$$</p>
+<p>with $V(\Xi)=\mu_\Phi^2\operatorname{tr}\Xi^2+\mu_2^2(\operatorname{tr}\Xi)^2+\lambda_1\operatorname{tr}\Xi^4+\lambda_2(\operatorname{tr}\Xi^2)^2+\lambda_3(\operatorname{tr}\Xi)^2\operatorname{tr}\Xi^2+\lambda_4(\operatorname{tr}\Xi)^4$. It gives one equation $\sum_{\imath}\varepsilon_{\imath}D_{\imath}F_{a,\imath\jmath}=+g_4j_{a,\jmath}$ and fifteen Gauss laws, with $15\times2$ connection degrees of freedom, $32$ fermion states and $16$ real scalars.</p>
+<p><strong>Electroweak, both phases in one density</strong>, since the second is the first with the vacuum inserted:</p>
+<p>$$
+\mathcal{L}_{\mathrm{EW}}=-\tfrac14W_{a,\imath\jmath}W_{a,\imath\jmath}-\tfrac14B_{\imath\jmath}B_{\imath\jmath}
++\bigl(D_{\imath}\omicron\bigr)^{\dagger}\bigl(D_{\imath}\omicron\bigr)-V(\omicron)
++\sum_{f}\bar\psi_{f}\bigl(i\gamma_{\imath}D_{\imath}\bigr)\psi_{f}
+-\sum_{\alpha\beta}\Bigl(y^{u}_{\alpha\beta}\bar q_{\alpha}\tilde H u_{\beta}
++y^{d}_{\alpha\beta}\bar q_{\alpha}H d_{\beta}
++y^{e}_{\alpha\beta}\bar\ell_{\alpha}H e_{\beta}+\text{h.c.}\Bigr)
+$$</p>
+<p><strong>Gravity, the exact functional and its quadratic part:</strong></p>
+<p>$$
+S=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\,\sqrt{\lvert\det G\rvert}\,\bigl(R-2\Lambda\bigr)
+\qquad
+S^{(2)}=\frac{1}{2\kappa^{2}}\int\mathrm{d}^{4}x\Bigl\{-\tfrac12\partial_{\imath}h_{\imath\jmath}\partial_{\imath}h_{\imath\jmath}
++\partial_{\imath}h_{\imath\jmath}\partial_{\jmath}h-\partial_{\imath}h_{\imath\jmath}\partial_{\imath}h_{k\jmath}
++\tfrac12\partial_{\imath}h\partial_{\imath}h\Bigr\}
+$$</p>
+<p><strong>Force-Free, Proca and Dirac</strong>, in the corpus's own notation:</p>
+<p>$$
+\mathcal{L}_{\mathrm{Proca}}=\tfrac12\operatorname{Re}\operatorname{Sc}\bigl(\tilde F\tilde F\bigr)
+-\tfrac12 4\pi^{2}\nu_m^{2}\bigl\langle\tilde A_\Phi\bigr\rangle^{\natural}
+\qquad
+S_{\mathrm{Dirac}}=\int\operatorname{Re}\operatorname{Sc}\Bigl[\tilde\Xi_L^{*}\tilde\nabla^{\natural}\tilde\Xi_L
++\tilde\Xi_R^{*}\tilde\nabla\tilde\Xi_R-2\pi\nu_m\bigl(\tilde\Xi_L^{*}\tilde\Xi_R+\tilde\Xi_R^{*}\tilde\Xi_L\bigr)\Bigr]
+$$</p>
+<p><strong>Electromagnetism, the free functional, its charged fermion and its charged scalar:</strong></p>
+<p>$$
+S_{\mathrm{Max}}=\int\tfrac{\epsilon}{2}\operatorname{Re}\operatorname{Sc}\bigl(\tilde F\tilde F\bigr)
+\qquad
+\mathcal{L}_{\mathrm{QED}}=\bar\psi\bigl(i\gamma_{\imath}D_{\imath}-m\bigr)\psi-\tfrac14F_{\imath\jmath}F_{\imath\jmath}
+\qquad
+\mathcal{L}_{\mathrm{sQED}}=\bigl(D_{\imath}\varphi\bigr)^{\dagger}\bigl(D_{\imath}\varphi\bigr)-V(\varphi^{\dagger}\varphi)-\tfrac14F_{\imath\jmath}F_{\imath\jmath}
+$$</p>
+<p><strong>Klein–Gordon, Schrödinger, Yang–Mills</strong>, in their standard shapes:</p>
+<p>$$
+S_{\mathrm{KG}}=\int\Bigl[\tfrac12(\partial\varphi)^{2}-\tfrac12 m^{2}\varphi^{2}\Bigr]
+\qquad
+S_{\mathrm{Sch}}=\int\mathrm{d}t\,\Bigl\langle\psi\Bigl|\,i\hbar\partial_t-H\,\Bigr|\psi\Bigr\rangle
+\qquad
+S_{\mathrm{YM}}=-\tfrac12\int\mathrm{d}^{4}r\,\operatorname{Tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
+$$</p>
+<h2 id="8-corrections-this-audit-records-against-its-own-earlier-versions">8. Corrections this audit records against its own earlier versions</h2>
+<p><strong>Six, and each was a falsehood rather than a nuance.</strong> They are listed because an audit whose errors are not written down is not an audit.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the earlier claim</th>
+<th>why it was wrong</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Electromagnetism is empty at all three spins</td>
+<td><strong>filing was mistaken for existence.</strong> Maxwell's functional varies to $\tilde\nabla_\Phi\tilde F=-Z\tilde J_\Phi$, and the category has a Dirac and a charged-scalar action too</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)$ declines a scalar; no scalar couples to a gluon</td>
+<td><strong>the Faddeev–Popov ghost is a spin-$0$ colour octet in the QCD display</strong>, and the axion couples through $G\tilde G$. What is true is narrower: this roster's spin-$0$ carrier is the singlet line</td>
+</tr>
+<tr>
+<td>the spin-$\tfrac32$ line has no irreducible carrier, $S\otimes V=\mathbf4\oplus\mathbf2$</td>
+<td><strong>the family has the Rarita–Schwinger equation and not the action.</strong> The reducibility argument was wrong; what is missing is the biquaternionic density</td>
+</tr>
+<tr>
+<td>Force-Free spin $1$ is "free Maxwell; free Proca", differing by the mass alone</td>
+<td><strong>there is no Maxwell line in Force-Free.</strong> At $\nu_m\to0$ the shift symmetry appears, a mode is lost, and the object becomes a connection — a different category, not the same line at zero mass</td>
+</tr>
+<tr>
+<td>the strong spin-$\tfrac12$ line is "not in a triplet module"</td>
+<td><strong>quarks are colour triplets</strong> in standard QCD, gluons octets. The corpus's claim is about which <em>module</em> carries the triplet, not that the representation is absent — and the cell said the second</td>
+</tr>
+<tr>
+<td>the axion "couples through $GG$ and $G\tilde G$"</td>
+<td><strong>it is one operator, the CP-odd one.</strong> A CP-even scalar couples through $GG$; the axion is a pseudoscalar and its coupling is $G\tilde G$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="9-what-this-audit-does-not-claim">9. What this audit does not claim</h2>
+<p><strong>It does not claim a category lacks a Lagrangian.</strong> Every category has one at every spin that has a carrier.</p>
+<p><strong>It does not claim an empty line can be filled by writing harder.</strong> The $\tfrac32$ line fails on the algebra's own terms, the line above spin $2$ on the roster, the NRNQ $\tfrac12$ line on the absence of a real-valued classical limit.</p>
+<p><strong>It does not claim a declined term empties a line.</strong> Three terms are forbidden — two connection masses and a quartet Yukawa — and each sits in a category that keeps its action.</p>
+<p><strong>It does not claim spin fixes the functional.</strong> Spin, stage and mass are three inputs: Klein–Gordon and Schrödinger are both spin $0$; Maxwell and Proca both spin $1$; Dirac and Pauli both $\tfrac12$. <strong>And it does not claim the term count is invariant</strong>: a written count is a presentation, and the invariant count is modulo total derivatives, field redefinitions and the equations of motion — sixty parameters to nineteen in the Standard Model.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><code>articles_physics/the-lagrangian-and-the-electromagnetic-field.md</code> — the Maxwell functional and its variation.</li>
+<li><code>articles_physics/the-lagrangian-and-the-proca-equation.md</code> — the free Proca functional, and why the mass is not a choice.</li>
+<li><code>articles_physics/the-lagrangian-and-the-coupled-proca-equation.md</code> — what the coupling adds, and the mass term's invariance.</li>
+<li><code>articles_physics/the-lagrangian-and-the-topologically-massive-connection.md</code> — the topological mass and its derivative count.</li>
+<li><code>articles_physics/the-lagrangian-and-the-primordial-force.md</code> — the $\mathrm{SU}(4)$ block and its normalisation.</li>
+<li><code>articles_physics/the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.md</code> — the QCD block and its Feynman rules.</li>
+<li><code>articles_physics/the-lagrangian-and-the-electroweak-theory.md</code> — the electroweak action.</li>
+<li><code>articles_physics/the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.md</code> — the four sectors in one expression.</li>
+<li><code>articles_physics/antilinear-structure-and-the-two-kinds-of-mass-in-biquaternionic-form.md</code> — why a mass must pair with another field.</li>
+<li><code>articles_physics/the-exact-gravitational-action-the-functional-the-boundary-term-and-the-variation.md</code> — the exact functional and its boundary term.</li>
+<li><code>articles_physics/what-a-group-can-accept-a-carrier-must-transform-in-a-representation.md</code> — the acceptance test behind the declined terms.</li>
+<li><code>articles_physics/the-carrier-roster-three-spins-and-no-fourth.md</code> — why there is no carrier above spin $2$.</li>
+<li><code>articles_physics/the-inverse-problem-of-the-calculus-of-variations-helmholtz-conditions.md</code> — the theorem behind the viscous exclusion.</li>
+</ul>
       </div>
     </main>
   </div>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Stage is a set of reading instructions. The series of stage is a sum of graphs, and four rules say what each piece of a graph contributes: the…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors"><strong>The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Stage $4$ is a set of reading instructions. The series of stage $3$ is a sum of graphs, and four rules say what each piece of a graph contributes: the inverse of the quadratic operator for a line, the coefficient of a monomial for a vertex, an integral over each undetermined momentum, and the symmetry factor for the graph's automorphisms. Amputating the external lines and putting their momenta on the shell turns a correlator into an $S$-matrix element.</p>
+<p><strong>Why the rules are not a mnemonic.</strong> They are the reading of a computed series, and the computation is stages $2$ and $3$. The mnemonic is what a reader retains after forgetting the derivation, and calling it a mnemonic is honest about its retention and not about its status. <a href="the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html">Stage $2$</a> proves the line; <a href="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">stage $3$</a> proves the vertex and the symmetry factor; and this article collects the four into the form in which they are used.</p>
+<p><strong>The strongest objection.</strong> <em>Feynman rules are a calculational device with no content.</em> The objection mistakes the diagram for the physics. What the diagrams carry is the <em>order</em>: which processes contribute at which power of the coupling, which are tree and which are loop, and which are forbidden. That information is not in the density in any form a reader can see, and it is not in the equation of motion at all.</p>
+<p><strong>Position.</strong> Stage $4$ of the chain in <a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">the hub</a>, and the article that hands the diagrams to <a href="the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">the classical limit</a> and to <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">the failure modes</a>.</p>
+<h2 id="the-four-rules">The Four Rules</h2>
+<p><strong>Each rule reads one object of stages $2$ and $3$, and none of the four is optional.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rule</th>
+<th>what it says</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>propagator</td>
+<td>one line carries $\Delta=i/[-\mathcal M+i\epsilon]$, or the rung's numerator over that denominator</td>
+<td>the inverse of $\mathcal L_{2}$'s operator</td>
+</tr>
+<tr>
+<td>vertex</td>
+<td>one vertex carries $i$ times the monomial's coefficient times its matching count</td>
+<td>the coefficient of $\mathcal L_{\ge3}$</td>
+</tr>
+<tr>
+<td>loop momentum</td>
+<td>integrate $\int\frac{\mathrm{d}^{4}k}{h^{4}}$ over every momentum the external data do not fix</td>
+<td>the Fourier transform of an internal point</td>
+</tr>
+<tr>
+<td>symmetry factor</td>
+<td>multiply by $n!$ divided by the graph's automorphism count</td>
+<td>the expansion's $\frac{1}{n!}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The loop measure is the corpus's own and it carries the action quantum.</strong> The $\frac{\mathrm{d}^{4}k}{h^{4}}$ is $\frac{\mathrm{d}^{4}k}{(2\pi)^{4}}$ in the units $\frac{h}{2\pi}=1$, and every loop integral in the corpus's articles is written in one of the two. A reader who mixes the two measures across a computation gets a power of $2\pi$ per loop and nothing else, which is the kind of error that survives because it is invisible in a ratio.</p>
+<p><strong>The rules are stated for a connected graph with external legs, and the disconnected ones follow.</strong> The vacuum bubbles are the determinant's terms and divide out of every correlator; the connected diagrams are the logarithm of $Z$, and the one-particle-irreducible ones are the effective action's. <a href="the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action</a> states the three generating functionals and what each one's diagrams are.</p>
+<h2 id="the-diagrams-ordered-by-the-coupling">The Diagrams Ordered by the Coupling</h2>
+<p><strong>Ordering by vertices is the organisation, and it is what makes a truncated computation meaningful.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>diagram</th>
+<th>vertices</th>
+<th>order in $g$</th>
+<th>loops</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a single line</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>$0$</td>
+<td>free propagation</td>
+</tr>
+<tr>
+<td>two vertices joined by one line</td>
+<td>$2$</td>
+<td>$g^{2}$</td>
+<td>$0$</td>
+<td>tree-level exchange</td>
+</tr>
+<tr>
+<td>one vertex with one line closing</td>
+<td>$1$</td>
+<td>$g$</td>
+<td>$1$</td>
+<td>the first correction to the two-point function</td>
+</tr>
+<tr>
+<td>two vertices with one line closing</td>
+<td>$2$</td>
+<td>$g^{2}$</td>
+<td>$1$</td>
+<td>the first correction to a four-point function</td>
+</tr>
+<tr>
+<td>$n$ vertices, $L$ loops</td>
+<td>$n$</td>
+<td>$g^{n}$</td>
+<td>$L=I-n+1$</td>
+<td>the general term</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The loop number is not the order, and the table says so twice.</strong> A one-loop diagram can be order $g$ or order $g^{2}$; a fixed order can contain several loop numbers. Truncating at fixed order and truncating at fixed loop number are different truncations of the same series, and <a href="the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">the sixth article</a> is where the difference is used.</p>
+<h2 id="the-tree-amplitude">The Tree Amplitude</h2>
+<p><strong>The running example's tree amplitude is one vertex and four external legs.</strong> With the four legs on two components, <a href="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">stage $3$'s vertex</a> is $-2i\varpi_{\mathrm{cpl}}$, so the $s$-channel contribution is</p>
+<p>$$
+i\mathcal M_{s}=\bigl(-2i\varpi_{\mathrm{cpl}}\bigr)\times(\text{one external factor per leg})
+\quad\Longrightarrow\quad
+\mathcal M_{s}=-2\varpi_{\mathrm{cpl}},
+$$</p>
+<p>with the external factors equal to one after amputation and on-shell evaluation. The exchanged channel contributes the same with the legs crossed, and the two add for distinguishable components.</p>
+<p><strong>Nothing in this line is an approximation beyond the truncation itself.</strong> The vertex is exact at its order, the external legs are exact, and the amplitude is the coefficient of the monomial in the density, read once. That is what "exact at each order" means, and the phrase is used in the corpus in this sense only.</p>
+<p><strong>The amplitude's dimensions follow from the vertex's, and the check is one line.</strong> The density has dimension four and the quartic has dimension four, so $\varpi_{\mathrm{cpl}}$ carries dimension zero in units where the field is dimensionless, or dimension two where the field carries dimension one; the corpus's equation $(\Box_{\Phi}-4\pi^{2}\nu_{m}^{2})\tilde\Xi=\varpi_{\mathrm{cpl}}N\tilde\Xi$ fixes which, because both sides must carry the field's dimension over a length squared.</p>
+<h2 id="the-one-loop-correction">The One-Loop Correction</h2>
+<p><strong>The first quantum correction is a line that closes on itself, and its integral is the first place the method meets a divergence.</strong></p>
+<p>$$
+\Gamma^{(2)}_{1}(p)\;\propto\;\varpi_{\mathrm{cpl}}\int\frac{\mathrm{d}^{4}k}{h^{4}}\;\Delta(k)
+=\varpi_{\mathrm{cpl}}\int\frac{\mathrm{d}^{4}k}{h^{4}}\;\frac{i}{-\mathcal M(\tilde K_{\Phi})+i\epsilon}.
+$$</p>
+<p><strong>The integral is quadratically divergent and the divergence is not a technicality.</strong> With a hard cutoff $\Lambda$ in the Euclidean region the integral is $\pi^{2}\bigl[\Lambda^{2}-m^{2}\log\bigl(1+\Lambda^{2}/m^{2}\bigr)\bigr]$, so $\int\Delta$ grows like $\Lambda^{2}$: on the corpus's units the ratio to $\Lambda^{2}$ approached $\pi^{2}$ as $9.7217$, $9.8472$, $9.8670$, $9.8693$, $9.8696$ at $\Lambda=10,30,100,300,1000$ with $m=\tfrac12$, and the residual tracked $-m^{2}\log$ to four figures. The number is quoted because "quadratically divergent" is a claim about a limit, and the limit was taken.</p>
+<p><strong>The correction is absorbed, and the absorption is the renormalisation condition.</strong> Writing the two-point function as the free propagator times a series, the divergent part is a constant times the free propagator and is removed by a counterterm of the same form as the mass term. That is the definition of mass renormalisation, and it works at every order for the theories the corpus writes. <a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group</a> states the flow that the absorption defines, and <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">the last article of this section</a> states why the absorption is a condition and not a derivation.</p>
+<p><strong>The finite part is a prediction and the divergent part is not.</strong> This is the sentence a reader should carry away from the one-loop computation: the divergence is removed by a choice, and the choice is a measurement. What survives is a number the theory did not have before the loop was drawn.</p>
+<h2 id="the-math63-matrix-amputation-and-the-shell">The $S$-Matrix: Amputation and the Shell</h2>
+<p><strong>A correlator is not an amplitude, and the difference is four operations.</strong> <a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula</a> states them: Fourier transform each external leg with its plane-wave phase, amputate it by the wave operator, put every external momentum on the mass shell, and divide by $\sqrt Z$ per leg.</p>
+<p><strong>Amputation is multiplication by $\mathcal M$, and it removes exactly the propagator the leg carried.</strong> Off the pole,</p>
+<p>$$
+\mathcal M(\tilde Q_{\Phi})\,\Delta(\tilde Q_{\Phi})
+=\frac{i\mathcal M}{-\mathcal M+i\epsilon}\;\longrightarrow\;-i ,
+$$</p>
+<p>and the residual is $\frac{\epsilon}{|\mathcal M|}$, which was computed on one hundred random off-shell values with $\epsilon=10^{-8}$ and never exceeded $2.0\times10^{-8}$. The overall $-i$ is the external-state convention that the corpus's LSZ article records: relative to the standard wave operator the amputation carries a factor $-1$ per leg, and the factor is a convention and not a discrepancy.</p>
+<p><strong>The residue is the wave-function renormalisation, and it cancels out of the amplitude.</strong> Writing the two-point function near the pole as $Z/\mathcal M$ plus a regular part, the residue $Z$ is what the leg's overlap contributes; the formula's $Z^{-1/2}$ per leg removes it, so no $Z$ survives. On the shell the amplitude is the amputated correlator with the external momenta at $N(\tilde Q_{\Phi})=-m^{2}c^{2}$.</p>
+<p><strong>The four operations do not commute with a constraint, and the corpus's matrix rung is where that matters.</strong> At the matrix rung the fifteen Gauss laws mean not every external leg is a physical state, so amputation and the on-shell condition do not commute with the constraint; <a href="the-lsz-reduction-formula-in-biquaternionic-form.html">the LSZ article</a> states that the vector and matrix reductions are not written and why.</p>
+<h2 id="the-rules-the-corpus-already-wrote">The Rules the Corpus Already Wrote</h2>
+<p><strong>Four rule sets are collected in the corpus, and they stop at different places.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rule set</th>
+<th>what the article actually writes</th>
+<th>where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>QED</td>
+<td>the action and its two classical equations; it states in as many words that it has no propagator and no vertex</td>
+<td><a href="the-lagrangian-and-quantum-electrodynamics.html">QED</a></td>
+</tr>
+<tr>
+<td>QCD</td>
+<td>the quark, gluon and ghost propagators; the three- and four-gluon vertices and the ghost–gluon vertex</td>
+<td><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">QCD</a></td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>the sixteen's propagators and the full vertex list: $120$ entries, $48+12$ per half</td>
+<td><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">the $\mathrm{SU}(4)$ rules</a></td>
+</tr>
+<tr>
+<td>electroweak</td>
+<td>the five propagators and the $R_{\xi}$ family, $\frac{P}{\Pi-M^{2}}+\frac{\zeta L}{\Pi-\zeta M^{2}}$, with the $\zeta$-cancellation</td>
+<td><a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">$R_{\xi}$</a></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Only the QCD and $\mathrm{SU}(4)$ articles carry vertex lists, and the table says so rather than pretending otherwise.</strong> The QED article stops at the classical action; the $R_{\xi}$ article's subject is the propagator family and why the $\zeta$-dependent parts cancel, and its vertices appear only where the Ward identity needs them.</p>
+<p><strong>The electroweak row is the one that shows the rules' dependence on stage $0$.</strong> Its propagator is not the inverse of one operator but of a family, because the fixing term's parameter $\zeta$ is a choice; the physical answers do not depend on it, and the $\zeta$-dependent parts cancel between the Goldstone and the ghost because their poles coincide at $\Pi=\zeta M^{2}$. That is a statement about pole positions and it is <a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">the $R_{\xi}$ article's</a>, not this one's.</p>
+<p><strong>This section does not re-derive any of the four.</strong> Each article transcribes a standard rule set into the corpus's notation with the imported half marked, and the QED article stops earlier and says so. A reader who needs a vertex checks it in the rule article, not here.</p>
+<h2 id="what-the-rules-do-not-give">What the Rules Do Not Give</h2>
+<p><strong>Four things are outside the rules, and naming them keeps the stage honest.</strong></p>
+<p><strong>The interaction itself.</strong> The rules read a density; they do not choose one. Every density beyond the corpus's scalar quartic is imported.</p>
+<p><strong>The bound-state problem.</strong> Two-quark states and their masses are not diagrams at any finite order; <a href="hadron-structure-from-qcd-the-bound-state-problem.html">Hadron Structure from QCD: The Bound-State Problem</a> is the corpus's article on the gap.</p>
+<p><strong>The sign of $i\epsilon$.</strong> The algebra names the axis of the deformation and does not choose the orientation; the sign is a convention fixed by the vacuum.</p>
+<p><strong>Convergence.</strong> The rules produce a series; whether the series converges is not a rule's business, and the answer is no.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Stage $4$ reads the series by four rules.</strong> A line is the inverse of the quadratic operator; a vertex is the coefficient of a monomial times the unit of the expansion and its matching count; every undetermined momentum is integrated with $\frac{\mathrm{d}^{4}k}{h^{4}}$; and the graph's automorphisms divide the expansion's $n!$. The result is a sum of diagrams ordered by the number of vertices.</p>
+<p><strong>The tree amplitude of the running example is one vertex.</strong> With the four legs on two components the $s$-channel amplitude is $\mathcal M_{s}=-2\varpi_{\mathrm{cpl}}$; the first quantum correction is a closed line whose integral grows like $\Lambda^{2}$ in four dimensions, with $\int\Delta/\Lambda^{2}\to\pi^{2}$ verified at five cutoffs.</p>
+<p><strong>Amputation and the shell make the amplitude.</strong> Multiplication by $\mathcal M$ returns $-i$ off the pole with residual $\frac{\epsilon}{|\mathcal M|}$, verified below $2.0\times10^{-8}$ on one hundred values; the residue is $Z$, and the formula's $Z^{-1/2}$ per leg cancels it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\Delta$, $\mathcal M(\tilde Q_{\Phi})$</td>
+<td>the propagator and the mass-shell operator</td>
+</tr>
+<tr>
+<td>$\mathcal M_{s}$</td>
+<td>the $s$-channel amplitude</td>
+</tr>
+<tr>
+<td>$\Lambda$</td>
+<td>a momentum cutoff</td>
+</tr>
+<tr>
+<td>$Z$</td>
+<td>the wave-function renormalisation, the residue at the pole</td>
+</tr>
+<tr>
+<td>$P$, $L$</td>
+<td>the transverse and longitudinal projectors of the $R_{\xi}$ propagator</td>
+</tr>
+<tr>
+<td>$\Pi$</td>
+<td>the positive momentum invariant</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula in Biquaternionic Form</a>, the four operations that turn a correlator into an amplitude.</li>
+<li><a href="the-generating-functional-and-the-effective-action-in-biquaternionic-form.html">The Generating Functional and the Effective Action in Biquaternionic Form</a>, the three generating functionals and what each one's diagrams are.</li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model: The Vertices of the Fifteen and the Sixteen</a>, the corpus's largest rule set.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</a>, the three- and four-gluon and ghost rules.</li>
+<li><a href="fixing-the-representative-in-the-electroweak-theory-r-xi-conditions-ghosts-and-the-goldstone-equivalence-theorem.html">Fixing the Representative in the Electroweak Theory: $R_{\xi}$ Conditions, Ghosts and the Goldstone Equivalence Theorem</a>, the propagator family and the $\zeta$ cancellation.</li>
+<li><a href="the-renormalization-group-in-biquaternionic-form.html">The Renormalization Group in Biquaternionic Form</a>, what the absorbed divergence defines.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

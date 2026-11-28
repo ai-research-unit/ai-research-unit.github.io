@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator — Biquaternion Universe</title>
+  <meta name="description" content="The claim. The second stage of the method computes nothing and answers the question of what could be computed. The theory is the generating functional…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator"><strong>The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> The second stage of the method computes nothing and answers the question of what could be computed. The theory is the generating functional $Z[J]$; every correlator is a derivative of it with respect to the source; and the reason the functional is computable at all is that its quadratic part is a Gaussian. The Gaussian is integrated exactly, and its inverse is the propagator. Stages $1$ and $2$ are one article because they are one sentence: <em>here is the integral, and here is the one part of it that closes.</em></p>
+<p><strong>What the stage produces.</strong> Three objects, and each is used by everything after it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>object</th>
+<th>what it is</th>
+<th>where it goes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z[J]$</td>
+<td>the generating functional, with the source</td>
+<td>every correlator, by differentiation</td>
+</tr>
+<tr>
+<td>$\Delta=W^{-1}$</td>
+<td>the inverse of the quadratic operator</td>
+<td>the propagator, and every internal line</td>
+</tr>
+<tr>
+<td>$(\det W)^{-1/2}$</td>
+<td>the Gaussian's leftover</td>
+<td>the vacuum bubbles, and the one-loop determinant</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The strongest objection.</strong> <em>The functional integral is not a definition; nothing infinite-dimensional is exact.</em> The objection is half right, and the article states which half. The Gaussian is exact per mode: the operator is inverted exactly, and the algebra of the inversion is finite at every momentum. What is not exact is the measure, and the measure is not the algebra's. The exactness claimed here is exactness of the inversion, which is the whole of what the propagator needs.</p>
+<p><strong>Position.</strong> Stage $1$ and stage $2$ of the chain in <a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">the hub</a>, and the article that turns the collection of <a href="the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html">stage $0$</a> into the vertices and lines of <a href="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">stage $3$</a>.</p>
+<h2 id="the-generating-functional">The Generating Functional</h2>
+<p><strong>One functional carries the theory.</strong> With the source $J$ coupled to the field,</p>
+<p>$$
+Z[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{\mathrm{act}}+i\int J\phi\Bigr),\qquad
+\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S[\phi],
+$$</p>
+<p>and the correlators are its derivatives,</p>
+<p>$$
+\bigl\langle\phi(r_{1})\cdots\phi(r_{n})\bigr\rangle
+=\frac{1}{Z[0]}\Bigl(\frac{h}{2\pi i}\Bigr)^{n}
+\frac{\delta^{n}Z[J]}{\delta J(r_{1})\cdots\delta J(r_{n})}\Biggr|_{J=0}.
+$$</p>
+<p><strong>The whole of the method is a statement about this one line.</strong> "What does the theory predict?" becomes "can this integral be computed?" The theory is not silent about the answer; it says that the answer is a derivative of an integral whose non-Gaussian part is a polynomial. That is the fact the next stage exploits.</p>
+<p><strong>The exponent's two parts are the corpus's own, and they must not be conflated.</strong> The real part of the action gives the phase $\theta_{\mathrm{act}}$, which is what oscillates and what makes the integral a stationary-phase problem. The imaginary part gives $\kappa_{\mathrm{act}}$, the damping that decides which configurations dominate. <a href="the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a> states both, and states what the algebra supplies to each: the central imaginary supplies the phase, and the Wick rotation supplies the Euclidean weight. Neither is chosen by the algebra.</p>
+<h2 id="the-split-and-the-shift">The Split and the Shift</h2>
+<p><strong>Two lines turn a non-Gaussian integral into a Gaussian one times an operator.</strong> Write $S=S_{2}+S_{\mathrm{int}}$, shift the integration variable by the classical response to the source, and note that a functional derivative in $J$ is a multiplication by $\phi$ inside the integral. Then</p>
+<p>$$
+Z[J]=\exp\Bigl(iS_{\mathrm{int}}\bigl[\tfrac{\delta}{i\delta J}\bigr]\Bigr)\,Z_{0}[J],
+\qquad
+Z_{0}[J]=\int\mathcal D\phi\;\exp\Bigl(i\theta_{2}+i\int J\phi\Bigr).
+$$</p>
+<p><strong>The identity is exact and it is the whole content of "perturbation theory".</strong> No approximation has been made. The non-Gaussian part has been moved out of the integral and into an operator acting on the Gaussian's value. Everything after this line is either the evaluation of $Z_{0}$ or the expansion of that operator.</p>
+<p><strong>The shift is where the source's meaning is fixed.</strong> Completing the square in $Z_{0}$ gives the exponent $-\frac{i}{2}\int J\Delta J$, and $\Delta$ is the inverse of the quadratic kernel. The source therefore couples to the field through the propagator, and the two-point function at zeroth order in the interaction is $\Delta$ itself. That is the sentence the diagrams call <em>the internal line is the propagator</em>.</p>
+<p><strong>The operator's argument is a derivative, and the derivative is with respect to the source.</strong> Writing $S_{\mathrm{int}}[\delta/i\delta J]$ means: replace every field in the interaction by $\delta/i\delta J$, then act on $Z_{0}$. Each derivative brings down one factor of $\Delta J$ or one $\Delta$ from the exponent, which is why the expansion produces exactly the two objects the diagrams draw: lines and vertices.</p>
+<h2 id="the-gaussian-exact">The Gaussian, Exact</h2>
+<p><strong>The finite-dimensional identity is elementary, and the field case is the same identity per mode.</strong></p>
+<p>$$
+\int\mathrm{d}^{n}x\;\exp\Bigl(-\tfrac12x^{T}Ax+J^{T}x\Bigr)
+=\bigl(\det A\bigr)^{-1/2}\exp\Bigl(\tfrac12J^{T}A^{-1}J\Bigr).
+$$</p>
+<p><strong>The identity was checked by exact quadrature, not by trusting the formula.</strong> For one hundred random positive-definite $2\times2$ matrices and one hundred random sources, tensor Gauss–Hermite quadrature reproduced the closed form with a largest relative deviation of $1.3\times10^{-15}$; at dimension four with ten-point nodes the deviation was $2.8\times10^{-10}$, which is the quadrature's error and not the identity's. The check is small and it fixes the sign of the exponent, which is the one thing a reader is entitled to doubt.</p>
+<p><strong>The corpus's version differs by the measure and by the pairing.</strong> With $\langle\cdot,\cdot\rangle_{\mathbb R}$ the real part of the scalar pairing and $W$ the quadratic operator,</p>
+<p>$$
+\int\mathcal D\tilde\Xi\;\exp\Bigl(-\tfrac12\bigl\langle\tilde\Xi,W\tilde\Xi\bigr\rangle_{\mathbb R}
++\bigl\langle J,\tilde\Xi\bigr\rangle_{\mathbb R}\Bigr)
+=\bigl(\det W\bigr)^{-1/2}\exp\Bigl(\tfrac12\bigl\langle J,W^{-1}J\bigr\rangle_{\mathbb R}\Bigr),
+$$</p>
+<p>and the $i$ that the Minkowski weight carries is the central imaginary, which turns the exponent into the phase $\theta_{\mathrm{act}}$. <a href="the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a> states the rotation and what it costs.</p>
+<p><strong>The determinant is what is left over, and it is not zero.</strong> $(\det W)^{-1/2}$ is the vacuum's own factor, and its logarithm is the one-loop effective action of <a href="the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant</a>. A computation that wants correlators divides it out; a computation that wants the vacuum energy keeps it. The article below treats it as the closed loop it is.</p>
+<h2 id="the-inverse-is-the-propagator">The Inverse Is the Propagator</h2>
+<p><strong>The quadratic operator is inverted exactly, and its inverse is called the propagator.</strong> In the corpus's chart the scalar's operator is</p>
+<p>$$
+W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2},\qquad \nu_{m}=\frac{mc}{h},
+$$</p>
+<p>and its momentum-space symbol is $-\mathcal M(\tilde Q_{\Phi})$, with $\mathcal M$ the mass-shell operator $N(\tilde Q_{\Phi})+m^{2}c^{2}$. The propagator is therefore</p>
+<p>$$
+\Delta(\tilde Q_{\Phi})=\frac{i}{-\mathcal M(\tilde Q_{\Phi})+i\epsilon}
+=\frac{i}{-\bigl(N(\tilde Q_{\Phi})+m^{2}c^{2}\bigr)+i\epsilon}.
+$$</p>
+<p><strong>The sign was checked, because the whole chain hangs on it.</strong> With $N(\tilde Q_{\Phi})=-\frac{E^{2}}{c^{2}}+\vec p^{\,2}$ and $p_{0}=\frac{E}{c}$,</p>
+<p>$$
+-\mathcal M(\tilde Q_{\Phi})=-N(\tilde Q_{\Phi})-m^{2}c^{2}=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2},
+$$</p>
+<p>which is the standard $p^{2}-m^{2}$ in the $(+,-,-,-)$ convention. The sign is the one the corpus's <a href="the-feynman-propagator-in-biquaternionic-form.html">Feynman propagator article</a> displays, and the displayed formula and the inversion agree. A reader who writes $i/[\mathcal M+i\epsilon]$ instead has the pole on the wrong side of the axis and the wrong sign in every loop.</p>
+<p><strong>The free propagation is the whole content of the quadratic part.</strong> Nothing else is claimed: $\mathcal L_{2}$ inverts to $\Delta$, and $\Delta$ is what a line means. The mass, the wave operator and the $i\epsilon$ all sit in the one operator, and the propagator is what remains when it is inverted.</p>
+<p><strong>The fermion's inverse is the same inversion with a numerator.</strong> For the Dirac field the operator's symbol is the action $\mathcal A_{p}$, whose inverse is $(\mathcal A_{p}+mc)/(-\mathcal M+i\epsilon)$; the numerator is the spin sum, and its rank is two. <a href="the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator</a> writes the element form, and <a href="the-lsz-reduction-formula-in-biquaternionic-form.html">The LSZ Reduction Formula</a> shows that the residue is the spin sum and not a scalar.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>rung</th>
+<th>the operator $W$</th>
+<th>the propagator</th>
+<th>what the inverse is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>central scalar</td>
+<td>$\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$</td>
+<td>$i/[-\mathcal M+i\epsilon]$</td>
+<td>one scalar function</td>
+</tr>
+<tr>
+<td>Dirac</td>
+<td>the action $\mathcal A_{p}$</td>
+<td>$i(\mathcal A_{p}+mc)/[-\mathcal M+i\epsilon]$</td>
+<td>a rank-two spin sum</td>
+</tr>
+<tr>
+<td>connection, unfixed</td>
+<td>$p^{2}\delta_{\imath\jmath}-p_{\imath}p_{\jmath}$</td>
+<td>none: singular on $p$</td>
+<td>nothing, until the representative is fixed</td>
+</tr>
+<tr>
+<td>connection, fixed</td>
+<td>the $R_{\xi}$ kernel</td>
+<td>the transverse part plus the $\zeta$ part</td>
+<td>one matrix, invertible</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The third row is the row that fails, and it fails before any loop is drawn.</strong> The unfixed connection's kernel annihilates the momentum itself, because $p^{2}p_{\imath}-p_{\imath}p^{2}=0$; on one hundred random momenta the residual $\lVert Kp\rVert/\lVert p\rVert$ was $1.1\times10^{-15}$ and the smallest eigenvalue was $2\times10^{-15}$, while the Proca kernel $K+M^{2}\delta$ had smallest eigenvalue $M^{2}$ to machine precision. The zero mode is the orbit of the local symmetry, and it is <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">stage $2$'s only structural failure</a>.</p>
+<h2 id="the-determinant-is-the-vacuum-bubble">The Determinant Is the Vacuum Bubble</h2>
+<p><strong>The leftover factor is a closed loop, and this is the first appearance of the count that organises the quantum corrections.</strong> The Gaussian's $(\det W)^{-1/2}$ is the product over modes of $W$'s eigenvalues, and its logarithm is a trace,</p>
+<p>$$
+\Gamma_{1}=\tfrac12\,\mathrm{Tr}\log W ,
+$$</p>
+<p>which is the sum of the one-loop diagrams with no external legs. <a href="the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant</a> states what the algebra contributes to it — the pairing, the sector factorisation, the axis of the $i\epsilon$ — and what it does not: the regularisation, which is not a four-dimensional biquaternion construct.</p>
+<p><strong>The determinant is why stage $2$ is called exact and stage $4$ is called approximate.</strong> The inversion is exact and its leftover is exact; the series of which the leftover is the first term is not. The distinction is the subject of <a href="the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html">the last article</a>.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>The stage is the clearest case of the section's ledger, because the algebra supplies exactly one thing and it is decisive.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the stage needs</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the pairing that makes the integral a scalar</td>
+<td>the algebra, <a href="the-invariant-density-which-pairing-the-action-can-integrate.html">The Invariant Density</a></td>
+</tr>
+<tr>
+<td>the two sectors' factorisation</td>
+<td>the algebra, the central $i$ exchanges $\mathbb B_{\Psi}$ and $\mathbb B_{\Phi}$</td>
+</tr>
+<tr>
+<td>the operator whose inverse is the propagator</td>
+<td>the algebra, the mass-shell operator $\mathcal M$</td>
+</tr>
+<tr>
+<td>the axis of the $i\epsilon$ deformation</td>
+<td>the algebra names it: the $ir'_{t}$ direction; it does not choose the orientation</td>
+</tr>
+<tr>
+<td>the measure</td>
+<td>not the algebra; an analytic construction outside the finite-dimensional space</td>
+</tr>
+<tr>
+<td>the regularisation of the determinant</td>
+<td>not the algebra; <a href="the-functional-determinant-in-biquaternionic-form.html">the determinant article</a> says why</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The honest reading is that the inverse is the algebra's and the integral is not.</strong> The mass-shell operator is a real function of four real numbers, its inverse exists off the shell, and the residue at its zero is the wave-function renormalisation. All of that is algebra. The measure, the convergence and the regularisation are not, and the <a href="the-functional-integral-in-biquaternionic-form.html">functional integral article</a> says so in its own words. A reader who wants a derivation of the path integral from $\mathbb B$ will not find one, and this stage says that rather than dressing the import.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Stage $1$ defines the object and stage $2$ computes its quadratic part.</strong> The generating functional $Z[J]$ carries the theory, and every correlator is a derivative of it. Writing $S=S_{2}+S_{\mathrm{int}}$ factors the integral into an operator acting on a Gaussian, and the Gaussian is exact per mode: its inverse is the propagator, and its determinant is the vacuum's one-loop factor.</p>
+<p><strong>The propagator is the inverse of the quadratic operator, and its sign is the one the corpus displays.</strong> With $W=\Box_{\Phi}-4\pi^{2}\nu_{m}^{2}$ the symbol is $-\mathcal M$, so $\Delta=i/[-\mathcal M+i\epsilon]$ and $-\mathcal M=p_{0}^{2}-\vec p^{\,2}-m^{2}c^{2}$. The Gaussian identity was checked by exact quadrature to $1.3\times10^{-15}$ in dimension two.</p>
+<p><strong>The stage's one failure is structural and it is stated here.</strong> An unfixed connection's quadratic kernel annihilates the momentum, so it has no inverse and no propagator; the zero mode is the orbit, and fixing the representative is what removes it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$Z[J]$, $Z_{0}[J]$</td>
+<td>the generating functional, and its Gaussian part</td>
+</tr>
+<tr>
+<td>$\theta_{\mathrm{act}}$, $\kappa_{\mathrm{act}}$</td>
+<td>the action angle and the damping, from $\mathrm{Re}\,S$ and $\mathrm{Im}\,S$</td>
+</tr>
+<tr>
+<td>$W$, $\Delta=W^{-1}$</td>
+<td>the quadratic operator and the propagator</td>
+</tr>
+<tr>
+<td>$\mathcal M(\tilde Q_{\Phi})=N(\tilde Q_{\Phi})+m^{2}c^{2}$</td>
+<td>the mass-shell operator</td>
+</tr>
+<tr>
+<td>$p_{0}$, $\vec p$</td>
+<td>the wave biquaternion's components, $p_{0}=\frac{E}{c}$</td>
+</tr>
+<tr>
+<td>$\epsilon$</td>
+<td>the infinitesimal that fixes the pole's side</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>the gauge-fixing parameter of the $R_{\xi}$ family</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-functional-integral-in-biquaternionic-form.html">The Functional Integral in Biquaternionic Form</a>, the measure, the phase and the rotation, and what each costs.</li>
+<li><a href="the-feynman-propagator-in-biquaternionic-form.html">The Feynman Propagator in Biquaternionic Form</a>, the displayed propagator whose sign this article checks.</li>
+<li><a href="the-functional-determinant-in-biquaternionic-form.html">The Functional Determinant in Biquaternionic Form</a>, the leftover factor and its regularisation.</li>
+<li><a href="the-mass-shell-and-the-scalar-part.html">The Mass Shell and the Scalar Part: What a Congruence Preserves</a>, the level set that $N$ and $\mathcal M$ define, and what the congruence preserves on it.</li>
+<li><a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">The Lagrangian Method: From the Collected Lagrangian to the Feynman Diagram</a>, the chain this stage belongs to.</li>
+<li><a href="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html">The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action</a>, the stage that expands the operator this one factored out.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

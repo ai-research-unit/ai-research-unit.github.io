@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action — Biquaternion Universe</title>
+  <meta name="description" content="The claim. Stage turns the interaction into a series of local objects. Expanding the exponential of, each factor of is an integral of a polynomial; each…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action"><strong>The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The claim.</strong> Stage $3$ turns the interaction into a series of local objects. Expanding the exponential of $S_{\mathrm{int}}$, each factor of $S_{\mathrm{int}}$ is an integral of a polynomial; each polynomial is a sum of monomials; each monomial becomes one vertex, with the monomial's coefficient as its factor; and each functional derivative in the expansion brings down a field, which Wick's theorem pairs with another into a propagator. What remains after the pairing is a graph.</p>
+<p><strong>Three statements, and only one of them is a derivation.</strong> The vertex is the coefficient of the monomial, times the unit of the expansion; that is a definition read off the density. The pairing of fields two at a time is Wick's theorem; that is a theorem. And the number of vertices is the power of the coupling; that is the organisation the whole method exists to obtain. The article keeps the three apart because the literature usually merges them into one sentence called <em>the Feynman rules</em>.</p>
+<p><strong>The strongest objection.</strong> <em>The vertex is a definition, so the stage proves nothing.</em> Half right. The vertex's value is a definition — it is the interaction's coefficient, and no computation produces it. What the expansion proves is that the vertex is the <em>same</em> number at every order, that its position is a single point, and that the leftover multiplicity is the symmetry factor. Those three are the content, and they are what a reader who has only the definition cannot get.</p>
+<p><strong>Position.</strong> Stage $3$ of the chain in <a href="the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html">the hub</a>. It takes the factored operator of <a href="the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html">stage $2$</a> and hands the diagrams to <a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">stage $4$</a>.</p>
+<h2 id="the-expansion-of-the-exponential">The Expansion of the Exponential</h2>
+<p><strong>The operator is an exponential, and an exponential is a sum.</strong> With $S_{\mathrm{int}}=\int\mathcal L_{\ge3}$ and every field replaced by $\delta/i\delta J$,</p>
+<p>$$
+\exp\Bigl(iS_{\mathrm{int}}\bigl[\tfrac{\delta}{i\delta J}\bigr]\Bigr)
+=\sum_{n\ge0}\frac{1}{n!}\Bigl(i\int\mathrm{d}^{4}r\;\mathcal L_{\ge3}\bigl[\tfrac{\delta}{i\delta J}\bigr]\Bigr)^{n}.
+$$</p>
+<p><strong>Each term is a product of functional derivatives at possibly different points, acting on the Gaussian.</strong> The Gaussian's value is $\exp(-\frac{i}{2}\int J\Delta J)$, and a functional derivative of it is a linear function of $J$ times a $\Delta$. So an $n$-th order term is a product of $n$ monomials, each evaluated at its own point, with every field replaced by a sum of two kinds of object: a $\Delta J$, which is an external leg, and a $\Delta$, which joins two points.</p>
+<p><strong>The two kinds of object are the two kinds of line, and nothing else appears.</strong> This is the mechanical reason the output is a graph: the expansion produces points, and it produces pairings between points, and a set of points with pairings between them is a graph.</p>
+<p><strong>The factor $\frac{2\pi}{h}$ sits in the exponent and not in the vertex.</strong> The corpus's weight is $\exp(i\theta_{\mathrm{act}})$ with $\theta_{\mathrm{act}}=\frac{2\pi}{h}\mathrm{Re}\,S$, so the general vertex carries $\frac{2\pi i}{h}$ times the monomial's coefficient. Since $\frac{2\pi}{h}=\frac{1}{\hbar}$, the corpus's exponent is the standard $S/\hbar$, and the sector articles that write $i\times$ coefficient are working in the units $\frac{h}{2\pi}=1$. This article states the general factor once and then uses those units, as the corpus's <a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html">QCD</a> and <a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">$\mathrm{SU}(4)$</a> rule articles do.</p>
+<h2 id="one-monomial-one-vertex">One Monomial, One Vertex</h2>
+<p><strong>A monomial is local, so its vertex is a point.</strong> Let the interaction contain a monomial $c\prod_{i=1}^{m}\phi(r)$ for a single real field, with $c$ the coefficient exactly as the density writes it, sign and denominator included. The corresponding term in $iS_{\mathrm{int}}[\delta/i\delta J]$ is a product of $m$ derivatives all at the same $r$, and when they act on the Gaussian they produce a factor at $r$ and $m$ lines leaving $r$. The vertex is therefore</p>
+<p>$$
+\text{vertex}=i\,c\,M\,\times(\text{momentum conservation}),
+$$</p>
+<p>with $M$ the number of complete assignments of the monomial's $m$ field slots to the $m$ external legs. The product $cM$ is what decides whether the vertex carries the coupling or a multiple of it.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>interaction</th>
+<th>coefficient</th>
+<th>matchings</th>
+<th>vertex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$-\frac{\lambda}{4!}\phi^{4}$</td>
+<td>$-\frac{\lambda}{24}$</td>
+<td>$24$</td>
+<td>$-i\lambda$</td>
+</tr>
+<tr>
+<td>$-\frac{\varpi_{\mathrm{cpl}}}{4}N^{2}$, four legs on one component</td>
+<td>$-\frac{\varpi_{\mathrm{cpl}}}{4}$</td>
+<td>$24$</td>
+<td>$-6i\varpi_{\mathrm{cpl}}$</td>
+</tr>
+<tr>
+<td>$-\frac{\varpi_{\mathrm{cpl}}}{4}N^{2}$, two legs on each of two components</td>
+<td>$-\frac{\varpi_{\mathrm{cpl}}}{4}$</td>
+<td>$8$</td>
+<td>$-2i\varpi_{\mathrm{cpl}}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The matching counts were computed, not guessed.</strong> Differentiating $N^{2}$ four times symbolically on the corpus's own field, with $N=\mathrm{Sc}(\tilde\Xi^{*}\tilde\Xi)$ written as a sum of eight real squares, gave $24$ for four legs on one component, $8$ for two legs on each of two components and $8$ for the crossed assignment. The fourth derivative of $\phi^{4}$ is $24$. The three rows are one rule and not three conventions.</p>
+<p><strong>The corpus's $\frac14$ is fixed by the equation of motion, and the vertex inherits the consequence.</strong> <a href="the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a> chooses $\frac{\varpi_{\mathrm{cpl}}}{4}$ so that the field equation's right side carries $\varpi_{\mathrm{cpl}}$ and not $2\varpi_{\mathrm{cpl}}$. The vertex is whatever the matching count then gives, which for four legs on one component is $-6i\varpi_{\mathrm{cpl}}$. A density written $-\frac{\varpi_{\mathrm{cpl}}}{24}N^{2}$ would give the vertex $-i\varpi_{\mathrm{cpl}}$ and the equation's right side $\frac{\varpi_{\mathrm{cpl}}}{6}N\tilde\Xi$; the two normalisations cannot be chosen independently, and this is the one place where the corpus's classical convention shows through into the diagrams.</p>
+<h2 id="the-pairing-is-wicks-theorem">The Pairing Is Wick's Theorem</h2>
+<p><strong>Wick's theorem is the statement that a Gaussian's moments are the sum over pairings.</strong> For a Gaussian of covariance $\Delta$,</p>
+<p>$$
+\bigl\langle\phi(r_{1})\cdots\phi(r_{2n})\bigr\rangle_{0}
+=\sum_{\text{pairings}}\prod_{\text{pairs}}\Delta(r_{i}-r_{j}),
+$$</p>
+<p>and every odd moment vanishes. <a href="the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a> states the theorem, the fermionic sign, and the one-mode identity that closes exactly inside $\mathbb{B}$.</p>
+<p><strong>The sum over pairings is the sum over diagrams, and the correspondence is one-to-one.</strong> A pairing of the fields is a set of lines; the points at which the fields sat are the vertices; and the external legs are the unpaired fields that the source derivatives supplied. A diagram is a pairing drawn.</p>
+<p><strong>The $1/n!$ and the $n!$ orderings cancel, and the leftover is the symmetry factor.</strong> The expansion's $\frac{1}{n!}$ divides by the order of the vertices; a generic diagram is counted $n!$ times, once per ordering of its vertices, so the two cancel and the diagram's coefficient is one. A diagram with symmetries is counted fewer than $n!$ times, and the leftover is the symmetry factor: $n!$ divided by the diagram's automorphism count. The factor is a property of the graph, not of the field, and it is why the same vertex produces a factor $\frac12$ in one topology and $1$ in another.</p>
+<p><strong>The fermionic sign is a scalar and not an operator.</strong> Every exchange of two fermionic fields in the pairing contributes $-1$, and the sign multiplies the diagram. <a href="the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem</a> records that the sign comes from the grading of the module and not from an extra convention; the corpus's <a href="three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">three-diagram article</a> draws diagrams in which it is explicit.</p>
+<h2 id="the-count-of-vertices-is-the-power-of-the-coupling">The Count of Vertices Is the Power of the Coupling</h2>
+<p><strong>The organisation the method exists to obtain is one line long.</strong> If every monomial of $\mathcal L_{\ge3}$ carries one power of a coupling $g$, then a term with $n$ factors of $S_{\mathrm{int}}$ has $n$ vertices and order $g^{n}$. The series is therefore ordered by graphs and not by powers of the field.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>diagram</th>
+<th>vertices</th>
+<th>order</th>
+<th>what it is</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>one propagator</td>
+<td>$0$</td>
+<td>$1$</td>
+<td>free propagation</td>
+</tr>
+<tr>
+<td>two vertices joined</td>
+<td>$2$</td>
+<td>$g^{2}$</td>
+<td>tree-level scattering</td>
+</tr>
+<tr>
+<td>one closed loop at one vertex</td>
+<td>$1$</td>
+<td>$g$</td>
+<td>the first quantum correction to the mass</td>
+</tr>
+<tr>
+<td>$L$ loops, $n$ vertices</td>
+<td>$n$</td>
+<td>$g^{n}$</td>
+<td>the quantum corrections at that order</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The table's second row is the one that corrects the usual misreading.</strong> A four-point interaction is one vertex, so a $2\to2$ process at tree level is order $g$ and not order $g^{4}$. The degree of the monomial is four; the order in the coupling is one. The method's whole efficiency is that the second number, not the first, organises the sum.</p>
+<p><strong>Loops and vertices are independent counts, and that is why the loop expansion is a different organisation.</strong> The number of loops is $L=I-V+1$ for a connected graph with $I$ internal lines and $V$ vertices, so a fixed order in the coupling is a fixed $V$ and a variable $L$. <a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">The fourth article</a> uses the relation to order the diagrams, and <a href="the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">the sixth</a> uses it to count powers of the action quantum.</p>
+<h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
+<p><strong>This stage is where the corpus's ledger is thinnest, and the article says so.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>what the stage needs</th>
+<th>where it comes from</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the monomials and their coefficients</td>
+<td>the density, <a href="the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html">stage $0$</a></td>
+</tr>
+<tr>
+<td>the pairing, and the fermionic sign</td>
+<td>the algebra, the grading of the module, <a href="the-wick-theorem-in-biquaternionic-form.html">the Wick article</a></td>
+</tr>
+<tr>
+<td>the one-mode exactness of the identity</td>
+<td>the algebra, <a href="the-wick-theorem-in-biquaternionic-form.html">the Wick article</a></td>
+</tr>
+<tr>
+<td>a vertex native to $\mathbb{B}$</td>
+<td>nothing: the vertex is the interaction's coefficient, and the corpus's interactions are imported</td>
+</tr>
+<tr>
+<td>the Standard Model's vertex list</td>
+<td>not the algebra: <a href="the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">the quantisation hub</a> is the ledger</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The vertex is not an algebraic object, and pretending otherwise would be the section's one overclaim.</strong> The algebra hosts the pairing and grades the sign. The vertex is a number read from a density, and every density beyond the corpus's own scalar quartic is imported. A reader who wants the vertex list of the strong sector will find it transcribed in <a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model</a>, with the imported half marked.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Stage $3$ expands the interaction and pairs the fields.</strong> Each factor of $S_{\mathrm{int}}$ costs one power of the coupling; each monomial becomes one local vertex with the monomial's coefficient; each functional derivative brings down a field; and Wick's theorem sums over the pairings, which are the lines.</p>
+<p><strong>One rule covers every vertex.</strong> The vertex is $i$ times the coefficient times the number of complete matchings, and the matching count is what the coefficient's denominator divides. Differentiating the corpus's $N^{2}$ four times gave $24$ matchings for four legs on one component and $8$ for two legs on each of two; the corresponding vertices are $-6i\varpi_{\mathrm{cpl}}$ and $-2i\varpi_{\mathrm{cpl}}$. The $\frac14$ in the corpus's density is fixed by the field equation, and the vertex inherits its consequence.</p>
+<p><strong>The $1/n!$ cancels the vertex orderings and leaves the symmetry factor.</strong> The fermionic sign is a scalar from the grading. And the number of vertices is the order in the coupling, so a quartic is order one and not order four.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$S_{\mathrm{int}}$</td>
+<td>$\int\mathcal L_{\ge3}$</td>
+</tr>
+<tr>
+<td>$c$</td>
+<td>the coefficient of an interaction monomial</td>
+</tr>
+<tr>
+<td>$m$</td>
+<td>the degree of the monomial, equal to its number of field slots</td>
+</tr>
+<tr>
+<td>$n$, $V$</td>
+<td>the number of factors of $S_{\mathrm{int}}$, hence the number of vertices</td>
+</tr>
+<tr>
+<td>$L$, $I$</td>
+<td>the number of loops and of internal lines, $L=I-V+1$</td>
+</tr>
+<tr>
+<td>$\Delta$</td>
+<td>the propagator, from stage $2$</td>
+</tr>
+<tr>
+<td>$h$</td>
+<td>the action quantum; the vertex carries $\frac{2\pi i}{h}$ times the coefficient in general</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-wick-theorem-in-biquaternionic-form.html">The Wick Theorem in Biquaternionic Form</a>, the pairing, the sign and the one-mode identity.</li>
+<li><a href="the-lagrangian-and-the-interacting-scalar-field.html">The Lagrangian and the Interacting Scalar Field</a>, the quartic whose coefficient this article reads as a vertex.</li>
+<li><a href="the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html">The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors</a>, the stage that reads the series this one produced.</li>
+<li><a href="the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html">The Feynman Rules of the $\mathrm{SU}(4)$ Model: The Vertices of the Fifteen and the Sixteen</a>, the corpus's largest vertex list, transcribed.</li>
+<li><a href="three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html">Three Diagrams of the SU(4) Model: The Kaon, the Proton Chain and a Gluon Exchange</a>, the diagrams drawn, with the signs and the factors explicit.</li>
+<li><a href="the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html">The Quantisation Hub: The Sixteen Articles That Import the Promotion</a>, the ledger of what the corpus transcribes.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
