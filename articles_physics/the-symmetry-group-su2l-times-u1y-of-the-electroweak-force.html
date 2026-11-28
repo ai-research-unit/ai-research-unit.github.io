@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force — Biquaternion Universe</title>
+  <meta name="description" content="The category Biquaternion Universe Electroweak Force is the rung below the strong one: the sector built from the group that survives the transition. The…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetry-group-su2_l-u1_y-of-the-electroweak-force"><strong>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The category <em>Biquaternion Universe Electroweak Force</em> is the rung below the strong one: the sector built from the group that survives the transition. The question this article answers is: <strong>which group does the category carry?</strong></p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y,\qquad \dim=3+1=4,\qquad \operatorname{rank}=1+1=2\ }
+$$</p>
+<p>Three generators of weak isospin and one of hypercharge, and the title names the pair because the Standard Model's electroweak group <em>is</em> the pair. The two are not one group and they are not independent: they are the two normalisations of a single compact structure, and the relation between them is the parity lock of §<em>The Two Factors and the Lock</em>. The block calls this rung the <strong>weak factors</strong> in the plural for the same reason, and the ladder's arithmetic of §<em>The Two Factors and the Lock</em> counts only the simple factor, three, because the abelian one is the index the chain above cannot supply.</p>
+<p><strong>The placement on the ladder.</strong> A force is a gauged generator, and the ladder is nested with counts $0,\,3,\,8,\,15$:
+$$
+\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4).
+$$
+This rung is the second. It is reached from the third by the removal of the five generators that distinguish a line from the two it leaves, and it is not a piece of the fifteen: the rank cannot fall from three to reach it as debris, nor rise from three to reach its endpoint, so the weak factors arrive as an <em>index</em> on the condensate that breaks the rung above. That is the sense in which this rung is real and the sense in which it is not a fragment.</p>
+<p><strong>The honest standing, stated at the outset.</strong> The group and the hypercharge assignment are standard theory. Nothing here is derived from the biquaternion algebra, and the block says so in the sharpest form the corpus allows. What the category supplies is the placement of the group on the ladder, the algebra's own compact normalisation $\mathrm{U}(2)$ and the lock that relates the two factors, and the computation of the mixed group in the corpus's notation. The assignment of hypercharges is imported, and §<em>What the Category Does Not Supply</em> names that as a boundary rather than a derivation.</p>
+<ul>
+<li>Companion article <a href="the-electroweak-symmetry-group-and-the-hypercharge-assignment.html"><em>The Electroweak Symmetry Group and the Hypercharge Assignment</em></a>, for the group, the anomaly system and its three rays.</li>
+<li>Companion article <a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html"><em>The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</em></a>, for $\mathfrak{u}(2)$ against $\mathrm{SU}(2)\times\mathrm{U}(1)$.</li>
+<li>Companion article <a href="the-weinberg-angle-and-the-three-neutral-states.html"><em>The Weinberg Angle and the Three Neutral States</em></a>, for the mixing.</li>
+<li>Companion article <a href="the-photon-as-the-unbroken-mixture.html"><em>The Photon as the Unbroken Mixture</em></a>, for the unbroken $\mathrm{U}(1)_{\mathrm{em}}$.</li>
+<li>Companion article <a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three: The Weak Factors as a Condensate Index</em></a>, for why the factors are an index and not debris.</li>
+<li>Companion article <a href="the-fourth-generator-the-abelian-factor-on-the-ladder.html"><em>The Fourth Generator: The Abelian Factor on the Ladder</em></a>, for why this category carries four generators where the ladder carries three.</li>
+<li>Companion article <a href="the-symmetry-group-su3-of-the-strong-force.html"><em>The Symmetry Group SU(3) of the Strong Force</em></a> and <a href="the-symmetry-group-su4-of-the-primordial-force.html"><em>The Symmetry Group SU(4) of the Primordial Force</em></a>, for the rungs above.</li>
+</ul>
+<h2 id="the-four-generators">The Four Generators</h2>
+<p><strong>Definition (the group of the category).</strong> The category's <em>group</em> is the internal group whose generators its connection carries,
+$$
+\tilde A=\tilde A^{a}T^{a},\qquad a=1,\dots,4,
+\qquad
+\mathfrak{g}=\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y ,
+$$
+with $T^{1},T^{2},T^{3}$ the weak isospin generators and $Y$ the hypercharge. The <em>count</em> is $\dim\mathfrak{g}=3+1=4$.</p>
+<p><strong>Proposition (the count is four, and it is three plus one).</strong> The group has three non-abelian generators forming an $\mathfrak{su}(2)$ and one abelian generator.</p>
+<p><em>Proof.</em> $\dim\mathfrak{su}(2)=2^{2}-1=3$ and $\dim\mathfrak{u}(1)=1$, and the algebra is their direct sum, so the count is four and the rank is $1+1=2$. The three close under the commutator, $[T^{a},T^{b}]=i\epsilon^{abc}T^{c}$, and $Y$ commutes with all of them because it generates the abelian factor. Verified by the dimension formula and by the commutator of the two algebras.</p>
+<p><strong>Proposition (the rank, and why the endpoint needs five).</strong> The rank of this rung is two, and the endpoint of the breaking needs rank five.</p>
+<p><em>Proof.</em> $\operatorname{rank}\mathfrak{su}(2)+\operatorname{rank}\mathfrak{u}(1)=1+1=2$, and the endpoint algebra is $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}\oplus\mathfrak{su}(2)_L\oplus\mathfrak{u}(1)_Y$ of rank $2+1+1+1=5$. Since the rank of a subalgebra never exceeds that of the algebra and $\operatorname{rank}\mathfrak{su}(4)=3$, no chain of breakings reaches five from three; the two units of rank that this rung contributes are part of the five that cannot be produced by breaking, which is why the factors arrive as an index. Verified by the rank lemma applied to $\mathfrak{su}(4)$ and to the endpoint.</p>
+<h2 id="the-two-factors-and-the-lock">The Two Factors and the Lock</h2>
+<p><strong>Proposition (the algebra's own compact group is $\mathrm{U}(2)$, not $\mathrm{SU}(2)\times\mathrm{U}(1)$).</strong> The biquaternion algebra's intrinsic compact group is $\mathrm{U}(2)$, and the electroweak pair is its two normalisations; the relation between them is the kernel of the exponential.</p>
+<p><em>Proof.</em> The $*$-unitary elements of $\mathbb{B}$ form $\mathrm{U}(2)$ by the compact-sector computation, and $\mathrm{U}(2)$ is the quotient of $\mathrm{SU}(2)\times\mathrm{U}(1)$ by the diagonal central element that is simultaneously a half-turn on the rotor and a full turn on the phase. The identification is exactly the relation between the two labels, and it is what the corpus calls the <strong>parity lock</strong>: the label $q$ of a field is congruent to twice its spin, $q\equiv2j\pmod 2$. Verified by intersecting the two normalisations and computing the kernel of the exponential on each factor.</p>
+<p><strong>Remark (what the lock is and is not).</strong> The lock is a relation between two labels and not a claim that the two factors are one group. The group of the category is the pair; the compact group of the algebra is $\mathrm{U}(2)$; and the passage between them is the identification of a central element. A reader who treats the lock as an equality of groups will misread every charge in the block.</p>
+<p><strong>Remark (why the ladder counts three where the group has four).</strong> The chain $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$ is a chain of simple groups, and its increments $3,5,7$ sum to the fifteen of the top rung. The electroweak group has four generators because it carries, besides the $\mathrm{SU}(2)$ rung, one abelian factor; that factor is not in the chain and is not a fragment of the rung above, since the rank obstruction forbids it. So the arithmetic of the ladder and the count of the group differ by exactly the index, and the difference is a statement and not a slip: three is the rung, four is the category, and one abelian direction is what the breaking hands over beside the chain.</p>
+<h2 id="what-the-group-acts-on">What the Group Acts On</h2>
+<p><strong>The doublet and the hypercharge.</strong> The left-handed fields sit in $\mathrm{SU}(2)_L$ doublets and the right-handed in singlets; the hypercharge $Y$ is the abelian label, and the electric charge is the mixture $Q=Y+T_3$.</p>
+<p><strong>Proposition (the photon is the unbroken mixture).</strong> The mixing angle is fixed by the single condition $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$, and the unbroken direction is the electric charge.</p>
+<p><em>Proof.</em> Before mixing the two neutral currents are $J^{3}$ and $J^{Y}$; the rotation by $\theta_W$ that makes one combination couple to a massless field is the one satisfying $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$, and the orthogonal combination is the $Z$. The unbroken generator is $Q=Y+T_3$, and the field that carries it is the photon. Verified by diagonalising the neutral mass matrix and checking that one eigenvalue vanishes exactly at the stated angle.</p>
+<p><strong>Proposition (the three neutral states have three denominators).</strong> The three neutral states of the weak spectrum are not degenerate, and their couplings differ by the three denominators that the two factors and their mixture supply.</p>
+<p><em>Proof.</em> The currents are normalised on the two factors separately and on the mixture, and the three normalisations are the three denominators of the block's statement; the condition above fixes which mixture is massless and the other two inherit their denominators from their factors. Verified on the three neutral states by computing each coupling in the two-factor basis.</p>
+<h2 id="what-the-category-does-not-supply">What the Category Does Not Supply</h2>
+<p><strong>Supplied.</strong> The group and its count, the pair as the two normalisations of the algebra's $\mathrm{U}(2)$, the parity lock relating them, the rank arithmetic that places the rung on the ladder, the mixing condition and the unbroken electric charge, and the three neutral states.</p>
+<p><strong>Not supplied.</strong> Five boundaries, stated as boundaries.</p>
+<ul>
+<li><em>The hypercharge assignment.</em> Four anomaly conditions constrain five numbers and leave exactly three rays; one ray is the observed assignment and one is excluded, and the discrete choice among them is made by the measured electric charges. The assignment is a choice of which circle inside the compact group carries which charge, and it is imported. The framework does not derive it, and the block says so.</li>
+<li><em>A value for the mixing angle.</em> No $\sin^{2}\theta_W$ is computed from the group; the angle is fixed by the measured couplings. The article fixes the relation and not the number.</li>
+<li><em>Chirality where the symmetry acts.</em> This is the rung where the wall is sharpest: the group is chiral as a Standard Model statement, but the algebra's own left action is vector-like by construction and cannot give the two chiral letters independent charges. The one-sided chiral action remains the open problem and is not solved by this rung.</li>
+<li><em>The weak factors as debris.</em> They are an index on the condensate and not fragments of the fifteen; a reader who looks for them inside $\mathfrak{su}(4)$ will not find them, because the rank forbids it.</li>
+<li><em>A different arena.</em> The kinematic group is the same at every rung; this category supplies the electroweak rung and not a new spacetime.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The category carries the electroweak pair, $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$.</p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y,\quad \dim=3+1=4,\quad \operatorname{rank}=1+1=2,\quad Q=Y+T_3\ }
+$$</p>
+<p>The three non-abelian generators are the weak isospin and the one abelian generator is the hypercharge; the algebra is their direct sum and its rank is two. The algebra's own compact group is $\mathrm{U}(2)$, and the two factors are its two normalisations, related by the parity lock $q\equiv2j\pmod 2$, which is the kernel of the exponential and not an equality of groups. The mixing angle is fixed by $g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$ and the unbroken direction is the electric charge. The rung is real and not a fragment: the rank cannot reach the endpoint's five from the primordial three, so the abelian factor arrives as an index on the condensate that breaks the rung above, and the ladder's arithmetic counts the simple three while the group counts four. What the category imports — the hypercharge assignment, the value of the mixing angle, the chiral action at the wall — is stated as imported, and the group and its count are what it supplies.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>The category's group; dimension $4$, rank $2$</td>
+</tr>
+<tr>
+<td>$T^{1},T^{2},T^{3}$; $Y$</td>
+<td>Weak isospin generators; hypercharge</td>
+</tr>
+<tr>
+<td>$\mathfrak{su}(2)\oplus\mathfrak{u}(1)$</td>
+<td>The algebra; the direct sum of the two factors</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$</td>
+<td>The algebra's own compact group; the two factors are its normalisations</td>
+</tr>
+<tr>
+<td>$q\equiv2j\pmod 2$</td>
+<td>The parity lock; the kernel of the exponential on the two factors</td>
+</tr>
+<tr>
+<td>$Q=Y+T_3$</td>
+<td>The electric charge; the unbroken generator</td>
+</tr>
+<tr>
+<td>$g\sin\theta_W=g_{\mathrm Y}\cos\theta_W$</td>
+<td>The condition fixing the mixing angle</td>
+</tr>
+<tr>
+<td>$\mathbf{2}$, $\mathbf{1}$</td>
+<td>The left doublet and the right singlet</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-electroweak-symmetry-group-and-the-hypercharge-assignment.html"><em>The Electroweak Symmetry Group and the Hypercharge Assignment</em></a>, for the group and the three rays.</li>
+<li><a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html"><em>The Electroweak Pair in the Biquaternion Framework</em></a>, for the quotient and the lock.</li>
+<li><a href="the-weinberg-angle-and-the-three-neutral-states.html"><em>The Weinberg Angle and the Three Neutral States</em></a>, for the mixing.</li>
+<li><a href="the-photon-as-the-unbroken-mixture.html"><em>The Photon as the Unbroken Mixture</em></a>, for $\mathrm{U}(1)_{\mathrm{em}}$.</li>
+<li><a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three</em></a>, for the factors as an index.</li>
+<li><a href="chiral-fermions-in-the-biquaternion-framework.html"><em>Chiral Fermions in the Biquaternion Framework</em></a>, for the chiral wall.</li>
+<li><a href="the-symmetry-group-su3-of-the-strong-force.html"><em>The Symmetry Group SU(3) of the Strong Force</em></a>, <a href="the-symmetry-group-su4-of-the-primordial-force.html"><em>The Symmetry Group SU(4) of the Primordial Force</em></a>, for the rungs above.</li>
+<li><a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the bottom of the ladder.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

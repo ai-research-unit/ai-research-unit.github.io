@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fourth Generator: The Abelian Factor on the Ladder, and Why the Chain Is Not Broken — Biquaternion Universe</title>
+  <meta name="description" content="The confusion, stated in the reader&#x27;s voice. The ladder of this series is one simple group per rung, one coupling per rung, each rung reached from the one…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-fourth-generator-the-abelian-factor-on-the-ladder-and-why-the-chain-is-not-broken"><strong>The Fourth Generator: The Abelian Factor on the Ladder, and Why the Chain Is Not Broken</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The confusion, stated in the reader's voice.</strong> The ladder of this series is
+$$
+\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4),
+\qquad
+0,\ 3,\ 8,\ 15,
+\qquad
+3+5+7=15,
+$$
+one simple group per rung, one coupling per rung, each rung reached from the one above by a stabiliser. Every force in the series fits this shape but one. The electroweak category carries $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ — <strong>four</strong> generators, <strong>two</strong> couplings, <strong>two</strong> factors, and a group that is not simple. Three is on the ladder and four is not. So the reader who has internalised the ladder is entitled to ask whether the electroweak rung is a rung at all, and whether the series' own arithmetic has failed at exactly the place it was supposed to be exact.</p>
+<p><strong>The answer.</strong> The ladder is a chain of <em>simple</em> groups, and its arithmetic is a statement about simple groups. The electroweak category carries a simple rung <strong>plus an abelian index</strong>, and the two are different objects that the series books separately. Three is the rung; four is the category. Nothing on the ladder is broken, because the fourth generator was never in the ladder's scope.</p>
+<p><strong>The accounting that settles it.</strong></p>
+<p>$$
+\boxed{\;
+\operatorname{rank}=5
+=\underbrace{3}_{\text{kernel }\mathfrak{u}(3)}
++\underbrace{2}_{\text{index}}
+=\underbrace{\bigl(\underbrace{2}_{\mathfrak{su}(3)}+\underbrace{1}_{B-L}\bigr)}_{\text{from the breaking}}
++\underbrace{\bigl(\underbrace{1}_{\mathfrak{su}(2)_L}+\underbrace{1}_{Y}\bigr)}_{\text{from the condensate}}
+\;}
+$$</p>
+<p>The endpoint needs rank five. The top rung has rank three. The difference is not a defect in the chain: it is two units of rank, and they are <em>named</em> — the index that the transition carries. The chain pays three, the index pays two, and the abelian factor the reader has noticed is one of the two coins the index pays with.</p>
+<p><strong>What this article is, and what it is not.</strong> It is the article that owns the exception: it states what the fourth generator is, why it cannot be a rung, where it comes from, and what would have to be true for the ladder genuinely to fail. It is not a second treatment of the electroweak group — <a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of the Electroweak Force</em></a> writes that group, and <a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html"><em>The Electroweak Pair in the Biquaternion Framework</em></a> writes the quotient. This article writes the <em>discrepancy</em> between those and the ladder, and closes it.</p>
+<h2 id="the-shape-the-ladder-actually-has">The Shape the Ladder Actually Has</h2>
+<p><strong>Definition (a rung).</strong> A <em>rung</em> of the ladder is a compact <strong>simple</strong> group carrying one coupling, and the rung's number is its generator count, $\dim\mathfrak{su}(n)=n^{2}-1$. The bottom rung is the exception in the strict sense and in the strict sense only: $\mathrm{SU}(1)=\{e\}$ is trivial and so not simple, which is why the chain is written with it as the minimal element rather than as a simple group. Nothing below depends on the exception, since a trivial group has no roots and no increment either.</p>
+<p><strong>Proposition (the chain, its ranks and its increments).</strong> The four rungs have counts $0,3,8,15$ and ranks $0,1,2,3$, the increments are $2n-1$, and they sum to the top rung's fifteen.</p>
+<p><em>Proof.</em> $\dim\mathfrak{su}(n)=n^{2}-1$ gives $0,3,8,15$ for $n=1,2,3,4$, and $\operatorname{rank}\mathfrak{su}(n)=n-1$ gives $0,1,2,3$. Consecutive differences are $3,5,7=2n-1$ at $n=2,3,4$, and $3+5+7=15$ is the top rung's count. Verified by the two formulas and by the sum.</p>
+<p><strong>Remark (the arithmetic is a statement about simple groups and about nothing else).</strong> Every term in $3+5+7$ is a difference of simple-group dimensions. There is no place in that sum where an abelian factor could enter, and none where one could be missed: an abelian factor contributes dimension one and rank one, and it has no roots, so it has no increment in the $2n-1$ pattern. The ladder's arithmetic is therefore <em>exact about simple groups</em> and <em>silent about abelian ones</em>. A reader who asks the sum to account for a $\mathrm{U}(1)$ is asking it to do something it never claimed.</p>
+<p><strong>Remark (each rung is reached as a stabiliser).</strong> $\mathrm{SU}(n)\subset\mathrm{SU}(n+1)$ as the maps fixing the last basis vector, and the series uses that relation at the top in its sharpest form, $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. A containment of simple groups removes directions; it never adds a factor. This is the structural reason the chain cannot manufacture an abelian group at any rung: stabilising a subspace removes, and never adds.</p>
+<h2 id="the-fourth-generator">The Fourth Generator</h2>
+<p><strong>Proposition (the electroweak category's group has four generators).</strong> $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ has dimension $3+1=4$ and rank $1+1=2$.</p>
+<p><em>Proof.</em> $\dim\mathfrak{su}(2)=3$ and $\dim\mathfrak{u}(1)=1$; the algebra is the direct sum, so the count is four and the rank is the sum of the ranks, two. Verified by the dimension formula and by the commutator of the two ideals.</p>
+<p><strong>Proposition (four is not a rung's count, and the group is not of a rung's kind).</strong> No simple group of the ladder's family has four generators, and the electroweak group has a one-dimensional centre.</p>
+<p><em>Proof.</em> $n^{2}-1=4$ has no integer solution, so four is not $\dim\mathfrak{su}(n)$ for any $n$; that is the arithmetic form of "not a rung". Structurally, the group is reductive and not semisimple: it has a one-dimensional centre, generated by $Y$, and a centre is what a simple group does not have. Verified by the two tests.</p>
+<p><strong>Remark (which object the series names when it names a force).</strong> The series has two ledgers and uses both, and the confusion lives entirely in the difference between them.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rung</th>
+<th>The rung (simple group)</th>
+<th>$\dim$</th>
+<th>Abelian direction booked beside it</th>
+<th>Category's group as written</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td>$\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>none</td>
+<td>$\mathrm{SU}(4)$</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$\mathrm{SU}(3)$</td>
+<td>$8$</td>
+<td>$B-L$ (the ninth slot)</td>
+<td>$\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$\mathrm{SU}(2)_L$</td>
+<td>$3$</td>
+<td>$Y$</td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>$\mathrm{SU}(1)$</td>
+<td>$0$</td>
+<td>none</td>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Two of these categories are named by their simple rung and one is named by its pair</strong>, and the asymmetry in the table is a fact about the <em>names</em>, not about the structure. The strong block books its abelian direction as <em>the ninth slot</em> and calls the group $\mathrm{SU}(3)$; the electroweak block books its abelian direction as a <em>factor</em> and calls the group by the pair. Both bookings are correct; the naming conventions differ, and the reader who compares the two names has compared conventions and not groups.</p>
+<h2 id="three-reasons-the-abelian-factor-is-not-a-rung">Three Reasons the Abelian Factor Is Not a Rung</h2>
+<p><strong>First: the rank cannot rise, so the abelian factor cannot be a fragment.</strong> If $\mathfrak h\subseteq\mathfrak g$ then $\operatorname{rank}\mathfrak h\le\operatorname{rank}\mathfrak g$. The top rung has rank three and the endpoint needs five; no chain of breakings reaches five from three, in any order, at any temperature, with any dynamics. The abelian direction is therefore <em>not</em> something the breaking left over — a leftover would have to have been inside $\mathfrak{su}(4)$, and the rank says it was not. What the breaking produces is the kernel $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, of rank three, and the remaining rank is supplied from outside the chain.</p>
+<p><strong>Second: at the level of the algebra the abelian direction is the centre, and the algebra's own group is a quotient, not a product.</strong> The material sector splits as
+$$
+\mathbb{B}_{\Phi}=\mathbb{R}(ie_t)\oplus\mathrm{SU}(2),
+$$
+of real dimension $1+3=4$ — the pair's algebra, and the algebra of $\mathrm{U}(2)$. But the <em>group</em> is the $*$-unitary slice and it is the quotient
+$$
+\mathrm{U}(2)=\frac{\mathrm{SU}(2)\times\mathrm{U}(1)}{\mathbb{Z}_2},
+\qquad
+\mathbb{Z}_2=\{(\tilde e_t,1),\,(-\tilde e_t,-1)\},
+$$
+so the pair $(\tilde U,e^{i\theta})$ and its negative name one element. The Standard Model's product has no such identification: there $(-1,-1)$ is a distinct element. <strong>Same algebra, same dimension, different group</strong> — and the difference is exactly the parity lock $q\equiv2j\pmod 2$, the kernel of the exponential read on the two factors. So the abelian direction is not a <em>second factor glued on</em>; at the level of the algebra it is the centre, and the centre is the one direction the chain never touches.</p>
+<p><strong>Third: after the breaking, the abelian direction's fate is to survive as the photon, and a survivor is not a rung.</strong> The unbroken group is the last stabiliser, written as the intersection of the chain's three conditions,
+$$
+\mathrm{U}(1)_{\mathrm{em}}=\mathrm{Stab}_{\mathrm{SU}(4)}(\ell_1)\cap\mathrm{Stab}_{\mathrm{SU}(2)_R}(\ell_2)\cap\mathrm{Stab}_{\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y}(\ell_3),
+$$
+and a group defined by three conditions is generated by the one direction satisfying all three. In a three-dimensional neutral space — $\{W^3_L,W^3_R,B\}$ with $B\equiv A^{15}$ — three conditions leave one direction. <strong>The photon is the most mixed object in the frame precisely because it satisfies every condition</strong>, and that is a statement about the <em>end</em> of the chain and not about a rung of it.</p>
+<h2 id="the-second-abelian-factor-and-the-ledger-identity">The Second Abelian Factor, and the Ledger Identity</h2>
+<p><strong>The reader has found one abelian factor; there are two, and seeing both is what makes the accounting exact.</strong> At the strong rung the kernel is $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$; the extra direction is the sum of the three frame diagonals, $iD=T_x+T_y+T_z$, which is $B-L$. So the strong category carries an abelian direction too, and it is booked as the ninth slot.</p>
+<p><strong>Proposition (the two abelian directions are not the same kind of object).</strong> $B-L$ costs no rank, and $Y$ costs one.</p>
+<p><em>Proof.</em> The kernel's rank equals the top rung's: $3\to2+1=3$, because the abelian direction $B-L$ replaces the third Cartan direction rather than adding to the torus — the sum of the three frame diagonals is a traceless diagonal, so it is already inside the maximal torus of $\mathfrak{su}(4)$. Hypercharge, by contrast, is not inside: it arrives with the index, and the index raises the rank by one per direction, $\mathfrak{su}(2)_L$ and $Y$ contributing $1+1=2$. Verified by comparing the two ranks with the top rung's.</p>
+<p><strong>Remark (the ledger identity, and what the generator count does meanwhile).</strong> The rank rises $3\to5$ while the generator count <em>falls</em>, $15\to8+1+3+1=13$. The endpoint costs more rank than the opening balance pays, and it does so while carrying two fewer generators: seven directions are removed by the breaking, eight are the octet, and four arrive with the index. <strong>Rank and generator count move in opposite directions across the transition</strong>, which is why neither one alone is the ladder's coordinate.</p>
+<p><strong>Remark (rank is not the coordinate, and a trap worth naming).</strong> $\operatorname{rank}\bigl(\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y\bigr)=2$, which is also $\operatorname{rank}\mathfrak{su}(3)$. A reader who matches ranks would place the electroweak category at the strong rung. The dimension separates them at once — four against eight — and so does the coupling count, two against one. <strong>The ladder's coordinate is the simple group, not its rank</strong>; rank is a derived count and it coincides across rungs by accident.</p>
+<h2 id="what-would-count-as-the-ladder-breaking">What Would Count as the Ladder Breaking</h2>
+<p>Three things would falsify the claim that the chain is intact. None of them holds.</p>
+<ul>
+<li><strong>A rank that rises under breaking.</strong> Then an abelian factor could be debris, and the ladder's increments would be a statement about the wrong object. The rank lemma forbids it: ranks do not rise, so the abelian factors must be supplied from outside the chain, which is what the index is.</li>
+<li><strong>A simple electroweak group.</strong> Then there would be no fourth generator and no article to write. There is one: four is not $n^{2}-1$, and the group has a centre.</li>
+<li><strong>A chain that branches.</strong> Then the ladder would be a tree and the series' nested-chain claim would be false. The chain does not branch: $\mathrm{SU}(3)$ is rung three and $\mathrm{SU}(2)$ is rung two, <em>not two siblings at one rung</em>. The second simple factor of the endpoint is part of the index and not a second branch of the chain, which is exactly the content of the rank argument.</li>
+</ul>
+<p><strong>Remark (what the ladder does assert, stated as narrowly as it is true).</strong> The ladder asserts a nested chain of simple groups, one per rung, each reached as a stabiliser, with increments $2n-1$ summing to the top rung. It does <strong>not</strong> assert that the endpoint's algebra is a single simple group, and it does not assert that a category's group is a rung. Holding it to the first claim shows it intact; holding it to the second shows a contradiction that was never in it.</p>
+<h2 id="the-confusion-named-exactly">The Confusion, Named Exactly</h2>
+<p><strong>Three true statements, three different objects.</strong> The doubt dissolves once the objects are separated, and the separation is the whole content of this section.</p>
+<ul>
+<li><em>The Standard Model's group is the product</em> $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ — four generators, rank two, two couplings. This is the group in the ledger, because the electroweak lines of the ledger are the Standard Model's lines and the ledger must record the group the Standard Model uses.</li>
+<li><em>The algebra's own compact group is the quotient</em> $\mathrm{U}(2)=(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ — same algebra, same dimension, a different group, because the quotient identifies $(-1,-1)$ with the identity and the product does not. This is the group in the statements about what the algebra supplies, because the algebra supplies the algebra and the $*$-unitary slice supplies the quotient.</li>
+<li><em>The unbroken group after the breaking is</em> $\mathrm{U}(1)_{\mathrm{em}}$ — one generator, rank one, the intersection of the chain's three stabilisers. This is the group of the electromagnetism entry.</li>
+</ul>
+<p>A sentence that mixes these three is wrong even when each of the three is right in its own place, and the mixture is what produces the impression that the ladder has an exception it cannot book.</p>
+<p><strong>Remark (why the confusion is a <em>good</em> sign, and not a defect of the reader).</strong> The exception is real, it is one rung wide, and it is the place where the corpus's own two naming conventions meet. An article that hid it would be smoother and less true; the corpus's discipline is to give the exception its own statement, with the ledger written out, so that a reader who notices it finds it named rather than papered over. That is what this article is.</p>
+<h2 id="summary">Summary</h2>
+<p>The ladder is a chain of simple groups, and the electroweak category is the one rung that carries a fourth, abelian generator beside it.</p>
+<p>$$
+\boxed{\;
+\text{the rung is } \mathrm{SU}(2),\ \dim 3;\qquad
+\text{the category is } \mathrm{SU}(2)_L\times\mathrm{U}(1)_Y,\ \dim 4;\qquad
+3+5+7=15 \text{ counts simple groups}
+\;}
+$$</p>
+<p>The arithmetic $3+5+7=15$ is exact about simple groups and silent about abelian ones: an abelian factor has dimension one, rank one, no roots, and no increment in $2n-1$. Four is not $n^{2}-1$, so the electroweak group is not a rung's count, and the group has a one-dimensional centre, so it is not a rung's kind. The abelian factor is not a fragment of the top rung — the rank forbids that — and at the level of the algebra it is the centre, with the algebra's own group the quotient $\mathrm{U}(2)$ rather than the product; the difference is the parity lock $q\equiv2j\pmod 2$. After the breaking the abelian direction's fate is to survive as $\mathrm{U}(1)_{\mathrm{em}}$, the intersection of the chain's three stabilisers, generated by the one direction satisfying all three. There are two abelian factors and not one: $B-L$ at the strong rung, booked as the ninth slot and costing no rank because it replaces the third Cartan, and $Y$ at the electroweak rung, arriving with the index and costing one. Rank rises $3\to5$ while the generator count falls $15\to13$, which is why neither alone is the ladder's coordinate. And the exception is a naming exception: the strong category is named by its traceless part while its kernel is $\mathfrak{u}(3)$, the electroweak category is named by its pair. <strong>The chain is not broken; the fourth generator is the index, and the index is booked.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rung</td>
+<td>A compact simple group carrying one coupling; the ladder's coordinate</td>
+</tr>
+<tr>
+<td>$2n-1$</td>
+<td>The increment between rung $n-1$ and rung $n$; $3+5+7=15$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$</td>
+<td>The electroweak category's group; dimension $4$, rank $2$</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)=(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$</td>
+<td>The algebra's own group; the quotient, not the product</td>
+</tr>
+<tr>
+<td>$q\equiv2j\pmod 2$</td>
+<td>The parity lock; the kernel of the exponential on the two factors</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$</td>
+<td>The kernel at the strong rung; the ninth slot is $B-L$</td>
+</tr>
+<tr>
+<td>$iD=T_x+T_y+T_z$</td>
+<td>The frame-diagonal sum; replaces the third Cartan, so $B-L$ costs no rank</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)_{\mathrm{em}}$</td>
+<td>The unbroken group; intersection of three stabilisers; one generator</td>
+</tr>
+<tr>
+<td>index</td>
+<td>What the transition carries beside the chain; rank $2$ at the electroweak rung</td>
+</tr>
+<tr>
+<td>$15\to13$, $3\to5$</td>
+<td>Generators fall while rank rises across the transition</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ of the Electroweak Force</em></a>, for the group itself.</li>
+<li><a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the ladder and the bottom rung.</li>
+<li><a href="the-symmetry-group-su3-of-the-strong-force.html"><em>The Symmetry Group SU(3) of the Strong Force</em></a>, for the rung whose kernel is $\mathfrak{u}(3)$.</li>
+<li><a href="the-symmetry-group-su4-of-the-primordial-force.html"><em>The Symmetry Group SU(4) of the Primordial Force</em></a>, for the top rung and the rank obstruction.</li>
+<li><a href="the-electroweak-pair-in-the-biquaternion-framework-the-quotient-and-the-parity-lock.html"><em>The Electroweak Pair in the Biquaternion Framework: The Quotient and the Parity Lock</em></a>, for $\mathrm{U}(2)$ against the product.</li>
+<li><a href="the-photon-as-the-unbroken-mixture.html"><em>The Photon as the Unbroken Mixture</em></a>, for $\mathrm{U}(1)_{\mathrm{em}}$ as an intersection of three stabilisers.</li>
+<li><a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three: The Weak Factors as a Condensate Index</em></a>, for the rank lemma and the index.</li>
+<li><a href="the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html"><em>The Quantum Numbers Below the Breaking</em></a>, for $B-L$, weak isospin and the electric charge.</li>
+<li><a href="the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html"><em>The Three Lines in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge</em></a>, for the ninth slot made traceless.</li>
+<li><a href="the-force-content-of-the-su4-model-one-connection-a-nine-dimensional-kernel-and-rank-five.html"><em>The Force Content of the $\mathrm{SU}(4)$ Model: One Connection, a Nine-Dimensional Kernel, and Rank Five</em></a>, for the kernel and the rank ledger.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetry Group SU(4) of the Primordial Force — Biquaternion Universe</title>
+  <meta name="description" content="The category Biquaternion Universe Primordial Force is the top rung of the series: one compact group, fifteen generators, one coupling, and the quartet of…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetry-group-su4-of-the-primordial-force"><strong>The Symmetry Group SU(4) of the Primordial Force</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The category <em>Biquaternion Universe Primordial Force</em> is the top rung of the series: one compact group, fifteen generators, one coupling, and the quartet of four lines above the transition scale $M_C$. The question this article answers is the one the block raises in its first sentence: <strong>which group does the category carry?</strong></p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(4),\qquad \dim\mathfrak{su}(4)=15,\qquad \operatorname{rank}=3\ }
+$$</p>
+<p>Fifteen generators: twelve that move one line into another and three traceless diagonal ones. One group and nothing beside it — no second factor, no strong group made local, no abelian direction of its own. The primordial force is not a group <em>and</em> something else; it is the smallest compact simple group large enough to hold the four lines of the carrier as one multiplet, and everything the block states is a count on its fifteen.</p>
+<p><strong>Why this is the rung and not an assumption.</strong> A force, in this series, is a gauged generator; the ladder of the series is nested, and this is its fourth rung. The counts are $0,\,3,\,8,\,15$ for $\mathrm{SU}(1),\mathrm{SU}(2),\mathrm{SU}(3),\mathrm{SU}(4)$, and the increments are $3,\,5,\,7$. The primordial force is the rung at which the count is largest:
+$$
+\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4),
+\qquad
+\dim\mathfrak{su}(n)=n^{2}-1 .
+$$
+What the category <em>gauges</em> is the fifteen, and the two rungs below it are the residues that survive when the vacuum picks a direction.</p>
+<p><strong>What "given the carrier" means, stated plainly at the outset.</strong> The algebra derives the group <em>given</em> a formal copy of the carrier; it does not manufacture the carrier. The corpus's own sentence is that the algebra derives the group given the carrier, and the honesty of the article depends on keeping that qualifier. The group therefore has an <strong>address</strong> — it acts on a formal copy of the four-line carrier — and the algebra is not entered. §<em>Where the Group Lives</em> separates the two layers, because a reader who conflates them will find the block's other statements contradictory when they are not.</p>
+<ul>
+<li>Companion article <a href="the-su4-model-four-lines-fifteen-generators-one-declaration.html"><em>The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three</em></a>, for the group, the adjoint and the declaration that the algebra cannot make.</li>
+<li>Companion article <a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html"><em>The Counts of the Fifteen</em></a>, for the four distinct registers — sixteen cells, six pairs, twelve arrays, fifteen generators — and why none is the others.</li>
+<li>Companion article <a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</em></a>, for the rung below this one as a stabiliser.</li>
+<li>Companion article <a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three: The Weak Factors as a Condensate Index</em></a>, for the rank obstruction that keeps the weak factors out of the fifteen.</li>
+<li>Companion article <a href="the-symmetry-group-su3-of-the-strong-force.html"><em>The Symmetry Group SU(3) of the Strong Force</em></a> and <a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force</em></a>, for the rungs below.</li>
+<li>Companion article <a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the bottom of the ladder and the ladder's own statement.</li>
+</ul>
+<h2 id="where-the-group-lives">Where the Group Lives</h2>
+<p><strong>Definition (the group of the category).</strong> The category's <em>group</em> is the internal group whose generators its connection carries,
+$$
+\tilde A=\tilde A^{a}T^{a},\qquad [T^{a},T^{b}]=i f^{abc}T^{c},\qquad a=1,\dots,15,
+$$
+with $g_4$ the single coupling. The <em>count</em> of the category is $\dim\mathfrak{g}=15$.</p>
+<p><strong>Proposition (the count is fifteen, and it is four cells minus the trace).</strong> The group has fifteen generators: twelve that carry a pair of distinct lines into one another and three traceless diagonal ones.</p>
+<p><em>Proof.</em> A basis of $\mathfrak{su}(4)$ is the set of off-diagonal unit matrices $e_{ij}$ with $i\neq j$ and the traceless diagonal combinations. There are $4\cdot3=12$ ordered pairs $i\neq j$, and the diagonal space of $4\times4$ Hermitian matrices is four-dimensional, of which the traceless part is three-dimensional because the trace is removed. Hence $12+3=15=4^{2}-1$. The two counts are the same count under two registers — four diagonal cells, three diagonal generators — and the passage between them is exactly the removal of the trace. Verified by the dimension formula and by enumerating the basis.</p>
+<p><strong>Remark (one group, one grid, one copy).</strong> The corpus's identity $16=1+15$ — sixteen cells, one trace, fifteen generators — is what replaces the older and wrong $24=16+4+4$. With one group there is one grid and one copy of the fifteen; the four that is missing twice in the older arithmetic is the two weak factors, and they are not in the model. This is the arithmetic form of the statement that the category has one group and not three.</p>
+<p><strong>Proposition (the two layers of the claim).</strong> The group acts on a formal copy of the carrier and not inside the algebra: no generator is an element of $\mathbb{B}$, and every generator is an endomorphism of $\mathbb{B}$.</p>
+<p><em>Proof.</em> The generators $T^{a}$ are $4\times4$ matrices acting on the four-line carrier $\mathbb{C}^{4}$; $\mathbb{B}\cong M_2(\mathbb{C})$ is four <em>complex</em> dimensional and its elements act on a two-dimensional module, so a $4\times4$ generator cannot be an element of $\mathbb{B}$ acting on $\mathbb{B}$ by left multiplication. It is instead an endomorphism of the carrier, built from products of the algebra's units, and the group's containment is that of endomorphism algebras rather than of elements. This is the corpus's <em>Layer B</em>: the group has an address, the algebra is not entered. Verified by comparing the module dimensions, two for $\mathbb{B}$ and four for the carrier.</p>
+<p><strong>Remark (why the layer distinction is load-bearing).</strong> The block's claim that the primordial force is "the algebra's own" and the block's claim that "no generator is an element of $\mathbb{B}$" are both true, and they are true in different layers. Layer A is the algebra's elements; Layer B is the endomorphisms of a formal copy of the carrier. A statement that mixes them is wrong even when both halves are right, and the mixing is the single most common error the block's own articles correct.</p>
+<h2 id="what-the-fifteen-act-on">What the Fifteen Act On</h2>
+<p><strong>The four lines.</strong> The carrier is the quartet $(t,x,y,z)$ — four lines of one multiplet. A line letter is a coordinate on the $4\times4$ table and not a charge: a sentence that names a line is physics only if it survives a relabelling of the four lines. The corpus's rule is to write <em>four lines</em> for $(t,x,y,z)$ and <em>twelve directions and three diagonal directions</em> for the fifteen.</p>
+<p><strong>The one thing the algebra cannot say.</strong> Which of the four lines is the lepton. That is the whole of the declaration, and it is stated as a declaration because no theorem in the algebra fixes it. It adds no block to the fifteen and moves no eigenvalue; it is the one piece of the model that is a choice, and naming it as a choice is what keeps the rest a derivation.</p>
+<p><strong>Proposition (the unbroken phase, and the split below it).</strong> Above $M_C$ all fifteen directions are massless and the group is $\mathrm{SU}(4)$ acting on the quartet. Below the transition the frame is fixed and the fifteen separate.</p>
+<p><em>Proof.</em> Above $M_C$ the vacuum is symmetric, so no direction of the adjoint is distinguished and the mass operator is proportional to the identity on the fifteen; hence every direction is massless. Once the frame $D$ is fixed by the vacuum, the adjoint decomposes and the diagonal frame's differences become the Cartan of the surviving octet while the sum becomes the abelian direction $B-L$; the six directions that move the distinguished line acquire mass. The count is then nine massless and six heavy. Verified by the decomposition of the adjoint under the surviving subgroup and by the spectrum of $\operatorname{ad}(iD)$.</p>
+<h2 id="the-rung-below-and-the-rank-obstruction">The Rung Below, and the Rank Obstruction</h2>
+<p><strong>Proposition (the strong rung is a stabiliser).</strong> The strong group is the stabiliser of a line inside the primordial group,
+$$
+\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t),
+\qquad \dim\mathfrak{su}(3)=8 .
+$$</p>
+<p><em>Proof.</em> The subgroup of $\mathrm{SU}(4)$ fixing a complex line is $\mathrm{U}(3)$, whose traceless part acting on the orthogonal three-space is $\mathrm{SU}(3)$; its dimension is $15-7=8$, the seven removed directions being the six that move the fixed line plus the phase of the line itself. Hence the descent from fifteen to eight is the removal of the directions that move the distinguished line, and it is a containment and not an analogy. Verified by the dimension count and by the stabiliser computation.</p>
+<p><strong>Proposition (the rank obstruction).</strong> The weak factors cannot be debris of the breaking, because the rank cannot rise.</p>
+<p><em>Proof.</em> The rank of $\mathfrak{su}(4)$ is three, and a maximal torus of a subalgebra lies in a maximal torus of the algebra, so the rank of every subalgebra is at most three; the endpoint requires rank $2+1+1+1=5$ — the octet's two, the abelian $B-L$ direction, and the two weak factors' own — and no chain of breakings reaches five from three, in any order, at any temperature, with any dynamics. The weak factors therefore arrive as an <em>index</em> on the condensate that breaks the group and not as fragments of it. Verified by the rank lemma applied to $\mathfrak{su}(4)$ and to the endpoint algebra.</p>
+<p><strong>Remark (what survives is $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$).</strong> The kernel of the adjoint action of the vacuum on the fifteen is $\mathfrak{u}(3)$, so the degeneracy is into $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and not into $\mathrm{SU}(3)$ alone. The extra direction is the sum of the three frame diagonals, and it is why the rank does not move in this step: $3\to2+1=3$. This is stated here because it is the precise sense in which the rung below is adjacent to this one; the abelian factor is a piece of <em>this</em> rung's bookkeeping and the strong article's concern.</p>
+<h2 id="what-the-category-does-not-supply">What the Category Does Not Supply</h2>
+<p><strong>Supplied.</strong> The group and its count, the adjoint and its decomposition, the single coupling $g_4$, the unbroken phase above $M_C$, the descent to the strong rung as a stabiliser, and the rank obstruction that places the weak factors outside the fifteen.</p>
+<p><strong>Not supplied.</strong> Four boundaries, stated as boundaries.</p>
+<ul>
+<li><em>Which line is the lepton.</em> The algebra fixes the group and the multiplet and not the labelling; that is the declaration, and it is the one choice in the model.</li>
+<li><em>Chirality where the symmetry acts.</em> The model is not chiral where the group acts, and the corpus now states this as a theorem about the model rather than a caveat about a representation. The one-sided action of the algebra on a chiral spinor module remains the open problem, and it is not solved by enlarging the group.</li>
+<li><em>An instanton inside the algebra.</em> The $\mathrm{SU}(4)$ instanton is a matrix transcription outside the algebra; the group's topological sectors are reached on the formal copy and not on $\mathbb{B}$.</li>
+<li><em>A value.</em> No mass, no coupling value, no mixing angle. The article is a statement of the group and its count, and it fixes no number.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The category carries $\mathrm{SU}(4)$, the top rung of the ladder, with fifteen generators and rank three.</p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(4),\quad \dim=15=12+3,\quad \operatorname{rank}=3,\quad \text{one coupling } g_4\ }
+$$</p>
+<p>The fifteen are twelve line-mixing directions and three traceless diagonals, which is four diagonal cells minus the trace; one group, one grid, one copy. The group acts on a formal copy of the four-line carrier and not inside the algebra, so its generators are endomorphisms of $\mathbb{B}$ and the algebra is not entered. Above $M_C$ all fifteen are massless; below it the frame splits them nine and six. The rung below is the stabiliser of a line, $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$, and the descent removes the seven directions that move it. The rank cannot rise from three, so the weak factors of the rung below arrive as an index and not as debris — the obstruction that makes the ladder a ladder and not a tree.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(4)$</td>
+<td>The category's group; dimension $15$, rank $3$</td>
+</tr>
+<tr>
+<td>$T^{a}$, $a=1,\dots,15$</td>
+<td>The generators; twelve off-diagonal, three traceless diagonal</td>
+</tr>
+<tr>
+<td>$g_4$</td>
+<td>The single coupling of the category</td>
+</tr>
+<tr>
+<td>$(t,x,y,z)$</td>
+<td>The four lines of the carrier; coordinates on the table, not charges</td>
+</tr>
+<tr>
+<td>$16=1+15$</td>
+<td>Sixteen cells, one trace, fifteen generators</td>
+</tr>
+<tr>
+<td>$M_C$</td>
+<td>The transition scale; above it the phase is unbroken</td>
+</tr>
+<tr>
+<td>$\operatorname{ad}(iD)$</td>
+<td>The adjoint action of the vacuum frame; its kernel is the surviving algebra</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$</td>
+<td>The rung below, as a stabiliser of a line</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$</td>
+<td>What the kernel supplies; the ninth direction is the frame-diagonal sum</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-su4-model-four-lines-fifteen-generators-one-declaration.html"><em>The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration</em></a>, for the group and the declaration.</li>
+<li><a href="the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html"><em>The Counts of the Fifteen</em></a>, for the four registers.</li>
+<li><a href="construction-of-the-axf-matrices-of-the-fifteen-generators.html"><em>Construction of the AXF Matrices of the Fifteen Generators</em></a>, for the arrays themselves.</li>
+<li><a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html"><em>Classification of the Bosons</em></a>, for the nine-and-six split.</li>
+<li><a href="the-primordial-coupling.html"><em>The Primordial Coupling</em></a>, for the one coupling.</li>
+<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</em></a>, for the rung below.</li>
+<li><a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three</em></a>, for the rank obstruction.</li>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html"><em>The Breaking of the Primordial Force</em></a>, for the descent itself.</li>
+<li><a href="the-symmetry-group-su3-of-the-strong-force.html"><em>The Symmetry Group SU(3) of the Strong Force</em></a>, <a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force</em></a>, <a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the rungs below.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

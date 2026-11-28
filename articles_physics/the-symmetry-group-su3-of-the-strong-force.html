@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetry Group SU(3) of the Strong Force — Biquaternion Universe</title>
+  <meta name="description" content="The category Biquaternion Universe Strong Force is the rung below the primordial one: the strong sector as the residual of the group above, and the sector…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetry-group-su3-of-the-strong-force"><strong>The Symmetry Group SU(3) of the Strong Force</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The category <em>Biquaternion Universe Strong Force</em> is the rung below the primordial one: the strong sector as the residual of the group above $M_C$, and the sector where the algebra meets its wall. The question this article answers is: <strong>which group does the category carry?</strong></p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(3),\qquad \dim\mathfrak{su}(3)=8,\qquad \operatorname{rank}=2\ }
+$$</p>
+<p>Eight generators: six that carry one colour line into another and two Cartan. Rank two, and the two are the two differences of the three diagonal frame. One group, and it is a <em>stabiliser</em> — not a new group added to the series, but the part of the rung above that leaves a chosen line alone.</p>
+<p><strong>The placement on the ladder.</strong> A force is a gauged generator, and the ladder is nested with counts $0,\,3,\,8,\,15$. This rung is the third:
+$$
+\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t),
+\qquad
+\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4).
+$$
+The passage from fifteen to eight is the removal of the seven directions that move a line — six that carry it elsewhere and one that is its phase — and the passage from eight to three is the removal of the five that distinguish a line from the two it leaves.</p>
+<p><strong>The wall, stated at the outset because the article's credibility depends on it.</strong> No generator of this group is an element of $\mathbb{B}$, and none can act $\mathbb{B}$-linearly on a $\mathbb{B}$-module. $\mathrm{SU}(3)$ is reached on a <strong>formal copy</strong> of the carrier, where its generators are endomorphisms of $\mathbb{B}$ and not elements of it — each of the eight is a sum of two or three Conway words $e_{\imath}[\,]e_{\jmath}$, none of them a single product. So the group has an address, and the algebra is not entered. <em>Contained</em> means contained in the endomorphism algebra on the copy; it does not mean contained in $\mathbb{B}$.</p>
+<ul>
+<li>Companion article <a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated</em></a>, for the stabiliser statement and the two layers.</li>
+<li>Companion article <a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html"><em>The Gluon: An Octet Outside the Biquaternion Algebra</em></a>, for the octet and its carrier.</li>
+<li>Companion article <a href="the-eight-axf-matrices-of-the-gluons-in-detail-every-matrix-every-gluon-its-entries-its-spectrum-and-its-fate.html"><em>The Eight AXF Matrices of the Gluons in Detail</em></a>, for the eight matrices.</li>
+<li>Companion article <a href="the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html"><em>The Three Lines in $\mathrm{SU}(3)$: A Coordinate Label on the Eight, Not a Charge</em></a>, for the colour letters.</li>
+<li>Companion article <a href="the-symmetry-group-su4-of-the-primordial-force.html"><em>The Symmetry Group SU(4) of the Primordial Force</em></a>, for the rung above, of which this is a stabiliser.</li>
+<li>Companion article <a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force</em></a> and <a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the rungs below.</li>
+</ul>
+<h2 id="the-eight-and-where-they-come-from">The Eight, and Where They Come From</h2>
+<p><strong>Definition (the group of the category).</strong> The category's <em>group</em> is the internal group whose generators its connection carries,
+$$
+\tilde A=\tilde A^{a}T^{a},\qquad [T^{a},T^{b}]=i f^{abc}T^{c},\qquad a=1,\dots,8 ,
+$$
+with $g_3$ the coupling. The <em>count</em> is $\dim\mathfrak{su}(3)=8$.</p>
+<p><strong>Proposition (the count is eight, and it is two Cartan plus six roots).</strong> The group has eight generators: two commuting diagonal ones and six that carry one line into another.</p>
+<p><em>Proof.</em> A basis of $\mathfrak{su}(3)$ is the six off-diagonal unit matrices $e_{ij}$, $i\neq j$, together with the two traceless diagonal combinations; there are $3\cdot2=6$ ordered pairs and $3-1=2$ traceless diagonal directions, so $6+2=8=3^{2}-1$. The two diagonal generators are a maximal torus, hence the rank is two. Verified by the dimension formula and by enumerating the basis.</p>
+<p><strong>Proposition (the octet is the stabiliser of a line).</strong> The eight are the directions of $\mathrm{SU}(4)$ that leave a chosen line fixed.</p>
+<p><em>Proof.</em> $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$, of dimension $15-7=8$; the seven removed are the six that move the fixed line into one of the other three plus the phase of the line, and the eight that remain are exactly the root-and-Cartan system of $\mathfrak{su}(3)$ acting on the three lines orthogonal to the fixed one. Verified by the dimension count and by matching the surviving directions to the $3\times3$ block.</p>
+<p><strong>Remark (the two lines of the claim).</strong> Layer A: no strong-generator is an element of $\mathbb{B}$. Layer B: each generator is a sum of two or three Conway words and so is an endomorphism of $\mathbb{B}$ on the formal copy. The group therefore <em>has an address</em> — it acts on a copy of the carrier — and the algebra is not entered. Both statements are true and they are true in different layers; a reader who keeps one meaning of <em>reached</em> will find "the strong group is a residual" contradictory when it is not.</p>
+<p><strong>Remark (why eight equals eight is a coincidence of counting).</strong> Both $\mathbb{B}$ and $\mathfrak{su}(3)$ are eight real dimensional, and the equality is not an embedding. $\mathbb{B}$'s compact part is $\mathrm{U}(2)$, of dimension four, and its natural module is two-dimensional, whereas $\mathfrak{su}(3)$ needs a complex three-dimensional fundamental. Equality of dimensions is a coincidence of counting, not a containment, and the corpus states it as such.</p>
+<h2 id="what-the-group-acts-on">What the Group Acts On</h2>
+<p><strong>The colour triplet and the octet.</strong> The quarks sit in the complex three-dimensional fundamental $\mathbf{3}$ and the gluons in the eight-dimensional adjoint. The three colour lines are a coordinate label on the eight and not a charge: a sentence that names a line is physics only if it survives a relabelling of the three.</p>
+<p><strong>Proposition (the ninth slot).</strong> What the breaking of the rung above supplies is $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$, so the strong sector arrives with one abelian direction beside it, $B-L$.</p>
+<p><em>Proof.</em> The kernel of the adjoint action of the vacuum on the fifteen is $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)$, of dimension nine; the extra direction is the sum of the three frame diagonals, and it is why the rank does not move from the rung above: $3\to2+1=3$. The strong group is the traceless part, and the abelian part is the $B-L$ direction of the same breaking. Verified by decomposing the fifteen under the surviving algebra and counting nine.</p>
+<p><strong>Remark (the group and the count are not the same object).</strong> Eight is the count of generators; nine is the count of directions the kernel supplies; three is the count of colour lines; and the hadron spectrum's counts are different again. The block's articles keep these registers apart, and the article that mixes them is wrong even when every individual number is right.</p>
+<h2 id="what-the-category-does-not-supply">What the Category Does Not Supply</h2>
+<p><strong>Supplied.</strong> The group and its count, the octet as a stabiliser of a line, the rank-two torus and its two differences, the triplet and the adjoint, the ninth direction that arrives with the breaking, and the two-layer statement of where the group lives.</p>
+<p><strong>Not supplied.</strong> Five boundaries, stated as boundaries.</p>
+<ul>
+<li><em>The group from the algebra alone.</em> Three colour lines, the beta coefficient and the parton densities are data; the block imports them and says so. Nothing in the series derives the dimension three, the group $\mathrm{SU}(3)$, or the reason the factor should exist at all, and the corpus states plainly that an article which quietly assumes a strong group has fabricated its premise.</li>
+<li><em>Confinement.</em> The mechanism is not derived; the block reads confinement as a loss of partonic information and states that no confinement mechanism is available on the present construction. Above $M_C$ there is no confinement at all.</li>
+<li><em>Asymptotic freedom.</em> The beta coefficient is imported as data, not computed from the framework; the one-loop coefficients are transcribed.</li>
+<li><em>A value.</em> No strong coupling value, no $\Lambda_{\mathrm{QCD}}$. The article fixes the group and its count and no number.</li>
+<li><em>A different arena.</em> The kinematic group is the same at every rung; this category supplies the strong rung and not a new spacetime.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The category carries $\mathrm{SU}(3)$, the third rung, with eight generators and rank two.</p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(3),\quad \dim=8=2+6,\quad \operatorname{rank}=2,\quad \mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)\ }
+$$</p>
+<p>The eight are two Cartan differences and six roots; the two are the nonzero differences of the three diagonal frame. The group is the stabiliser of a line in the rung above, so the descent from fifteen to eight removes seven directions and is a containment and not an analogy. It is reached on a formal copy of the carrier: its generators are endomorphisms of $\mathbb{B}$, each a sum of two or three Conway words, and no generator is an element of $\mathbb{B}$ — the group has an address, and the algebra is not entered. The breaking that produces it supplies $\mathfrak{u}(3)$ rather than $\mathfrak{su}(3)$, the ninth direction being $B-L$, and the rank stays at three. What the block imports rather than derives — three colour lines, the beta coefficient, the parton densities — is stated as imported, and confinement is read as information loss rather than derived as a mechanism.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(3)$</td>
+<td>The category's group; dimension $8$, rank $2$</td>
+</tr>
+<tr>
+<td>$T^{a}$, $a=1,\dots,8$</td>
+<td>Two Cartan and six root generators</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$</td>
+<td>The group as the stabiliser of a line in the rung above</td>
+</tr>
+<tr>
+<td>$g_3$</td>
+<td>The strong coupling</td>
+</tr>
+<tr>
+<td>$\mathbf{3}$, $\mathbf{8}$</td>
+<td>The quark triplet and the gluon octet</td>
+</tr>
+<tr>
+<td>$e_{\imath}[\,]e_{\jmath}$</td>
+<td>Conway words; the generators are sums of two or three, hence endomorphisms of $\mathbb{B}$</td>
+</tr>
+<tr>
+<td>$\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$</td>
+<td>What the breaking supplies; dimension nine</td>
+</tr>
+<tr>
+<td>Layer A / Layer B</td>
+<td>Element of $\mathbb{B}$ / endomorphism of a formal copy of the carrier</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</em></a>, for the wall and the stabiliser.</li>
+<li><a href="the-gluon-an-octet-outside-the-biquaternion-algebra.html"><em>The Gluon: An Octet Outside the Biquaternion Algebra</em></a>, for the octet.</li>
+<li><a href="the-eight-axf-matrices-of-the-gluons-in-detail-every-matrix-every-gluon-its-entries-its-spectrum-and-its-fate.html"><em>The Eight AXF Matrices of the Gluons in Detail</em></a>, for the matrices.</li>
+<li><a href="the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html"><em>The Three Lines in $\mathrm{SU}(3)$</em></a>, for the colour letters.</li>
+<li><a href="the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html"><em>The Lagrangian and Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules</em></a>, for the action.</li>
+<li><a href="asymptotic-freedom-and-the-running-of-the-strong-coupling.html"><em>Asymptotic Freedom and the Running of the Strong Coupling</em></a>, for the imported beta coefficient.</li>
+<li><a href="confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html"><em>Confinement and the Loss of Partonic Information</em></a>, for confinement as an information channel.</li>
+<li><a href="the-symmetry-group-su4-of-the-primordial-force.html"><em>The Symmetry Group SU(4) of the Primordial Force</em></a>, for the rung above.</li>
+<li><a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html"><em>The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force</em></a>, <a href="the-symmetry-group-su1-of-the-force-free-case.html"><em>The Symmetry Group SU(1) of the Force-Free Case</em></a>, for the rungs below.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

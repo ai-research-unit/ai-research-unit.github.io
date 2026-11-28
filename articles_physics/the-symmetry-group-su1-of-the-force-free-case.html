@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Symmetry Group SU(1) of the Force-Free Case — Biquaternion Universe</title>
+  <meta name="description" content="The category Biquaternion Universe Force-Free is the free layer of the series: the four free Lagrangians, the free Proca, Dirac and Klein–Gordon…">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-symmetry-group-su1-of-the-force-free-case"><strong>The Symmetry Group SU(1) of the Force-Free Case</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The category <em>Biquaternion Universe Force-Free</em> is the free layer of the series: the four free Lagrangians, the free Proca, Dirac and Klein–Gordon equations, their polar and momentum-space forms, the free fluid of each spin, and the free operator and free kinematics, with every internal coupling set to zero. The question this article answers is the one the block raises by its silence: <strong>which group does the category carry?</strong></p>
+<p>The answer is the trivial group, and the fact that it is trivial is not a defect but a place on a ladder.</p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(1)=\{e\}=\{\mathbf{1}\}\ }
+$$</p>
+<p>The category's force group is the group with <strong>one element and no generator</strong>: $\dim\mathfrak{su}(1)=1^{2}-1=0$.</p>
+<p><strong>Why this is the answer and not an evasion.</strong> The neighbouring categories of the series carry the groups $\mathrm{SU}(4)$ and $\mathrm{SU}(3)$ — fifteen generators at the primordial force, eight at the strong force, the second being a stabiliser inside the first. The ladder is nested,
+$$
+\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4),
+\qquad
+\dim\mathfrak{su}(n)=n^{2}-1=0,\,3,\,8,\,15 ,
+$$
+and the free layer is its bottom rung. A force, in this series, is a <em>gauged generator</em>: the strong force is eight gauged generators and the primordial force is fifteen. The free layer gauges none — its coupling is zero at every vertex — so the number of generators it gauges is zero, and the group at that rung is $\mathrm{SU}(1)$. The category's group is not introduced from outside the ladder; it is the rung at which the ladder's count reaches zero.</p>
+<p><strong>What went wrong in the first drafts, and why the correction matters.</strong> An earlier version of this article answered with $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, the group of unit-modulus biquaternions, on the ground that it is the group preserving the algebra's norm. That group is real and it does preserve the norm; but it is the <em>arena</em>, and it is identical at every rung of the ladder — at the free layer, at the strong force and at the primordial force alike. A group that is the same in all four categories cannot be the group <em>of one</em> of them, and quoting it here is what made the free layer look as though it possessed a symmetry drawn from nowhere. The ladder is indexed by the gauged internal group; the norm's unit group is not indexed by the ladder at all. §<em>Why the Norm's Unit Group Is Not the Rung</em> states this precisely.</p>
+<p>The rest of the article does four things. It says what the category's group indexes (§<em>What a Force Group Indexes</em>). It exhibits the ladder and locates the free layer on it with exact generator counts (§<em>The Ladder and the Bottom Rung</em>). It separates the rung from the arena, which is the correction the neighbour's consistency requires (§<em>Why the Norm's Unit Group Is Not the Rung</em>). And it states what the trivial rung still asserts, so that "trivial" is not read as "nothing" (§<em>What the Trivial Rung Still Asserts</em>).</p>
+<ul>
+<li>Companion article <a href="the-su4-model-four-lines-fifteen-generators-one-declaration.html"><em>The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration</em></a>, for the top rung and its count.</li>
+<li>Companion article <a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$: The $\mathrm{SU}(3)$ Wall, Restated</em></a>, for the strong rung as a stabiliser of the rung above it.</li>
+<li>Companion article <a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three: The Weak Factors as a Condensate Index</em></a> and <a href="the-photon-as-the-unbroken-mixture.html"><em>The Photon as the Unbroken Mixture</em></a>, for the intermediate rungs.</li>
+<li>Companion article <a href="the-compact-sector-of-the-biquaternions-is-u2.html"><em>The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$: No $\mathfrak{su}(3)$ Among the Operators</em></a>, for the arena's compact group and the ceiling that keeps the upper rungs outside the algebra.</li>
+<li>Companion article <a href="the-lorentz-group-as-biquaternion-norm-automorphisms.html"><em>The Lorentz Group as Biquaternion Norm Automorphisms</em></a>, for the arena's kinematic group, which is common to all rungs.</li>
+<li>Companion article <a href="the-minimal-coupling-in-biquaternionic-form.html"><em>The Minimal Coupling in Biquaternionic Form</em></a>, for the coupling whose vanishing defines this category.</li>
+</ul>
+<h2 id="what-a-force-group-indexes">What a Force Group Indexes</h2>
+<p><strong>Definition (the category's group).</strong> Throughout the series a category's <em>force group</em> is the internal group whose generators the category gauges, that is, the group of the connection the category's covariant derivative carries,
+$$
+\tilde\nabla_{\Phi}\;\longmapsto\;\tilde\nabla_{\Phi}+i\kappa\,\tilde A_{\Phi},
+\qquad
+\tilde A_{\Phi}=\tilde A_{\Phi}^{a}\,T^{a},
+\qquad
+[T^{a},T^{b}]=i f^{abc}T^{c},
+$$
+with $T^{a}$ a basis of the group's Lie algebra and $\kappa$ the coupling. The <em>count</em> of the category is the number of these generators that the category gauges, $\dim\mathfrak{g}$.</p>
+<p>This is the definition the neighbouring categories use, and it is the only one that puts them on a common scale. The primordial force is fifteen generators because its connection has fifteen components, the strong force is eight because its connection has eight, and the count is what the phrase "the $\mathrm{SU}(4)$ model" and the phrase "the $\mathrm{SU}(3)$ wall" each report. A category is then characterised by its rung, and the rungs are ordered by the count.</p>
+<p><strong>Proposition (the free layer gauges nothing).</strong> The free layer's coupling vanishes at every vertex, so its connection is absent and its count is zero.</p>
+<p><em>Proof.</em> The block defines the category by setting every internal coupling to zero, so $\kappa=0$ throughout; at $\kappa=0$ the covariant derivative $\tilde\nabla_{\Phi}+i\kappa\tilde A_{\Phi}$ is the plain gradient, and a connection that appears nowhere in the equations cannot be said to be gauged. The generators $T^{a}$ are then present in no equation of the layer, and the number gauged is zero. Verified by evaluating the covariant derivative at $\kappa=0$ and confirming that no $\tilde A_{\Phi}$ survives in any of the four free equations.</p>
+<p><strong>Corollary (the group at a count of zero is the trivial group).</strong> A group with no generator is the one-element group, $\mathrm{SU}(1)=\{e\}$.</p>
+<p><em>Proof.</em> A connected Lie group is generated by the exponentials of its Lie algebra, so a group with $\dim\mathfrak{g}=0$ has $\mathfrak{g}=0$ and is the identity component of itself, a single point. $\mathrm{SU}(1)$ is the group of $1\times1$ unitary matrices of determinant one, which is $\{1\}$; its algebra is the zero space, and $1^{2}-1=0$. Verified by the dimension formula and by the exponential map on the zero algebra.</p>
+<p><strong>Remark (the definition excludes a different question).</strong> A reader may object that the free layer plainly has <em>some</em> symmetry — the Lorentz group acts on it, and the algebra's norm is preserved. That is true and it is not denied; it is a statement about the arena, which every category shares, and not about the rung, which is what the ladder indexes. The two questions are separated in §<em>Why the Norm's Unit Group Is Not the Rung</em>, and the separation is the whole content of the correction.</p>
+<h2 id="the-ladder-and-the-bottom-rung">The Ladder and the Bottom Rung</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Rung</th>
+<th>Category</th>
+<th>Group</th>
+<th>Generators</th>
+<th>$\dim=n^{2}-1$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4</td>
+<td><a href="the-symmetry-group-su4-of-the-primordial-force.html">primordial force</a></td>
+<td>$\mathrm{SU}(4)$</td>
+<td>$15$</td>
+<td>$16-1$</td>
+</tr>
+<tr>
+<td>3</td>
+<td><a href="the-symmetry-group-su3-of-the-strong-force.html">strong force</a></td>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$</td>
+<td>$8$</td>
+<td>$9-1$</td>
+</tr>
+<tr>
+<td>2</td>
+<td><a href="the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html">weak factors</a></td>
+<td>$\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ (the simple rung, three, plus one abelian)</td>
+<td>$3+1$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Force-Free</td>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>$0$</td>
+<td>$1-1$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The nesting is containment, not analogy.</strong> $\mathrm{SU}(n)\subset\mathrm{SU}(n+1)$ as the maps fixing the last basis vector, and the series uses exactly this relation at the top: the corpus states the strong group as the stabiliser of a line inside the primordial group, $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$, so the descent from fifteen to eight generators is the removal of the seven directions that move that line. The same containment continues one step down, $\mathrm{SU}(1)\subset\mathrm{SU}(2)$, and the free layer is the stabiliser that fixes everything and moves nothing.</p>
+<p><strong>The increments are the rungs.</strong> Between consecutive rungs the count grows by $2n-1$: three generators from $\mathrm{SU}(1)$ to $\mathrm{SU}(2)$, five from $\mathrm{SU}(2)$ to $\mathrm{SU}(3)$, seven from $\mathrm{SU}(3)$ to $\mathrm{SU}(4)$, and $3+5+7=15$. A category that gauges $2n-1$ fewer generators than the one above it is one rung lower, and the free layer is the rung that gauges none.</p>
+<p><strong>The rungs that carry an abelian factor.</strong> The chain is a chain of simple groups — with $\mathrm{SU}(1)=\{e\}$ at the bottom as the trivial minimal element, which is not simple in the strict sense and is there because the chain needs a floor — and its arithmetic sums to the fifteen of the top rung, so the increments count the <em>simple</em> generator alone. Two rungs carry an abelian direction beside them, and neither disturbs the count. At the strong rung the kernel is $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$, the ninth direction being $B-L$; at the electroweak rung the group is $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$, four generators, of which three are the rung and one is abelian. The extra direction is not a fragment of the rung above — the rank forbids it — so it arrives beside the chain as an index. Three is the rung; four is the category, and <a href="the-fourth-generator-the-abelian-factor-on-the-ladder.html"><em>The Fourth Generator</em></a> writes the accounting that reconciles the two without breaking the ladder.</p>
+<p><strong>Proposition (the free layer is the bottom rung and not a rung beside the ladder).</strong> The group of the category is $\mathrm{SU}(1)$, the unique minimal element of the chain, and it is reached from $\mathrm{SU}(2)$ by the same containment that reaches $\mathrm{SU}(2)$ from $\mathrm{SU}(3)$.</p>
+<p><em>Proof.</em> The chain $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$ is nested and its minimum is $\mathrm{SU}(1)$, since a subgroup of $\mathrm{SU}(1)$ is $\mathrm{SU}(1)$ itself. The free layer gauges no generator by the proposition above, so its group lies at the minimum. The step from $\mathrm{SU}(2)$ to $\mathrm{SU}(1)$ is the vanishing of three generators, which is the same operation as the step from $\mathrm{SU}(3)$ to $\mathrm{SU}(2)$ performed twice more; no new construction is needed and none is introduced. Verified by the dimension count and by the containment of the four groups as matrices.</p>
+<p><strong>Remark (continuity is the requirement, and it is met exactly).</strong> A group "out of nowhere" would be one that does not sit on the chain, or that sits on it at a position inconsistent with the category's generator count. $\mathrm{SU}(1)$ is on the chain at the position the count dictates: zero generators, the bottom. The earlier answer, $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$, was seven-dimensional and sat on no rung of this ladder at all, which is precisely the discontinuity the reader of the neighbouring categories is entitled to object to.</p>
+<h2 id="why-the-norms-unit-group-is-not-the-rung">Why the Norm's Unit Group Is Not the Rung</h2>
+<p>The group $\mathrm{U}(1)\cdot SL(2,\mathbb{C})=\{\tilde Q:\lvert\langle\tilde Q\rangle_{\natural}\rvert=1\}$ preserves the biquaternion norm, and the corpus says so in as many words. The question is not whether it does but what kind of object it is.</p>
+<p><strong>Proposition (the norm's unit group is rung-independent).</strong> The group preserving $\langle\cdot\rangle_{\natural}$ is the same at every rung of the ladder, so it cannot be the group of any one rung.</p>
+<p><em>Proof.</em> The norm is a property of the algebra alone: $\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\det\mathsf{M}_2(\tilde Q)$ depends on no coupling, no connection and no category, and an isometry of it is defined without reference to any of them. Hence the isometry group is the same object in the free layer, in the strong category and in the primordial category; a group that does not vary along the ladder cannot index a position on it. Verified by writing the isometry condition, which mentions $\mathbb{B}$ and its conjugate only, and contains no $\kappa$, no $\tilde A_{\Phi}$ and no $T^{a}$.</p>
+<p><strong>Corollary (naming it as the category's group is what produced the discontinuity).</strong> An answer of the form "the free layer's group is $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$" assigns to one rung a group shared by all rungs, and thereby leaves the free rung without a group of its own.</p>
+<p><em>Proof.</em> If $\mathrm{Sym}$ is taken to be the norm's unit group, the same expression is the group of every category, since by the proposition the isometry group does not vary; the series' four categories would then be distinguished by nothing, contradicting the ladder of §<em>The Ladder and the Bottom Rung</em>, whose rungs differ in generator count. The only assignment consistent with the ladder is the one that varies along it, which is the gauged internal group. Verified by substituting the isometry group for $\mathrm{Sym}$ in the ladder table and observing that all four rows collapse to one.</p>
+<p><strong>Remark (the arena is not deleted, only relocated).</strong> The correction does not assert that $\mathrm{U}(1)\cdot SL(2,\mathbb{C})$ is absent from the free layer. It asserts that it is the <em>arena</em>: the kinematic and norm-preserving structure every category carries, the spacetime side of the series rather than its force side. The corpus's own sentence — that the framework has more symmetry than the physics uses — is a statement about the arena and the compact group $\mathrm{U}(2)$ inside it, and it remains true at every rung. What it is not is the answer to <em>this</em> question, which asks which rung the category occupies.</p>
+<p><strong>Remark (why the arena is not seven-dimensional in the equations).</strong> The arena's kinematic factor is the Lorentz group, $SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$, acting by the rotor conjugation on the material sector and preserving the sector and the norm. The extra circle in the seven-dimensional group acts on the complexified field and rescales the norm, which is why the arena's group and the arena's <em>acting</em> group differ by a redundancy rather than by a symmetry. Either way the object is rung-independent, and the two readings of it are the subject of the companion articles and not of this one.</p>
+<h2 id="what-the-trivial-rung-still-asserts">What the Trivial Rung Still Asserts</h2>
+<p><strong>Proposition (de-gauging has this category as its fixed point).</strong> Setting the coupling to zero in any category of the series lands on this one, and the landing point is $\mathrm{SU}(1)$, independent of which category one starts from.</p>
+<p><em>Proof.</em> At $\kappa=0$ the connection decouples and the covariant derivative becomes the plain gradient in every category; the residual group is then the group gauged at $\kappa=0$, which is the group of no generator. The map "set $\kappa$ to zero" therefore sends every rung to the bottom rung, and the bottom rung is a fixed point of it because $\kappa$ is already zero there. Verified by applying the limit to the covariant derivatives of the four categories and checking that the images agree.</p>
+<p><strong>Corollary (the free layer is the series' zero, not its exception).</strong> The category is the common limit of the other three, and its trivial group is what makes the other three's counts meaningful.</p>
+<p><em>Proof.</em> By the proposition every category maps to it at $\kappa=0$, so it is the common image; a ladder whose increments are measured from a rung needs that rung, and the count $0$ is what makes $3$, $8$ and $15$ counts rather than labels. Verified by the arithmetic of the increments, $3+5+7=15$ from a base of $0$.</p>
+<p><strong>Remark (what "trivial" does not mean).</strong> It does not mean the category is empty of structure. The four free equations exist, the norm exists, the mass shell exists, and the arena's group acts on all of them. It means that the category gauges no generator — that no force is switched on — which is exactly what the category's name says and exactly what the ladder's bottom rung records. A force-free universe is one in which the count is zero, and a count of zero is a position on the ladder, not an absence from it.</p>
+<h2 id="what-the-category-does-not-supply">What the Category Does Not Supply</h2>
+<p><strong>Supplied.</strong> The rung and its count, the containment that reaches it from the rung above, the vanishing of the connection at every vertex, the identification of the free layer as the fixed point of de-gauging, and the separation of the rung from the arena.</p>
+<p><strong>Not supplied.</strong> Four boundaries, stated as boundaries.</p>
+<ul>
+<li><em>A generator to gauge.</em> The category has none, and this is the content of the name. A reader looking for a non-abelian structure in the free layer will not find one, and the absence is the answer rather than a gap.</li>
+<li><em>A value.</em> No mass, no coupling, no constant is fixed by the rung; the count is a dimension and not a number.</li>
+<li><em>The upper rungs.</em> The seven generators that take the count from eight to fifteen, and the five that take it from three to eight, are the subject of the articles that own those rungs; stating them here would be restating another category's group.</li>
+<li><em>A different arena.</em> The rung does not supply a new kinematic group. The arena is the same at every rung, and the free layer is where that fact is most visible, because the rung contributes nothing beside it.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The category carries the trivial force group, and it is the bottom rung of the series' ladder.</p>
+<p>$$
+\boxed{\ \mathrm{Sym}=\mathrm{SU}(1)=\{e\},\qquad \dim\mathfrak{su}(1)=0,\qquad \text{generators gauged}:0\ }
+$$</p>
+<p>The ladder is nested, $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$, with counts $0,\,3,\,8,\,15$ and increments $3,\,5,\,7$. The strong rung is a stabiliser inside the primordial rung, and the free rung is the stabiliser that moves nothing; the containment that reaches it is the same containment used at the top. A force is a gauged generator, and this category gauges none, so its group is the one with no generator. The seven-dimensional group of unit-modulus biquaternions preserves the norm, but it does so at every rung and is therefore the arena rather than the rung; naming it as this category's group is what made the answer discontinuous with its neighbours, and the correction is to place it where it belongs. Setting the coupling to zero in any category lands here, so the free layer is the series' fixed point and the base from which the other three counts are measured.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{SU}(n)$</td>
+<td>The rung-$n$ group; $\dim\mathfrak{su}(n)=n^{2}-1$; nested, $\mathrm{SU}(n)\subset\mathrm{SU}(n+1)$</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(1)=\{e\}$</td>
+<td>The trivial group; this category's force group; one element, no generator</td>
+</tr>
+<tr>
+<td>$\kappa$</td>
+<td>The coupling; zero throughout this category, by its definition</td>
+</tr>
+<tr>
+<td>$\tilde A_{\Phi}=\tilde A_{\Phi}^{a}T^{a}$</td>
+<td>The connection of a category and its generators; absent here</td>
+</tr>
+<tr>
+<td>$\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(e_t)$</td>
+<td>The strong rung as a stabiliser of a line in the rung above</td>
+</tr>
+<tr>
+<td>$\langle\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$</td>
+<td>The biquaternion norm; a property of the algebra, hence rung-independent</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(1)\cdot SL(2,\mathbb{C})=\{\tilde Q:\lvert\langle\tilde Q\rangle_{\natural}\rvert=1\}$</td>
+<td>The norm's unit group; the arena, present identically at every rung</td>
+</tr>
+<tr>
+<td>$SO^{+}(1,3)\cong SL(2,\mathbb{C})/\{\pm e_t\}$</td>
+<td>The arena's kinematic factor; the rotor conjugation on the material sector</td>
+</tr>
+<tr>
+<td>$\mathrm{U}(2)$</td>
+<td>The compact group of the fields, inside the arena; rung-independent</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-su4-model-four-lines-fifteen-generators-one-declaration.html"><em>The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration</em></a>, for the top rung.</li>
+<li><a href="quantum-chromodynamics-as-the-residual-of-su4.html"><em>Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$</em></a>, for the strong rung as a stabiliser.</li>
+<li><a href="rank-five-from-three-the-weak-factors-as-a-condensate-index.html"><em>Rank Five From Three</em></a> and <a href="the-photon-as-the-unbroken-mixture.html"><em>The Photon as the Unbroken Mixture</em></a>, for the intermediate rungs.</li>
+<li><a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html"><em>The Breaking of the Primordial Force</em></a>, for the descent between rungs.</li>
+<li><a href="the-compact-sector-of-the-biquaternions-is-u2.html"><em>The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$</em></a>, for the arena's compact group and the ceiling on the upper rungs.</li>
+<li><a href="the-lorentz-group-as-biquaternion-norm-automorphisms.html"><em>The Lorentz Group as Biquaternion Norm Automorphisms</em></a>, for the arena's kinematic group.</li>
+<li><a href="the-minimal-coupling-in-biquaternionic-form.html"><em>The Minimal Coupling in Biquaternionic Form</em></a>, for the coupling whose vanishing defines this category.</li>
+<li><a href="../articles_maths/algebra-and-element-conventions.html"><em>Algebra and Element Conventions</em></a>, for the norm and the conjugation.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
