@@ -310,7 +310,7 @@ The same passage adds, and this is **speculative**, a **physical interpretation*
 
 ## The Symmetry and the Mass
 
-The group is the symmetry of an equation, and the equation itself belongs to *Biquaternion Universe Free of Force*. It is the free gradient equation of the series (*Operator and Calculus Conventions*, §*The Gradient*), first order in one field at zero mass. This is the equation the fifteen parameters leave invariant: a conformal map carries a solution to a solution times a power of the conformal factor, and the mass term is the only obstruction. It is also the reason a conformal group enters the physics at all: Maxwell's equations are the massless case.
+The group is the symmetry of an equation, and the equation itself belongs to *Biquaternion Universe Force-Free*. It is the free gradient equation of the series (*Operator and Calculus Conventions*, §*The Gradient*), first order in one field at zero mass. This is the equation the fifteen parameters leave invariant: a conformal map carries a solution to a solution times a power of the conformal factor, and the mass term is the only obstruction. It is also the reason a conformal group enters the physics at all: Maxwell's equations are the massless case.
 
 The mass cannot be a term of the same kind. The square of the gradient is not scalar: the unit $e_t$ is the identity of the algebra, so it commutes with the three spatial units, and the two orders of a mixed derivative add, not cancel,
 $$
@@ -322,7 +322,7 @@ $$
 $$
 The square of the gradient is not the d'Alembertian, and the claim that it is must not be made.
 
-The massive law is a pair of first-order lines, one per chirality, both acting from the left on their own field, so no glyph names a side. Composing the two returns a second-order scalar operator on each half, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. The pair itself is written out in *Biquaternion Universe Free of Force*.
+The massive law is a pair of first-order lines, one per chirality, both acting from the left on their own field, so no glyph names a side. Composing the two returns a second-order scalar operator on each half, so the pair is one dynamics on two fields: the mass couples the halves, and each half obeys the d'Alembertian at mass $m$. The pair itself is written out in *Biquaternion Universe Force-Free*.
 
 This is the operator form of the boundary drawn above. The massless law is first order in one field and the massive law is first order in two; no rewriting puts the mass into a first-order equation for one field, and the mass is exactly what breaks the conformal invariance. The algebra is large enough for both, and the passage from one to the other is the price the boundary charges.
 
@@ -364,7 +364,7 @@ The algebra, its units, the scalar imaginary, the sectors, the norm and its pola
 
 ## Further Reading
 
-- [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) in *Biquaternion Universe Free of Force*, for the massless gradient equation, for the square of the gradient that is not the d'Alembertian, and for the chiral pair that carries the mass.
+- [The First-Order Root of the Biquaternion Klein–Gordon Operator](the-first-order-root-of-the-biquaternion-klein-gordon-operator.html) in *Biquaternion Universe Force-Free*, for the massless gradient equation, for the square of the gradient that is not the d'Alembertian, and for the chiral pair that carries the mass.
 - Philippe Di Francesco, Pierre Mathieu, and David Sénéchal, *Conformal Field Theory* (Springer, 1997), for the conformal algebra, its generators, and the $SO(d,2)$ form of the conformal group.
 - Steven Weinberg, *The Quantum Theory of Fields*, Vol. 1 (Cambridge, 1995), for the conformal group and the generators of dilations and special conformal transformations in the standard physics convention.
 - Roger Penrose and Wolfgang Rindler, *Spinors and Space-Time*, Vol. 2 (Cambridge, 1986), for the conformal compactification of Minkowski space and its relation to null geometry.

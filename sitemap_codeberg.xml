@@ -190,7 +190,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-zero-centre-subspace.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-half-bispinor-spaces.html</loc>
@@ -198,11 +198,11 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spin-one-anti-hermitian-subspace.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/rotor-spin-pair-and-carrier-a-survey-of-the-closure-block.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-operators-of-the-algebra.html</loc>
@@ -210,7 +210,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/biquaternion-physical-interpretation-of-operator-chirality.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-derivative-the-field-and-the-transform.html</loc>
@@ -318,7 +318,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-spinor-module-in-biquaternionic-form-and-its-lorentz-action.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html</loc>
@@ -338,7 +338,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-conformal-group-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-so4-route-to-the-euclidean-frame-an-alternative-to-the-imaginary-time-coordinate.html</loc>
@@ -346,7 +346,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/paravectors-and-the-geometry-of-spacetime.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/four-vectors-and-the-interval.html</loc>
@@ -418,7 +418,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/relativistic-mechanics-in-biquaternionic-form.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-non-relativistic-limit-of-relativistic-mechanics-in-biquaternionic-form.html</loc>
@@ -502,7 +502,7 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-carrier-roster-three-spins-and-no-fourth.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html</loc>
@@ -901,6 +901,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-symmetry-group-su1-of-the-force-free-case.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-lagrangian-and-the-proca-equation.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1121,12 +1125,20 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-symmetry-group-su4-of-the-primordial-force.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-su4-model-four-lines-fifteen-generators-one-declaration.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/spin-content-of-m4c-under-its-two-su2-copies-and-su4.html</loc>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-primordial-coupling.html</loc>
@@ -1305,6 +1317,10 @@
     <lastmod>2026-11-26</lastmod>
   </url>
   <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-symmetry-group-su3-of-the-strong-force.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/instantons-and-solitons-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
   </url>
@@ -1427,6 +1443,14 @@
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/confinement-and-the-loss-of-partonic-information-in-biquaternionic-form.html</loc>
     <lastmod>2026-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html</loc>
+    <lastmod>2026-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://ai-research-unit.codeberg.page/articles_physics/the-fourth-generator-the-abelian-factor-on-the-ladder.html</loc>
+    <lastmod>2026-11-28</lastmod>
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/articles_physics/the-electroweak-symmetry-group-and-the-hypercharge-assignment.html</loc>
@@ -13554,6 +13578,6 @@
   </url>
   <url>
     <loc>https://ai-research-unit.codeberg.page/physics.html</loc>
-    <lastmod>2026-11-27</lastmod>
+    <lastmod>2026-11-28</lastmod>
   </url>
 </urlset>

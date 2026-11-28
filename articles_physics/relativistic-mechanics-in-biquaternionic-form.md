@@ -179,7 +179,7 @@ The condition is the scalar part of $(\tilde\nabla_\Phi)^{\natural}\tilde{J}_{\P
 
 The mechanics above closes without a field equation. The mass-shell relation $\tilde{P}_{\Phi}\tilde{P}_{\Phi}^{\natural}=-m^{2}c^{2}$ is the kinematic statement, and it is what the four-momentum of a particle obeys whether or not a field is written for it.
 
-The two free wave equations that a field of mass $m$ obeys, the Klein–Gordon equation for a scalar and the Dirac pair for a spinor, are not kinematics and are not stated here. They belong to *Biquaternion Universe Free of Force*, which writes them in *The Klein–Gordon Equation in Biquaternionic Form* and *The Dirac Equation in Biquaternionic Form*, together with their polar and momentum-space forms, their fluids and their propagators. This article uses none of them and fixes no mass coefficient.
+The two free wave equations that a field of mass $m$ obeys, the Klein–Gordon equation for a scalar and the Dirac pair for a spinor, are not kinematics and are not stated here. They belong to *Biquaternion Universe Force-Free*, which writes them in *The Klein–Gordon Equation in Biquaternionic Form* and *The Dirac Equation in Biquaternionic Form*, together with their polar and momentum-space forms, their fluids and their propagators. This article uses none of them and fixes no mass coefficient.
 
 ## Summary of the Eight Formulas
 

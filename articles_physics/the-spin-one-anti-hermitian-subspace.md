@@ -522,7 +522,7 @@ The readings. Spin one is the adjoint representation, so the carrier is the alge
 - [Introduction to the Spin-Half Bispinors Spaces](the-spin-half-bispinor-spaces.html), for the second of the three carriers.
 - [Four-Vectors and the Interval](four-vectors-and-the-interval.html), for the sector as a representation space.
 - [Integer Spin Quantization and the Adjoint Action on the Material Sector](integer-spin-quantization-and-the-adjoint-action-on-the-material-sector-in-biquaternionic-form.html), for the weights as polarizations.
-- [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html) in *Biquaternion Universe Free of Force*, for the free equation that uses the sector, the two namings and the constraint.
+- [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html) in *Biquaternion Universe Force-Free*, for the free equation that uses the sector, the two namings and the constraint.
 - [The Third Polarization and the Self-Dual Split of the Massive Field Strength](the-third-polarization-and-the-self-dual-split-of-the-massive-field-strength.html), for the longitudinal state and the split.
 - [The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Bivector Plane](the-self-dual-and-anti-self-dual-split-spin-1-from-the-bivector-plane.html), for the complex structure the sector acquires after complexification.
 - [The Generalized Bloch Ball for Spin 1](the-generalized-bloch-ball-for-spin-1-in-the-biquaternion-framework.html), for the state space of a spin-one object.

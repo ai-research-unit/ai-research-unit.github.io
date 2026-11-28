@@ -14,7 +14,7 @@ rendered output in `../ai-research-unit-deploy/`.
 - **Relativity is kinematics only.** No Planck constant or its shadows (`\hbar`, `\frac{h}{2\pi}`,
   `\nu_m`, `2\pi m`, `4\pi^2m^2`, `mc/h`), no named free equations (Klein–Gordon, Dirac, Proca,
   Schrödinger), no mass-term displays. Free equations, Lagrangians, fluids and thermodynamics
-  belong to **Biquaternion Universe Free of Force**; Relativity may point there by name.
+  belong to **Biquaternion Universe Force-Free**; Relativity may point there by name.
 - Operator identities (gradient, d'Alembertian, Clifford root, Maxwell's Bianchi identity) are not
   free particle equations and may stay.
 - The four-wavevector `\tilde\Upsilon_\Phi = i\omega/c\,e_t + 2\pi\vec\nu_\Phi` is kinematic and
@@ -35,7 +35,7 @@ The categories are read downwards and each one may use only what precedes it:
    *From the Field Equation to the Quantum Field* (the promotion of the bracket), and nowhere earlier.
 3. *Fluid Physics and Thermodynamics* — assumes the quantisation; a thermal state is not
    definable without it.
-4. Particular categories: *Free of Force* first, then *Primordial Force*, then the forces.
+4. Particular categories: *Force-Free* first, then *Primordial Force*, then the forces.
 
 Consequence for the gauge articles of the Action block: the covariant derivative carries one
 coupling, `\kappa`, and every `\frac{2\pi i\varkappa}{h}` there is written `i\kappa`. The bridge
@@ -62,3 +62,31 @@ article-by-article inventory in §8; it is internal and never committed.
 Two traps the script exists to carry. The letter `h` is overloaded: helicity, the vector part of a
 state, the Cartan subalgebra, a finite-difference step, `\tanh`/`\cosh`/`\sinh`. And the constant
 can be written `h c` with a space, which no `{h}` grep will ever see.
+
+## Auditing the carrier roster
+
+`articles_internal/audits/audit-lagrangian-existence.md` lists one line per spin per category.
+Two traps it exists to carry, both found by outside review:
+
+- **A "no" line is a statement about the roster, never about field theory.** The roster is the
+  algebra's three carriers (dim $1,2,3$), so a colour-triplet scalar, the Rarita–Schwinger field
+  of spin $3/2$, and the Fronsdal/Vasiliev higher-spin fields are ordinary fields with functionals
+  of their own and simply are not carriers here. Never write "no irreducible carrier to write on".
+- **The corpus's own verdict on spin $3/2$ is narrower than "impossible".** It has the
+  Rarita–Schwinger *equation* and not the *action*
+  (`articles_internal/archives/the-lagrangian-and-the-rarita-schwinger-equation.md`): the missing
+  object is an algebra element that contracts the vector index with the chiral structure, which is
+  what the two multipliers need. The field is imported as $S\otimes V=4\oplus2$ with its constraint.
+
+Two physics traps in the same ledger: a $\mathrm{U}(1)$ mass term is gauge invariant, so the
+electron mass is allowed in QED (the *electroweak* line is where the scalar is required), and a
+massless chiral half is a legitimate charged field — the mass is what pairs the halves. Gauge
+bosons have no *explicit* mass term; a generated mass is not the same statement.
+
+The audit's first ledger column is the **gauged group** — the group whose connection the row's
+density carries, never the carrier (spin is the next column). The four force groups are the
+corpus's own: $\mathrm{SU}(4)$ (15, rank 3), $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$
+(8, 2), $\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y$ (4, 2) and $\mathrm{SU}(1)=\{e\}$ (0, 0). Note the
+electroweak subtlety the ledger must keep: the Standard Model's group is the *product*, while the
+algebra's compact group is $\mathrm{U}(2)=(\mathrm{SU}(2)\times\mathrm{U}(1))/\mathbb{Z}_2$ — same
+algebra and dimension, different group.

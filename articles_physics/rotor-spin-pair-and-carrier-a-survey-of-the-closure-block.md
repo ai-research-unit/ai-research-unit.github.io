@@ -305,7 +305,7 @@ The reading. The closure adds the time slot. A spin-one field's value has three 
 
 ## The Carrier and the Field Equation
 
-The question the dynamics asks. A free field equation is an operator acting on a field, and a subspace carries its solutions when the operator maps that subspace into itself for every field in it. The three carriers are the three answers, and the answers are reached from the operator without using the representation theory. The equations themselves are written in *Biquaternion Universe Free of Force*; the table records the operator and the space it preserves.
+The question the dynamics asks. A free field equation is an operator acting on a field, and a subspace carries its solutions when the operator maps that subspace into itself for every field in it. The three carriers are the three answers, and the answers are reached from the operator without using the representation theory. The equations themselves are written in *Biquaternion Universe Force-Free*; the table records the operator and the space it preserves.
 
 | operator | field | spin | the space | it preserves the space by |
 | --- | --- | --- | --- | --- |
@@ -428,7 +428,7 @@ The three closures are not a decomposition. The carriers are one algebra read th
 - [The Four Forms and the Four Algebraic Norms over the Biquaternion Algebra](../articles_maths/the-four-forms-and-the-four-algebraic-norms-over-the-biquaternion-algebra.html), for the polar form of the norm and the inertias.
 - [Representations of Groups](../articles_maths/representations-of-groups.html), for complete reducibility and the highest-weight string.
 - [The Rotations, the Boosts and the Groups](../articles_internal/the-rotations-the-boosts-and-the-groups.html), for the actions whose carriers these are.
-- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) in *Biquaternion Universe Free of Force*, for the central operator and the restriction to the centre.
-- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) in *Biquaternion Universe Free of Force*, for the left multiplier and the two ideals.
-- [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html) in *Biquaternion Universe Free of Force*, for the sector as the space of a four-vector.
+- [The Klein–Gordon Equation in Biquaternionic Form](the-klein-gordon-equation-in-biquaternionic-form.html) in *Biquaternion Universe Force-Free*, for the central operator and the restriction to the centre.
+- [The Dirac Equation in Biquaternionic Form](the-dirac-equation-in-biquaternionic-form.html) in *Biquaternion Universe Force-Free*, for the left multiplier and the two ideals.
+- [The Proca Equation: Massive Spin 1 in Biquaternionic Form](the-proca-equation-massive-spin-1-in-biquaternionic-form.html) in *Biquaternion Universe Force-Free*, for the sector as the space of a four-vector.
 - [Higher Spin from Tensor Products: The Three Carriers and the Absence of a Fourth](../articles_internal/archives/higher-spin-from-tensor-products-the-three-carriers-and-the-absence-of-a-fourth.html), for what the closure does not forbid.

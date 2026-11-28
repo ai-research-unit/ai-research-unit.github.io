@@ -88,7 +88,7 @@ the gradient included. A left multiplier and a right multiplier never fail to co
 $$
 \mathsf C\,L(a^{\natural})\,\mathsf C=R(a),
 $$
-so the conjugate member of the pair is the same operator read on the other side. The two lines, and the coefficient that pairs them, belong to *Biquaternion Universe Free of Force* and are not reproduced here; what this section reads is the sides. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal.
+so the conjugate member of the pair is the same operator read on the other side. The two lines, and the coefficient that pairs them, belong to *Biquaternion Universe Force-Free* and are not reproduced here; what this section reads is the sides. Nothing else is used: no carrier, no splitting of a carrier, no projector, no idempotent, no ideal.
 
 **The two letters of the pair are not the two values of the basis operator.** They are written alike, and they are different objects, so the difference comes before anything about the mass. The pair is two equations for two elements, and the mass is the number that relates them: each element is the gradient of the other divided by the mass, which at nonzero mass is a change of variable. The two values of the basis operator are a second partition of the same algebra, cut by an operator the pair never uses. A reader who takes the letters of the pair for the values of the basis operator finds that the pair has only the zero solution, and the reason is one line: both members of every line are left multiplications, a left multiplication keeps the value, so each line would equate a field of one value with a field of the other.
 
