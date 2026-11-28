@@ -77,7 +77,7 @@
 \boxed{\;60\;\xrightarrow[\;41\text{ removed}\;]{}\;19\;\equiv\;19\;}
 $$</p>
 <p><strong>Why the equality is not obvious.</strong> The two descriptions do not look alike. One carries three gauge couplings and two scalar parameters; the other carries one charge, one mixing angle, one vacuum value and one mass. One carries three complex Yukawa matrices; the other carries nine masses and four mixing parameters. A reader who counts the letters will get different answers unless the map between the two sets of letters is written out.</p>
-<p><strong>The standing.</strong> The symmetric-phase count is the corpus's, from <a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian</a>; the broken-phase count is the parameter table's, from <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. What this article adds is the comparison, which neither of those makes.</p>
+<p><strong>The standing.</strong> The symmetric-phase count is the corpus's, from <a href="the-census-in-one-display-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters.html">The Complete Lagrangian</a>; the broken-phase count is the parameter table's, from <a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. What this article adds is the comparison, which neither of those makes.</p>
 <h2 id="the-symmetric-count-in-one-table">The Symmetric Count, in One Table</h2>
 <p><strong>Sixty written, forty-one removed, nineteen physical.</strong></p>
 <div class="table-scroll"><table>
@@ -197,6 +197,91 @@ $$</p>
 <p><strong>Why nothing is removed.</strong> The mass basis is a choice already made. Once the nine masses are numbers, the bi-unitary transformations that produced them have been spent, and the only freedom left is a residual abelian group acting on each species by a phase, which changes nothing. The count of written numbers is therefore the count of physical ones.</p>
 <p><strong>The quark flavour block is ten: six masses and four mixing parameters.</strong> The four are three angles and one phase, and their counting is the counting of a unitary matrix modulo rephasing. A general $3\times3$ unitary has nine parameters; rephasing the six quark fields removes $2N-1=5$; four remain.</p>
 <p><strong>The lepton flavour block is three: three masses and no mixing.</strong> In the minimal model there is no right-handed neutrino, so there is no leptonic mixing matrix to count. The matrix exists in principle, but it multiplies a neutrino mass term that the model does not have, and a matrix that multiplies nothing is not a parameter.</p>
+<h2 id="the-typology-of-the-nineteen">The Typology of the Nineteen</h2>
+<p>The two tables above count by sector. A second cut counts by <em>kind of mathematical object</em>, and it is the one that says what would have to be built.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>What it is</th>
+<th>Which entries</th>
+<th>Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group coordinate</td>
+<td>A point in a parameter space the algebra supplies</td>
+<td>mixing parameters</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>Connection normalisation</td>
+<td>The size of a coupling in a covariant derivative</td>
+<td>$g_s$, $g$, $g_{\mathrm Y}$</td>
+<td>$3$</td>
+</tr>
+<tr>
+<td>Central phase</td>
+<td>The phase of a topological term</td>
+<td>$\theta_{\mathrm{QCD}}$</td>
+<td>$1$</td>
+</tr>
+<tr>
+<td>Eigenvalue</td>
+<td>A mass, that is a spectrum of an operator</td>
+<td>nine fermion masses, $M_H$</td>
+<td>$10$</td>
+</tr>
+<tr>
+<td>Scale</td>
+<td>The one dimensionful normalisation</td>
+<td>$v$</td>
+<td>$1$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The counts add to nineteen, and the classification is exhaustive: a number in a Lagrangian is a coupling, a phase, an eigenvalue or a scale, and the mixing angles are coordinates with no other home.</p>
+<p><strong>The kinds matter more than the sectors.</strong> The sector split is about physics; the kind split is about what would have to be built. A group coordinate needs a group and a selection principle; a connection normalisation needs a connection and a normalisation principle; a central phase needs a topology and a value; an eigenvalue needs an operator and a spectral principle; a scale needs a mechanism that breaks dilatation invariance. Those are five different machines, and the framework has some of them and not others.</p>
+<h2 id="eight-with-an-arena-nine-with-an-eigenvalue-two-with-nothing">Eight With an Arena, Nine With an Eigenvalue, Two With Nothing</h2>
+<p>The same nineteen, cut by what the framework can <em>represent</em> rather than by what the number is.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Entries</th>
+<th>Count</th>
+<th>What the framework has</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arena</td>
+<td>mixing, couplings, vacuum angle</td>
+<td>$8$</td>
+<td>The group, the connection, the phase: represented, value free</td>
+</tr>
+<tr>
+<td>Eigenvalue only</td>
+<td>the nine fermion masses</td>
+<td>$9$</td>
+<td>A mass term, but no spectral principle</td>
+</tr>
+<tr>
+<td>Nothing</td>
+<td>$v$, $M_H$</td>
+<td>$2$</td>
+<td>No scale mechanism, no scalar mass principle</td>
+</tr>
+</tbody>
+</table></div>
+<p>The shares are $42.1\%$, $47.4\%$ and $10.5\%$. One entry is in two groups, and the reason is exact: $M_H$ is an eigenvalue by kind and belongs to "nothing" by arena, because the operator it is a spectrum of sits in a scalar sector the framework does not host. For the nine fermion masses the framework does host the operator — the Dirac mass term and the Yukawa matrices — and lacks only the principle that picks the eigenvalues. The kind and the arena are two different questions, and $M_H$ is the one entry where the answers differ.</p>
+<p><strong>The framework's own list, counted the same way.</strong> Three continuous parameters: $ϙ$, the central charge of the minimal coupling; $m$, the mass of the massive field equation; and $k_m$, the constant of that equation. None is fixed by the algebra, and none overlaps the nineteen. The total is therefore</p>
+<p>$$
+19+3=22 ,\qquad
+\text{imported share}=\frac{19}{22}=86.4\% ,
+$$</p>
+<p>so the reformulation is not more parsimonious than the model it reformulates; it has a different list, and it adds a short one to a long one. Its defence is that its objects are geometric, not that its count is small. And the score on the same measure is stark: twenty-two parameters and <strong>zero predictions not shared with the model</strong>.</p>
 <h2 id="the-map-between-the-two-tables">The Map Between the Two Tables</h2>
 <p><strong>Row by row.</strong></p>
 <div class="table-scroll"><table>
@@ -303,11 +388,9 @@ $$</p>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html">The Standard Model and the Lagrangian: Four Sectors in One Expression</a>. The sixty written and the forty-one removed, in full.</li>
 <li><a href="the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html">The Standard Model: Content, Quantum Numbers and the Nineteen Parameters</a>. The nineteen, itemised.</li>
 <li><a href="the-coefficients-the-list-carries-eighteen-constants-and-the-one-that-multiplies-no-piece.html">The Coefficients the List Carries</a>. The same eighteen in the broken phase, with the map to rows.</li>
 <li><a href="the-ckm-matrix-and-cp-violation-in-biquaternionic-form.html">The CKM Matrix and CP Violation in Biquaternionic Form</a>. The four mixing parameters and where the phase enters.</li>
-<li><a href="the-parameter-count-as-the-measure-of-the-frameworks-boundary.html">The Parameter Count as the Measure of the Framework's Boundary</a>. Why the count is the sharpest statement of what the algebra does not supply.</li>
 </ul>
       </div>
     </main>

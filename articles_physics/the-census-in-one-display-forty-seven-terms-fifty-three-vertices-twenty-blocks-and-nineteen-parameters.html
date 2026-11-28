@@ -72,6 +72,7 @@
         <h1 id="the-complete-lagrangian-forty-seven-terms-fifty-three-vertices-twenty-blocks-and-nineteen-parameters"><strong>The Complete Lagrangian: Forty-Seven Terms, Fifty-Three Vertices, Twenty Blocks and Nineteen Parameters</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The claim.</strong> The whole broken-phase Lagrangian is one expression, and every row of it carries a number in a table of forty-seven. Two further rows, the vector masses, sit outside it; six further structures, the gauge self-interactions, are vertices; and the numbers that multiply the rows are eighteen, or nineteen with the vacuum angle.</p>
+<p><strong>"Complete" means complete at dimension four, in unitary gauge, under the four conventions of §<em>The Four Counting Rules</em>.</strong> The tower above dimension four, and the covariant-gauge form with its ghosts, are outside this article; the first is named at the end and the second is the price of the gauge, not a different theory.</p>
 <p><strong>The answer.</strong></p>
 <p>$$
 \boxed{\;47=4+8+17+18,\qquad 49=47+2,\qquad 53=47+6,\qquad 20=47-27,\qquad 19=18+1\;}
@@ -475,7 +476,22 @@ $$</p>
 </table></div>
 <p><strong>The Pieces the Covariant Derivative Produces is lines 6, 7 and 8; the Scalar Sector is line 4 and the last two terms of line 2; the Yukawa Block is the last sum of line 5; the Free Parts is the rest.</strong> No row is carried by two lines.</p>
 <p><strong>Each row once.</strong> The curvatures are nonlinear, so the triple and quartic gauge vertices sit inside line 1 and appear nowhere else; the fermion kinetic term carries $\partial_\mu$ and the interactions are lines 6 to 8, so no covariant derivative is expanded twice.</p>
-<p><strong>What is not in it.</strong> No gauge-fixing term and no ghost: the list is written in unitary gauge, which has neither. No $\theta_{\mathrm{QCD}}$: it is a total derivative, present as a parameter and absent as a row. No right-handed neutrino, no Majorana mass, no higher-dimension operator: the omissions of <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The same theory written with $D_\mu$ and the Higgs doublet is the symmetric-phase form, not another Lagrangian.</p>
+<p><strong>What is not in it.</strong> No gauge-fixing term and no ghost: the list is written in unitary gauge, which has neither. <strong>The choice is available here and not above $M_C$</strong>, because a broken phase has a field basis in which the Goldstones are eaten and an unbroken one has none — which is why <a href="the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html">the PFEFT complete Lagrangian</a> carries a fixing and its ghosts and this one does not. <strong>Unitary gauge is the physical form and not the convenient one</strong>: a loop calculation prefers the covariant gauge with ghosts, and that calculation is the same theory in another gauge. No $\theta_{\mathrm{QCD}}$: it is a total derivative, present as a parameter and absent as a row. No right-handed neutrino, no Majorana mass, no higher-dimension operator: the omissions of <a href="what-the-list-omits-ghosts-the-theta-term-neutrino-mass-and-gravity.html">What the List Omits</a>. The same theory written with $D_\mu$ and the Higgs doublet is the symmetric-phase form, not another Lagrangian.</p>
+<h2 id="the-sign-rule-between-the-two-bookkeepings">The Sign Rule Between the Two Bookkeepings</h2>
+<p>The eight lines above are written in the corpus's coordinates, where $R_t=Q_t=iq'_t$. A display in a standard text uses the opposite convention on the time component, and one identity reconciles them.</p>
+<p>$$
+-\sum_{\imath} X_{\imath} Y_{\imath} = X\cdot Y ,
+$$</p>
+<p>where the right-hand side is contracted with the metric $(+,-,-,-)$ of the interval, $X_0$ is the physical temporal component, and $X_t=iX_0$.</p>
+<p><strong>The proof.</strong> The temporal term is $X_tY_t=(iX_0)(iY_0)=-X_0Y_0$ and the spatial ones are $\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, so $\sum_{\imath}X_{\imath}Y_{\imath}=-X_0Y_0+\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, and the leading minus makes the left-hand side $X_0Y_0-\sum_{\imath\in\{x,y,z\}}X_{\imath}Y_{\imath}$, which is exactly the contraction on the right.</p>
+<p><strong>Where it bites, and where it does not.</strong> The rule fixes the sign of a kinetic term and nothing else.</p>
+<ul>
+<li><strong>The scalar kinetic term.</strong> A text writes $+\tfrac12\partial\xi\cdot\partial\xi$; the rule turns it into $-\tfrac12\sum_{\imath}\partial_{\imath}\xi\,\partial_{\imath}\xi$, whose expansion is the standard $\tfrac12\dot\xi^2-\tfrac12(\vec\nabla\xi)^2$.</li>
+<li><strong>The connection kinetic term.</strong> A text writes $-\tfrac14F\cdot F$; the rule turns it into $-\tfrac14\sum_{\imath,\jmath}\varepsilon_{\imath}\varepsilon_{\jmath}F_{\imath\jmath}F_{\imath\jmath}$. Here the sign is unchanged, because the weight over the two indices cancels the flip.</li>
+<li><strong>The abelian check.</strong> With $F_{tk}=iE_k$ and $F_{kl}=\epsilon_{kln}B_n$, $\sum_{\imath\jmath}F_{\imath\jmath}F_{\imath\jmath}=-2E^2+2B^2$, so $-\tfrac14$ of that is $\tfrac12(E^2-B^2)$ — the standard $-\tfrac14F\cdot F$ evaluated on the same fields.</li>
+<li><strong>The fermion bilinear.</strong> The rule does not fix it, because a bilinear carries the spin structure. That sign belongs to <a href="the-dirac-equation-in-biquaternionic-form.html">the Dirac article</a> and is not restated here.</li>
+</ul>
+<p>The rule is what lets a display in this bookkeeping be read as a standard one without keeping a second Lagrangian beside it, and it is stated once, here, rather than in each sector. Its one structural consequence is separate from its arithmetic: <strong>local invariance is a property of the sum and not of the pieces.</strong> The fermion kinetic term is invariant only if its covariant derivative is built from the same three connections whose curvatures line 1 carries, and the Yukawa block is invariant only if the conjugate doublet carries the hypercharge the up-type singlet needs. Neither statement can be checked inside a single sector, which is why the audit is run on the eight lines and not on the pieces.</p>
 <h2 id="checks">Checks</h2>
 <ol>
 <li>The row sum. $4+8+17+18=47$.</li>
@@ -494,7 +510,7 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>The census, in one display: four curvatures, eight scalar rows, seventeen fermion rows and eighteen Yukawa rows make forty-seven; the two Proca masses make forty-nine rows; the six gauge structures make fifty-three vertices; the three folded sums make twenty blocks; and the eighteen constants with the vacuum angle make nineteen parameters.</p>
 <p>The complete Lagrangian is the equation at the top: eight lines, forty-nine rows, each row's number printed under it. The numbered table below it is the index, not a second writing.</p>
-<p>The numbered table is the arbiter of every claim in the category. A row that is not in it is not a piece, a number that is not in it is not a parameter, and a count that disagrees with it is a count of something else.</p>
+<p>The numbered table is the arbiter of every claim in this category <strong>about this list</strong>. A row that is not in it is not a piece of it, and a number that is not in it is not a parameter of it. <strong>The sentence stops there, and the stopping is deliberate:</strong> a count that disagrees with the table is a count at a different rung or under a different convention, and the fifty-three, the fifty-seven and the twenty above are three such counts, each printed with the rule that produces it. <strong>What the table settles is what this corpus means by "the number of terms"; it does not settle what another author means by it</strong>, and no article in the category claims otherwise.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>

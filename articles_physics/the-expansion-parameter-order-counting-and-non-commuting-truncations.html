@@ -74,7 +74,7 @@
 <p><strong>The claim.</strong> The diagram sum is a formal series, and a series is truncated only by a number that orders it. This article states what that number is, what it is not, and the one property of it that the rest of the section relies on: <strong>two truncations in different parameters generally do not commute</strong>, so the order in which they are applied is part of the calculation and must be declared.</p>
 <p><strong>Why the article is not bookkeeping.</strong> Almost every dispute about a perturbative result is a dispute about the order at which it was computed, and almost every such dispute is settled by writing down the grading. A result quoted without its grading cannot be compared with any other result, because the comparison is a comparison of two different truncations that have been given the same name. Stating the grading is what makes two calculations comparable, and the non-commutation is what makes a comparison subtle rather than mechanical.</p>
 <p><strong>The strongest objection.</strong> <em>The grading is a convention, so it cannot change the physics.</em> The grading is a convention; the truncation is not. A convention fixes the order in which terms are added; the truncation throws away everything past a point in that order; and the thrown-away part is a physical contribution. Two gradings are two different throwings-away, hence two different approximations, hence two different answers — and the difference between them is a computation of the residue, not a matter of taste. <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The limits of the expansion</a> is where the residue becomes visible as a boundary.</p>
-<p><strong>Position.</strong> After <a href="the-parameterised-action-an-ordered-family-of-theories.html">the parameterised action</a>, whose list it grades, and after <a href="the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html">the four stages</a>, whose output it orders. It is the article that converts the diagram expansion from a topology into an approximation.</p>
+<p><strong>Position.</strong> After <a href="the-parameterised-action-an-ordered-family-of-effective-field-theories.html">the parameterised action</a>, whose list it grades, and after <a href="the-lagrangian-method-from-a-truncated-effective-lagrangian-to-the-feynman-diagram.html">the four stages</a>, whose output it orders. It is the article that converts the diagram expansion from a topology into an approximation.</p>
 <h2 id="the-grading">The Grading</h2>
 <p><strong>A grading assigns to each coupling a power of the ordering parameter, and to each diagram the sum of its vertices' powers.</strong></p>
 <p>$$
@@ -86,8 +86,24 @@ $$</p>
 <li><strong>The grading is homogeneous in each coupling.</strong> The order of a diagram depends only on its vertex content, not on its topology. This is what lets the truncation be decided combinatorially, before any integral is evaluated: a reader can say which diagrams survive a truncation by counting vertices.</li>
 <li><strong>The grading is a choice.</strong> Nothing forbids assigning the same power to every coupling, and nothing forbids unequal weights. Both are legitimate. Which is <em>useful</em> depends on whether the resulting parameter is small in the regime of interest, and that is an empirical question about the application, not a theorem.</li>
 </ul>
-<p><strong>The corpus's two gradings are distinct and the distinction is the section's.</strong> <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">Stage $0$</a> grades the <em>list</em> by degree in the field, for the split. This article grades the <em>series</em> by power of the coupling, for the truncation. The first decides which diagrams exist; the second decides which are kept. Confusing the two produces the classic error of calling a change of split a change of order.</p>
+<p><strong>The grading of the list and the grading of the series are distinct, and the distinction is the section's.</strong> <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">Stage $0$</a> grades the <em>list</em> by degree in the field, for the split. This article grades the <em>series</em> by power of the coupling, for the truncation. The first decides which diagrams exist; the second decides which are kept. Confusing the two produces the classic error of calling a change of split a change of order.</p>
 <p><strong>The choice of grading is where the corpus's loop expansion and its coupling expansion part company.</strong> The loop number counts internal integrations; the coupling power counts vertices. They are different gradings of the same diagrams, and <a href="the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">the leading order</a> states the one case in which they agree.</p>
+<h2 id="the-ratio-of-scales-is-a-third-grading">The Ratio of Scales Is a Third Grading</h2>
+<p><strong>An effective field theory carries a third grading, and the literature's power counting is that one.</strong></p>
+<p>$$
+\text{order of }\mathcal O_i=d_i-4,
+\qquad
+\text{its contribution}\sim\Bigl(\frac{Q}{\Lambda}\Bigr)^{d_i-4},
+$$</p>
+<p>with $Q$ the scale of the observable and $\Lambda$ the label. It grades the <em>list</em> and not the diagrams, and a term is sized by it before any integral is evaluated.</p>
+<p><strong>Three differences separate it from the two gradings above, and each changes how a calculation is written.</strong></p>
+<ul>
+<li><strong>It orders the list, not the series.</strong> The coupling grading of this article assigns a power to a vertex and hence to a diagram. The scale grading assigns a power to an operator and hence to a coefficient. The first decides which diagrams are kept; the second decides which terms exist to be drawn.</li>
+<li><strong>Its small parameter is a regime and not a theory.</strong> $Q/\Lambda$ is small in a regime of a theory. The same density read at another $Q$ has another ordering, and the same diagram has another size. A coupling, by contrast, is small or large independently of the kinematics.</li>
+<li><strong>The application supplies it.</strong> The powers $\nu_i$ are a choice of bookkeeping, as this article says; $d_i-4$ is fixed by the operator's dimension and by nothing else. The scale ratio is the one grading the algebra fixes the exponents of and the application fixes the value of.</li>
+</ul>
+<p><strong>The two gradings are multiplied and neither replaces the other.</strong> A diagram's size is the product of its vertices' coefficients and of its loop factors, and each coefficient carries the scale ratio of its operator. So the scale grading enters <em>inside</em> the coupling grading, through the estimated size of the coefficient, and <a href="term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">term selection</a> is the article where the multiplication is performed.</p>
+<p><strong>A reader who conflates the two calls a term of higher order when it is only of higher dimension.</strong> A dimension-six operator can be first order in its coupling and second order in the scale ratio at once. Which of the two orders is meant must be said, and saying it is the whole of this article's discipline.</p>
 <h2 id="several-parameters-at-once">Several Parameters at Once</h2>
 <p><strong>In practice the grading is a vector, and the series is a multiple expansion.</strong></p>
 <p>$$
@@ -127,11 +143,12 @@ $$</p>
 <p><strong>Composing three or more multiplies the number of orderings that must be considered, and the number of possible residues.</strong> This is why a systematic study is organised as a lattice of orderings rather than as a list of cases: the cases are the corners, and the corners are fewer than the paths between them. A study that enumerates paths instead of corners will report the same corner many times and call the repetitions independent checks.</p>
 <p><strong>The corpus's structure follows this law.</strong> The sections are ordered so that each truncation is taken once, in one place, and the articles that follow rely on the order rather than re-taking it. That is why the reading order of the constants is stated as a rule and not as a preference.</p>
 <h2 id="what-the-algebra-supplies-here">What the Algebra Supplies Here</h2>
-<p><strong>The algebra supplies no grading.</strong> The powers $\nu_i$ are properties of the density and of the regime, not of the biquaternion structure. What the algebra supplies is the <em>degrees</em> that <a href="the-parameterised-action-an-ordered-family-of-theories.html">the parameterised action</a> sorts by, and the pairing that makes the diagrams computable once the order is fixed. A reader who expects the algebra to fix the ordering parameter is asking it to fix a physical regime, which is not a mathematical question.</p>
+<p><strong>The algebra supplies no grading.</strong> The powers $\nu_i$ are properties of the density and of the regime, not of the biquaternion structure. What the algebra supplies is the <em>degrees</em> that <a href="the-parameterised-action-an-ordered-family-of-effective-field-theories.html">the parameterised action</a> sorts by, and the pairing that makes the diagrams computable once the order is fixed. A reader who expects the algebra to fix the ordering parameter is asking it to fix a physical regime, which is not a mathematical question.</p>
 <h2 id="summary">Summary</h2>
 <p><strong>A series is truncated only by an ordering parameter, and the grading is a choice that must be declared.</strong> The order of a diagram is fixed by its vertex content, which is what makes the truncation combinatorial, and the choice of grading is decided by whether the resulting parameter is small.</p>
 <p><strong>With several parameters the truncation is a region, not a threshold, and the error is estimated on the boundary.</strong> The parameters are independent as bookkeeping and not as physics, and the corpus's two gradings — by frame parameter and by dimension — coexist with a stated relation.</p>
 <p><strong>Truncations in different parameters do not commute, and the residue is content.</strong> The order of operations is part of the method; commutativity is a special case to be proved and not a default; and a study is organised as a lattice of orderings, not as a list of paths.</p>
+<p><strong>The ratio of scales is a third grading, and it is the one an effective field theory is organised by.</strong> It orders the list rather than the diagrams, its small parameter is a regime rather than a theory, and it enters inside the coupling grading through the estimated size of a coefficient. Its exponents are fixed by dimension; its value is supplied by the application.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -161,11 +178,20 @@ $$</p>
 <td>$p$</td>
 <td>the total order of a diagram, $\sum_i\nu_iV_i$</td>
 </tr>
+<tr>
+<td>$Q$, $\Lambda$</td>
+<td>the scale of the observable and the label, whose ratio grades the list</td>
+</tr>
+<tr>
+<td>$d_i$</td>
+<td>the degree of the operator $\mathcal O_i$, so that $d_i-4$ is its order in the ratio</td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
-<li><a href="the-parameterised-action-an-ordered-family-of-theories.html">The Parameterised Action: An Ordered Family of Theories</a>, the list that this article grades.</li>
+<li><a href="the-parameterised-action-an-ordered-family-of-effective-field-theories.html">The Parameterised Action: An Ordered Family of Effective Field Theories</a>, the list that this article grades.</li>
+<li><a href="term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut</a>, the multiplication of the scale grading into the coupling grading.</li>
 <li><a href="the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html">The Leading Order: Tree Diagrams as the Stationary Phase of the Path Integral</a>, the one case in which the loop grading and the coupling grading agree.</li>
 <li><a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling</a>, where a chosen grading stops being an approximation.</li>
 <li><a href="power-counting-on-a-frame.html">Power Counting on a Frame</a>, the corpus's frame-parameter grading.</li>

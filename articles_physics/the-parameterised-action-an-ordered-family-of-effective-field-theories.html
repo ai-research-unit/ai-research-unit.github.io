@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Parameterised Action: An Ordered Family of Theories — Biquaternion Universe</title>
+  <title>The Parameterised Action: An Ordered Family of Effective Field Theories — Biquaternion Universe</title>
   <meta name="description" content="The claim. The density that stage supplies is not one object but a member of a family, labelled by a truncation scale and ordered by the degrees of its…">
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="../assets/css/layout.css">
@@ -69,12 +69,12 @@
   <div class="page-wrap">
     <main class="article">
       <div class="article-body">
-        <h1 id="the-parameterised-action-an-ordered-family-of-theories"><strong>The Parameterised Action: An Ordered Family of Theories</strong></h1>
+        <h1 id="the-parameterised-action-an-ordered-family-of-effective-field-theories"><strong>The Parameterised Action: An Ordered Family of Effective Field Theories</strong></h1>
 <h2 id="introduction">Introduction</h2>
 <p><strong>The claim.</strong> The density that <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">stage $0$</a> supplies is not one object but a member of a family, labelled by a truncation scale and ordered by the degrees of its operators. Two things follow at once, and the section depends on both. The method's input is always <em>a family read at a stated member</em>, never <em>the</em> density. And the family has a direction: raising the label restores operators, lowering it discards them, and the discarded part carries an error that must be quoted.</p>
 <p><strong>Why the family is not a pedantry.</strong> A reader who takes the density as a single object will read every later stage as exact, and will have no place to put the error bar that <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits of the expansion</a> insist on. A reader who takes it as a family sees where the error bar comes from: it is the size of the first member not read. The family is what makes a truncated list an <em>approximation</em> rather than an arbitrary subset, and the difference is the difference between a calculation and an assertion.</p>
 <p><strong>The strongest objection.</strong> <em>If the density is a family, the theory is not defined.</em> The objection mistakes definiteness for completeness. The theory at a stated member is perfectly definite: finitely many operators, finitely many coefficients, finitely many diagrams at each order. What is indefinite is only the claim that this member is the last one — and that claim is not made. The family is how the method says <em>this is the theory I am using, and here is what I am not using</em>.</p>
-<p><strong>Position.</strong> The first of the articles that stand outside the four stages. It governs <em>which</em> action <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">stage $0$</a> is handed; <a href="the-expansion-parameter-order-counting-and-non-commuting-truncations.html">the expansion parameter</a> governs how the list is graded once it is handed over.</p>
+<p><strong>Position.</strong> The first of the articles that stand outside the four stages. It governs <em>which</em> action <a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">stage $0$</a> is handed; <a href="the-expansion-parameter-order-counting-and-non-commuting-truncations.html">the expansion parameter</a> governs how the list is graded once it is handed over; and <a href="term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">term selection</a> decides which graded terms a stated accuracy keeps.</p>
 <h2 id="the-family-and-its-label">The Family and Its Label</h2>
 <p><strong>The density at a label $\Lambda$ is the list of operators whose degree does not exceed the label's bound.</strong></p>
 <p>$$
@@ -83,6 +83,10 @@
 $$</p>
 <p><strong>The label is part of the definition, not a cut imposed from outside.</strong> "The density" of an application is always "the family at this label, truncated at this degree". Symmetry and the field content fix which operators <em>may</em> appear; they do not fix how many, because the admitted set is infinite once derivatives are allowed. The label is what turns an infinite admissible set into a finite list, and it is the reason the list can be written at all.</p>
 <p><strong>The coefficients depend on the label, and the dependence is not optional.</strong> A coefficient at one label absorbs the effect of the operators dropped at that label; a coefficient at another label absorbs a different set. The two are not the same number, and a coefficient quoted without its label is an incomplete statement. <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation</a> is the article that performs the translation between labels; this one states that the translation is needed.</p>
+<h2 id="the-name-of-the-family">The Name of the Family</h2>
+<p><strong>The family has a name in the literature, and the name carries the theorem that licenses it.</strong> A density that is the most general one consistent with the symmetries, cut at a degree, is an <em>effective field theory</em>; the label is its <em>cutoff</em>; the coefficients $g_i(\Lambda)$ are its <em>Wilson coefficients</em>. The theorem behind the name is what makes <em>most general</em> do work: the most general Lagrangian consistent with the symmetries of a low-energy theory reproduces the low-energy limit of every parent theory that shares those symmetries, the parent's own dynamics entering only through the values of the coefficients. The list is the symmetries'; the numbers are the parent's.</p>
+<p><strong>The name also settles something the corpus states stage by stage.</strong> A density written this way is not renormalisable in the old sense: once operators of every degree are admitted, the divergences do not close on a finite list, and each order in $1/\Lambda$ brings new coefficients. That is a property of the construction and not a defect of it. The count of coefficients at each order is the count of measurements the application must supply, and this is why <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">the limits of the expansion</a> does not file non-renormalisability among the method's boundaries.</p>
+<p><strong>The label is therefore not a regularisation and must not be read as one.</strong> A regularisation is removed at the end of a computation; the label stays, because the coefficients depend on it and the observables do not. Removing it is the operation of <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">renormalisation</a>, and it does not remove the family: it moves inside it.</p>
 <h2 id="what-the-same-theory-at-the-next-order-means">What "the Same Theory at the Next Order" Means</h2>
 <p><strong>The family is ordered, so the next member can be named, and the naming is by agreement on observables.</strong></p>
 <blockquote>
@@ -132,6 +136,35 @@ $$</p>
 </ul>
 <p><strong>The interval between the two is the domain in which the method is useful.</strong> When the interval is empty — when the label needed for accuracy retains more coefficients than can be measured — the application has no valid member at that location, and the remedy is not a better calculation. It is a different member, or a different grading, or a different method. <a href="the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html">The limits of the expansion</a> names the third response.</p>
 <p><strong>The corpus states the same squeeze in its own terms at the vacuum restructuring.</strong> <a href="matching-at-m-c.html">Matching at $M_C$</a> fixes four quantities at one label; the count of conditions there is the "from above" constraint, and the requirement that the matching reproduce the low-energy numbers is the "from below" constraint.</p>
+<h2 id="the-two-constructions-of-a-member">The Two Constructions of a Member</h2>
+<p><strong>A member of the family is reached by one of two routes, and the corpus uses both.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>route</th>
+<th>what it starts from</th>
+<th>what it produces</th>
+<th>the cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>top-down</td>
+<td>a parent theory whose fields and couplings are known</td>
+<td>the coefficients, computed order by order</td>
+<td>the parent must be known and calculable</td>
+</tr>
+<tr>
+<td>bottom-up</td>
+<td>the symmetries and the field content alone</td>
+<td>the list, with every coefficient measured</td>
+<td>one measurement per coefficient, at one label</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The bottom-up route is licensed by the theorem of the previous section.</strong> The list is the symmetries', so nothing is missing from it except the numbers; a reader who writes the most general density and fits it to data is not guessing at the parent, and is not obliged to name one. What the route cannot do is predict a coefficient, and the count of coefficients is therefore the count of measurements the application must supply.</p>
+<p><strong>The top-down route is <a href="integrating-out-and-matching-from-one-effective-field-theory-to-another.html">integrating out and matching</a> performed in that order.</strong> It produces a number with a reason attached, and it is available only when a parent is. The two routes meet on the same member, and where they meet they must agree: a coefficient that no parent can produce is evidence that the parent is incomplete or that the measurement is wrong, and a coefficient that the data rejects is evidence that the parent is not the right one. The agreement is a check of both, and it is the strongest check the corpus has.</p>
+<p><strong>Neither route is more fundamental, and the difference is what each can be asked.</strong> A reader who wants a number asks the bottom-up route and pays a measurement. A reader who wants the origin of a number asks the top-down route and pays a parent. <a href="term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">Term Selection</a> is the article that says which coefficients either route must supply, for a stated accuracy.</p>
 <h2 id="the-two-traps">The Two Traps</h2>
 <p><strong>The first trap is a truncation that is not closed under lowering the degree.</strong> If an operator of degree $d$ is retained, every operator of lower degree permitted by the same symmetry must be retained. A list that keeps a high-degree operator and drops a lower-degree one of the same symmetry class is not a member of the family, and its error estimate is meaningless. The check is a sort of the retained list, and it is trivial to perform.</p>
 <p><strong>The second trap is a coefficient attributed to the wrong label.</strong> A number measured at one label, inserted into a density written at another, is wrong by the running — and the error is finite, not small. The count of coefficients and the count of measurements must be made at the <em>same</em> label; <a href="renormalisation-as-an-operation-the-arbitrary-scale.html">the operation</a> is what moves between them.</p>
@@ -141,6 +174,8 @@ $$</p>
 <p><strong>The density is a family ordered by the degrees of its operators, and the method reads it at a stated member.</strong> The label is part of the definition; the coefficients depend on the label; and "the same theory at the next order" is an agreement on observables, order by order.</p>
 <p><strong>The three regimes of an operator give the family its direction.</strong> Relevant operators cannot be cut, marginal ones must be measured, irrelevant ones are cut with a controlled error. The label is chosen by a two-sided squeeze, and the interval between the two sides is the method's domain of usefulness.</p>
 <p><strong>Two traps: a list not closed under lowering the degree, and a coefficient attributed to the wrong label.</strong> Both are checkable before any integral is evaluated.</p>
+<p><strong>The family is an effective field theory, and the name carries the theorem that licenses it.</strong> The most general density consistent with the symmetries reproduces any parent's low-energy limit, the parent entering only through the coefficients. The label is the cutoff and not a regularisation, and the density is not renormalisable in the old sense: the tower is the price of the label and not a defect of the construction.</p>
+<p><strong>A member is reached from above or from below, and the two routes must agree where both exist.</strong> The top-down route integrates out a parent and matches; the bottom-up route writes the most general list and measures. The first gives a number with a reason, the second a number with a price, and neither is more fundamental than the other.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -152,7 +187,7 @@ $$</p>
 <tbody>
 <tr>
 <td>$\Lambda$</td>
-<td>the truncation label: the scale at which the family is read</td>
+<td>the truncation label: the scale at which the family is read, the cutoff</td>
 </tr>
 <tr>
 <td>$d_i$</td>
@@ -164,7 +199,7 @@ $$</p>
 </tr>
 <tr>
 <td>$g_i(\Lambda)$</td>
-<td>the coefficient of $\mathcal O_i$ at the label $\Lambda$</td>
+<td>the coefficient of $\mathcal O_i$ at the label $\Lambda$, the Wilson coefficient</td>
 </tr>
 <tr>
 <td>$\mathcal O_i[\Phi]$</td>
@@ -175,6 +210,7 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><a href="the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html">The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation</a>, the stage that consumes this family.</li>
+<li><a href="term-selection-in-an-effective-field-theory-accuracy-power-counting-and-the-size-of-what-is-cut.html">Term Selection in an Effective Field Theory: Accuracy, Power Counting and the Size of What Is Cut</a>, which of the family's terms a stated accuracy keeps.</li>
 <li><a href="the-expansion-parameter-order-counting-and-non-commuting-truncations.html">The Expansion Parameter: Order Counting and Non-Commuting Truncations</a>, the grading of the list once the member is chosen.</li>
 <li><a href="renormalisation-as-an-operation-the-arbitrary-scale.html">Renormalisation as an Operation: The Arbitrary Scale</a>, the translation of coefficients between labels.</li>
 <li><a href="power-counting-on-a-frame.html">Power Counting on a Frame</a>, the degrees that make the sort computable.</li>

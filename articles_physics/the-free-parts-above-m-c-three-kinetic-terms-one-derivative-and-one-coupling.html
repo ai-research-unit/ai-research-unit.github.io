@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Free Parts Above $M_C$: Three Kinetic Terms, One Derivative and One Coupling — Biquaternion Universe</title>
+  <meta name="description" content="The question. Rows, and are the only rows of the eleven that carry no parameter. What fixes their coefficients, and what does each of them propagate?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-free-parts-above-math0-three-kinetic-terms-one-derivative-and-one-coupling"><strong>The Free Parts Above $M_C$: Three Kinetic Terms, One Derivative and One Coupling</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Rows $1$, $2$ and $3$ are the only rows of the eleven that carry no parameter. <strong>What fixes their coefficients, and what does each of them propagate?</strong></p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;-\tfrac14\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath}\;\equiv\;-\tfrac12\operatorname{tr}F_{\imath\jmath}F^{\imath\jmath},\qquad
++\sum_{f=1}^{16}\bar\xi_{f}\,i\gamma_{\imath}D_{\imath}\xi_{f},\qquad
++\operatorname{tr}\bigl(D_{\imath}\Xi\bigr)^{\dagger}\bigl(D^{\imath}\Xi\bigr).\;}
+$$</p>
+<p><strong>Three coefficients, $\tfrac14$, $1$ and $1$, and none of them is a choice.</strong> Each is fixed by the demand that one real component of one field propagate canonically, <strong>and the three numbers differ because the three fields carry different multiplicities of the trace</strong>: the curvature carries two generators, the fermion carries none, and the scalar carries one index of each kind.</p>
+<p><strong>What "free" means here, and what it does not.</strong> A free part is the quadratic piece of a row — the part that produces a propagator and no vertex. <strong>Rows $1$ and $3$ are not free in that sense</strong>: the same two rows produce the $AAA$, $AAAA$, $A\Xi\Xi$ and $AA\Xi\Xi$ vertices, which <a href="the-covariant-derivative-pieces-above-m-c-fifteen-a-xi-xi-and-one-hundred-and-twenty-aa-xi-xi.html">the covariant-derivative article</a> and <a href="the-gauge-self-couplings-above-m-c-aaa-aaaa-and-the-eighty-brackets.html">the gauge article</a> count. <strong>This article reads only the quadratic part of each</strong>, and the interactions are those articles' subject.</p>
+<p><strong>The scope sentence.</strong> Above $M_C$ there is no vacuum, so no field has a mass, and "free" therefore means <em>kinetic</em>. <strong>A free part with a mass term in it is a broken-phase object</strong>, and <a href="the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html">the two masses</a> is where the three quadratic potentials of this phase are read.</p>
+<h2 id="the-three-rows">The Three Rows</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>row</th>
+<th>piece</th>
+<th>coefficient</th>
+<th>propagates</th>
+<th>real components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$1$</td>
+<td>$-\tfrac14\sum_a F_a F_a$</td>
+<td>$\tfrac14$</td>
+<td>fifteen vectors</td>
+<td>$30$</td>
+</tr>
+<tr>
+<td>$2$</td>
+<td>$+\sum_f\bar\xi_i\gamma D\xi$</td>
+<td>$1$</td>
+<td>sixteen Weyl fields</td>
+<td>$32$</td>
+</tr>
+<tr>
+<td>$3$</td>
+<td>$+\operatorname{tr}(D\Xi)^{\dagger}(D\Xi)$</td>
+<td>$1$</td>
+<td>one Hermitian matrix</td>
+<td>$16$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>One coupling sits in all three</strong>, because the covariant derivative sits in rows $2$ and $3$ and the curvature is the derivative of the connection in row $1$. <strong>So the free parts already contain every interaction of the category that carries a derivative</strong>, and the table is the reason <a href="the-audit-above-m-c-every-constant-against-every-piece.html">the audit</a> finds $g_{4}$ in five of the seven vertex types.</p>
+<h2 id="row-1-the-fourth-and-the-factor-of-two-between-two-bases">Row 1: The Fourth, and the Factor of Two Between Two Bases</h2>
+<p><strong>The coefficient is $\tfrac14$ on the component sum and $\tfrac12$ on the trace, and the two statements are the same number.</strong></p>
+<p>$$
+\operatorname{tr}\Bigl(\sum_{\imath,\jmath}F_{\imath\jmath}F_{\imath\jmath}\Bigr)
+=\tfrac12\sum_{a,\imath,\jmath}F_{a,\imath\jmath}F_{a,\imath\jmath},
+\qquad F_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a},
+\qquad \operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}.
+$$</p>
+<p><strong>So $-\tfrac14\sum FF=-\tfrac12\operatorname{tr}FF$, and a display written $-\tfrac14\operatorname{tr}FF$ is half the canonical value.</strong> The factor of two is the trace norm and not a convention of sign or of metric: <strong>an article that writes $\tfrac14$ in front of a trace has either halved its fields or doubled its coupling</strong>, and the only defence is to print the normalisation in the same display as the coefficient.</p>
+<p><strong>Why $\tfrac14$ is canonical.</strong> The quadratic part of the row is</p>
+<p>$$
+-\tfrac14\sum_{a,\mu,\nu}\bigl(\partial_{\mu}A_{a,\nu}-\partial_{\nu}A_{a,\mu}\bigr)^{2}
+=-\tfrac12\sum_{a,\mu,\nu}\bigl(\partial_{\mu}A_{a,\nu}\bigr)^{2}
++\tfrac12\sum_{a}\bigl(\partial\cdot A_{a}\bigr)^{2}
++\text{total derivative},
+$$</p>
+<p><strong>which is $\tfrac12$ of $(\partial A)^{2}$ per real component and per Lorentz index — the canonical normalisation of a real vector, fifteen times over.</strong> The $30$ real components are $15\times4$, and each of them is canonical once the coefficient is $\tfrac14$ on the sum. <strong>Change the coefficient and the fifteen cease to be canonical together</strong>, which is why the number is fixed by one requirement and not fifteen.</p>
+<p><strong>The basis in which the same physics needs $\tfrac18$.</strong> Written with the printed arrays $G_{a}$ instead of the normalised $t_{a}$, the trace norms are $2$ on the fifteen and $12$ on the vacuum direction, <strong>so the coefficient is not $\tfrac14$ and not $\tfrac18$ uniformly</strong>: the printed frame is not orthonormal, and a coefficient that works on the fifteen fails on the corner. <strong>That is why every vertex of this category is read from $t_{a}$</strong>, and why <a href="the-lagrangian-and-the-primordial-force.html">the primordial action</a> fixes the passage from the printed arrays to $t_{a}$ once, in one rescaling and one rotation of the diagonal frame.</p>
+<p><strong>What the row does not carry.</strong> No mass: a term $\operatorname{tr}A_{\mu}A^{\mu}$ is invariant under a global transformation and <strong>not under a local one</strong>, since $A_{\mu}\mapsto UA_{\mu}U^{\dagger}+\tfrac{i}{g}U\partial_{\mu}U^{\dagger}$ turns the quadratic form into something else. <strong>No cubic $F^{3}$</strong>: the curvature carries dimension two, so the cube carries six. <strong>No derivative of the curvature</strong>: dimension five. <strong>And no $\theta_{4}$</strong>: the topological density is a total derivative and the fourth condition excluded it, which is why <a href="the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html">the complete Lagrangian</a> prints it on the last line and not among the eleven.</p>
+<h2 id="row-2-the-fermion-and-why-there-is-no-half">Row 2: The Fermion, and Why There Is No Half</h2>
+<p><strong>A fermion has no $\tfrac12$ because it has no real component to halve.</strong> A real scalar needs $\tfrac12(\partial\phi)^{2}$ so that its conjugate momentum is $\dot\phi$; <strong>a Grassmann field's kinetic term already carries the right coefficient at $1$</strong>, and the two-component form makes the point in one line:</p>
+<p>$$
++\sum_{f=1}^{16}\xi_{f}^{\dagger}\,i\bar\sigma^{\imath}D_{\imath}\,\xi_{f},
+\qquad
+D_{\imath}\xi_{f}=\partial_{\imath}\xi_{f}-ig_{4}A_{a,\imath}\bigl(t_{a}\otimes\mathbb 1_{2}\bigr)\xi_{f}.
+$$</p>
+<p><strong>The coefficient is one and the field is complex, and the two facts belong together</strong>: a complex field has two real components and a first-order equation, so the $\tfrac12$ that a real second-order field needs has nowhere to go.</p>
+<p><strong>The sixteen are $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, and the covariant derivative is block-diagonal on that split.</strong> The quartet half carries $t_{a}\otimes\mathbb 1_{2}$ and the conjugate half carries $-t_{a}^{T}\otimes\mathbb 1_{2}$; <strong>the minus is not a convention</strong> — a $\bar{\mathbf4}$ transforms with the transpose-inverse, and a vertex that forgot it would give the $\mathrm{SU}(4)^{3}$ index $+4$ instead of $0$. <strong>The copy index is untouched by every generator</strong>, which is the one structural statement the row makes: the algebra acts on the quartet index alone, and the commutant of that action is where the family lives.</p>
+<p><strong>What the row does not carry.</strong> No mass, no chirality projection, no second structure of any kind. <strong>A mass is $m\bar\xi\xi$, it is invariant because the content is vector-like, and it is row $12$ with a zero coefficient</strong> — <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">the boundary</a> prices the decline. <strong>A kinetic term is not allowed to supply what a mass supplies</strong>, and a reader who expects the free parts to fix the fermion masses will find them in the Yukawa block instead, one scale later.</p>
+<h2 id="row-3-the-scalar-and-the-half-the-trace-supplies">Row 3: The Scalar, and the Half the Trace Supplies</h2>
+<p><strong>The coefficient is $1$ and the fifteen components are canonical because the trace supplies the $\tfrac12$.</strong> Writing $\Xi=\chi_{a}t_{a}+\tfrac14 s\,\mathbb 1$ with $s\equiv\operatorname{tr}\Xi$,</p>
+<p>$$
+\operatorname{tr}\bigl(\partial_{\imath}\Xi\bigr)^{2}
+=\tfrac12\sum_{a}\bigl(\partial_{\imath}\chi_{a}\bigr)^{2}
++\tfrac14\bigl(\partial_{\imath}s\bigr)^{2},
+$$</p>
+<p><strong>and the cross term is absent because $\operatorname{tr}t_{a}=0$</strong> — the traceless part and the trace are orthogonal under the trace form, which is the same statement as the decomposition being canonical.</p>
+<p><strong>The fifteen are canonical at coefficient $1$, and the trace is not.</strong> $\tfrac14(\partial s)^{2}$ is $\tfrac12(\partial\tau)^{2}$ for $\tau\equiv s/\sqrt2$, <strong>so the canonical trace field is $\operatorname{tr}\Xi/\sqrt2$ and not $\operatorname{tr}\Xi$.</strong> The distinction is worth a display because it is where a factor of two goes missing:</p>
+<p>$$
+\tfrac14\bigl(\partial\operatorname{tr}\Xi\bigr)^{2}=\tfrac12\Bigl(\partial\tfrac{\operatorname{tr}\Xi}{\sqrt2}\Bigr)^{2}.
+$$</p>
+<p><strong>So "the scalar carries no $\tfrac12$" is a true sentence about the fifteen and an incomplete one about the trace</strong>: the fifteen are canonical at coefficient $1$ because $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, and the trace mode needs the $\sqrt2$ before it can be compared with anything. <a href="the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html">The two masses</a> uses the canonical $\tau$ when it quotes $\mu_{\Phi}^{2}+4\mu_{2}^{2}$ on the trace; <strong>in the $s$ coordinate the same mass reads $2(\mu_{\Phi}^{2}/4+\mu_{2}^{2})$</strong>, and the two numbers differ by exactly the $\sqrt2$ printed above.</p>
+<p><strong>A second kinetic term exists and is not written.</strong> $c\,(\partial\operatorname{tr}\Xi)^{2}$ is invariant, dimension four, and admissible; <strong>the census counts it at the rung below</strong> and <a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">the canonical basis</a> removes it with one rescaling of the trace mode. <strong>The coefficient $1$ in row $3$ is therefore a choice of basis and not a group-theoretic fact</strong>: it is the basis in which $c=0$, and the price is that four potential coefficients and one Yukawa matrix move when the basis changes.</p>
+<p><strong>What the row does not carry.</strong> No mass, no quartic, no derivative of $s$ alone. <strong>And no potential</strong>: rows $4$–$9$ are affine in $V(\Xi)$ and carry no derivative at all, which is why they produce masses and vertices and never a propagator's momentum dependence.</p>
+<h2 id="what-the-free-parts-do-not-carry">What the Free Parts Do Not Carry</h2>
+<p><strong>No mass, for any field.</strong> The fifteen vectors cannot have one and the sixteen fermions decline one; the scalar's two masses are rows $4$ and $5$, and they are potential terms.</p>
+<p><strong>No ghost kinetic term among the eleven.</strong> $-\partial\bar c Dc$ exists and is the ghost's, and it belongs to the gauge-fixing row that <a href="the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html">the complete Lagrangian</a> prints on its last line. <strong>A free part is a row of the eleven, and the ghost is not one.</strong></p>
+<p><strong>No $\tfrac12$ that is not a trace, and no $2$ that is not a $\mathrm{U}(1)$.</strong> The three coefficients are $\tfrac14$, $1$, $1$; a display with $\tfrac12$ on the fermion, or with $\tfrac12$ on the scalar's trace mode, <strong>has moved a normalisation into a coefficient</strong>, and the count of parameters will not show it.</p>
+<h2 id="the-three-propagators">The Three Propagators</h2>
+<p><strong>What each free part buys, in the covariant gauge of the last line.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>field</th>
+<th>quadratic part</th>
+<th>propagator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$A_{a,\mu}$, fifteen</td>
+<td>$-\tfrac14(\partial_{\mu}A_{a,\nu}-\partial_{\nu}A_{a,\mu})^{2}$</td>
+<td>$-i\delta_{\mu\nu}/k^{2}$ at $\zeta=1$</td>
+</tr>
+<tr>
+<td>$\xi_{f}$, sixteen</td>
+<td>$i\xi^{\dagger}\bar\sigma^{\imath}\partial_{\imath}\xi$</td>
+<td>$i\bar\sigma\cdot k/k^{2}$</td>
+</tr>
+<tr>
+<td>$\chi_{a}$, fifteen</td>
+<td>$\tfrac12(\partial\chi_{a})^{2}$</td>
+<td>$i/k^{2}$</td>
+</tr>
+<tr>
+<td>$\tau=\operatorname{tr}\Xi/\sqrt2$</td>
+<td>$\tfrac12(\partial\tau)^{2}$</td>
+<td>$i/k^{2}$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Four propagators from three rows, and the fourth is the trace mode that row $3$ contains without naming it.</strong> The scalar counts as sixteen real fields and not as fifteen, which is the same count the census makes when it says the content is fifteen connections, sixteen Weyl fields and one Hermitian scalar.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Three rows, three coefficients, one coupling, and no parameter of their own.</strong> $\tfrac14$ on the component sum is $\tfrac12$ on the trace and is fixed by the canonical normalisation of fifteen real vectors; $1$ on the fermion is fixed by the Grassmann field being complex; $1$ on the scalar is fixed by $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, which supplies the $\tfrac12$ for the fifteen and leaves the trace mode a $\sqrt2$ short of canonical.</p>
+<p><strong>Two facts about these rows are choices and the rest are not.</strong> The coefficient $1$ in row $3$ is the basis in which the second kinetic term $(\partial\operatorname{tr}\Xi)^{2}$ is absent, and that basis is <a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">the census</a>'s rung. <strong>Everything else is a trace norm.</strong></p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$F_{a,\imath\jmath}$</td>
+<td>curvature of generator $a$; $F_{\imath\jmath}=\sum_{a}F_{a,\imath\jmath}t_{a}$</td>
+</tr>
+<tr>
+<td>$t_{a}$</td>
+<td>the fifteen generators, $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$</td>
+</tr>
+<tr>
+<td>$G_{a}$</td>
+<td>the printed arrays, trace norms $2$ and $12$; not orthonormal</td>
+</tr>
+<tr>
+<td>$\chi_{a}$</td>
+<td>the fifteen coordinates of $\Xi_{0}$ on $t_{a}$</td>
+</tr>
+<tr>
+<td>$s$, $\tau$</td>
+<td>$s=\operatorname{tr}\Xi$; $\tau=s/\sqrt2$, the canonical trace field</td>
+</tr>
+<tr>
+<td>$\xi_{f}$</td>
+<td>the sixteen Weyl fields, quartet index slow and copy index fast</td>
+</tr>
+<tr>
+<td>$\zeta$</td>
+<td>the gauge parameter of the fixing row, absent from the eleven</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-census-above-m-c-nineteen-structures-eighteen-admissible-eleven-written.html">The Census Above $M_C$</a>. The eleven rows and the rungs that produce them.</li>
+<li><a href="the-content-above-m-c-fifteen-connections-sixteen-weyl-fields-and-one-hermitian-scalar.html">The Content Above $M_C$</a>. The fields these rows propagate.</li>
+<li><a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">The Canonical Basis</a>. The rescaling that removes the second kinetic term and the four costs.</li>
+<li><a href="the-gauge-self-couplings-above-m-c-aaa-aaaa-and-the-eighty-brackets.html">The Gauge Self-Couplings</a>. What row $1$ contains beyond its propagator.</li>
+<li><a href="the-two-masses-above-m-c-one-traceless-block-one-trace-and-no-third.html">The Two Masses</a>. The quadratic potential, which is where the $\sqrt2$ pays off.</li>
+<li><a href="the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html">The Complete Lagrangian</a>. The three rows in place.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

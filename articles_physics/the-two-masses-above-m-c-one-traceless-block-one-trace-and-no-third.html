@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two Masses Above $M_C$: One Traceless Block, One Trace and No Third — Biquaternion Universe</title>
+  <meta name="description" content="The question. Rows and are the only masses the phase carries. Why two, what does each of them give a mass to, and why is there no third?">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script>
+    // KaTeX 0.16 has no character metrics for U+03DA (Ϛ), so \tilde is
+    // positioned on the glyph instead of above it. A phantom height raises the
+    // accent without changing the horizontal layout.
+    function fixStigmaTilde() {
+      var render = katex.render;
+      if (render.stigmaFixed) return;
+      katex.render = function (tex, el, opts) {
+        if (typeof tex === 'string') {
+          tex = tex.replace(/\\tilde\s*\{\s*Ϛ\s*\}/g, '\\tilde{\\text{Ϛ}\\vphantom{H}}');
+        }
+        return render.call(this, tex, el, opts);
+      };
+      katex.render.stigmaFixed = true;
+    }
+  </script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="fixStigmaTilde(); renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\slashed': '\\not{#1}',
+              /* Border-only boxes: KaTeX's \boxed expands through \fbox, so both names are defined here. */
+              '\\boxed': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}',
+              '\\fbox': '\\fcolorbox{black}{transparent}{$\\displaystyle #1$}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-masses-above-math0-one-traceless-block-one-trace-and-no-third"><strong>The Two Masses Above $M_C$: One Traceless Block, One Trace and No Third</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p><strong>The question.</strong> Rows $4$ and $5$ are the only masses the phase carries. <strong>Why two, what does each of them give a mass to, and why is there no third?</strong></p>
+<p><strong>The answer.</strong></p>
+<p>$$
+\boxed{\;-\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}-\mu_{2}^{2}\bigl(\operatorname{tr}\Xi\bigr)^{2}
+\;\Longrightarrow\;
+m^{2}=\mu_{\Phi}^{2}\ \text{on the fifteen},\qquad
+m^{2}=\mu_{\Phi}^{2}+4\mu_{2}^{2}\ \text{on the trace}.\;}
+$$</p>
+<p><strong>Two numbers, two blocks, and the second block is one real field.</strong> The fifteen traceless directions are degenerate at $\mu_{\Phi}^{2}$; the trace is split away by $4\mu_{2}^{2}$, and the four is $\operatorname{tr}\mathbb 1$.</p>
+<p><strong>And there is no third because the two are the whole of degree two.</strong> The invariant ring of a Hermitian $4\times4$ matrix has exactly two quadratic monomials — $\operatorname{tr}\Xi^{2}$ and $(\operatorname{tr}\Xi)^{2}$ — and <a href="five-quartics-and-three-cubics-above-m-c-what-a-four-by-four-matrix-admits.html">the scalar article</a> counts them as the $2$ in $1,2,3,5$. <strong>A third quadratic would have to be built from the same two.</strong></p>
+<p><strong>What this article is not about.</strong> These are masses of the phase and not of the broken one: <strong>no field has a mass term with a vacuum expectation in it, no $W$ or $Z$ appears, and $\mu_{\Phi}^{2}$ is not $m_{h}^{2}$.</strong> The masses of the six leptoquarks and the nine massless connections belong to <a href="the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html">the restructuring</a>.</p>
+<h2 id="the-two-rows">The Two Rows</h2>
+<p>$$
+\mathcal{L}_{\text{quad}}=-\mu_{\Phi}^{2}\operatorname{tr}\Xi^{2}-\mu_{2}^{2}\bigl(\operatorname{tr}\Xi\bigr)^{2}.
+$$</p>
+<p><strong>Both signs are negative and both coefficients are positive above $M_C$.</strong> A positive coefficient with a negative sign gives a minimum at $\Xi=0$, which is the symmetric phase; <strong>a negative coefficient would give a maximum and there would be no phase to describe at all.</strong> The region is $\mu_{\Phi}^{2}&gt;0$ and $\mu_{2}^{2}&gt;0$, <a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">the primordial potential</a> gives the cone and the branch where a sign flips, and <strong>the region is a region and not a tuning</strong>: every point in it is a phase.</p>
+<p><strong>The rows are one quadratic form read in two blocks, and the decomposition is orthogonal.</strong> With $s\equiv\operatorname{tr}\Xi$ and $\Xi_{0}=\Xi-\tfrac14 s\,\mathbb 1$,</p>
+<p>$$
+\operatorname{tr}\Xi^{2}=\operatorname{tr}\Xi_{0}^{2}+\tfrac14 s^{2},
+\qquad
+\bigl(\operatorname{tr}\Xi\bigr)^{2}=s^{2}.
+$$</p>
+<p><strong>There is no cross term</strong>, because $\operatorname{tr}\Xi_{0}=0$: the traceless part and the trace are orthogonal under the trace form. <strong>So the quadratic form is already block-diagonal and the two masses need no diagonalisation</strong> — the fifteen are degenerate, the trace is one field, and the two blocks do not mix.</p>
+<h2 id="one-form-two-blocks-and-where-the-four-comes-from">One Form, Two Blocks, and Where the Four Comes From</h2>
+<p><strong>The fifteen.</strong> With $\Xi_{0}=\chi_{a}t_{a}$ and $\operatorname{tr}(t_{a}t_{b})=\tfrac12\delta_{ab}$, $\operatorname{tr}\Xi_{0}^{2}=\tfrac12\sum_{a}\chi_{a}^{2}$, <strong>so the potential is $-\tfrac12\mu_{\Phi}^{2}\sum\chi_{a}^{2}$ and the mass squared is $\mu_{\Phi}^{2}$ on all fifteen.</strong> The degeneracy is exact and it is the group's: <strong>fifteen directions at one number is what a single invariant of degree two means</strong>, and any split of the fifteen would need a second structure that this phase's potential does not have.</p>
+<p><strong>The trace.</strong> Along $\Xi=c\,\mathbb 1$ the two monomials are in the ratio</p>
+<p>$$
+\frac{\bigl(\operatorname{tr}\Xi\bigr)^{2}}{\operatorname{tr}\Xi^{2}}\Bigg|_{\Xi=c\mathbb 1}=\frac{(4c)^{2}}{4c^{2}}=4=\operatorname{tr}\mathbb 1 ,
+$$</p>
+<p><strong>which is the origin of the four in $\mu_{\Phi}^{2}+4\mu_{2}^{2}$</strong>: the trace monomial counts the four lines squared, the quadratic counts them once.</p>
+<p><strong>The factor of two that lives in the coordinate, not in the physics.</strong> <a href="the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html">The free parts</a> shows $\operatorname{tr}(\partial\Xi)^{2}=\tfrac12\sum(\partial\chi_{a})^{2}+\tfrac14(\partial s)^{2}$, <strong>so the canonical trace field is $\tau=s/\sqrt2$ and not $s$.</strong> In $\tau$ the quadratic potential is</p>
+<p>$$
+-\Bigl(\tfrac{\mu_{\Phi}^{2}}{4}+\mu_{2}^{2}\Bigr)s^{2}
+=-\tfrac12\bigl(\mu_{\Phi}^{2}+4\mu_{2}^{2}\bigr)\tau^{2},
+$$</p>
+<p><strong>so the physical mass on the trace is $\mu_{\Phi}^{2}+4\mu_{2}^{2}$ and the Hessian in the $s$ coordinate is half of it.</strong> The two statements do not disagree; <strong>one is a mass and the other is a second derivative with respect to a field that is not canonically normalised</strong>, and a reader who differentiates the potential in $s$ and finds $\mu_{\Phi}^{2}/2+2\mu_{2}^{2}$ has found the coordinate.</p>
+<p><strong>Why two numbers and not one.</strong> If $\mu_{2}^{2}=0$ the trace joins the fifteen and the scalar is a degenerate sixteen at one mass. <strong>The ratio $\mu_{2}^{2}/\mu_{\Phi}^{2}$ is the phase's one dimensionless number in the scalar sector</strong>, and it is a parameter and not a convention: no field redefinition removes it, <a href="the-canonical-basis-above-m-c-one-rescaling-three-costs-and-the-numbers-that-are-not-invariants.html">the canonical basis</a> moving both masses together rather than their ratio.</p>
+<h2 id="the-vector-mass-that-cannot-be-written">The Vector Mass That Cannot Be Written</h2>
+<p><strong>A mass term for a connection is invariant under the group and not under the gauge.</strong> $\operatorname{tr}A_{\mu}A^{\mu}$ is untouched by $A\mapsto UAU^{\dagger}$, <strong>and destroyed by $A\mapsto UAU^{\dagger}+\tfrac{i}{g}U\partial_{\mu}U^{\dagger}$</strong>: the cross term is linear in the derivative and is not a total derivative. <strong>So the obstruction is locality and not invariance</strong>, and that distinction is the whole reason a massive vector needs a scalar.</p>
+<p><strong>Which is why the mass of the fifteen is a broken-phase object with a vacuum in it.</strong> Below $M_C$ the mass form is</p>
+<p>$$
+m^{2}(X)=v^{2}\operatorname{tr}\bigl(X^{\dagger}[D,[D,X]]\bigr),
+$$</p>
+<p><strong>one number for the six that feel the vacuum and zero for the nine that do not</strong>, and the $32v^{2}$ of the six is <a href="classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html">the boson classification</a>'s. <strong>Above $M_C$ there is no $v$, so there is no such form</strong>: all fifteen are massless, exactly and not approximately, and the row is absent because invariance forbids it rather than because the corpus declined it.</p>
+<h2 id="the-fermion-mass-that-is-declined">The Fermion Mass That Is Declined</h2>
+<p><strong>A fermion mass is invariant and is not written.</strong> The content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, vector-like, so $\bar{\mathbf4}\otimes\mathbf4$ contains a singlet and $m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}$ exists; <strong>it is row $12$, its coefficient is zero, and the zero is a decline</strong>. <a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">The boundary</a> gives the warrant: <strong>the phase has no vacuum, and the masses are made below $M_C$ by the Yukawa matrix.</strong></p>
+<p><strong>The two zeros are not the same zero and this is the place they are easiest to confuse.</strong> The vector mass is a zero that invariance forces — <strong>no coefficient would make it a row</strong>. The fermion mass is a zero the author chooses — <strong>every coefficient would make it a row</strong>, and the choice buys a Yukawa sector with one matrix index instead of a bare mass with none.</p>
+<p><strong>What the decline costs.</strong> The sixteen are massless and the phase has no flavour structure at all: <strong>no mixing matrix, no phase, no hierarchy</strong>, and <a href="the-yukawa-block-above-m-c-two-matrices-eight-numbers-and-no-phase.html">the Yukawa block</a> is where all eight numbers wait. <strong>The decline is the reason the category has a Yukawa article and would otherwise not need one.</strong></p>
+<h2 id="no-direction-among-the-fifteen">No Direction Among the Fifteen</h2>
+<p><strong>The quadratic form is built from the trace, so it is invariant under the whole of $\mathrm{SU}(4)$ and distinguishes no generator.</strong> That is the same statement as the absence of a vector mass, written on the scalar side: <strong>a potential with one number on the fifteen cannot prefer a direction, because preferring one would need a second invariant carrying an index.</strong></p>
+<p><strong>The direction exists in the algebra and is invisible to the Lagrangian.</strong> The corner</p>
+<p>$$
+iD=\operatorname{diag}(-3i,i,i,i),\qquad \operatorname{tr}D^{2}=12,
+$$</p>
+<p><strong>is the traceless part of the symmetric sum of the three diagonal generators</strong> — the three diagonal words $iM_{x},iM_{y},iM_{z}$ of <a href="the-15-axf-matrices-of-the-bosons-in-detail.html">the fifteen</a>, whose sum is diagonal with one line distinguished, up to the trace that is removed and the factor the sum carries. <strong>Its norm $12$ is the number that reappears as the vacuum direction's trace norm</strong>, and it is the direction the restructuring will pick.</p>
+<p><strong>The free parts cannot name it.</strong> A massless connection propagates in every direction of the adjoint equally, and the degeneracy of the fifteen at $\mu_{\Phi}^{2}$ is the scalar image of the same fact. <strong>So this article stops at the algebra</strong>: the direction becomes an object only at $M_C$, where a vacuum sets one component of $\Xi$ and the fifteen split into nine and six. <strong>Above $M_C$ the number $12$ is a property of an array, not a mass.</strong></p>
+<h2 id="what-the-two-masses-are-not">What the Two Masses Are Not</h2>
+<p><strong>They are not $v$ and not $m_{h}$.</strong> $\mu_{\Phi}^{2}$ is a mass squared of a scalar that has no expectation value; $m_{h}^{2}=2\mu^{2}$ is a broken-phase object with a different field content and a different normalisation.</p>
+<p><strong>They are not tunings.</strong> The symmetric phase needs both positive, and every positive pair is a symmetric phase; <strong>the tuning question belongs to the branch where one of them crosses zero</strong>, which is the restructuring's.</p>
+<p><strong>And there is no tadpole to cancel.</strong> A linear term $c\operatorname{tr}\Xi$ is row $13$ with a zero coefficient, and the zero is <strong>forced</strong>: a linear term is not stationary at $\Xi=0$, so a symmetric vacuum sets it to zero rather than choosing it. <strong>A mass row and a tadpole row are different kinds of row</strong>, and the census separates them for this reason.</p>
+<h2 id="summary">Summary</h2>
+<p><strong>Two masses, one quadratic form, two blocks.</strong> Fifteen traceless directions at $\mu_{\Phi}^{2}$, degenerate by the group; the trace at $\mu_{\Phi}^{2}+4\mu_{2}^{2}$, split by $4=\operatorname{tr}\mathbb 1$; the canonical trace field is $\operatorname{tr}\Xi/\sqrt2$ and in the unnormalised coordinate the Hessian is half the physical mass.</p>
+<p><strong>No third mass exists and two are absent for different reasons.</strong> The vector mass is forbidden by local invariance — the quadratic form is globally invariant, which is why a scalar is needed — and the fermion mass is declined, with row $12$ carrying the zero.</p>
+<p><strong>And no direction is distinguished among the fifteen</strong>, which is the same fact as the missing vector mass, and which is why the corner $iD$ at trace norm $12$ is an array above $M_C$ and a vacuum below it.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mu_{\Phi}^{2}$, $\mu_{2}^{2}$</td>
+<td>the two dimensionful constants, both positive above $M_C$</td>
+</tr>
+<tr>
+<td>$\Xi_{0}$</td>
+<td>the traceless part, $\Xi-\tfrac14(\operatorname{tr}\Xi)\mathbb 1$</td>
+</tr>
+<tr>
+<td>$s$, $\tau$</td>
+<td>$s=\operatorname{tr}\Xi$; $\tau=s/\sqrt2$, the canonical trace field</td>
+</tr>
+<tr>
+<td>$m^{2}(X)$</td>
+<td>$v^{2}\operatorname{tr}(X^{\dagger}[D,[D,X]])$, the broken-phase mass form</td>
+</tr>
+<tr>
+<td>$iD$</td>
+<td>$\operatorname{diag}(-3i,i,i,i)$, trace norm $12$, the vacuum direction</td>
+</tr>
+<tr>
+<td>row $12$</td>
+<td>$m_{\alpha\beta}\bar\xi^{\alpha}\xi^{\beta}$, coefficient zero, declined</td>
+</tr>
+<tr>
+<td>row $13$</td>
+<td>$c\operatorname{tr}\Xi$, coefficient zero, forced</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><a href="the-free-parts-above-m-c-three-kinetic-terms-one-derivative-and-one-coupling.html">The Free Parts</a>. The $\sqrt2$ and the normalisation of the trace mode.</li>
+<li><a href="the-primordial-potential-one-symmetric-minimum-above-m-c.html">The Primordial Potential</a>. The symmetric minimum, the cone and the branch.</li>
+<li><a href="five-quartics-and-three-cubics-above-m-c-what-a-four-by-four-matrix-admits.html">Five Quartics and Three Cubics</a>. The invariant ring, degree by degree.</li>
+<li><a href="the-boundary-of-the-list-above-m-c-the-bare-mass-the-cubics-and-theta-four.html">The Boundary of the List</a>. The warrants of the six zeros, row by row.</li>
+<li><a href="the-complete-lagrangian-above-m-c-eleven-structures-seven-vertex-types-and-fifteen-constants.html">The Complete Lagrangian</a>. Rows $4$ and $5$ in place.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
