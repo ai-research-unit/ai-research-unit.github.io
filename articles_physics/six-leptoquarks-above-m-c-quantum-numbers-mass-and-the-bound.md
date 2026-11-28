@@ -24,15 +24,15 @@ M_X\gtrsim4.0\times10^{-5}\ \mathrm{J}=2.5\times10^{2}\ \mathrm{TeV}
 \;}
 $$
 
-**So the six are not destroyed by the transition — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The phrase *integrated out* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
+**So the six are not destroyed by the vacuum restructuring — they are made heavy by it, and heavy in a way that a flavour-changing decay forbids them to escape.** The phrase *integrated out* is precise: **absent from the asymptotic spectrum, present in the theory, and bounded from below.**
 
-**And before the transition the six are massless.** This is stated in the introduction because it is the fact a reader is most likely to get wrong, and it is not a convention or an approximation: above $M_C$ there is no condensate, so the sextet's mass is exactly zero, and an unbroken local symmetry keeps it zero to every order in perturbation theory. **The mass $M_X$ below is created by the breaking and does not exist before it**, so "the leptoquarks are heavy" is a statement about the phase this article is about, not about $\mathrm{SU}(4)$.
+**And before the restructuring the six are massless.** This is stated in the introduction because it is the fact a reader is most likely to get wrong, and it is not a convention or an approximation: above $M_C$ there is no condensate, so the sextet's mass is exactly zero, and an unbroken local symmetry keeps it zero to every order in perturbation theory. **The mass $M_X$ below is created by the breaking and does not exist before it**, so "the leptoquarks are heavy" is a statement about the phase this article is about, not about $\mathrm{SU}(4)$.
 
-**What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the transition at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be integrated out without being removed.
+**What this article establishes.** The sextet's quantum numbers and its fate; its mass as a function of the one vacuum it eats; the bound that fixes the scale of the restructuring at two hundred and fifty teraelectronvolts; why proton decay does not bite although $B$ is violated in thirds; and the precise sense in which a state can be integrated out without being removed.
 
 **Not established.** The bound is a coupling statement and its coefficient is uncertain by a factor of a few. The states have not been seen, which is the weakest kind of failure and the most persistent. **And — the point of the article — nothing here produces a weak boson.** The six cannot: the charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) rules it out, and this article records that the sextet's role is to break and to be heavy, not to give birth.
 
-**Where the rest is.** The transition that eats them is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the transition passes down instead of them is [The Matching at $M_C$](matching-at-m-c.html).**
+**Where the rest is.** The restructuring that eats them is [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Their mass relation and their bound in full are §*The Mass, and the Ratio That Comes With It* and §*The Bound: Two Hundred and Fifty Teraelectronvolts* below. Their place in the ledger is [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). **What the restructuring passes down instead of them is [The Matching at $M_C$](matching-at-m-c.html).**
 
 ## What "Integrated Out" Means, in Three Registers
 
@@ -89,7 +89,7 @@ $$
 
 ## The Mass, and the Ratio That Comes With It
 
-**From the vacuum.** The transition is done by a scalar acquiring a value along its unit-line component, and the six eat six real components of it. The mass is one half, one coupling squared, one vacuum squared:
+**From the vacuum.** The restructuring is done by a scalar acquiring a value along its unit-line component, and the six eat six real components of it. The mass is one half, one coupling squared, one vacuum squared:
 
 $$
 M_X^{2}=16\,g_4^{2}\,v_C^{2}.
@@ -112,7 +112,7 @@ $$
 | in gigaelectronvolts | $2.5\times10^{5}$ GeV |
 | in teraelectronvolts | $2.5\times10^{2}$ TeV |
 
-**So the transition scale is not free and not low.** Whatever else the model does, **the primordial force cannot break below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
+**So the restructuring scale is not free and not low.** Whatever else the model does, **the primordial force cannot break below two hundred and fifty teraelectronvolts**, because a lighter sextet would have been seen in a kaon decay.
 
 **Why the bound is a statement about a coupling as much as about a mass.** The rate scales as $g_{\text{eff}}^{4}/M_X^{4}$, where $g_{\text{eff}}$ collects the four external mixings. **A smaller mixing buys a smaller mass**, and the corpus is explicit that the coefficient is uncertain by a factor of a few. **The honest reading is $M_X\gtrsim g_{\text{eff}}\times250$ TeV**, with $g_{\text{eff}}$ of order one for a generic generation structure.
 
@@ -164,9 +164,9 @@ $$
 
 **where the singlet is neutral identically — three spin states, all $Q=0$, no charged vector at all.** Six neutral states is the opposite of four charged and two neutral.
 
-**The mass.** A bound state weighs at least its confinement scale, and the confinement scale here is the transition scale, $250$ TeV. **An $80$ GeV composite cannot be built from constituents a thousand times heavier.**
+**The mass.** A bound state weighs at least its confinement scale, and the confinement scale here is the restructuring scale, $250$ TeV. **An $80$ GeV composite cannot be built from constituents a thousand times heavier.**
 
-**So the sextet's role in the story is exactly two things: it is what the transition eats, and it is what the flavour bound measures.** It is not the parent of the weak force. **That role belongs to the index of the object that did the eating**, and it is the subject of the next article.
+**So the sextet's role in the story is exactly two things: it is what the restructuring eats, and it is what the flavour bound measures.** It is not the parent of the weak force. **That role belongs to the index of the object that did the eating**, and it is the subject of the next article.
 
 ## The Checks
 
@@ -188,7 +188,7 @@ $$
 
 "Integrated out" is not "destroyed". The six are absent from the spectrum and present in the propagators; a state that is dropped from every calculation is a different claim and a false one (*What "Integrated Out" Means*).
 
-Heavy is not gone. The transition converts six massless directions into six vectors at $32v^{2}$; nothing leaves the theory (*The Mass*).
+Heavy is not gone. The restructuring converts six massless directions into six vectors at $32v^{2}$; nothing leaves the theory (*The Mass*).
 
 The flavour bound is not a measurement. It is a floor on the scale, with a coefficient uncertain by a factor of a few (*The Bound*).
 
@@ -200,7 +200,7 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 
 **Identity.** $\mathfrak m=\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$: six states, $Q=\pm\tfrac23$, triplet or antitriplet, $B-L=\pm\tfrac43$. Forced by the local fourth line, and the only non-singlet massive vectors in the theory — massive below $M_C$.
 
-**Fate.** Massless above $M_C$, eaten at the transition, heavy below it. Two registers of one event, not two claims.
+**Fate.** Massless above $M_C$, eaten at the restructuring, heavy below it. Two registers of one event, not two claims.
 
 **Mass.** $M_X^{2}=16g_4^{2}v_C^{2}$ with $Ξ_0=v_CD$; the $16$ is $(\Delta d)^{2}=(1-(-3))^{2}$ and not a fit, and there is no second heavy mass in the minimal content to compare it with.
 
@@ -215,13 +215,13 @@ Matching dimensions is not matching physics. Six for six is a coincidence of dim
 | $\mathfrak m$ | the sextet, the off-diagonal block of the fifteen |
 | $X,\bar X$ | a leptoquark and its conjugate, $Q=\pm\tfrac23$ |
 | $M_X$ | the leptoquark mass, $4g_4 v_C$ |
-| $v_C$ | the magnitude of the transition's condensate |
+| $v_C$ | the magnitude of the restructuring's condensate |
 | $g_4$ | the primordial coupling |
 | $\mathcal O^{(6)}$ | a dimension-six local operator produced by integrating the sextet out |
 | $M_\Sigma$ | the mass of a hypothetical $(\mathbf6,\mathbf1,\mathbf1)$ diquark scalar |
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The transition that eats the six.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The restructuring that eats the six.
 - [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The theorem behind *What the Sextet Does Not Do*.
-- [The Matching at $M_C$](matching-at-m-c.html). What the transition gives the left–right model instead of a recombination.
+- [The Matching at $M_C$](matching-at-m-c.html). What the restructuring gives the left–right model instead of a recombination.

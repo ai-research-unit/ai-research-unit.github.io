@@ -16,7 +16,7 @@ $$
 M_x+M_y+M_z=\operatorname{diag}(-3,1,1,1)=D .
 $$
 
-So the basis element that carries the broken direction is a recombination of the frame, not a member of it. That is the point of the change: above the breaking the frame does not name the lepton line, and below the breaking the lepton line appears as a sum.
+So the basis element that carries the broken direction is a recombination of the frame, not a member of it. That is the point of the change: above the restructuring the frame does not name the lepton line, and below the restructuring the lepton line appears as a sum.
 
 This article proves that such a frame exists in $\mathfrak{su}(4)$ and cannot exist in $\mathfrak{su}(3)$, states exactly what is and is not broken, and records the one cost of the choice. Three qualifications belong in the introduction because they are easy to overstate.
 

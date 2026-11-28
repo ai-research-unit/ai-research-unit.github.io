@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** Seven weak vector fields stand below the transition under five names: three neutral, $W^3_L$, $W^3_R$ and $B'$, and two charged pairs, $W^{+}_{L}$ with $W^{-}_{L}$ and $W^{+}_{R}$ with $W^{-}_{R}$, each pair one complex field. Two
+**The question.** Seven weak vector fields stand below the restructuring under five names: three neutral, $W^3_L$, $W^3_R$ and $B'$, and two charged pairs, $W^{+}_{L}$ with $W^{-}_{L}$ and $W^{+}_{R}$ with $W^{-}_{R}$, each pair one complex field. Two
 vacua act on them. How many bosons survive, what are their masses, and is there any mixing?
 
 **The answer, in one line per half.** The neutral half is a $3\times3$ matrix of rank two, so it leaves one null direction — the photon — and two masses,
@@ -21,7 +21,7 @@ from there down.
 
 ## What Arrives, and Why It Is Not in the Group
 
-**Above the transition there is one factor and no weak field.** The algebra is $\mathfrak{su}(4)$, of rank three and dimension fifteen. **Below it the
+**Above the restructuring there is one factor and no weak field.** The algebra is $\mathfrak{su}(4)$, of rank three and dimension fifteen. **Below it the
 weak sector is seven real vector fields, and six of them arrive**: the doublet index supplies two triples, $W_L$ and $W_R$, and the seventh is $B'$, the
 model's own fifteenth Cartan, which was there all along. **None of the six is a generator of the model; $B'$ is.**
 
@@ -253,7 +253,7 @@ breaks the strong group directly; then the spatial block is no longer zero and t
 Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html)'s one postulate, and this article uses it.
 
 **It does not claim these seven vectors are generators of the model.** They are not: the fifteen are nine massless and six at $32v_C^2$, and every field
-here is counted below the transition.
+here is counted below the restructuring.
 
 ## The Checks
 
@@ -296,7 +296,7 @@ carries both weak indices.
 mixing is $\pi/4$ at equal couplings, and its $\rho=1-\sin2\beta$ is $0.8013$ at $\beta=0.1$ against $1.00038$ measured. **The extension is the ledger of
 content the model does not have.**
 
-**Seven vectors below the transition under five names, six of them arriving.** The fifteen are nine massless and six at $32v_C^{2}$; the weak sector is
+**Seven vectors below the restructuring under five names, six of them arriving.** The fifteen are nine massless and six at $32v_C^{2}$; the weak sector is
 what the doublet index supplies plus $B'$, counted from $M_C$ down.
 
 ## Summary of Notation
@@ -312,7 +312,7 @@ what the doublet index supplies plus $B'$, counted from $M_C$ down.
 | $a_1$, $a_2$ | the two neutral vacuum vectors in $\mathbb{R}^3$, both of length $\sqrt{5/8}$ |
 | $\mathcal M^2$ | the $3\times3$ neutral mass matrix, $v_C^2a_1a_1^{\mathsf T}+v^2a_2a_2^{\mathsf T}$ |
 | $\mathcal M^{2}_{\pm}$ | the $2\times2$ charged mass matrix |
-| $v$, $v_C$ | the electroweak and the transition vacuum values |
+| $v$, $v_C$ | the electroweak and the restructuring vacuum values |
 | $\kappa$, $\kappa'$ | the bidoublet's two diagonal vevs, in the extension only |
 | $\beta$ | $\arctan(\kappa'/\kappa)$, the extension's vacuum direction |
 

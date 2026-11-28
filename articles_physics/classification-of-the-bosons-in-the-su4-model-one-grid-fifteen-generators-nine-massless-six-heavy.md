@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**The question.** The model has one group. **Which cell of the grid does each connection occupy, which cell holds no boson, which bosons are made of cells rather than sitting in one, and which of the fifteen keep their masslessness when the transition comes?**
+**The question.** The model has one group. **Which cell of the grid does each connection occupy, which cell holds no boson, which bosons are made of cells rather than sitting in one, and which of the fifteen keep their masslessness when the restructuring comes?**
 
 **The answer.**
 
@@ -14,7 +14,7 @@ $$
 \;}
 $$
 
-and the spectrum those generators produce at the transition,
+and the spectrum those generators produce at the restructuring,
 
 $$
 \boxed{\;
@@ -35,7 +35,7 @@ $$
 \;}
 $$
 
-**The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken local symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the transition that changes it.
+**The zero above $M_C$ is exact and not a truncation.** With no condensate there is no direction for the mass form $M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr]$ to act on, so it is the zero operator on all fifteen; and an unbroken local symmetry forbids a vector mass at every order, so no loop restores one. **A reader who quotes "nine massless" for the $\mathrm{SU}(4)$ phase has quoted the broken phase's number**, and §*The Sextet, Which Is the Six Cells of the Mixed Band* gives the restructuring that changes it.
 
 **The model.** One model: **the $\mathrm{SU}(4)$ model**, set out in [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). **The name is stated first because every name here belongs to that model and to nothing else.** It is not the Standard Model's particle list and not a general classification of everything the algebra could describe: **it is the boson content of one group, on one grid, with one declaration.**
 
@@ -55,7 +55,7 @@ $$
 
 **Where the numbers come from, in one line each.** The dimension comes from the cells: $16-1$, because the trace is removed. **The rank comes from the torus**: $iD$ and the two spatial diagonals. **The six comes from the mixed band**: the $t$ row and column off the corner, six cells, six generators, two per plane.
 
-**What the rank controls.** The number of fields that stay massless when the group breaks is the dimension of the stabiliser, and a direction in the torus keeps the torus: **the rank does not move, $3\to2+1=3$**. After the transition the surviving algebra is the strong group plus one abelian direction, $\mathfrak{su}(3)\oplus\mathfrak{u}(1)=\mathfrak{u}(3)$, of dimension $8+1=9$ and rank three. **So nine directions are massless and six are heavy, and the nine is exactly that algebra's dimension.** That is the whole relation between the numbers, and it is stated once here because every later count uses it.
+**What the rank controls.** The number of fields that stay massless when the group breaks is the dimension of the stabiliser, and a direction in the torus keeps the torus: **the rank does not move, $3\to2+1=3$**. After the restructuring the surviving algebra is the strong group plus one abelian direction, $\mathfrak{su}(3)\oplus\mathfrak{u}(1)=\mathfrak{u}(3)$, of dimension $8+1=9$ and rank three. **So nine directions are massless and six are heavy, and the nine is exactly that algebra's dimension.** That is the whole relation between the numbers, and it is stated once here because every later count uses it.
 
 **The rank is why two weak factors cannot be a subgroup.** $\operatorname{rank}\mathfrak{su}(4)=3$ and the four-factor phase needs five. **A subalgebra never outranks its algebra**, and this article's spectrum is the reason that sentence is not abstract: **three is all the diagonal room there is.**
 
@@ -154,7 +154,7 @@ $$
 \underbrace{\mathbf1_{0}}_{(t,t)} .
 $$
 
-**Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are spatial–spatial and six are mixed; the octet takes the first six plus the two spatial diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the transition moves six of them from massless to $32v^{2}$.
+**Read the branching together with the grid and the arithmetic is the one worth stating carefully.** Six of the twelve off-diagonal directions are spatial–spatial and six are mixed; the octet takes the first six plus the two spatial diagonals, and the sextet takes the last six. **Nothing is created and nothing is destroyed**: it is the same fifteen, and the restructuring moves six of them from massless to $32v^{2}$.
 
 **So "six are lost and two are gained" is a true count and a false picture.** True: the octet is $6+2$ rather than eight off-diagonal, and the six mixed directions lie outside it. False in three ways: **the six mixed directions were never in the octet** — they are the mixed band, and they remain directions of the same algebra; **the two diagonals were always two of the fifteen**, and no direction joins anything; **and the count of vectors does not move at all**, fifteen massless above $M_C$ against nine and six below. What does change for the two diagonals is their status: below $M_C$ they are two of the eight connections of an unbroken factor, and above it they are two Cartan directions of a simple group. **That is a change of what a boson belongs to, and not a change in what exists.**
 
@@ -174,13 +174,13 @@ $$
 
 **And $\bar X$ is not a different kind of object.** It is the reverse amplitude of the same plane, which is why its mass is the same and its charge is the opposite. **A reader who takes $X$ and $\bar X$ for two species has read a factor of two into the sextet that is not there**: there are six particles because there are three spatial planes and two directions each.
 
-**The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the local symmetry is unbroken, so the zero survives to every order. **The transition is what gives the six a mass**, and it gives all of them the same one:
+**The mass, and where it comes from.** **In the unbroken phase the mass of the sextet is exactly zero**, and that zero is a property of the phase and not of the particle: with $Ξ=0$ there is no vacuum direction, the mass form is the zero operator, and the local symmetry is unbroken, so the zero survives to every order. **The restructuring is what gives the six a mass**, and it gives all of them the same one:
 
 $$
 32=2\cdot4^{2},
 $$
 
-where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which spatial line they occupy. **The full matrix, its diagonal form and the eigenvalue count are [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
+where the four is the difference of the two $B-L$ eigenvalues of the vacuum, $-3$ and $+1$. **The number is not free and it is the same for all six**, because the six differ only in which spatial line they occupy. **The full matrix, its diagonal form and the eigenvalue count are [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)**, and the physics of the six — the $K_L\to\mu e$ bound at $250\ \mathrm{TeV}$ and why they are heavy rather than gone — is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
 ## The Spectrum: Fifteen Generators, Fifteen Particles
 
@@ -201,7 +201,7 @@ $$
 \underbrace{8+1}_{9\ \text{massless}}+\underbrace{3+3}_{6\ \text{heavy}}=15 .
 $$
 
-**Two zeros and one reason.** The gluons and $B'$ are massless because **no vacuum of this model breaks the strong group or $B-L$**: the condensate that does the breaking carries $B-L=0$ on the spatial block and its action on the $(t,t)$ direction is the one it uses to eat the sextet. **Everything that ever gives $B'$ a mass happens downstream**, when a second vacuum mixes it with directions this model does not have. **A spectrum that gave two different reasons for the two zeros would be wrong about one of them**, and the honest statement is that both zeros are the same zero: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
+**Two zeros and one reason.** The gluons and $B'$ are massless because **no vacuum of this model breaks the strong group or $B-L$**: the condensate that does the breaking carries $B-L=0$ on the spatial block and its action on the $(t,t)$ direction is the one it uses to eat the sextet. **Everything that ever gives $B'$ a mass happens downstream**, when a second vacuum mixes it with directions this model does not have. **A spectrum that gave two different reasons for the two zeros would be wrong about one of them**, and the honest statement is that both zeros are the same zero: the symmetric phase has fifteen massless fields and the restructuring gives mass to exactly six.
 
 **The only non-singlet massive states.** The six leptoquarks are the only non-singlet massive states in the theory. **The strong group is never broken**, so the objects that carry the strong charge and mass at once are exactly the six that mix the lepton line with the spatial lines.
 
@@ -238,7 +238,7 @@ so with the normalisation $\operatorname{tr}(X^{\dagger}Y)=2\delta$, **exactly h
 - $T^{L}_{a}$ and $T^{R}_{a}$ have the **same** mixed half, so $T^{L}_{a}-T^{R}_{a}$ is pure spatial and no band direction is owed to either of them;
 - the six composites therefore span only **three** of the six band directions. **A redundant basis reads the six twice; it adds nothing to the fifteen.**
 
-**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the transition: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
+**The qualifier matters, and it is where the corpus changes register.** Inside $\mathfrak{su}(4)$ the composites are not new directions, and the algebra stays fifteen-dimensional. **At $M_C$ they are new fields all the same**, six redundant directions born with the copy index while the six leptoquarks acquire mass — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). So the count of massless vectors does not fall at the restructuring: six leave the kernel of $\operatorname{ad}(iD)$ and six arrive beside it.
 
 **What is left of the sentence, and it is the useful part.** Three of the six are the weak isospin the Standard Model keeps, and three belong to a factor the Standard Model does not keep, one direction of which is the raw material of hypercharge. **That sentence is about the four-factor phase, not about the fifteen**, and it is stated in [The Algebra of the Two Sectors](the-algebras-of-the-two-sectors-the-strong-group-on-three-dimensions-weak-isospin-on-two-the-photon-on-one.html).
 
@@ -257,7 +257,7 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one spat
 
 **What this costs the classification.** A reader who tries to place the six on the grid will place each of them twice, once in the mixed band and once in the spatial block, **and will then find the band double-counted.** The grid classifies the fifteen generators in the basis where each direction has one home; **the six $\mathfrak{so}(4)$ arrays are a different basis of a six-dimensional subspace, and they have no cells.**
 
-**What happens to them at the transition, and it is the decisive fact.** The condensate gives $32v^{2}$ to the three mixed planes and $0$ to the three spatial planes, so **each of the six arrays is half heavy and half massless**:
+**What happens to them at the restructuring, and it is the decisive fact.** The condensate gives $32v^{2}$ to the three mixed planes and $0$ to the three spatial planes, so **each of the six arrays is half heavy and half massless**:
 
 | array | its two halves | $m^{2}$ of each half | a particle? |
 | --- | --- | --- | --- |
@@ -351,13 +351,13 @@ and cyclic in $(x,y,z)$. **Each is a combination of one mixed plane and one spat
 | the block that does not | $8$ | $8$ |
 | the eaten components of $Ξ$ | one per heavy generator | $6$ |
 | the rank | maximal torus | $3$ |
-| the surviving algebra after the transition | $\mathfrak{su}(3)\oplus\mathfrak u(1)$, $8+1$ | $9=\dim$ |
+| the surviving algebra after the restructuring | $\mathfrak{su}(3)\oplus\mathfrak u(1)$, $8+1$ | $9=\dim$ |
 | the heavy count as the complement | $15-9$ | $6$ |
 | the six $\mathfrak{so}(4)$ arrays on the grid | each half mixed, half spatial | no cells |
 | the off-diagonal and diagonal split | $12+3$ | $15$, the same in both phases |
 | the branching below $M_C$ | $\mathbf 8_0\oplus\mathbf 3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}\oplus\mathbf1_0$ | $8+3+3+1=15$ |
 | the octet's composition | six spatial planes $+$ two Cartan | $8$ |
-| the vector count across the transition | $15$ massless, then $9+6$ | $15$, unchanged |
+| the vector count across the restructuring | $15$ massless, then $9+6$ | $15$, unchanged |
 | the Cartan charge of a diagonal direction | $[H,H']=0$ | $0$ |
 
 **The neutral sector's checks are not here, because the neutral sector is not here.** The mixing of three neutral directions, its rank two and its null direction belong to [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html), which is a statement about the four-factor phase.
@@ -382,11 +382,11 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 
 **The corner is forced and that is charge quantisation.** $B-L=\tfrac13\operatorname{diag}(-3,1,1,1)$, with $-3$ equal to minus the trace over the triplet index, and the vanishing trace is the same statement.
 
-**The spectrum is nine and six below $M_C$, and fifteen and zero above it.** Eight gluons and $B'$ massless, six leptoquarks at $32v^{2}$, once the condensate exists. **Before it, the count is fifteen massless and not nine**, the six leptoquarks included, and **two zeros with one reason**: the symmetric phase has fifteen massless fields and the transition gives mass to exactly six.
+**The spectrum is nine and six below $M_C$, and fifteen and zero above it.** Eight gluons and $B'$ massless, six leptoquarks at $32v^{2}$, once the condensate exists. **Before it, the count is fifteen massless and not nine**, the six leptoquarks included, and **two zeros with one reason**: the symmetric phase has fifteen massless fields and the restructuring gives mass to exactly six.
 
-**And the names belong to the second phase.** *Gluon* names a boson of an unbroken $\mathrm{SU}(3)$ factor, which exists only below $M_C$; above it the eight are the six spatial–spatial off-diagonals and the two spatial diagonals, named by what they connect and not by a group. **The octet is $6+2$, nothing is created at the transition, and the one thing that changes for the two diagonals is which group they belong to.**
+**And the names belong to the second phase.** *Gluon* names a boson of an unbroken $\mathrm{SU}(3)$ factor, which exists only below $M_C$; above it the eight are the six spatial–spatial off-diagonals and the two spatial diagonals, named by what they connect and not by a group. **The octet is $6+2$, nothing is created at the restructuring, and the one thing that changes for the two diagonals is which group they belong to.**
 
-**The photon, the $Z$, the $W$'s and the $Z_R$ are absent, and their absence is the frame.** They need two weak factors, three neutral directions, a second vacuum and a mixing angle — **all of them born at the transition, none of them a cell of this grid.**
+**The photon, the $Z$, the $W$'s and the $Z_R$ are absent, and their absence is the frame.** They need two weak factors, three neutral directions, a second vacuum and a mixing angle — **all of them born at the restructuring, none of them a cell of this grid.**
 
 **Nine generators touch the lepton line**, six that carry it into the spatial lines and three that read it: **exactly the connections that can change the lepton number, and the diagonal directions that measure it.** **The seven of the block-adapted basis is the same physics written with $B'$ as one array; the frame prints it as three.**
 
@@ -409,6 +409,6 @@ Fifteen, and not twenty-one at this scale. **The four particles $W^{\pm}$, $Z$ a
 - [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the declaration, and the real $\mathfrak{so}(4)$ inside the fifteen.
 - [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html). The vocabulary: cell, pair, array, direction.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ on six planes comes from.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ on six planes comes from.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six, their bound, and why they are heavy rather than gone.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Where the four absent particles come from.

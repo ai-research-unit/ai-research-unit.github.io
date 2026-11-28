@@ -6,7 +6,7 @@ title: The Symmetry Group SU(2)_L × U(1)_Y of the Electroweak Force
 
 ## Introduction
 
-The category *Biquaternion Universe Electroweak Force* is the rung below the strong one: the sector built from the group that survives the transition. The question this article answers is: **which group does the category carry?**
+The category *Biquaternion Universe Electroweak Force* is the rung below the strong one: the sector built from the group that survives the restructuring. The question this article answers is: **which group does the category carry?**
 
 $$
 \boxed{\ \mathrm{Sym}=\mathrm{SU}(2)_L\times\mathrm{U}(1)_Y,\qquad \dim=3+1=4,\qquad \operatorname{rank}=1+1=2\ }

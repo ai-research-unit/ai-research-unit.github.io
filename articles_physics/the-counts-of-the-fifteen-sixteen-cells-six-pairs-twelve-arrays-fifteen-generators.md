@@ -10,7 +10,7 @@
 
 **What is not here.** Three factors would need three grids and $24=4^2+2^2+2^2$ cells. **With one group there is one grid and one copy of the fifteen**, so the ledger is four counts and not six.
 
-**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
+**The articles it leans on** are [The $\mathrm{SU}(4)$ Model](the-su4-model-four-lines-fifteen-generators-one-declaration.html) for the group and the declaration, [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html) for the arrays, [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) for the grid, and [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) for the count the mass spectrum uses.
 
 ## The Cell: Sixteen Positions
 
@@ -155,5 +155,5 @@ Recomputations, on the quartet ordered $(t,x,y,z)$ and the products fixed by $\v
 
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). The fifteen arrays printed one to a display, and the three-step construction of the physics basis from the words.
 - [Classification of the Bosons: One Grid, Fifteen Generators, Nine Massless and Six Heavy](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid, the block picture and the ledger of the spectrum.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The count of generators read as a mass spectrum.
-- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the rank of the unbroken group is three above the transition and three below.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The count of generators read as a mass spectrum.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the rank of the unbroken group is three above the restructuring and three below.

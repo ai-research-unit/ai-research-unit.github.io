@@ -187,7 +187,7 @@ $$
 
 **A field carrying $r\bar g$ in one representative carries a combination of all eight in another.** The label is a coordinate on the adjoint, and **a coordinate that a symmetry rotates away is not a property of a particle.**
 
-**What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the transition the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is made local and unbroken. **The map became a map of something.**
+**What changed at $M_C$ is not the status of the label. It is the status of the group.** Above the restructuring the coordinates were coordinates of a basis with no factor attached; below it they are coordinates of a factor that is made local and unbroken. **The map became a map of something.**
 
 **And that is why the QCD transcription may name the eight at all.** The coordinate is conventional; the structure it coordinatises is measured. **The invariants are the measurable part**, and each is computed from the dimension and the rank with no reference to a letter:
 
@@ -236,7 +236,7 @@ $$
 \operatorname{rank}\bigl(\mathfrak{su}(3)\oplus\mathfrak u(1)\bigr)=2+1=3 .
 $$
 
-**The total rank is preserved at this breaking.** One diagonal direction leaves the simple factor and becomes an abelian factor of its own, so the count of diagonal directions is the same before and after. **Rank is monotone downwards inside an algebra and additive across factors**, and this transition does both at once: $\mathfrak{su}(4)\to\mathfrak{su}(3)$ loses one, and $\mathfrak{su}(3)\to\mathfrak{su}(3)\oplus\mathfrak u(1)$ gains one back.
+**The total rank is preserved at this breaking.** One diagonal direction leaves the simple factor and becomes an abelian factor of its own, so the count of diagonal directions is the same before and after. **Rank is monotone downwards inside an algebra and additive across factors**, and this restructuring does both at once: $\mathfrak{su}(4)\to\mathfrak{su}(3)$ loses one, and $\mathfrak{su}(3)\to\mathfrak{su}(3)\oplus\mathfrak u(1)$ gains one back.
 
 **The ledger closes at three, and it must.** A breaking that removed a diagonal direction and added nothing would leave a rank-two algebra with a rank-three's worth of Cartan directions, which is impossible. **The corner is where the third direction goes**, which is the same statement as the previous section's identification, read on the ranks instead of the cells.
 
@@ -296,7 +296,7 @@ $$
 ## Further Reading
 
 - [The Three Lines in $\mathrm{SU}(4)$: A Coordinate Label on the Fifteen, Not a Charge](the-three-lines-in-su4-a-coordinate-label-on-the-fifteen-not-a-charge.html), the first half: the fifteen flat labels and why none is a charge.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for $\operatorname{ad}(iD)$, its spectrum $0^{9}\oplus(\pm4i)^{3}$ and the kernel $\mathfrak u(3)$.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for $\operatorname{ad}(iD)$, its spectrum $0^{9}\oplus(\pm4i)^{3}$ and the kernel $\mathfrak u(3)$.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the grid and the octet's $6+2$ read as cells.
 - [Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$](quantum-chromodynamics-as-the-residual-of-su4.html), for what the corpus does and does not reach of QCD, and for the status of $N_c=3$ as imported.
 - [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html), for rank monotone downwards inside an algebra and additive across factors.

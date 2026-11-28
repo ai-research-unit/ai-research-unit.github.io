@@ -77,11 +77,11 @@ $$
 \rho_{\mathrm{inst}}\lesssim\frac{1}{M_C},
 $$
 
-**because an instanton larger than the transition scale would have to live in a phase that does not exist there.** That is the cutoff, and it is a statement about the model and not about the integral.
+**because an instanton larger than the restructuring scale would have to live in a phase that does not exist there.** That is the cutoff, and it is a statement about the model and not about the integral.
 
 **What the number means, stated without inflation.** $1.1\times10^{-47}$ per unit four-volume in units of $M_C$ is not zero, and in a cosmological setting it would matter; **inside the phase, no observable of the block depends on it at any accuracy the block claims, and the warrant is one line: every instanton-induced quantity carries at least one factor of $e^{-S}$, and $10^{-47}$ is forty-five orders below the few per cent at which the one-loop running is known.** The article's point is not that the effect is negligible but that it is computable and large, **which is the opposite of the usual situation in a strongly coupled theory where the semi-classical expansion fails.**
 
-**The value at the transition, for completeness.** $S(M_C)=2\pi/\alpha_4(M_C)=2\pi/0.05776=108.8$, **six tenths larger than at $M_X$**, because the coupling has barely moved over the interval between them. **The suppression is the same to two significant figures everywhere in the phase**, which is why the article quotes one number.
+**The value at the restructuring, for completeness.** $S(M_C)=2\pi/\alpha_4(M_C)=2\pi/0.05776=108.8$, **six tenths larger than at $M_X$**, because the coupling has barely moved over the interval between them. **The suppression is the same to two significant figures everywhere in the phase**, which is why the article quotes one number.
 
 ## The Moduli
 

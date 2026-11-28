@@ -105,7 +105,7 @@ $$
 
 **The factor $2$ is the commutator's two orderings and the $i$ is the one in the covariant derivative.** The derivative of the kinetic term with respect to $A_{a,t}$ is $-2ig_4\operatorname{tr}((D_{t}Ξ)[t_{a},Ξ])$: the two cross terms are equal and add rather than cancel, **because $(D_{t}Ξ)^{\dagger}=D_{t}Ξ$: the dagger flips the sign of the anti-Hermitian factor $[t_{a},Ξ]$ and leaves the Hermitian one alone, so both terms read $-ig_4\operatorname{tr}((D_{t}Ξ)[t_{a},Ξ])$.** **The product is purely imaginary, since $(D_{t}Ξ)$ is Hermitian and $[t_{a},Ξ]$ is anti-Hermitian, so the current is real and the $i$ is not a sign error.** A current written with one $i$, one power of $g_4$ and no $2$ is off by a factor two on every emission.
 
-**The scalar current is quadratic in $Ξ$ above $M_C$ and linear below it**, because only below the transition is there a $\langleΞ\rangle$ to split off. **That shift is the whole mechanism of the vector masses**: with $Ξ=Ξ_{0}+\delta Ξ$ the quadratic term produces a piece linear in $\delta Ξ$, and a piece linear in the fluctuation is what a mass term is.
+**The scalar current is quadratic in $Ξ$ above $M_C$ and linear below it**, because only below the restructuring is there a $\langleΞ\rangle$ to split off. **That shift is the whole mechanism of the vector masses**: with $Ξ=Ξ_{0}+\delta Ξ$ the quadratic term produces a piece linear in $\delta Ξ$, and a piece linear in the fluctuation is what a mass term is.
 
 **The current is conserved covariantly and not ordinarily.** $D_{\imath}j_{\imath}=0$ follows from the invariance of the action; $\partial_{\imath}j_{\imath}=0$ does not, because of the $[A_{\imath},j_{\imath}]$ term. **So no symmetry charge exists above $M_C$**, exactly as in the strong sector, and the corpus's charge theorem below $M_C$ is a statement about the residual group and not about this one.
 
@@ -172,7 +172,7 @@ $$
 
 **Four numbers come out of the piece and not out of a diagram**: fifteen trilinear vertices, one hundred and twenty quadrilinear ones, sixteen independent real equations, and a vector mass matrix of rank six whose kernel is nine-dimensional and closed.
 
-**The scalar current is quadratic above $M_C$ and linear below it**, and that change of degree is the mechanism of the vector masses: a term linear in the fluctuation of the vacuum is what a mass term is, and above the transition there is no fluctuation to be linear in.
+**The scalar current is quadratic above $M_C$ and linear below it**, and that change of degree is the mechanism of the vector masses: a term linear in the fluctuation of the vacuum is what a mass term is, and above the restructuring there is no fluctuation to be linear in.
 
 ## Summary of Notation
 
@@ -189,5 +189,5 @@ $$
 
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The same piece inside the full display, with the four pieces and the ceiling.
 - [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html). $V(Ξ)$'s minima, its boundedness cone and the declared vacuum's status.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The Gram matrix computed generator by generator.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The Gram matrix computed generator by generator.
 - [The One-Loop Effective Potential](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The correction to this classical piece.

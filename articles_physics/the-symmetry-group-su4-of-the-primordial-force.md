@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The category *Biquaternion Universe Primordial Force* is the top rung of the series: one compact group, fifteen generators, one coupling, and the quartet of four lines above the transition scale $M_C$. The question this article answers is the one the block raises in its first sentence: **which group does the category carry?**
+The category *Biquaternion Universe Primordial Force* is the top rung of the series: one compact group, fifteen generators, one coupling, and the quartet of four lines above the restructuring scale $M_C$. The question this article answers is the one the block raises in its first sentence: **which group does the category carry?**
 
 $$
 \boxed{\ \mathrm{Sym}=\mathrm{SU}(4),\qquad \dim\mathfrak{su}(4)=15,\qquad \operatorname{rank}=3\ }
@@ -53,7 +53,7 @@ with $g_4$ the single coupling. The *count* of the category is $\dim\mathfrak{g}
 
 **The one thing the algebra cannot say.** Which of the four lines is the lepton. That is the whole of the declaration, and it is stated as a declaration because no theorem in the algebra fixes it. It adds no block to the fifteen and moves no eigenvalue; it is the one piece of the model that is a choice, and naming it as a choice is what keeps the rest a derivation.
 
-**Proposition (the unbroken phase, and the split below it).** Above $M_C$ all fifteen directions are massless and the group is $\mathrm{SU}(4)$ acting on the quartet. Below the transition the frame is fixed and the fifteen separate.
+**Proposition (the unbroken phase, and the split below it).** Above $M_C$ all fifteen directions are massless and the group is $\mathrm{SU}(4)$ acting on the quartet. Below the restructuring the frame is fixed and the fifteen separate.
 
 *Proof.* Above $M_C$ the vacuum is symmetric, so no direction of the adjoint is distinguished and the mass operator is proportional to the identity on the fifteen; hence every direction is massless. Once the frame $D$ is fixed by the vacuum, the adjoint decomposes and the diagonal frame's differences become the Cartan of the surviving octet while the sum becomes the abelian direction $B-L$; the six directions that move the distinguished line acquire mass. The count is then nine massless and six heavy. Verified by the decomposition of the adjoint under the surviving subgroup and by the spectrum of $\operatorname{ad}(iD)$.
 
@@ -103,7 +103,7 @@ The fifteen are twelve line-mixing directions and three traceless diagonals, whi
 | $g_4$ | The single coupling of the category |
 | $(t,x,y,z)$ | The four lines of the carrier; coordinates on the table, not charges |
 | $16=1+15$ | Sixteen cells, one trace, fifteen generators |
-| $M_C$ | The transition scale; above it the phase is unbroken |
+| $M_C$ | The restructuring scale; above it the phase is unbroken |
 | $\operatorname{ad}(iD)$ | The adjoint action of the vacuum frame; its kernel is the surviving algebra |
 | $\mathrm{SU}(3)=\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$ | The rung below, as a stabiliser of a line |
 | $\mathfrak{u}(3)=\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$ | What the kernel supplies; the ninth direction is the frame-diagonal sum |
@@ -117,5 +117,5 @@ The fifteen are twelve line-mixing directions and three traceless diagonals, whi
 - [*The Primordial Coupling*](the-primordial-coupling.html), for the one coupling.
 - [*Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$*](quantum-chromodynamics-as-the-residual-of-su4.html), for the rung below.
 - [*Rank Five From Three*](rank-five-from-three-the-weak-factors-as-a-condensate-index.html), for the rank obstruction.
-- [*The Breaking of the Primordial Force*](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for the descent itself.
+- [*The Restructuring of the Primordial Force*](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for the descent itself.
 - [*The Symmetry Group SU(3) of the Strong Force*](the-symmetry-group-su3-of-the-strong-force.html), [*The Symmetry Group SU(2)\_L × U(1)\_Y of the Electroweak Force*](the-symmetry-group-su2l-times-u1y-of-the-electroweak-force.html), [*The Symmetry Group SU(1) of the Force-Free Case*](the-symmetry-group-su1-of-the-force-free-case.html), for the rungs below.

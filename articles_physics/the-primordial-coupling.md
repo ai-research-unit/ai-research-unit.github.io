@@ -15,8 +15,8 @@ and then uses the value to turn the $K_L\to\mu e$ rate into a mass bound. **Noth
 **What this article supplies.**
 
 - *The coefficient.* $b_0=\tfrac{26}{3}=8.67$ for $\mathrm{SU}(4)$ with this content, in the same convention in which QCD's is $11-\tfrac23N_f$.
-- *The direction.* $b_0>0$, so the coupling falls as the scale rises: the primordial phase is asymptotically free, and it is weakest where the corpus needs it, at the transition.
-- *The numbers.* $\alpha_4(M_X)=0.058$, $\alpha_4(M_{P})=0.0165$, and the pole at $885\ \mathrm{MeV}$ that lies far below the transition and therefore outside the theory's claim.
+- *The direction.* $b_0>0$, so the coupling falls as the scale rises: the primordial phase is asymptotically free, and it is weakest where the corpus needs it, at the restructuring.
+- *The numbers.* $\alpha_4(M_X)=0.058$, $\alpha_4(M_{P})=0.0165$, and the pole at $885\ \mathrm{MeV}$ that lies far below the restructuring and therefore outside the theory's claim.
 - *The ledger.* The value is imported; the coefficient is computed; the running is computed; the pole is a boundary of the description and not a prediction.
 - *The diagnostic.* The scalar term depends on which scalar the model has, so $b_0$ reads the scalar content: the Hermitian matrix gives $\tfrac{26}{3}$, a complex one would give $8$, a matrix with a two-valued label would give $\tfrac{20}{3}$, and each doubling of the count costs more than the two-loop term the article omits.
 
@@ -145,14 +145,14 @@ $$
 
 **Four statements, and each is a number rather than a slogan.**
 
-- *The phase is weakly coupled at the transition.* $\alpha_4(M_X)=0.058$, so $\alpha_4/\pi=0.018$ and the one-loop expansion is good to a few per cent. **The two-loop term is about two per cent of the change**: one loop misses two by ten per cent at $\alpha_s\approx0.3$, the relative size scales as $\alpha$, and $10\%\times0.058/0.3\approx2\%$. **This is what makes the tree-level rates of the Feynman-rules article legitimate**, and it is the reason no resummation appears anywhere in the primordial block.
-- *The phase is asymptotically free.* $b_0=\tfrac{26}{3}>0$, so $\alpha_4\to0$ as $\mu\to\infty$. The primordial force does not grow at short distances, and no Landau-pole cosmology is available to it: an asymptotically free sector cannot be strongly coupled in the early universe, so it can drive neither a confining transition nor a thermal relic abundance through its own connection interactions.
+- *The phase is weakly coupled at the restructuring.* $\alpha_4(M_X)=0.058$, so $\alpha_4/\pi=0.018$ and the one-loop expansion is good to a few per cent. **The two-loop term is about two per cent of the change**: one loop misses two by ten per cent at $\alpha_s\approx0.3$, the relative size scales as $\alpha$, and $10\%\times0.058/0.3\approx2\%$. **This is what makes the tree-level rates of the Feynman-rules article legitimate**, and it is the reason no resummation appears anywhere in the primordial block.
+- *The phase is asymptotically free.* $b_0=\tfrac{26}{3}>0$, so $\alpha_4\to0$ as $\mu\to\infty$. The primordial force does not grow at short distances, and no Landau-pole cosmology is available to it: an asymptotically free sector cannot be strongly coupled in the early universe, so it can drive neither a confining restructuring nor a thermal relic abundance through its own connection interactions.
 - *The coupling is weakest where the content is heaviest.* Antiscreening wins because the matter above $M_C$ is more than the Standard Model's per connection, and the coupling at $M_P$ is under a third of its value at $M_X$. **A unified description at a high scale would therefore be a weakly coupled one**, which is the opposite of the strong-coupling picture a GUT without asymptotic freedom would need.
 - *Nothing confines, and the coefficient is why.* A confining phase needs the coupling to grow at long distances; here it grows downward only, and the phase ends at $M_C$ before the growth matters. **This is the quantitative half of *No Confinement Above $M_C$: Eleven E-Folds of Perturbative Coupling***, which supplies the mechanism and cites this article for the number.
 
 **What the running does not say.** It does not say that the three Standard Model couplings meet. **They do not, and the meeting is not a goal of the model**: $g_4$ is one number and the three below $M_C$ are derived from it by the matching relations, so a "unification" statement would be a statement about the matching and not about a crossing of lines. The corpus's coupling article draws the same distinction from the other side.
 
-## The Pole Below the Transition
+## The Pole Below the Restructuring
 
 **Extending the line downward, $1/\alpha_4$ vanishes at a finite scale.**
 
@@ -230,7 +230,7 @@ The model has one connection coupling and this article computes what it does abo
 | $N_{f}=8$ | Dirac fermions, the sixteen Weyl fields paired |
 | $n_{s}=1$ | Real scalar multiplet, the Hermitian $\mathbf{15}\oplus\mathbf1$ of sixteen real components |
 | $M_X$ | The leptoquark scale, $\gtrsim3.7\times10^{-5}\ \mathrm{J}=2.3\times10^{5}\ \mathrm{GeV}$ |
-| $M_C$ | The transition scale, above the leptoquark bound |
+| $M_C$ | The restructuring scale, above the leptoquark bound |
 | $M_{P}$ | $1.22\times10^{19}\ \mathrm{GeV}$, used only as a far end |
 | $\mu_{\mathrm{pole}}$ | $885\ \mathrm{MeV}$, the zero of the extended one-loop line |
 | $\zeta$ | The fixing parameter of the corpus's propagators; absent from everything in this article, which needs no fixing the representative |

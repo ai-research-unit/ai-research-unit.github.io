@@ -1,14 +1,14 @@
-# __The Classical Limit of the Diagram Series: Tree Diagrams as the Stationary Phase of the Path Integral__
+# __The Leading Order: Tree Diagrams as the Stationary Phase of the Path Integral__
 
 ## Introduction
 
-**The claim.** The diagram series has a classical limit, and the limit is the field equation. Evaluating the path integral by stationary phase gives $\delta S=0$ at leading order; the Gaussian about the stationary point gives the determinant; and the expansion about that point reproduces the tree diagrams order by order in the coupling. The tree diagrams are the perturbative solution of the classical equation, and each loop is one power of the action quantum on top of it. The two routes — solve the equation, or draw the diagrams — are one computation organised two ways.
+**The claim.** The diagram series has a leading term, and the leading term is the field equation. Evaluating the path integral by stationary phase gives $\delta S=0$ at leading order; the Gaussian about the stationary point gives the determinant; and the expansion about that point reproduces the tree diagrams order by order in the coupling. The tree diagrams are the perturbative solution of the classical equation, and each loop is one power of the action quantum on top of it. The two routes — solve the equation, or draw the diagrams — are one computation organised two ways.
 
-**Why the identification is not decorative.** It tells a reader where to put a classical computation and where a quantum one. A tree amplitude can be checked against a solution of the field equation, which is a different calculation with different error modes. And it tells a reader what the loop expansion is: the semiclassical expansion of one integral, not a second perturbation theory.
+**Why the identification is not decorative.** It tells a reader where to put a computation that solves an equation and where a computation that draws a diagram. A tree amplitude can be checked against a solution of the field equation, which is a different calculation with different error modes. And it tells a reader what the loop expansion is: the semiclassical expansion of one integral, not a second perturbation theory.
 
 **The strongest objection.** *Tree diagrams and the classical solution are different objects, because the classical solution is not a diagram.* The objection is right at finite coupling and wrong order by order. The classical solution is a series in the coupling; its $n$-th term is the sum of the tree diagrams with $n$ vertices; the two are equal term by term. What is not equal is the sum, because the sum need not converge. The article states the identification order by order and states the gap.
 
-**Position.** After [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) in the section [The Lagrangian Method](the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html), and the article that ties the section back to the variation that produces the field equation.
+**Position.** After [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) in the section [The Lagrangian Method](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), and the article that ties the section back to the variation that produces the field equation.
 
 ## The Stationary Phase
 
@@ -93,13 +93,13 @@ and the semiclassical expansion's $L$-th term is the $L$-th power of the action 
 
 **The classical route is the tree projection of the quantum one, and the quantum route is the classical one with its own corrections.** A reader who computes a tree amplitude by solving the equation and a reader who computes it by drawing one vertex are doing the same multiplication, and the corpus states both so that either can check the other.
 
-**What the identification does not say.** It does not say that the classical solution equals the sum of the trees. The sum of the trees is a series in the coupling and the series need not converge; where it converges the two agree, and where it does not the classical solution exists and the series does not describe it. It does not say that the loops are small: each loop is one power of $\frac{h}{2\pi}$ and the coefficient may be large. And it does not say that the classical solution exists globally: a nonlinear equation can have solutions that no perturbative series reaches, and those are the non-perturbative objects [the last article](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html) lists.
+**What the identification does not say.** It does not say that the classical solution equals the sum of the trees. The sum of the trees is a series in the coupling and the series need not converge; where it converges the two agree, and where it does not the classical solution exists and the series does not describe it. It does not say that the loops are small: each loop is one power of $\frac{h}{2\pi}$ and the coefficient may be large. And it does not say that the classical solution exists globally: a nonlinear equation can have solutions that no perturbative series reaches, and those are the non-perturbative objects [the last article](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html) lists.
 
 **The claim is therefore one-directional and order by order.** Every tree diagram is a term in the classical solution's expansion, and every term of that expansion is a tree diagram. That is enough to identify the two computations, and it is all that is claimed.
 
 ## Summary
 
-**The classical limit of the diagram series is the stationary phase of the path integral.** $\delta S=0$ gives the Euler–Lagrange equation; the Gaussian about the saddle gives the determinant; and the expansion about the saddle reproduces the tree diagrams order by order in the coupling. The tree diagrams are the perturbative classical solution, and each closed loop is one power of $\frac{h}{2\pi}$.
+**The leading term of the diagram series is the stationary phase of the path integral.** $\delta S=0$ gives the Euler–Lagrange equation; the Gaussian about the saddle gives the determinant; and the expansion about the saddle reproduces the tree diagrams order by order in the coupling. The tree diagrams are the perturbative classical solution, and each closed loop is one power of $\frac{h}{2\pi}$.
 
 **The identification was checked on a model where both sides are exact.** The tree series matched the Newton solution with errors falling by $0.1387$ per order, and the deviation of the expectation from the classical value halved when the action quantum halved, as one power of it does.
 
@@ -120,5 +120,5 @@ and the semiclassical expansion's $L$-th term is the $L$-th power of the action 
 - [The Lagrangian and the Klein–Gordon Equation](the-lagrangian-and-the-klein-gordon-equation.html), the variation that stationary phase returns, worked on the scalar.
 - [The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html), the diagrams whose trees this article identifies with the solution.
 - [The Functional Determinant in Biquaternionic Form](the-functional-determinant-in-biquaternionic-form.html), the one-loop term as a determinant.
-- [The Failure Modes of the Diagram Expansion: Gauge Fixing, Renormalisation, Asymptotic Series and Strong Coupling](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html), the objects no finite order reaches.
+- [The Limits of the Expansion: Gauge Fixing, Asymptotic Series and Strong Coupling](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html), the objects no finite order reaches.
 - [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html), the classical route in the corpus's own fluid form.

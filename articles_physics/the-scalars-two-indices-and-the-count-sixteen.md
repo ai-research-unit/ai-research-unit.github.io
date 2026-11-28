@@ -115,12 +115,12 @@ $$
 
 - *The potential.* Two quadratics and four quartics, with six free coefficients: the traceless pair, and the trace's own quadratic and two quartics. **The representation fixes how many terms there are and not what they are**; the counting is silent on signs.
 - *The mass.* $\mu^{2}$ is a parameter. Whether the origin is a minimum is a statement about its sign, not about the count.
-- *The vacuum's shape.* Any traceless diagonal form is available to a Hermitian matrix. **The count does not choose**, and [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html) shows that the choice is what decides how many directions the transition eats.
+- *The vacuum's shape.* Any traceless diagonal form is available to a Hermitian matrix. **The count does not choose**, and [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html) shows that the choice is what decides how many directions the restructuring eats.
 - *The Yukawa matrix.* Its entries are free, and the representation fixes only that the operator exists.
 
 **What the counting does fix, and it is worth stating positively.** One Goldstone boson per broken generator and no more, so **the count that matters is a ceiling: sixteen components can feed up to twelve generators**, and twelve is the most any traceless vacuum in this field can break — every traceless Hermitian matrix is conjugate to a diagonal one, and four distinct eigenvalues leave $\mathrm{U}(1)^{3}$, so $15-3=12$. **So whatever shape the potential chooses, the multiplet is large enough to feed it**, and a smaller multiplet might not have been.
 
-**The six is the potential's number and not the representation's.** For the declared vacuum the stabiliser is nine-dimensional and the count is $15-9=6$; [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html) derives the shape and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) reads the spectrum. **A reader who carries $6$ away from this article should carry the vacuum with it.** The ten components that survive the eating are counted in [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html).
+**The six is the potential's number and not the representation's.** For the declared vacuum the stabiliser is nine-dimensional and the count is $15-9=6$; [The Primordial Potential](the-primordial-potential-one-symmetric-minimum-above-m-c.html) derives the shape and [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) reads the spectrum. **A reader who carries $6$ away from this article should carry the vacuum with it.** The ten components that survive the eating are counted in [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html).
 
 ## The Checks
 

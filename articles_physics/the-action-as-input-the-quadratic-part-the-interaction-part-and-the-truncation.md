@@ -1,18 +1,18 @@
-# __The Collection of Lagrangian Components: The Full Action as the Input to Perturbation Theory__
+# __The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation__
 
 ## Introduction
 
-**The claim.** The first operation of the Lagrangian method is a collection, not a computation. For the situation at hand — the fields it contains, the group they carry, the derivative order the density may reach — one writes down every term the filters admit: the kinetic terms, the mass terms, the fixing terms, the ghost terms, every interaction monomial, and the source. The list is finite. It is then grouped by degree in the field. Nothing is dropped.
+**The claim.** The first operation of the Lagrangian method is a truncation, not a computation. For the situation at hand — the fields it contains, the group they carry, the derivative order the density may reach — one writes down every term the filters admit up to a stated degree: the kinetic terms, the mass terms, the fixing terms, the ghost terms, every interaction monomial, and the source. The list is finite because the degree bound cuts it, and the cut is the truncation. It is then grouped by degree in the field. What is cut is cut at a stated degree, and its size is stated with it.
 
 **Only the sum is physical.** This is the article's central sentence and the section's. The density $\mathcal L$ is the theory. The split into $\mathcal L_{2}$ and $\mathcal L_{\ge3}$ is the bookkeeping that organises perturbation theory, and the bookkeeping is not unique. It moves under field redefinitions, and it moves under a change of the point about which the field is expanded. Two physicists with the same theory and different expansion points write different $\mathcal L_{2}$'s and compute the same physics. A diagram is a statement about a split; a statement about a split is a statement about the theory only through the sum it came from.
 
-**Why the stage deserves an article.** The stage looks trivial — *write the Lagrangian* — and it is where the method's physics is decided. A term omitted from the list is a propagator or a vertex that never appears, and no later stage recovers it. A coefficient misread here is a wrong vertex at every order. The stage has one rule, collect everything the filters admit, and one trap, believe that the grouping is a statement about the theory instead of about the calculation.
+**Why the stage deserves an article.** The stage looks trivial — *write the Lagrangian* — and it is where the method's physics is decided. A term cut from the list is a propagator or a vertex that never appears, and no later stage recovers it; a coefficient misread here is a wrong vertex at every order. The stage has one rule — write every term the filters admit up to the stated degree — and two traps: believing that the grouping is a statement about the theory instead of about the calculation, and forgetting that the cut is an approximation whose error must be quoted.
 
-**The strongest objection.** *If the split is arbitrary, the diagrams are arbitrary.* The answer is the sentence above, read as a theorem of the method: a change of split changes which diagrams one draws and not what their sum is, because the sum is the density's. [The Classical Limit of the Diagram Series](the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) makes the same point from the other side, where the sum of the tree diagrams is the solution of the equation the unsplit density defines.
+**The strongest objection.** *If the split is arbitrary, the diagrams are arbitrary.* The answer is the sentence above, read as a theorem of the method: a change of split changes which diagrams one draws and not what their sum is, because the sum is the density's. [The Leading Order](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) makes the same point from the other side, where the sum of the tree diagrams is the solution of the equation the unsplit density defines.
 
-**Position.** The first article of the section *The Lagrangian Method*, and stage $0$ of the chain that [the hub](the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html) states.
+**Position.** The first article of the section *The Lagrangian Method*, and stage $0$ of the chain that [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html) states.
 
-## The Input Is a List, Not an Order
+## The Input Is a Truncated List, Not an Order
 
 **A situation is specified before anything is computed.** The specification has three parts, and each part narrows the list.
 
@@ -22,11 +22,11 @@
 | the group | which representations exist and which terms survive invariance | [What a Group Can Accept](what-a-group-can-accept-a-carrier-must-transform-in-a-representation.html) |
 | the derivative order | how many derivatives a term may carry | [The Closure of the Term List](the-closure-of-the-term-list-dimension-locality-and-the-count-that-ends-the-search.html) |
 
-**The list is what the filters leave, and the filters run in one order.** The carrier roster comes first, because a field must exist before a group can act on it. The group comes second, because invariance is a condition on terms built from fields. The derivative and dimension bounds come third, because they need a field content to count. What the three leave is a finite candidate space, and the collection is a choice inside it.
+**The list is what the filters leave after the degree bound, and the filters run in one order.** The carrier roster comes first, because a field must exist before a group can act on it. The group comes second, because invariance is a condition on terms built from fields. The derivative and dimension bounds come third, because they need a field content to count. What the three leave is a finite candidate space, and the truncation is a choice inside it: the degree at which the list stops.
 
-**The collection is a list of monomials, not a formula.** Every term is a monomial in the fields and their derivatives times a coefficient. That is what makes the next two stages possible: a monomial has one degree, so it goes into one of the two groups, and it has one coefficient, so it becomes one vertex.
+**The truncated list is a list of monomials, not a formula.** Every term is a monomial in the fields and their derivatives times a coefficient. That is what makes the next two stages possible: a monomial has one degree, so it goes into one of the two groups, and it has one coefficient, so it becomes one vertex.
 
-## The List Is Constrained
+## The List Is Constrained, and Then Cut
 
 **The collection is not "anything goes", and the constraints are what make it a scientific step.** Three bounds and one classification do the work.
 
@@ -105,9 +105,9 @@ so the radial direction acquires three times the mass the transverse directions 
 
 **The warrant.** The expansion was recomputed with a symbolic algebra on the one-component chart, and the coefficient ratio came out $3$ exactly. The check is small and it is stated because the claim is the article's central one.
 
-## The Collection at Three Rungs
+## The Truncation at Three Rungs
 
-**The list is different at every rung, and the difference is the whole of the rung's physics.** Three columns show the shape.
+**The list is different at every rung, and the difference is the whole of the rung's physics: a rung is a truncation.** Three columns show the shape.
 
 | rung | $\mathcal L_{2}$ | $\mathcal L_{\ge3}$ | vertex types |
 |---|---|---|---|
@@ -115,17 +115,17 @@ so the radial direction acquires three times the mass the transverse directions 
 | QED | the free Dirac density plus the free Maxwell density; no fixing, no ghost, because the corpus's QED article stops at the classical action | $\frac{2\pi q}{h}\mathrm{Sc}\bigl[\tilde\Xi^{*}\tilde A_{\Phi}\tilde\Xi\bigr]$ | one, the fermion–photon |
 | Yang–Mills | the quadratic connection density plus the fixing term plus the ghost term | the three- and four-gluon terms and the ghost–gluon term, all from the commutator in the curvature | four, with the ghost |
 
-**Each row is a collection and not a derivation.** The scalar's list is [the interacting scalar article's](the-lagrangian-and-the-interacting-scalar-field.html). The QED list is [the QED article's](the-lagrangian-and-quantum-electrodynamics.html), which states in as many words that it has no fixing term, no ghost term and no vertex, and that the vertex is a quantisation's object. The Yang–Mills list is [the Yang–Mills action article's](the-yang-mills-equation-in-biquaternionic-form.html), with the fixing and the ghosts from [The Connection Path Integral](the-connection-path-integral-in-biquaternionic-form.html).
+**Each row is a truncation and not a derivation.** The scalar's list is [the interacting scalar article's](the-lagrangian-and-the-interacting-scalar-field.html). The QED list is [the QED article's](the-lagrangian-and-quantum-electrodynamics.html), which states in as many words that it has no fixing term, no ghost term and no vertex, and that the vertex is a quantisation's object. The Yang–Mills list is [the Yang–Mills action article's](the-yang-mills-equation-in-biquaternionic-form.html), with the fixing and the ghosts from [The Connection Path Integral](the-connection-path-integral-in-biquaternionic-form.html).
 
-**The QED row is the one that shows why the collection is a stage.** The classical article collects three terms and stops. The method's stage $0$ must add the fixing term and the ghost term, because without them $\mathcal L_{2}$ is not invertible and stage $2$ has nothing to invert. The fixing and the ghost are not physics added to QED; they are the price of writing its quadratic part as an invertible operator, and [The Failure Modes of the Diagram Expansion](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html) is where that price is named.
+**The QED row is the one that shows why the truncation is a stage.** The classical article collects three terms and stops. The method's stage $0$ must add the fixing term and the ghost term, because without them $\mathcal L_{2}$ is not invertible and stage $2$ has nothing to invert. The fixing and the ghost are not physics added to QED; they are the price of writing its quadratic part as an invertible operator, and [The Limits of the Expansion](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html) is where that price is named.
 
 ## Summary
 
-**Stage $0$ is a collection.** For the situation's field content, group and derivative order, one writes down every admitted term — kinetic, mass, fixing, ghost, interaction, source — and groups the list by degree in the field into the quadratic part and the polynomial part. The list is finite because the filters bound it, and its coefficients are forced, required or declared.
+**Stage $0$ is a truncation.** For the situation's field content, group and derivative order, one writes down every admitted term up to a stated degree — kinetic, mass, fixing, ghost, interaction, source — and groups the list by degree in the field into the quadratic part and the polynomial part. The list is finite because the degree bound cuts it, and its coefficients are forced, required or declared.
 
 **Only the sum is physical.** The split into $\mathcal L_{2}$ and $\mathcal L_{\ge3}$ is bookkeeping, and it moves under field redefinitions and changes of expansion point. Expanding the corpus's quartic about a constant background moves a quartic monomial into the quadratic part and gives the fluctuation two masses, in the ratio $3:1$; the theory did not change and the propagator did.
 
-**The split is by field degree and the expansion is by coupling.** A quartic is one vertex at order $\lambda$. Nothing is dropped, and the two groups that matter are the quadratic part, which becomes the propagator, and the polynomial part, which becomes the vertices.
+**The split is by field degree and the expansion is by coupling.** A quartic is one vertex at order $\lambda$. What is cut is cut at a stated degree and carries a stated error, and the two groups that matter are the quadratic part, which becomes the propagator, and the polynomial part, which becomes the vertices.
 
 ## Summary of Notation
 

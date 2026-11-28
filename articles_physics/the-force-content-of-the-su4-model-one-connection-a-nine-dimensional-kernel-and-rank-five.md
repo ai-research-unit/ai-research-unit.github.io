@@ -64,11 +64,11 @@ $$
 
 and the six moved directions are the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, each at $32v^{2}=2\,(1-(-3))^{2}v^{2}$.
 
-**The strong group is therefore a stabiliser, and the corpus has a name for it.** $\mathrm{SU}(3)_c$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. The word is *residual*, and it is already used that way for QCD. Nothing new is switched on at $M_C$: the eight arrays are the same eight matrices that were among the fifteen above the transition, the bracket is the same bracket, and the coupling at the matching is the same number. Above the transition they are eight directions of one multiplet and not an octet, which is why the corpus keeps the word *gluon* for the phase below it.
+**The strong group is therefore a stabiliser, and the corpus has a name for it.** $\mathrm{SU}(3)_c$ is $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$. The word is *residual*, and it is already used that way for QCD. Nothing new is switched on at $M_C$: the eight arrays are the same eight matrices that were among the fifteen above the restructuring, the bracket is the same bracket, and the coupling at the matching is the same number. Above the restructuring they are eight directions of one multiplet and not an octet, which is why the corpus keeps the word *gluon* for the phase below it.
 
-**The coupling, followed across the boundary.** At $M_C$ the strong coupling is matched to the primordial one, $g_3(M_C)=g_4$. The matching is a boundary condition taken from experiment and not a prediction, and the corpus records the tension in it; what matters here is that it is one number and not two. Below the transition the same number runs with a different coefficient, because the content that screens it has changed: eight Dirac fermions and one Hermitian $\mathbf{15}\oplus\mathbf1$ above, quarks and gluons below. So $\alpha_s$ is not a second constant of nature in this model. It is $g_4$ read at a lower scale with a different beta function.
+**The coupling, followed across the boundary.** At $M_C$ the strong coupling is matched to the primordial one, $g_3(M_C)=g_4$. The matching is a boundary condition taken from experiment and not a prediction, and the corpus records the tension in it; what matters here is that it is one number and not two. Below the restructuring the same number runs with a different coefficient, because the content that screens it has changed: eight Dirac fermions and one Hermitian $\mathbf{15}\oplus\mathbf1$ above, quarks and gluons below. So $\alpha_s$ is not a second constant of nature in this model. It is $g_4$ read at a lower scale with a different beta function.
 
-**Three objections, and their answers.** The first is that QCD has its own angle. It has one, and the model does not supply it: $\theta_4$ is the topological angle of the fifteen, free in the Lagrangian and redundant above $M_C$ because the sixteen are massless and one chiral rotation removes it, and it is not the strong-$CP$ parameter $\bar\theta$ below the transition. So the model inherits the strong-$CP$ problem rather than solving it, and it does not explain the size of QCD's angle. The second is that confinement is a new phenomenon. It is a regime of the same coupling at long distance, not a second interaction, and the model has no confining phase above $M_C$ at all. The third is that $\Lambda_{\mathrm{QCD}}$ is a new scale. It is dimensional transmutation of the one coupling, and a scale is not an interaction.
+**Three objections, and their answers.** The first is that QCD has its own angle. It has one, and the model does not supply it: $\theta_4$ is the topological angle of the fifteen, free in the Lagrangian and redundant above $M_C$ because the sixteen are massless and one chiral rotation removes it, and it is not the strong-$CP$ parameter $\bar\theta$ below the restructuring. So the model inherits the strong-$CP$ problem rather than solving it, and it does not explain the size of QCD's angle. The second is that confinement is a new phenomenon. It is a regime of the same coupling at long distance, not a second interaction, and the model has no confining phase above $M_C$ at all. The third is that $\Lambda_{\mathrm{QCD}}$ is a new scale. It is dimensional transmutation of the one coupling, and a scale is not an interaction.
 
 **One correction to the phrasing that *degenerates into the strong force* invites.** What survives is the strong group *and* one abelian factor, $\mathfrak{u}(3)$ and not $\mathfrak{su}(3)$. The degeneracy is into $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$. The extra direction is the sum of the three frame diagonals, $iD=T_x+T_y+T_z$, and it is why the rank does not move: $3\to2+1=3$.
 
@@ -107,7 +107,7 @@ and the singlet is neutral identically. No combination reaches $Q=\pm1$. The wea
 
 ## What Arrives, and What It Costs
 
-**The object that carries the index.** The transition's scalar is not only a $\mathrm{SU}(4)$ vector. It carries one index of the larger group and one doublet index,
+**The object that carries the index.** The restructuring's scalar is not only a $\mathrm{SU}(4)$ vector. It carries one index of the larger group and one doublet index,
 
 $$
 \Phi\in(\mathbf4,\mathbf1,\mathbf2),
@@ -298,7 +298,7 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 | $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$ | the kernel of $\operatorname{ad}(iD)$, dimension $9$ |
 | $\mathrm{Stab}_{\mathrm{SU}(4)}(\mathbb{C}e_t)$ | the stabiliser of the lepton line, that is $\mathrm{SU}(3)_c$ |
 | $32v^{2}=2\,(1-(-3))^{2}v^{2}$ | the sextet's mass, one number per plane |
-| $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ | the transition's scalar: one $\mathrm{SU}(4)$ index, one doublet index |
+| $\Phi\in(\mathbf4,\mathbf1,\mathbf2)$ | the restructuring's scalar: one $\mathrm{SU}(4)$ index, one doublet index |
 | $3\to5\to4\to3$ | the rank of the conserved charge lattice along the chain |
 | $\Gamma_{\imath}(g_V-g_A\xi)$ | the chiral vertex; nilpotent iff $\lvert g_A\rvert=\lvert g_V\rvert$ |
 | $G_{\mathrm F}/\sqrt2=g^{2}/(8M_W^{2})$ | the contact coefficient |
@@ -309,7 +309,7 @@ equals the trace times the unit, so it is blind to the scalar-free part — whic
 
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The carrier, the declaration and the content.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The display, its variation, and the statement that it is a transcription.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The adjoint spectrum, the kernel and the sextet.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The adjoint spectrum, the kernel and the sextet.
 - [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The three words *survives*, *breaks* and *arrives*.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The rank lemma and the doublet index.
 - [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). Why the sextet cannot become the weak pair.

@@ -20,6 +20,8 @@ _reserve/
 articles_internal/
 articles_external/
 REVIEW-PLAN*
+AGENT.md
+AGENTS.md
 BRAINSTORMING.md
 *.context
 *.ideas

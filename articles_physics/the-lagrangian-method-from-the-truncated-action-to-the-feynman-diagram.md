@@ -1,12 +1,12 @@
-# __The Lagrangian Method: From the Collected Lagrangian to the Feynman Diagram__
+# __The Lagrangian Method: From the Truncated Action to the Feynman Diagram__
 
 ## Introduction
 
-**The claim.** A situation in this corpus begins with a collection: the full density for every field it contains. From that collection one method returns diagrams. The method has one input and four stages, and the stages are not alternatives. Stage $0$ supplies the input by collecting the density; stage $1$ defines the integral; stage $2$ solves its quadratic part exactly; stage $3$ expands the rest; stage $4$ contracts the expansion into graphs. This article states the method once and names it, so that the articles of the corpus that carry its stages can be read as one machine.
+**The claim.** A situation in this corpus begins with a truncation: the density for the fields it contains, cut at a stated degree. From that truncation one method returns diagrams. The method has one input and four stages, and the stages are not alternatives. Stage $0$ supplies the input by writing the truncated density; stage $1$ defines the integral; stage $2$ solves its quadratic part exactly; stage $3$ expands the rest; stage $4$ contracts the expansion into graphs. This article states the method once and names it, so that the articles of the corpus that carry its stages can be read as one machine.
 
 **Why it is worth stating once.** The corpus already contains every part. The [functional integral](the-functional-integral-in-biquaternionic-form.html), the [generating functional](the-generating-functional-and-the-effective-action-in-biquaternionic-form.html), the [Wick theorem](the-wick-theorem-in-biquaternionic-form.html), the [$S$-matrix](the-s-matrix-in-biquaternionic-form.html) and the [LSZ reduction](the-lsz-reduction-formula-in-biquaternionic-form.html) each have their own article, their own derivation and their own declared gap, and [The Quantisation Hub](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html) lists them in the order in which the operation is performed. The hub is the index of the parts. What no article states is the machine they compose: the split of one density into a quadratic and a polynomial part, the inversion of the first into the propagator, the expansion of the second into vertices, and the contraction of both into diagrams. That chain begins before the hub's list, at the density, and ends after it, at the amputated amplitude. A reader who begins at the $S$-matrix does not know that the vertex was fixed two stages earlier, in the split of the density. A reader who begins at the Gaussian does not know that its inverse is what the diagrams call the propagator.
 
-**The strongest objection, named at the start.** *This is standard field theory, restated, and the algebra adds nothing.* The objection is right about derivation and wrong about content. This section derives nothing. The quantisation is a postulate of Dirac's, stated once in [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html) and imported here. What the section adds is three things. It states the order. It states, at every stage, what the algebra fixes and what it merely transcribes. And it states the four places where the route fails, each with the object that repairs it. A method whose failures are located is a different object from a method whose failures are unstated.
+**The strongest objection, named at the start.** *This is standard field theory, restated, and the algebra adds nothing.* The objection is right about derivation and wrong about content. This section derives nothing. The quantisation is a postulate of Dirac's, stated once in [The Lagrangian and the Second Quantisation](the-lagrangian-and-the-second-quantisation.html) and imported here. What the section adds is three things. It states the order. It states, at every stage, what the algebra fixes and what it merely transcribes. And it states the three places where the route fails, each with the object that repairs it, and the one operation that is not a failure. A method whose limits are located is a different object from a method whose limits are unstated.
 
 **The classical counterpart, and the model for this section.** [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html) states the classical arrow once: five steps, one per slot, with each step's failure named. The five steps were extracted from five derivations written independently, and the extraction is what makes them a skeleton rather than an imposition. This section has the same shape for the quantum arrow: four stages, one per object, with the failures named in the last article. The two sections are the two halves of one sentence — the same density can be read classically or quantumly, and the reading is an order.
 
@@ -16,11 +16,13 @@
 
 ## The Chain in One Display
 
-The input, with nothing dropped.
+The input: one density, truncated at a stated degree.
 
 $$
 S[\phi]=\int\mathrm{d}^{4}r\;\mathcal L(\phi,\partial\phi),\qquad \mathcal L=\mathcal L_{2}+\mathcal L_{\ge3}.
 $$
+
+**The density is cut, and the cut is an input.** No concrete $\mathcal L$ is complete: the filters of [stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) bound the list by a derivative and dimension bound, and the bound is a choice. What the method requires is not completeness but a *declared* incompleteness — which terms were cut, how large they are in the expansion parameter, and in which regime the estimate holds. A density supplied without those three statements is not an input; it is an assertion, and no later stage can supply the error bar it lacks.
 
 Stage $1$ defines the object every later stage works on,
 
@@ -54,7 +56,7 @@ Stage $4$ collects. The terms are the diagrams, and the diagrams are read by fou
 
 | stage | the job | the object built | the article that derives it |
 |---|---|---|---|
-| $0$ | collect the density, group it | $\mathcal L=\mathcal L_{2}+\mathcal L_{\ge3}$ | [The Collection of Lagrangian Components](the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html) |
+| $0$ | state the truncation, group the list | $\mathcal L=\mathcal L_{2}+\mathcal L_{\ge3}$ | [The Action as Input](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) |
 | $1$ | define what is computed | $Z[J]$ | [The Generating Functional and the Exact Gaussian](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) |
 | $2$ | invert the quadratic part | $\Delta$, the propagator | [The Generating Functional and the Exact Gaussian](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) |
 | $3$ | expand the polynomial part | one vertex per monomial | [The Interaction Series and the Vertex](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html) |
@@ -78,7 +80,7 @@ Stage $4$ collects. The terms are the diagrams, and the diagrams are read by fou
 
 **The closest single label is *perturbative quantum field theory*, and the closest label for the manipulation is *path-integral perturbation theory*.** The output is the *Feynman diagram expansion*. The section uses the first as the name of the method and the third as the name of its result.
 
-**The loop expansion is not a second expansion.** It groups the same diagrams by the number of closed loops instead of by the power of the coupling. The two groupings are different, and truncating at fixed loop order is not the same as truncating at fixed coupling order. [The Classical Limit of the Diagram Series](the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) states where the equivalence holds and where it stops.
+**The loop expansion is not a second expansion.** It groups the same diagrams by the number of closed loops instead of by the power of the coupling. The two groupings are different, and truncating at fixed loop order is not the same as truncating at fixed coupling order. [The Leading Order](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) states where the equivalence holds and where it stops.
 
 ## Why the Split Is the Right Organisation
 
@@ -103,17 +105,17 @@ Four facts do the work, and each has one consequence.
 
 **It is not a derivation of any particular theory.** The algebra's compact part is $\mathrm{U}(2)$ of dimension four with a two-dimensional module, and the strong and electroweak groups sit outside it. The method runs on whatever density stage $0$ collects. When that density is the Standard Model's, the method is the Standard Model's perturbation theory and the corpus is transcribing; [The Quantisation Hub](the-quantisation-hub-the-sixteen-articles-that-import-the-promotion.html) is the ledger of that import.
 
-**It is not exact as a whole.** Stage $2$ is exact and each order is exact; the sum is not. [The Failure Modes of the Diagram Expansion](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html) states this with the four failures attached, each with its repair.
+**It is not exact as a whole.** Stage $2$ is exact and each order is exact; the sum is not. [The Limits of the Expansion](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html) states this with the three boundaries attached, each with its repair where one exists.
 
 **It is not the only route.** A lattice evaluates the same integral without expanding. The method's claim is not that every question is answered by diagrams; it is that the questions it answers, it answers in one fixed order, with the errors of truncation located.
 
 ## Summary
 
-**A situation begins with the collection of all relevant Lagrangian components, and from that collection the method returns diagrams in four stages, with stage $0$ supplying the input.** Stage $0$ collects the full density and groups it into a quadratic part and a polynomial part, dropping nothing. Stage $1$ defines the generating functional, from whose derivatives every correlator comes. Stage $2$ inverts the quadratic part exactly, and the inverse is the propagator. Stage $3$ expands the polynomial part in the coupling: one monomial is one vertex, and Wick's theorem pairs the fields. Stage $4$ collects the terms into diagrams, reads them by four rules, and turns a correlator into an $S$-matrix element by amputation and the mass shell.
+**A situation begins with a truncated action, and from that truncation the method returns diagrams in four stages, with stage $0$ supplying the input.** Stage $0$ writes the density cut at a stated degree and groups it into a quadratic part and a polynomial part; what is cut is cut at that degree and its size is stated with it. Stage $1$ defines the generating functional, from whose derivatives every correlator comes. Stage $2$ inverts the quadratic part exactly, and the inverse is the propagator. Stage $3$ expands the polynomial part in the coupling: one monomial is one vertex, and Wick's theorem pairs the fields. Stage $4$ collects the terms into diagrams, reads them by four rules, and turns a correlator into an $S$-matrix element by amputation and the mass shell.
 
 **The name is composite.** Perturbative quantum field theory is the framework, the Feynman–Dyson series is the series, path-integral perturbation theory is the route, and the Feynman diagram expansion is the output. The loop expansion regroups the same diagrams by the action quantum; it is not a second expansion.
 
-**The order is the content.** The split is by field degree and the expansion is by coupling, so a quartic is one vertex at order $\lambda$. Nothing is dropped. And the four ways the route fails are named in the section's last article, each with the object that repairs it.
+**The order is the content.** The split is by field degree and the expansion is by coupling, so a quartic is one vertex at order $\lambda$. What is cut is cut at a stated degree and carries a stated error. And the three ways the route fails are named in the section's last article, each with the object that repairs it — together with the one operation, renormalisation, that is not a failure at all.
 
 ## Summary of Notation
 
@@ -130,10 +132,14 @@ Four facts do the work, and each has one consequence.
 
 ## Further Reading
 
-- [The Collection of Lagrangian Components: The Full Action as the Input to Perturbation Theory](the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html), stage $0$, and the sense in which only the sum is physical.
+- [The Action as Input: The Quadratic Part, the Interaction Part, and the Truncation](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html), stage $0$, and the sense in which only the sum is physical.
 - [The Generating Functional and the Exact Gaussian: The Quadratic Part Inverted into the Propagator](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html), stages $1$ and $2$, and the inversion that defines the propagator.
 - [The Interaction Series and the Vertex: Wick Contraction from the Polynomial Part of the Action](the-interaction-series-and-the-vertex-wick-contraction-from-the-polynomial-part-of-the-action.html), stage $3$, and the counting that makes one monomial one vertex.
 - [The Feynman Rules and the Diagram Expansion: Propagators, Vertices, Loops and Symmetry Factors](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html), stage $4$, and the four reading instructions.
 - [Three Diagrams of the SU(4) Model: The Kaon, the Proton Chain and a Gluon Exchange](three-diagrams-of-the-su4-model-the-kaon-the-proton-chain-and-a-gluon-exchange.html), the method's diagrams drawn in the corpus's own strong sector.
+- [The Parameterised Action: An Ordered Family of Theories](the-parameterised-action-an-ordered-family-of-theories.html), the family of which stage $0$'s density is a member.
+- [The Expansion Parameter: Order Counting and Non-Commuting Truncations](the-expansion-parameter-order-counting-and-non-commuting-truncations.html), the grading that turns the diagram sum into an approximation.
+- [Integrating Out and Matching: From One Action to Another](integrating-out-and-matching-from-one-action-to-another.html), how one member of the family is derived from another.
+- [The Dictionary: Field Redefinition and Change of Representation](the-dictionary-field-redefinition-and-change-of-representation.html), the condition under which a transcription of this corpus is a rewriting.
 - [The Lagrangian and the Second Quantisation: From the Action to the Commutator](the-lagrangian-and-the-second-quantisation.html), the postulate this section imports.
 - [Five Steps from a Lagrangian to Fluid Equations](five-steps-from-a-lagrangian-to-fluid-equations.html), the classical counterpart, from which this section takes its shape.

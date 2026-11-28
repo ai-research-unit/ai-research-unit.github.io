@@ -2,9 +2,9 @@
 
 ## Introduction
 
-**The layer.** The transition is a breaking of $\mathrm{SU}(4)$ on a formal copy of the carrier, and everything this article proves is either linear algebra on $\mathfrak{su}(4)$ or a count on the endpoint. **The one postulate in it is a choice of representation, and the article names that choice in the section where it is spent.**
+**The layer.** The vacuum restructuring begins with a breaking of $\mathrm{SU}(4)$ on a formal copy of the carrier, and everything this article proves is either linear algebra on $\mathfrak{su}(4)$ or a count on the endpoint. **The one postulate in it is a choice of representation, and the article names that choice in the section where it is spent.**
 
-**The question.** Can the weak force be *created* by the transition that breaks the primordial force — not carried into the transition as a fragment, not assembled from the debris, but born with it? And if it can, what exactly plays the role of creator?
+**The question.** Can the weak force be *created* by the restructuring that breaks the primordial force — not carried into the restructuring as a fragment, not assembled from the debris, but born with it? And if it can, what exactly plays the role of creator?
 
 **The answer.**
 
@@ -26,17 +26,17 @@ $$
 | --- | --- | --- |
 | a subalgebra never has larger rank than its algebra | **theorem** | §*The Lemma* |
 | the sextet cannot make the weak pair | **theorem**, twice over | [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html); §*The Other Route, Closed Elsewhere* |
-| the transition's scalar carries a doublet index | **postulate** | §*The Price* |
+| the restructuring's scalar carries a doublet index | **postulate** | §*The Price* |
 
 **What this article establishes.** That rank five is unreachable from rank three inside $\mathfrak{su}(4)$, hence that the weak factors must arrive beside the primordial force rather than emerge from it; that the object doing the breaking carries an index, and that an index is exactly the kind of object that can arrive beside; that the resulting ledger is $3+1+1=5$ with one sense of rank and no composite spectrum; and that the weak bosons' masses come from later vacua, so no mass hierarchy problem is created.
 
 **Not established.** Why the condensate carries a doublet index at all. **That is a postulate, and it is the only one.** Why the index splits into two chiral factors rather than a single one. **That is a second assumption, inherited from the corpus rather than invented here.** And the dynamics of the condensation itself, which the corpus does not derive for any sector.
 
-**What this article is not.** It is not a derivation of the weak force from $\mathrm{SU}(4)$. **It is a proof that the weak force cannot come from inside $\mathrm{SU}(4)$, together with a construction in which it comes from the outside at the transition.** The difference between those two sentences is the whole content of the migration.
+**What this article is not.** It is not a derivation of the weak force from $\mathrm{SU}(4)$. **It is a proof that the weak force cannot come from inside $\mathrm{SU}(4)$, together with a construction in which it comes from the outside at the restructuring.** The difference between those two sentences is the whole content of the migration.
 
-**Where the rest is.** The breaking that this article interprets is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet whose closures are proved here is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The grammar of *survives*, *breaks* and *arrives* is [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The scales are [The Matching at $M_C$](matching-at-m-c.html). The internal working note with the full arithmetic is [Rank Five From Three](../articles_internal/structures/structure-weak-force-as-side-effect.html).
+**Where the rest is.** The breaking that this article interprets is [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet whose closures are proved here is [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The grammar of *survives*, *breaks* and *arrives* is [The Centraliser, the Complement, and the Index](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The scales are [The Matching at $M_C$](matching-at-m-c.html). The internal working note with the full arithmetic is [Rank Five From Three](../articles_internal/structures/structure-weak-force-as-side-effect.html).
 
-## What a Transition Must Deliver
+## What a Restructuring Must Deliver
 
 **Three things, and they are separate deliverables with separate status.**
 
@@ -86,9 +86,9 @@ $$
 
 **Row one buys the spatial block plus one abelian factor. Row two buys weak-times-weak plus one abelian factor. Neither buys the spatial block *and* weak**, because the block needs two ranks and weak needs two, and four exceeds three. **Two ways to spend three ranks, not two halves of five.**
 
-**And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the transition is.**
+**And the two rows cannot both be exact.** Their Lie bracket generates all fifteen generators of $\mathfrak{su}(4)$, which is simple, so a vacuum annihilated by both would break nothing. **The model must choose, and the corpus chooses the first row — that is what the restructuring is.**
 
-**The endpoint is the group at $M_C$, and it is the same group below.** The vacuum that produces the two factors is the lepton line $\operatorname{diag}(-3,1,1,1)$, and it is exact at the transition. **The rank is three above and three below**, and the effective theory below is the same group with the sextet removed.
+**The endpoint is the group at $M_C$, and it is the same group below.** The vacuum that produces the two factors is the lepton line $\operatorname{diag}(-3,1,1,1)$, and it is exact at the restructuring. **The rank is three above and three below**, and the effective theory below is the same group with the sextet removed.
 
 ## The Lemma: A Subalgebra Never Outranks Its Algebra
 
@@ -121,14 +121,14 @@ $$
 | the wall | the weak force is not inside $\mathrm{SU}(4)$ | true, and it is a dead end |
 | the door | therefore the weak force must arrive from beside $\mathrm{SU}(4)$ | true, and it is a construction |
 
-**Read as a wall, the lemma refutes one sentence.** Read as a door, it *proves that any successful story must have the weak force arriving at the transition*, because arriving is the only thing left. **The word for a factor that arrives beside rather than emerging from within is "arrival", and it is the right word.**
+**Read as a wall, the lemma refutes one sentence.** Read as a door, it *proves that any successful story must have the weak force arriving at the restructuring*, because arriving is the only thing left. **The word for a factor that arrives beside rather than emerging from within is "arrival", and it is the right word.**
 
 **This inversion changes the direction of the argument and it is worth stating slowly.**
 
 **A defensive article says:** the algebra forbids the naive reading, so we retreat to a postulate.
-**The correct article says:** the algebra forbids the naive reading, therefore the weak force must be born at the transition, and here is the object that bears it.
+**The correct article says:** the algebra forbids the naive reading, therefore the weak force must be born at the restructuring, and here is the object that bears it.
 
-**The second is not rhetoric.** The first sentence of the second version is a theorem, and it constrains the construction: whatever bears the weak force must be an object that can arrive, which is to say **not a subalgebra and not a subset of the fifteen.** Among the objects a transition possesses — a vacuum, a condensate, a scalar multiplet, a set of couplings — only the scalar multiplet has indices, and **only an index can bring in a factor.** That is why the mechanism is the index and not the debris.
+**The second is not rhetoric.** The first sentence of the second version is a theorem, and it constrains the construction: whatever bears the weak force must be an object that can arrive, which is to say **not a subalgebra and not a subset of the fifteen.** Among the objects a restructuring possesses — a vacuum, a condensate, a scalar multiplet, a set of couplings — only the scalar multiplet has indices, and **only an index can bring in a factor.** That is why the mechanism is the index and not the debris.
 
 ## The Mechanism: The Condensate That Carries a Doublet
 
@@ -176,7 +176,7 @@ $$
 
 **whereas for any $\mathfrak h\subseteq\mathfrak{su}(4)$ the same sum is capped at three by the lemma.**
 
-**So the arithmetic $3+1+1=5$ is a certificate and not a loophole.** If the weak factors were pieces of the primordial force, five would be unreachable. **That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the transition.**
+**So the arithmetic $3+1+1=5$ is a certificate and not a loophole.** If the weak factors were pieces of the primordial force, five would be unreachable. **That the endpoint reaches five is therefore evidence that the weak factors sit beside — that they are separate factors, born with the restructuring.**
 
 **"Arrives with the index" and "rank five from rank three" are the same statement in two vocabularies.** The first says where the group comes from; the second says what its rank must be; and the lemma says the two are only compatible if the group is not a subalgebra. **No construction satisfies the second without the first**, which is why the arrival reading is forced rather than chosen.
 
@@ -184,9 +184,9 @@ $$
 
 ## The Price: One Postulate, in the Corpus's Own Currency
 
-**What is postulated.** That the transition's condensate is a $(\mathbf 4,\mathbf 1,\mathbf 2)$. Nothing in the fifteen forces that representation.
+**What is postulated.** That the restructuring's condensate is a $(\mathbf 4,\mathbf 1,\mathbf 2)$. Nothing in the fifteen forces that representation.
 
-**Why it is cheap in this corpus specifically.** The scalar sector article says it without hedging: *the corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.* **So the postulate spends a currency the corpus already spends.** The transition does not open a new debt; it names an existing one as the birth certificate of the weak force.
+**Why it is cheap in this corpus specifically.** The scalar sector article says it without hedging: *the corpus cannot derive the scalar content: the scalar sector is the one place in the frame with no algebraic guidance at all.* **So the postulate spends a currency the corpus already spends.** The restructuring does not open a new debt; it names an existing one as the birth certificate of the weak force.
 
 **What is not postulated, and this list is the reason the construction is worth having.**
 
@@ -195,7 +195,7 @@ $$
 | a new symmetry group | **no** | the endpoint is $\mathrm{SU}(3)\times\mathrm{U}(1)\times\mathrm{SU}(2)\times\mathrm{SU}(2)$ |
 | a new scale $\Lambda$ | **no** | the scales are $M_C$ and $v$, both of them the corpus's |
 | a new confining dynamics | **no** | no bound state is built |
-| a matching rule for $W^{3}_L,W^{3}_R$ | **no** | they are the Cartans of factors that exist from the transition on |
+| a matching rule for $W^{3}_L,W^{3}_R$ | **no** | they are the Cartans of factors that exist from the restructuring on |
 | a new vacuum | **no** | $iD=\operatorname{diag}(-3i,i,i,i)$ is the corpus's |
 
 **So the construction adds one line to the ledger and removes a question the corpus could not answer**: why the weak force exists at all.
@@ -212,7 +212,7 @@ $$
 M_X\sim g_4\,v_C,\qquad m_{W}\sim g\,v,\qquad v=246\ \mathrm{GeV},
 $$
 
-**with $v_C$ the condensate that does the transition and $v$ the electroweak value.** The chain therefore reads
+**with $v_C$ the condensate that drives the restructuring and $v$ the electroweak value.** The chain therefore reads
 
 $$
 M_C\ >\ v .
@@ -282,7 +282,7 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 
 ## Summary
 
-**The weak force can be born at the transition, and the birth certificate is the doublet index of the object that breaks the primordial force.**
+**The weak force can be born at the restructuring, and the birth certificate is the doublet index of the object that breaks the primordial force.**
 
 **The rank lemma is why it must be so.** $\operatorname{rank}\mathfrak{su}(4)=3$, the endpoint costs $5$, and a subalgebra never outranks its algebra. **So the weak factors are not pieces of $\mathrm{SU}(4)$; they arrive beside it — which is what "arrival" means here, and what $3+1+1=5$ certifies.**
 
@@ -299,16 +299,16 @@ Two theorems are not one theorem twice. Charge closes the composite by quantum n
 | $\mathfrak{su}(4)$ | the primordial force, dimension $15$, rank $3$ |
 | $\mathfrak m$ | the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\frac23$ |
 | $iD$ | the condensate $\operatorname{diag}(-3,1,1,1)$; $\operatorname{ad}(iD)$ has spectrum $0^{9},(\pm4i)^{3}$ |
-| $Ξ$ | the transition's scalar, $(\mathbf{15}\oplus\mathbf1)$, $16$ real components |
+| $Ξ$ | the restructuring's scalar, $(\mathbf{15}\oplus\mathbf1)$, $16$ real components |
 | $M_C$ | the first breaking scale, $\gtrsim250$ TeV from $K_L\to\mu e$ |
-| $v_C,v$ | the transition and electroweak vacuum values, $v=246$ GeV |
+| $v_C,v$ | the restructuring and electroweak vacuum values, $v=246$ GeV |
 | $\Lambda_{\text{confine}}$ | the scale a bound state weighs at least, $=M_C$ here |
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The theorem half of the transition.
+- [The Restructuring of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The theorem half of the restructuring.
 - [Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The six states, their mass, and the bound that fixes $M_C$.
 - [The Charge Theorem: The Sextet Cannot Be Recomposed Into the Weak Pair](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html). The identities, the mass table, and the two closures in full.
 - [The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The grammar this article uses.
 - [The Matching at $M_C$](matching-at-m-c.html). The scale ledger and the interface with the left–right corpus.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet, and the sentence about the corpus having no algebraic guidance for it.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet, and the sentence about the corpus having no algebraic guidance for it.

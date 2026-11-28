@@ -116,12 +116,12 @@ the factor $\tfrac12$ being $\operatorname{tr}(T_{3L}^{2})$ over the doublet and
 
 > **The unique statement is narrower and it is the one that matters here**: of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place.
 
-**What follows: the corner survives the spatial half of the transition, and the doublet half is where it goes.** A generator that commutes with the vacuum value is unbroken by the step that imposes that value, and the quotation says it of the first breaking. Because that step is the one that could have destroyed the corner — it is the step that removes six of the fifteen — **$B-L$ comes through it intact**. **Then the same transition's doublet vev lands on the lepton line, where $B-L=-1$, and breaks it.** Reading the two facts in the right order is the whole of the section: the corner is *not removed by the six*, and it *is* removed by the one.
+**What follows: the corner survives the spatial half of the restructuring, and the doublet half is where it goes.** A generator that commutes with the vacuum value is unbroken by the step that imposes that value, and the quotation says it of the first breaking. Because that step is the one that could have destroyed the corner — it is the step that removes six of the fifteen — **$B-L$ comes through it intact**. **Then the same restructuring's doublet vev lands on the lepton line, where $B-L=-1$, and breaks it.** Reading the two facts in the right order is the whole of the section: the corner is *not removed by the six*, and it *is* removed by the one.
 
 **The eigenvalue is what survives, and it is worth separating from the charge.** Two statements, and only the first is true.
 
 - **The charge lattice does not move.** $B-L$ takes the values $(-1,\tfrac13,\tfrac13,\tfrac13)$ on a quartet, and those four numbers are the same at every scale: an eigenvalue belongs to the array, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ touches a diagonal entry. The unit $\tfrac13$ is therefore the same everywhere. What runs is a coupling, not the charge it multiplies.
-- **The charge is nevertheless broken at $M_C$, by the vacuum that carries it.** $[B-L,Ξ_0]=-Ξ_0\neq0$ on the lepton line, so by the criterion every article in this block uses, $B-L$ is not conserved below $M_C$; what annihilates the vacuum is $Y=T_{3R}+\tfrac12(B-L)$. **"The chain never renormalises the corner" and "the chain never breaks the corner" are different sentences**, and this article keeps the first without the second ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html) has the full ledger).
+- **The charge is nevertheless broken at $M_C$, by the vacuum that carries it.** $[B-L,Ξ_0]=-Ξ_0\neq0$ on the lepton line, so by the criterion every article in this block uses, $B-L$ is not conserved below $M_C$; what annihilates the vacuum is $Y=T_{3R}+\tfrac12(B-L)$. **"The chain never renormalises the corner" and "the chain never breaks the corner" are different sentences**, and this article keeps the first without the second ([The Quantum Numbers Below the Restructuring](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html) has the full ledger).
 
 **And the other two neutral directions are not so lucky in either sense.** $T_{3R}$ is broken at $M_C$ and $T_{3L}$ at $M_W$. Of the three ingredients of the neutral sector, the corner is the only one the six leptoquark generators leave alone — **of the seven arrays that touch the $t$ line, $B'$ is the only one that leaves it in place** — and that is a statement about the spatial part of the vacuum, not about the doublet part.
 
@@ -220,7 +220,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 | the factorisation | $\exp(\theta iD)$ against $e^{i\theta}\operatorname{diag}(e^{-4i\theta},1,1,1)$ | equal |
 | the central values | $\exp(\tfrac{\pi}{2}iD)$ | $i\,\mathrm I_4$ |
 | the exactness | $[iD,Ξ_0]$, and the nine that commute with $D$ | $0$, and the eight gluons plus $B'$ |
-| the corner's fate at the transition | the first vev commutes with it, the doublet vev does not | kept by the six, broken by the one |
+| the corner's fate at the restructuring | the first vev commutes with it, the doublet vev does not | kept by the six, broken by the one |
 
 ## Summary
 
@@ -255,7 +255,7 @@ Fifteen recomputations, all on the quoted array, at $\operatorname{tr}$ in the f
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where $Y=T_{3R}+\tfrac12(B-L)$ comes from, and the mixing that leaves the corner's eigenvalue alone.
 - [The Electroweak Symmetry group and the Hypercharge Assignment](the-electroweak-symmetry-group-and-the-hypercharge-assignment.html). The anomaly system solved in full: the three rays the comparison section trades against one trace.
 - [Anomalies and Anomaly Cancellation](anomalies-and-anomaly-cancellation.html). The four rows, and why they vanish identically here.
-- [The Quantum Numbers Below the Breaking: The Strong Group, $B-L$, Weak Isospin and the Electric Charge](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html). The exactness that quotation four establishes, read as a table of fates.
+- [The Quantum Numbers Below the Restructuring: The Strong Group, $B-L$, Weak Isospin and the Electric Charge](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html). The exactness that quotation four establishes, read as a table of fates.
 - [The Matching at $M_C$](matching-at-m-c.html). The chain whose first step the corner survives.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The scale-bearing statements this article does not print.
 

@@ -8,7 +8,7 @@
 
 **What this article establishes.** The fifteen flat labels, with no broken-phase word among them: twelve ordered pairs and three diagonal directions. Why the labels mix under a local transformation. Why nothing can measure them above $M_C$. And the four facts that are real — the group, its dimension, its rank, and the common mass.
 
-**What it does not establish.** That the strong group exists anywhere. **The $\mathrm{SU}(3)$ content — eight, rank two, the singlet excluded — belongs to the phase below $M_C$**, and the companion article [The Three Lines in $\mathrm{SU}(3)$](the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries it. This article is the first half, and it stops at the transition.
+**What it does not establish.** That the strong group exists anywhere. **The $\mathrm{SU}(3)$ content — eight, rank two, the singlet excluded — belongs to the phase below $M_C$**, and the companion article [The Three Lines in $\mathrm{SU}(3)$](the-three-lines-in-su3-a-coordinate-label-on-the-eight-not-a-charge.html) carries it. This article is the first half, and it stops at the restructuring.
 
 **Why the flat list comes first.** A claim that "the labels are bookkeeping" is worth nothing until the bookkeeping is printed. **So the article prints all fifteen labels before it argues anything about them.**
 
@@ -187,12 +187,12 @@ $$
 | $iD$ | $i\sum_jM_j$, the trace direction, not one of the fifteen |
 | $D$ | $\operatorname{diag}(-3,1,1,1)$ up to normalisation, the direction the vacuum takes below $M_C$ |
 | $\Xi_0$ | the scalar's vacuum value, zero above $M_C$ |
-| $M_C$ | the scale of the transition |
+| $M_C$ | the scale of the restructuring |
 | declaration (A) | the statement that $e_t$ is the lepton line |
 
 ## Further Reading
 
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html), for the group, the count of fifteen and the place of declaration (A).
 - [The Counts of the Fifteen: Sixteen Cells, Six Pairs, Twelve Arrays, Fifteen Generators](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html), for the cell, plane and array vocabulary used above.
-- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the same grid read with names in every cell, and for what changes at the transition.
+- [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html), for the same grid read with names in every cell, and for what changes at the restructuring.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html), for the covariant derivative, the one coupling and the local transformation quoted above.

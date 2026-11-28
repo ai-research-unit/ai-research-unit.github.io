@@ -1,4 +1,4 @@
-# __The Threshold Scales: One Breaking, the Bound from $K_L\to\mu e$, and Four Routes to a Value__
+# __The Threshold Scales: One Restructuring, the Bound from $K_L\to\mu e$, and Four Routes to a Value__
 
 ## Introduction
 
@@ -23,7 +23,7 @@ $$
 
 **The single idea.** A bound and a value are different kinds of statement, and the model produces only the first for its one upper scale. A bound says "not lighter than"; a value needs an equation. The corpus has four candidate equations, and only one of them is a genuine prediction of the content: the unification condition $g_4=g_L=g_R$ at $M_C$. That equation is also the one the minimal content fails, which is why the scale stays a parameter.
 
-**What the article establishes.** The status of each scale; the one process that bounds $M_C$ and the reason it is a tree-level flavour-changing decay rather than a precision observable; why there is one transition and not two; the four routes from a bound to a value; and the circularity that keeps the model unfalsified but also unpredicted.
+**What the article establishes.** The status of each scale; the one process that bounds $M_C$ and the reason it is a tree-level flavour-changing decay rather than a precision observable; why there is one restructuring and not two; the four routes from a bound to a value; and the circularity that keeps the model unfalsified but also unpredicted.
 
 **What the article does not establish.** No numerical value for $M_C$. The number attached to the bound, its inputs and its spread are in [The One Coupling That Returns the Standard Model: One Equation, One Scale, One Content Statement](the-one-coupling-that-returns-the-standard-model.html), and the process itself in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html).
 
@@ -65,13 +65,13 @@ $$
 
 **3.5 The stronger bound that may or may not apply.** If the scalar sector contains a triplet coupling to two quarks, a diquark, then proton decay bounds that scalar at $M_\Sigma\gtrsim1.60\times10^{5}$ J — about ten orders above the leptoquark bound. The minimal content has no such scalar, so in the minimal content the weaker bound stands alone.
 
-## Why There Is One Transition and Not Two
+## Why There Is One Restructuring and Not Two
 
 **One vacuum, one breaking, two factors at once.** Argued in full in [The Matching at $M_C$](matching-at-m-c.html); restated here because it changes what "the scales" means.
 
 **5.1 The rank-one vacuum.** $Ξ$'s vacuum is a line in the carrier, and the model breaks once, at one scale. Above $M_C$ there is one factor, $\mathrm{SU}(4)$, of rank three and dimension fifteen; below it there are two, $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$, of dimension twelve and the same rank.
 
-**5.2 The consequence for counting.** One threshold, two groups: $\mathrm{SU}(4)$ above, the spatial block times $B-L$ below. The massless vectors read $15\to9$: fifteen above the transition, before the vacuum forms; nine below, the kernel of $\operatorname{ad}(iD)$. **The arrow is $15-6$**: six of the fifteen become heavy at $32v_C^{2}$, and no vector arrives.
+**5.2 The consequence for counting.** One threshold, two groups: $\mathrm{SU}(4)$ above, the spatial block times $B-L$ below. The massless vectors read $15\to9$: fifteen above the restructuring, before the vacuum forms; nine below, the kernel of $\operatorname{ad}(iD)$. **The arrow is $15-6$**: six of the fifteen become heavy at $32v_C^{2}$, and no vector arrives.
 
 **5.3 The consequence for the bounds.** The bound on $M_C$ is a bound on $M_X$, and the minimal content has no second heavy vector to bound.
 
@@ -85,7 +85,7 @@ $$
 
 **6.3 The seesaw inversion.** If the neutrino mass is generated at $M_C$, then $m_\nu\sim y_\nu^{2}v^{2}/M_C$ inverts to $M_C\sim y_\nu^{2}v^{2}/m_\nu$. With the measured neutrino mass scale and an order-one Yukawa this gives a number, and the number is the one the corpus quotes for the seesaw scale. The weakness is the Yukawa: a factor of three in $y_\nu$ is a factor of nine in $M_C$.
 
-**6.4 A second scalar.** A second field with a vacuum of its own splits the transition into two thresholds and gives a scale where there was one. It fixes nothing by itself, but it makes the two separately boundable — and it changes the running, which is the point of §*The Tension*.
+**6.4 A second scalar.** A second field with a vacuum of its own splits the restructuring into two thresholds and gives a scale where there was one. It fixes nothing by itself, but it makes the two separately boundable — and it changes the running, which is the point of §*The Tension*.
 
 **6.5 What none of them does.** None of them removes the hierarchy problem. A scale fixed at $10^{-5}$ J by a rare decay and an electroweak scale at $10^{-17}$ J is a ratio of $10^{12}$ that nothing in the chain explains. That is [The Hierarchy Problem and Naturalness](the-hierarchy-problem-and-naturalness.html), and it is the price of the chain rather than a defect of this article.
 

@@ -8,7 +8,7 @@
 
 **The strongest objection.** *Feynman rules are a calculational device with no content.* The objection mistakes the diagram for the physics. What the diagrams carry is the *order*: which processes contribute at which power of the coupling, which are tree and which are loop, and which are forbidden. That information is not in the density in any form a reader can see, and it is not in the equation of motion at all.
 
-**Position.** Stage $4$ of the chain in [the hub](the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html), and the article that hands the diagrams to [the classical limit](the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) and to [the failure modes](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html).
+**Position.** Stage $4$ of the chain in [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html), and the article that hands the diagrams to [the classical limit](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) and to [the failure modes](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html).
 
 ## The Four Rules
 
@@ -37,7 +37,7 @@
 | two vertices with one line closing | $2$ | $g^{2}$ | $1$ | the first correction to a four-point function |
 | $n$ vertices, $L$ loops | $n$ | $g^{n}$ | $L=I-n+1$ | the general term |
 
-**The loop number is not the order, and the table says so twice.** A one-loop diagram can be order $g$ or order $g^{2}$; a fixed order can contain several loop numbers. Truncating at fixed order and truncating at fixed loop number are different truncations of the same series, and [the sixth article](the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) is where the difference is used.
+**The loop number is not the order, and the table says so twice.** A one-loop diagram can be order $g$ or order $g^{2}$; a fixed order can contain several loop numbers. Truncating at fixed order and truncating at fixed loop number are different truncations of the same series, and [the sixth article](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) is where the difference is used.
 
 ## The Tree Amplitude
 
@@ -66,7 +66,7 @@ $$
 
 **The integral is quadratically divergent and the divergence is not a technicality.** Over a Euclidean ball of radius $\Lambda$ in the raw measure $\mathrm{d}^{4}k$ — before the $(2\pi)^{-4}$ that each loop carries — the integral is $\pi^{2}\bigl[\Lambda^{2}-m^{2}\log\bigl(1+\Lambda^{2}/m^{2}\bigr)\bigr]$, so $\int\Delta$ grows like $\Lambda^{2}$: the ratio to $\Lambda^{2}$ approached $\pi^{2}$ as $9.7217$, $9.8472$, $9.8670$, $9.8693$, $9.8696$ at $\Lambda=10,30,100,300,1000$ with $m=\tfrac12$, and the residual tracked $-m^{2}\log$ to four figures. With the loop's $(2\pi)^{-4}$ restored the same number is $\frac{\Lambda^{2}}{16\pi^{2}}$ and the ratio is $\frac{1}{16\pi^{2}}$; the article quotes the raw one because the two differ by a constant and the raw one is what the log term makes visible. The number is quoted because "quadratically divergent" is a claim about a limit, and the limit was taken.
 
-**The correction is absorbed, and the absorption is the renormalisation condition.** Writing the two-point function as the free propagator times a series, the divergent part is a constant times the free propagator and is removed by a counterterm of the same form as the mass term. That is the definition of mass renormalisation, and it works at every order for the theories the corpus writes. [The Renormalization Group](the-renormalization-group-in-biquaternionic-form.html) states the flow that the absorption defines, and [the last article of this section](the-failure-modes-of-the-diagram-expansion-gauge-fixing-renormalisation-asymptotic-series-and-strong-coupling.html) states why the absorption is a condition and not a derivation.
+**The correction is absorbed, and the absorption is the renormalisation condition.** Writing the two-point function as the free propagator times a series, the divergent part is a constant times the free propagator and is removed by a counterterm of the same form as the mass term. That is the definition of mass renormalisation, and it works at every order for the theories the corpus writes. [The Renormalization Group](the-renormalization-group-in-biquaternionic-form.html) states the flow that the absorption defines, and [the last article of this section](the-limits-of-the-expansion-gauge-fixing-asymptotic-series-and-strong-coupling.html) states why the absorption is a condition and not a derivation.
 
 **The finite part is a prediction and the divergent part is not.** This is the sentence a reader should carry away from the one-loop computation: the divergence is removed by a choice, and the choice is a measurement. What survives is a number the theory did not have before the loop was drawn.
 

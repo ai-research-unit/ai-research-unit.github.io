@@ -137,7 +137,7 @@ $$
 
 **with the heavy eigenvector $T^{L}_{x}+T^{R}_{x}$ — which is $-A_{tx}$, a leptoquark plane — and the massless one $T^{L}_{x}-T^{R}_{x}$, which is $-A_{yz}$, a spatial plane.** **The physical states are the leptoquark and the adjoint direction; the halves are the $45^\circ$ rotated basis.**
 
-**What a mixing angle needs, and what is missing.** Mass mixing requires degeneracy: $W^{3}$ and $B$ mix into $Z$ and $\gamma$ because both are massless before the breaking. **Here the two halves are split $32v^{2}$ against $0$ — maximally non-degenerate — so there is nothing for them to mix with.** The condensate destroys degeneracy by design, and that is what makes the identities bookkeeping rather than dynamics. **This is the honest sense in which the transition is a breaking: it removes the degeneracy that a mixing would need.**
+**What a mixing angle needs, and what is missing.** Mass mixing requires degeneracy: $W^{3}$ and $B$ mix into $Z$ and $\gamma$ because both are massless before the breaking. **Here the two halves are split $32v^{2}$ against $0$ — maximally non-degenerate — so there is nothing for them to mix with.** The condensate destroys degeneracy by design, and that is what makes the identities bookkeeping rather than dynamics. **This is the honest sense in which the restructuring contains a breaking: it removes the degeneracy that a mixing would need.**
 
 ## The $45^\circ$, and the Factor $2.16$
 
@@ -200,7 +200,7 @@ $$
 
 **A structural identity.** They show that $\mathfrak{so}(4)$ sits inside $\mathfrak{su}(4)$ as a real subalgebra, and they show *how*: by pairing each leptoquark plane with a spatial plane. **That pairing is the reason the two readings of the fifteen are so close** — the span of the two maximal-rank subgroups is twelve of fifteen, the intersection is four, and the missing three are exactly the directions that the identities cannot reach. **The identities are the visible tip of that closeness, and the closeness is what makes the wrong story attractive.**
 
-**And one thing they are not good for.** They are not a mechanism. **Every statement above is true before and after the transition, at every scale, and in the presence or absence of any dynamics.** A formula with that property is a statement about a basis, and the corpus's own article on the mass matrix says so when it warns that the half in $T^{L}_{x}$ appears twice and is not a mass.
+**And one thing they are not good for.** They are not a mechanism. **Every statement above is true before and after the restructuring, at every scale, and in the presence or absence of any dynamics.** A formula with that property is a statement about a basis, and the corpus's own article on the mass matrix says so when it warns that the half in $T^{L}_{x}$ appears twice and is not a mass.
 
 ## The Checks
 
@@ -257,7 +257,7 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, t
 | $T^{L}_{a},T^{R}_{a}$ | the six halves, half leptoquark and half spatial |
 | $n,m$ | numbers of sextet and anti-sextet constituents |
 | $k$ | half the triality count, $n-m=3k$ |
-| $M_C$ | the transition scale, $\gtrsim250$ TeV |
+| $M_C$ | the restructuring scale, $\gtrsim250$ TeV |
 | $\sin^{2}\theta_W$ | the measured electroweak mixing, $0.23122$ |
 
 ## Further Reading
@@ -265,5 +265,5 @@ Six for six is a coincidence of dimension. It says nothing about charge, spin, t
 - [Six Leptoquarks Above $M_C$: Quantum Numbers, the Mass Ratio, and the Bound From $K_L\to\mu e$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet's identity, mass and bound.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The construction that does not need the sextet.
 - [The Centraliser, the Complement, and the Index: Dimension Falls at a Breaking, Rank Rises at an Arrival](the-centraliser-the-complement-and-the-index-dimension-and-rank.html). The closure argument that runs beside the charge argument.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). Where $32v^{2}$ and $0$ come from, and the warning about the half in $T^{L}_{x}$.
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). Where the electroweak mixing is actually computed.

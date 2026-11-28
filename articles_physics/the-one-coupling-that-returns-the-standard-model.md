@@ -142,7 +142,7 @@ The two scales are four decades apart, and no single scale is both. That is the 
 
 **One repair.** It does not work.
 
-**5.1 The proposal.** Add a scale above the transition: impose $g_4=g_L=g_R$ at $M_{U}>M_C$ and change nothing below. Two conditions on two scales is a curve, not a point, so the variant is not empty. What it does not do is close the gap.
+**5.1 The proposal.** Add a scale above the restructuring: impose $g_4=g_L=g_R$ at $M_{U}>M_C$ and change nothing below. Two conditions on two scales is a curve, not a point, so the variant is not empty. What it does not do is close the gap.
 
 **5.2 The obstruction.** Above $M_C$ the content is parity-symmetric, so every $\mathrm{SU}(2)_L$ multiplet has an $\mathrm{SU}(2)_R$ partner of the same dimension:
 
@@ -260,13 +260,13 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 
 | symbol | meaning |
 |---|---|
-| $g_4$ | the $\mathrm{SU}(4)$ coupling, tied to $g_3$ at the transition |
+| $g_4$ | the $\mathrm{SU}(4)$ coupling, tied to $g_3$ at the restructuring |
 | $g_L$, $g_R$ | the $\mathrm{SU}(2)_L$ and $\mathrm{SU}(2)_R$ couplings |
 | $g_{B-L}$ | the abelian coupling of the fifteenth Cartan, $g_{B-L}^2=\tfrac38g_4^2$ |
 | $g_Y$ | the hypercharge coupling below $M_C$ |
 | $e$ | the electromagnetic coupling, the mixture of the three neutral fields |
 | $\sin^2\theta_W$ | $e^2/g_L^2$, the mixing angle written as a ratio |
-| $M_C$ | the transition scale |
+| $M_C$ | the restructuring scale |
 | $M_{U}$ | the extra scale of the variant, above $M_C$ |
 | $c_2$, $c_4$ | the one-loop coefficients of the two factors, $\tfrac{19}{6}$ and $\tfrac{32}{3}$ |
 | $T^{15}$ | the fifteenth $\mathrm{SU}(4)$ Cartan, the $B-L$ generator |
@@ -277,6 +277,6 @@ The Yukawa sector answers the same question by counting. The one-bidoublet condi
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The group, the sixteen, the chain and the declarations, with no coupling value.
 - [The Matching at $M_C$](matching-at-m-c.html). The chain as three stabilisers, and the dimension budget that fixes the count of states.
 - [The Weinberg Angle and the Three Neutral States: One Mixture, Three Denominators](the-weinberg-angle-and-the-three-neutral-states.html). The angle as a ratio, and the neutral current written symbolically.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The multiplet list and the states, with the mass ratios referred here.
 - [Grand Unification in the Biquaternion Framework: Where the Embedding Fails](grand-unification-in-the-biquaternion-framework-where-the-embedding-fails.html). Why the larger group that would close the gap is not available on the carrier.
 - [The Standard Model: Content, Quantum Numbers and the Nineteen Parameters](the-standard-model-content-quantum-numbers-and-the-nineteen-parameters.html). What the recovery recovers, counted.

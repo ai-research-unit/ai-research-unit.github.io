@@ -3,15 +3,15 @@
 ## Introduction
 
 **The model fixing conditions fifteen directions, and the matrix that gives them mass has two blocks.** Eight adjoint directions and one $B-L$ direction stay massless;
-six leptoquark directions take $32v^{2}$ at the transition. $8+1+6=15$.
+six leptoquark directions take $32v^{2}$ at the restructuring. $8+1+6=15$.
 
 **The model.** One model: the $\mathrm{SU}(4)$ model, set out in [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, Rank
 Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). **Its connection content is the fifteen generators of $\mathfrak{su}(4)$ and
 nothing else.** There is no weak factor in the algebra and no weak connection in the ledger: $W^{\pm}$, $Z$, $Z_R$ and the photon are not directions of this
-model. They arrive at $M_C$ with the doublet index of the condensate, and their masses are computed below the transition, in [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
+model. They arrive at $M_C$ with the doublet index of the condensate, and their masses are computed below the restructuring, in [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html).
 
 **What the article computes, and what it borrows.** It states the two blocks, derives the sextet's mass from the adjoint action of the vacuum, and shows that
-the kernel is nine-dimensional. The entry-by-entry leakage is [The Breaking of the Primordial
+the kernel is nine-dimensional. The entry-by-entry leakage is [The Restructuring of the Primordial
 Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s; the block structure is stated here once because every later article
 quotes it.
 
@@ -53,7 +53,7 @@ are one scale and one list.
 
 **The first vacuum.** $D=\operatorname{diag}(-3,1,1,1)$ is a multiple of the identity on the three spatial lines, so every generator of the spatial block commutes with it: the
 spatial planes have $\lambda_j=\lambda_k$ and the two spatial diagonals commute with it. A generator that commutes with the vacuum has zero mass, which is the
-kernel statement of [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
+kernel statement of [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
 
 **The second vacuum.** $H$ is a singlet, so its vacuum expectation value does not couple to a generator of the block at all. The same holds for $Ξ$, whose
 vacuum lies along the lepton line, and the lepton line is a singlet.
@@ -67,9 +67,9 @@ corpus's claim that the strong group is a stabiliser at every scale.
 normalisation, so the mass functional $2v^{2}\langle[D,[D,A]],A\rangle$ at $A=D$ is $2v^{2}\langle[D,[D,D]],D\rangle=0$. **The ninth zero is not a
 stabiliser accident but the statement that $B'$ is the direction the vacuum points along.**
 
-**What happens to it later.** $B'$ is massless at $M_C$ and it acquires a mass only through the mixing that forms the photon, which is below the transition and
+**What happens to it later.** $B'$ is massless at $M_C$ and it acquires a mass only through the mixing that forms the photon, which is below the restructuring and
 is [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)'s computation. **Its masslessness here is not a claim about the
-low-energy spectrum**; it is the statement that the fifteen have nine zeros at the transition.
+low-energy spectrum**; it is the statement that the fifteen have nine zeros at the restructuring.
 
 ## The Leptoquark Block: Six at $32v^{2}$
 
@@ -80,8 +80,8 @@ $$
 M^{2}_{\text{lepto}}=32v^{2}\,\mathrm I_{6},\qquad 32=2\cdot4^{2},\qquad 4=1-(-3).
 $$
 
-The leakage is the entry-by-entry computation of [The Breaking of the Primordial
-Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html); the reason is the identity of [The Breaking of the Primordial
+The leakage is the entry-by-entry computation of [The Restructuring of the Primordial
+Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html); the reason is the identity of [The Restructuring of the Primordial
 Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), which says that the mass on a plane is twice the square of the vacuum's
 eigenvalue difference across it. **The six are equal because the vacuum has one lepton line and three equal spatial lines**, so all six differences are the same
 number.
@@ -105,7 +105,7 @@ equal in number to the rank of $\mathfrak{u}(3)$.
 **The six.** One scale, one eigenvalue, one reason: the sextet is exactly the set of planes the lepton line crosses, and every one of them crosses it with the
 same difference $1-(-3)$.
 
-**The rank.** $6$ at the transition, and $9$ remains the kernel; the matrix has no other eigenvalue in the minimal content, because no other direction exists.
+**The rank.** $6$ at the restructuring, and $9$ remains the kernel; the matrix has no other eigenvalue in the minimal content, because no other direction exists.
 
 ## What the Article Does Not Do
 
@@ -139,7 +139,7 @@ Eight recomputations, at tree level.
 **Two blocks.** The spatial block's $8$ and $B-L$ $1$ massless, leptoquark $6$ at $32v^{2}$; $8+1+6=15$, one scale, one list of fields.
 
 **Nine zeros, two reasons.** The eight adjoint directions are a stabiliser of the vacuum; the $B-L$ direction is the vacuum itself. **The rank at the
-transition is six**, and the kernel is the nine-dimensional $\mathfrak{u}(3)$.
+restructuring is six**, and the kernel is the nine-dimensional $\mathfrak{u}(3)$.
 
 **The split is exact.** Every vacuum of the chain is a singlet of definite charge, so no mass crosses a block at any order.
 
@@ -155,15 +155,15 @@ with the doublet index of the condensate, and their masses are the weak sector's
 | $X^{\alpha}$, $\bar X^{\alpha}$ | the leptoquark and its reverse amplitude, $\alpha=r,g,b$ |
 | $M^{2}_{\text{lepto}}$ | the $6\times6$ leptoquark block, $32v^{2}\mathrm I_6$ |
 | $\operatorname{ad}(iD)$ | the adjoint action whose eigenspaces are the blocks |
-| $v$ | the transition condensate in the array normalisation, the unit of $M^{2}=32v^{2}$; the physical value is $v_C=\sqrt2v/g_4$, so that $M_X^{2}=32v^{2}=16g_4^{2}v_C^{2}$ |
+| $v$ | the condensate at the restructuring, in the array normalisation, the unit of $M^{2}=32v^{2}$; the physical value is $v_C=\sqrt2v/g_4$, so that $M_X^{2}=32v^{2}=16g_4^{2}v_C^{2}$ |
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The two blocks in full, computed
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The two blocks in full, computed
 entry by entry, and the general-vacuum formula.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html).
 Which cell of the grid each of the fifteen occupies, and which four particles are not in the model.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The sextet's quantum numbers, its mass ratio and the
 $K_L\to\mu e$ bound.
-- [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). What happens to $B'$ below the transition, the weak charged
+- [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). What happens to $B'$ below the restructuring, the weak charged
 masses, $\rho=1$, and the bidoublet that would mix $W_L$ to $W_R$.

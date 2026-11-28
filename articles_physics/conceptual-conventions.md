@@ -41,7 +41,7 @@ Each concept below is used somewhere in the corpus, and each one brings somethin
 
 A concept is used in this corpus only when it agrees with mathematics and no result of experiment contradicts it. Both conditions bite here, because these articles make physical claims.
 
-The concepts that pass are used in one of two ways. Preferred concepts are the algebra itself, and there are four: the biquaternion algebra, the $4\times4$ AXF display, the two sectors and the unit metric. Unpreferred concepts are working tools that bring a frame, a sign pattern, a dimension or an ambiguity: the Pauli matrices, the gamma matrices, the Clifford algebra as a foundation, the Wick rotation, the word *gauge*, the line letters and the word *gluon* above the transition. Each is admitted only with the missing piece declared.
+The concepts that pass are used in one of two ways. Preferred concepts are the algebra itself, and there are four: the biquaternion algebra, the $4\times4$ AXF display, the two sectors and the unit metric. Unpreferred concepts are working tools that bring a frame, a sign pattern, a dimension or an ambiguity: the Pauli matrices, the gamma matrices, the Clifford algebra as a foundation, the Wick rotation, the word *gauge*, the line letters and the word *gluon* above the restructuring. Each is admitted only with the missing piece declared.
 
 The AXF display is the model case: it prints the multiplication table and nothing else, so no axis, no frame and no metric enters with it. The Clifford entry is the one worth reading twice: the identification with $\mathrm{Cl}_{3,0}$ is exact, and it brings an inertia and a second simple factor that the algebra does not have.
 

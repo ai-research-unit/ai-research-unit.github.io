@@ -249,5 +249,5 @@ A field on spacetime with values in a carrier is a function of two groups, the t
 - *The Fourier Transform and the Klein–Gordon Equation in Biquaternionic Form*, for the transform of an equation and the obstruction read on the zero set, and its polar-variable companion for the seed gradient as the kernel's phase.
 - *Lattice Connection Theory and the Biquaternion Path Integral*, for the Haar measure on the unit quaternions, the Wilson action, the character identities that separate $N=2$ from $N\ge3$, and the tiling expansion.
 - *The Symmetry Group $\mathrm{SU}(1)$ of the Force-Free Case*, for the nested ladder $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\subset\mathrm{SU}(4)$ and the strong rung as a stabiliser.
-- *The Breaking of the Primordial Force and the Mass of the Six Leptoquarks*, for the direction that survives a breaking as the abelian label.
+- *The Restructuring of the Primordial Force and the Mass of the Six Leptoquarks*, for the direction that survives a breaking as the abelian label.
 - *The Hermitian GNS Construction in the Biquaternion Framework*, for the modular structure that replaces positivity, which is the state-side counterpart of the transform's non-unitarity.

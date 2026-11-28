@@ -8,7 +8,7 @@
 
 **One result of this article is a condition and it is stated first.** The corpus's declared vacuum, $D=\operatorname{diag}(-3,1,1,1)$ up to scale, **is the minimum of the potential in the branch $\lambda_{1}<0$ with $\mu_{2}^{2}>0$, and it is not the minimum in the branch $\lambda_{1}>0$.** No cubic is needed; two signs are, one for the shape and one for the trace, and §*The Declared Vacuum, and the Branch Where It Is the Minimum* states both.
 
-**What this article does.** It writes the potential, derives the condition for the symmetric minimum, computes the mass spectrum there, derives the boundedness cone, and then confronts the potential with the vacuum the transition assumes.
+**What this article does.** It writes the potential, derives the condition for the symmetric minimum, computes the mass spectrum there, derives the boundedness cone, and then confronts the potential with the vacuum the restructuring assumes.
 
 **What it does not do.** It does not run the potential, does not compute the one-loop correction — [The One-Loop Effective Potential](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html) does — and does not fix any coefficient. **Six coefficients and the group fixes none of them.**
 
@@ -152,7 +152,7 @@ $$
 
 the difference $\tfrac{7}{12}-\tfrac14=\tfrac13$ divided by the cubic's advantage $0.577+0.5$. **That is the branch the cubic would matter in, and it is not the branch the mass matrix uses.**
 
-## The Transition, Read From the Same Potential
+## The Restructuring, Read From the Same Potential
 
 **One sign, and the phase changes.**
 
@@ -161,7 +161,7 @@ the difference $\tfrac{7}{12}-\tfrac14=\tfrac13$ divided by the cubic's advantag
 | $>0$ | $Ξ=0$ | $\mathrm{SU}(4)$, exact | $15$ massless | $16$ massive, degenerate |
 | $<0$ | $\lvertΞ\rvert=v_C$, $\lambda_{1}<0$ | $\mathrm{U}(3)$, nine massless vectors | $6$ massive | $10$ massive plus $6$ eaten |
 
-**Whether $M_C$ is a temperature is not settled here, and the article says which reading it uses.** The potential fixes a sign and a direction and carries no scale: the symmetric phase has no $M_C$ in it, and the broken phase's $v_C$ is a ratio of parameters. **A thermal reading would need the finite-temperature effective potential, with a critical temperature of order $\mu_{\Phi}$ and a barrier or none depending on the cubic; a zero-temperature reading takes $M_C$ from the matching.** The block uses the second, which is where its numbers come from, and the first is the question the transition leaves open.
+**Whether $M_C$ is a temperature is not settled here, and the article says which reading it uses.** The potential fixes a sign and a direction and carries no scale: the symmetric phase has no $M_C$ in it, and the broken phase's $v_C$ is a ratio of parameters. **A thermal reading would need the finite-temperature effective potential, with a critical temperature of order $\mu_{\Phi}$ and a barrier or none depending on the cubic; a zero-temperature reading takes $M_C$ from the matching.** The block uses the second, which is where its numbers come from, and the first is the question the restructuring leaves open.
 
 **The boundary is $\mu_{\Phi}^{2}=0$, where the mass vanishes and the one-loop correction decides.** That is [The One-Loop Effective Potential](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html)'s question, and it is the reason the classical statement "the symmetric phase is a region" has an edge that is not classical.
 
@@ -224,7 +224,7 @@ A bounded potential is not a stable one. Boundedness is a statement about $V_{4}
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the declared vacuum does to the fifteen once it is assumed.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the declared vacuum does to the fifteen once it is assumed.
 - [The One-Loop Effective Potential](the-one-loop-effective-potential-of-the-scalar-matrix-at-sixteen-real-components.html). The boundary of this article's region, at $\mu_{\Phi}^{2}=0$.
 - [The Lagrangian and the Scalar Matrix](the-lagrangian-and-the-scalar-matrix-one-field-one-commutator-four-quartics.html). The kinetic term beside this potential, and where the metric structure that produces the quartics comes from.
 - [The Scalar's Two Indices](the-scalars-two-indices-and-the-count-sixteen.html). The field whose sixteen components are counted here.

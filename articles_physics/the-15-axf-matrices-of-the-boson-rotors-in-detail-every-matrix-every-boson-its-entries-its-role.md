@@ -62,7 +62,7 @@ $$
 | $T^{c}_{3}$ | $d_{2}$ | two opposite phases | $t$, $z$ | $0$ | strong phase, red against green |
 | $T^{c}_{8}$ | $d_{3}$ | two opposite phases | $t$, $x$ | $0$ | strong phase, green against blue |
 
-**The fifth column is zero on every row, and that is the phase and not an omission.** Above $M_C$ there is no vacuum, so the spectrum of a rotor cannot depend on which array it is: **the fifteen are degenerate, and the column becomes informative only below $M_C$, where six rows take $32v^{2}$ and nine take $0$** — [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s computation.
+**The fifth column is zero on every row, and that is the phase and not an omission.** Above $M_C$ there is no vacuum, so the spectrum of a rotor cannot depend on which array it is: **the fifteen are degenerate, and the column becomes informative only below $M_C$, where six rows take $32v^{2}$ and nine take $0$** — [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html)'s computation.
 
 **Fixed lines: fourteen rotors fix exactly two lines, and one fixes none.** The corner is the only rotor of the fifteen that touches all four lines, **and that is why it is the only one that can be central**: a rotor with a fixed line cannot be a multiple of the identity.
 
@@ -95,7 +95,7 @@ $$
 \qquad k=0,1,2,3,
 $$
 
-**so the statement that the corner is the one generator the first breaking leaves alone has a rotor form: the one rotor that can be a multiple of the identity is the one whose array the first vacuum is made of.** The lepton line is a different matter — there the corner acts as the phase $-3i$ and not as a multiple of the identity, which is why the doublet vev on that line breaks the charge the first vev preserves (*The Quantum Numbers Below the Breaking*). No other rotor of the fifteen is ever central inside a turn: the twelve plane rotors and the two spatial diagonals are central only at $\theta\in2\pi\mathbb{Z}$, and the value there is $+1$.
+**so the statement that the corner is the one generator the first breaking leaves alone has a rotor form: the one rotor that can be a multiple of the identity is the one whose array the first vacuum is made of.** The lepton line is a different matter — there the corner acts as the phase $-3i$ and not as a multiple of the identity, which is why the doublet vev on that line breaks the charge the first vev preserves (*The Quantum Numbers Below the Restructuring*). No other rotor of the fifteen is ever central inside a turn: the twelve plane rotors and the two spatial diagonals are central only at $\theta\in2\pi\mathbb{Z}$, and the value there is $+1$.
 
 ## The Six Leptoquarks: The Rotors That Move the Lepton Line
 
@@ -462,7 +462,7 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 
 **The role of a boson is read off its rotor in two comparisons.** Eight rotors fix the lepton line and are the octet; seven do not, and they are the corner, which phases it, and the six mixed planes, which move it. **Nine rotors commute with $D$ and six do not** — a statement about the algebra above $M_C$, and the mass split, $0$ against $32v^{2}$, only below it.
 
-**The corner is the only rotor that reaches the centre**, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. **That is the rotor form of "$B-L$'s eigenvalue is fixed at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.** The charge itself is a different statement, and it goes at the transition ([The Quantum Numbers Below the Breaking](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html)).
+**The corner is the only rotor that reaches the centre**, four times a turn with values $i^{k}$, and it is the only one that can be central because it is the only one with no fixed line. **That is the rotor form of "$B-L$'s eigenvalue is fixed at every scale", and it is one line: the array the vacuum is made of is the array whose rotor can be a multiple of the identity.** The charge itself is a different statement, and it goes at the restructuring ([The Quantum Numbers Below the Restructuring](the-quantum-numbers-below-the-breaking-the-strong-group-b-l-weak-isospin-and-the-electric-charge.html)).
 
 ## Summary of Notation
 
@@ -488,4 +488,4 @@ Sixteen recomputations, with the quartet ordered $(t,x,y,z)$ and $\theta$ one re
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). Every bracket quoted in the sections above, with its five rules.
 - [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The grid that names the cells, and the ledger the rows above are written in.
 - [Charge Quantisation from the Fourth Line](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). The corner's relative phase, which the first section's display reproduces.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass form, the nine zeros, and the vacuum that decides which rotors are symmetries.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass form, the nine zeros, and the vacuum that decides which rotors are symmetries.

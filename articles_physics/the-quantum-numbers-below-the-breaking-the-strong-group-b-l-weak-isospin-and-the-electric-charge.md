@@ -1,4 +1,4 @@
-# __The Quantum Numbers Below the Breaking: The Strong Group, $B-L$, Weak Isospin and the Electric Charge__
+# __The Quantum Numbers Below the Restructuring: The Strong Group, $B-L$, Weak Isospin and the Electric Charge__
 
 ## Introduction
 
@@ -23,13 +23,13 @@ $$
 \;}
 $$
 
-**The single idea.** Conservation and masslessness are the same condition. A generator that annihilates the vacuum gives a massless boson *and* a conserved charge, and a generator that does not gives a massive boson *and* a charge that is no longer a symmetry. So the table of conserved charges is the table of massless bosons read as quantum numbers, and there is nothing to compute twice. **No charge escapes the criterion, and $B-L$ looks as though it does.** Its boson is the $Z_R$, and its eigenvalue never moves; that is why it is easy to write as though it survived the transition. The $B-L$ section below shows that it does not, and that what survives in its place is $B$, by accident of the content.
+**The single idea.** Conservation and masslessness are the same condition. A generator that annihilates the vacuum gives a massless boson *and* a conserved charge, and a generator that does not gives a massive boson *and* a charge that is no longer a symmetry. So the table of conserved charges is the table of massless bosons read as quantum numbers, and there is nothing to compute twice. **No charge escapes the criterion, and $B-L$ looks as though it does.** Its boson is the $Z_R$, and its eigenvalue never moves; that is why it is easy to write as though it survived the restructuring. The $B-L$ section below shows that it does not, and that what survives in its place is $B$, by accident of the content.
 
 **What the article establishes.** The criterion and its proof; the table of charges with the scale at which each is lost; the two charges that survive — the strong charge and the electric charge — with the different senses in which they survive; the exact status of $B-L$; the reason $B$ and $L$ separately are not symmetries and why the proton is stable anyway; the charges that are accidents of the field content; and the anomalous combination.
 
 **What the article does not establish.** No dynamics and no decay rate. The proton's stability is treated in [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html), and the sphaleron statement in [Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron](three-gaps-in-the-standard-model.html).
 
-**Where the masses are.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) lists the bosons. This article is the same list read as charges.
+**Where the masses are.** [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) lists the bosons. This article is the same list read as charges.
 
 ## The Criterion
 
@@ -80,15 +80,15 @@ $$
 
 **The charge that is the article's hardest case, because its number never moves while its symmetry does.**
 
-**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the $M_C$ step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate local symmetry. The spatial half of the transition leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
+**4.1 Inside $\mathrm{SU}(4)$ it is a direction; the $M_C$ step promotes it to a factor with no interval attached.** $B-L$ is a Cartan generator of the simple group and carries no coupling of its own, so there is no scale above $M_C$ at which it is a separate local symmetry. The spatial half of the restructuring leaves it in the residual group, $\mathrm{SU}(3)_c\times\mathrm{SU}(2)_L\times\mathrm{SU}(2)_R\times\mathrm{U}(1)_{B-L}$ at rank five and dimension fifteen ([Matching at $M_C$](matching-at-m-c.html)). **That group has no interval of scales**: the doublet half of the same vacuum breaks it at once (§4.2), so the factor is a statement about the residual algebra and never about a range of energies.
 
-**4.2 The transition does two things to it, and they must be told apart.** The spatial part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the $M_C$ step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
+**4.2 The restructuring does two things to it, and they must be told apart.** The spatial part of the vacuum, $iD$, commutes with $B-L$: the corner is in the stabiliser, so the six generators that become heavy do not include it, and the sextet's $\pm\tfrac43$ are eigenvalues of a generator the $M_C$ step leaves alone. **The doublet part of the same vacuum does not commute with it.** That vacuum lies on the lepton line, where $B-L=-1$ and $T_{3R}=+\tfrac12$, so $[B-L,Ξ_0]=-Ξ_0\neq0$. **By the criterion of §*The Criterion*, $B-L$ is not conserved below $M_C$** — and by §1.4 it is not approximately conserved either: it is not defined.
 
 **4.3 What does annihilate the vacuum is hypercharge.** $Y=T_{3R}+\tfrac12(B-L)$ gives $\tfrac12-\tfrac12=0$ on that line, so $Y$ is the unbroken direction and $B-L$ alone is not. Below $M_C$ the exact symmetry charges are the strong charge, $Y$, and — below $v$ — $Q$. **The charge that survives in $B-L$'s place does so by accident**: $B$, because the renormalisable Lagrangian contains no operator that violates it once the leptoquarks are gone (§*The Charges That Are Merely Accidental*).
 
 **4.4 The eigenvalue is what does not move, and it is a different statement.** $B-L$ takes the same values at every scale — $-1$ on the lepton line, $\tfrac13$ on the three spatial lines — because an eigenvalue is a property of an array and not of the vacuum, and no mixing between $W^{3}_{L}$, $W^{3}_{R}$ and $B'$ changes a diagonal entry of $B'$. **"The chain never renormalises $B-L$" is true; "$B-L$ is conserved below $M_C$" is false**, and the two are easy to run together because both are sentences about a number that stays put.
 
-**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the transition supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *representative* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
+**4.5 The breaking is wanted twice over, and it costs no Goldstone.** A Majorana mass for the right-handed neutrino carries $B-L=-2$, so it needs a vacuum that breaks the charge — and the restructuring supplies one. **That is the seesaw's licence, and it is the same vev that breaks $\mathrm{SU}(2)_R$** ([The Seesaw Mechanism](the-seesaw-mechanism-and-majorana-mass-in-biquaternionic-form.html)). And because the broken direction was a direction of a *representative* group above $M_C$, the would-be Goldstone is eaten: it is the longitudinal mode of the $Z_R$, whose mass $\tfrac58g^2v_C^2$ is the neutral sector's ([The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html)).
 
 **4.6 Compared with the Standard Model.** There $B-L$ is an accidental global symmetry from the start and is never made local, and it is broken only by the Weinberg operator at dimension five. **Here it is a redundant direction above $M_C$, broken at $M_C$, and accidental below it** — the exact opposite order of statuses, with the same low-energy consequence, because the residual violation below $M_C$ is again of dimension five and suppressed by the same scale.
 
@@ -120,7 +120,7 @@ $$
 
 **One combination is violated by non-perturbative effects, and it is not $B-L$.**
 
-**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the symmetry group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than representative — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the transition scale.
+**7.1 The statement.** In the Standard Model the combination $B+L$ is violated by sphalerons while $B-L$ is not. The same holds here below $M_C$, because the field content and the symmetry group restricted to the Standard-Model factors are the same. **The anomalous statement is about the coefficients of the currents, not about the vacuum**, so the breaking of §4.2 does not touch it: the triangle coefficient of $B-L$ vanishes whether or not a vev carries the charge. What the breaking does change is the *kind* of protection — accidental rather than representative — and the leading explicit violation is the dimension-five Weinberg operator, suppressed by the restructuring scale.
 
 **7.2 Why $B-L$ escapes.** Its current has vanishing anomaly coefficients. The triangle coefficient of $B-L$ cancels inside a generation for the same reason every other anomaly does, the trace $\operatorname{tr}_{\mathbf4}(B-L)=0$ over the four entries of the carrier. So the current is conserved even where it is only global, and the sphaleron has nothing to act on. Above $M_C$ the direction is inside a simple group and there is no separate current to discuss.
 
@@ -153,7 +153,7 @@ $$
 
 **The criterion.** A symmetry charge is conserved exactly when its generator annihilates the vacuum — the same condition as a massless boson.
 
-**The survivors.** $Q$ and the strong charge, and with them $B$ by accident of the content. **$B-L$ is not one of them**: its eigenvalue is fixed at every scale, but the transition that breaks $\mathrm{SU}(2)_R$ breaks it, and the Majorana neutrino mass is the price and the payoff.
+**The survivors.** $Q$ and the strong charge, and with them $B$ by accident of the content. **$B-L$ is not one of them**: its eigenvalue is fixed at every scale, but the restructuring that breaks $\mathrm{SU}(2)_R$ breaks it, and the Majorana neutrino mass is the price and the payoff.
 
 **The casualties.** $T_{3R}$ and $B-L$ at $M_C$; $T_{3L}$ and $Y$ at $M_W$; $L$ just below $M_C$, through the right-handed neutrino's mass. **$B$ is never one of them** — it is not broken at all, and it is accidental, which is a weaker thing than conserved.
 
@@ -174,7 +174,7 @@ $$
 
 ## Further Reading
 
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same criterion read as a mass spectrum.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same criterion read as a mass spectrum.
 - [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). The $B-L$ of the leptoquarks and the absent diquark channel.
 - [Charge Quantisation from the Fourth Line: One Trace, One Third](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Where the charge lattice comes from.
 - [Three Gaps in the Standard Model: Dark Matter, Baryogenesis and the Sphaleron](three-gaps-in-the-standard-model.html). The anomalous combination and its consequences.

@@ -104,7 +104,7 @@ $$
 
 **$Ξ$ carries two indices and nothing else.** The matrix is Hermitian, so sixteen real parameters: $15$ for the traceless part, which is $\dim\mathrm{SU}(4)$ and is the algebra's, and $1$ for the trace, which is not. **Nothing is multiplied**, and the sixteen of the scalar is the same kind of count as the fifteen of the vectors.
 
-**What this costs, stated so the census and this article agree.** Sixteen real components at the scale of the display, and the eating is the transition's: six directions, one per broken generator of $\mathrm{SU}(4)$. **So six go and ten survive**, this article counts the phase before the eating, and *The Scalar Content* counts what the transition removes and what it leaves.
+**What this costs, stated so the census and this article agree.** Sixteen real components at the scale of the display, and the eating is the restructuring's: six directions, one per broken generator of $\mathrm{SU}(4)$. **So six go and ten survive**, this article counts the phase before the eating, and *The Scalar Content* counts what the restructuring removes and what it leaves.
 
 **The potential, written and not derived, and the field is not constrained.** The matrix carries one index of each line kind, and the trace is the only contraction available. **$Ξ$ is a general Hermitian matrix and no condition is imposed on it**: its sixteen components are sixteen components, the trace among them. **The trace is a symmetry singlet**, since $Ξ\mapsto UΞ U^{\dagger}$ leaves $\operatorname{tr}Ξ$ untouched, so no connection interaction sees it: it enters the action through the kinetic term and the potential, and through no vertex that carries a generator. **"Fifteen generators, so fifteen scalar directions" is the tempting count and it is wrong**: a generator is traceless because $\mathfrak{su}(4)$ removes the trace, and that is a statement about the algebra, not about a field. **A constraint on a field is not a convention either**, for the reason a Proca field keeps its fourth component: the condition that removes a mode is a consequence of an equation of motion, or it is nothing.
 
@@ -118,7 +118,7 @@ $$
 
 and the group fixes none of the six coefficients. **Two quartics and not one in the traceless channel**, because $\operatorname{tr}(Ξ^{4})$ and $(\operatorname{tr}Ξ^{2})^{2}$ are different contractions of four matrix indices and neither is a function of the other. **A cubic $\operatorname{tr}Ξ^{3}$ is also invariant, real and allowed**, and this potential leaves it out: *The Primordial Potential* computes the threshold at which it would matter, and its absence is a truncation stated and not a symmetry. **A fifth quartic, $\operatorname{tr}Ξ^{3}\operatorname{tr}Ξ$, is allowed as well**, and it is removed by declaring the potential even in the trace; that is a second truncation of the same kind, and it is the one that keeps $\operatorname{tr}Ξ=0$ a stationary value rather than a shifted one.
 
-**The trace has its own quadratic and its own sign, and that sign is what puts the trace at the origin.** The symmetric minimum is $\mu_{\Phi}^{2}>0$ and $\mu_{2}^{2}>0$, so $\langleΞ\rangle=0$ and the group is exact: the first sign holds the matrix at the origin, the second holds its trace there. **The broken phase is not simply the other sign of $\mu_{\Phi}^{2}$**: as *The Primordial Potential* shows, once the trace is pinned at zero the declared vacuum $\operatorname{diag}(-3,1,1,1)$ is the minimum in the branch $\lambda_{1}<0$, and the even split is the minimum in the branch $\lambda_{1}>0$. **So the vacuum is two signs and not one** — one for the shape and one for the trace — and *The Breaking of the Primordial Force* reads the branch the corpus declares.
+**The trace has its own quadratic and its own sign, and that sign is what puts the trace at the origin.** The symmetric minimum is $\mu_{\Phi}^{2}>0$ and $\mu_{2}^{2}>0$, so $\langleΞ\rangle=0$ and the group is exact: the first sign holds the matrix at the origin, the second holds its trace there. **The broken phase is not simply the other sign of $\mu_{\Phi}^{2}$**: as *The Primordial Potential* shows, once the trace is pinned at zero the declared vacuum $\operatorname{diag}(-3,1,1,1)$ is the minimum in the branch $\lambda_{1}<0$, and the even split is the minimum in the branch $\lambda_{1}>0$. **So the vacuum is two signs and not one** — one for the shape and one for the trace — and *The Restructuring of the Primordial Force* reads the branch the corpus declares.
 
 **What tracelessness of the vacuum is, and what it is not.** Expand along the identity, $Ξ=Ξ_{0}+c\,\mathbb 1$ with $\operatorname{tr}Ξ_{0}=0$. Every invariant is polynomial in $c$: $\operatorname{tr}Ξ=4c$, $\operatorname{tr}Ξ^{2}=\operatorname{tr}Ξ_{0}^{2}+4c^{2}$, and $\operatorname{tr}Ξ^{4}=\operatorname{tr}Ξ_{0}^{4}+4c\operatorname{tr}Ξ_{0}^{3}+6c^{2}\operatorname{tr}Ξ_{0}^{2}+4c^{4}$, so
 
@@ -269,7 +269,7 @@ $$
 
 **The copy index is not summed.** $t_{a}$ acts on the index alone, so the fermion bilinear carries one $t_{a}$ and no trace over the copy index; **an index that appears nowhere cannot be summed**, and a $\sum_{\alpha=1}^{2}$ in front of a trace over the spatial block is an index that appears nowhere.
 
-**The scalar current is quadratic above $M_C$ and linear below it**, and that shift is the whole mechanism of the mass: with $Ξ=v+\delta Ξ$ the current splits into a piece in the fluctuation $\delta Ξ$ and a piece in $\delta Ξ\,\delta Ξ$, and the first is the $A$–$\delta Ξ$ mixing that a mass term is. Above the transition only the second piece is present, so no one-scalar emission exists and every direction stays massless — which is why the unbroken phase has no mass term and needs none.
+**The scalar current is quadratic above $M_C$ and linear below it**, and that shift is the whole mechanism of the mass: with $Ξ=v+\delta Ξ$ the current splits into a piece in the fluctuation $\delta Ξ$ and a piece in $\delta Ξ\,\delta Ξ$, and the first is the $A$–$\delta Ξ$ mixing that a mass term is. Above the restructuring only the second piece is present, so no one-scalar emission exists and every direction stays massless — which is why the unbroken phase has no mass term and needs none.
 
 **The current is covariantly conserved.** Local invariance of the matter action makes $\sum_{\imath}\varepsilon_{\imath}D_{\imath}j_{\imath}$ vanish once the matter fields are on shell, so the conservation is a consequence of the invariance and not a further condition. **The ordinary divergence $\sum_{\imath}\varepsilon_{\imath}\partial_{\imath}j_{\imath}$ is not zero**, because it carries the $[A_{\imath},j_{\imath}]$ term. **So no symmetry charge exists**, exactly as in the strong sector: the charge is defined only for the residual $\mathrm{SU}(3)\times\mathrm{U}(1)$ below $M_C$, and above it there is a current and no charge.
 
@@ -298,7 +298,7 @@ $$
 
 and the count is a statement about this phase only.
 
-**The scalar's sixteen are all physical in this phase**, because no direction has been eaten: the eating is the transition's and it leaves ten. **That is the arithmetic the two articles divide between them** — this one counts the phase, *The Scalar Content* counts what the transition removes.
+**The scalar's sixteen are all physical in this phase**, because no direction has been eaten: the eating is the restructuring's and it leaves ten. **That is the arithmetic the two articles divide between them** — this one counts the phase, *The Scalar Content* counts what the restructuring removes.
 
 ## The Ceiling: Transcription and Not Derivation
 
@@ -323,13 +323,13 @@ The dimension of the algebra's compact group is four. $\mathbb{B}\cong M_2(\math
 - *Not a claim that the bracket counts are properties of the group*: $80$ and $84$, $29$ and $31$, are counts in frames, and a count quoted without its frame has quoted nothing.
 - *Not an identification with a measured multiplet, and not a quantum statement*: no particle is placed in a representation here, the masses are *The Yukawa Sector*'s, the running is another article's, and no number on this page is renormalised.
 
-**What would count against it**: a vertex computed from the printed arrays that disagrees with the normalised one by anything other than the stated $\sqrt6$; a bracket count that depends on the frame in a way §*The Checks* denies; a scalar spectrum at the transition that lacks the $32v^{2}$ pattern the mass matrix gives.
+**What would count against it**: a vertex computed from the printed arrays that disagrees with the normalised one by anything other than the stated $\sqrt6$; a bracket count that depends on the frame in a way §*The Checks* denies; a scalar spectrum at the restructuring that lacks the $32v^{2}$ pattern the mass matrix gives.
 
 ## What the Display Does Not Contain
 
 **Six absences, each deliberate.**
 
-- *No mass for the fifteen.* A mass term $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not invariant, and none is written. The masses come from $\langleΞ\rangle$ and are the transition's.
+- *No mass for the fifteen.* A mass term $\tfrac12m^{2}\sum_{a,\imath}A_{a,\imath}A_{a,\imath}$ is not invariant, and none is written. The masses come from $\langleΞ\rangle$ and are the restructuring's.
 - *No potential coefficients.* $\mu_{\Phi}^{2}$, $\mu_{2}^{2}$ and the four quartics are the six parameters the group does not fix.
 - *No Yukawa value.* One matrix, its entries free, its spectrum measured.
 - *No value of $g_4$.* The coupling multiplies the action and does not cancel from the equation, because the commutator carries one power of it and the derivative none; but its value is a boundary condition taken from below, and *The Primordial Coupling* owns it.
@@ -409,7 +409,7 @@ Six things are deliberately absent: a mass for the fifteen, the potential's coef
 - [The Commutation Table of the Fifteen Generators](the-commutation-table-of-the-fifteen-generators-225-entries-105-independent-80-nonzero-and-five-rules.html). The $105$ pairs, the $80$ nonzero brackets and the triples they fall into.
 - [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html). The census that counts the sixteen and refuses the potential this article writes.
 - [The Fermion–Connection Vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The two-index rule that §*The Display* recovers from the copy index.
-- [The Breaking of the Primordial Force and the Mass of the Six Leptoquarks](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The other sign of $\mu_{\Phi}^{2}$, where the potential's minimum moves off the origin.
+- [The Restructuring of the Primordial Force and the Mass of the Six Leptoquarks](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The other sign of $\mu_{\Phi}^{2}$, where the potential's minimum moves off the origin.
 - [The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$](the-compact-sector-of-the-biquaternions-is-u2.html). The dimension bound that makes §*The Ceiling* a statement about the algebra.
 - [The Lagrangian and the Quantum Chromodynamics: The Triplet, the Octet and the Feynman Rules](the-lagrangian-and-quantum-chromodynamics-the-triplet-the-octet-and-the-feynman-rules.html). The same construction for three lines, transcribed as this one is, with the $R$ ratio and the group factors that the primordial block has no analogue of.
 - [The Standard Model and the Lagrangian: Four Sectors in One Expression](the-standard-model-and-the-lagrangian-four-sectors-in-one-expression.html). The sign rule, and where the primordial sector sits among the four.

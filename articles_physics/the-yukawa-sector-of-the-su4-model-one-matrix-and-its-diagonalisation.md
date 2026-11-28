@@ -13,7 +13,7 @@
 
 **The honest verdict, stated first.** $m_{e}=3m_{d}$ is wrong by a factor $27$, so **the model's Yukawa sector is its sharpest falsifiable statement and it is falsified.** That is not an arithmetic error and it is not patched below: it is the boundary of the model, and it is the reason a second condensate and a second matrix are needed below $M_C$.
 
-## Why There Is No Mass Term Before the Breaking
+## Why There Is No Mass Term Before the Restructuring
 
 **A Dirac mass needs a left-handed and a right-handed field of the same charge, and the sixteen supply them in pairs.** So a mass term $\bar\xi\xi$ is allowed by the local symmetry — **and it is not written.** The reason is a choice of the model's ledger and not a theorem: **$Ξ$ is what gives the sixteen their masses, and a bare mass would be a second source that the ledger does not carry.**
 
@@ -46,7 +46,7 @@ $$
 
 **Those two numbers are masses and nothing else.** A mixing angle would need a vertex that changes $\alpha$, and §*What the Algebra Forbids* of [the vertex article](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html) shows that no generator has one. **An unobservable angle is not a parameter**, and the sector does not have one.
 
-## After the Breaking: the Mass Matrix and the Factor Three
+## After the Restructuring: the Mass Matrix and the Factor Three
 
 **The condensate is $v\operatorname{diag}(-3,1,1,1)$, and the mass matrix is the Yukawa matrix multiplied by the entry of the condensate that the fermion sits on.**
 
@@ -106,7 +106,7 @@ $$
 
 **The reason is structural and cannot be repaired inside the model.** The factor three is the ratio of the condensate's entries, $-3$ against $+1$, and it is the same number that makes the leptoquark heavy. **A model whose lepton and quark masses differ by a fixed factor has no freedom left to fix them**, and that is the definition of the boundary this sector hits.
 
-**What the transition must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the spatial lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
+**What the restructuring must add, stated as a requirement and not as a promise.** A second condensate, so that the lepton line and the spatial lines can receive different factors; a second Yukawa matrix, so that a phase can survive; and a generation index, so that a hierarchy can exist. **None of the three is in this model, and the article's claim is only that the three are necessary.**
 
 ## Neutrinos
 
@@ -170,4 +170,4 @@ $$
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The proof that no vertex carries the copy index, which is the reason no phase survives.
 - [The Feynman Rules](the-feynman-rules-of-the-su4-model-the-vertices-of-the-fifteen-and-the-sixteen.html). The Lagrangian this sector is one line of.
 - [An Introduction to Flavour](an-introduction-to-flavour.html). What a generation index would have to supply, and why this model has none.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same condensate, read on the connection side.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The same condensate, read on the connection side.

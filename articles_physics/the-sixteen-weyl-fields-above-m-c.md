@@ -8,7 +8,7 @@ This article is about a phase and not about a multiplet. *Classification of the 
 
 - *Massless* is asserted by the phase and **not protected by the group.** The boson sector's masslessness is protected: a mass term $\tfrac12m^{2}A_{a,\imath}A_{a,\imath}$ is not invariant, so local invariance forbids it and the fifteen must be massless until a vacuum forms. **The sixteen has no such protection.** $\mathbf4\otimes\bar{\mathbf4}=\mathbf{15}\oplus\mathbf1$, the singlet is an invariant bilinear, and a mass term built from it is allowed at every scale. **So the fermions' masslessness above $M_C$ is a parameter set to zero and not a theorem.**
 - *Vector-like* is a theorem: the content is $2\cdot\mathbf4\oplus2\cdot\bar{\mathbf4}$, so each representation appears with its conjugate in equal number.
-- *What it costs* is the whole of §*What the Phase Cannot Do*: a local vector-like sector cannot tell left from right, so the phase has no parity violation and no $CP$ violation from the sector, and the transition is what supplies both.
+- *What it costs* is the whole of §*What the Phase Cannot Do*: a local vector-like sector cannot tell left from right, so the phase has no parity violation and no $CP$ violation from the sector, and the restructuring is what supplies both.
 
 **Why the uncomfortable claim is written first.** A block that described the unbroken phase as though every masslessness were protected would be describing a theory that does not exist. The corpus's own scalar census refuses to write a potential because the group does not fix one; the same honesty applies to the fermion mass, and it is the sharper case because a mass term exists and is simply not used.
 
@@ -41,7 +41,7 @@ $$
 | no fermion mixes with its conjugate | no mass term is written |
 | the connection action is the same on both copies | the generators are $X\otimes\mathbb{1}_{2}$ |
 
-**The first three are statements about the vacuum; the fourth is a statement about the group.** The distinction matters because the fourth cannot change at the transition while the first three all do.
+**The first three are statements about the vacuum; the fourth is a statement about the group.** The distinction matters because the fourth cannot change at the restructuring while the first three all do.
 
 **The masslessness is a choice with a name.** Since $\mathbf4\otimes\bar{\mathbf4}$ contains a singlet, the local symmetry admits
 
@@ -55,7 +55,7 @@ The model sets $m=0$ above $M_C$, and the setting is of the same kind as $\mu_{\
 
 **Why the choice is not arbitrary.** Three reasons, in order of strength.
 
-- *The transition would be pointless.* If $m$ were nonzero, the sixteen would be massive at every scale, the lightest generation would weigh $m$, and the masses would not come from the vacuum that the other nine articles are about.
+- *The restructuring would be pointless.* If $m$ were nonzero, the sixteen would be massive at every scale, the lightest generation would weigh $m$, and the masses would not come from the vacuum that the other nine articles are about.
 - *The observed spectrum is the constraint.* The electron's mass is $9.1\times10^{-31}\ \mathrm{kg}$, and a Dirac mass at the primordial scale would be at least fourteen orders of magnitude larger unless $m$ were tuned. **Tuning $m$ to zero is a choice; tuning it to $10^{-18}$ of the primordial scale is a coincidence**, and the model prefers the choice it can state.
 - *The local symmetry does not care either way.* Because the content is vector-like, a mass term is a singlet and the theory is consistent with or without it. **A chiral theory would have forbidden it**, which is the one place where being vector-like costs nothing and buys nothing.
 
@@ -123,7 +123,7 @@ $$
 - *No left–right asymmetry in the spectrum.* The two copies have the same mass, the same couplings and the same dispersion, because the only thing that could differ between them is the mass matrix $m_{ij}$, and it is zero.
 - *No distinction between the copies at all.* Nothing in the connection Lagrangian refers to $i$ except the fermion's own label; **the mass term would, and it is set to zero.** **The copy index is invisible to every interaction above $M_C$**, and that invisibility is what makes the doubling exact rather than approximate.
 
-**One thing the phase can do, and it is the reason the transition is a transition.** The copy index is not made local above $M_C$ and made local below it. **The index does not change; its status does.** At $M_C$ the two copies are separated — one couples to the $L$ factor and one to the $R$ — and the same sixteen fields, with the same labels, become chiral. **That separation is a postulate and not a derivation**: a single factor acting on the copy index would leave the content vector-like, since $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate, so what a chiral content needs is the two copies acted on by **two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$. **That is one choice of representation, and [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as the transition's single postulate and spends it there.** **What the transition supplies is therefore the status of the index and the mechanism that assigns the two factors; the assignment itself is declared.**
+**One thing the phase can do, and it is the reason the restructuring exists at all.** The copy index is not made local above $M_C$ and made local below it. **The index does not change; its status does.** At $M_C$ the two copies are separated — one couples to the $L$ factor and one to the $R$ — and the same sixteen fields, with the same labels, become chiral. **That separation is a postulate and not a derivation**: a single factor acting on the copy index would leave the content vector-like, since $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate, so what a chiral content needs is the two copies acted on by **two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$. **That is one choice of representation, and [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as the restructuring's single postulate and spends it there.** **What the restructuring supplies is therefore the status of the index and the mechanism that assigns the two factors; the assignment itself is declared.**
 
 **Where the corpus says the same thing more sharply.** *The Chiral Wall* states it as a theorem: the model is not chiral where it fixing conditions, and the chirality sits entirely in a label. **This article's contribution is the ledger that goes with it** — what the non-chirality forbids, item by item, and why the forbiddance is a property of the phase rather than of the group.
 
@@ -139,13 +139,13 @@ $$
 | assumed fermion masslessness | two masses set to zero, not a theorem | cost |
 | doubling exact | the copy index is invisible to every vertex | benefit |
 | masses from one vacuum | one scale, one mechanism, no second source | benefit |
-| chirality deferred | the transition must exist | cost |
+| chirality deferred | the restructuring must exist | cost |
 
 **The generation row is neither because the benefit was never on offer.** A chiral theory does not explain three generations either — the Standard Model's anomaly conditions are satisfied generation by generation and fix nothing — so the absence of a constraint is a benefit *not collected* rather than a cost paid, and calling it a cost would overstate what vector-likeness took away.
 
-**The last row is the ledger's sum.** A phase that is vector-like cannot be the whole theory, because the world is chiral. **So the transition is not an embellishment of the model; it is required by the phase's own symmetry structure**, and the requirement is quantitative: without it the sixteen would be parity-symmetric at every scale and the model would predict zero for every parity-odd observable.
+**The last row is the ledger's sum.** A phase that is vector-like cannot be the whole theory, because the world is chiral. **So the restructuring is not an embellishment of the model; it is required by the phase's own symmetry structure**, and the requirement is quantitative: without it the sixteen would be parity-symmetric at every scale and the model would predict zero for every parity-odd observable.
 
-**What the ledger is not.** It is not a criticism of the model. A vector-like high-scale sector with a chiral transition is a coherent structure, and it is the structure the corpus declares. **What the ledger establishes is which of its statements are theorems and which are choices**, so that a reader who wants to attack the model attacks the right ones. **The choice is $m=0$, that is two masses set to zero; the theorem is the pairing.**
+**What the ledger is not.** It is not a criticism of the model. A vector-like high-scale sector with a chiral restructuring is a coherent structure, and it is the structure the corpus declares. **What the ledger establishes is which of its statements are theorems and which are choices**, so that a reader who wants to attack the model attacks the right ones. **The choice is $m=0$, that is two masses set to zero; the theorem is the pairing.**
 
 ## The Checks
 
@@ -171,7 +171,7 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 
 **The anomaly cancels by counting and costs nothing.** $2(+1)+2(-1)=0$, no mixed coefficient exists because there is one factor, and no condition is imposed on the spectrum, the hypercharges or the number of generations. **That is the benefit side of vector-likeness and it is real**, not a consolation.
 
-**The cost side is that the phase cannot be the whole theory.** No parity violation, no $CP$ violation from the sector, no left–right asymmetry, no distinction between the copies at all. **The $CP$ statement is exact and not a truncation**: the $\theta_4$ term is the one sector operator that is $CP$-odd, and the masslessness makes it removable rather than merely suppressed. **The transition is required by the phase's own symmetry structure**, and what it changes is not the fields and not the labels but the status of the copy index: not made local above, made local below — with the split into two factors supplied by the transition's one postulate rather than by this phase.
+**The cost side is that the phase cannot be the whole theory.** No parity violation, no $CP$ violation from the sector, no left–right asymmetry, no distinction between the copies at all. **The $CP$ statement is exact and not a truncation**: the $\theta_4$ term is the one sector operator that is $CP$-odd, and the masslessness makes it removable rather than merely suppressed. **The restructuring is required by the phase's own symmetry structure**, and what it changes is not the fields and not the labels but the status of the copy index: not made local above, made local below — with the split into two factors supplied by the restructuring's one postulate rather than by this phase.
 
 **The state count is thirty-two either way.** Sixteen massless Weyl fields and eight massive Dirac fields give the same multiplicity and different dispersions, so no argument from multiplicity can tell the phases apart. What tells them apart is $\omega=\lvert\vec k\rvert$ above and eight masses below.
 
@@ -194,7 +194,7 @@ Above $M_C$ the sixteen are massless, vector-like and parity-symmetric, and the 
 - [Classification of the Fermions in the $\mathrm{SU}(4)$ Model](classification-of-the-fermions-in-the-su4-model-sixteen-weyl-fields-closed-under-c-and-cp.html). The count, the two octets, the $B-L$ assignment and the conjugation as a permutation.
 - [The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration of Rank Three](the-su4-model-four-lines-fifteen-generators-one-declaration.html). The declaration of vector-likeness and the anomaly count that this article reads as a phase statement.
 - [The Chiral Wall, Which Is Now a Theorem](the-su4-model-four-lines-fifteen-generators-one-declaration.html). §*The Chiral Wall* of the declaration article: why the model is not chiral where the symmetry acts, and where the chirality is instead.
-- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The transition's single postulate — the two copies acted on by two different factors — which is what turns the label into chirality.
+- [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The restructuring's single postulate — the two copies acted on by two different factors — which is what turns the label into chirality.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). The action these sixteen fields sit in, and the place where $m_{ij}$ would have been written.
 - [The Fermion–Connection vertex in the Quartet Basis](the-fermion-connection-vertex-in-the-quartet-basis-the-fifteen-read-on-the-sixteen.html). The two-index rule $X\otimes\mathbb{1}_{2}$ that makes the copy index invisible.
 - [The Primordial Coupling](the-primordial-coupling.html). The coefficient whose fermion term counts the sixteen as eight Dirac fields, which is the pairing this article describes.

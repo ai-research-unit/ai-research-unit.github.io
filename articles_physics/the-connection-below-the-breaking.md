@@ -1,4 +1,4 @@
-# __The Connection Below the Breaking: Three Pieces, Three Couplings, and One Relation from Orthogonality__
+# __The Connection Below the Restructuring: Three Pieces, Three Couplings, and One Relation from Orthogonality__
 
 ## Introduction
 
@@ -31,7 +31,7 @@ g=g_L,
 \;}
 $$
 
-**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above $M_C$ it carries fifteen connections and one coupling, because there is one group. Between $M_C$ and $M_W$ it carries twelve connections and three couplings, because the factors the transition leaves carry one each; below $M_W$, nine of those connections are massless and two couplings act on them. **The couplings belong to the factors, and the factors change exactly once: at $M_C$, where one group becomes four.** Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
+**The single idea.** The covariant derivative is not rewritten; it is *restricted*. Above $M_C$ it carries fifteen connections and one coupling, because there is one group. Between $M_C$ and $M_W$ it carries twelve connections and three couplings, because the factors the restructuring leaves carry one each; below $M_W$, nine of those connections are massless and two couplings act on them. **The couplings belong to the factors, and the factors change exactly once: at $M_C$, where one group becomes four.** Hypercharge's coupling is then not a fourth coupling but a combination of two of them, and the factor of two in that combination is the same $\tfrac12$ that appears in $Y=T_{3R}+\tfrac12(B-L)$.
 
 **What the article establishes.** The derivative at the top; its restriction at each step; the table of what each surviving piece multiplies; the two matching relations with their factors of two; the reason there are three couplings and not four; and where the heavy pieces go when they are removed.
 
@@ -50,7 +50,7 @@ D_\mu=\partial_\mu-i g_4\,A^{A}_{\mu}T^{A},
 \qquad A=1,\dots,15,
 $$
 
-with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $W$, no $V$, no $\tau^{a}$, no $\sigma^{a}$: none of those exists above the transition.**
+with $T^{A}$ the fifteen anti-Hermitian generators of $\mathfrak{su}(4)$. **No $W$, no $V$, no $\tau^{a}$, no $\sigma^{a}$: none of those exists above the restructuring.**
 
 **1.2 Fifteen and one.** Fifteen connections, because there are fifteen generators. One coupling, because there is one simple factor. A simple group has one coupling by definition — the generators of $\mathrm{SU}(4)$ cannot carry different couplings without breaking the invariance that makes them a basis of one algebra.
 
@@ -91,7 +91,7 @@ $$
 
 with $Q=T_{3L}+Y$ and $A$ the photon. The angle here is $\theta_W$.
 
-**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
+**2.4 The observation.** In all three lines the heavy field is written in the same bracket as the light one, because both come from the same derivative. The difference between them is not their origin but whether they annihilate the vacuum, and that is [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html).
 
 ## What Each Piece Multiplies
 
@@ -155,7 +155,7 @@ and the angle is a rotation of the basis, not a coupling. The corpus's statement
 
 **One relation, one counting argument.** Both say the same thing.
 
-**5.1 The relation.** $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so the coupling is not carried below $M_C$: the low-energy theory has three where the group at the transition had four.
+**5.1 The relation.** $g_Y$ is determined by $g_R$ and $g_{B-L}$ at the matching scale, so the coupling is not carried below $M_C$: the low-energy theory has three where the group at the restructuring had four.
 
 **5.2 The counting statement.** The count of independent couplings runs $1\to4\to3\to2$:
 

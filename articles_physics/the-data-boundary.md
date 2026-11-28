@@ -109,7 +109,7 @@ The permission has four edges drawn, and the sharpest is the fourth: the low-ene
 | structural | a statement checked by the algebra, carrying no value |
 | claim | a statement imposing a value, a boundary condition, a running, a matching or an exact ratio |
 | data | a measured value, printed where a comparison needs it |
-| the coupling article | *The One Coupling That Returns the Standard Model*, in the Symmetry Breaking part |
+| the coupling article | *The One Coupling That Returns the Standard Model*, in the Vacuum Restructuring part |
 
 ## Further Reading
 

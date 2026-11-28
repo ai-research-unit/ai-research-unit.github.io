@@ -18,7 +18,7 @@ so the matrix's coefficient is $0.0570\,\lambda_{1}^{2}$ and is **three** times 
 
 **What this article does.** It reduces the functional determinant to a Hessian, diagonalises it at the identity background, computes the coefficient for general $\lambda_{1}$, $\lambda_{2}$, evaluates it, compares with the doublet, and derives the field range in which the tree term still dominates.
 
-**What it does not do.** No two-loop, no resummation, no running of the quartics, and no statement about the transition itself.
+**What it does not do.** No two-loop, no resummation, no running of the quartics, and no statement about the restructuring itself.
 
 ## The Reduction
 
@@ -161,7 +161,7 @@ $$
 
 **The comparison with the doublet is the article's useful output.** A claim that the matrix sector is "bigger" becomes a number: three, from sixteen components instead of four and mass ratios of three halves against three and one.
 
-**And the boundary is stated rather than crossed.** The coefficient is computed at one background direction, at one loop, without resummation, and the phase's actual transition is many orders of magnitude away in field. **The number is a coefficient and not a prediction of $M_C$.**
+**And the boundary is stated rather than crossed.** The coefficient is computed at one background direction, at one loop, without resummation, and the phase's actual restructuring is many orders of magnitude away in field. **The number is a coefficient and not a prediction of $M_C$.**
 
 ## Summary of Notation
 

@@ -144,7 +144,7 @@ The ladder is nested, $\mathrm{SU}(1)\subset\mathrm{SU}(2)\subset\mathrm{SU}(3)\
 - [*The $\mathrm{SU}(4)$ Model: Four Lines, Fifteen Generators, One Declaration*](the-su4-model-four-lines-fifteen-generators-one-declaration.html), for the top rung.
 - [*Quantum Chromodynamics as the Residual of $\mathrm{SU}(4)$*](quantum-chromodynamics-as-the-residual-of-su4.html), for the strong rung as a stabiliser.
 - [*Rank Five From Three*](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) and [*The Photon as the Unbroken Mixture*](the-photon-as-the-unbroken-mixture.html), for the intermediate rungs.
-- [*The Breaking of the Primordial Force*](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for the descent between rungs.
+- [*The Restructuring of the Primordial Force*](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), for the descent between rungs.
 - [*The Compact Sector of the Biquaternions Is $\mathfrak{u}(2)$*](the-compact-sector-of-the-biquaternions-is-u2.html), for the arena's compact group and the ceiling on the upper rungs.
 - [*The Lorentz Group as Biquaternion Norm Automorphisms*](the-lorentz-group-as-biquaternion-norm-automorphisms.html), for the arena's kinematic group.
 - [*The Minimal Coupling in Biquaternionic Form*](the-minimal-coupling-in-biquaternionic-form.html), for the coupling whose vanishing defines this category.

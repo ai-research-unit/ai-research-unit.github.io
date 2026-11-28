@@ -23,13 +23,13 @@ $$
 \;}
 $$
 
-**So the matching is a matching of a group and a spectrum, not of a Lagrangian.** The transition leaves behind a sector, a set of masses at the scale, and one coupling to be matched. **The left–right group is the group at $M_C$ and it has no width**: the same vacuum that produces it makes the right-handed bosons heavy, so below $M_C$ the description is the Standard Model's.
+**So the matching is a matching of a group and a spectrum, not of a Lagrangian.** The vacuum restructuring leaves behind a sector, a set of masses at the scale, and one coupling to be matched. **The left–right group is the group at $M_C$ and it has no width**: the same vacuum that produces it makes the right-handed bosons heavy, so below $M_C$ the description is the Standard Model's.
 
 **What this article establishes.** The four quantities that cross the boundary; the ordering of the two scales and why it is the only ordering available; the sense in which the left–right group is a stage of zero width rather than a second threshold; the fate of the mega coupling at the matching, including the tension the corpus already records and which the migration does not repair; the origin of every mass in the final spectrum; and the list of things that are *not* passed down, which is where the corpus's neutral sector and its mixing matrix stand.
 
 **Not established.** The numerical value of the mega coupling. **It is fixed by a boundary condition the corpus already says fails, and that is the corpus's defect rather than one introduced here.** The migration is about origins rather than about unification.
 
-**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the group factor is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Connections](the-mass-matrix-of-the-fifteen-connections.html).
+**Where the rest is.** The construction that produces the group at $M_C$ is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The breaking that produces the group factor is [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The sextet's mass and bound are [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html). **Everything below the matching is the existing corpus**, beginning with §*The Scale Ledger* below and continuing with [The Mass Matrix of the Fifteen Connections](the-mass-matrix-of-the-fifteen-connections.html).
 
 ## The Interface: Four Quantities Cross, and One Number Is Matched
 
@@ -46,15 +46,15 @@ $$
 
 **The group has no width, and that is the article's one structural claim.** The vacuum that produces the two factors is a line in the carrier, $\operatorname{diag}(-3,1,1,1)$. **That one line is what makes the sextet heavy**, so the two-factor group and the mass of the six are the same event. **A stage of zero width is a description and not a threshold**: below $M_C$ the effective theory is the strong group and $B-L$, and the six are integrated out at the scale that produced them.
 
-**The nine massless vectors are exact in the same sense, and the count falls at $M_C$.** Above the transition the fifteen directions of $\mathfrak{su}(4)$ are all massless, no vacuum having formed. At $M_C$ the kernel is nine — eight gluons and $B'$, computed once in [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) — while the other six, the sextet, take $32v_C^{2}$. **No further vectors arrive: the nine are the whole massless ledger at $M_C$.** The sextet is heavy on $v_C$, so the massless ledger is
+**The nine massless vectors are exact in the same sense, and the count falls at $M_C$.** Above the restructuring the fifteen directions of $\mathfrak{su}(4)$ are all massless, no vacuum having formed. At $M_C$ the kernel is nine — eight gluons and $B'$, computed once in [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) — while the other six, the sextet, take $32v_C^{2}$. **No further vectors arrive: the nine are the whole massless ledger at $M_C$.** The sextet is heavy on $v_C$, so the massless ledger is
 
 $$
 15\ \longrightarrow\ 9 ,
 $$
 
-**fifteen above the transition and nine at $M_C$**, and the nine are the kernel.
+**fifteen above the restructuring and nine at $M_C$**, and the nine are the kernel.
 
-**The sextet is a bound and not a value**, because $v_C$ is not fixed by the model; the bound is $250$ TeV and it is what makes the transition scale a measured quantity rather than a parameter.
+**The sextet is a bound and not a value**, because $v_C$ is not fixed by the model; the bound is $250$ TeV and it is what makes the restructuring scale a measured quantity rather than a parameter.
 
 **And the couplings are the one item that needs an act of matching rather than a computation.** That act is the subject of §*The Coupling at the Matching*, and it is where the corpus's one serious tension lives.
 
@@ -94,7 +94,7 @@ $$
 
 **The first arrow is the whole of $M_C$, and it is one event.** Nine of the fifteen directions are the kernel and stay massless; the other six, the sextet, take $32v_C^{2}$ and eat six of $Ξ$'s Goldstones. **So the massless count falls by six**: $15-6=9$, and the nine are the kernel. The algebra changes from $\mathfrak{su}(4)$ to $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, dimension twelve.
 
-**The rank, in the same reading.** It falls by one at $M_C$: the broken direction leaves a single abelian one, so three becomes three only in count and not in kind, $\mathfrak{su}(4)$'s three Cartans becoming the block's two plus $B-L$'s one. **The rank is three on both sides of the transition**, and the group is simple above it.
+**The rank, in the same reading.** It falls by one at $M_C$: the broken direction leaves a single abelian one, so three becomes three only in count and not in kind, $\mathfrak{su}(4)$'s three Cartans becoming the block's two plus $B-L$'s one. **The rank is three on both sides of the restructuring**, and the group is simple above it.
 
 **The second arrow is $v$, and it is the Standard Model's.** The weak bosons acquire mass from $H$, and the nine of the kernel remain: eight gluons and the $B-L$ vector.
 
@@ -110,7 +110,7 @@ $$
 
 **which fixes one relation among the two and leaves the other as a prediction of the matching.**
 
-**The corpus's condition, and its failure, stated once.** The natural boundary condition is equal couplings at the transition, $g_3=g_{B-L}=g_4$. **That condition fixes one number, the normalisation $\sin^{2}\theta_W=\tfrac38$ at $M_C$, and the corpus computes that the measured couplings are met four decades apart:** $1.63\times10^{3}$ J and $1.57\times10^{7}$ J, that is $1.0\times10^{13}$ GeV and $9.8\times10^{16}$ GeV. **No single threshold satisfies it.**
+**The corpus's condition, and its failure, stated once.** The natural boundary condition is equal couplings at the restructuring, $g_3=g_{B-L}=g_4$. **That condition fixes one number, the normalisation $\sin^{2}\theta_W=\tfrac38$ at $M_C$, and the corpus computes that the measured couplings are met four decades apart:** $1.63\times10^{3}$ J and $1.57\times10^{7}$ J, that is $1.0\times10^{13}$ GeV and $9.8\times10^{16}$ GeV. **No single threshold satisfies it.**
 
 **What the migration does about it: nothing, and that is the correct amount.** The failure is a statement about unification — about whether one coupling at one scale can reproduce three measured ones — and the migration is a statement about origins. **A construction that births a group does not have to unify its couplings**, and pretending otherwise would be the kind of overreach that makes a reframing look like a solution.
 
@@ -151,10 +151,10 @@ $$
 
 | scale | what it is | how it is obtained |
 | --- | --- | --- |
-| $M_C\gtrsim250$ TeV | a **floor** on the transition | $K_L\to\mu e$, the sextet's own bound |
+| $M_C\gtrsim250$ TeV | a **floor** on the restructuring | $K_L\to\mu e$, the sextet's own bound |
 | $\sim10^{13}$ GeV | where one coupling **would** reproduce the measured ones | the equal-coupling condition, which fails |
 
-**They differ by a factor of about forty million, and both are correct.** The first is a lower bound from a flavour-changing decay; the second is the scale a unification would prefer. **A transition anywhere between them satisfies the flavour bound and misses the unification preference**, which is exactly the tension the corpus records.
+**They differ by a factor of about forty million, and both are correct.** The first is a lower bound from a flavour-changing decay; the second is the scale a unification would prefer. **A restructuring anywhere between them satisfies the flavour bound and misses the unification preference**, which is exactly the tension the corpus records.
 
 **The rule that follows.** When a statement depends on the scale, **say which scale it uses.** The confinement-scale argument of [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) quoted three and a half decades, which is the *most favourable* case: at the floor. At the unification-preferred scale it is eleven decades. **Either way the composite route is closed, and the article says both numbers rather than the flattering one.**
 
@@ -164,9 +164,9 @@ $$
 | --- | --- |
 | the chain, the dimensions and the ranks | §*The Scale Ledger*, above: $15\to12\to9$ and $3\to5\to4\to3$ |
 | the sector separation, and $M_C>v$ | §*The Scale Ledger*, above, conditions (a) and (b) |
-| the nine that survive and the six that are eaten | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
+| the nine that survive and the six that are eaten | [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
 | the ledger of three readings | [Classification of the Bosons in the $\mathrm{SU}(4)$ Model](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) |
-| $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
+| $32v^{2}$ on six planes, $0$ on nine, and the general vacuum | [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) |
 | the mass, the bound and the diquark fork | [Six Leptoquarks Above $M_C$](six-leptoquarks-above-m-c-quantum-numbers-mass-and-the-bound.html) |
 | the scalar that does the breaking | [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html) |
 
@@ -192,7 +192,7 @@ $$
 
 A matching is not a unification. The group and the spectrum cross the scale; the couplings are matched and the matching fails, as the corpus already says (*The Coupling at the Matching*).
 
-A floor is not a prediction. $M_C\gtrsim250$ TeV says where the transition cannot be, not where it is (*Two Numbers That Must Not Be Confused*).
+A floor is not a prediction. $M_C\gtrsim250$ TeV says where the restructuring cannot be, not where it is (*Two Numbers That Must Not Be Confused*).
 
 Created at $M_C$ is not passed down at $M_C$. The group factor and the nine vectors stand (*What Is Not Passed Down*).
 
@@ -210,13 +210,13 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 
 **Two things are not passed down.** The photon is a mixture formed after the matching; the mixing angle is computed after it. **And that is why the $45^\circ$ of the identities cannot be the electroweak mixing: the mass matrix it would have to be an angle of does not exist yet.**
 
-**The corpus below $M_C$ stands.** It is the second and third sections of this part, and none of its numbers moves at the matching: the transition changes where the weak factors come from, not a single eigenvalue.
+**The corpus below $M_C$ stands.** It is the second and third sections of this part, and none of its numbers moves at the matching: the restructuring changes where the weak factors come from, not a single eigenvalue.
 
 ## Summary of Notation
 
 | symbol | meaning |
 | --- | --- |
-| $M_C$ | the transition scale, $\gtrsim250$ TeV |
+| $M_C$ | the restructuring scale, $\gtrsim250$ TeV |
 | $v$ | the electroweak vacuum, $246$ GeV |
 | $v_C$ | the magnitude of the $\mathrm{SU}(4)$-breaking condensate |
 | $Ξ$ | the scalar $(\mathbf{15}\oplus\mathbf1)$ that does the first breaking |
@@ -227,6 +227,6 @@ The mass ledger is not a hierarchy problem. Every mass is at its own vacuum's sc
 ## Further Reading
 
 - [Rank Five From Three: A Condensate Index, Five Ranks From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The construction that makes the group appear at $M_C$.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The group factor and the nine vectors that cross the boundary.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The group factor and the nine vectors that cross the boundary.
 - [The Weak Sector Below $M_C$](the-weak-sector-below-m-c-three-neutrals-a-diagonal-charged-pair-and-the-bidoublet.html). The photon and the mixing angle, both formed after the matching.
 - [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html). The boundary condition and its four-decade failure.

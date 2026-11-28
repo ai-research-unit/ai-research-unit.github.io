@@ -127,7 +127,7 @@ $$
 
 **The channel $K_L\to\mu e$ needs a matrix the model does not have**, because the model has one Yukawa matrix and one generation. **The bound on $M_X$ that the literature quotes is a two-generation channel with that matrix set to one**, and the model's own contribution is the operator's shape: two chiralities with equal coefficients, group factor one, and $M_X^{-4}$.
 
-**What the transition must supply is named and not invented**: a second matrix, a generation index, and a condensate that does not tie the lepton mass to the quark mass by three.
+**What the restructuring must supply is named and not invented**: a second matrix, a generation index, and a condensate that does not tie the lepton mass to the quark mass by three.
 
 ## Summary of Notation
 

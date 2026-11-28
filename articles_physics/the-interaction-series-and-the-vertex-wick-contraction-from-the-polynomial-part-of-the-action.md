@@ -8,7 +8,7 @@
 
 **The strongest objection.** *The vertex is a definition, so the stage proves nothing.* Half right. The vertex's value is a definition — it is the interaction's coefficient, and no computation produces it. What the expansion proves is that the vertex is the *same* number at every order, that its position is a single point, and that the leftover multiplicity is the symmetry factor. Those three are the content, and they are what a reader who has only the definition cannot get.
 
-**Position.** Stage $3$ of the chain in [the hub](the-lagrangian-method-from-the-collected-lagrangian-to-the-feynman-diagram.html). It takes the factored operator of [stage $2$](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) and hands the diagrams to [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html).
+**Position.** Stage $3$ of the chain in [the hub](the-lagrangian-method-from-the-truncated-action-to-the-feynman-diagram.html). It takes the factored operator of [stage $2$](the-generating-functional-and-the-exact-gaussian-the-quadratic-part-inverted-into-the-propagator.html) and hands the diagrams to [stage $4$](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html).
 
 ## The Expansion of the Exponential
 
@@ -75,7 +75,7 @@ and every odd moment vanishes. [The Wick Theorem in Biquaternionic Form](the-wic
 
 **The table's second row is the one that corrects the usual misreading.** A four-point interaction is one vertex, so a $2\to2$ process at tree level is order $g$ and not order $g^{4}$. The degree of the monomial is four; the order in the coupling is one. The method's whole efficiency is that the second number, not the first, organises the sum.
 
-**Loops and vertices are independent counts, and that is why the loop expansion is a different organisation.** The number of loops is $L=I-V+1$ for a connected graph with $I$ internal lines and $V$ vertices, so a fixed order in the coupling is a fixed $V$ and a variable $L$. [The fourth article](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) uses the relation to order the diagrams, and [the sixth](the-classical-limit-of-the-diagram-series-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) uses it to count powers of the action quantum.
+**Loops and vertices are independent counts, and that is why the loop expansion is a different organisation.** The number of loops is $L=I-V+1$ for a connected graph with $I$ internal lines and $V$ vertices, so a fixed order in the coupling is a fixed $V$ and a variable $L$. [The fourth article](the-feynman-rules-and-the-diagram-expansion-propagators-vertices-loops-and-symmetry-factors.html) uses the relation to order the diagrams, and [the sixth](the-leading-order-tree-diagrams-as-the-stationary-phase-of-the-path-integral.html) uses it to count powers of the action quantum.
 
 ## What the Algebra Supplies Here
 
@@ -83,7 +83,7 @@ and every odd moment vanishes. [The Wick Theorem in Biquaternionic Form](the-wic
 
 | what the stage needs | where it comes from |
 |---|---|
-| the monomials and their coefficients | the density, [stage $0$](the-collection-of-lagrangian-components-the-full-action-as-the-input-to-perturbation-theory.html) |
+| the monomials and their coefficients | the density, [stage $0$](the-action-as-input-the-quadratic-part-the-interaction-part-and-the-truncation.html) |
 | the pairing, and the fermionic sign | the algebra, the grading of the module, [the Wick article](the-wick-theorem-in-biquaternionic-form.html) |
 | the one-mode exactness of the identity | the algebra, [the Wick article](the-wick-theorem-in-biquaternionic-form.html) |
 | a vertex native to $\mathbb{B}$ | nothing: the vertex is the interaction's coefficient, and the corpus's interactions are imported |

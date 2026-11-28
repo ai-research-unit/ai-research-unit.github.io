@@ -101,7 +101,7 @@ $$
 [T^{R}_{a},T^{R}_{b}]=-\epsilon_{abc}T^{R}_{c},\qquad
 [T^{L}_{a},T^{R}_{b}]=0 .
 $$
-**The minus in the second is the anti-homomorphism of the properties display above**, and it is a sign inside the triple, not a different algebra: $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. **The third line is the one that matters for the model.** Two triples that commute span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, a six-dimensional real subalgebra of $\mathfrak{su}(4)$. **It is not the model's weak pair.** The weak factors arrive with the doublet index at the transition, and no generator of them is among the fifteen.
+**The minus in the second is the anti-homomorphism of the properties display above**, and it is a sign inside the triple, not a different algebra: $\{-T^{R}_{a}\}$ closes with $+\epsilon_{abc}$. **The third line is the one that matters for the model.** Two triples that commute span $\mathfrak{su}(2)\oplus\mathfrak{su}(2)$, a six-dimensional real subalgebra of $\mathfrak{su}(4)$. **It is not the model's weak pair.** The weak factors arrive with the doublet index at the restructuring, and no generator of them is among the fifteen.
 
 **The six halves split $\mathfrak{so}(4)$ into its self-dual and anti-self-dual parts, and the star says which is which.** Read an array as the two-form $\omega=\tfrac12\omega_{jk}\,dx^j\wedge dx^k$ with $\omega_{jk}=M_{jk}$, and fix the star by
 $$
@@ -393,7 +393,7 @@ $$
 
 **Two conventions live in that table, and both are named.** **Which of a plane's two amplitudes carries which of the pair's two names is a choice** — the two names of a mirrored pair could be exchanged without changing a number. **And the real and imaginary amplitudes of one plane are the two components of one complex field**, so calling $A_{tx}$ the particle and $iS_{tx}$ the antiparticle is the $i$ convention and not a physical distinction. **What is not a choice is the count**: fifteen arrays, two amplitudes per plane, one boson per amplitude — **and the six $\mathfrak{so}(4)$ arrays outside the count, which are coherences of a heavy and a massless direction and therefore not bosons at all.**
 
-**Nine massless and six massive is this model's whole spectrum.** The nine are the gluon octet and $B'$; the six are the leptoquarks. **There is no $W$, no $Z$ and no photon here, and their absence is not a gap**: they need the weak factors, the three neutral directions and the second vacuum, and all three arrive at the transition. [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) has the ledger; [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) has where the rest come from.
+**Nine massless and six massive is this model's whole spectrum.** The nine are the gluon octet and $B'$; the six are the leptoquarks. **There is no $W$, no $Z$ and no photon here, and their absence is not a gap**: they need the weak factors, the three neutral directions and the second vacuum, and all three arrive at the restructuring. [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) has the ledger; [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) has where the rest come from.
 
 ### The Mass, and the One Difference That Decides It
 
@@ -412,7 +412,7 @@ $$
 
 **Read $32$ off the eigenvalues.** $32=2\times4^{2}$, and $4=1-(-3)$ is a diagonal entry minus the lepton eigenvalue. **The strong group is unbroken because $D$ is a multiple of the identity on the three spatial lines**, and every diagonal direction is untouched because $[iM_j,D]=0$ for all three, so the corner is too; the nine zeros are those two facts and nothing else.
 
-**The matrix has its own article.** [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
+**The matrix has its own article.** [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html) derives the matrix from the double commutator, states the commutator lemma that produces it, names the nine-dimensional kernel as $\mathfrak{su}(3)\oplus\mathfrak{u}(1)_{B-L}$, and gives the spectrum at a general vacuum.
 
 ### Three Things the Arrays Do Not Do
 
@@ -490,7 +490,7 @@ Twenty-nine recomputations, at $\operatorname{tr}$ in the fundamental, quartet o
 
 - [Building the Two Bases of $\mathfrak{su}(4)$ from the Axis-Free Left and Right Matrices](../articles_internal/structures/structure-SU4-basis-construction.html). The three steps of Part II in full, with the word table and the theorem on why the physics base is the one a diagonal mass matrix forces.
 - [Two Bases of $\mathfrak{su}(4)$](../articles_internal/structures/structure-SU4-basis-comparison.html). The change of basis between the maths fifteen and the physics fifteen, in both directions, with the composition checked to the identity.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuum, both bases, and the $8v^{2}$ artefact of the coherent arrays — which is $16v^{2}$ once the array's norm is divided out.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). The mass matrix of Part III: the operator, the commutator lemma, the nine-dimensional kernel and the general vacuum, both bases, and the $8v^{2}$ artefact of the coherent arrays — which is $16v^{2}$ once the array's norm is divided out.
 - [The AXF Matrices: Axis-Free, Integer Entries](the-axf-matrices-axis-free-integer-entries.html). The frame, the signed permutations and the ten properties.
 - [The Axis-Free Arrays of the Fifteen and the Six Halves](../articles_internal/the-axis-free-arrays-fifteen-generators-six-halves-and-a-cartan.html). The arrays of $L_{\vec e_a}$ and $R_{\vec e_a}$, their word support and the six relations.
 - [$M_4(\mathbb{C})$ Axis-Free Representation](../articles_maths/m4c-axis-free-representation.html) and [$M_2(\mathbb{C})$ Defining Representation](../articles_maths/m2c-defining-representation.html). The four-row and two-row frames.

@@ -10,7 +10,7 @@
 
 **What the article separates, in order.** The three objects and the word *spin*, with the carrier and its closure kept apart because their dimensions are counted differently; the two $\mathrm{SU}(2)$ copies and the group, which give three different lists; the one module that carries two different spins; the branching of the quartet and the fifteen; why no carrier of spin $\tfrac32$ exists; the two numbers above one; and the numeral four, which occurs in four unrelated places in this block.
 
-**Boundaries.** The decomposition is the mathematical corpus's, in *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*, and it is quoted and recomputed here, not re-proved. The Rarita–Schwinger field is named and its carrier count checked; its quantisation is *Canonical Quantization of the Rarita–Schwinger Field from the Vector Carrier and the Dirac Field*. Nothing below uses the transition at $M_C$, so the article is a statement about the unbroken phase. **One convention is load-bearing and is fixed in the next section: a carrier's dimension is real and a closure's is complex, and $2s+1$ is the same number in either column** (*The Carrier Roster* states the identity on the carrier column, and only there).
+**Boundaries.** The decomposition is the mathematical corpus's, in *The Clebsch–Gordan Decomposition of $M_4(\mathbb{C})$*, and it is quoted and recomputed here, not re-proved. The Rarita–Schwinger field is named and its carrier count checked; its quantisation is *Canonical Quantization of the Rarita–Schwinger Field from the Vector Carrier and the Dirac Field*. Nothing below uses the restructuring at $M_C$, so the article is a statement about the unbroken phase. **One convention is load-bearing and is fixed in the next section: a carrier's dimension is real and a closure's is complex, and $2s+1$ is the same number in either column** (*The Carrier Roster* states the identity on the carrier column, and only there).
 
 ## Three Objects, and the Word Spin
 
@@ -169,7 +169,7 @@ $$
 | the carrier basis $e_t,\vec e_x,\vec e_y,\vec e_z$ | the centre and the traceless part | $4$ complex, $1+3$ |
 | the count $4=4$ of the Goldstone bookkeeping | the vector's gain against the scalar's loss | four degrees of freedom |
 
-**The first two are one space read under two groups**, which is §*One Module, Two Spin Contents*. **The third is the algebra's own basis over $\mathbb{C}$**, and its four is $1+3$: one complex dimension closing the spin-$0$ carrier and three closing the spin-$1$ carrier. **The fourth is a count of degrees of freedom across the transition** and is not a dimension of a space at all.
+**The first two are one space read under two groups**, which is §*One Module, Two Spin Contents*. **The third is the algebra's own basis over $\mathbb{C}$**, and its four is $1+3$: one complex dimension closing the spin-$0$ carrier and three closing the spin-$1$ carrier. **The fourth is a count of degrees of freedom across the restructuring** and is not a dimension of a space at all.
 
 **Why the table is worth printing.** The first three rows are dimensions of spaces and the fourth is a count of degrees of freedom, and a reader who merges any two of them can produce a false sentence: *the quartet is the module, so the scalar is a spin-$\tfrac32$ field* merges the first two; *the quartet has four real components, so it holds a spin-$\tfrac32$ state* merges the second and the third. **Each false sentence is refuted by naming the group or the reality of the four, and both refutations are one line.**
 
@@ -177,7 +177,7 @@ $$
 
 **The ambient algebra is used, and heavily; its spin content is not.** The regular representation $\rho_L$ and $\rho_R$, the sixteen two-sided products as a basis, the Clifford reading $M_4(\mathbb{C})\cong\mathrm{Cl}_{1,3}(\mathbb{C})$, the fifteen arrays of the generators, and the derivation $[K,\cdot]$ with its array $K\otimes\mathrm{I}-\mathrm{I}\otimes K^{\mathsf{T}}$ are all statements about the ambient algebra. **They are statements about operators, and the block uses them as such.**
 
-**The principal copy's list is never used.** No article of the block meets $7+5+3+1$; no field is written on $V_1$, $V_2$ or $V_3$; and no mass, coupling or vertex of the block refers to them. **The one place the list could enter is a branch record, and the block's branch records are records of the fifteen seen under $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$, at the transition, and not under the principal copy.**
+**The principal copy's list is never used.** No article of the block meets $7+5+3+1$; no field is written on $V_1$, $V_2$ or $V_3$; and no mass, coupling or vertex of the block refers to them. **The one place the list could enter is a branch record, and the block's branch records are records of the fifteen seen under $\mathrm{SU}(3)\times\mathrm{SU}(2)\times\mathrm{U}(1)$, at the restructuring, and not under the principal copy.**
 
 **The fifteen are fifteen fields of one spin.** Each of the fifteen is a component of the connection on the vector carrier, so each is a spin-one field, and the fifteen is an internal index. **A reader who took the branch $7+5+3$ as a content would count seven spin-three, five spin-two and three spin-one fields in a model that has fifteen spin-one ones**, and would then look for the missing states in the spectrum.
 

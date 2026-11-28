@@ -1,8 +1,8 @@
-# __The Breaking of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks__
+# __The Restructuring of the Primordial Force: $\mathrm{SU}(4)\to\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ and the Mass of the Six Leptoquarks__
 
 ## Introduction
 
-**The layer.** The transition is a statement about a formal copy of the carrier, and its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the breaking of the primordial force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
+**The layer.** The vacuum restructuring at $M_C$ has two operations, and this article states the first: the breaking. Its Layer-A content is one diagonal element and its adjoint action. Nothing here needs a potential, a temperature, or a cosmological history: **the breaking of the primordial force is the adjoint action of one direction on fifteen arrays, and everything else is arithmetic on its spectrum.**
 
 **The question.** What exactly does the condensation do to $\mathrm{SU}(4)$, which generators does it remove from the spectrum, and what do those generators weigh once they are gone?
 
@@ -35,7 +35,7 @@ $$
 
 **Not established.** Nothing here says *why* the condensate forms. The scalar potential is not derived anywhere in the corpus, and this article does not pretend to derive it. **What is established is what follows once the condensate exists** — and that is a great deal, because the entire mass spectrum of the first breaking follows from one direction.
 
-**What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the transition and present in it above; that is what a condensate does to a redundant direction.**
+**What "breaking" means here, stated before it is used.** Two things happen to the six generators at once, and they are the same event seen twice: **they are eaten** (each becomes the longitudinal mode of a now-massive vector) and **they become heavy** ($32v^{2}$ each). Neither is a destruction. **The six are absent from the spectrum below the restructuring and present in it above; that is what a condensate does to a redundant direction.**
 
 **And the mass they acquire is the mass they did not have, stated as plainly as the corpus can put it.** Above $M_C$ the six are **massless** — exactly zero, not small — because the operator whose spectrum is the mass matrix, $M^{2}=2v^{2}[D,[D,\cdot]]$, has nothing to act on until $D$ is the condensate's direction, and because the local symmetry is unbroken there and forbids a mass to every order. **Nothing in $\mathrm{SU}(4)$ makes the sextet heavy.** The number $32v^{2}$ in the box above is produced by the vacuum at $M_C$ and does not exist before it. **So "the leptoquarks are heavy" is a statement about the broken phase, and the unbroken phase has fifteen massless vectors, all of them.**
 
@@ -73,7 +73,7 @@ and **none of them is the vacuum**. The vacuum is their sum,
 $$
 iD=T_x+T_y+T_z=\operatorname{diag}(-3i,i,i,i),
 $$
-so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: **it is what the frame adds up to, and the coefficient of each of the three is one.** This is why the lepton line can appear at the transition without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.
+so the direction that the condensation selects is not a member of the frame that the unbroken phase prints: **it is what the frame adds up to, and the coefficient of each of the three is one.** This is why the lepton line can appear at the restructuring without having been named above it, and why the corpus no longer needs a corner array to hold $B'$: $B'$ is the sum. [The Symmetric Diagonal Frame](the-symmetric-diagonal-frame-of-the-fifteen.html) proves that no such frame exists in $\mathfrak{su}(3)$, and that the fourth line is what makes it possible here.
 
 **The scale is free and the direction is not.** Any multiple of $D$ gives the same breaking. **So the condensate contributes one dimensionful number — its magnitude $v$ — and one discrete choice, the sign, which changes nothing because every mass is quadratic in $D$.** That is the entire freedom of the first step.
 
@@ -156,7 +156,7 @@ $$
 
 **The ten are not this article's business, but they are not a loose end either.** One is the radial mode of the condensate, at $2\lambda v^{2}$; the other nine are the components orthogonal to the vacuum, which are the ones the weak sector is built from (*Classification of the Bosons*). **The count of six for the $\mathrm{SU}(4)$ step does not depend on any of that**, and it is the only count this article uses.
 
-**The eaten six are not destroyed, and the distinction matters for everything that follows.** A Goldstone mode is a rotation of the condensate, and the condensate can be rotated back. **What is absent below the transition is the six as *asymptotic* states; what is present is the six as longitudinal modes of the six massive vectors.** An article that says "the leptoquarks are destroyed" has thrown away the only ingredient the later articles need.
+**The eaten six are not destroyed, and the distinction matters for everything that follows.** A Goldstone mode is a rotation of the condensate, and the condensate can be rotated back. **What is absent below the restructuring is the six as *asymptotic* states; what is present is the six as longitudinal modes of the six massive vectors.** An article that says "the leptoquarks are destroyed" has thrown away the only ingredient the later articles need.
 
 ## The Mass the Six Acquire
 
@@ -268,13 +268,13 @@ $$
 
 **And the sentence that must not be written.** *The leptoquarks are destroyed and their debris becomes the weak force.* The charge theorem of [the companion article](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) closes that reading: every member of the sextet has $Q=\pm\tfrac23$, so no combination of them reaches $Q=\pm1$. **The breaking produces the strong group, one abelian factor, and six heavy vectors. It does not produce a weak doublet.**
 
-## The Breaking Is a Statement About the Vacuum, Not About the Theory
+## The Restructuring Is a Statement About the Vacuum, Not About the Theory
 
-**Nothing in this article removes a generator from the model.** The fifteen arrays are the same fifteen above and below the transition; what changes is which of them the ground state commutes with. **A condensate is a property of the vacuum, so the breaking is a property of one phase of the theory and not of its Lagrangian**, and the Lagrangian is one $\mathrm{SU}(4)$ theory at every scale.
+**Nothing in this article removes a generator from the model.** The fifteen arrays are the same fifteen above and below the restructuring; what changes is which of them the ground state commutes with. **A condensate is a property of the vacuum, so the restructuring is a property of one phase of the theory and not of its Lagrangian**, and the Lagrangian is one $\mathrm{SU}(4)$ theory at every scale.
 
-**So the primordial force is not gone, and the word for what happens to it is breaking.** Above $M_C$ the condensate is absent, the fifteen directions are all massless redundant directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. **The two descriptions are one theory in two phases**, and the passage between them is the vanishing of one scalar expectation value.
+**So the primordial force is not gone, and the word for what happens to it is restructuring: a breaking of the group into nine plus six, and an arrival of the weak factors beside it.** Above $M_C$ the condensate is absent, the fifteen directions are all massless redundant directions, and the group is one simple factor. Below $M_C$ the same fifteen are read through a vacuum that commutes with nine of them and not with six. **The two descriptions are one theory in two phases**, and the passage between them is the vanishing of one scalar expectation value.
 
-**What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the transition, and that is enough to say what restoration would look like and what it would cost.
+**What would restore it, stated as a reading and not as a result.** A condensate that vanishes restores the symmetry. Three routes do that: a temperature of order $M_C$; a field excursion that carries the scalar to the origin; or a region in which the scalar never condensed. **The corpus derives none of the three**, because the scalar potential is not in it. What the corpus establishes is the spectrum on either side of the restructuring, and that is enough to say what restoration would look like and what it would cost.
 
 **The observable is the sextet.** No generator of $\mathrm{SU}(3)_c\times\mathrm{U}(1)_{B-L}$ carries a quark into a lepton: triality and $B-L$ are both conserved by the residual group, and the sextet is the only place in the fifteen where the two are traded. **So a leptoquark seen is not a particle added to the model; it is one of the fifteen acting**, and its rate is set by the coupling the model already has. The null searches at [the threshold article](the-threshold-scales.html) bound $M_C$ from below, and **that bound is the statement that the unbroken phase has not yet been reached.**
 
@@ -313,7 +313,7 @@ The rank is not reduced. Six dimensions leave and the torus stays; that is why t
 
 ## Summary
 
-**The transition is one direction.** $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ times $i$, forced by the lepton-line declaration and by the trace condition up to scale. **The $i$ is what puts $\pm4i$ in the adjoint's spectrum**: on the real matrix $\operatorname{diag}(-3,1,1,1)$ the eigenvalues are the real $\pm4$.
+**The restructuring turns on one direction.** $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ times $i$, forced by the lepton-line declaration and by the trace condition up to scale. **The $i$ is what puts $\pm4i$ in the adjoint's spectrum**: on the real matrix $\operatorname{diag}(-3,1,1,1)$ the eigenvalues are the real $\pm4$.
 
 **Its adjoint action is the whole theorem.** $\operatorname{ad}(iD)$ has spectrum $0^{9}\oplus(\pm4i)^{3}$; the kernel is $\mathfrak{u}(3)=\mathfrak{su}(3)_c\oplus\mathfrak{u}(1)_{B-L}$, dimension nine; the $\pm4i$ eigenspace is the leptoquark sextet, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$, $Q=\pm\tfrac23$.
 

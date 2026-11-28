@@ -98,7 +98,7 @@ $$
 
 **So a lepton and a down-type quark with the same Yukawa entry have masses in the ratio $3:1$**, which is the statement $m_{e}=3m_{d}$ once the two entries are identified.
 
-**The identification is the weak point and it is stated.** $y$ is one matrix on the copy index, so the lepton and the down quark receive the *same* $y$ only if they sit in the same copy — and the copy index is precisely what becomes the right-handed weak index at the transition. **The corpus makes that identification explicitly**, and the whole content of the prediction is that it is made.
+**The identification is the weak point and it is stated.** $y$ is one matrix on the copy index, so the lepton and the down quark receive the *same* $y$ only if they sit in the same copy — and the copy index is precisely what becomes the right-handed weak index at the restructuring. **The corpus makes that identification explicitly**, and the whole content of the prediction is that it is made.
 
 **The number.** With $m_{d}=4.67\ \mathrm{MeV}$ and $m_{e}=0.511\ \mathrm{MeV}$ at the scales where they are quoted,
 
@@ -118,7 +118,7 @@ v_{C}=\frac{M_X}{4g_4}=\frac{2.33\times10^{5}}{4\times0.8544}=6.82\times10^{4}\ 
 M_X^{2}=16\,g_4^{2}v_{C}^{2} .
 $$
 
-**So the condensate is sixty-eight TeV**, and a fermion with $y=1$ has a mass of order $v_{C}$. **Every fermion in the model that is not protected is therefore at the transition scale**, and the corpus's light fermions are light because their Yukawa entries are small and not because their scale is.
+**So the condensate is sixty-eight TeV**, and a fermion with $y=1$ has a mass of order $v_{C}$. **Every fermion in the model that is not protected is therefore at the restructuring scale**, and the corpus's light fermions are light because their Yukawa entries are small and not because their scale is.
 
 **The check is the inverse.** $16(0.730)(6.818\times10^{4})^{2}=5.43\times10^{10}\ \mathrm{GeV}^{2}$, whose square root is $2.33\times10^{5}\ \mathrm{GeV}$ — the matching scale the coupling article uses. **The two numbers are the same number twice**, and that is what a matching relation is.
 
@@ -163,6 +163,6 @@ $$
 ## Further Reading
 
 - [The Yukawa Sector of the $\mathrm{SU}(4)$ Model](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html). The diagonalisation this article stops short of, and the falsification in full.
-- [The Sixteen Weyl Fields Above $M_C$](the-sixteen-weyl-fields-above-m-c.html). Why the content is massless above the transition, and what the vector-like pairing costs.
+- [The Sixteen Weyl Fields Above $M_C$](the-sixteen-weyl-fields-above-m-c.html). Why the content is massless above the restructuring, and what the vector-like pairing costs.
 - [The Lagrangian and the Primordial Force](the-lagrangian-and-the-primordial-force.html). Both pieces inside the full display.
 - [The Primordial Coupling](the-primordial-coupling.html). $g_4$ at $M_X$, from which $v_{C}$ is computed here.

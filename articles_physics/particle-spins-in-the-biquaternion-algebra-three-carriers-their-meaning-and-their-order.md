@@ -158,7 +158,7 @@ so spin two is built from the spin-one carrier by a symmetric square and a remov
 
 **Can the ideal be derived rather than chosen?** A state is a coefficient in a frame, and a frame is an idempotent. Whether the framework can produce a frame dynamically — whether the axis can be an output of the dynamics rather than an input to the notation — is not settled here. **A positive answer would move the cost of a state from one choice to zero, and the order would collapse to a single carrier.**
 
-**Is the centre's priority visible in the action?** The vacuum is central and the mass form is built on it, so the centre does appear as a fixed point of the dynamics. **Whether the central value is selected or assumed is the question the symmetry-breaking block answers in the negative: it is assumed.**
+**Is the centre's priority visible in the action?** The vacuum is central and the mass form is built on it, so the centre does appear as a fixed point of the dynamics. **Whether the central value is selected or assumed is the question the vacuum-restructuring block answers in the negative: it is assumed.**
 
 **Why this triple and not another?** The dimensions $1$, $2$, $3$ are $2s+1$ at $s=0$, $\tfrac12$, $1$, and the sequence stops there because the algebra is $M_2(\mathbb{C})$. **A larger algebra would have a longer list and the order would still be by cost; whether the cost criterion extends to the tensor-product carriers is open.**
 

@@ -31,7 +31,7 @@ $$
 
 **What is absent here.** No weak pair, no hypercharge, no photon, no $W$, no $Z$, no rank five. **Those arrive at $M_C$, where the octet, one abelian factor and two weak factors describe what the vacuum leaves**, and that is the subject of the next section of the corpus. This article is the connection content of the model above that scale, and it is complete as a statement of that content: **the scalar sector is [The Scalar Content](the-scalar-content-one-matrix-and-ten-survivors.html), and the fermion masses are [The Yukawa Sector](the-yukawa-sector-of-the-su4-model-one-matrix-and-its-diagonalisation.html), whose verdict is that the ratio $m_\ell=3m_q$ is falsified.**
 
-**Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The transition is [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
+**Where the rest is.** The counts and the arrays are [The Counts of the Fifteen](the-counts-of-the-fifteen-sixteen-cells-six-pairs-twelve-arrays-fifteen-generators.html) and [The Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). The restructuring is [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the weak force is, and why it is not a piece of the fifteen, is [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). The couplings are [The One Coupling That Returns the Standard Model](the-one-coupling-that-returns-the-standard-model.html).
 
 ## One Group, and the Count of Fifteen
 
@@ -197,7 +197,7 @@ $$
 
 **The table is by array and not by block, because the blocks are a choice.** Above $M_C$ all fifteen are massless: no vacuum has formed, so there is no $D$ and $M^{2}=2v^{2}[D,[D,\cdot\,]]$ has nothing to act with. **Below $M_C$ six of them are heavy and nine are massless, and the six are the ones that touch the lepton line.** A reader who sorts the fifteen into three blocks before reading this table has made the choice $D$ makes, one section early.
 
-**The nine massless split further only after $D$ is fixed, and by then the split is a statement about the phase.** Two differences of the diagonal frame become the Cartan of the octet that survives, the sum becomes the $B-L$ direction, and the six planes of the spatial block become the rest of the octet. **That is the broken phase's bookkeeping.** It is stated in [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) and [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), with the vacuum in hand.
+**The nine massless split further only after $D$ is fixed, and by then the split is a statement about the phase.** Two differences of the diagonal frame become the Cartan of the octet that survives, the sum becomes the $B-L$ direction, and the six planes of the spatial block become the rest of the octet. **That is the broken phase's bookkeeping.** It is stated in [Classification of the Bosons](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html) and [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html), with the vacuum in hand.
 
 **No $W$, no $Z$ and no photon in this list**: those need the weak factors, which arrive at $M_C$ in the same condensation that gives the right-handed pair its mass, and they become massive at $M_W$. **The scalar sector is not in this table**: it is sixteen real components in *The Scalar Content*, six of them eaten by these six heavy vectors.
 
@@ -230,7 +230,7 @@ and cyclic in $(x,y,z)$. **Those six combinations span the same six dimensions a
 
 **What it is, and what it is not.** It is a **real subalgebra of the fifteen**, with $\dim_{\mathbb R}=6$ and rank $2$. It is **not** a second factor: a factor is a group multiplying the algebra's fields, and this is a subspace of the algebra itself. **The difference is not bookkeeping** — it is the difference between rank three and rank five.
 
-**What the condensate does to it.** The transition's vacuum is $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ multiplied by $i$, and the mass matrix of the fifteen is
+**What the condensate does to it.** The restructuring's vacuum is $iD=\operatorname{diag}(-3i,i,i,i)$, that is $D=\operatorname{diag}(-3,1,1,1)$ multiplied by $i$, and the mass matrix of the fifteen is
 
 $$
 M^{2}=2v^{2}\bigl[D,[D,\cdot\,]\bigr],
@@ -246,7 +246,7 @@ $$
 | $iS_{xy},iS_{xz},iS_{yz}$ | $0$ |
 | the three diagonals | $0$ |
 
-**So the real $\mathfrak{so}(4)$ straddles the transition**: three of its six planes are heavy and three are massless. **A half, being half of one plane and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) makes it a theorem.
+**So the real $\mathfrak{so}(4)$ straddles the restructuring**: three of its six planes are heavy and three are massless. **A half, being half of one plane and half of the other, is a sum of a heavy and a massless vector** — a coherence, not a particle. That single fact is why the six arrays could never be the weak bosons, and [The Charge Theorem](the-charge-theorem-the-sextet-cannot-be-recomposed-into-the-weak-pair.html) makes it a theorem.
 
 **Why the reading is tempting, and where the three sixes differ.** Six real planes, the six arrays that move the lepton line, and six weak generators are **three different sixes, and only the first two are even inside the fifteen**. The six planes are $\operatorname{span}\{A_{ab}\}$ and they close; the six that move $e_t$ are $\{A_{tk},iS_{tk}\}$ and they do **not** close, since $[A_{tx},A_{ty}]=-A_{xy}$ lies outside them; and the six weak generators close by assumption, not by arithmetic. **The match is a match of number and nothing else**: the planes are closed but are not the mixed six, the mixed six are not closed, and neither set is the weak pair.
 
@@ -297,7 +297,7 @@ $$
 
 **$\mathrm{SO}(10)$.** Rank five, and it contains $\mathrm{SU}(4)$ — **but its spinor is a $\mathbf{16}$ obtained by a Clifford algebra the corpus does not otherwise use**, and containment is not a derivation. It is recorded and refused.
 
-**The four-factor group is the group at $M_C$.** The octet, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the transition, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
+**The four-factor group is the group at $M_C$.** The octet, one abelian factor and the two weak factors are what the vacuum of the primordial force leaves, and the weak factors arrive at that scale. **It is a step of the restructuring, not a rival candidate**: an alternative would be a group chosen instead, and this one is arrived at.
 
 **The one-line reason the group is $\mathrm{SU}(4)$.** The full group of a four-dimensional complex carrier is $\mathrm{SU}(4)$, and the subgroup that fixes one line in it is $\mathrm{SU}(3)\times\mathrm{U}(1)$ modulo a discrete factor. **The stabiliser is a subgroup of $\mathrm{SU}(4)$, not an alternative to it** — it is what acts once the fourth direction is frozen out, and which of the two describes the world is a question about physics. **Whether the fourth direction is made local is that question, and this model answers that it is.**
 
@@ -368,7 +368,7 @@ $$
 
 > **The model is not chiral where the symmetry acts. This is not a caveat about a representation; it is a property of the model, proved by the same count that makes its anomaly vanish.**
 
-**Where the chirality is.** Nowhere in this article, and the article says so. The copy index is a label the group does not see. **A single $\mathrm{SU}(2)$ acting on it would not change that**, because $\mathbf2\simeq\bar{\mathbf2}$ and $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate — the count $2\cdot4\oplus2\cdot\bar4$ is vector-like under any group that acts on the copy index the same way in both terms. **A chiral content needs the two copies acted on by two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and **that split is a postulate of the transition rather than a consequence of this article** — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as exactly one postulate and names it.
+**Where the chirality is.** Nowhere in this article, and the article says so. The copy index is a label the group does not see. **A single $\mathrm{SU}(2)$ acting on it would not change that**, because $\mathbf2\simeq\bar{\mathbf2}$ and $(\mathbf4,\mathbf2)\oplus(\bar{\mathbf4},\mathbf2)$ is its own conjugate — the count $2\cdot4\oplus2\cdot\bar4$ is vector-like under any group that acts on the copy index the same way in both terms. **A chiral content needs the two copies acted on by two different factors**, $(\mathbf4,\mathbf2,\mathbf1)\oplus(\bar{\mathbf4},\mathbf1,\mathbf2)$, and **that split is a postulate of the restructuring rather than a consequence of this article** — [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html) carries it as exactly one postulate and names it.
 
 **What would count as the algebra supplying chirality.** A one-sided action of the algebra on a chiral spinor module. **That remains the corpus's open problem, unchanged, and it is not solved here.** What has changed is that the model no longer pretends to have the answer in a representation: **it declares the copy index, and the declaration is honest because the index is visible.**
 
@@ -410,9 +410,9 @@ A degeneration is not a decomposition. The fifteen are twelve planes and three d
 
 A subalgebra is not a factor. The eight is closed under brackets and is a genuine subalgebra, **and that is exactly why it cannot be used as a factor**: the algebra is simple, so no subalgebra of it is invariant (*The Eight Is a Degeneration, Not a Piece*).
 
-The copy index is not a group factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the transition, and **the split of that factor into two weak factors is the transition's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
+The copy index is not a group factor. It labels two copies of the quartet and carries no coupling; it becomes a factor only at the restructuring, and **the split of that factor into two weak factors is the restructuring's postulate and not this article's** (*The Sixteen*, *The Chiral Wall*).
 
-Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral connection coupling — the second being what the transition to $M_C$ exists to fix (*The Chiral Wall*).
+Vector-like is not a defect. It is why the anomaly vanishes by counting, and it is why the model has no chiral connection coupling — the second being what the restructuring to $M_C$ exists to fix (*The Chiral Wall*).
 
 One coupling is not a simplification of three. It is the absence of the two factors that carried the other two, and it turns the three low-energy couplings into a prediction: the matching at $M_C$ becomes a computation rather than a fit (*One Covariant Derivative*).
 
@@ -438,7 +438,7 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 | --- | --- |
 | $G=\mathrm{SU}(4)$ | the group, acting on the four-dimensional complex carrier |
 | $\mathfrak m$ | the six that move the lepton line, $\mathbf3_{+4/3}\oplus\bar{\mathbf3}_{-4/3}$ |
-| $iD$ | $\operatorname{diag}(-3i,i,i,i)$, the abelian direction and the transition's vacuum |
+| $iD$ | $\operatorname{diag}(-3i,i,i,i)$, the abelian direction and the restructuring's vacuum |
 | $\mathbf{16}$ | the matter content, $\mathbf4\otimes\mathbf2\oplus\bar{\mathbf4}\otimes\mathbf2$ |
 | the copy index | the two-dimensional label on the quartet; not made local here |
 | $\mathfrak k_L,\mathfrak k_R$ | the two commuting triples from the two-sided action |
@@ -453,5 +453,5 @@ A theorem about another group is not evidence about this one. The Boyle–Farnsw
 - [The Classification of the Bosons: Nine Massless and Six Massive](classification-of-the-bosons-in-the-su4-model-one-grid-fifteen-generators-nine-massless-six-heavy.html). One name in every cell of the $4\times4$ grid.
 - [Construction of the AXF Matrices of the Fifteen Generators](construction-of-the-axf-matrices-of-the-fifteen-generators.html). Every generator printed, and the six $\mathfrak{so}(4)$ planes beside them.
 - [Charge Quantisation From the Fourth Line: One Trace, One Third](charge-quantisation-from-the-fourth-line-one-trace-one-third.html). Why the corner is forced and the charges are in thirds.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the transition does to the fifteen.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What the restructuring does to the fifteen.
 - [Rank Five From Three](rank-five-from-three-the-weak-factors-as-a-condensate-index.html). Why the six arrays are not a factor, and what is.

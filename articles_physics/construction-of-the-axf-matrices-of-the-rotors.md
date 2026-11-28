@@ -307,7 +307,7 @@ $$
 
 **The rotors fall into a $6+9$ split that the arrays' entries decide.** Six have real entries and give rotations of the quartet with period $2\pi$; nine have complex entries and give unitary rotors of the complexified carrier, real only at the half-turns, where the imaginary planes coincide with the real ones.
 
-**The corner is the only rotor that is ever central, and it is central four times a turn with values $i^{k}$.** That is the rotor-side reading of the corpus's "$B-L$'s eigenvalue is fixed at every scale" — the array is untouched, while the charge it names is broken at the transition — and the display reproduces the charge-quantisation article's relative phase $N\theta$ without being copied from it.
+**The corner is the only rotor that is ever central, and it is central four times a turn with values $i^{k}$.** That is the rotor-side reading of the corpus's "$B-L$'s eigenvalue is fixed at every scale" — the array is untouched, while the charge it names is broken at the restructuring — and the display reproduces the charge-quantisation article's relative phase $N\theta$ without being copied from it.
 
 **The article's one new result is the direction of the half angle.** $A_{ta}=-(T^{L}_{a}+T^{R}_{a})$ and $A_{bc}=-(T^{L}_{a}-T^{R}_{a})$, the two triples commute, so the exponentials factorise exactly and the half angles of two composites add to the full angle of a real plane. **Fifteen circles, and six composites that are not circles of the model** — which is why a composite takes two turns of its parameter to return while a real plane takes one, and why the model's bosons have no half angle at all.
 

@@ -4,7 +4,7 @@
 
 **The question.** $\mathrm{SU}(4)$ is asymptotically free. Asymptotic freedom is usually paired with confinement in the infrared. **So why does the primordial force not confine?**
 
-**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $1.8\ \mathrm{GeV}$, which is five decades below the transition and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
+**The short answer.** Because confinement needs the coupling to reach order one *inside a phase that exists*, and the primordial phase ends long before its coupling gets there. **At $M_C$ the coupling is $0.058$; it would reach order one only at about $1.8\ \mathrm{GeV}$, which is five decades below the restructuring and in a theory where $\mathrm{SU}(4)$ is not a symmetry at all.**
 
 **The two conditions, stated separately, because the literature usually runs them together.**
 
@@ -53,9 +53,9 @@ $$
 \mu_{1}=2.33\times10^{5}\times e^{-11.76}=1.8\ \mathrm{GeV} .
 $$
 
-**Nearly twelve e-folds, or a factor $1.4\times10^{5}$ in scale, separate the transition from the scale at which the coupling would be strong.** The transition is at $250\ \mathrm{TeV}$ and the strong-coupling scale is at $1.8\ \mathrm{GeV}$; the ratio is $1.4\times10^{5}$.
+**Nearly twelve e-folds, or a factor $1.4\times10^{5}$ in scale, separate the restructuring from the scale at which the coupling would be strong.** The restructuring is at $250\ \mathrm{TeV}$ and the strong-coupling scale is at $1.8\ \mathrm{GeV}$; the ratio is $1.4\times10^{5}$.
 
-**And below the transition the line is not the theory's line.** The coefficient becomes the Standard Model's, the group becomes $\mathrm{SU}(3)\times\mathrm{U}(1)$, and the running that would produce a strong $\mathrm{SU}(4)$ coupling is not the running the world follows. **Inside the phase, $\alpha_4$ never exceeds $0.058$.**
+**And below the restructuring the line is not the theory's line.** The coefficient becomes the Standard Model's, the group becomes $\mathrm{SU}(3)\times\mathrm{U}(1)$, and the running that would produce a strong $\mathrm{SU}(4)$ coupling is not the running the world follows. **Inside the phase, $\alpha_4$ never exceeds $0.058$.**
 
 **The comparison with QCD, computed the same way.**
 
@@ -77,7 +77,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 - *A spectrum of bound states.* Glueballs and singlet composites need the theory to exist at the scale where they form. **At $1.8\ \mathrm{GeV}$ the relevant theory is the Standard Model's strong sector**, whose own bound states are the hadrons.
 - *A phase transition, or none.* QCD confines without a transition; the primordial theory would have to confine across one, and it does not reach the scale.
 
-**What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the transition. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling.html) supplies the number.
+**What replaces confinement above $M_C$ is a weakly coupled plasma of the model's own content.** Fifteen massless vectors, thirty-two fermion states, sixteen scalars, all perturbative, with $\alpha_4/\pi=0.018$ at the restructuring. **The tree-level rates of the block are legitimate for exactly this reason**, and [The Primordial Coupling](the-primordial-coupling.html) supplies the number.
 
 ## The Analogy That Fails, and Why It Is Worth Stating
 
@@ -115,7 +115,7 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 
 **The primordial force does not confine, and asymptotic freedom is not the reason.** $b_0>0$ means the coupling grows downward, exactly as in QCD; what differs is the distance it has to travel.
 
-**$11.8$ e-folds separate the transition from the scale where $\alpha_4$ would be one, and QCD needs $6.7$ from the $Z$ mass.** The primordial coupling starts weaker and holds that advantage all the way down, which puts its strong-coupling scale at $1.8\ \mathrm{GeV}$ — five decades below $M_C$, where $\mathrm{SU}(4)$ is no longer the symmetry.
+**$11.8$ e-folds separate the restructuring from the scale where $\alpha_4$ would be one, and QCD needs $6.7$ from the $Z$ mass.** The primordial coupling starts weaker and holds that advantage all the way down, which puts its strong-coupling scale at $1.8\ \mathrm{GeV}$ — five decades below $M_C$, where $\mathrm{SU}(4)$ is no longer the symmetry.
 
 **So the phase is perturbative throughout its existence**, with $\alpha_4/\pi=0.018$ at its lower end, and the tree-level rates of the block are legitimate. **What replaces confinement is not freedom but a different theory**: at $M_C$ the group breaks and the coupling is matched, and the primordial coupling has no infrared limit to speak of.
 
@@ -127,12 +127,12 @@ so QCD's coupling reaches order one at $91.2\times e^{-6.71}=0.111\ \mathrm{GeV}
 | $b_0$ | $\tfrac{26}{3}$, the one-loop coefficient with the model's content |
 | $\mu_{1}$ | the scale at which $\alpha_4=1$, computed as $1.8\ \mathrm{GeV}$ |
 | $\Lambda$ | the would-be confinement scale; used only for comparison |
-| $M_C$ | the transition, $\gtrsim250\ \mathrm{TeV}$ |
+| $M_C$ | the restructuring, $\gtrsim250\ \mathrm{TeV}$ |
 | $M_X$ | the matching scale, $2.33\times10^{5}\ \mathrm{GeV}$ |
 
 ## Further Reading
 
 - [The Primordial Coupling](the-primordial-coupling.html). The coefficient, the solution and the Landau pole this article's numbers come from.
 - [Asymptotic Freedom and the Running of the Strong Force](asymptotic-freedom-and-the-running-of-the-strong-coupling.html). The QCD comparison row, and the coefficient $11-\tfrac23N_f$ set beside $\tfrac{20}{3}$.
-- [The Breaking of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What happens at $M_C$, where this article's phase ends.
+- [The Restructuring of the Primordial Force](the-breaking-of-the-primordial-force-and-the-mass-of-the-six-leptoquarks.html). What happens at $M_C$, where this article's phase ends.
 - [The $\mathrm{SU}(4)$ Instanton](the-su4-instanton-a-matrix-transcription-outside-the-algebra.html). The non-perturbative effect that exists without confinement.
